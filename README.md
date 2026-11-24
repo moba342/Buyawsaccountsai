@@ -84,7 +84,7 @@ This is a frontend storefront. It has no payment processor, automated account fu
 - Contact layout reference: https://awscreditsbuy.com/contact-us/
 - Vector logos: https://github.com/devicons/devicon and https://github.com/gilbarbara/logos
 - Some provider icons were retrieved from the provider websites through Google's favicon service and are served locally from `public/logos/`.
-- Typography: Google Fonts (DM Sans and Manrope).
+- Typography: Google Fonts (Plus Jakarta Sans for headings; Inter for body text).
 - Interface icons: Lucide React.
 
 Provider trademarks belong to their respective owners. The storefront is independent and does not claim affiliation with those providers. Reference prices and product claims should be confirmed before taking payments.
@@ -92,3 +92,7 @@ Provider trademarks belong to their respective owners. The storefront is indepen
 `node_modules/` and generated `dist/` output are intentionally excluded from Git; `npm ci` and `npm run build` recreate them.
 
 Color and surface reference: https://dotmirror.com/ (palette applied without copying content or changing the existing layouts).
+
+## Typography system
+
+`typography.css` defines the shared heading, body, card, navigation, CTA, form, pricing, counter, and footer styles. Breakpoints: mobile below 768px, tablet 768–1023px, desktop 1024px and above. Sizes use rem units to respect browser text preferences. Headings use Plus Jakarta Sans; body text uses Inter, both with sans-serif fallbacks.

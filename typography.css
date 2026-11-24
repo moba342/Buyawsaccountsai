@@ -1,0 +1,81 @@
+/* Requested typography system: mobile 0–767px, tablet 768–1023px, desktop 1024px+. */
+:root{--font-heading:'Plus Jakarta Sans',sans-serif;--font-body:'Inter',sans-serif;--type-h1:2.25rem;--type-h2:1.75rem;--type-h3:1.5rem;--type-h4:1.25rem;--type-h5:1.125rem;--type-h6:1rem;--type-hero-description:1rem;--type-body:1rem;--type-card-title:1.125rem;--type-card-description:.9375rem;--type-nav:1rem;--type-button:.9375rem;--type-label:.875rem;--type-input:1rem;--type-small:.8125rem;--type-eyebrow:.75rem;--type-price:2.25rem;--type-counter:2.25rem;--type-footer:.875rem;font-family:var(--font-body);font-size:100%}
+@media(min-width:768px){:root{--type-h1:3rem;--type-h2:2.25rem;--type-h3:1.75rem;--type-h4:1.375rem;--type-h5:1.125rem;--type-h6:1rem;--type-hero-description:1.125rem;--type-card-title:1.25rem;--type-card-description:.9375rem;--type-nav:.9375rem;--type-button:.9375rem;--type-small:.8125rem;--type-price:2.5rem;--type-counter:2.75rem}}
+@media(min-width:1024px){:root{--type-h1:4rem;--type-h2:3rem;--type-h3:2rem;--type-h4:1.5rem;--type-h5:1.25rem;--type-h6:1.125rem;--type-hero-description:1.25rem;--type-card-title:1.375rem;--type-card-description:1rem;--type-nav:.9375rem;--type-button:1rem;--type-small:.875rem;--type-price:3rem;--type-counter:3.5rem}}
+body,#root{font-family:var(--font-body);font-size:var(--type-body);font-weight:400;line-height:1.7;font-synthesis:none}
+#root :is(h1,h2,h3,h4,h5,h6,.brand){font-family:var(--font-heading)}
+#root h1{font-size:var(--type-h1);font-weight:700;line-height:1.15;letter-spacing:-.04em}
+#root h2{font-size:var(--type-h2);font-weight:700;line-height:1.2;letter-spacing:-.03em}
+#root h3{font-size:var(--type-h3);font-weight:600;line-height:1.3;letter-spacing:-.02em}
+#root h4{font-size:var(--type-h4);font-weight:600;line-height:1.4;letter-spacing:-.02em}
+#root h5{font-size:var(--type-h5);font-weight:600;line-height:1.4;letter-spacing:normal}
+#root h6{font-size:var(--type-h6);font-weight:600;line-height:1.4;letter-spacing:normal}
+#root p{font-family:var(--font-body);font-size:var(--type-body);font-weight:400;line-height:1.7}
+#root :is(.home-hero-content>p,.contact-hero>p,.shot-intro-text,.lead,.hero-copy>p){font-size:var(--type-hero-description);font-weight:400;line-height:1.6}
+#root :is(.home-provider-tile,.home-product,.product-card,.provider-card,.guide-card,.contact-cards article,.shot-reasons article,.shot-services article,.shot-usecases article,.shot-steps article,.shot-audience article,.shot-products article,.info-box,.home-no-results) :is(h2,h3){font-size:var(--type-card-title);font-weight:600;line-height:1.4;letter-spacing:normal;min-height:0}
+#root :is(.home-provider-tile,.home-product,.product-card,.provider-card,.guide-card,.contact-cards article,.shot-reasons article,.shot-services article,.shot-usecases article,.shot-steps article,.shot-audience article,.shot-products article,.info-box) p{font-size:var(--type-card-description);font-weight:400;line-height:1.6;min-height:0}
+#root :is(.home-product,.product-card) ul li{font-size:var(--type-card-description);font-weight:400;line-height:1.6}
+#root :is(header nav,header nav a){font-family:var(--font-body);font-size:var(--type-nav);font-weight:500;line-height:1.5}
+#root :is(button,.primary,.secondary,.header-button,.buy-button,.shot-product-actions>a,.table-link,.home-product-actions>a,.contact-link,.home-quiet-link,.shot-section-title>a){font-family:var(--font-body);font-size:var(--type-button);font-weight:600;line-height:1.4}
+#root :is(.variant-label,.page-variant-picker>label,form label,.home-search>label){font-family:var(--font-body);font-size:var(--type-label);font-weight:500;line-height:1.5}
+#root :is(input,textarea,select,.variant-trigger,.variant-option){font-family:var(--font-body);font-size:var(--type-input);font-weight:400;line-height:1.5}
+#root :is(small,.subtle,.catalog-note,.home-catalog-caption,.home-pricing-note,.shot-fineprint,.shot-section-description,.shot-breadcrumb,.contact-breadcrumb,.home-hero-proof span,.visual-footnote,.provider-name,.type,.home-provider-tile-top>span,.home-provider-tile-bottom,.home-product-top>div,.home-product-price span,.price span,.shot-product-price>div small,.featured-price small,.shot-product-price>span,.shot-table small,.shot-table td:nth-child(3),.hero-featured small,.selection-grid small,.sidebar-note,.home-statline small,.card-meta span){font-family:var(--font-body);font-size:var(--type-small);font-weight:400;line-height:1.5;letter-spacing:normal}
+#root :is(.eyebrow,.home-kicker,.shot-tag,.shot-availability,.pill,.badge,.home-product-badge,.shot-brand-chip,.shot-product-header>small,.shot-related h3,.shot-order-panel h3,.home-provider-band>span,.section-kicker){font-family:var(--font-body);font-size:var(--type-eyebrow);font-weight:600;line-height:1.4;letter-spacing:.05em}
+#root :is(.home-product-price,.price,.preview-price,.featured-price,.sidebar-price,.shot-product-price>div,.page-variant-picker strong){font-family:var(--font-heading);font-size:var(--type-price);font-weight:700;line-height:1.1;letter-spacing:-.04em}
+#root .home-statline strong,#root .hero-stats b{font-family:var(--font-heading);font-size:var(--type-counter);font-weight:700;line-height:1.1;letter-spacing:-.04em}
+#root .home-statline strong>span{font:inherit;color:inherit}
+#root .store-footer :is(p,a,span,.footer-bottom,.footer-description){font-family:var(--font-body);font-size:var(--type-footer);font-weight:400;line-height:1.6}
+#root .store-footer .brand{font-family:var(--font-heading);font-size:1.5625rem;font-weight:800;line-height:1.4;letter-spacing:-.04em}
+#root .store-footer .brand>span:last-child{font:inherit}
+#root .store-footer-columns h3{font-family:var(--font-heading);font-size:var(--type-h6);font-weight:600;line-height:1.4;letter-spacing:normal}
+#root .store-footer .primary{font-size:var(--type-button);font-weight:600;line-height:1.4}
+/* Let the new type scale fit without clipping or fixed-height copy. */
+#root :is(.home-product-top,.shot-product-header,.home-product-actions,.home-provider-tile-bottom,.home-hero-actions,.home-hero-proof,.shot-section-title,.home-catalog-caption){flex-wrap:wrap}
+#root :is(.home-product ul,.product-card>p,.provider-card p,.home-provider-tile h3){min-height:0}
+#root :is(.home-provider-tile,.home-product,.shot-products article,.contact-cards article,.guide-card){min-width:0}
+#root :is(.home-provider-tile h3,.home-product h3,.shot-products h3,.contact-value){overflow-wrap:anywhere}
+#root .hero-featured{width:100%;min-height:110px;gap:12px}
+#root .hero-featured>span:nth-child(2){min-width:0;flex:1}
+#root .hero-featured strong{font-family:var(--font-heading);font-size:var(--type-card-title);font-weight:600;line-height:1.4}
+#root .hero-featured small{white-space:normal;letter-spacing:.05em}
+#root .featured-price{flex-shrink:0}
+#root .visual-provider{font-family:var(--font-body);font-size:var(--type-small);font-weight:500;line-height:1.5}
+#root .home-search{min-width:0}
+#root .home-search input{width:100%;min-width:0}
+#root .home-search{width:min(100%,340px)}
+#root .shot-table{min-width:650px}
+#root .shot-table-wrap{overflow-x:auto}
+#root .shot-table :is(th,td){font-size:var(--type-small);line-height:1.5}
+#root .shot-table strong{font-size:var(--type-body);font-weight:500;line-height:1.5}
+#root .shot-table :is(th,td):nth-child(3){display:table-cell}
+#root .shot-products{grid-template-columns:repeat(3,minmax(0,1fr))}
+#root .shot-brand-chip{max-width:100%;white-space:normal;overflow:visible}
+#root .shot-product-actions{grid-template-columns:1fr 1fr}
+#root .shot-product-price{align-items:flex-end;flex-wrap:wrap}
+#root .shot-stats strong{font-size:var(--type-body);font-weight:600;line-height:1.5}
+#root .shot-stats small{font-size:var(--type-eyebrow);font-weight:600;line-height:1.4;letter-spacing:.05em}
+#root .contact-cards address{font-size:var(--type-body);font-weight:400;line-height:1.7}
+#root .contact-value{font-size:var(--type-body);line-height:1.5}
+#root :is(.home-faq summary,.shot-faq summary,.faq-page summary){font-size:var(--type-body);font-weight:500;line-height:1.5}
+#root .home-provider-tile-bottom>span:last-child{font-size:var(--type-button);font-weight:600;line-height:1.4}
+#root .home-provider-tile-bottom{align-items:start;gap:12px}
+#root .home-provider-tile-bottom strong{font-family:var(--font-heading);font-size:var(--type-h5);font-weight:600;line-height:1.4}
+#root .home-statline{width:100%;gap:30px}
+#root .visual-footnote{bottom:-20px;text-align:center}
+@media(min-width:768px) and (max-width:1023px){#root .home-product-grid,#root .shot-products{grid-template-columns:repeat(2,minmax(0,1fr))}#root .home-hero{gap:25px;grid-template-columns:1fr 1fr}#root .home-visual{height:530px}#root .home-provider-grid{grid-template-columns:repeat(3,minmax(0,1fr))}#root .hero-featured{flex-wrap:wrap;bottom:40px}#root .featured-price{margin-left:54px}#root .home-hero-actions{gap:18px}#root .home-statline{gap:18px}#root .home-statline>div{flex:1;min-width:0}#root .visual-provider{font-size:var(--type-small);padding:10px}#root .provider-aws{left:0;top:35px}#root .provider-azure{top:280px}#root .provider-gcp{right:-5px;top:170px}#root .home-provider-tile-bottom{flex-direction:column}#root .store-footer-columns{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:1023px){#root header{height:auto;min-height:84px;position:relative;gap:12px}#root header nav{display:none;position:absolute;top:calc(100% - 1px);left:20px;right:20px;padding:22px;background:#fff;border:1px solid #e4e4e7;border-radius:10px;z-index:25;box-shadow:0 10px 30px #10182814}#root header nav.open{display:flex;flex-direction:column;align-items:stretch;gap:22px}#root header .menu{display:flex!important;margin:0;flex-shrink:0}#root header .header-button{margin-left:auto;margin-right:0}#root .brand{font-size:1.5rem;flex-shrink:0}#root .shot-hero-row{align-items:flex-start}#root .home-catalog .home-section-heading{gap:25px}#root .home-search{width:100%}#root .shot-product-actions{grid-template-columns:1fr}#root .page-variant-picker>div{grid-template-columns:1fr 1fr}#root .page-variant-picker .variant-select{grid-column:1/-1}}
+@media(max-width:767px){#root .home-hero{grid-template-columns:1fr;gap:30px}#root .home-hero-actions{gap:20px}#root .home-hero-proof{gap:14px;justify-content:center}#root .home-statline{justify-content:center;gap:20px}#root .home-statline>div{flex:1;min-width:0}#root .home-hero-content{width:100%}#root .home-visual{height:490px}#root .hero-featured{width:100%;bottom:30px;min-height:110px;padding:17px}#root .hero-featured strong{font-size:var(--type-card-title)}#root .hero-featured small{font-size:var(--type-eyebrow)}#root .hero-featured .featured-price small{font-size:var(--type-small);letter-spacing:normal}#root .visual-footnote{bottom:-20px}#root .home-product-grid,#root .shot-products,#root .contact-cards{grid-template-columns:1fr}#root .home-provider-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#root .home-provider-tile{padding:20px 16px}#root .home-provider-tile-bottom{flex-direction:column}#root .home-provider-tile-top{flex-wrap:wrap}#root .home-provider-tile-top>span{font-size:var(--type-small)}#root .home-product-actions{grid-template-columns:1fr 1fr}#root .home-catalog-caption{display:block}#root .home-catalog-caption>span{font-size:var(--type-small)}#root .home-catalog .home-section-heading{display:block}#root .home-faq,#root .home-process{grid-template-columns:1fr}#root .shot-section-title{align-items:flex-start}#root .shot-hero-row{gap:16px}#root .shot-provider-icon{width:54px;height:54px;border-radius:14px}#root .shot-provider-icon .platform-logo{max-width:45px;max-height:40px}#root .shot-audience,#root .shot-stats{grid-template-columns:1fr 1fr}#root .shot-stats>div{align-items:start;flex-direction:column}#root .shot-product-actions{grid-template-columns:1fr 1fr}#root .shot-section-title>.shot-tag{flex-shrink:0}#root .modal{padding:24px}#root .order-provider-title{font-size:var(--type-card-title)}#root .footer-callout h2{font-size:var(--type-h2)}#root .topline{height:auto;min-height:34px;padding:7px 15px;text-align:center}#root .store-footer-columns{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}#root .store-footer-columns>div{min-width:0}#root .home-final .home-kicker{font-size:var(--type-eyebrow)}#root .contact-bottom{gap:15px}#root .contact-bottom h2{font-size:var(--type-card-title)}}
+@media(max-width:380px){#root .home-provider-grid,#root .shot-audience{grid-template-columns:1fr}#root header{padding-left:15px;padding-right:15px;gap:8px}#root .brand{font-size:1.25rem}#root .brand-icon{width:28px;height:28px;margin-right:6px}#root header .header-button{padding:10px;font-size:var(--type-button)}#root .hero-featured{flex-wrap:wrap}#root .featured-price{margin-left:54px}#root .home-visual{height:520px}#root .home-statline{gap:12px}#root .home-statline small{overflow-wrap:anywhere}#root .home-product-actions,#root .shot-product-actions{grid-template-columns:1fr}#root .page-variant-picker>div{grid-template-columns:1fr}#root .store-footer-columns{grid-template-columns:1fr}#root .contact-bottom>div{min-width:0}}
+/* Keep decorative perspective and wider data tables inside their layout bounds. */
+#root .home-visual{overflow:clip;overflow-clip-margin:12px}
+#root .shot-hero-row>div:last-child{min-width:0}
+#root .shot-hero-row h1{overflow-wrap:anywhere}
+#root .screenshot-page{min-width:0;overflow-x:clip}
+@media(max-width:767px){#root .page-variant-picker>div{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}#root .page-variant-picker strong{white-space:normal;overflow-wrap:anywhere}#root .page-variant-picker strong small{display:block;margin-top:4px}#root .page-variant-picker .primary{padding-left:8px;padding-right:8px}#root .shot-hero-row{align-items:flex-start}#root .shot-section-title{flex-wrap:wrap}}
+@media(max-width:380px){#root .page-variant-picker>div{grid-template-columns:1fr}}
+#root .shot-table-wrap{position:relative}
+#root header nav a{font-family:var(--font-body);font-size:var(--type-nav);font-weight:500;line-height:1.5}
+#root :is(button,.primary,.secondary,.header-button,.buy-button,.home-product-actions>a,.home-quiet-link,.shot-product-actions>a,.contact-link){font-family:var(--font-body);font-size:var(--type-button);font-weight:600;line-height:1.4}
+#root :is(.variant-trigger,.variant-option){font-size:var(--type-input);font-weight:400;line-height:1.5}
+#root .visual-footnote{bottom:0}
+#root .hero-featured{bottom:45px}
