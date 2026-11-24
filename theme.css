@@ -167,3 +167,15 @@ body,#root{background:var(--page-bg);color:var(--heading)}
 @media(hover:hover) and (pointer:fine){#root :is(.home-kicker,.eyebrow,.section-kicker,.home-product-badge,.pill,.badge,.shot-tag,.shot-brand-chip,.shot-availability,.shot-product-header>small,.provider-showcase-count):hover,#root .provider-showcase-card:hover .provider-showcase-count{transform:translateY(-1px);background:var(--badge-background);border-color:#A8D2FF;box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 4px 12px rgba(8,15,36,.18),0 0 17px rgba(112,164,244,.3)}}
 @media(max-width:767px){#root :is(.home-kicker,.eyebrow,.section-kicker){font-size:11px;padding:8px 12px}}
 @media(prefers-reduced-motion:reduce){#root :is(.home-kicker,.eyebrow,.section-kicker,.home-product-badge,.pill,.badge,.shot-tag,.shot-brand-chip,.shot-availability,.shot-product-header>small,.provider-showcase-count){transition:none;transform:none!important}}
+
+/* Responsive type scale: mobile <768, tablet 768–1023, desktop 1024+. */
+:root{--type-h1:2.25rem;--type-h2:1.75rem;--type-h3:1.5rem;--type-h4:1.25rem;--type-h5:1.125rem;--type-h6:1rem;--type-hero-description:1rem;--type-body:1rem;--type-card-title:1.125rem;--type-card-description:.9375rem;--type-nav:1rem;--type-small:.8125rem;--type-price:2.25rem;--type-counter:2.25rem}
+@media(min-width:768px){:root{--type-h1:3rem;--type-h2:2.25rem;--type-h3:1.75rem;--type-h4:1.375rem;--type-hero-description:1.125rem;--type-card-title:1.25rem;--type-nav:.9375rem;--type-price:2.5rem;--type-counter:2.75rem}}
+@media(min-width:1024px){:root{--type-h1:4rem;--type-h2:3rem;--type-h3:2rem;--type-h4:1.5rem;--type-h5:1.25rem;--type-h6:1.125rem;--type-hero-description:1.25rem;--type-card-title:1.375rem;--type-card-description:1rem;--type-small:.875rem;--type-price:3rem;--type-counter:3.5rem}}
+#root h1{font-size:var(--type-h1);line-height:1.15}
+#root p{line-height:1.7}
+#root .provider-showcase-banner :is(h2,h3){font-size:var(--type-card-title);line-height:1.4}
+#root .provider-showcase-copy p{font-size:var(--type-card-description);line-height:1.6}
+#root .provider-showcase-price>strong{font-size:var(--type-price)}
+#root .provider-showcase-banner p{font-size:var(--type-small);line-height:1.5}
+#root :is(.home-kicker,.eyebrow,.section-kicker,.home-product-badge,.pill,.badge,.shot-tag,.shot-brand-chip,.shot-availability,.shot-product-header>small,.provider-showcase-count),#root .home-hero-content>.home-kicker{font-size:.75rem;line-height:1.4}
