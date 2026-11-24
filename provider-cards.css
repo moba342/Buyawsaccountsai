@@ -51,3 +51,11 @@
 @media(min-width:768px){#root .home-provider-grid,#root .provider-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(min-width:1024px){#root .home-provider-grid,#root .provider-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:767px){#root .provider-showcase-card{padding:16px}#root .provider-showcase-banner{padding:20px;min-height:0}#root .provider-showcase-price>strong{font-size:36px}}
+
+/* Illuminated variant badges: restrained sapphire lighting, motion on intent. */
+#root .provider-showcase-count{position:relative;isolation:isolate;overflow:hidden;padding:7px 12px;border:1px solid rgba(186,211,255,.34);background:linear-gradient(135deg,rgba(214,231,255,.19),rgba(118,158,223,.08));color:#FFFFFF;box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 0 12px rgba(132,177,255,.12);backdrop-filter:blur(8px);transition:transform 250ms ease,border-color 250ms ease,box-shadow 250ms ease,background 250ms ease}
+#root .provider-showcase-count>span{color:#E2E8F0}
+#root .provider-showcase-count::before{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(110deg,transparent 20%,rgba(224,239,255,.24) 48%,transparent 76%);transform:translateX(-150%);transition:transform 650ms ease}
+@media(hover:hover) and (pointer:fine){#root .provider-showcase-card:hover .provider-showcase-count{transform:translateY(-2px);border-color:rgba(168,210,255,.8);background:linear-gradient(135deg,rgba(161,202,255,.24),rgba(77,130,211,.15));box-shadow:inset 0 1px 0 rgba(255,255,255,.26),0 0 0 1px rgba(151,197,255,.1),0 0 18px rgba(126,182,255,.28)}#root .provider-showcase-card:hover .provider-showcase-count::before{transform:translateX(150%)}}
+#root .provider-showcase-card:focus-within .provider-showcase-count{border-color:rgba(168,210,255,.8);box-shadow:inset 0 1px 0 rgba(255,255,255,.26),0 0 18px rgba(126,182,255,.28)}
+@media(prefers-reduced-motion:reduce){#root .provider-showcase-count,#root .provider-showcase-count::before{transition:none;transform:none!important}#root .provider-showcase-count::before{display:none}}
