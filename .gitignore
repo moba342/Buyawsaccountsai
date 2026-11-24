@@ -9,3 +9,5 @@ dist/
 .qa*/
 
 .vercel/
+.vercel
+.env*
