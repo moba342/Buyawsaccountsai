@@ -98,3 +98,7 @@ Color and surface reference: https://dotmirror.com/ (palette applied without cop
 `typography.css` defines the shared heading, body, card, navigation, CTA, form, pricing, counter, and footer styles. Breakpoints: mobile below 768px, tablet 768–1023px, desktop 1024px and above. Sizes use rem units to respect browser text preferences. Headings use Plus Jakarta Sans; body text uses Inter, both with sans-serif fallbacks.
 
 `buttons.css` supplies the shared pill-shaped primary and secondary actions, gradient/grain treatment, hover/press states, filter pills, and keyboard focus rings.
+
+## Vercel
+
+Import this GitHub repository into Vercel. The root `vercel.json` selects Vite, installs with `npm ci`, builds with `npm run build`, and publishes `dist`. No environment variables are required. The existing hash routes work on Vercel without rewrite rules. `.vercelignore` excludes local dependencies, Git history, and Sites-only metadata from CLI uploads.
