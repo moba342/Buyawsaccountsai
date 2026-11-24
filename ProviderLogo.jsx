@@ -1,0 +1,3 @@
+import React from 'react';
+const assets={'AWS':'aws.svg','Google Cloud':'google-cloud.svg','Azure':'azure.svg','DigitalOcean':'digitalocean.svg','Oracle Cloud':'oracle-cloud.svg','Hetzner':'hetzner.png','Vultr':'vultr.png','Linode':'linode.png','IBM Cloud':'ibm-cloud.png','Kamatera':'kamatera.png','Alibaba Cloud':'alibaba-cloud.png','Atlantic.Net':'atlantic-net.png'};
+export default function ProviderLogo({name,className='',decorative=false}){return <img className={'platform-logo '+(name==='AWS'||name==='Oracle Cloud'?'wide-logo ':'')+className} src={'/logos/'+assets[name]} alt={decorative?'':name+' logo'} width="40" height="40" decoding="async"/>}
