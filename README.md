@@ -56,6 +56,8 @@ The `.openai/hosting.json` file records the existing Sites project identity and 
 
 | File | Purpose |
 | --- | --- |
+| `HomePage.jsx` | Redesigned homepage, provider directory, searchable catalog, and buying process |
+| `homepage.css` | Homepage illustration, responsive layouts, typography, and animations |
 | `src.jsx` | App, navigation, catalog, comparison, guides, FAQ, and order dialogs |
 | `catalog.js` | All provider definitions, variants, reference prices, and product features |
 | `DetailPages.jsx` | Provider and individual product detail pages |
