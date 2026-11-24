@@ -2,7 +2,7 @@
 
 # Cloudlane — Cloud Account Storefront
 
-Responsive React storefront with an orange and dark theme, 53 product variants across 12 providers, and original provider logo assets stored locally.
+Responsive React storefront with a cobalt blue, white, and soft-gray theme with a dark footer, 53 product variants across 12 providers, and original provider logo assets stored locally.
 
 ## Links
 
@@ -44,7 +44,7 @@ The `.openai/hosting.json` file records the existing Sites project identity and 
 
 - Product catalog with provider filters and search.
 - Twelve provider pages and 53 individual product variant pages.
-- Custom orange and dark dropdowns with keyboard controls and live variant prices.
+- Custom themed dropdowns with keyboard controls and live variant prices.
 - Side-by-side comparison of up to three variants.
 - Buying guides and expandable FAQs.
 - Contact cards with Telegram, email, and Google Maps links.
@@ -65,7 +65,8 @@ The `.openai/hosting.json` file records the existing Sites project identity and 
 | `VariantSelect.jsx` | Custom themed variant dropdown |
 | `ProviderLogo.jsx` | Logo asset mapping and reusable logo component |
 | `ProviderStrip.jsx` | Continuously scrolling provider logo strip |
-| `style.css` | Theme, responsive layouts, and motion styles |
+| `style.css` | Base styles, responsive layouts, and motion |
+| `theme.css` | DotMirror-inspired palette and surface overrides; preserves layout and typography |
 | `public/logos/` | Locally hosted provider logos |
 | `index.html` | HTML entry point and metadata |
 | `package-lock.json` | Reproducible dependency versions |
@@ -89,3 +90,5 @@ This is a frontend storefront. It has no payment processor, automated account fu
 Provider trademarks belong to their respective owners. The storefront is independent and does not claim affiliation with those providers. Reference prices and product claims should be confirmed before taking payments.
 
 `node_modules/` and generated `dist/` output are intentionally excluded from Git; `npm ci` and `npm run build` recreate them.
+
+Color and surface reference: https://dotmirror.com/ (palette applied without copying content or changing the existing layouts).
