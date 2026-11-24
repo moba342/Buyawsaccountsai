@@ -27,3 +27,9 @@
 @media(prefers-reduced-motion:reduce){#root .provider-showcase-card,#root .provider-showcase-card::before,#root .provider-showcase-action{transition:none}#root .provider-showcase-card:hover,#root .provider-showcase-card:active{transform:none}}
 
 #root .provider-showcase-top{flex-wrap:wrap}#root .provider-showcase-count{max-width:100%;white-space:normal}#root .provider-showcase-action>span{min-width:0;overflow-wrap:anywhere}
+
+/* Match the shared premium button finish. */
+#root .provider-showcase-action{border-radius:var(--action-radius);border-color:#0050e5;background:var(--action-blue);box-shadow:0 2px 0 #003bb8,0 4px 10px #0057fc24,inset 0 1px #ffffff4d;letter-spacing:-.01em;padding:.6875rem .875rem;gap:.625rem}
+#root .provider-showcase-action svg{width:1.375rem;height:1.375rem;padding:.25rem;border:1px solid #ffffff33;border-radius:.375rem;background:#ffffff14}
+@media(hover:hover) and (pointer:fine){#root .provider-showcase-card:hover .provider-showcase-action{filter:brightness(1.035);box-shadow:0 3px 0 #003bb8,0 7px 16px #0057fc33,inset 0 1px #ffffff66}}
+#root .provider-showcase-card:active .provider-showcase-action{box-shadow:inset 0 2px 4px #003aac33}
