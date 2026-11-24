@@ -102,3 +102,7 @@ Color and surface reference: https://dotmirror.com/ (palette applied without cop
 ## Vercel
 
 Import this GitHub repository into Vercel. The root `vercel.json` selects Vite, installs with `npm ci`, builds with `npm run build`, and publishes `dist`. No environment variables are required. The existing hash routes work on Vercel without rewrite rules. `.vercelignore` excludes local dependencies, Git history, and Sites-only metadata from CLI uploads.
+
+## Responsive optimization
+
+The shared mobile-first system is defined in `typography.css` and `responsive.css`, with locally served Plus Jakarta Sans and Inter variable WOFF2 fonts. See [the responsive implementation and validation report](docs/responsive-optimization.md) for tokens, viewport coverage, accessibility checks, and measurement limitations.
