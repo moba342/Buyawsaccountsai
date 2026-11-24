@@ -106,3 +106,5 @@ Import this GitHub repository into Vercel. The root `vercel.json` selects Vite, 
 ## Responsive optimization
 
 The shared mobile-first system is defined in `typography.css` and `responsive.css`, with locally served Plus Jakarta Sans and Inter variable WOFF2 fonts. See [the responsive implementation and validation report](docs/responsive-optimization.md) for tokens, viewport coverage, accessibility checks, and measurement limitations.
+
+Provider cards are shared through `ProviderCard.jsx` and `provider-cards.css`, including original logos, variant counts, concise descriptions, starting prices, and accessible provider links.
