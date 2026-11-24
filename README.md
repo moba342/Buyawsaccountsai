@@ -2,7 +2,7 @@
 
 # Cloudlane — Cloud Account Storefront
 
-Responsive React storefront with a cobalt blue, white, and soft-gray theme with a dark footer, 53 product variants across 12 providers, and original provider logo assets stored locally.
+Responsive React storefront with a Midnight Sapphire Navy theme with soft white surfaces and a midnight footer, 53 product variants across 12 providers, and original provider logo assets stored locally.
 
 ## Links
 
@@ -66,7 +66,7 @@ The `.openai/hosting.json` file records the existing Sites project identity and 
 | `ProviderLogo.jsx` | Logo asset mapping and reusable logo component |
 | `ProviderStrip.jsx` | Continuously scrolling provider logo strip |
 | `style.css` | Base styles, responsive layouts, and motion |
-| `theme.css` | DotMirror-inspired palette and surface overrides; preserves layout and typography |
+| `theme.css` | Midnight Sapphire design tokens and surface styles; preserves layout and typography |
 | `public/logos/` | Locally hosted provider logos |
 | `index.html` | HTML entry point and metadata |
 | `package-lock.json` | Reproducible dependency versions |
@@ -108,3 +108,7 @@ Import this GitHub repository into Vercel. The root `vercel.json` selects Vite, 
 The shared mobile-first system is defined in `typography.css` and `responsive.css`, with locally served Plus Jakarta Sans and Inter variable WOFF2 fonts. See [the responsive implementation and validation report](docs/responsive-optimization.md) for tokens, viewport coverage, accessibility checks, and measurement limitations.
 
 Provider cards are shared through `ProviderCard.jsx` and `provider-cards.css`, including original logos, variant counts, concise descriptions, starting prices, and accessible provider links.
+
+## Midnight Sapphire design system
+
+Colors, gradients, shadows and corner radii are centralized in `theme.css`; reusable button states are defined in `buttons.css`. See [the theme implementation report](docs/midnight-sapphire.md) and [browser validation results](docs/midnight-sapphire-validation.json).

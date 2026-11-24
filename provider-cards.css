@@ -1,35 +1,29 @@
 /* Shared premium provider cards: original logos, restrained blue accents and a clear action. */
-#root .provider-showcase-card{position:relative;isolation:isolate;display:flex;flex-direction:column;min-width:0;height:100%;padding:var(--card-pad);border:1px solid #dce3ef;border-radius:1.25rem;background:linear-gradient(145deg,#fff 58%,#f4f7ff);box-shadow:0 2px 5px #10182804,0 10px 28px -20px #12439d30;text-align:left;text-decoration:none;color:#09090b;transition:transform 240ms cubic-bezier(.2,.7,.2,1),border-color 240ms ease,box-shadow 240ms ease}
-#root .provider-showcase-card::before{content:'';position:absolute;pointer-events:none;inset:0;z-index:-1;border-radius:inherit;background:radial-gradient(ellipse at 100% 0,#0057fc0e,transparent 60%);opacity:.75;transition:opacity 240ms ease}
+#root .provider-showcase-card{position:relative;isolation:isolate;display:flex;flex-direction:column;min-width:0;height:100%;padding:var(--card-pad);border:1px solid var(--card-border);border-radius:var(--radius-card);background:var(--surface);box-shadow:var(--shadow-card);text-align:left;text-decoration:none;color:var(--heading);transition:transform var(--duration-card) cubic-bezier(.2,.7,.2,1),border-color var(--duration-card) ease,box-shadow var(--duration-card) ease}
+#root .provider-showcase-card::before{content:'';position:absolute;pointer-events:none;inset:0;z-index:-1;border-radius:inherit;background:none;opacity:0;transition:opacity var(--duration-card) ease}
 #root .provider-showcase-top{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:2.75rem;margin-bottom:1.5rem}
 #root .provider-showcase-top>.platform-logo{display:block;object-fit:contain;object-position:left center;width:2.75rem;height:2.75rem;max-width:3.5rem;background:transparent;border:0;box-shadow:none;border-radius:0}
 #root .provider-showcase-top>.wide-logo{width:3.5rem}
-#root .provider-showcase-count{display:inline-flex;align-items:center;gap:.375rem;flex-shrink:0;border:1px solid #d6e4ff;border-radius:999px;background:#f5f8ff;padding:.375rem .6875rem;color:#0057fc;font-family:var(--font-body);font-size:var(--type-eyebrow);line-height:1.4;white-space:nowrap}
+#root .provider-showcase-count{display:inline-flex;align-items:center;gap:.375rem;flex-shrink:0;border:1px solid var(--card-border);border-radius:var(--radius-pill);background:var(--secondary-hover);padding:.375rem .6875rem;color:var(--sapphire);font-family:var(--font-body);font-size:var(--type-eyebrow);line-height:1.4;white-space:nowrap}
 #root .provider-showcase-count strong{font-weight:700;font-variant-numeric:tabular-nums}
-#root .provider-showcase-count>span{color:#52658b;font-weight:500}
+#root .provider-showcase-count>span{color:var(--body-text);font-weight:500}
 #root .provider-showcase-copy{min-width:0;margin-bottom:1.5rem}
-#root .provider-showcase-copy :is(h2,h3){font-family:var(--font-heading);font-size:var(--type-card-title);font-weight:600;line-height:1.4;letter-spacing:-.025em;text-wrap:pretty;overflow-wrap:anywhere;margin:0 0 .625rem;color:#101828}
-#root .provider-showcase-copy p{font-family:var(--font-body);font-size:var(--type-card-description);font-weight:400;line-height:1.65;text-wrap:pretty;overflow-wrap:break-word;color:#525c70;margin:0}
-#root .provider-showcase-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.875rem;margin-top:auto;padding-top:1.125rem;border-top:1px solid #e5eaf3}
+#root .provider-showcase-copy :is(h2,h3){font-family:var(--font-heading);font-size:var(--type-card-title);font-weight:600;line-height:1.4;letter-spacing:-.025em;text-wrap:pretty;overflow-wrap:anywhere;margin:0 0 .625rem;color:var(--heading)}
+#root .provider-showcase-copy p{font-family:var(--font-body);font-size:var(--type-card-description);font-weight:400;line-height:1.65;text-wrap:pretty;overflow-wrap:break-word;color:var(--body-text);margin:0}
+#root .provider-showcase-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.875rem;margin-top:auto;padding-top:1.125rem;border-top:1px solid var(--card-border)}
 #root .provider-showcase-price{display:flex;flex-direction:column;gap:.125rem;min-width:0}
-#root .provider-showcase-price>span{font-size:var(--type-small);font-weight:400;line-height:1.5;color:#697386}
-#root .provider-showcase-price>strong{font-family:var(--font-heading);font-size:var(--type-h3);font-weight:700;line-height:1.1;letter-spacing:-.04em;color:#101828;font-variant-numeric:tabular-nums}
-#root .provider-showcase-action{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:var(--touch-height);padding:.6875rem 1rem;max-width:100%;border:1px solid #0057fc;border-radius:999px;background:linear-gradient(135deg,#2f6bff,#0057fc 58%,#0042d1);color:#fff;font-family:var(--font-body);font-size:var(--type-button);font-weight:600;line-height:1.4;text-align:center;box-shadow:0 3px 8px #0057fc26,inset 0 1px #ffffff40;transition:box-shadow 240ms ease,filter 240ms ease}
+#root .provider-showcase-price>span{font-size:var(--type-small);font-weight:400;line-height:1.5;color:var(--muted-text)}
+#root .provider-showcase-price>strong{font-family:var(--font-heading);font-size:var(--type-h3);font-weight:700;line-height:1.1;letter-spacing:-.04em;color:var(--heading);font-variant-numeric:tabular-nums}
 #root .provider-showcase-action svg{flex-shrink:0}
 #root .home-provider-grid,#root .provider-grid{gap:var(--grid-gap);padding:.25rem;grid-template-columns:minmax(0,1fr)}
-#root .provider-showcase-card:focus-visible{outline:3px solid #0057fc;outline-offset:4px}
-@media(hover:hover) and (pointer:fine){#root .provider-showcase-card:hover{transform:translateY(-5px);border-color:#a6c1ff;box-shadow:0 6px 16px #10182808,0 20px 40px -20px #0057fc35}#root .provider-showcase-card:hover::before{opacity:1}#root .provider-showcase-card:hover .provider-showcase-action{filter:brightness(1.06);box-shadow:0 6px 14px #0057fc38,inset 0 1px #ffffff4d}}
+#root .provider-showcase-card:focus-visible{outline:3px solid var(--focus-color);outline-offset:4px}
+@media(hover:hover) and (pointer:fine){#root .provider-showcase-card:hover{transform:translateY(-2px);border-color:var(--card-hover-border);box-shadow:var(--shadow-card-hover)}#root .provider-showcase-card:hover::before{opacity:1}}
 #root .provider-showcase-card:active{transform:translateY(-1px)}
 @media(min-width:640px){#root .home-provider-grid,#root .provider-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(min-width:1024px) and (max-width:1199px){#root .home-provider-grid,#root .provider-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(min-width:1200px){#root .home-provider-grid,#root .provider-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
-@media(max-width:639px){#root .provider-showcase-card{padding:1.25rem;border-radius:1rem}#root .provider-showcase-top{margin-bottom:1.125rem}#root .provider-showcase-copy{margin-bottom:1.25rem}#root .provider-showcase-bottom{padding-top:1rem}#root .provider-showcase-price>strong{font-size:var(--type-h3)}}
+@media(max-width:639px){#root .provider-showcase-card{padding:var(--card-pad);border-radius:var(--radius-card)}#root .provider-showcase-top{margin-bottom:1.125rem}#root .provider-showcase-copy{margin-bottom:1.25rem}#root .provider-showcase-bottom{padding-top:1rem}#root .provider-showcase-price>strong{font-size:var(--type-h3)}}
 @media(prefers-reduced-motion:reduce){#root .provider-showcase-card,#root .provider-showcase-card::before,#root .provider-showcase-action{transition:none}#root .provider-showcase-card:hover,#root .provider-showcase-card:active{transform:none}}
 
 #root .provider-showcase-top{flex-wrap:wrap}#root .provider-showcase-count{max-width:100%;white-space:normal}#root .provider-showcase-action>span{min-width:0;overflow-wrap:anywhere}
 
-/* Match the shared premium button finish. */
-#root .provider-showcase-action{border-radius:var(--action-radius);border-color:#0050e5;background:var(--action-blue);box-shadow:0 2px 0 #003bb8,0 4px 10px #0057fc24,inset 0 1px #ffffff4d;letter-spacing:-.01em;padding:.6875rem .875rem;gap:.625rem}
-#root .provider-showcase-action svg{width:1.375rem;height:1.375rem;padding:.25rem;border:1px solid #ffffff33;border-radius:.375rem;background:#ffffff14}
-@media(hover:hover) and (pointer:fine){#root .provider-showcase-card:hover .provider-showcase-action{filter:brightness(1.035);box-shadow:0 3px 0 #003bb8,0 7px 16px #0057fc33,inset 0 1px #ffffff66}}
-#root .provider-showcase-card:active .provider-showcase-action{box-shadow:inset 0 2px 4px #003aac33}

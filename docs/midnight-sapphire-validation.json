@@ -1,0 +1,289 @@
+{
+  "date": "2026-11-25",
+  "responsive": {
+    "checks": 1152,
+    "failures": [],
+    "errors": [],
+    "sizes": [
+      {
+        "width": 320,
+        "h1": "32px"
+      },
+      {
+        "width": 360,
+        "h1": "32.6412px"
+      },
+      {
+        "width": 375,
+        "h1": "34px"
+      },
+      {
+        "width": 390,
+        "h1": "34px"
+      },
+      {
+        "width": 414,
+        "h1": "34px"
+      },
+      {
+        "width": 430,
+        "h1": "34px"
+      },
+      {
+        "width": 768,
+        "h1": "44.0064px"
+      },
+      {
+        "width": 820,
+        "h1": "46px"
+      },
+      {
+        "width": 834,
+        "h1": "46px"
+      },
+      {
+        "width": 1024,
+        "h1": "56px"
+      },
+      {
+        "width": 1280,
+        "h1": "56px"
+      },
+      {
+        "width": 1366,
+        "h1": "56px"
+      },
+      {
+        "width": 1440,
+        "h1": "56px"
+      },
+      {
+        "width": 1536,
+        "h1": "56px"
+      },
+      {
+        "width": 1920,
+        "h1": "56px"
+      },
+      {
+        "width": 2560,
+        "h1": "56px"
+      }
+    ]
+  },
+  "accessibility": [
+    {
+      "route": "products",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "route": "providers",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "route": "compare",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "route": "guides",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "route": "faq",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "route": "contact",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "route": "aws-accounts",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "route": "product/aws-100k-credit",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "route": "products",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "providers",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "compare",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "guides",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "faq",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "contact",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "aws-accounts",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "product/aws-100k-credit",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "order-dialog",
+      "violations": []
+    }
+  ],
+  "interactions": {
+    "notes": [
+      "Mobile menu focus and Escape",
+      "Modal focus trap, return focus, dropdown keyboard/price update, Escape",
+      "Search and full catalog",
+      "Comparison limit and keyboard table scrolling",
+      "Reduced motion"
+    ],
+    "zoom": [
+      {
+        "width": 320,
+        "route": "products",
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "route": "providers",
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "route": "compare",
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "route": "guides",
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "route": "faq",
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "route": "contact",
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "route": "product/aws-100k-credit",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "route": "products",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "route": "providers",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "route": "compare",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "route": "guides",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "route": "faq",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "route": "contact",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "route": "product/aws-100k-credit",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "route": "products",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "route": "providers",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "route": "compare",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "route": "guides",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "route": "faq",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "route": "contact",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "route": "product/aws-100k-credit",
+        "overflow": false
+      }
+    ],
+    "errors": []
+  },
+  "tokenChecks": {
+    "buttonRadius": "10px",
+    "cardRadius": "16px",
+    "buttonHeights": {
+      "mobile": "48px",
+      "tablet": "46px",
+      "desktop": "44px"
+    },
+    "buttonFont": "Inter 600 15px",
+    "pageBackground": "#F8FAFC",
+    "footerBackground": "#080F24"
+  }
+}

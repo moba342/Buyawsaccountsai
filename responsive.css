@@ -1,6 +1,6 @@
 /* Central mobile-first spacing and layout tokens. Colors remain in theme.css. */
-:root{--container-width:80rem;--container-pad:1rem;--section-pad:2.5rem;--hero-pad:3rem;--card-pad:1rem;--grid-gap:1rem;--content-gap:1rem;--heading-gap:.75rem;--card-radius:.75rem;--touch-height:3rem;--input-height:3rem}
-@media(min-width:768px){:root{--container-pad:1.5rem;--section-pad:3.5rem;--hero-pad:4rem;--card-pad:1.25rem;--grid-gap:1.25rem;--content-gap:1.25rem;--heading-gap:1rem;--card-radius:.875rem;--touch-height:2.75rem}}
+:root{--container-width:80rem;--container-pad:1rem;--section-pad:2.5rem;--hero-pad:3rem;--card-pad:1rem;--grid-gap:1rem;--content-gap:1rem;--heading-gap:.75rem;--card-radius:.75rem;--touch-height:var(--button-height);--input-height:3rem}
+@media(min-width:768px){:root{--container-pad:1.5rem;--section-pad:3.5rem;--hero-pad:4rem;--card-pad:1.25rem;--grid-gap:1.25rem;--content-gap:1.25rem;--heading-gap:1rem;--card-radius:.875rem;--touch-height:var(--button-height)}}
 @media(min-width:1024px){:root{--container-pad:2rem;--section-pad:5rem;--hero-pad:6rem;--card-pad:1.5rem;--grid-gap:1.5rem;--content-gap:1.5rem;--heading-gap:1.25rem;--card-radius:1rem}}
 html{scroll-padding-block-start:1rem}body{margin:0}*,*::before,*::after{box-sizing:border-box}
 #root{min-width:0}#root :is(main,section,article,aside,nav,form){min-width:0}
@@ -47,7 +47,7 @@ html{scroll-padding-block-start:1rem}body{margin:0}*,*::before,*::after{box-sizi
 #root .home-section-heading{gap:var(--content-gap);align-items:end}
 #root .home-search{width:100%;min-width:0;min-height:var(--input-height);padding:.625rem .875rem}
 #root .home-search input{width:100%;min-width:0;font-size:1rem}
-#root .home-filter-row{max-width:100%;overflow-x:auto;padding-block:.25rem 1rem;gap:.5rem;scroll-padding-inline:1rem;scrollbar-color:#a6c1ff #f0f5ff}
+#root .home-filter-row{max-width:100%;overflow-x:auto;padding-block:.25rem 1rem;gap:.5rem;scroll-padding-inline:1rem;scrollbar-color:var(--secondary-border) var(--hero-bg)}
 #root .home-catalog-caption{line-height:1.5}#root .home-catalog-caption>span{font-size:var(--type-small)}
 #root .home-faq,#root .home-process{display:grid;grid-template-columns:minmax(0,1fr)}
 #root :is(.home-section-heading>p,.process-intro>p,.process-item p,.shot-about>p,.shot-intro-text,.lead,.faq-page details p,.modal p){max-width:70ch}
@@ -86,8 +86,8 @@ html{scroll-padding-block-start:1rem}body{margin:0}*,*::before,*::after{box-sizi
 #root .table-scroll table{min-width:44rem}
 #root .shot-table :is(th,td):nth-child(3){display:table-cell}
 #root .table-scroll :is(th,td){min-width:10rem;padding:1rem;vertical-align:top}
-#root .table-scroll :is(th,td):first-child{position:sticky;left:0;z-index:1;background:#fafafa;box-shadow:1px 0 #e4e4e7}
-#root .table-scroll thead th:first-child{background:#f4f4f5;z-index:2}
+#root .table-scroll :is(th,td):first-child{position:sticky;left:0;z-index:1;background:var(--page-bg);box-shadow:1px 0 var(--card-border)}
+#root .table-scroll thead th:first-child{background:var(--secondary-hover);z-index:2}
 #root .table-scroll strong{font-size:var(--type-card-title);line-height:1.4;overflow-wrap:anywhere}
 #root .selection-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:.75rem;max-height:30rem;overflow:auto;padding:.25rem}
 #root .selection-grid label{min-height:4.25rem;padding:1rem;gap:.75rem;align-items:center;border-radius:var(--card-radius)}
@@ -95,7 +95,7 @@ html{scroll-padding-block-start:1rem}body{margin:0}*,*::before,*::after{box-sizi
 #root .selection-grid strong{font-size:var(--type-small);font-weight:500;line-height:1.5;align-items:flex-start;overflow-wrap:anywhere}
 #root .selection-grid strong img{flex-shrink:0;margin-top:.15rem}
 #root .selection-grid input{width:1.125rem;height:1.125rem;flex-shrink:0}
-#root .selection-grid label:has(input:focus-visible){outline:2px solid #0057fc;outline-offset:2px}
+#root .selection-grid label:has(input:focus-visible){outline:2px solid var(--focus-color);outline-offset:2px}
 #root .guide-art{height:11rem;aspect-ratio:16/9}
 #root .guide-copy{border-radius:0;display:flex;flex-direction:column;flex:1;gap:.75rem}
 #root .guide-copy h2,#root .guide-copy p{margin:0}
@@ -138,15 +138,15 @@ html{scroll-padding-block-start:1rem}body{margin:0}*,*::before,*::after{box-sizi
 #root header .brand{font-size:1.25rem;flex-shrink:0}
 #root header .brand-icon{width:1.75rem;height:1.75rem;margin-right:.375rem}
 #root header .header-button{margin:0 0 0 auto;padding:.625rem .75rem;gap:.375rem;min-height:2.75rem;white-space:nowrap}
-#root header nav{display:none;position:absolute;top:100%;left:var(--container-pad);right:var(--container-pad);padding:1rem;background:#fff;border:1px solid #e4e4e7;border-radius:var(--card-radius);z-index:30;box-shadow:0 10px 30px #10182814}
+#root header nav{display:none;position:absolute;top:100%;left:var(--container-pad);right:var(--container-pad);padding:1rem;background:var(--surface);border:1px solid var(--card-border);border-radius:var(--card-radius);z-index:30;box-shadow:0 10px 30px #10182814}
 #root header nav.open{display:flex;flex-direction:column;align-items:stretch;gap:.25rem}
 #root header nav a{display:flex;align-items:center;min-height:3rem;padding:.5rem .75rem;border-radius:.5rem}
 #root header .menu{display:flex!important;margin:0;min-width:2.75rem;min-height:2.75rem}
 #root .topline{height:auto;min-height:2rem;padding:.5rem var(--container-pad);gap:.5rem;line-height:1.5;font-size:var(--type-eyebrow);text-align:center}
-#root .skip-link{position:fixed;left:1rem;top:1rem;z-index:200;transform:translateY(-200%);padding:.75rem 1rem;background:#0057fc;color:#fff;border-radius:999px}
+#root .skip-link{position:fixed;left:1rem;top:1rem;z-index:200;transform:translateY(-200%);padding:.75rem 1rem;background:var(--focus-color);color:var(--surface);border-radius:999px}
 #root .skip-link:focus{transform:none}
-#root :focus-visible{outline:2px solid #0057fc;outline-offset:3px}
-#root .store-footer :focus-visible{outline-color:#7fa5fe}
+#root :focus-visible{outline:2px solid var(--focus-color);outline-offset:3px}
+#root .store-footer :focus-visible{outline-color:var(--on-dark-muted)}
 #root .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media(min-width:390px){#root .home-provider-grid,#root .provider-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#root .home-provider-tile-bottom,#root .provider-bottom{align-items:flex-start;flex-direction:column}#root .home-product-actions,#root .shot-product-actions{grid-template-columns:repeat(2,minmax(0,1fr))}#root .store-footer-columns{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(min-width:768px){#root .home-hero{grid-template-columns:1fr;gap:var(--grid-gap)}#root .home-hero-content{text-align:center}#root .home-hero-content>p{margin-inline:auto}#root .home-hero-actions .primary{width:auto}#root .home-statline{grid-template-columns:repeat(3,minmax(0,1fr));max-width:35rem;margin-inline:auto}#root .home-statline>div:last-child{grid-column:auto}#root .home-visual{height:27rem}#root .cloud-sculpture{width:19rem;top:.5rem}#root .provider-azure{top:16rem}#root .hero-featured{bottom:2.5rem}#root .home-provider-grid,#root .provider-grid,#root .home-product-grid,#root .shot-products,#root .guide-grid,#root .shot-services,#root .shot-reasons,#root .shot-usecases,#root .shot-steps,#root .contact-cards{grid-template-columns:repeat(2,minmax(0,1fr))}#root .shot-audience{grid-template-columns:repeat(2,minmax(0,1fr))}#root .home-provider-tile-bottom,#root .provider-bottom{flex-direction:row;align-items:center}#root .home-search{max-width:24rem}#root .home-section-heading{display:flex;text-align:left}#root .home-section-heading .home-kicker{justify-content:flex-start}#root .selection-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#root .shot-hero-row{flex-wrap:nowrap}#root .shot-provider-icon{width:4rem;height:4rem}#root .page-variant-picker>div{grid-template-columns:minmax(0,1fr) auto}#root .page-variant-picker .variant-select{grid-column:1/-1}#root .shot-stats>div{flex-direction:row}#root .shot-stats strong{font-size:var(--type-body)}#root .shot-overview{grid-template-columns:repeat(2,minmax(0,1fr))}#root .shot-overview dl>div{flex-wrap:nowrap}#root .footer-callout{display:flex;align-items:center;justify-content:space-between}#root header{min-height:5rem}#root header .brand{font-size:1.5rem}#root .modal .order-contact{display:inline-flex;width:auto;margin:0 0 0 .75rem}#root .modal>.primary{width:auto}#root .contact-cards article:last-child{grid-column:auto}#root .home-final{padding:var(--section-pad) var(--container-pad)}}
@@ -156,8 +156,8 @@ html{scroll-padding-block-start:1rem}body{margin:0}*,*::before,*::after{box-sizi
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}#root *,#root *::before,#root *::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 #root .home-filter-row>button,#root .filters button,#root .shot-table button,#root .shot-related a,#root .shot-related button{min-height:var(--touch-height)}
 /* Use the existing darker text token on tinted surfaces to meet AA contrast. */
-#root :is(.selection-grid .checked small,.shot-related>p,.page-variant-picker strong small,table thead th){color:#52525b}
-#root .shot-section-title>a{color:#0057fc}
+#root :is(.selection-grid .checked small,.shot-related>p,.page-variant-picker strong small,table thead th){color:var(--body-text)}
+#root .shot-section-title>a{color:var(--focus-color)}
 @media(min-width:1024px){#root header{flex-wrap:wrap}#root header nav,#root header nav.open{flex-wrap:wrap;min-width:0;max-width:100%;justify-content:center}}
 @media(max-width:374px){#root header .brand{font-size:var(--type-card-title)}#root header .header-button{padding-inline:.625rem}#root header .telegram-header>svg{display:none}#root header{gap:.375rem}}
 #root .shot-stats{grid-template-columns:repeat(auto-fit,minmax(min(100%,8rem),1fr))}
@@ -174,5 +174,5 @@ html{scroll-padding-block-start:1rem}body{margin:0}*,*::before,*::after{box-sizi
 
 /* Shared provider title and short description. Keep the pricing row aligned. */
 #root .home-provider-tile h3,#root .provider-card h2{margin-top:var(--content-gap);margin-bottom:.5rem}
-#root .home-provider-tile .provider-card-description,#root .provider-card .provider-card-description{font-size:var(--type-card-description);line-height:1.6;font-weight:400;color:#52525b;margin:0 0 var(--content-gap);overflow-wrap:break-word;text-wrap:pretty}
+#root .home-provider-tile .provider-card-description,#root .provider-card .provider-card-description{font-size:var(--type-card-description);line-height:1.6;font-weight:400;color:var(--body-text);margin:0 0 var(--content-gap);overflow-wrap:break-word;text-wrap:pretty}
 #root .home-provider-tile-bottom,#root .provider-bottom{padding-top:1rem;margin-top:auto}
