@@ -186,3 +186,5 @@ body,#root{background:var(--page-bg);color:var(--heading)}
 #root .home-hero-content>.home-kicker{margin-inline:0;justify-content:flex-start;text-align:left}
 #root .home-hero-actions,#root .home-hero-proof{justify-content:flex-start;text-align:left}
 #root .home-statline{margin-inline:0;text-align:left}
+
+#root .home-hero-content>.home-kicker::before{display:none}
