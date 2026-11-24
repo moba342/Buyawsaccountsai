@@ -171,3 +171,8 @@ html{scroll-padding-block-start:1rem}body{margin:0}*,*::before,*::after{box-sizi
 #root .home-provider-tile-bottom,#root .provider-bottom{width:100%;margin-top:auto}
 #root .home-provider-tile h3{margin-block:var(--content-gap)}
 #root .provider-card p{margin-block:var(--content-gap)}
+
+/* Shared provider title and short description. Keep the pricing row aligned. */
+#root .home-provider-tile h3,#root .provider-card h2{margin-top:var(--content-gap);margin-bottom:.5rem}
+#root .home-provider-tile .provider-card-description,#root .provider-card .provider-card-description{font-size:var(--type-card-description);line-height:1.6;font-weight:400;color:#52525b;margin:0 0 var(--content-gap);overflow-wrap:break-word;text-wrap:pretty}
+#root .home-provider-tile-bottom,#root .provider-bottom{padding-top:1rem;margin-top:auto}
