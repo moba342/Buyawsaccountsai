@@ -360,3 +360,15 @@ html body #root>.store-footer{position:relative;isolation:isolate;overflow:hidde
 #root .footer-wordmark-text>span{color:rgba(255,153,0,.35)}
 @media(max-width:767px){#root .footer-wordmark-text::after{background-position:0 0}}
 @media(prefers-reduced-motion:reduce){#root .footer-wordmark-text::after{display:none;transition:none}}
+
+/* Immersive footer horizon and illuminated display lettering. */
+#root .footer-stage{position:relative;isolation:isolate;padding-top:32px}
+#root .footer-horizon{position:absolute;z-index:1;pointer-events:none;top:54%;left:50%;width:max(1800px,260vw);aspect-ratio:2.4;transform:translateX(-50%);border-radius:50%;background:radial-gradient(40% 18% at 50% 0%,rgba(66,87,121,.6),transparent 100%),linear-gradient(#142440 0%,#080F24 24%);box-shadow:inset 0 1px rgba(170,195,232,.7),inset 0 18px 40px -20px rgba(100,139,194,.6),0 -2px 30px rgba(66,103,165,.3),0 -40px 140px -10px rgba(38,61,104,.65)}
+#root .footer-wordmark{position:relative;z-index:0;overflow:visible;padding:40px 0 0;margin-bottom:0;container-type:inline-size;line-height:1.08}
+#root .footer-wordmark::after{display:none}
+#root .footer-wordmark>.footer-wordmark-text{display:block;white-space:nowrap;font-size:9.2cqw;line-height:1.12;font-weight:700;letter-spacing:-.055em;background:linear-gradient(180deg,rgba(255,255,255,.28) 0%,rgba(200,215,240,.12) 60%,rgba(120,151,196,.025) 100%);background-clip:text;-webkit-background-clip:text;color:transparent}
+#root .footer-wordmark-text::after{content:'Buy AWS Accounts AI';background:radial-gradient(circle 240px at var(--pointer-x,50%) calc(var(--pointer-y,50%) - 40px),rgba(188,212,248,.95) 0%,rgba(119,157,215,.75) 28%,transparent 72%);background-clip:text;-webkit-background-clip:text;color:transparent;transition:opacity 350ms ease}
+#root .store-footer .footer-bottom{z-index:2;border:0;padding:40px 0 16px;margin-top:0;min-height:100px}
+#root header .brand{font-size:18px;letter-spacing:-.05em}
+#root .store-footer .brand{font-size:23px;letter-spacing:-.05em}
+@media(max-width:767px){#root header .brand{font-size:12px;letter-spacing:-.055em}#root .store-footer .brand{font-size:19px}#root .footer-stage{padding-top:8px}#root .footer-wordmark{padding-top:24px}#root .footer-wordmark-text::after{background:radial-gradient(circle 150px at var(--pointer-x,50%) calc(var(--pointer-y,50%) - 24px),#BDD4F8,transparent 72%);background-clip:text;-webkit-background-clip:text}#root .footer-horizon{top:40%;width:2000px}#root .store-footer .footer-bottom{padding-top:32px;padding-bottom:64px}}
