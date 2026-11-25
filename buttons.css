@@ -40,3 +40,10 @@
 #root .shot-table button{min-width:108px;min-height:44px;padding:11px 18px;font-size:.875rem;font-weight:600;line-height:1.4;border-radius:10px;white-space:nowrap;box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 3px 8px rgba(8,15,36,.13)}
 @media(min-width:768px) and (max-width:1023px){#root .shot-table button{min-height:46px;padding:12px 18px}}
 @media(max-width:767px){#root .shot-table button{min-width:104px;min-height:48px;padding:13px 16px}}
+
+/* Consistent, single-line provider filters with comfortable touch targets. */
+#root .home-filter-row{display:flex;align-items:center;gap:8px;overflow-x:auto;padding-block:4px 12px;scroll-padding-inline:4px}
+#root .home-filter-row>button{display:inline-flex;flex:0 0 auto;align-items:center;justify-content:center;gap:8px;min-height:44px;width:auto;max-width:none;padding:11px 16px;border-radius:10px;font-family:var(--font-body);font-size:.875rem;font-weight:600;line-height:1.4;letter-spacing:0;white-space:nowrap;word-break:normal;overflow-wrap:normal}
+#root .home-filter-row>button .platform-logo{width:18px;height:18px;flex:0 0 18px;object-fit:contain}
+@media(min-width:768px) and (max-width:1023px){#root .home-filter-row>button{min-height:46px;padding-block:12px}}
+@media(max-width:767px){#root .home-filter-row>button{min-height:48px;padding:13px 14px}}
