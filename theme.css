@@ -259,3 +259,13 @@ body,#root{font-family:var(--font-body);font-optical-sizing:auto;-webkit-font-sm
 
 /* Text-only badge capsules without decorative dots. */
 #root :is(.home-kicker,.eyebrow,.section-kicker,.home-product-badge,.pill,.badge,.shot-tag,.shot-brand-chip,.shot-availability,.shot-product-header>small,.provider-showcase-count)::before{display:none}
+
+/* Premium satin-sapphire badges, shared across all page templates. */
+#root{--badge-background:linear-gradient(145deg,#30486F 0%,#1C3051 44%,#0C172E 100%);--badge-border:#526C91;--badge-shadow:inset 0 1px 0 rgba(255,255,255,.22),inset 0 -1px 0 rgba(4,10,24,.18),0 3px 8px rgba(8,15,36,.12)}
+#root :is(.home-kicker,.eyebrow,.section-kicker,.home-product-badge,.pill,.badge,.shot-tag,.shot-brand-chip,.shot-availability,.shot-product-header>small,.provider-showcase-count),#root .home-hero-content>.home-kicker{background:var(--badge-background);border:1px solid var(--badge-border);border-radius:999px;color:#F8FAFC;box-shadow:var(--badge-shadow);padding:8px 14px;min-height:32px;font-size:.75rem;font-weight:600;line-height:1.45;letter-spacing:.025em;gap:6px;transition:background 200ms ease,border-color 200ms ease,box-shadow 200ms ease,transform 200ms ease}
+#root :is(.home-kicker,.eyebrow,.section-kicker),#root .home-hero-content>.home-kicker{padding:10px 18px;min-height:36px;letter-spacing:.065em}
+#root .provider-showcase-count{backdrop-filter:none}
+#root .provider-showcase-count>strong{font-weight:700;color:#FFFFFF}
+#root .provider-showcase-count>span{color:#E2E8F0}
+@media(hover:hover) and (pointer:fine){#root :is(.home-kicker,.eyebrow,.section-kicker,.home-product-badge,.pill,.badge,.shot-tag,.shot-brand-chip,.shot-availability,.shot-product-header>small,.provider-showcase-count):hover,#root .home-hero-content>.home-kicker:hover,#root .provider-showcase-card:hover .provider-showcase-count{background:linear-gradient(145deg,#38557F 0%,#223B60 44%,#12213D 100%);border-color:#809CC2;box-shadow:inset 0 1px 0 rgba(255,255,255,.26),0 4px 11px rgba(8,15,36,.16);transform:translateY(-1px)}}
+@media(max-width:767px){#root :is(.home-kicker,.eyebrow,.section-kicker),#root .home-hero-content>.home-kicker{padding:9px 14px;font-size:.6875rem;letter-spacing:.04em}}
