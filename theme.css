@@ -352,3 +352,11 @@ html body #root>.store-footer{position:relative;isolation:isolate;overflow:hidde
 @media(min-width:1100px){html body #root>header{grid-template-columns:minmax(225px,1fr) auto minmax(150px,1fr);gap:16px}}
 @media(max-width:767px){html body #root>header{display:grid;grid-template-columns:minmax(0,1fr) 40px 44px;gap:6px}#root header .brand{font-size:13px;letter-spacing:-.045em}#root header .brand-icon{width:28px;height:28px;flex-basis:28px;margin-right:6px}#root header .brand-icon svg{width:21px;height:21px}#root header>.telegram-header{font-size:0;gap:0;width:40px;min-width:40px;min-height:40px;padding:10px}#root header .telegram-header>svg{display:block;width:18px;height:18px}#root header nav.open{grid-column:1/-1;grid-row:2}#root .footer-wordmark{font-size:clamp(27px,8vw,60px);padding-top:32px}#root .store-footer .brand{font-size:20px}}
 @media(prefers-reduced-motion:reduce){#root .footer-wordmark::after{animation:none;transform:none;opacity:1}}
+
+/* Pointer-following sapphire ink, updated at most once per animation frame. */
+#root .footer-wordmark>.footer-wordmark-text{position:relative;display:block;color:rgba(203,213,225,.16)}
+#root .footer-wordmark-text::after{content:'buyawsaccountsai.';position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle 180px at var(--pointer-x,50%) calc(var(--pointer-y,50%) - 48px),#C5DFFF 0%,#7DA7E6 30%,#425F91 60%,transparent 100%);background-clip:text;-webkit-background-clip:text;color:transparent;opacity:0;transition:opacity 250ms ease}
+@media(hover:hover) and (pointer:fine){#root .footer-wordmark[data-hover=true] .footer-wordmark-text::after{opacity:1}}
+#root .footer-wordmark-text>span{color:rgba(255,153,0,.35)}
+@media(max-width:767px){#root .footer-wordmark-text::after{background-position:0 0}}
+@media(prefers-reduced-motion:reduce){#root .footer-wordmark-text::after{display:none;transition:none}}
