@@ -298,3 +298,10 @@ body,#root{font-family:var(--font-body);font-optical-sizing:auto;-webkit-font-sm
 #root .provider-showcase-logo{background:linear-gradient(145deg,#FFFFFF,#EAF0F8);border-color:#DCE3ED;box-shadow:inset 0 1px 0 #FFFFFF,0 3px 8px rgba(8,15,36,.12)}
 #root :is(.home-product[data-featured=true],.shot-products article[data-featured=true],.store-footer) .platform-logo.platform-logo-sapphire{filter:brightness(0) invert(1)}
 #root .home-filter-row>.selected .platform-logo.platform-logo-sapphire{filter:brightness(0) invert(1);background:transparent}
+
+/* Balanced vertical rhythm around the provider marquee. */
+#root .home-provider-band{padding-top:32px;padding-bottom:32px}
+#root .home-provider-band>span{display:block;margin:0 0 20px;text-align:center}
+#root .home-provider-band .provider-motion-strip{padding-top:24px;padding-bottom:24px}
+@media(min-width:768px){#root .home-provider-band{padding-top:40px;padding-bottom:40px}#root .home-provider-band>span{margin-bottom:24px}#root .home-provider-band .provider-motion-strip{padding-block:28px}}
+@media(min-width:1024px){#root .home-provider-band{padding-top:48px;padding-bottom:48px}#root .home-provider-band .provider-motion-strip{padding-block:32px}}
