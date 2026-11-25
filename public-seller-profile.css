@@ -12,7 +12,7 @@
 #root .seller-public-hero>div>.seller-public-status{font-size:13px;line-height:1.75;color:var(--body-text)}
 #root .public-seller-card{padding:24px;border:1px solid var(--premium-border);border-radius:22px;background:var(--gradient-primary);color:var(--on-dark);box-shadow:var(--shadow-inset)}
 #root .public-seller-heading{display:flex;align-items:center;gap:14px;padding-bottom:22px;margin-bottom:12px;border-bottom:1px solid var(--dark-divider)}
-#root .public-seller-avatar{display:flex;align-items:center;justify-content:center;flex:0 0 56px;width:56px;height:56px;border:1px solid #526C91;border-radius:50%;background:var(--sapphire);color:#C5D8F5}
+#root .public-seller-avatar{display:flex;align-items:center;justify-content:center;overflow:hidden;flex:0 0 56px;width:56px;height:56px;border:1px solid #526C91;border-radius:50%;background:var(--sapphire);color:#C5D8F5}
 #root .public-seller-heading h2{font-size:22px;line-height:1.35;letter-spacing:-.025em;color:#FFFFFF;margin:0 0 5px}
 #root .public-seller-heading p{font-size:13px;line-height:1.5;color:#CBD5E1;margin:0 0 8px}
 #root .public-seller-heading>div>span{display:inline-block;padding:4px 8px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid var(--dark-border);font-size:10px;line-height:1.5;color:#E2E8F0}
@@ -57,3 +57,5 @@
 @media(max-width:767px){#root .seller-public-hero,#root .public-proof-intro{padding:24px 20px;border-radius:18px;margin-bottom:32px}#root .seller-public-hero h1,#root .public-proof-intro h1{font-size:34px}#root .public-seller-card{padding:22px;border-radius:18px}#root .public-seller-heading{gap:12px}#root .public-seller-avatar{width:48px;height:48px;flex-basis:48px}#root .public-seller-heading h2{font-size:20px}#root .public-seller-card dl>div{font-size:12px;gap:12px;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr)}#root .public-seller-contact{font-size:13px;padding:12px}#root .public-proof-facts{grid-template-columns:minmax(0,1fr);gap:16px}#root .public-declaration-article{padding:22px}#root .public-declaration-article dl>div{grid-template-columns:minmax(0,1fr);gap:5px}#root .public-declaration-article h2{font-size:22px}#root .seller-public-record-link>a{width:100%}#root .public-proof-layout{gap:24px}}
 @media(prefers-reduced-motion:reduce){#root .public-seller-contact{transition:none;transform:none}}
 html body #root main.section.inner:is(.seller-verification-page,.public-proof-page){padding-top:0}
+
+#root .public-seller-avatar img{display:block;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center}
