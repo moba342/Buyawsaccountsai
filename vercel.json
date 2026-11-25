@@ -35,6 +35,10 @@
       "destination": "/index.html"
     },
     {
+      "source": "/verification/public-proof/",
+      "destination": "/index.html"
+    },
+    {
       "source": "/:provider-accounts/",
       "destination": "/index.html"
     },
