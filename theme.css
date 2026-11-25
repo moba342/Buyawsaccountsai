@@ -230,3 +230,8 @@ html body #root>header{width:calc(100% - 32px);max-width:calc(var(--container-wi
 @media(min-width:1100px){html body #root>header{grid-template-columns:minmax(160px,1fr) auto minmax(160px,1fr)}}
 @media(max-width:1023px){html body #root>header{border-radius:28px;padding:12px 16px}#root header nav.open{border-radius:18px;margin-top:8px;border:1px solid var(--card-border);background:var(--surface);box-shadow:var(--shadow-card)}}
 @media(max-width:767px){html body #root>header{margin-top:12px;width:calc(100% - 24px);max-width:none;gap:8px;padding:10px 12px;border-radius:24px}#root header>.telegram-header{padding-inline:14px}#root header .brand{font-size:20px}}
+
+/* Navigation states use text color without filled link boxes. */
+#root header nav a,#root header nav a.active{background:transparent;border-color:transparent;box-shadow:none;color:var(--heading);transition:color 200ms ease}
+#root header nav a.active{color:var(--sapphire)}
+@media(hover:hover){#root header nav a:hover{background:transparent;box-shadow:none;color:var(--sapphire)}}
