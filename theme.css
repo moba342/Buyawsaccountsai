@@ -305,3 +305,13 @@ body,#root{font-family:var(--font-body);font-optical-sizing:auto;-webkit-font-sm
 #root .home-provider-band .provider-motion-strip{padding-top:24px;padding-bottom:24px}
 @media(min-width:768px){#root .home-provider-band{padding-top:40px;padding-bottom:40px}#root .home-provider-band>span{margin-bottom:24px}#root .home-provider-band .provider-motion-strip{padding-block:28px}}
 @media(min-width:1024px){#root .home-provider-band{padding-top:48px;padding-bottom:48px}#root .home-provider-band .provider-motion-strip{padding-block:32px}}
+
+/* Benefit cards share the homepage's sapphire-panel and white-body design. */
+#root .shot-reasons article{display:flex;flex-direction:column;align-items:stretch;gap:0;padding:16px;border:1px solid var(--card-border);border-radius:24px;background:var(--surface);box-shadow:var(--shadow-card)}
+#root .shot-reasons .reason-banner{position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center;gap:16px;min-height:112px;padding:24px;border-radius:16px;background:var(--gradient-primary);box-shadow:var(--shadow-inset)}
+#root .shot-reasons .reason-banner::after{content:'';position:absolute;z-index:-1;pointer-events:none;right:-30px;top:-65px;width:130px;height:260px;transform:rotate(-43deg);background:repeating-linear-gradient(90deg,transparent 0 28px,rgba(255,255,255,.045) 28px 55px)}
+#root .shot-reasons .reason-icon{display:flex;align-items:center;justify-content:center;width:44px;height:44px;flex:0 0 44px;border-radius:12px;background:rgba(255,255,255,.08);border:1px solid var(--dark-border);color:#FFFFFF}
+#root .shot-reasons .reason-icon svg{color:inherit}
+#root .shot-reasons .reason-banner h3{color:#FFFFFF;font-size:var(--type-card-title);line-height:1.4;margin:0;overflow-wrap:anywhere}
+#root .shot-reasons article>p{margin:0;padding:24px 8px 8px;color:var(--body-text);font-size:var(--type-card-description);line-height:1.7}
+@media(max-width:767px){#root .shot-reasons article{padding:12px}#root .shot-reasons .reason-banner{padding:20px;gap:12px}#root .shot-reasons article>p{padding:20px 8px 8px}}
