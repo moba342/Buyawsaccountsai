@@ -256,3 +256,6 @@ body,#root{font-family:var(--font-body);font-optical-sizing:auto;-webkit-font-sm
 #root :is(.home-hero-content>p,.contact-hero>p){max-width:54ch}
 #root :is(.home-statline strong,.hero-stats b){font-size:var(--type-counter)}
 #root :is(.home-product-price,.provider-showcase-price>strong){font-size:var(--type-price)}
+
+/* Text-only badge capsules without decorative dots. */
+#root :is(.home-kicker,.eyebrow,.section-kicker,.home-product-badge,.pill,.badge,.shot-tag,.shot-brand-chip,.shot-availability,.shot-product-header>small,.provider-showcase-count)::before{display:none}
