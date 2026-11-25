@@ -35,3 +35,8 @@
 #root :is(.home-final,.shot-order-panel,.contact-bottom,.home-product[data-featured=true],.shot-products article[data-featured=true],.store-footer) :is(button,a):focus-visible{outline-color:var(--on-dark)}
 @media(max-width:767px){#root header{gap:4px}}
 #root .shot-related :is(a,button){display:block;min-width:0;overflow-wrap:anywhere}
+
+/* Compact, consistent purchase actions in provider price tables. */
+#root .shot-table button{min-width:108px;min-height:44px;padding:11px 18px;font-size:.875rem;font-weight:600;line-height:1.4;border-radius:10px;white-space:nowrap;box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 3px 8px rgba(8,15,36,.13)}
+@media(min-width:768px) and (max-width:1023px){#root .shot-table button{min-height:46px;padding:12px 18px}}
+@media(max-width:767px){#root .shot-table button{min-width:104px;min-height:48px;padding:13px 16px}}
