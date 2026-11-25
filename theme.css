@@ -235,3 +235,13 @@ html body #root>header{width:calc(100% - 32px);max-width:calc(var(--container-wi
 #root header nav a,#root header nav a.active{background:transparent;border-color:transparent;box-shadow:none;color:var(--heading);transition:color 200ms ease}
 #root header nav a.active{color:var(--sapphire)}
 @media(hover:hover){#root header nav a:hover{background:transparent;box-shadow:none;color:var(--sapphire)}}
+
+/* Refined reading typography using the locally hosted Inter variable font. */
+body,#root{font-family:var(--font-body);font-optical-sizing:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+#root p{font-size:var(--type-body);font-weight:400;line-height:1.75;letter-spacing:-.012em}
+#root :is(.home-hero-content>p,.contact-hero>p,.shot-intro-text,.lead){font-size:var(--type-hero-description);line-height:1.65;letter-spacing:-.018em}
+#root :is(.provider-showcase-copy p,.home-product>p,.product-card p,.guide-card p,.shot-reasons p,.shot-services p,.shot-usecases p,.shot-steps p,.shot-audience p,.shot-products article>p){font-size:var(--type-card-description);line-height:1.7;letter-spacing:-.01em}
+#root :is(.home-faq,.shot-faq,.faq-page) details p{font-size:var(--type-body);line-height:1.8;letter-spacing:-.01em}
+#root :is(.process-item p,.shot-about p,.guide-card p){max-width:68ch}
+#root :is(.footer-description,.footer-callout p){line-height:1.75;letter-spacing:0}
+@media(max-width:767px){#root p{letter-spacing:-.005em}}
