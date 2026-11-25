@@ -292,3 +292,9 @@ body,#root{font-family:var(--font-body);font-optical-sizing:auto;-webkit-font-sm
 #root .provider-showcase-logo{width:60px;height:54px;padding:10px;border:1px solid rgba(220,227,237,.95);border-radius:13px;background:linear-gradient(145deg,#FFFFFF,#F0F4FA);box-shadow:inset 0 1px 0 #FFFFFF,0 3px 8px rgba(8,15,36,.14)}
 #root .provider-showcase-logo .platform-logo{width:100%;height:100%;object-fit:contain;filter:none}
 @media(max-width:767px){#root header .brand-icon{width:34px;height:34px;flex-basis:34px;border-radius:10px;margin-right:8px}#root header .brand-icon svg{width:23px;height:23px}}
+
+/* Theme-colored provider marks retain the original recognizable artwork. */
+#root .platform-logo.platform-logo-sapphire{filter:brightness(0) saturate(100%) invert(12%) sepia(27%) saturate(1365%) hue-rotate(177deg) brightness(90%) contrast(93%)}
+#root .provider-showcase-logo{background:linear-gradient(145deg,#FFFFFF,#EAF0F8);border-color:#DCE3ED;box-shadow:inset 0 1px 0 #FFFFFF,0 3px 8px rgba(8,15,36,.12)}
+#root :is(.home-product[data-featured=true],.shot-products article[data-featured=true],.store-footer) .platform-logo.platform-logo-sapphire{filter:brightness(0) invert(1)}
+#root .home-filter-row>.selected .platform-logo.platform-logo-sapphire{filter:brightness(0) invert(1);background:transparent}
