@@ -217,3 +217,8 @@ html body #root>header{isolation:isolate;min-height:88px;background:rgba(255,255
 
 /* Centered header aligned with the main page container. */
 html body #root>header{width:100%;max-width:var(--container-width);margin-inline:auto;padding-left:max(var(--container-pad),env(safe-area-inset-left));padding-right:max(var(--container-pad),env(safe-area-inset-right))}
+
+/* Rounded hero panel with a defined edge and generous lower spacing. */
+#root .home-hero{border:1px solid var(--card-border);border-radius:24px;padding-bottom:48px}
+@media(min-width:768px){#root .home-hero{border-radius:28px;padding-bottom:64px}}
+@media(min-width:1024px){#root .home-hero{border-radius:32px;padding-bottom:88px}}
