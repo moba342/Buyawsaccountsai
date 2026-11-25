@@ -275,3 +275,12 @@ body,#root{font-family:var(--font-body);font-optical-sizing:auto;-webkit-font-sm
 @keyframes badge-indicator-breathe{0%,100%{opacity:.5}50%{opacity:1}}
 @media(hover:hover) and (pointer:fine){#root .provider-showcase-card:hover .provider-showcase-count::before{transform:none}}
 @media(prefers-reduced-motion:reduce){#root :is(.home-kicker,.eyebrow,.section-kicker,.home-product-badge,.pill,.badge,.shot-tag,.shot-brand-chip,.shot-availability,.shot-product-header>small,.provider-showcase-count)::before,#root .home-hero-content>.home-kicker::before{display:block;animation:none;opacity:1}}
+
+/* Catalog search matches the light sapphire surface system. */
+#root .home-search{display:flex;align-items:center;gap:10px;width:100%;min-height:48px;padding:12px 16px;background:var(--surface);border:1px solid var(--card-border);border-radius:12px;color:var(--body-text);box-shadow:var(--shadow-card);transition:border-color 200ms ease,box-shadow 200ms ease}
+#root .home-search>svg{width:18px;height:18px;flex:0 0 18px;color:var(--sapphire)}
+#root .home-search input{display:block;flex:1;min-width:0;width:100%;padding:0;border:0;border-radius:0;outline:none;background:transparent;color:var(--heading);box-shadow:none;font-family:var(--font-body);font-size:1rem;font-weight:400;line-height:1.5}
+#root .home-search input::placeholder{color:var(--muted-text);opacity:1}
+#root .home-search:focus-within{border-color:var(--sapphire);outline:2px solid var(--sapphire);outline-offset:3px;box-shadow:var(--shadow-card)}
+#root .home-search input:focus-visible{outline:none;box-shadow:none}
+@media(min-width:768px){#root .home-search{max-width:26rem}}
