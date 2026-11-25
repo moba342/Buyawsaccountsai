@@ -137,3 +137,11 @@
 @keyframes commerce-check-spin{to{transform:rotate(360deg)}}
 @media(max-width:767px){#root .commerce-check-payment{width:100%}#root .commerce-expected{align-items:flex-start;flex-direction:column;gap:4px}#root .commerce-payment-result{padding:14px}#root .commerce-payment-result h3{font-size:16px}}
 @media(prefers-reduced-motion:reduce){#root .commerce-check-spinner{animation:none}}
+
+#root .commerce-sidebar{display:grid;gap:24px;min-width:0;align-content:start}
+#root .commerce-sidebar>.commerce-summary{position:static}
+#root .commerce-sidebar>.public-seller-card{min-width:0;padding:22px;border-radius:var(--radius-card)}
+#root .commerce-sidebar .public-seller-card dl>div{font-size:12px;gap:12px}
+#root .commerce-sidebar .public-seller-heading h2{font-size:20px}
+#root .commerce-sidebar .public-seller-caption{font-size:11px}
+@media(max-width:767px){#root .commerce-sidebar{gap:20px}#root .commerce-sidebar>.public-seller-card{padding:20px}}
