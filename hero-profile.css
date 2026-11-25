@@ -1,0 +1,19 @@
+/* Seller portrait integrated into the homepage's existing cloud composition. */
+#root .home-visual-profile{height:520px}
+#root .home-visual-profile .cloud-sculpture{width:350px;max-width:100%;height:250px;top:32px;animation:none;filter:drop-shadow(0 12px 22px rgba(8,15,36,.12))}
+#root .home-hero-profile{position:absolute;z-index:2;display:block;top:82px;left:50%;width:200px;height:200px;transform:translateX(-50%);border:3px solid var(--surface);border-radius:50%;background:var(--midnight);box-shadow:0 0 0 1px var(--card-border),0 12px 28px rgba(8,15,36,.18);overflow:hidden;transition:box-shadow var(--duration-button) ease}
+#root .home-hero-profile img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}
+#root .home-hero-profile:focus-visible{outline:3px solid var(--sapphire);outline-offset:6px}
+#root .home-visual-profile .visual-provider{z-index:3}
+#root .home-visual-profile .provider-aws{top:18px;left:0}
+#root .home-visual-profile .provider-gcp{top:300px;right:0}
+#root .home-visual-profile .provider-azure{top:300px;left:0}
+#root .home-visual-profile .infrastructure-platform{top:254px;width:220px}
+#root .home-visual-profile .hero-featured{z-index:4;bottom:40px}
+@media(min-width:1360px){#root .home-visual-profile .provider-aws{top:18px}#root .home-visual-profile .provider-gcp{top:172px}#root .home-visual-profile .provider-azure{top:282px}}
+@media(min-width:768px) and (max-width:1023px){#root .home-visual-profile{height:520px;max-width:520px}#root .home-visual-profile .provider-gcp{top:244px}#root .home-visual-profile .provider-azure{top:282px}}
+@media(max-width:767px){#root .home-visual-profile{height:470px;max-width:420px}#root .home-hero-profile{top:64px;width:180px;height:180px}#root .home-visual-profile .cloud-sculpture{top:30px;width:300px;height:230px}#root .home-visual-profile .provider-aws{top:10px;left:0}#root .home-visual-profile .provider-gcp{top:264px;right:0}#root .home-visual-profile .provider-azure{top:264px;left:0}#root .home-visual-profile .infrastructure-platform{top:220px;width:190px}#root .home-visual-profile .hero-featured{bottom:40px}}
+@media(hover:hover){#root .home-hero-profile:hover{box-shadow:0 0 0 1px var(--premium-border),0 16px 32px rgba(8,15,36,.2)}}
+@media(prefers-reduced-motion:reduce){#root .home-hero-profile{transition:none}}
+
+@media(max-width:374px){#root .home-visual-profile{height:520px}#root .home-visual-profile .provider-gcp{top:252px}#root .home-visual-profile .provider-azure{top:320px}}
