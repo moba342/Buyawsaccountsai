@@ -426,3 +426,13 @@ html body #root>.store-footer{position:relative;isolation:isolate;overflow:hidde
 #root .shot-products article .shot-product-actions>a{background:#FFFFFF;color:var(--navy);border:1px solid var(--secondary-border)}
 @media(hover:hover){#root .shot-products article:not([data-featured=true]):hover{border-color:var(--card-hover-border);box-shadow:var(--shadow-card-hover)}}
 @media(max-width:767px){#root .shot-products .shot-product-header{gap:10px}}
+
+/* Consistent high-contrast icon tiles across sapphire content cards. */
+#root{--icon-tile-bg:linear-gradient(145deg,#FFFFFF 0%,#EAF0F8 100%);--icon-tile-border:#D3DFEE;--icon-tile-shadow:inset 0 1px 0 #FFFFFF,0 2px 5px rgba(8,15,36,.1)}
+#root :is(.shot-audience,.shot-services,.shot-usecases,.shot-steps) article>svg,#root .shot-reasons .reason-icon{display:flex;align-items:center;justify-content:center;flex:0 0 44px;width:44px;height:44px;padding:10px;border:1px solid var(--icon-tile-border);border-radius:12px;background:var(--icon-tile-bg);color:var(--navy);box-shadow:var(--icon-tile-shadow)}
+#root :is(.shot-audience,.shot-services,.shot-usecases,.shot-steps) article>svg{stroke:var(--navy);stroke-width:1.8}
+#root .shot-reasons .reason-icon>svg{width:23px;height:23px;padding:0;background:none;border:0;color:var(--navy);stroke:var(--navy);stroke-width:1.8;box-shadow:none}
+#root .provider-showcase-logo{border-radius:12px;background:var(--icon-tile-bg);border-color:var(--icon-tile-border);box-shadow:var(--icon-tile-shadow)}
+#root .shot-provider-icon{background:var(--icon-tile-bg);border:1px solid var(--icon-tile-border);border-radius:16px;box-shadow:var(--icon-tile-shadow)}
+#root .shot-provider-icon .platform-logo{width:70%;height:70%;object-fit:contain}
+@media(max-width:767px){#root :is(.shot-audience,.shot-services,.shot-usecases,.shot-steps) article>svg,#root .shot-reasons .reason-icon{width:40px;height:40px;flex-basis:40px;padding:9px;border-radius:11px}}
