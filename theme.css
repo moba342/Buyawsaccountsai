@@ -214,3 +214,6 @@ html body #root>header{isolation:isolate;min-height:88px;background:rgba(255,255
 #root>header+main{margin-top:32px}
 @media(min-width:768px){#root>header+main{margin-top:40px}}
 @media(min-width:1024px){#root>header+main{margin-top:48px}}
+
+/* Centered header aligned with the main page container. */
+html body #root>header{width:100%;max-width:var(--container-width);margin-inline:auto;padding-left:max(var(--container-pad),env(safe-area-inset-left));padding-right:max(var(--container-pad),env(safe-area-inset-right))}
