@@ -7,6 +7,14 @@
   "trailingSlash": true,
   "rewrites": [
     {
+      "source": "/cart/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/checkout/",
+      "destination": "/index.html"
+    },
+    {
       "source": "/products/",
       "destination": "/index.html"
     },

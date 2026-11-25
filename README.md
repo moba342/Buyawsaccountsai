@@ -50,7 +50,7 @@ The `.openai/hosting.json` file records the existing Sites project identity and 
 - Contact cards with Telegram, email, and Google Maps links.
 - Smooth button feedback and an infinitely scrolling provider logo strip.
 - Responsive mobile, tablet, and desktop layouts; reduced-motion support.
-- Buy Now opens an inquiry dialog with copyable order information and a Telegram link.
+- Buy Now opens the package selector, with Add to cart and Checkout actions.
 
 ## Project files
 
@@ -75,7 +75,7 @@ Update `catalog.js` to edit prices, product names, providers, and features. Rela
 
 ## Current purchase flow
 
-This is a frontend storefront. It has no payment processor, automated account fulfillment, backend order storage, or email delivery service. Buy Now prepares an inquiry; customers confirm final pricing, availability, provider eligibility, delivery, and terms with the seller on Telegram or by email. No secrets or API keys are required for the existing site.
+This is a frontend storefront. It has no payment processor, automated account fulfillment, backend order storage, or email delivery service. The cart persists package IDs and quantities in local storage. Checkout prepares a copyable order request with USDT TRC20, BEP20, or ERC20 instructions; customers send the request to the seller on Telegram and confirm final pricing, availability, provider eligibility, delivery, and terms. Payments are reviewed manually; the site never marks an order as paid. No secrets or API keys are required for the existing site.
 
 ## Content and asset references
 
@@ -101,7 +101,7 @@ Color and surface reference: https://dotmirror.com/ (palette applied without cop
 
 ## Vercel
 
-Import this GitHub repository into Vercel. The root `vercel.json` selects Vite, installs with `npm ci`, builds with `npm run build`, and publishes `dist`. No environment variables are required. The existing hash routes work on Vercel without rewrite rules. `.vercelignore` excludes local dependencies, Git history, and Sites-only metadata from CLI uploads.
+Import this GitHub repository into Vercel. The root `vercel.json` selects Vite, installs with `npm ci`, builds with `npm run build`, and publishes `dist`. No environment variables are required. Clean routes, including `/cart/` and `/checkout/`, use the SPA rewrite rules in `vercel.json`. `.vercelignore` excludes local dependencies, Git history, and Sites-only metadata from CLI uploads.
 
 ## Responsive optimization
 
@@ -112,3 +112,11 @@ Provider cards are shared through `ProviderCard.jsx` and `provider-cards.css`, i
 ## Midnight Sapphire design system
 
 Colors, gradients, shadows and corner radii are centralized in `theme.css`; reusable button states are defined in `buttons.css`. See [the theme implementation report](docs/midnight-sapphire.md) and [browser validation results](docs/midnight-sapphire-validation.json).
+
+## Cart and USDT checkout
+
+- `/cart/`: remove packages, change quantities (1–99), and review catalog-derived totals. `cart.js` validates stored IDs and quantities; prices always come from `catalog.js`.
+- `/checkout/`: choose USDT TRC20 (TRON), BEP20 (BNB Smart Chain), or ERC20 (Ethereum). Receiving addresses are maintained in `payments.js`. Check wallet details before changing this file.
+- Buyer contact details remain in component memory, not local storage. Preparing an order creates a local draft only. The buyer explicitly copies and sends it on Telegram. No order is sent automatically and no transaction is verified by the website.
+- Cart and checkout are marked `noindex, nofollow`. Direct links and refreshes work through the Vercel rewrites.
+- Validation: production build; browser checks for cart persistence, totals, quantity limits, removal, empty and invalid storage states, draft preparation, network switching, exact wallet clipboard values, mobile/tablet/desktop layouts, and WCAG A/AA scans. No lint or type-check script is configured.
