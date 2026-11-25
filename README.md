@@ -120,3 +120,7 @@ Colors, gradients, shadows and corner radii are centralized in `theme.css`; reus
 - Buyer contact details remain in component memory, not local storage. Preparing an order creates a local draft only. The buyer explicitly copies and sends it on Telegram. No order is sent automatically and no transaction is verified by the website.
 - Cart and checkout are marked `noindex, nofollow`. Direct links and refreshes work through the Vercel rewrites.
 - Validation: production build; browser checks for cart persistence, totals, quantity limits, removal, empty and invalid storage states, draft preparation, network switching, exact wallet clipboard values, mobile/tablet/desktop layouts, and WCAG A/AA scans. No lint or type-check script is configured.
+
+### Checkout QR codes
+
+The selected USDT network displays a local SVG wallet QR code and a downloadable PNG. `npm run generate:payment-qr` generates both formats from the receiving addresses in `payments.js`; `npm run build` runs this automatically. QR codes contain the address only, without an amount or network identifier. The checkout labels the selected network explicitly. Both EVM networks intentionally encode the same owner-supplied address; TRC20 uses the separate TRON address.

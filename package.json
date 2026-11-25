@@ -5,15 +5,20 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "preview": "vite preview --host 0.0.0.0",
+    "generate:payment-qr": "node scripts/generate-payment-qr.mjs",
+    "prebuild": "npm run generate:payment-qr"
   },
   "dependencies": {
+    "lucide-react": "^0.468.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "lucide-react": "^0.468.0",
     "vite": "^6.0.0"
   },
   "engines": {
     "node": ">=22"
+  },
+  "devDependencies": {
+    "qrcode": "^1.5.4"
   }
 }
