@@ -463,3 +463,12 @@ html body #root>.store-footer{position:relative;isolation:isolate;overflow:hidde
 #root .screenshot-page[data-provider="Azure"] :is(.shot-reasons,.shot-services,.shot-usecases,.shot-steps,.shot-audience) :focus-visible{outline-color:var(--sapphire)}
 @media(hover:hover){#root .screenshot-page[data-provider="Azure"] :is(.shot-reasons,.shot-services,.shot-usecases,.shot-steps,.shot-audience)>article:hover{border-color:#94A3B8;box-shadow:0 8px 22px rgba(8,15,36,.07);transform:translateY(-1px)}}
 @media(max-width:767px){#root .screenshot-page[data-provider="Azure"] :is(.shot-reasons,.shot-services,.shot-usecases,.shot-steps,.shot-audience)>article{padding:20px}}
+
+/* Supplied brand artwork, preserved in its original colors. */
+#root header .brand{display:flex;align-items:center;width:240px;max-width:100%;min-width:0}
+#root .site-brand-logo{display:block;width:100%;height:auto;object-fit:contain;filter:none}
+html body #root>header{padding-block:8px}
+#root .store-footer .brand{width:300px;max-width:100%;padding:10px 16px;background:#FFFFFF;border:1px solid #DCE3ED;border-radius:14px}
+@media(min-width:1100px){html body #root>header{grid-template-columns:minmax(240px,1fr) auto minmax(150px,1fr)}}
+@media(max-width:1023px){#root header .brand{width:220px}}
+@media(max-width:767px){#root header .brand{width:100%;max-width:200px}#root .store-footer .brand{width:260px}}
