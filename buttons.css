@@ -71,3 +71,6 @@
 
 /* Mobile header actions stay within their own grid columns. */
 @media(max-width:767px){html body #root>header{grid-template-columns:minmax(0,1fr) 44px 44px;column-gap:8px}#root header .header-button.telegram-header{display:inline-flex;align-items:center;justify-content:center;justify-self:end;width:44px;min-width:44px;max-width:44px;height:44px;min-height:44px;margin:0;padding:12px;font-size:0;line-height:0;gap:0;border-radius:12px;overflow:hidden}#root header .header-button.telegram-header>svg{display:block;flex:0 0 18px;width:18px;height:18px}#root header button.menu{display:flex;align-items:center;justify-content:center;width:44px;min-width:44px;max-width:44px;min-height:44px;height:44px;margin:0;padding:10px;border-radius:12px;justify-self:end}#root header button.menu>svg{width:22px;height:22px;flex:0 0 22px}}
+
+/* Keep the expanded desktop navigation clear of the logo and contact action. */
+@media(min-width:1024px){#root header nav,#root header nav.open{gap:2px;flex-wrap:wrap}#root header nav a{padding-inline:9px;font-size:14px}}
