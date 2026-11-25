@@ -1,0 +1,60 @@
+/* Editorial product guides share the storefront's Midnight Sapphire tokens. */
+#root .product-buying-article{margin-top:48px;border:1px solid var(--card-border);border-radius:20px;background:var(--surface);overflow:hidden;box-shadow:var(--shadow-card)}
+#root .product-article-heading{padding:36px;background:var(--gradient-dark);color:var(--on-dark);border-bottom:1px solid var(--premium-border)}
+#root .product-article-heading>span{display:block;font-size:11px;letter-spacing:.08em;font-weight:600;line-height:1.6;color:var(--on-dark-muted)}
+#root .product-article-heading h2{font-size:32px;line-height:1.3;letter-spacing:-.03em;color:var(--on-dark);margin:16px 0}
+#root .product-article-heading>p{font-size:16px;line-height:1.85;color:var(--on-dark-muted);max-width:78ch;margin:0}
+#root .product-article-facts{display:flex;flex-wrap:wrap;gap:20px 40px;padding-top:24px;margin-top:24px;border-top:1px solid var(--dark-divider)}
+#root .product-article-facts>span{font-size:12px;line-height:1.6;color:var(--on-dark-muted)}
+#root .product-article-facts strong{display:block;font-size:15px;color:var(--on-dark);font-weight:600;margin-top:4px}
+#root .product-article-body{padding:32px 36px}
+#root .product-article-byline{display:flex;gap:8px;align-items:center;font-size:12px;line-height:1.7;color:var(--body-text);margin:0 0 28px}
+#root .product-article-byline svg{flex-shrink:0;color:var(--sapphire)}
+#root .product-article-body>section{position:relative;padding:28px 0;border-top:1px solid var(--card-border)}
+#root .product-article-number{font-size:11px;font-weight:600;line-height:1.6;letter-spacing:.1em;color:var(--sapphire)}
+#root .product-article-body h3{font-size:22px;line-height:1.4;letter-spacing:-.02em;margin:10px 0 16px;color:var(--heading)}
+#root .product-article-body>section>p{font-size:16px;line-height:1.85;max-width:83ch;color:var(--body-text);margin:0 0 16px}
+#root .product-article-body>section>p:last-child{margin-bottom:0}
+#root .product-article-body ul{margin:20px 0 0;padding:20px 20px 20px 40px;border-radius:var(--radius-button);background:var(--hero-bg);border:1px solid var(--card-border)}
+#root .product-article-body li{font-size:14px;line-height:1.85;color:var(--body-text);padding:3px 0}
+#root .product-article-seller{display:flex;align-items:flex-start;gap:16px;padding:24px;margin-top:8px;border:1px solid var(--card-border);border-radius:var(--radius-card);background:var(--page-bg)}
+#root .product-article-seller>svg{flex-shrink:0;color:var(--sapphire);margin-top:3px}
+#root .product-article-seller h3{font-size:19px;margin:0 0 10px}
+#root .product-article-seller p{font-size:14px;line-height:1.8;color:var(--body-text);margin:0 0 10px}
+#root .product-article-seller a{display:inline-flex;align-items:center;gap:6px;min-height:44px;margin-right:24px;color:var(--navy);font-size:13px;font-weight:600;text-decoration:underline;text-underline-offset:4px}
+#root .product-article-actions{display:flex;align-items:center;flex-wrap:wrap;gap:14px;margin-top:24px}
+#root .product-article-actions>*{font-size:14px}
+#root .catalog-articles{margin:48px 0;padding:32px;border:1px solid var(--card-border);border-radius:20px;background:var(--surface);box-shadow:var(--shadow-card)}
+#root .catalog-articles-intro{max-width:82ch;margin-bottom:28px}
+#root .catalog-articles-intro h2{font-size:36px;line-height:1.25;letter-spacing:-.035em;margin:20px 0;color:var(--heading)}
+#root .catalog-articles-intro h2>span{color:var(--sapphire)}
+#root .catalog-articles-intro p{font-size:16px;line-height:1.85;color:var(--body-text);margin:0 0 16px}
+#root .catalog-articles-intro p a{color:var(--navy);text-decoration:underline;text-underline-offset:4px}
+#root .catalog-article-providers{display:grid;gap:14px}
+#root .catalog-article-providers>details{margin:0;border:1px solid var(--card-border);border-radius:var(--radius-card);background:var(--surface);overflow:hidden}
+#root .catalog-article-providers>details>summary{display:flex;justify-content:space-between;align-items:center;gap:16px;list-style:none;padding:20px 24px;cursor:pointer;background:var(--page-bg)}
+#root .catalog-article-providers>details>summary::-webkit-details-marker{display:none}
+#root .catalog-article-providers>details>summary>span{display:flex;align-items:center;gap:12px;min-width:0;color:var(--body-text);font-size:12px;line-height:1.6}
+#root .catalog-article-providers>details>summary strong{color:var(--heading);font-size:17px;line-height:1.5;font-weight:600}
+#root .catalog-article-providers>details>summary img{width:28px;height:28px;object-fit:contain;flex-shrink:0}
+#root .catalog-article-providers>details>summary svg{flex-shrink:0;color:var(--sapphire);transition:transform 200ms ease}
+#root .catalog-article-providers>details[open]>summary>span>svg{transform:rotate(180deg)}
+#root .catalog-provider-reading{padding:24px}
+#root .catalog-provider-reading>p{font-size:15px;line-height:1.85;color:var(--body-text);margin:0 0 24px;max-width:84ch}
+#root .catalog-variant-reading{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+#root .catalog-variant-reading>article{padding:20px;border:1px solid var(--card-border);border-radius:12px;background:var(--page-bg);min-width:0}
+#root .catalog-variant-reading>article>div{display:flex;flex-direction:column;align-items:flex-start;gap:10px;margin-bottom:12px}
+#root .catalog-variant-reading h3{font-size:17px;line-height:1.5;letter-spacing:-.02em;color:var(--heading);margin:0}
+#root .catalog-variant-reading h3 a{display:inline;min-height:44px}
+#root .catalog-variant-reading h3 svg{vertical-align:middle;margin-left:6px;color:var(--sapphire)}
+#root .catalog-variant-reading>article>div>span{font-size:15px;font-weight:600;color:var(--navy)}
+#root .catalog-variant-reading small{font-size:12px;color:var(--body-text);font-weight:400}
+#root .catalog-variant-reading p{font-size:14px;line-height:1.85;color:var(--body-text);margin:0}
+#root .catalog-article-closing{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:28px;margin-top:28px;border-top:1px solid var(--card-border)}
+#root .catalog-article-closing h3{font-size:22px;line-height:1.4;color:var(--heading);margin:0 0 12px}
+#root .catalog-article-closing p{font-size:14px;line-height:1.85;color:var(--body-text);max-width:70ch;margin:0}
+#root .catalog-article-closing>a{flex-shrink:0;font-size:13px}
+#root :is(.catalog-articles,.product-buying-article) :is(a,button,summary):focus-visible{outline:2px solid var(--sapphire);outline-offset:4px}
+@media(max-width:1023px){#root .product-article-heading{padding:28px}#root .product-article-body{padding:24px 28px}#root .catalog-articles{padding:26px}#root .catalog-variant-reading{grid-template-columns:minmax(0,1fr)}#root .catalog-article-closing{align-items:flex-start;flex-direction:column}}
+@media(max-width:767px){#root .product-buying-article,#root .catalog-articles{margin-top:32px;border-radius:var(--radius-card)}#root .product-article-heading,#root .product-article-body,#root .catalog-articles{padding:22px 20px}#root .product-article-heading h2{font-size:26px}#root .product-article-heading>p,#root .product-article-body>section>p{font-size:15px;line-height:1.8}#root .product-article-body h3{font-size:20px}#root .product-article-seller{padding:18px;gap:12px}#root .product-article-seller h3{font-size:17px}#root .product-article-seller a{margin-right:0;width:100%;font-size:12px}#root .product-article-actions>*{width:100%;font-size:13px}#root .catalog-articles-intro h2{font-size:28px}#root .catalog-articles-intro p{font-size:15px}#root .catalog-article-providers>details>summary{padding:16px;align-items:flex-start;flex-direction:column;gap:8px}#root .catalog-article-providers>details>summary>span:last-child{width:100%;justify-content:space-between}#root .catalog-article-providers>details>summary strong{font-size:16px}#root .catalog-provider-reading{padding:16px}#root .catalog-variant-reading>article{padding:16px}#root .catalog-variant-reading h3{font-size:16px}#root .catalog-article-closing h3{font-size:20px}#root .catalog-article-closing>a{width:100%}}
+@media(prefers-reduced-motion:reduce){#root .catalog-article-providers>details>summary svg{transition:none}}

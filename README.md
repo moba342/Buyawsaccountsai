@@ -141,3 +141,11 @@ Optional server-only environment variables: `ETHEREUM_RPC_URL`, `BSC_RPC_URL`, `
 Run `npm test` for receipt validation and endpoint input tests, and `npm run build` for production. `vite preview` serves the UI only; the API runs on Vercel or through `vercel dev`.
 
 Protocol references: [Ethereum JSON-RPC](https://ethereum.org/developers/docs/apis/json-rpc/), [BNB Chain RPC implementation](https://github.com/bnb-chain/bsc/blob/master/rpc/json-rpc-api.md), [TRON confirmation semantics](https://developers.tron.network/docs/confirmation-semantics), [Tether supported contracts](https://tether.to/en/supported-protocols/).
+
+## Product buying articles
+
+`productArticles.js` contains original provider guidance and a distinct introduction for every catalog variant. `getProductArticle()` combines those details with package-type checks, the live catalog price, seller documentation guidance, and the current checkout process. Each individual product page renders the full article through `ProductBuyingArticle.jsx`.
+
+The Products page and provider collections also include expandable reading sections with every relevant variant, its reference price, and a link to its full article. These sections use the shared Midnight Sapphire design tokens and internal seller/contact links. Copy describes account-specific verification questions without asserting unsupported third-party certification or cloud-provider authorization.
+
+When adding a product, add its introduction to `variantIntroductions`; `npm test` checks article coverage, unique introductions/titles, reference prices, content length, and route coverage for the catalog. Shared URL helpers live in `catalogPaths.js`, re-exported from `DetailPages.jsx` for existing consumers.

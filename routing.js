@@ -1,4 +1,4 @@
-import{brands,products}from'./catalog';
+import{brands,products}from'./catalog.js';
 const slug=value=>value.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 export const routeIds=['cart','checkout','products','providers','compare','guides','faq','contact','verified','verification/public-proof',...brands.map(b=>slug(b.name)+'-accounts'),...products.map(p=>'product/'+slug(p.provider+' '+p.name))];
 export const validRoute=id=>routeIds.includes(id);
