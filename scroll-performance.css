@@ -7,3 +7,8 @@ html.lenis{scroll-behavior:auto!important}
 #root .footer-wordmark[data-running=false]::after{animation-play-state:paused}
 html[data-motion-hidden=true] #root *,html[data-motion-hidden=true] #root *::before,html[data-motion-hidden=true] #root *::after{animation-play-state:paused!important}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}#root .provider-motion-track,#root .review-track{will-change:auto!important}}
+
+/* Keep the high-refresh scroll budget for movement; resume decorative motion at rest. */
+html[data-scroll-active=true] #root :is(.home-kicker,.eyebrow,.section-kicker,.home-product-badge,.pill,.badge,.shot-tag,.shot-brand-chip,.shot-availability,.shot-product-header>small,.provider-showcase-count)::before,
+html[data-scroll-active=true] #root .footer-wordmark::after{animation-play-state:paused!important}
+@media(hover:hover) and (pointer:fine){html[data-scroll-active=true] #root :is(.provider-showcase-card,.catalog-product-card):hover{transform:none;box-shadow:var(--shadow-card);transition:none}html[data-scroll-active=true] #root .provider-showcase-card:hover::before{opacity:0;transition:none}}

@@ -20,6 +20,33 @@ export function scrollPageTo(target, { immediate = false } = {}) {
 }
 export default function SmoothScrolling({ paused, routeKey }) {
   useEffect(() => {
+    let timer = 0,
+      moving = false;
+    function finish() {
+      clearTimeout(timer);
+      timer = 0;
+      if (moving) {
+        moving = false;
+        delete document.documentElement.dataset.scrollActive;
+      }
+    }
+    function start() {
+      if (!moving) {
+        moving = true;
+        document.documentElement.dataset.scrollActive = 'true';
+      }
+      clearTimeout(timer);
+      timer = setTimeout(finish, 160);
+    }
+    window.addEventListener('scroll', start, { passive: true });
+    window.addEventListener('scrollend', finish, { passive: true });
+    return () => {
+      finish();
+      window.removeEventListener('scroll', start);
+      window.removeEventListener('scrollend', finish);
+    };
+  }, []);
+  useEffect(() => {
     const motion = matchMedia('(prefers-reduced-motion: reduce)'),
       mouse = matchMedia('(hover: hover) and (pointer: fine)');
     let engine = null,
