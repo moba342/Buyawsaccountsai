@@ -372,3 +372,20 @@ html body #root>.store-footer{position:relative;isolation:isolate;overflow:hidde
 #root header .brand{font-size:18px;letter-spacing:-.05em}
 #root .store-footer .brand{font-size:23px;letter-spacing:-.05em}
 @media(max-width:767px){#root header .brand{font-size:12px;letter-spacing:-.055em}#root .store-footer .brand{font-size:19px}#root .footer-stage{padding-top:8px}#root .footer-wordmark{padding-top:24px}#root .footer-wordmark-text::after{background:radial-gradient(circle 150px at var(--pointer-x,50%) calc(var(--pointer-y,50%) - 24px),#BDD4F8,transparent 72%);background-clip:text;-webkit-background-clip:text}#root .footer-horizon{top:40%;width:2000px}#root .store-footer .footer-bottom{padding-top:32px;padding-bottom:64px}}
+
+/* Unified sapphire product cards across the catalog and provider detail pages. */
+#root .home-product,#root .shot-products article{position:relative;isolation:isolate;overflow:hidden;border:1px solid var(--premium-border);border-radius:20px;background:var(--gradient-primary);box-shadow:var(--shadow-card),var(--shadow-inset);color:var(--on-dark);padding:24px}
+#root .home-product::before,#root .shot-products article::before{content:'';position:absolute;z-index:-1;pointer-events:none;right:-52px;top:-90px;width:150px;height:360px;transform:rotate(-43deg);background:repeating-linear-gradient(90deg,transparent 0 28px,rgba(255,255,255,.045) 28px 55px)}
+#root :is(.home-product,.shot-products article) :is(h3,h3 a,.home-product-price,.shot-product-price>div){color:#FFFFFF}
+#root :is(.home-product,.shot-products article) :is(p,li,.home-product-price>span,.shot-product-price>span,.shot-product-price small){color:#CBD5E1}
+#root .home-product-top>div{color:#FFFFFF}
+#root :is(.home-product,.shot-products article) :is(li svg,.shot-product-price svg){color:#BCD3F5}
+#root :is(.home-product,.shot-products article) .platform-logo.platform-logo-sapphire{filter:brightness(0) invert(1);background:transparent}
+#root :is(.home-product,.shot-products article) :is(.home-product-price,.shot-product-price){border-color:rgba(255,255,255,.13)}
+#root .shot-brand-chip{color:#FFFFFF;border-color:rgba(255,255,255,.2)}
+#root .home-product .home-compare{color:#CBD5E1;background:transparent;border-color:transparent;box-shadow:none}
+#root :is(.home-product,.shot-products article):focus-within{outline:2px solid var(--sapphire);outline-offset:3px}
+#root :is(.home-product,.shot-products article) :focus-visible{outline-color:#FFFFFF}
+@media(hover:hover) and (pointer:fine){#root .home-product:hover,#root .shot-products article:hover{border-color:#809CC2;box-shadow:var(--shadow-card-hover),var(--shadow-inset);transform:translateY(-2px)}}
+@media(max-width:767px){#root .home-product,#root .shot-products article{padding:20px;border-radius:16px}}
+@media(prefers-reduced-motion:reduce){#root .home-product,#root .shot-products article{transform:none!important}}
