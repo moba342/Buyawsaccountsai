@@ -436,3 +436,18 @@ html body #root>.store-footer{position:relative;isolation:isolate;overflow:hidde
 #root .shot-provider-icon{background:var(--icon-tile-bg);border:1px solid var(--icon-tile-border);border-radius:16px;box-shadow:var(--icon-tile-shadow)}
 #root .shot-provider-icon .platform-logo{width:70%;height:70%;object-fit:contain}
 @media(max-width:767px){#root :is(.shot-audience,.shot-services,.shot-usecases,.shot-steps) article>svg,#root .shot-reasons .reason-icon{width:40px;height:40px;flex-basis:40px;padding:9px;border-radius:11px}}
+
+/* Restore the original light catalog cards and their readable content hierarchy. */
+#root article.home-product:not([data-featured=true]){background:var(--surface);color:var(--heading);border-color:var(--card-border);border-radius:16px;box-shadow:var(--shadow-card)}
+#root article.home-product:not([data-featured=true])::before{display:none}
+#root article.home-product:not([data-featured=true]) :is(h3,h3 a,.home-product-price,.home-product-top>div){color:var(--heading)}
+#root article.home-product:not([data-featured=true]) :is(p,li,.home-product-price>span){color:var(--body-text)}
+#root article.home-product:not([data-featured=true]) li svg{color:var(--sapphire)}
+#root article.home-product:not([data-featured=true]) .platform-logo.platform-logo-sapphire{filter:brightness(0) saturate(100%) invert(12%) sepia(27%) saturate(1365%) hue-rotate(177deg) brightness(90%) contrast(93%);background:transparent}
+#root article.home-product:not([data-featured=true]) .home-compare{color:var(--sapphire)}
+#root article.home-product:not([data-featured=true]) :is(ul,.home-product-price){border-color:var(--card-border)}
+#root article.home-product:not([data-featured=true]) :focus-visible{outline-color:var(--sapphire)}
+#root article.home-product[data-featured=true]{background:var(--gradient-primary);color:#FFFFFF;border-color:var(--premium-border);border-radius:16px}
+#root article.home-product[data-featured=true] :is(h3,h3 a,.home-product-price){color:#FFFFFF}
+#root article.home-product[data-featured=true] :is(p,li,.home-product-price>span,.home-product-top>div,.home-compare){color:#CBD5E1}
+@media(hover:hover){#root article.home-product:not([data-featured=true]):hover{border-color:var(--card-hover-border);box-shadow:var(--shadow-card-hover)}}
