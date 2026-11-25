@@ -27,3 +27,18 @@
 @media(hover:hover){#root .review-viewport:hover .review-track{animation-play-state:paused}}
 @media(max-width:767px){#root .review-showcase{padding:40px 0;margin:16px 0}#root .review-heading{padding:0 20px;margin-bottom:28px}#root .review-heading h2{font-size:28px}#root .review-mobile-break{display:block}#root .review-card{width:290px;flex-basis:290px;padding:20px;border-radius:16px}#root .review-group{gap:16px;padding-right:16px}#root .review-card blockquote{font-size:14px}#root .review-tag{max-width:78px}#root .review-person{gap:8px}#root .review-controls{gap:12px}#root .review-controls>span{max-width:24ch}}
 @media(prefers-reduced-motion:reduce){#root .review-viewport{overflow:auto;mask-image:none;padding:0 var(--container-pad);scroll-snap-type:x proximity}#root .review-track{animation:none!important}#root .review-card{scroll-snap-align:start}#root .review-group[aria-hidden=true]{display:none}#root .review-controls button{display:none}}
+
+/* Profile illustrations and direct account actions accompany each sample review. */
+#root .review-avatar{width:42px;height:42px;flex-basis:42px;overflow:hidden;padding:0;border-color:#809CC2;background:#B5C9E4}
+#root .review-avatar>svg{display:block;width:100%;height:100%}
+#root .review-account{display:flex;align-items:center;justify-content:space-between;gap:14px;border-top:1px solid rgba(255,255,255,.12);margin-top:20px;padding-top:18px}
+#root .review-account>div{min-width:0}
+#root .review-account small{display:block;font-size:10px;line-height:1.5;color:#A9B8CE;margin-bottom:4px}
+#root .review-account strong{display:block;color:#FFFFFF;font-size:12px;line-height:1.5;overflow-wrap:anywhere}
+#root .review-account>div>span{display:block;color:#CBD5E1;font-size:11px;line-height:1.5;margin-top:4px}
+#root .review-account .review-buy{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;gap:6px;min-height:44px;padding:10px 12px;border-radius:10px;border:1px solid #526C91;background:var(--gradient-primary);box-shadow:var(--shadow-button);color:#FFFFFF;font-family:var(--font-body);font-size:11px;line-height:1.5;font-weight:600;transition:background 200ms ease,transform 200ms ease}
+#root .review-showcase:focus-within .review-track{animation-play-state:paused}
+#root .review-controls{justify-content:center;text-align:center}
+@media(hover:hover){#root .review-account .review-buy:hover{background:var(--gradient-primary-hover);transform:translateY(-1px)}}
+@media(max-width:767px){#root .review-account{align-items:stretch;flex-direction:column;gap:12px}#root .review-account .review-buy{width:100%;min-height:48px;font-size:12px}}
+@media(prefers-reduced-motion:reduce){#root .review-account .review-buy{transition:none;transform:none}}
