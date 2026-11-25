@@ -389,3 +389,21 @@ html body #root>.store-footer{position:relative;isolation:isolate;overflow:hidde
 @media(hover:hover) and (pointer:fine){#root .home-product:hover,#root .shot-products article:hover{border-color:#809CC2;box-shadow:var(--shadow-card-hover),var(--shadow-inset);transform:translateY(-2px)}}
 @media(max-width:767px){#root .home-product,#root .shot-products article{padding:20px;border-radius:16px}}
 @media(prefers-reduced-motion:reduce){#root .home-product,#root .shot-products article{transform:none!important}}
+
+/* Consistent sapphire styling for product-page supporting card collections. */
+#root :is(.shot-audience,.shot-services,.shot-usecases,.shot-steps,.shot-reasons)>article{position:relative;isolation:isolate;overflow:hidden;background:var(--gradient-primary);border:1px solid var(--premium-border);border-radius:20px;padding:24px;box-shadow:var(--shadow-card),var(--shadow-inset);color:#FFFFFF;transition:transform 250ms ease,border-color 250ms ease,box-shadow 250ms ease}
+#root :is(.shot-audience,.shot-services,.shot-usecases,.shot-steps,.shot-reasons)>article::before{content:'';position:absolute;z-index:-1;right:-50px;top:-80px;width:140px;height:300px;pointer-events:none;transform:rotate(-43deg);background:repeating-linear-gradient(90deg,transparent 0 28px,rgba(255,255,255,.045) 28px 55px)}
+#root :is(.shot-audience,.shot-services,.shot-usecases,.shot-steps,.shot-reasons) article :is(h3,h4,strong){color:#FFFFFF}
+#root :is(.shot-audience,.shot-services,.shot-usecases,.shot-steps,.shot-reasons) article p{color:#CBD5E1;font-size:var(--type-card-description);line-height:1.7}
+#root :is(.shot-audience,.shot-services,.shot-usecases,.shot-steps) article svg{color:#C5D8F5}
+#root .shot-audience article{display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:0}
+#root .shot-audience article>svg{width:44px;height:44px;padding:10px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.07);border-radius:12px;margin-bottom:20px}
+#root .shot-audience article h3{font-size:var(--type-card-title);line-height:1.4;margin:0 0 12px}
+#root .shot-audience article p{margin:0}
+#root .shot-reasons .reason-banner{background:transparent;box-shadow:none;border-radius:0;padding:0;min-height:72px}
+#root .shot-reasons .reason-banner::after{display:none}
+#root .shot-reasons article>p{padding:20px 0 0}
+#root :is(.shot-audience,.shot-services,.shot-usecases,.shot-steps,.shot-reasons) :focus-visible{outline-color:#FFFFFF}
+@media(hover:hover) and (pointer:fine){#root :is(.shot-audience,.shot-services,.shot-usecases,.shot-steps,.shot-reasons)>article:hover{transform:translateY(-2px);border-color:#809CC2;box-shadow:var(--shadow-card-hover),var(--shadow-inset)}}
+@media(max-width:767px){#root :is(.shot-audience,.shot-services,.shot-usecases,.shot-steps,.shot-reasons)>article{padding:20px;border-radius:16px}}
+@media(prefers-reduced-motion:reduce){#root :is(.shot-audience,.shot-services,.shot-usecases,.shot-steps,.shot-reasons)>article{transition:none;transform:none!important}}
