@@ -75,7 +75,7 @@ Update `catalog.js` to edit prices, product names, providers, and features. Rela
 
 ## Current purchase flow
 
-This is a frontend storefront. It has no payment processor, automated account fulfillment, backend order storage, or email delivery service. The cart persists package IDs and quantities in local storage. Checkout prepares a copyable order request with USDT TRC20, BEP20, or ERC20 instructions; customers send the request to the seller on Telegram and confirm final pricing, availability, provider eligibility, delivery, and terms. Payments are reviewed manually; the site never marks an order as paid. No secrets or API keys are required for the existing site.
+This storefront has a server-side blockchain transaction checker, with no custodial payment processor, automated account fulfillment, backend order storage, or email delivery service. The cart persists package IDs and quantities in local storage. Checkout prepares a copyable order request with USDT TRC20, BEP20, or ERC20 instructions; customers send the request to the seller on Telegram and confirm final pricing, availability, provider eligibility, delivery, and terms. TXIDs are checked against finalized on-chain receipts. A confirmed transfer is not an automatic order allocation: the seller matches the TXID to the buyer and arranges delivery. Public RPC defaults require no credentials; optional server-only RPC settings are documented below.
 
 ## Content and asset references
 
@@ -117,10 +117,27 @@ Colors, gradients, shadows and corner radii are centralized in `theme.css`; reus
 
 - `/cart/`: remove packages, change quantities (1–99), and review catalog-derived totals. `cart.js` validates stored IDs and quantities; prices always come from `catalog.js`.
 - `/checkout/`: choose USDT TRC20 (TRON), BEP20 (BNB Smart Chain), or ERC20 (Ethereum). Receiving addresses are maintained in `payments.js`. Check wallet details before changing this file.
-- Buyer contact details remain in component memory, not local storage. Preparing an order creates a local draft only. The buyer explicitly copies and sends it on Telegram. No order is sent automatically and no transaction is verified by the website.
+- Buyer contact details remain in component memory, not local storage. Preparing an order creates a local draft only. The buyer explicitly copies and sends it on Telegram. No order is sent automatically. The TXID check sends only the transaction hash, network, and cart package IDs/quantities to the server, without contact details.
 - Cart and checkout are marked `noindex, nofollow`. Direct links and refreshes work through the Vercel rewrites.
 - Validation: production build; browser checks for cart persistence, totals, quantity limits, removal, empty and invalid storage states, draft preparation, network switching, exact wallet clipboard values, mobile/tablet/desktop layouts, and WCAG A/AA scans. No lint or type-check script is configured.
 
 ### Checkout QR codes
 
 The selected USDT network displays a local SVG wallet QR code and a downloadable PNG. `npm run generate:payment-qr` generates both formats from the receiving addresses in `payments.js`; `npm run build` runs this automatically. QR codes contain the address only, without an amount or network identifier. The checkout labels the selected network explicitly. Both EVM networks intentionally encode the same owner-supplied address; TRC20 uses the separate TRON address.
+
+## Automatic TXID verification
+
+`POST /api/verify-payment` accepts `{ network, txid, items: [{ id, quantity }] }`. `server/payment-verifier.js` derives the expected numeric USDT amount from the catalog total, validates package IDs/quantities, and ignores client-supplied prices, recipients, or status. Checkout explains that an agreed quote differing from the listed total needs seller review.
+
+- ERC20: Ethereum mainnet, allowlisted Tether contract, 6 decimals.
+- BEP20: BNB Smart Chain mainnet, allowlisted Binance-Peg USDT contract, 18 decimals.
+- TRC20: TRON mainnet, allowlisted Tether contract, 6 decimals.
+- Checks require successful execution and genuine token Transfer logs, matching the configured receiving wallet and exact expected amount. Outgoing transfers are subtracted so self-transfers do not count. Ethereum/BSC require a canonical receipt block at or below the finalized head; TRON requires a successful solidified receipt.
+- Unavailable RPCs, missing receipts, unknown status, pending finality, wrong tokens/recipients, and amount mismatches never produce a confirmed status.
+- A confirmed result verifies an on-chain transfer, not buyer ownership, unique use of a TXID, stock reservation, an order record, or fulfillment. There is no persistent transaction-consumption database; the seller must match the transaction to the order before delivery. Browser status alone must not be used for automatic fulfillment.
+
+Optional server-only environment variables: `ETHEREUM_RPC_URL`, `BSC_RPC_URL`, `TRON_RPC_URL`, `TRONGRID_API_KEY`. URLs must be HTTPS mainnet endpoints. The defaults are PublicNode (Ethereum), the BNB Chain public mainnet endpoint (BSC), and TronGrid (TRON). Public provider availability/rate limits can temporarily prevent checks. Never prefix server credentials with `VITE_`.
+
+Run `npm test` for receipt validation and endpoint input tests, and `npm run build` for production. `vite preview` serves the UI only; the API runs on Vercel or through `vercel dev`.
+
+Protocol references: [Ethereum JSON-RPC](https://ethereum.org/developers/docs/apis/json-rpc/), [BNB Chain RPC implementation](https://github.com/bnb-chain/bsc/blob/master/rpc/json-rpc-api.md), [TRON confirmation semantics](https://developers.tron.network/docs/confirmation-semantics), [Tether supported contracts](https://tether.to/en/supported-protocols/).

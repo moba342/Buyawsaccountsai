@@ -54,5 +54,10 @@
       "source": "/product/:slug/",
       "destination": "/index.html"
     }
-  ]
+  ],
+  "functions": {
+    "api/verify-payment.js": {
+      "maxDuration": 30
+    }
+  }
 }

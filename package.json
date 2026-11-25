@@ -7,7 +7,8 @@
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0",
     "generate:payment-qr": "node scripts/generate-payment-qr.mjs",
-    "prebuild": "npm run generate:payment-qr"
+    "prebuild": "npm run generate:payment-qr",
+    "test": "node --test tests/*.test.js"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
