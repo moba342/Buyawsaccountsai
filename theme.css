@@ -200,3 +200,12 @@ body,#root{background:var(--page-bg);color:var(--heading)}
 
 /* Override the shared page container for site chrome at every viewport. */
 html body #root>header,html body #root>.store-footer{width:100%;max-width:none;margin-inline:0;padding-inline:clamp(16px,3vw,64px)}
+
+/* Full-width enterprise header, balanced independently of page content. */
+html body #root>header{isolation:isolate;min-height:88px;background:rgba(255,255,255,.98);border-bottom:1px solid var(--card-border);box-shadow:0 2px 10px rgba(8,15,36,.035);padding-block:12px;column-gap:24px}
+#root header .brand{flex-shrink:0}
+#root header nav a{border-radius:8px;transition:background 200ms ease,color 200ms ease}
+#root header nav a.active{background:var(--hero-bg);color:var(--navy)}
+@media(hover:hover){#root header nav a:hover{background:var(--secondary-hover);color:var(--navy)}}
+@media(min-width:1100px){html body #root>header{display:grid;grid-template-columns:minmax(180px,1fr) auto minmax(180px,1fr);align-items:center;gap:24px}#root header nav,#root header nav.open{justify-content:center;flex-wrap:nowrap;gap:6px}#root header>.telegram-header{justify-self:end;margin:0}#root header .brand{justify-self:start}}
+@media(max-width:767px){html body #root>header{min-height:76px;column-gap:8px;padding-block:12px}}
