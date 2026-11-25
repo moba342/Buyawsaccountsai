@@ -513,3 +513,9 @@ html body #root>header{padding-block:8px}
 #root .shot-table .shot-mini-logo{display:flex;align-items:center;justify-content:center;flex:0 0 30px;width:30px;height:30px;background:transparent;border:0;padding:0}
 #root .shot-table .shot-mini-logo .platform-logo{width:26px;height:26px;object-fit:contain}
 @media(max-width:767px){#root .shot-table :is(th,td){padding:12px 16px}#root .shot-table :is(th,td):last-child{padding-right:16px}}
+
+/* Keep shared navigation above page badges and below modal dialogs. */
+html body #root>header{position:relative;z-index:60;overflow:visible}
+#root .modal-backdrop{z-index:200}
+#root .skip-link{z-index:300}
+@media(max-width:1023px){html body #root>header nav.open{position:absolute;top:calc(100% + 10px);left:0;right:0;width:auto;margin:0;padding:12px;background:#FFFFFF;border:1px solid var(--card-border);border-radius:20px;box-shadow:0 14px 36px rgba(8,15,36,.14);z-index:1;max-height:calc(100dvh - 120px);overflow-y:auto;overscroll-behavior:contain;display:flex;flex-direction:column;gap:4px}#root header nav.open a{justify-content:flex-start;min-height:48px;padding:12px 16px;border-radius:10px;font-size:1rem;line-height:1.5;background:transparent}#root header nav.open a:focus-visible{outline:2px solid var(--sapphire);outline-offset:-2px}}

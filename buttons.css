@@ -67,3 +67,4 @@
 @media(hover:hover){#root .telegram-floating:hover{background:var(--gradient-primary-hover);border-color:var(--premium-border);color:var(--on-dark);box-shadow:var(--shadow-button-hover)}}
 #root .shot-table td>button{display:inline-flex;align-items:center;justify-content:center;min-width:96px;min-height:40px;margin:0;padding:10px 16px;font-size:.8125rem;line-height:1.4;border-radius:8px;vertical-align:middle}
 @media(max-width:1023px){#root .shot-table td>button{min-height:44px;padding-block:12px}}
+#root .shot-table td>button{min-height:44px}
