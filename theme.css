@@ -209,3 +209,8 @@ html body #root>header{isolation:isolate;min-height:88px;background:rgba(255,255
 @media(hover:hover){#root header nav a:hover{background:var(--secondary-hover);color:var(--navy)}}
 @media(min-width:1100px){html body #root>header{display:grid;grid-template-columns:minmax(180px,1fr) auto minmax(180px,1fr);align-items:center;gap:24px}#root header nav,#root header nav.open{justify-content:center;flex-wrap:nowrap;gap:6px}#root header>.telegram-header{justify-self:end;margin:0}#root header .brand{justify-self:start}}
 @media(max-width:767px){html body #root>header{min-height:76px;column-gap:8px;padding-block:12px}}
+
+/* Breathing room between the site header and each page's content. */
+#root>header+main{margin-top:32px}
+@media(min-width:768px){#root>header+main{margin-top:40px}}
+@media(min-width:1024px){#root>header+main{margin-top:48px}}
