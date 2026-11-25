@@ -18,3 +18,7 @@ The date is retained as provided, rather than represented as the current publica
 The profile card's Public Evidence field reads **Seller declaration published**, not **Verified Seller**, because the supplied record is explicitly first-party and independent verification remains pending. Scope subjects, including domain and Telegram ownership, are presented as seller declarations rather than independently established facts.
 
 Validation: production build; both pages at 320, 375, 768, 820, 1024, 1440, and 2560px; accessibility scans; supplied reference and date; accurate pending status; Telegram/profile links; internal navigation, refresh and canonical URLs; existing account-inquiry, search, comparison, keyboard and 200% text-scaling flows.
+
+## Current display
+
+At the user's request, independent-verification status fields and pending-documentation placeholders have been removed from both seller pages and the profile card. The first-party nature of the declaration, its provider, internal reference, supplied date, and disclaimer remain visible. No independent-verification approval has been substituted.
