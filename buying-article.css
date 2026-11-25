@@ -1,0 +1,11 @@
+#root .buying-article{padding-block:56px}
+#root .buying-article-heading{max-width:760px;margin-bottom:32px}
+#root .buying-article-heading h2{margin:20px 0;font-size:36px;line-height:1.25}
+#root .buying-article-heading>p{color:var(--body-text);line-height:1.75;margin:0}
+#root .buying-article-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+#root .buying-article-grid article{min-width:0;padding:28px;background:var(--surface);border:1px solid var(--card-border);border-radius:16px;box-shadow:var(--shadow-card)}
+#root .buying-article-grid article>span{font-size:11px;font-weight:600;letter-spacing:.08em;color:var(--sapphire)}
+#root .buying-article-grid h3{font-size:22px;line-height:1.4;margin:18px 0 14px}
+#root .buying-article-grid p{font-size:15px;line-height:1.8;color:var(--body-text);margin:0}
+@media(max-width:1023px){#root .buying-article-grid{grid-template-columns:1fr}#root .buying-article-grid article{padding:24px}}
+@media(max-width:767px){#root .buying-article{padding-block:36px}#root .buying-article-heading h2{font-size:28px}#root .buying-article-grid article{padding:20px}#root .buying-article-grid h3{font-size:20px}}

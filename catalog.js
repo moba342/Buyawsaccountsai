@@ -1,3 +1,4 @@
+import{providerEditorial}from'./editorialContent.js';
 const definitions=[
 ['AWS','Amazon Web Services','aws','#ff9c36',[
 ['Free Trial',15,'Trial'],['8 vCPU',35,'Compute'],['32 vCPU',80,'Compute'],['64 vCPU',120,'Compute'],['128 vCPU',150,'Compute'],['256 vCPU',190,'Compute'],['512 vCPU',299,'Compute'],['$1K Credit',250,'Credit',1000],['$5K Credit',999,'Credit',5000],['$10K Credit',2499,'Credit',10000],['$25K Credit',4999,'Credit',25000],['$100K Credit',13000,'Credit',100000]]],
@@ -24,20 +25,7 @@ const definitions=[
 ['Atlantic.Net','Atlantic.Net','AT','#66c5ce',[
 ['Free Trial',50,'Trial'],['Port 25 Open',199,'SMTP']]]
 ];
-export const products=definitions.flatMap(([provider,full,logo,color,rows])=>rows.map(([name,price,kind,credit],i)=>({provider,name,price,kind,credit:credit||0,label:name==='32 vCPU'?'Popular':i===0?'Starter':kind==='Credit'?'Credit package':'Account',type:kind==='Credit'?'Cloud credit account':kind==='Compute'?'Compute account':kind==='Droplet'?'Droplet capacity account':kind==='Server'?'Server capacity account':kind==='SMTP'?'SMTP-enabled account':kind==='Trial'?'Free trial account':'Cloud account',delivery:provider==='AWS'?'2–8 hours':'30 min–12 hours',features:kind==='Credit'?[`$${credit.toLocaleString('en-US')} reference credit value`,'Provider eligibility to be confirmed','Expiry and redemption terms on request']:kind==='Compute'?[`${name} reference account tier`,'Region and quota details on request','Delivery terms confirmed before payment']:kind==='Droplet'?[`${name.match(/\d+/)?.[0]} droplet reference capacity`,name.startsWith('Open')?'Open-port variant':'Standard-port variant','Availability confirmed before payment']:kind==='Server'?[`${name} reference capacity`,'Region and quota details on request','Availability confirmed before payment']:['Reference account variant: '+name,'Provider eligibility to be confirmed','Final terms confirmed before payment']})));
-const providerSummaries={
-'AWS':'Free trial and 8–512 vCPU accounts, with credit packages from $1K to $100K.',
-'Google Cloud':'Cloud credit accounts from $300 to $25K, with six variants to compare.',
-'Azure':'Free trial, pay-as-you-go, and cloud credit accounts from $1K to $25K.',
-'DigitalOcean':'Free trial and 3–25 Droplet variants with standard or open-port options.',
-'Oracle Cloud':'New, older, upgraded, and pay-as-you-go accounts, plus a $300 credit option.',
-'Hetzner':'Account variants for 5–100 servers, plus an older-account option.',
-'Vultr':'Compare cloud credit accounts with $200, $250, or $300 in reference credits.',
-'Linode':'Choose a $100 cloud credit account or a port 25 open account variant.',
-'IBM Cloud':'Explore free trial and port 25 open account variants in one place.',
-'Kamatera':'Compare free trial and port 25 open accounts for your next project.',
-'Alibaba Cloud':'Personal and business account variants for your cloud requirements.',
-'Atlantic.Net':'Free trial and port 25 open account variants, with clear reference pricing.'
-};
-export const brands=definitions.map(([name,full,logo,color])=>({name,full,logo,color,summary:providerSummaries[name],from:Math.min(...products.filter(p=>p.provider===name).map(p=>p.price)),desc:`Compare ${products.filter(p=>p.provider===name).length} account and credit variants for ${full}.`}));
+export const products=definitions.flatMap(([provider,full,logo,color,rows])=>rows.map(([name,price,kind,credit],i)=>({provider,name,price,kind,credit:credit||0,label:name==='32 vCPU'?'Popular':i===0?'Starter':kind==='Credit'?'Credit package':'Account',type:kind==='Credit'?'Cloud credit account':kind==='Compute'?'Compute account':kind==='Droplet'?'Droplet capacity account':kind==='Server'?'Server capacity account':kind==='SMTP'?'SMTP-enabled account':kind==='Trial'?'Free trial account':'Cloud account',delivery:provider==='AWS'?'2–8 hours':'30 min–12 hours',features:kind==='Credit'?[`$${credit.toLocaleString('en-US')} listed credit value`,'Confirm account and provider eligibility','Review credit expiry and redemption terms']:kind==='Compute'?[`${name} listed compute tier`,'Confirm region and account limits','Agree delivery terms before payment']:kind==='Droplet'?[`${name.match(/\d+/)?.[0]} Droplet capacity variant`,name.startsWith('Open')?'Open-port variant':'Standard-port variant','Confirm current availability']:kind==='Server'?[`${name} listed capacity`,'Confirm region and account limits','Confirm current availability']:['Account package: '+name,'Confirm account and provider eligibility','Review final terms before payment']})));
+const providerSummaries=Object.fromEntries(Object.entries(providerEditorial).map(([name,copy])=>[name,copy.summary]));
+export const brands=definitions.map(([name,full,logo,color])=>({name,full,logo,color,summary:providerSummaries[name],from:Math.min(...products.filter(p=>p.provider===name).map(p=>p.price)),desc:`Buy ${full} account packages with clear pricing, account-specific checks, and direct seller contact.`}));
 export const formatPrice=n=>'$'+n.toLocaleString('en-US');
