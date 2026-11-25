@@ -245,3 +245,14 @@ body,#root{font-family:var(--font-body);font-optical-sizing:auto;-webkit-font-sm
 #root :is(.process-item p,.shot-about p,.guide-card p){max-width:68ch}
 #root :is(.footer-description,.footer-callout p){line-height:1.75;letter-spacing:0}
 @media(max-width:767px){#root p{letter-spacing:-.005em}}
+
+/* Balanced enterprise type hierarchy, scaled by device rather than viewport width. */
+:root{--type-h1:2.25rem;--type-h2:1.75rem;--type-h3:1.5rem;--type-card-title:1.125rem;--type-hero-description:1rem;--type-body:1rem;--type-card-description:.9375rem;--type-price:2.25rem;--type-counter:2.25rem}
+@media(min-width:768px){:root{--type-h1:3rem;--type-h2:2.25rem;--type-h3:1.75rem;--type-card-title:1.25rem;--type-hero-description:1.125rem;--type-price:2.5rem;--type-counter:2.75rem}}
+@media(min-width:1024px){:root{--type-h1:4rem;--type-h2:2.75rem;--type-h3:1.875rem;--type-card-title:1.375rem;--type-hero-description:1.25rem;--type-card-description:1rem;--type-price:2.75rem;--type-counter:3rem}}
+#root h1{font-size:var(--type-h1);line-height:1.15;letter-spacing:-.04em}
+#root h2{font-size:var(--type-h2);line-height:1.22;letter-spacing:-.03em}
+#root :is(.provider-showcase-banner h2,.provider-showcase-banner h3,.home-product h3,.guide-card h2,.guide-card h3,.contact-cards h2){font-size:var(--type-card-title);line-height:1.4;letter-spacing:-.02em}
+#root :is(.home-hero-content>p,.contact-hero>p){max-width:54ch}
+#root :is(.home-statline strong,.hero-stats b){font-size:var(--type-counter)}
+#root :is(.home-product-price,.provider-showcase-price>strong){font-size:var(--type-price)}
