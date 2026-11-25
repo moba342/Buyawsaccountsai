@@ -149,3 +149,11 @@ Protocol references: [Ethereum JSON-RPC](https://ethereum.org/developers/docs/ap
 The Products page and provider collections also include expandable reading sections with every relevant variant, its reference price, and a link to its full article. These sections use the shared Midnight Sapphire design tokens and internal seller/contact links. Copy describes account-specific verification questions without asserting unsupported third-party certification or cloud-provider authorization.
 
 When adding a product, add its introduction to `variantIntroductions`; `npm test` checks article coverage, unique introductions/titles, reference prices, content length, and route coverage for the catalog. Shared URL helpers live in `catalogPaths.js`, re-exported from `DetailPages.jsx` for existing consumers.
+
+## Scrolling and animation performance
+
+`SmoothScrolling.jsx` adds Lenis wheel interpolation only for fine-pointer devices without reduced motion. Touch remains native. One on-demand RAF loop runs while scrolling, then sleeps; scrolling does not update React state per frame. Programmatic catalog/top navigation uses `scrollPageTo()`, and route changes stop old inertia. Modals and navigation menus suspend the desktop controller; nested lists, tables, form controls, keyboard navigation, and modifier-wheel gestures retain native behavior.
+
+`useViewportMotion.js` pauses provider, review, and footer animations outside the viewport or in a hidden tab. `scroll-performance.css` releases animation layer hints while those rails are idle and honors reduced motion.
+
+Validation covered desktop wheel easing, idle RAF shutdown, keyboard and nested scrolling, modal locks, catalog/top actions, animation visibility, live reduced-motion changes, and native touch. A local Chrome 1440×1000 scrolling sample recorded a 16.7 ms median and 16.8 ms p95 frame interval, with no frame gaps above 33 ms or long tasks during the 2.5-second sample. These are local measurements, not a universal FPS guarantee.

@@ -1,0 +1,9 @@
+/* Native touch/keyboard scrolling; desktop interpolation has one on-demand RAF loop. */
+html.lenis{scroll-behavior:auto!important}
+#root .provider-motion-strip[data-running=false] .provider-motion-track{animation-play-state:paused;will-change:auto}
+#root .provider-motion-strip[data-running=true] .provider-motion-track{will-change:transform}
+#root .review-showcase[data-running=false] .review-track{will-change:auto}
+#root .review-showcase[data-running=true] .review-track{will-change:transform}
+#root .footer-wordmark[data-running=false]::after{animation-play-state:paused}
+html[data-motion-hidden=true] #root *,html[data-motion-hidden=true] #root *::before,html[data-motion-hidden=true] #root *::after{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}#root .provider-motion-track,#root .review-track{will-change:auto!important}}
