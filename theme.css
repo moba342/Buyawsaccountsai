@@ -407,3 +407,22 @@ html body #root>.store-footer{position:relative;isolation:isolate;overflow:hidde
 @media(hover:hover) and (pointer:fine){#root :is(.shot-audience,.shot-services,.shot-usecases,.shot-steps,.shot-reasons)>article:hover{transform:translateY(-2px);border-color:#809CC2;box-shadow:var(--shadow-card-hover),var(--shadow-inset)}}
 @media(max-width:767px){#root :is(.shot-audience,.shot-services,.shot-usecases,.shot-steps,.shot-reasons)>article{padding:20px;border-radius:16px}}
 @media(prefers-reduced-motion:reduce){#root :is(.shot-audience,.shot-services,.shot-usecases,.shot-steps,.shot-reasons)>article{transition:none;transform:none!important}}
+
+/* More Variants: light standard cards with one clear sapphire featured tier. */
+#root .shot-products article:not([data-featured=true]){background:var(--surface);border-color:var(--card-border);box-shadow:var(--shadow-card);color:var(--heading);border-radius:16px}
+#root .shot-products article:not([data-featured=true])::before{display:none}
+#root .shot-products article:not([data-featured=true]) :is(h3,h3 a,.shot-product-price>div){color:var(--heading)}
+#root .shot-products article:not([data-featured=true]) :is(p,.shot-product-price>span,.shot-product-price small){color:var(--body-text)}
+#root .shot-products article:not([data-featured=true]) .shot-product-price{border-color:var(--card-border)}
+#root .shot-products article:not([data-featured=true]) .shot-product-price svg{color:var(--sapphire)}
+#root .shot-products article:not([data-featured=true]) .platform-logo.platform-logo-sapphire{filter:brightness(0) invert(1)}
+#root .shot-products .shot-product-header{align-items:center;gap:12px;margin-bottom:20px}
+#root .shot-products .shot-brand-chip{font-size:.6875rem;gap:6px;padding:8px 10px;max-width:100%;line-height:1.4}
+#root .shot-products .shot-product-header>small{font-size:.75rem;padding:8px 12px}
+#root .shot-products article[data-featured=true] .shot-product-header>small{background:#FFF3E0;color:#9A4208;border-color:#FF9900;box-shadow:none}
+#root .shot-products article[data-featured=true] .shot-product-header>small::before{background:#B45309;box-shadow:none}
+#root .shot-products article:not([data-featured=true]) :focus-visible{outline-color:var(--sapphire)}
+#root .shot-products article .shot-product-actions{gap:12px}
+#root .shot-products article .shot-product-actions>a{background:#FFFFFF;color:var(--navy);border:1px solid var(--secondary-border)}
+@media(hover:hover){#root .shot-products article:not([data-featured=true]):hover{border-color:var(--card-hover-border);box-shadow:var(--shadow-card-hover)}}
+@media(max-width:767px){#root .shot-products .shot-product-header{gap:10px}}
