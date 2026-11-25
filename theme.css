@@ -451,3 +451,15 @@ html body #root>.store-footer{position:relative;isolation:isolate;overflow:hidde
 #root article.home-product[data-featured=true] :is(h3,h3 a,.home-product-price){color:#FFFFFF}
 #root article.home-product[data-featured=true] :is(p,li,.home-product-price>span,.home-product-top>div,.home-compare){color:#CBD5E1}
 @media(hover:hover){#root article.home-product:not([data-featured=true]):hover{border-color:var(--card-hover-border);box-shadow:var(--shadow-card-hover)}}
+
+/* Azure page only: refined light information panels. */
+#root .screenshot-page[data-provider="Azure"] :is(.shot-reasons,.shot-services,.shot-usecases,.shot-steps,.shot-audience)>article{background:var(--surface);border:1px solid var(--card-border);border-radius:16px;padding:28px;box-shadow:0 2px 8px rgba(8,15,36,.035);color:var(--heading)}
+#root .screenshot-page[data-provider="Azure"] :is(.shot-reasons,.shot-services,.shot-usecases,.shot-steps,.shot-audience)>article::before{display:none}
+#root .screenshot-page[data-provider="Azure"] :is(.shot-reasons,.shot-services,.shot-usecases,.shot-steps,.shot-audience) article :is(h3,h4,strong){color:var(--heading)}
+#root .screenshot-page[data-provider="Azure"] :is(.shot-reasons,.shot-services,.shot-usecases,.shot-steps,.shot-audience) article p{color:var(--body-text)}
+#root .screenshot-page[data-provider="Azure"] .shot-reasons .reason-banner{min-height:48px;gap:16px}
+#root .screenshot-page[data-provider="Azure"] .shot-reasons article>p{padding-top:20px}
+#root .screenshot-page[data-provider="Azure"] :is(.reason-icon,.shot-audience article>svg,.shot-services article>svg,.shot-usecases article>svg,.shot-steps article>svg){background:var(--hero-bg);border-color:var(--card-border);box-shadow:none;color:var(--sapphire)}
+#root .screenshot-page[data-provider="Azure"] :is(.shot-reasons,.shot-services,.shot-usecases,.shot-steps,.shot-audience) :focus-visible{outline-color:var(--sapphire)}
+@media(hover:hover){#root .screenshot-page[data-provider="Azure"] :is(.shot-reasons,.shot-services,.shot-usecases,.shot-steps,.shot-audience)>article:hover{border-color:#94A3B8;box-shadow:0 8px 22px rgba(8,15,36,.07);transform:translateY(-1px)}}
+@media(max-width:767px){#root .screenshot-page[data-provider="Azure"] :is(.shot-reasons,.shot-services,.shot-usecases,.shot-steps,.shot-audience)>article{padding:20px}}
