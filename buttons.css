@@ -47,3 +47,11 @@
 #root .home-filter-row>button .platform-logo{width:18px;height:18px;flex:0 0 18px;object-fit:contain}
 @media(min-width:768px) and (max-width:1023px){#root .home-filter-row>button{min-height:46px;padding-block:12px}}
 @media(max-width:767px){#root .home-filter-row>button{min-height:48px;padding:13px 14px}}
+
+/* Persistent Telegram contact, kept below dialogs and clear of safe-area insets. */
+#root .telegram-floating{position:fixed;z-index:40;right:max(24px,env(safe-area-inset-right));bottom:max(24px,env(safe-area-inset-bottom));display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 20px;border:1px solid rgba(255,255,255,.25);border-radius:999px;background:#087CA5;color:#FFFFFF;font-family:var(--font-body);font-size:14px;font-weight:600;line-height:1.4;text-decoration:none;box-shadow:0 5px 18px rgba(8,15,36,.2);transition:background 200ms ease,transform 200ms ease}
+#root .telegram-floating-icon{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:26px;height:26px;background:#FFFFFF;color:#087CA5;border-radius:50%}
+#root .telegram-floating:focus-visible{outline:3px solid var(--sapphire);outline-offset:4px}
+@media(hover:hover){#root .telegram-floating:hover{background:#06698E;transform:translateY(-2px)}}
+@media(max-width:767px){#root .telegram-floating{right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));padding:11px 16px}}
+@media(prefers-reduced-motion:reduce){#root .telegram-floating{transition:none;transform:none}}
