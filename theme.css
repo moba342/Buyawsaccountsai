@@ -197,3 +197,6 @@ body,#root{background:var(--page-bg);color:var(--heading)}
 
 /* Full-width site chrome, with safe responsive gutters. */
 #root header,#root .store-footer{width:100%;max-width:none;margin-inline:0;padding-left:max(clamp(16px,3vw,64px),env(safe-area-inset-left));padding-right:max(clamp(16px,3vw,64px),env(safe-area-inset-right))}
+
+/* Override the shared page container for site chrome at every viewport. */
+html body #root>header,html body #root>.store-footer{width:100%;max-width:none;margin-inline:0;padding-inline:clamp(16px,3vw,64px)}

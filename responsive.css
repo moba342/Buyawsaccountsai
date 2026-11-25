@@ -5,7 +5,7 @@
 html{scroll-padding-block-start:1rem}body{margin:0}*,*::before,*::after{box-sizing:border-box}
 #root{min-width:0}#root :is(main,section,article,aside,nav,form){min-width:0}
 #root :is(p,li,dd,address){overflow-wrap:break-word}#root :is(h1,h2,h3,h4,h5,h6){margin-bottom:var(--heading-gap);overflow-wrap:break-word}
-#root :is(.home-hero,.home-section,.section.inner,.screenshot-page,.contact-page,.store-footer,header){width:100%;max-width:var(--container-width);margin-inline:auto;padding-inline:var(--container-pad);padding-left:max(var(--container-pad),env(safe-area-inset-left));padding-right:max(var(--container-pad),env(safe-area-inset-right))}
+#root :is(.home-hero,.home-section,.section.inner,.screenshot-page,.contact-page){width:100%;max-width:var(--container-width);margin-inline:auto;padding-inline:var(--container-pad);padding-left:max(var(--container-pad),env(safe-area-inset-left));padding-right:max(var(--container-pad),env(safe-area-inset-right))}
 #root :is(.home-section,.section.inner){padding-block:var(--section-pad)}
 #root .home-hero{padding-block:var(--hero-pad);grid-template-columns:1fr;gap:var(--content-gap)}
 #root .home-hero-content{width:100%;max-width:none}
