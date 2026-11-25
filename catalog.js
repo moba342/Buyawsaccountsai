@@ -1,4 +1,3 @@
-export const catalogSource='https://buyawscredit.vercel.app/';
 const definitions=[
 ['AWS','Amazon Web Services','aws','#ff9c36',[
 ['Free Trial',15,'Trial'],['8 vCPU',35,'Compute'],['32 vCPU',80,'Compute'],['64 vCPU',120,'Compute'],['128 vCPU',150,'Compute'],['256 vCPU',190,'Compute'],['512 vCPU',299,'Compute'],['$1K Credit',250,'Credit',1000],['$5K Credit',999,'Credit',5000],['$10K Credit',2499,'Credit',10000],['$25K Credit',4999,'Credit',25000],['$100K Credit',13000,'Credit',100000]]],
