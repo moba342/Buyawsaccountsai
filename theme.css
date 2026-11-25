@@ -500,3 +500,16 @@ html body #root>header{padding-block:8px}
 #root .selection-grid .platform-logo.wide-logo{width:42px;height:32px;flex-basis:42px}
 #root .selection-grid small{display:block;margin-top:6px;line-height:1.5;color:var(--body-text)}
 @media(max-width:767px){#root .selection-grid label{padding:16px;gap:12px}#root .selection-grid strong{gap:10px}#root .selection-grid .platform-logo{width:30px;height:30px;flex-basis:30px}#root .selection-grid .platform-logo.wide-logo{width:38px;height:30px;flex-basis:38px}}
+
+/* Price-list rows: centered actions, predictable columns and consistent rhythm. */
+#root .shot-table{width:100%;border-collapse:collapse;table-layout:auto}
+#root .shot-table :is(th,td){vertical-align:middle;padding:14px 20px}
+#root .shot-table :is(th,td):nth-child(2){width:100px;text-align:right;white-space:nowrap}
+#root .shot-table :is(th,td):nth-child(3){width:136px;text-align:center;white-space:nowrap}
+#root .shot-table :is(th,td):last-child{width:132px;text-align:right;padding-right:24px}
+#root .shot-table td:first-child>a{display:flex;align-items:center;gap:14px;min-height:44px}
+#root .shot-table td:first-child strong{display:block;line-height:1.4;margin:0 0 4px}
+#root .shot-table td:first-child small{display:block;line-height:1.5;margin:0}
+#root .shot-table .shot-mini-logo{display:flex;align-items:center;justify-content:center;flex:0 0 30px;width:30px;height:30px;background:transparent;border:0;padding:0}
+#root .shot-table .shot-mini-logo .platform-logo{width:26px;height:26px;object-fit:contain}
+@media(max-width:767px){#root .shot-table :is(th,td){padding:12px 16px}#root .shot-table :is(th,td):last-child{padding-right:16px}}
