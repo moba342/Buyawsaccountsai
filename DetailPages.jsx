@@ -631,7 +631,7 @@ export function CatalogPage({
           </p>
           <div>
             <a href="/compare/">
-              Compare packages
+              Compare products
               <ArrowRight size={14} aria-hidden="true" />
             </a>
             <a href="/guides/">
