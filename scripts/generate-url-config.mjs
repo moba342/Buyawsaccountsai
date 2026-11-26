@@ -60,6 +60,12 @@ for (const source of ["/", ...routeIds.map(routePath)])
     permanent: true,
   });
 config.redirects.push({
+  source: "/:path*/",
+  destination: SITE.url + "/:path*/",
+  has: hostCondition,
+  permanent: true,
+});
+config.redirects.push({
   source: "/:path*",
   destination: SITE.url + "/:path*",
   has: hostCondition,

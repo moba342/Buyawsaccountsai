@@ -6,7 +6,7 @@ Date: 2026-11-27 (Asia/Dhaka). Baseline production source: `7ea14d0`. Canonical 
 
 The site is hosted on Vercel. The apex domain was configured at the project-domain layer to redirect every request to `www.buyawsaccountsai.com` with 308. That domain redirect ran before application routing could map an old product URL. The existing 535 application mappings also used relative destinations. Consequently HTTPS apex legacy URLs took two hops and HTTP apex legacy URLs took three.
 
-The implemented source fix preserves every original source/path/permanent mapping (a SHA-256 baseline contract is tested), while changing each destination to its absolute final HTTPS www URL. Ninety-six apex-host rules cover canonical pages directly, and one apex-only fallback covers other paths/assets. Total: 535 preserved mappings + 97 host-only rules = 632 rules. The fallback is last, applies only to the apex host, and cannot loop on www. Public page paths, SEO metadata, data, prices, payment logic and commercial eligibility are unchanged.
+The implemented source fix preserves every original source/path/permanent mapping (a SHA-256 baseline contract is tested), while changing each destination to its absolute final HTTPS www URL. Ninety-six apex-host rules cover canonical pages directly, and two apex-only fallbacks cover slash/non-slash paths/assets. Total: 535 preserved mappings + 98 host-only rules = 633 rules. The fallback is last, applies only to the apex host, and cannot loop on www. Public page paths, SEO metadata, data, prices, payment logic and commercial eligibility are unchanged.
 
 The domain-level apex redirect must be cleared **only after** these rules are deployed. The apex remains attached to the same production project with its verified domain and valid certificate; DNS is not changed. Hosting/API access is available, so a manual login/configuration request is not required.
 
@@ -43,3 +43,5 @@ Evidence: `evidence/hosting-redirects/domains-before.json`, `before-live.json`, 
 For a manual rollback if API access is unavailable: Vercel dashboard -> project `buyawsaccountsai` -> Settings -> Domains -> `buyawsaccountsai.com` -> Edit -> redirect to `www.buyawsaccountsai.com` -> permanent 308 -> Save. Do not edit A/CNAME/DNS records. No Search Console access or verification credentials are required.
 
 Google Search Console: **PENDING - MANUAL SETUP BY WEBSITE OWNER**; unrelated to the routing fix.
+
+Live testing identified a Vercel-specific trailing-slash fallback edge case: unknown apex paths ending in a slash were returning a direct noindex 404 instead of moving to www first. A separate slash-ending fallback was added; it does not affect the 535 preserved mappings or existing pages. Final validation must recheck this case after the follow-up deployment.

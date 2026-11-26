@@ -66,7 +66,9 @@ const server = http.createServer(async (req, res) => {
     }
     const redirect = config.redirects.find(
       (r) =>
-        (r.source === pathname || r.source === "/:path*") &&
+        (r.source === pathname ||
+          (r.source === "/:path*/" && pathname.endsWith("/")) ||
+          (r.source === "/:path*" && !pathname.endsWith("/"))) &&
         (!r.has ||
           r.has.every(
             (condition) =>
@@ -78,8 +80,10 @@ const server = http.createServer(async (req, res) => {
     if (redirect) {
       res.writeHead(redirect.permanent ? 308 : 307, {
         Location:
-          redirect.destination.replace(":path*", pathname.replace(/^\//, "")) +
-          url.search,
+          redirect.destination.replace(
+            ":path*",
+            pathname.replace(/^\/|\/$/g, ""),
+          ) + url.search,
       });
       res.end();
       return;

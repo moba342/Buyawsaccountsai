@@ -27,7 +27,7 @@ test("all 535 production redirect mappings are preserved with final absolute HTT
 });
 test("canonical apex pages have direct host-conditional redirects before the fallback", () => {
   const rules = config.redirects.filter((r) => r.has);
-  assert.equal(rules.length, 97);
+  assert.equal(rules.length, 98);
   for (const source of ["/", ...routeIds.map(routePath)]) {
     const rule = rules.find((r) => r.source === source);
     assert(rule);
@@ -35,6 +35,11 @@ test("canonical apex pages have direct host-conditional redirects before the fal
     assert.equal(rule.destination, policy.canonicalOrigin + source);
     assert(rule.permanent);
   }
+  assert.equal(config.redirects.at(-2).source, "/:path*/");
+  assert.equal(
+    config.redirects.at(-2).destination,
+    policy.canonicalOrigin + "/:path*/",
+  );
   assert.equal(config.redirects.at(-1).source, "/:path*");
   assert.deepEqual(config.redirects.at(-1).has, [
     { type: "host", value: policy.apexHost },

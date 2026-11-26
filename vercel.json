@@ -4124,6 +4124,17 @@
       "permanent": true
     },
     {
+      "source": "/:path*/",
+      "destination": "https://www.buyawsaccountsai.com/:path*/",
+      "has": [
+        {
+          "type": "host",
+          "value": "buyawsaccountsai.com"
+        }
+      ],
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "destination": "https://www.buyawsaccountsai.com/:path*",
       "has": [
