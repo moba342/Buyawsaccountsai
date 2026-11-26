@@ -182,3 +182,7 @@ Primary and secondary actions receive a one-shot hover sheen with decorative lay
 ### Sticky navigation and scroll budget
 
 The capsule header stays at the top with an opaque surface rather than live backdrop blur. A ResizeObserver measures header height only when it changes; native anchor scroll padding and Lenis navigation offsets leave room for the header. Collection sidebars use the same offset. Decorative carousels and hero motion pause during scrolling; pointer/keyboard/native touch behavior is preserved. Actual refresh rate remains dependent on browser and hardware.
+
+### Header utility actions
+
+The shared header includes icon-only Telegram, WhatsApp (using the supplied contact number +14582624274), and cart links, plus an orange Check Pricing action to `/products/`. Cart quantity is reflected in the accessible label and count badge. Navigation collapses below 1280px; mobile actions use a second row with 44px touch targets. Sticky-header offsets resize automatically.

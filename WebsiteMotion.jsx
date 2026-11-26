@@ -9,7 +9,7 @@ const entrances = `${surfaces
     ',',
   )},.account-process>ol>li,.account-workloads>*,.home-section-heading,.process-item,.page-intro-copy>*,.home-hero-content>*,.account-page-hero-copy>*,.guide-card,.faq-page>details,.account-faq>details`;
 const motionButtons =
-  'a.primary,button.primary,a.secondary,button.secondary,.header-button,.provider-showcase-action,.account-card-actions>button';
+  'a.primary,button.primary,a.secondary,button.secondary,.header-button,.header-pricing,.provider-showcase-action,.account-card-actions>button';
 const heroParts =
   '.home-hero-content>*,.page-intro-copy>*,.account-page-hero-copy>*';
 
