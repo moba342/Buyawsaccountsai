@@ -1,10 +1,659 @@
-import ProductBuyingArticle,{CatalogBuyingArticles} from './ProductBuyingArticle';
-import PurchaseSummary from './PurchaseSummary';
-import{providerEditorial,productEditorial,faqs as purchaseFAQs}from'./editorialContent';
-import VariantSelect from './VariantSelect';
+import React, { useEffect, useState } from 'react';
+import {
+  ArrowRight,
+  ArrowDown,
+  ChevronDown,
+  Search,
+  ShoppingCart,
+  SlidersHorizontal,
+  FileText,
+  MessageCircle,
+  Check,
+  Globe,
+  Layers,
+} from 'lucide-react';
+import ProductBuyingArticle, {
+  CatalogBuyingArticles,
+} from './ProductBuyingArticle';
+import CatalogAccountCard from './CatalogAccountCard';
 import ProviderLogo from './ProviderLogo';
-import React from 'react';import{Check,ShieldCheck,Globe,Layers,ChevronDown,Cloud,Zap,BookOpen,ShoppingBag,Clock,Code,Rocket,Building,Users,Sparkles,Database,Server}from'lucide-react';
-import {slug,providerRoute,productRoute} from './catalogPaths';
-export {slug,providerRoute,productRoute} from './catalogPaths';
-const money=n=>'$'+n.toLocaleString('en-US');
-export function CatalogPage({brand,product,products,brands,navigate,onOrder,onCompare}){const list=products.filter(p=>p.provider===brand.name),prices=list.map(p=>p.price),shown=product?[product]:list;const copy=product?productEditorial(product,brand):providerEditorial[brand.name];const questions=[[`Which ${brand.name} account packages can I buy?`,`${list.length} ${list.length===1?'variant is':'variants are'} listed in this provider collection. Compare account types and reference prices, then ask us to confirm the current account details and availability for the option you want.`],purchaseFAQs[0],purchaseFAQs[1],purchaseFAQs[3],purchaseFAQs[7]];return <main id="page-content" tabIndex={-1} className="screenshot-page" data-provider={brand.name}><nav className="shot-breadcrumb" aria-label="Breadcrumb"><a href="/products/" onClick={()=>navigate('products')}>Products</a><span>›</span><a href="/providers/" onClick={()=>navigate('providers')}>Providers</a><span>›</span><a href={'/'+providerRoute(brand)+'/'} onClick={()=>navigate(providerRoute(brand))}>{brand.name}</a>{product&&<><span>›</span><span>{product.name}</span></>}</nav><section className="shot-intro"><div className="shot-intro-main"><div className="shot-hero-row"><div className="shot-provider-icon" style={{'--provider-color':brand.color}}><ProviderLogo name={brand.name}/></div><div><div className="shot-badges"><span className="shot-tag">{brand.name}</span><span className="shot-availability">{product?product.label:`${list.length} packages`}</span></div><h1>{product?`Buy ${brand.name} ${product.name}`:`Buy ${brand.name} Accounts & Credits`}</h1><p className="shot-subtitle">{product?copy.subtitle:brand.desc}</p></div></div>{product&&<div className="page-variant-picker"><label htmlFor="product-variant">Choose your variant</label><div><VariantSelect id="product-variant" label="Choose your variant" value={productRoute(product)} onChange={navigate} options={list.map(p=>({value:productRoute(p),label:`${p.name} — ${money(p.price)}`}))}/><strong>{money(product.price)}<small> / account</small></strong><button className="primary" onClick={()=>onOrder(product)}>Buy Now</button></div></div>}<p className="shot-intro-text">{copy.intro}</p></div><PurchaseSummary brand={brand} product={product} packages={list} onOrder={onOrder}/></section><section className="shot-section shot-about"><h2>{product?copy.heading:`How to buy ${brand.full} accounts`}</h2><p>{copy.about}</p><p>{copy.review}</p><p>Before ordering, request a written quote from Buy AWS Accounts AI that records the account package, any applicable checks, the final price, and the agreed delivery and support terms. Cloud usage and provider fees are separate unless your quote expressly includes them.</p></section><div className="shot-stats">{[[Zap,'PRODUCTS',product?'1 selected variant':`${list.length} packages`],[Clock,'DELIVERY','Confirm in quote'],[ShieldCheck,'SUPPORT','Defined package scope'],[Globe,'REGIONS','Confirm eligibility']].map(([Icon,h,v])=><div key={h}><span><Icon size={18}/></span><div><small>{h}</small><strong>{v}</strong></div></div>)}</div><section className="shot-section"><div id="package-options" className="shot-section-title"><h2>{product?'Package details':`All ${brand.name} Accounts`}</h2><a href={product?'/'+providerRoute(brand)+'/':'/products/'} onClick={()=>navigate(product?providerRoute(brand):'products')}>{product?'All provider packages':'View all'}</a></div><div className="shot-table-wrap" role="region" aria-label={brand.name+' account variants'} tabIndex={0}><table className="shot-table"><thead><tr><th>ACCOUNT</th><th>PRICE</th><th>DELIVERY</th><th><span className="sr-only">Order</span></th></tr></thead><tbody>{shown.map(p=><tr key={p.name}><td><a href={'/'+productRoute(p)+'/'} onClick={()=>navigate(productRoute(p))}><span className="shot-mini-logo" style={{color:brand.color}}><ProviderLogo name={brand.name}/></span><div><strong>{brand.name} {p.name}</strong><small>{p.type}</small></div></a></td><td>{money(p.price)}</td><td>{p.delivery}*</td><td><button onClick={()=>onOrder(p)} aria-label={"Buy Now: "+p.name}>Buy Now</button></td></tr>)}</tbody></table></div><p className="shot-fineprint">Listed prices are reference prices in USD. *Ask us to confirm current availability and the delivery timeline for your order before payment.</p></section><section className="shot-section"><h2>{product?'Included in your package':`Why choose ${brand.name} from us`}</h2><div className="shot-reasons">{(product?product.features.map((f,i)=>[[Layers,Globe,ShieldCheck][i],f,'Ask us to confirm this item for the specific account offered and include the agreed details in your written quote.']):[[Zap,'Packages matched to your plans','Tell us your workload, preferred region, and required limits so we can discuss the relevant listed account options.'],[ShoppingBag,'Understand the purchase price','Compare the displayed prices, then request a written quote separating the account package from ongoing provider charges.'],[Globe,'Account details before you buy','Ask for the ownership, eligibility, region, and quota information needed to evaluate the proposed account.'],[ShieldCheck,'Written delivery and support terms','Agree the delivery process, included assistance, and any cancellation or refund conditions before paying.']]).map(([Icon,h,p])=><article key={h}><div className="reason-banner"><span className="reason-icon"><Icon size={23}/></span><h3>{h}</h3></div><p>{p}</p></article>)}</div></section><section className="shot-section"><h2>{product?'Explore your package scope':`Popular ${brand.name} Workloads`}</h2><p className="shot-section-description">Use your intended workload to guide the account checks and package questions you raise before buying.</p><div className="shot-services">{[[Server,'Application hosting','Describe your application and deployment plan so you can check the required services, region, and resource limits.'],[Database,'Data & storage','Plan storage capacity, data location, and access needs alongside the account package and ongoing usage budget.'],[Layers,'Infrastructure','Review compute quotas, networking requirements, and billing responsibility before selecting the account.'],[Zap,'Automation','Identify scheduled workloads and integration needs so the proposed setup can be evaluated against them.'],[Sparkles,'AI & experimentation','Estimate the resources and services your experiments need, then confirm access and spending controls.'],[Cloud,'Cloud operations','Establish who manages access, recovery, billing, and monitoring after the agreed delivery process.']].map(([Icon,h,p])=><article key={h}><h3><span className="shot-service-icon"><Icon size={17}/></span>{h}</h3><p>{p}</p></article>)}</div></section><section className="shot-section"><h2>Common Use Cases</h2><div className="shot-usecases">{[['New projects','Compare a focused account package for a prototype, test environment, or first deployment.'],['Growing applications','Check whether the proposed account limits and operating costs fit your next stage of growth.'],['Client workloads','Clarify the account owner, access roles, and delivery responsibilities for your client’s environment.']].map(([h,p])=><article key={h}><Sparkles size={21}/><h3>{h}</h3><p>{p}</p></article>)}</div></section><section className="shot-section"><h2>{product?'Package Overview':'Provider Overview'}</h2><div className="shot-overview"><dl>{(product?[['Package',product.name],['Provider',brand.full],['Reference price',money(product.price)],['Package type',product.type],['Delivery','Confirm in quote'],['Support','Included service scope']]:[['Products available',`${list.length} packages`],['Reference price range',Math.min(...prices)===Math.max(...prices)?money(prices[0]):`${money(Math.min(...prices))} – ${money(Math.max(...prices))}`],['Delivery','Confirm in quote'],['Regions','Confirm eligibility'],['Credit variants',list.filter(p=>p.kind==='Credit').length+' available'],['Support','Package scope']]).map(([h,v])=><div key={h}><dt>{h}</dt><dd>{v}</dd></div>)}</dl><div className="shot-order-panel"><h3>BEFORE YOU ORDER</h3><ul>{['Confirm package availability','Request a written scope and final quote','Review delivery and support terms','Verify account and provider eligibility','Confirm ongoing provider usage charges'].map(f=><li key={f}><Check size={15}/>{f}</li>)}</ul><button className="primary" onClick={()=>onOrder(product||list[0])}>Buy Now</button></div></div></section><section className="shot-section"><h2>How to buy your cloud account</h2><div className="shot-steps">{[[Layers,'Choose your package','Compare the account type, listed price, and proposed scope against your workload.'],[BookOpen,'Confirm your quote','Request the account checks, final price, delivery process, and support terms in writing.'],[Cloud,'Start building','Complete the permitted setup process, review what was delivered, and secure access before deploying.']].map(([Icon,h,p])=><article key={h}><Icon size={30}/><h3>{h}</h3><p>{p}</p></article>)}</div></section><section className="shot-section"><h2>Cloud account options for different buyers</h2><div className="shot-audience">{[[Code,'Developer','Compare account options for test environments, prototypes, and application development.'],[Rocket,'Startup','Plan your account purchase alongside launch requirements and a realistic cloud budget.'],[Building,'Agency','Set out client ownership, required access, and project-specific delivery needs.'],[Users,'Growing team','Review limits, administration, and operating costs before your next deployment.']].map(([Icon,h,p])=><article key={h}><span className="shot-service-icon"><Icon size={21}/></span><h3>{h}</h3><p>{p}</p></article>)}</div></section><section className="shot-section"><h2>{product?'More '+brand.name+' Variants':`Buy ${brand.name} Accounts`}</h2><div className="shot-products">{(product?list.filter(p=>p!==product):list).map(p=>{let b=brands.find(b=>b.name===p.provider);return <article data-featured={p.label==='Popular'||undefined} key={productRoute(p)}><div className="shot-product-header"><span className="shot-brand-chip"><span style={{color:b.color}}><ProviderLogo name={b.name}/></span>{b.full}</span><small>{p.label}</small></div><h3><a href={'/'+productRoute(p)+'/'} onClick={()=>navigate(productRoute(p))}>{p.name}</a></h3><p>{p.type}</p><p className="shot-product-description">{p.features[0]}</p><div className="shot-product-price"><div>{money(p.price)}<small>/ account</small></div><span><Clock size={12}/> {p.delivery}<br/><ShieldCheck size={12}/> Defined scope</span></div><div className="shot-product-actions"><a href={'/'+productRoute(p)+'/'} onClick={()=>navigate(productRoute(p))}>View</a><button onClick={()=>onOrder(p)}><ShoppingBag size={14}/> Buy Now</button></div></article>})}</div></section>{product?<ProductBuyingArticle product={product} brand={brand} onOrder={onOrder}/>:<CatalogBuyingArticles brands={[brand]} products={list}/>}<section className="shot-section shot-faq"><div className="shot-section-title"><h2>Frequently Asked Questions</h2><span className="shot-tag">{questions.length} questions</span></div>{questions.map(([q,a],i)=><details key={q} open={i===0}><summary>{q}<ChevronDown size={17}/></summary><p>{a}</p></details>)}</section><section className="shot-related"><h3>RELATED PAGES</h3><p>Comparisons</p><div><button onClick={()=>onCompare(product||list[0])}>Compare {brand.name} packages</button>{brands.filter(b=>b.name!==brand.name).map(b=><a key={b.name} href={'/'+providerRoute(b)+'/'} onClick={()=>navigate(providerRoute(b))}>{b.name} accounts</a>)}</div><p>Guides</p><div><a href="/guides/" onClick={()=>navigate('guides')}>Choosing a cloud account</a><a href="/guides/" onClick={()=>navigate('guides')}>Understanding cloud credits</a></div></section></main>}
+import VariantSelect from './VariantSelect';
+import { providerEditorial, faqs as purchaseFAQs } from './editorialContent';
+import { formatPrice } from './catalog';
+import { providerRoute, productRoute } from './catalogPaths';
+import { productSpecifications } from './productSpecs';
+import { scrollPageTo } from './SmoothScrolling';
+import { sellerDeclaration as seller } from './sellerDeclaration';
+export { slug, providerRoute, productRoute } from './catalogPaths';
+function Collection({ brand, list, product, onOrder, onCompare, onAddToCart }) {
+  const [group, setGroup] = useState('All'),
+    [query, setQuery] = useState(''),
+    [expanded, setExpanded] = useState(false);
+  useEffect(() => {
+    setGroup('All');
+    setQuery('');
+    setExpanded(false);
+  }, [brand.name, product?.name]);
+  const groups = [...new Set(list.map((p) => p.group))],
+    options = list.filter((p) => p !== product),
+    filtered = options.filter(
+      (p) =>
+        (group === 'All' || p.group === group) &&
+        (p.name + ' ' + p.features.join(' '))
+          .toLowerCase()
+          .includes(query.toLowerCase()),
+    ),
+    shown = product && !expanded ? filtered.slice(0, 4) : filtered;
+  return (
+    <section
+      id="package-options"
+      className="account-collection"
+      aria-labelledby="account-collection-title"
+    >
+      <div className="account-section-heading">
+        <div>
+          <span className="account-eyebrow">
+            {product ? 'CONTINUE EXPLORING' : 'THE ACCOUNT COLLECTION'}
+          </span>
+          <h2 id="account-collection-title">
+            {product
+              ? 'More ' + brand.name + ' options'
+              : 'All ' + brand.name + ' accounts'}
+          </h2>
+          <p>
+            {product
+              ? 'Compare other variants from this provider.'
+              : 'Compare the listed scope and price, then choose the package you want to discuss.'}
+          </p>
+        </div>
+        {product && (
+          <a
+            className="account-text-link"
+            href={'/' + providerRoute(brand) + '/'}
+          >
+            View all {list.length} variants
+            <ArrowRight size={15} aria-hidden="true" />
+          </a>
+        )}
+      </div>
+      <div
+        className={
+          'account-collection-layout ' +
+          (groups.length === 1 ? 'single-group' : '')
+        }
+      >
+        <div className="account-category-nav">
+          <span>Account categories</span>
+          <button
+            aria-pressed={group === 'All'}
+            onClick={() => {
+              setGroup('All');
+              setExpanded(true);
+            }}
+          >
+            All packages<strong>{options.length}</strong>
+          </button>
+          {groups.map((name) => (
+            <button
+              aria-pressed={group === name}
+              key={name}
+              onClick={() => {
+                setGroup(name);
+                setExpanded(true);
+              }}
+            >
+              {name.replace(brand.name + ' ', '')}
+              <strong>{options.filter((p) => p.group === name).length}</strong>
+            </button>
+          ))}
+          <a href="/contact/">
+            Need help choosing?
+            <ArrowRight size={14} aria-hidden="true" />
+          </a>
+        </div>
+        <div className="account-collection-results">
+          <div className="account-collection-toolbar">
+            <span>
+              {filtered.length} {filtered.length === 1 ? 'package' : 'packages'}{' '}
+              · Prices in USD
+            </span>
+            <label>
+              <Search size={16} aria-hidden="true" />
+              <input
+                type="search"
+                aria-label="Search provider packages"
+                placeholder="Find a variant…"
+                value={query}
+                onChange={(e) => {
+                  setQuery(e.target.value);
+                  setExpanded(true);
+                }}
+              />
+            </label>
+          </div>
+          <div className="account-collection-grid">
+            {shown.map((p) => (
+              <CatalogAccountCard
+                key={productRoute(p)}
+                product={p}
+                brand={brand}
+                onOrder={onOrder}
+                onCompare={onCompare}
+                onAddToCart={onAddToCart}
+              />
+            ))}
+          </div>
+          {!shown.length && (
+            <div className="account-no-results">
+              <h3>No matching packages</h3>
+              <p>Try another category or a shorter search.</p>
+              <button
+                className="secondary"
+                onClick={() => {
+                  setQuery('');
+                  setGroup('All');
+                }}
+              >
+                Reset filters
+              </button>
+            </div>
+          )}
+          {shown.length < filtered.length && (
+            <button
+              className="secondary account-show-more"
+              onClick={() => setExpanded(true)}
+            >
+              Show all {filtered.length} variants
+              <ChevronDown size={16} aria-hidden="true" />
+            </button>
+          )}
+          <p className="account-price-note">
+            Reference prices apply to the listed account package. Confirm
+            availability, the final quote, provider usage charges, and delivery
+            terms before payment.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+function BuyingProcess() {
+  return (
+    <section
+      className="account-process"
+      aria-labelledby="account-process-title"
+    >
+      <div className="account-section-heading">
+        <div>
+          <span className="account-eyebrow">A STRAIGHTFORWARD PURCHASE</span>
+          <h2 id="account-process-title">From selection to delivery.</h2>
+          <p>
+            A clear package, an agreed scope, and a record of your purchase.
+          </p>
+        </div>
+      </div>
+      <ol>
+        {[
+          [
+            'Choose your package',
+            'Compare the account type, listed price, and proposed scope against your workload.',
+          ],
+          [
+            'Confirm the details',
+            'Request current account information, a final quote, delivery arrangements, and support terms in writing.',
+          ],
+          [
+            'Checkout and review',
+            'Review your cart, choose the USDT network, and check the TXID after payment. The seller matches the transfer to your order and arranges delivery.',
+          ],
+        ].map(([title, body], i) => (
+          <li key={title}>
+            <span>{String(i + 1).padStart(2, '0')}</span>
+            <h3>{title}</h3>
+            <p>{body}</p>
+          </li>
+        ))}
+      </ol>
+    </section>
+  );
+}
+function Planning({ brand, copy }) {
+  return (
+    <section className="account-planning">
+      <div className="account-section-heading">
+        <div>
+          <span className="account-eyebrow">PLAN BEFORE YOU PURCHASE</span>
+          <h2>Choose the account around your workload.</h2>
+          <p>{copy.about}</p>
+        </div>
+      </div>
+      <div className="account-workloads">
+        {[
+          [
+            'Application hosting',
+            'Describe your application and deployment plan so you can check the required services, region, and resource limits.',
+          ],
+          [
+            'Data & storage',
+            'Plan storage capacity, data location, and access needs alongside the account package and ongoing usage budget.',
+          ],
+          [
+            'Infrastructure',
+            'Review compute quotas, networking requirements, and billing responsibility before selecting the account.',
+          ],
+          [
+            'Automation',
+            'Identify scheduled workloads and integration needs so the proposed setup can be evaluated against them.',
+          ],
+          [
+            'AI & experimentation',
+            'Estimate the resources and services your experiments need, then confirm access and spending controls.',
+          ],
+          [
+            'Cloud operations',
+            'Establish who manages access, recovery, billing, and monitoring after the agreed delivery process.',
+          ],
+        ].map(([title, body]) => (
+          <div key={title}>
+            <h3>{title}</h3>
+            <p>{body}</p>
+          </div>
+        ))}
+      </div>
+      <div className="account-buying-notes">
+        <div>
+          <h3>A brief that fits your project</h3>
+          <p>
+            For a new project, compare a focused package for a prototype, test
+            environment, or first deployment. For a growing application, review
+            the proposed limits and operating costs. For client work, clarify
+            the account owner, access roles, and delivery responsibilities.
+          </p>
+          <p>{copy.review}</p>
+        </div>
+        <div>
+          <h3>For individual builders and teams</h3>
+          <p>
+            Developers can compare options for testing and application
+            development. Startups can plan account requirements alongside launch
+            budgets. Agencies should agree client ownership and required access;
+            growing teams should review administration and operating costs
+            before the next deployment.
+          </p>
+          <a
+            href={'/' + providerRoute(brand) + '/'}
+            className="account-text-link"
+          >
+            Explore the {brand.name} collection
+            <ArrowRight size={15} aria-hidden="true" />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+export function CatalogPage({
+  brand,
+  product,
+  products,
+  brands,
+  navigate,
+  onOrder,
+  onCompare,
+  onAddToCart,
+}) {
+  const list = products.filter((p) => p.provider === brand.name),
+    groups = [...new Set(list.map((p) => p.group))],
+    copy = providerEditorial[brand.name],
+    lowest = Math.min(...list.map((p) => p.price));
+  const questions = [
+    [
+      `Which ${brand.name} accounts are listed?`,
+      `${list.length} variants are listed in this collection. Compare the account types and reference prices, then confirm current account details and availability for your selected package.`,
+    ],
+    purchaseFAQs[0],
+    purchaseFAQs[1],
+    purchaseFAQs[2],
+    purchaseFAQs[7],
+  ];
+  return (
+    <main
+      id="page-content"
+      tabIndex={-1}
+      className="catalog-detail-page"
+      data-provider={brand.name}
+    >
+      <nav className="account-breadcrumb" aria-label="Breadcrumb">
+        <a href="/products/">Products</a>
+        <span>/</span>
+        <a
+          href={'/' + providerRoute(brand) + '/'}
+          aria-current={product ? undefined : 'page'}
+        >
+          {brand.full}
+        </a>
+        {product && (
+          <>
+            <span>/</span>
+            <span title={product.name} aria-current="page">
+              {product.name}
+            </span>
+          </>
+        )}
+      </nav>
+      <section className={'account-page-hero ' + (product ? 'is-product' : '')}>
+        <div className="account-page-hero-copy">
+          <div className="account-provider-lockup">
+            <span>
+              <ProviderLogo name={brand.name} decorative />
+            </span>
+            <div>
+              <strong>{brand.full}</strong>
+              <span>{product ? product.group : 'ACCOUNT COLLECTION'}</span>
+            </div>
+          </div>
+          <h1>
+            {product ? (
+              product.name
+            ) : (
+              <>
+                Buy {brand.name} accounts.
+                <br />
+                <span>A clearer way to choose.</span>
+              </>
+            )}
+          </h1>
+          <p>
+            {product
+              ? `Review this ${product.type.toLowerCase()} from the ${product.group} collection. Compare the seller-listed specification, choose your variant, and confirm the account details and purchase terms directly with us.`
+              : brand.summary +
+                ' Compare the listed details, select a package, and speak directly with the seller before you buy.'}
+          </p>
+          {product ? (
+            <section
+              className="account-product-specs"
+              aria-labelledby="account-specs-title"
+            >
+              <h2 id="account-specs-title">Listed package details</h2>
+              <dl>
+                {productSpecifications(product).map(([label, value]) => (
+                  <div key={label}>
+                    <dt>{label}</dt>
+                    <dd>{value}</dd>
+                  </div>
+                ))}
+              </dl>
+              <p>
+                Specification and model labels are supplied by the seller.
+                Confirm the details for the account offered.
+              </p>
+            </section>
+          ) : (
+            <>
+              <div className="account-hero-actions">
+                <button
+                  className="primary"
+                  onClick={() =>
+                    scrollPageTo(document.getElementById('package-options'))
+                  }
+                >
+                  Browse {list.length} packages
+                  <ArrowDown size={16} aria-hidden="true" />
+                </button>
+                <a
+                  className="secondary"
+                  href={seller.telegramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MessageCircle size={16} aria-hidden="true" />
+                  Talk to the seller
+                </a>
+              </div>
+              <div className="account-hero-note">
+                <span>Listed prices in USD</span>
+                <span>Direct seller contact</span>
+                <a href="/verified/">
+                  Seller information
+                  <ArrowRight size={13} aria-hidden="true" />
+                </a>
+              </div>
+            </>
+          )}
+        </div>
+        <aside
+          className="account-purchase-panel"
+          aria-label={
+            product ? 'Selected package purchase' : 'Collection overview'
+          }
+        >
+          <div className="account-purchase-top">
+            <span>
+              {product ? 'YOUR SELECTED PACKAGE' : 'COLLECTION OVERVIEW'}
+            </span>
+            <span>{product ? product.kind : list.length + ' variants'}</span>
+          </div>
+          <div className="account-purchase-price">
+            <span>{product ? 'Reference package price' : 'Packages from'}</span>
+            <strong>
+              {formatPrice(product ? product.price : lowest)}
+              <small>USD</small>
+            </strong>
+            <p>Per account · Confirm final quote</p>
+          </div>
+          {product ? (
+            <>
+              <label
+                className="account-variant-label"
+                htmlFor="account-product-variant"
+              >
+                Choose your variant
+              </label>
+              <VariantSelect
+                id="account-product-variant"
+                label="Choose your variant"
+                value={productRoute(product)}
+                onChange={navigate}
+                options={list.map((p) => ({
+                  value: productRoute(p),
+                  label: p.name + ' — ' + formatPrice(p.price),
+                }))}
+              />
+              <ul className="account-purchase-checks">
+                {product.features.map((text) => (
+                  <li key={text}>
+                    <Check size={14} aria-hidden="true" />
+                    <span>{text}</span>
+                  </li>
+                ))}
+              </ul>
+              <button className="primary" onClick={() => onOrder(product)}>
+                Buy Now
+                <ArrowRight size={16} aria-hidden="true" />
+              </button>
+              <button
+                className="secondary"
+                onClick={() =>
+                  onAddToCart ? onAddToCart(product) : onOrder(product)
+                }
+              >
+                <ShoppingCart size={16} aria-hidden="true" />
+                Add to cart
+              </button>
+              <button
+                className="account-purchase-compare"
+                onClick={() => onCompare(product)}
+              >
+                <SlidersHorizontal size={14} aria-hidden="true" />
+                Compare this package
+              </button>
+            </>
+          ) : (
+            <>
+              <div className="account-overview-categories">
+                {groups.map((group) => (
+                  <div key={group}>
+                    <span>{group.replace(brand.name + ' ', '')}</span>
+                    <strong>
+                      {list.filter((p) => p.group === group).length}
+                    </strong>
+                  </div>
+                ))}
+              </div>
+              <button
+                className="primary"
+                onClick={() =>
+                  scrollPageTo(document.getElementById('package-options'))
+                }
+              >
+                View the collection
+                <ArrowDown size={16} aria-hidden="true" />
+              </button>
+            </>
+          )}
+          <a className="account-panel-seller" href="/verified/">
+            <img
+              src="/seller/dexter-watts-profile.png"
+              width="36"
+              height="36"
+              alt=""
+            />
+            <span>
+              <strong>{seller.sellerName}</strong>
+              <small>View seller profile</small>
+            </span>
+            <ArrowRight size={15} aria-hidden="true" />
+          </a>
+        </aside>
+      </section>
+      <div className="account-assurances">
+        {[
+          [
+            Layers,
+            'A defined selection',
+            'Account types and variants in one collection.',
+          ],
+          [
+            FileText,
+            'Clear purchase terms',
+            'Confirm the scope, price, and delivery in writing.',
+          ],
+          [
+            Globe,
+            'Account-specific checks',
+            'Review region, eligibility, and relevant limits.',
+          ],
+          [
+            MessageCircle,
+            'Direct seller contact',
+            'Discuss your requirements before ordering.',
+          ],
+        ].map(([Icon, title, body]) => (
+          <div key={title}>
+            <Icon size={19} aria-hidden="true" />
+            <div>
+              <strong>{title}</strong>
+              <p>{body}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      {!product && (
+        <Collection
+          brand={brand}
+          list={list}
+          onOrder={onOrder}
+          onCompare={onCompare}
+          onAddToCart={onAddToCart}
+        />
+      )}
+      <BuyingProcess />
+      {product ? (
+        <>
+          <ProductBuyingArticle
+            product={product}
+            brand={brand}
+            onOrder={onOrder}
+          />
+          <Collection
+            brand={brand}
+            product={product}
+            list={list}
+            onOrder={onOrder}
+            onCompare={onCompare}
+            onAddToCart={onAddToCart}
+          />
+        </>
+      ) : (
+        <>
+          <Planning brand={brand} copy={copy} />
+          <details className="account-reading-room">
+            <summary>
+              <span>
+                <BookLabel />
+                Product buying guides for {brand.name}
+              </span>
+              <ChevronDown size={18} aria-hidden="true" />
+            </summary>
+            <CatalogBuyingArticles brands={[brand]} products={list} />
+          </details>
+        </>
+      )}
+      <section className="account-faq" aria-labelledby="account-faq-title">
+        <div className="account-section-heading">
+          <div>
+            <span className="account-eyebrow">BEFORE YOU ORDER</span>
+            <h2 id="account-faq-title">Questions worth asking.</h2>
+            <p>Practical answers for your account purchase.</p>
+          </div>
+          <a href="/faq/" className="account-text-link">
+            All FAQs
+            <ArrowRight size={15} aria-hidden="true" />
+          </a>
+        </div>
+        {questions.map(([q, a]) => (
+          <details key={q}>
+            <summary>
+              {q}
+              <ChevronDown size={17} aria-hidden="true" />
+            </summary>
+            <p>{a}</p>
+          </details>
+        ))}
+      </section>
+      <section className="account-related">
+        <div>
+          <span className="account-eyebrow">KEEP EXPLORING</span>
+          <h2>Find the right fit for your project.</h2>
+          <p>
+            Compare providers or review our buying guides before choosing your
+            next package.
+          </p>
+          <div>
+            <a href="/compare/">
+              Compare packages
+              <ArrowRight size={14} aria-hidden="true" />
+            </a>
+            <a href="/guides/">
+              Read buying guides
+              <ArrowRight size={14} aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+        <div className="account-related-providers">
+          {brands
+            .filter((b) => b.name !== brand.name)
+            .map((b) => (
+              <a key={b.name} href={'/' + providerRoute(b) + '/'}>
+                {b.full}
+                <ArrowRight size={13} aria-hidden="true" />
+              </a>
+            ))}
+        </div>
+      </section>
+    </main>
+  );
+}
+function BookLabel() {
+  return <FileText size={18} aria-hidden="true" />;
+}

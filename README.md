@@ -166,3 +166,7 @@ High-refresh displays: scrolling uses browser-provided RAF timestamps and time-b
 `catalog-data.js` is the canonical seller-supplied list: 68 variants across 14 providers. It preserves all submitted prices, including Azure 5K Credits at $7,550 and both AWS 5K/10K Bedrock credit packages at $1,099. Model and quota names are seller-supplied listing labels, not verified official specifications. Category filtering separates the large AWS, Azure, and Google Cloud collections.
 
 The browser cart key changed to `baa-cart-v2` to avoid carrying removed variants or old selections into checkout. Server-side TXID checks continue deriving amounts from the current catalog. Retired product/provider URLs redirect through `vercel.json`; current product routes, prices, article entries, provider counts, and feature cards derive from the replacement data. OVHcloud and UpCloud SVG marks come from the Simple Icons project, with the Heroku mark from its 15.0.0 archive; Amazon SES uses the existing AWS mark.
+
+### Product storefront layout
+
+Provider collections use category navigation, package search, and responsive two-column product cards. Product detail pages include a specification summary, variant selector, purchase panel, and related packages. Shared catalog cards support direct cart actions; existing buying articles remain available in the collection reading room. Styling is centralized in `catalog-pages.css` using the Midnight Sapphire theme.
