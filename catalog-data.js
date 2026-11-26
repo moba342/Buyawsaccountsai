@@ -99,7 +99,7 @@ export const catalogDefinitions = [
       },
       {
         name: '32 vCPU · 10 RPM · Bedrock Enabled',
-        price: 70,
+        price: 75,
         kind: 'AI',
         group: 'AWS Bedrock AI Accounts',
         vcpus: 32,
@@ -107,7 +107,7 @@ export const catalogDefinitions = [
       },
       {
         name: '32 vCPU · 50 RPM · Bedrock Enabled',
-        price: 70,
+        price: 120,
         kind: 'AI',
         group: 'AWS Bedrock AI Accounts',
         vcpus: 32,

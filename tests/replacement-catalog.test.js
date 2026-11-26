@@ -5,7 +5,7 @@ import { productRoute } from '../catalogPaths.js';
 import { validatePaymentRequest } from '../server/payment-verifier.js';
 const prices = {
   AWS: [
-    15, 25, 35, 110, 145, 199, 299, 499, 1299, 1250, 2500, 6500, 18000, 70, 70,
+    15, 25, 35, 110, 145, 199, 299, 499, 1299, 1250, 2500, 6500, 18000, 75, 120,
     900, 5500, 6500, 9999, 1099, 1099, 2500,
   ],
   Azure: [35, 55, 7550, 1500, 999, 1999, 5500, 14500],
