@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-27",
+  "base": "http://localhost:4173",
+  "pages": 96,
+  "indexable200": 94,
+  "directRedirects": 535,
+  "queryPreserved": 535,
+  "internalLinks": 96,
+  "schemaChecks": 96,
+  "errors": []
+}

@@ -1,8 +1,11 @@
+import path from "node:path";
 import fs from "node:fs/promises";
 import assert from "node:assert/strict";
 import { routeIds, routePath, pathRoute } from "../routing.js";
 import { getPageSeo, SITE_URL, siteSchema, socialEntries } from "../seo.js";
 const base = process.env.QA_URL || "http://localhost:4173";
+const evidence =
+  process.env.QA_EVIDENCE_DIR || "docs/seo/evidence/url-migration";
 const config = JSON.parse(await fs.readFile("vercel.json", "utf8"));
 const pages = [
   { id: "products", url: "/" },
@@ -107,9 +110,9 @@ assert.equal(
     .status,
   404,
 );
-await fs.mkdir("docs/seo/evidence/url-migration", { recursive: true });
+await fs.mkdir(evidence, { recursive: true });
 await fs.writeFile(
-  "docs/seo/evidence/url-migration/validation.json",
+  path.join(evidence, "validation.json"),
   JSON.stringify(report, null, 2),
 );
 console.log(JSON.stringify(report, null, 2));

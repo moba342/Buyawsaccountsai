@@ -1,6 +1,6 @@
 # Primary keyword URL audit and migration mapping
 
-Date: 2026-11-27 (Asia/Dhaka). Source branch: seo/keyword-url-migration-2026-11-27. This is implemented and tested in source; production has not been changed by this task.
+Date: 2026-11-27 (Asia/Dhaka). Source branch: seo/keyword-url-migration-2026-11-27. Implemented and tested source mapping. Actual deployment status and live results are recorded separately in FINAL-SEO-IMPLEMENTATION-REPORT.md.
 
 ## Audit and decisions
 
@@ -125,7 +125,7 @@ Permanent server redirects, full URL mapping and direct internal links follow [G
 
 Run npm test, npm run build, npm run validate:seo and npm run validate:urls. The URL validator checks every canonical page and redirect, old slash/non-slash forms, query preservation, one-hop final 200s, canonicals, sitemap, Open Graph, breadcrumbs/schema and all rendered internal links. Browser QA checks hydrated routes, mobile/desktop layouts, actual navigation, legacy cart IDs and unchanged blocked-purchase behavior. Results are saved under evidence/url-migration/.
 
-This source-only migration does not deploy or activate commercial products. After a separately requested release, verify edge redirects on the preferred HTTPS/www host, real 200/308/404 statuses, Search Console sitemap/coverage and existing backlinks. Retain permanent legacy redirects; do not remove them after the first crawl. No account verification document is required to implement or validate the URL migration.
+Generating this mapping does not deploy or activate commercial products. For the authorized production release, verify edge redirects on the preferred HTTPS/www host, real 200/308/404 statuses, Search Console sitemap/coverage and existing backlinks. Retain permanent legacy redirects; do not remove them after the first crawl. No account verification document is required to implement or validate the URL migration.
 
 ## Recorded validation results — PASS
 
@@ -137,4 +137,4 @@ This source-only migration does not deploy or activate commercial products. Afte
 - All 68 pending purchase controls remained disabled; saved carts were preserved, checkout stayed blocked and the API rejected pending items. No commercial activation, transfer or order occurred.
 - Unknown test routes returned a genuine 404. Current sitemap remains 94; no extra variant pages were introduced.
 
-Evidence: evidence/url-migration/validation.json, technical-qa.json, publication-ui.json, accessibility-extra.json and mapping.json. Tests used the local production-like server, not a new live Vercel deployment. Automated accessibility is not a claim of manual assistive-technology coverage.
+Evidence: evidence/url-migration/validation.json, technical-qa.json, publication-ui.json, accessibility-extra.json and mapping.json. These mapping-run results used the local production-like server. Actual live acceptance results are recorded separately in FINAL-SEO-IMPLEMENTATION-REPORT.md. Automated accessibility is not a claim of manual assistive-technology coverage.

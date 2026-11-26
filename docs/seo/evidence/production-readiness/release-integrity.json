@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-27",
+  "migrationCommit": "7600b60",
+  "candidateCommit": "b64982c58356fdf527a003d3d0bac8660fb375c9",
+  "categories": 14,
+  "variants": 68,
+  "headUniqueness": 96,
+  "filesUnchangedFromMigration": [
+    "catalog-data.js",
+    "catalog.js",
+    "payments.js",
+    "cart.js",
+    "offer-review-records.js",
+    "offer-publication.js",
+    "server/payment-verifier.js",
+    "api/verify-payment.js",
+    "routing.js",
+    "catalogPaths.js"
+  ],
+  "rewriteFiles": 95,
+  "commercial": {
+    "published": 0,
+    "purchasable": 0,
+    "categoriesPublished": 0
+  },
+  "fingerprints": {
+    "package-lock.json": "65b2025b7b9a6ca77af32e444f8b5c8c0675ba145a181be14d286d2720992c50",
+    "vercel.json": "92e843cec14acc50304ef2b58d7caf69335450f080180a07e2bf8587e2c2ead6",
+    "dist/sitemap.xml": "973de93411464aaab8458b298ea58ae52c37df022beb1fda8c0a0d39fd814f3d",
+    "dist/robots.txt": "d93a70dbd3042485f46b49d053f53a06f3998380a712c206def1647215304732"
+  },
+  "productionBaseline": [
+    {
+      "path": "/",
+      "status": 200,
+      "robots": "index, follow",
+      "sitemapUrls": null
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "robots": null,
+      "sitemapUrls": 12
+    },
+    {
+      "path": "/aws-accounts/",
+      "status": 200,
+      "robots": "noindex, follow",
+      "sitemapUrls": null
+    },
+    {
+      "path": "/buy-aws-accounts/",
+      "status": 404,
+      "robots": "noindex, follow",
+      "sitemapUrls": null
+    }
+  ]
+}
