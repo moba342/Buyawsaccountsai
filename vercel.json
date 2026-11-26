@@ -4,12 +4,7 @@
   "installCommand": "npm ci",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "trailingSlash": true,
   "rewrites": [
-    {
-      "source": "/buying-guides/:slug/",
-      "destination": "/buying-guides/:slug/index.html"
-    },
     {
       "source": "/cart/",
       "destination": "/cart/index.html"
@@ -51,12 +46,344 @@
       "destination": "/verification/public-proof/index.html"
     },
     {
-      "source": "/:provider-accounts/",
-      "destination": "/:provider-accounts/index.html"
+      "source": "/buying-guides/how-to-choose-a-cloud-account-for-your-project/",
+      "destination": "/buying-guides/how-to-choose-a-cloud-account-for-your-project/index.html"
     },
     {
-      "source": "/product/:slug/",
-      "destination": "/product/:slug/index.html"
+      "source": "/buying-guides/buying-cloud-credits-value-eligibility-and-expiry/",
+      "destination": "/buying-guides/buying-cloud-credits-value-eligibility-and-expiry/index.html"
+    },
+    {
+      "source": "/buying-guides/your-cloud-account-delivery-and-security-checklist/",
+      "destination": "/buying-guides/your-cloud-account-delivery-and-security-checklist/index.html"
+    },
+    {
+      "source": "/buy-aws-accounts/",
+      "destination": "/buy-aws-accounts/index.html"
+    },
+    {
+      "source": "/buy-azure-accounts/",
+      "destination": "/buy-azure-accounts/index.html"
+    },
+    {
+      "source": "/buy-digitalocean-accounts/",
+      "destination": "/buy-digitalocean-accounts/index.html"
+    },
+    {
+      "source": "/buy-google-cloud-accounts/",
+      "destination": "/buy-google-cloud-accounts/index.html"
+    },
+    {
+      "source": "/buy-hetzner-accounts/",
+      "destination": "/buy-hetzner-accounts/index.html"
+    },
+    {
+      "source": "/buy-kamatera-accounts/",
+      "destination": "/buy-kamatera-accounts/index.html"
+    },
+    {
+      "source": "/buy-linode-accounts/",
+      "destination": "/buy-linode-accounts/index.html"
+    },
+    {
+      "source": "/buy-oracle-cloud-accounts/",
+      "destination": "/buy-oracle-cloud-accounts/index.html"
+    },
+    {
+      "source": "/buy-ovhcloud-accounts/",
+      "destination": "/buy-ovhcloud-accounts/index.html"
+    },
+    {
+      "source": "/buy-amazon-ses-accounts/",
+      "destination": "/buy-amazon-ses-accounts/index.html"
+    },
+    {
+      "source": "/buy-upcloud-accounts/",
+      "destination": "/buy-upcloud-accounts/index.html"
+    },
+    {
+      "source": "/buy-ibm-cloud-accounts/",
+      "destination": "/buy-ibm-cloud-accounts/index.html"
+    },
+    {
+      "source": "/buy-heroku-accounts/",
+      "destination": "/buy-heroku-accounts/index.html"
+    },
+    {
+      "source": "/buy-vultr-accounts/",
+      "destination": "/buy-vultr-accounts/index.html"
+    },
+    {
+      "source": "/buy-aws-free-trial/",
+      "destination": "/buy-aws-free-trial/index.html"
+    },
+    {
+      "source": "/buy-aws-8-vcpu/",
+      "destination": "/buy-aws-8-vcpu/index.html"
+    },
+    {
+      "source": "/buy-aws-32-vcpu/",
+      "destination": "/buy-aws-32-vcpu/index.html"
+    },
+    {
+      "source": "/buy-aws-64-vcpu/",
+      "destination": "/buy-aws-64-vcpu/index.html"
+    },
+    {
+      "source": "/buy-aws-128-vcpu/",
+      "destination": "/buy-aws-128-vcpu/index.html"
+    },
+    {
+      "source": "/buy-aws-256-vcpu/",
+      "destination": "/buy-aws-256-vcpu/index.html"
+    },
+    {
+      "source": "/buy-aws-512-vcpu/",
+      "destination": "/buy-aws-512-vcpu/index.html"
+    },
+    {
+      "source": "/buy-aws-640-vcpu/",
+      "destination": "/buy-aws-640-vcpu/index.html"
+    },
+    {
+      "source": "/buy-aws-1920-vcpu/",
+      "destination": "/buy-aws-1920-vcpu/index.html"
+    },
+    {
+      "source": "/buy-aws-5k-credits/",
+      "destination": "/buy-aws-5k-credits/index.html"
+    },
+    {
+      "source": "/buy-aws-10k-credits/",
+      "destination": "/buy-aws-10k-credits/index.html"
+    },
+    {
+      "source": "/buy-aws-25k-credits/",
+      "destination": "/buy-aws-25k-credits/index.html"
+    },
+    {
+      "source": "/buy-aws-100k-credits/",
+      "destination": "/buy-aws-100k-credits/index.html"
+    },
+    {
+      "source": "/buy-aws-32-vcpu-10-rpm-bedrock-enabled/",
+      "destination": "/buy-aws-32-vcpu-10-rpm-bedrock-enabled/index.html"
+    },
+    {
+      "source": "/buy-aws-32-vcpu-50-rpm-bedrock-enabled/",
+      "destination": "/buy-aws-32-vcpu-50-rpm-bedrock-enabled/index.html"
+    },
+    {
+      "source": "/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/",
+      "destination": "/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/index.html"
+    },
+    {
+      "source": "/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
+      "destination": "/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/index.html"
+    },
+    {
+      "source": "/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
+      "destination": "/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/index.html"
+    },
+    {
+      "source": "/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
+      "destination": "/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/index.html"
+    },
+    {
+      "source": "/buy-aws-5k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "/buy-aws-5k-credits-10k-rpm-bedrock-enabled/index.html"
+    },
+    {
+      "source": "/buy-aws-10k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "/buy-aws-10k-credits-10k-rpm-bedrock-enabled/index.html"
+    },
+    {
+      "source": "/buy-aws-25k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "/buy-aws-25k-credits-10k-rpm-bedrock-enabled/index.html"
+    },
+    {
+      "source": "/buy-azure-free-trial-200-credits/",
+      "destination": "/buy-azure-free-trial-200-credits/index.html"
+    },
+    {
+      "source": "/buy-azure-pay-as-you-go/",
+      "destination": "/buy-azure-pay-as-you-go/index.html"
+    },
+    {
+      "source": "/buy-azure-5k-credits/",
+      "destination": "/buy-azure-5k-credits/index.html"
+    },
+    {
+      "source": "/buy-azure-10k-credits-gpt-enabled/",
+      "destination": "/buy-azure-10k-credits-gpt-enabled/index.html"
+    },
+    {
+      "source": "/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/index.html"
+    },
+    {
+      "source": "/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/index.html"
+    },
+    {
+      "source": "/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/index.html"
+    },
+    {
+      "source": "/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/index.html"
+    },
+    {
+      "source": "/buy-digitalocean-3-droplets-free-trial/",
+      "destination": "/buy-digitalocean-3-droplets-free-trial/index.html"
+    },
+    {
+      "source": "/buy-digitalocean-10-droplets-free-trial/",
+      "destination": "/buy-digitalocean-10-droplets-free-trial/index.html"
+    },
+    {
+      "source": "/buy-digitalocean-200-droplets-port-25-open/",
+      "destination": "/buy-digitalocean-200-droplets-port-25-open/index.html"
+    },
+    {
+      "source": "/buy-digitalocean-500-droplets-port-25-open/",
+      "destination": "/buy-digitalocean-500-droplets-port-25-open/index.html"
+    },
+    {
+      "source": "/buy-google-cloud-free-trial-300-credits/",
+      "destination": "/buy-google-cloud-free-trial-300-credits/index.html"
+    },
+    {
+      "source": "/buy-google-cloud-300-credits-paid-account/",
+      "destination": "/buy-google-cloud-300-credits-paid-account/index.html"
+    },
+    {
+      "source": "/buy-google-cloud-2k-credits-paid-account/",
+      "destination": "/buy-google-cloud-2k-credits-paid-account/index.html"
+    },
+    {
+      "source": "/buy-google-cloud-5k-credits-paid-account/",
+      "destination": "/buy-google-cloud-5k-credits-paid-account/index.html"
+    },
+    {
+      "source": "/buy-google-cloud-10k-credits-paid-account/",
+      "destination": "/buy-google-cloud-10k-credits-paid-account/index.html"
+    },
+    {
+      "source": "/buy-google-cloud-25k-credits-paid-account/",
+      "destination": "/buy-google-cloud-25k-credits-paid-account/index.html"
+    },
+    {
+      "source": "/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/index.html"
+    },
+    {
+      "source": "/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/index.html"
+    },
+    {
+      "source": "/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/index.html"
+    },
+    {
+      "source": "/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/index.html"
+    },
+    {
+      "source": "/buy-hetzner-free-trial/",
+      "destination": "/buy-hetzner-free-trial/index.html"
+    },
+    {
+      "source": "/buy-hetzner-port-limit-50-servers/",
+      "destination": "/buy-hetzner-port-limit-50-servers/index.html"
+    },
+    {
+      "source": "/buy-kamatera-free-trial/",
+      "destination": "/buy-kamatera-free-trial/index.html"
+    },
+    {
+      "source": "/buy-kamatera-port-25-open/",
+      "destination": "/buy-kamatera-port-25-open/index.html"
+    },
+    {
+      "source": "/buy-linode-free-trial/",
+      "destination": "/buy-linode-free-trial/index.html"
+    },
+    {
+      "source": "/buy-linode-port-25-open-10-ips/",
+      "destination": "/buy-linode-port-25-open-10-ips/index.html"
+    },
+    {
+      "source": "/buy-linode-port-25-open-50-ips/",
+      "destination": "/buy-linode-port-25-open-50-ips/index.html"
+    },
+    {
+      "source": "/buy-oracle-cloud-free-trial/",
+      "destination": "/buy-oracle-cloud-free-trial/index.html"
+    },
+    {
+      "source": "/buy-oracle-cloud-pay-as-you-go/",
+      "destination": "/buy-oracle-cloud-pay-as-you-go/index.html"
+    },
+    {
+      "source": "/buy-ovhcloud-free-trial-34-vcpu/",
+      "destination": "/buy-ovhcloud-free-trial-34-vcpu/index.html"
+    },
+    {
+      "source": "/buy-ovhcloud-paid-account-34-vcpu/",
+      "destination": "/buy-ovhcloud-paid-account-34-vcpu/index.html"
+    },
+    {
+      "source": "/buy-amazon-ses-smtp-50k-daily-limit/",
+      "destination": "/buy-amazon-ses-smtp-50k-daily-limit/index.html"
+    },
+    {
+      "source": "/buy-amazon-ses-smtp-50k-daily-limit-3-regions/",
+      "destination": "/buy-amazon-ses-smtp-50k-daily-limit-3-regions/index.html"
+    },
+    {
+      "source": "/buy-amazon-ses-smtp-100k-daily-limit/",
+      "destination": "/buy-amazon-ses-smtp-100k-daily-limit/index.html"
+    },
+    {
+      "source": "/buy-upcloud-free-trial/",
+      "destination": "/buy-upcloud-free-trial/index.html"
+    },
+    {
+      "source": "/buy-upcloud-paid-account/",
+      "destination": "/buy-upcloud-paid-account/index.html"
+    },
+    {
+      "source": "/buy-ibm-cloud-free-trial/",
+      "destination": "/buy-ibm-cloud-free-trial/index.html"
+    },
+    {
+      "source": "/buy-ibm-cloud-pay-as-you-go/",
+      "destination": "/buy-ibm-cloud-pay-as-you-go/index.html"
+    },
+    {
+      "source": "/buy-ibm-cloud-port-25-open/",
+      "destination": "/buy-ibm-cloud-port-25-open/index.html"
+    },
+    {
+      "source": "/buy-heroku-free-trial-port-25-open/",
+      "destination": "/buy-heroku-free-trial-port-25-open/index.html"
+    },
+    {
+      "source": "/buy-heroku-port-25-open/",
+      "destination": "/buy-heroku-port-25-open/index.html"
+    },
+    {
+      "source": "/buy-vultr-200-credits/",
+      "destination": "/buy-vultr-200-credits/index.html"
+    },
+    {
+      "source": "/buy-vultr-250-credits/",
+      "destination": "/buy-vultr-250-credits/index.html"
+    },
+    {
+      "source": "/buy-vultr-95-credits/",
+      "destination": "/buy-vultr-95-credits/index.html"
     }
   ],
   "functions": {
@@ -71,7 +398,17 @@
       "permanent": true
     },
     {
+      "source": "/products",
+      "destination": "/marketplace/",
+      "permanent": true
+    },
+    {
       "source": "/providers/",
+      "destination": "/cloud-platforms/",
+      "permanent": true
+    },
+    {
+      "source": "/providers",
       "destination": "/cloud-platforms/",
       "permanent": true
     },
@@ -81,7 +418,17 @@
       "permanent": true
     },
     {
+      "source": "/compare",
+      "destination": "/compare-products/",
+      "permanent": true
+    },
+    {
       "source": "/guides/",
+      "destination": "/buying-guides/",
+      "permanent": true
+    },
+    {
+      "source": "/guides",
       "destination": "/buying-guides/",
       "permanent": true
     },
@@ -91,7 +438,17 @@
       "permanent": true
     },
     {
+      "source": "/faq",
+      "destination": "/help-center/",
+      "permanent": true
+    },
+    {
       "source": "/verified/",
+      "destination": "/seller-profile/",
+      "permanent": true
+    },
+    {
+      "source": "/verified",
       "destination": "/seller-profile/",
       "permanent": true
     },
@@ -101,187 +458,377 @@
       "permanent": true
     },
     {
+      "source": "/contact",
+      "destination": "/contact-sales/",
+      "permanent": true
+    },
+    {
       "source": "/product/aws-1k-credit/",
-      "destination": "/aws-accounts/",
+      "destination": "/buy-aws-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-1k-credit",
+      "destination": "/buy-aws-accounts/",
       "permanent": true
     },
     {
       "source": "/product/aws-5k-credit/",
-      "destination": "/aws-accounts/",
+      "destination": "/buy-aws-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-5k-credit",
+      "destination": "/buy-aws-accounts/",
       "permanent": true
     },
     {
       "source": "/product/aws-10k-credit/",
-      "destination": "/aws-accounts/",
+      "destination": "/buy-aws-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-10k-credit",
+      "destination": "/buy-aws-accounts/",
       "permanent": true
     },
     {
       "source": "/product/aws-25k-credit/",
-      "destination": "/aws-accounts/",
+      "destination": "/buy-aws-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-25k-credit",
+      "destination": "/buy-aws-accounts/",
       "permanent": true
     },
     {
       "source": "/product/aws-100k-credit/",
-      "destination": "/aws-accounts/",
+      "destination": "/buy-aws-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-100k-credit",
+      "destination": "/buy-aws-accounts/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-300-credit/",
-      "destination": "/google-cloud-accounts/",
+      "destination": "/buy-google-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-300-credit",
+      "destination": "/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-400-credit/",
-      "destination": "/google-cloud-accounts/",
+      "destination": "/buy-google-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-400-credit",
+      "destination": "/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-1k-credit/",
-      "destination": "/google-cloud-accounts/",
+      "destination": "/buy-google-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-1k-credit",
+      "destination": "/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-5k-credit/",
-      "destination": "/google-cloud-accounts/",
+      "destination": "/buy-google-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-5k-credit",
+      "destination": "/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-10k-credit/",
-      "destination": "/google-cloud-accounts/",
+      "destination": "/buy-google-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-10k-credit",
+      "destination": "/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-25k-credit/",
-      "destination": "/google-cloud-accounts/",
+      "destination": "/buy-google-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-25k-credit",
+      "destination": "/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/azure-free-trial/",
-      "destination": "/azure-accounts/",
+      "destination": "/buy-azure-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-free-trial",
+      "destination": "/buy-azure-accounts/",
       "permanent": true
     },
     {
       "source": "/product/azure-1k-credit/",
-      "destination": "/azure-accounts/",
+      "destination": "/buy-azure-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-1k-credit",
+      "destination": "/buy-azure-accounts/",
       "permanent": true
     },
     {
       "source": "/product/azure-5k-credit/",
-      "destination": "/azure-accounts/",
+      "destination": "/buy-azure-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-5k-credit",
+      "destination": "/buy-azure-accounts/",
       "permanent": true
     },
     {
       "source": "/product/azure-25k-credit/",
-      "destination": "/azure-accounts/",
+      "destination": "/buy-azure-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-25k-credit",
+      "destination": "/buy-azure-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-free-trial/",
-      "destination": "/digitalocean-accounts/",
+      "destination": "/buy-digitalocean-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-free-trial",
+      "destination": "/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-close-port-3/",
-      "destination": "/digitalocean-accounts/",
+      "destination": "/buy-digitalocean-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-close-port-3",
+      "destination": "/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-close-port-10/",
-      "destination": "/digitalocean-accounts/",
+      "destination": "/buy-digitalocean-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-close-port-10",
+      "destination": "/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-close-port-25/",
-      "destination": "/digitalocean-accounts/",
+      "destination": "/buy-digitalocean-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-close-port-25",
+      "destination": "/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-open-port-3/",
-      "destination": "/digitalocean-accounts/",
+      "destination": "/buy-digitalocean-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-open-port-3",
+      "destination": "/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-open-port-10/",
-      "destination": "/digitalocean-accounts/",
+      "destination": "/buy-digitalocean-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-open-port-10",
+      "destination": "/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-open-port-25/",
-      "destination": "/digitalocean-accounts/",
+      "destination": "/buy-digitalocean-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-open-port-25",
+      "destination": "/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/oracle-cloud-300-credit/",
-      "destination": "/oracle-cloud-accounts/",
+      "destination": "/buy-oracle-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/oracle-cloud-300-credit",
+      "destination": "/buy-oracle-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/oracle-cloud-new-account/",
-      "destination": "/oracle-cloud-accounts/",
+      "destination": "/buy-oracle-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/oracle-cloud-new-account",
+      "destination": "/buy-oracle-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/oracle-cloud-old-account/",
-      "destination": "/oracle-cloud-accounts/",
+      "destination": "/buy-oracle-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/oracle-cloud-old-account",
+      "destination": "/buy-oracle-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/oracle-cloud-upgraded-account/",
-      "destination": "/oracle-cloud-accounts/",
+      "destination": "/buy-oracle-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/oracle-cloud-upgraded-account",
+      "destination": "/buy-oracle-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-5-servers/",
-      "destination": "/hetzner-accounts/",
+      "destination": "/buy-hetzner-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hetzner-5-servers",
+      "destination": "/buy-hetzner-accounts/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-10-servers/",
-      "destination": "/hetzner-accounts/",
+      "destination": "/buy-hetzner-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hetzner-10-servers",
+      "destination": "/buy-hetzner-accounts/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-25-servers/",
-      "destination": "/hetzner-accounts/",
+      "destination": "/buy-hetzner-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hetzner-25-servers",
+      "destination": "/buy-hetzner-accounts/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-100-servers/",
-      "destination": "/hetzner-accounts/",
+      "destination": "/buy-hetzner-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hetzner-100-servers",
+      "destination": "/buy-hetzner-accounts/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-old-account/",
-      "destination": "/hetzner-accounts/",
+      "destination": "/buy-hetzner-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hetzner-old-account",
+      "destination": "/buy-hetzner-accounts/",
       "permanent": true
     },
     {
       "source": "/product/vultr-200-credit/",
-      "destination": "/vultr-accounts/",
+      "destination": "/buy-vultr-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vultr-200-credit",
+      "destination": "/buy-vultr-accounts/",
       "permanent": true
     },
     {
       "source": "/product/vultr-250-credit/",
-      "destination": "/vultr-accounts/",
+      "destination": "/buy-vultr-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vultr-250-credit",
+      "destination": "/buy-vultr-accounts/",
       "permanent": true
     },
     {
       "source": "/product/vultr-300-credit/",
-      "destination": "/vultr-accounts/",
+      "destination": "/buy-vultr-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vultr-300-credit",
+      "destination": "/buy-vultr-accounts/",
       "permanent": true
     },
     {
       "source": "/product/linode-100-credit/",
-      "destination": "/linode-accounts/",
+      "destination": "/buy-linode-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/linode-100-credit",
+      "destination": "/buy-linode-accounts/",
       "permanent": true
     },
     {
       "source": "/product/linode-port-25-open/",
-      "destination": "/linode-accounts/",
+      "destination": "/buy-linode-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/linode-port-25-open",
+      "destination": "/buy-linode-accounts/",
       "permanent": true
     },
     {
       "source": "/product/alibaba-cloud-personal-account/",
+      "destination": "/marketplace/",
+      "permanent": true
+    },
+    {
+      "source": "/product/alibaba-cloud-personal-account",
       "destination": "/marketplace/",
       "permanent": true
     },
@@ -291,7 +838,17 @@
       "permanent": true
     },
     {
+      "source": "/product/alibaba-cloud-business-account",
+      "destination": "/marketplace/",
+      "permanent": true
+    },
+    {
       "source": "/product/atlantic-net-free-trial/",
+      "destination": "/marketplace/",
+      "permanent": true
+    },
+    {
+      "source": "/product/atlantic-net-free-trial",
       "destination": "/marketplace/",
       "permanent": true
     },
@@ -301,13 +858,2213 @@
       "permanent": true
     },
     {
+      "source": "/product/atlantic-net-port-25-open",
+      "destination": "/marketplace/",
+      "permanent": true
+    },
+    {
       "source": "/alibaba-cloud-accounts/",
+      "destination": "/cloud-platforms/",
+      "permanent": true
+    },
+    {
+      "source": "/alibaba-cloud-accounts",
       "destination": "/cloud-platforms/",
       "permanent": true
     },
     {
       "source": "/atlantic-net-accounts/",
       "destination": "/cloud-platforms/",
+      "permanent": true
+    },
+    {
+      "source": "/atlantic-net-accounts",
+      "destination": "/cloud-platforms/",
+      "permanent": true
+    },
+    {
+      "source": "/aws-accounts/",
+      "destination": "/buy-aws-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/aws-accounts",
+      "destination": "/buy-aws-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/aws-accounts/index.html",
+      "destination": "/buy-aws-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/azure-accounts/",
+      "destination": "/buy-azure-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/azure-accounts",
+      "destination": "/buy-azure-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/azure-accounts/index.html",
+      "destination": "/buy-azure-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/digitalocean-accounts/",
+      "destination": "/buy-digitalocean-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/digitalocean-accounts",
+      "destination": "/buy-digitalocean-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/digitalocean-accounts/index.html",
+      "destination": "/buy-digitalocean-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/google-cloud-accounts/",
+      "destination": "/buy-google-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/google-cloud-accounts",
+      "destination": "/buy-google-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/google-cloud-accounts/index.html",
+      "destination": "/buy-google-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/hetzner-accounts/",
+      "destination": "/buy-hetzner-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/hetzner-accounts",
+      "destination": "/buy-hetzner-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/hetzner-accounts/index.html",
+      "destination": "/buy-hetzner-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/kamatera-accounts/",
+      "destination": "/buy-kamatera-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/kamatera-accounts",
+      "destination": "/buy-kamatera-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/kamatera-accounts/index.html",
+      "destination": "/buy-kamatera-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/linode-accounts/",
+      "destination": "/buy-linode-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/linode-accounts",
+      "destination": "/buy-linode-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/linode-accounts/index.html",
+      "destination": "/buy-linode-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/oracle-cloud-accounts/",
+      "destination": "/buy-oracle-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/oracle-cloud-accounts",
+      "destination": "/buy-oracle-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/oracle-cloud-accounts/index.html",
+      "destination": "/buy-oracle-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/ovhcloud-accounts/",
+      "destination": "/buy-ovhcloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/ovhcloud-accounts",
+      "destination": "/buy-ovhcloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/ovhcloud-accounts/index.html",
+      "destination": "/buy-ovhcloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/amazon-ses-accounts/",
+      "destination": "/buy-amazon-ses-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/amazon-ses-accounts",
+      "destination": "/buy-amazon-ses-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/amazon-ses-accounts/index.html",
+      "destination": "/buy-amazon-ses-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/upcloud-accounts/",
+      "destination": "/buy-upcloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/upcloud-accounts",
+      "destination": "/buy-upcloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/upcloud-accounts/index.html",
+      "destination": "/buy-upcloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/ibm-cloud-accounts/",
+      "destination": "/buy-ibm-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/ibm-cloud-accounts",
+      "destination": "/buy-ibm-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/ibm-cloud-accounts/index.html",
+      "destination": "/buy-ibm-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/heroku-accounts/",
+      "destination": "/buy-heroku-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/heroku-accounts",
+      "destination": "/buy-heroku-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/heroku-accounts/index.html",
+      "destination": "/buy-heroku-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/vultr-accounts/",
+      "destination": "/buy-vultr-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/vultr-accounts",
+      "destination": "/buy-vultr-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/vultr-accounts/index.html",
+      "destination": "/buy-vultr-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-free-trial/",
+      "destination": "/buy-aws-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-free-trial",
+      "destination": "/buy-aws-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-free-trial/index.html",
+      "destination": "/buy-aws-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-8-vcpu/",
+      "destination": "/buy-aws-8-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-8-vcpu",
+      "destination": "/buy-aws-8-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-8-vcpu/index.html",
+      "destination": "/buy-aws-8-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-32-vcpu/",
+      "destination": "/buy-aws-32-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-32-vcpu",
+      "destination": "/buy-aws-32-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-32-vcpu/index.html",
+      "destination": "/buy-aws-32-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-64-vcpu/",
+      "destination": "/buy-aws-64-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-64-vcpu",
+      "destination": "/buy-aws-64-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-64-vcpu/index.html",
+      "destination": "/buy-aws-64-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-128-vcpu/",
+      "destination": "/buy-aws-128-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-128-vcpu",
+      "destination": "/buy-aws-128-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-128-vcpu/index.html",
+      "destination": "/buy-aws-128-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-256-vcpu/",
+      "destination": "/buy-aws-256-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-256-vcpu",
+      "destination": "/buy-aws-256-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-256-vcpu/index.html",
+      "destination": "/buy-aws-256-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-512-vcpu/",
+      "destination": "/buy-aws-512-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-512-vcpu",
+      "destination": "/buy-aws-512-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-512-vcpu/index.html",
+      "destination": "/buy-aws-512-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-640-vcpu/",
+      "destination": "/buy-aws-640-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-640-vcpu",
+      "destination": "/buy-aws-640-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-640-vcpu/index.html",
+      "destination": "/buy-aws-640-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-1920-vcpu/",
+      "destination": "/buy-aws-1920-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-1920-vcpu",
+      "destination": "/buy-aws-1920-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-1920-vcpu/index.html",
+      "destination": "/buy-aws-1920-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-5k-credits/",
+      "destination": "/buy-aws-5k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-5k-credits",
+      "destination": "/buy-aws-5k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-5k-credits/index.html",
+      "destination": "/buy-aws-5k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-10k-credits/",
+      "destination": "/buy-aws-10k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-10k-credits",
+      "destination": "/buy-aws-10k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-10k-credits/index.html",
+      "destination": "/buy-aws-10k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-25k-credits/",
+      "destination": "/buy-aws-25k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-25k-credits",
+      "destination": "/buy-aws-25k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-25k-credits/index.html",
+      "destination": "/buy-aws-25k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-100k-credits/",
+      "destination": "/buy-aws-100k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-100k-credits",
+      "destination": "/buy-aws-100k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-100k-credits/index.html",
+      "destination": "/buy-aws-100k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-32-vcpu-10-rpm-bedrock-enabled/",
+      "destination": "/buy-aws-32-vcpu-10-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-32-vcpu-10-rpm-bedrock-enabled",
+      "destination": "/buy-aws-32-vcpu-10-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-32-vcpu-10-rpm-bedrock-enabled/index.html",
+      "destination": "/buy-aws-32-vcpu-10-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-32-vcpu-50-rpm-bedrock-enabled/",
+      "destination": "/buy-aws-32-vcpu-50-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-32-vcpu-50-rpm-bedrock-enabled",
+      "destination": "/buy-aws-32-vcpu-50-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-32-vcpu-50-rpm-bedrock-enabled/index.html",
+      "destination": "/buy-aws-32-vcpu-50-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-256-vcpu-10k-rpm-bedrock-enabled/",
+      "destination": "/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-256-vcpu-10k-rpm-bedrock-enabled",
+      "destination": "/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-256-vcpu-10k-rpm-bedrock-enabled/index.html",
+      "destination": "/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
+      "destination": "/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled",
+      "destination": "/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/index.html",
+      "destination": "/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
+      "destination": "/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2",
+      "destination": "/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/index.html",
+      "destination": "/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
+      "destination": "/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5",
+      "destination": "/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/index.html",
+      "destination": "/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-5k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "/buy-aws-5k-credits-10k-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-5k-credits-10k-rpm-bedrock-enabled",
+      "destination": "/buy-aws-5k-credits-10k-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-5k-credits-10k-rpm-bedrock-enabled/index.html",
+      "destination": "/buy-aws-5k-credits-10k-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-10k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "/buy-aws-10k-credits-10k-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-10k-credits-10k-rpm-bedrock-enabled",
+      "destination": "/buy-aws-10k-credits-10k-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-10k-credits-10k-rpm-bedrock-enabled/index.html",
+      "destination": "/buy-aws-10k-credits-10k-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-25k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "/buy-aws-25k-credits-10k-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-25k-credits-10k-rpm-bedrock-enabled",
+      "destination": "/buy-aws-25k-credits-10k-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-25k-credits-10k-rpm-bedrock-enabled/index.html",
+      "destination": "/buy-aws-25k-credits-10k-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-free-trial-200-credits/",
+      "destination": "/buy-azure-free-trial-200-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-free-trial-200-credits",
+      "destination": "/buy-azure-free-trial-200-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-free-trial-200-credits/index.html",
+      "destination": "/buy-azure-free-trial-200-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-pay-as-you-go/",
+      "destination": "/buy-azure-pay-as-you-go/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-pay-as-you-go",
+      "destination": "/buy-azure-pay-as-you-go/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-pay-as-you-go/index.html",
+      "destination": "/buy-azure-pay-as-you-go/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-5k-credits/",
+      "destination": "/buy-azure-5k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-5k-credits",
+      "destination": "/buy-azure-5k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-5k-credits/index.html",
+      "destination": "/buy-azure-5k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-10k-credits-gpt-enabled/",
+      "destination": "/buy-azure-10k-credits-gpt-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-10k-credits-gpt-enabled",
+      "destination": "/buy-azure-10k-credits-gpt-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-10k-credits-gpt-enabled/index.html",
+      "destination": "/buy-azure-10k-credits-gpt-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-5k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-5k-credits-gpt-6-astra-high-tpm-t5",
+      "destination": "/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-5k-credits-gpt-6-astra-high-tpm-t5/index.html",
+      "destination": "/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-10k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-10k-credits-gpt-6-astra-high-tpm-t5",
+      "destination": "/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-10k-credits-gpt-6-astra-high-tpm-t5/index.html",
+      "destination": "/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-25k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-25k-credits-gpt-6-astra-high-tpm-t5",
+      "destination": "/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-25k-credits-gpt-6-astra-high-tpm-t5/index.html",
+      "destination": "/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-100k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-100k-credits-gpt-6-astra-high-tpm-t5",
+      "destination": "/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-100k-credits-gpt-6-astra-high-tpm-t5/index.html",
+      "destination": "/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-3-droplets-free-trial/",
+      "destination": "/buy-digitalocean-3-droplets-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-3-droplets-free-trial",
+      "destination": "/buy-digitalocean-3-droplets-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-3-droplets-free-trial/index.html",
+      "destination": "/buy-digitalocean-3-droplets-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-10-droplets-free-trial/",
+      "destination": "/buy-digitalocean-10-droplets-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-10-droplets-free-trial",
+      "destination": "/buy-digitalocean-10-droplets-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-10-droplets-free-trial/index.html",
+      "destination": "/buy-digitalocean-10-droplets-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-200-droplets-port-25-open/",
+      "destination": "/buy-digitalocean-200-droplets-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-200-droplets-port-25-open",
+      "destination": "/buy-digitalocean-200-droplets-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-200-droplets-port-25-open/index.html",
+      "destination": "/buy-digitalocean-200-droplets-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-500-droplets-port-25-open/",
+      "destination": "/buy-digitalocean-500-droplets-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-500-droplets-port-25-open",
+      "destination": "/buy-digitalocean-500-droplets-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-500-droplets-port-25-open/index.html",
+      "destination": "/buy-digitalocean-500-droplets-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-free-trial-300-credits/",
+      "destination": "/buy-google-cloud-free-trial-300-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-free-trial-300-credits",
+      "destination": "/buy-google-cloud-free-trial-300-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-free-trial-300-credits/index.html",
+      "destination": "/buy-google-cloud-free-trial-300-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-300-credits-paid-account/",
+      "destination": "/buy-google-cloud-300-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-300-credits-paid-account",
+      "destination": "/buy-google-cloud-300-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-300-credits-paid-account/index.html",
+      "destination": "/buy-google-cloud-300-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-2k-credits-paid-account/",
+      "destination": "/buy-google-cloud-2k-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-2k-credits-paid-account",
+      "destination": "/buy-google-cloud-2k-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-2k-credits-paid-account/index.html",
+      "destination": "/buy-google-cloud-2k-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-5k-credits-paid-account/",
+      "destination": "/buy-google-cloud-5k-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-5k-credits-paid-account",
+      "destination": "/buy-google-cloud-5k-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-5k-credits-paid-account/index.html",
+      "destination": "/buy-google-cloud-5k-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-10k-credits-paid-account/",
+      "destination": "/buy-google-cloud-10k-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-10k-credits-paid-account",
+      "destination": "/buy-google-cloud-10k-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-10k-credits-paid-account/index.html",
+      "destination": "/buy-google-cloud-10k-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-25k-credits-paid-account/",
+      "destination": "/buy-google-cloud-25k-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-25k-credits-paid-account",
+      "destination": "/buy-google-cloud-25k-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-25k-credits-paid-account/index.html",
+      "destination": "/buy-google-cloud-25k-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2",
+      "destination": "/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/index.html",
+      "destination": "/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2",
+      "destination": "/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/index.html",
+      "destination": "/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2",
+      "destination": "/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/index.html",
+      "destination": "/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2",
+      "destination": "/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/index.html",
+      "destination": "/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hetzner-free-trial/",
+      "destination": "/buy-hetzner-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hetzner-free-trial",
+      "destination": "/buy-hetzner-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hetzner-free-trial/index.html",
+      "destination": "/buy-hetzner-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hetzner-port-limit-50-servers/",
+      "destination": "/buy-hetzner-port-limit-50-servers/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hetzner-port-limit-50-servers",
+      "destination": "/buy-hetzner-port-limit-50-servers/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hetzner-port-limit-50-servers/index.html",
+      "destination": "/buy-hetzner-port-limit-50-servers/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kamatera-free-trial/",
+      "destination": "/buy-kamatera-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kamatera-free-trial",
+      "destination": "/buy-kamatera-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kamatera-free-trial/index.html",
+      "destination": "/buy-kamatera-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kamatera-port-25-open/",
+      "destination": "/buy-kamatera-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kamatera-port-25-open",
+      "destination": "/buy-kamatera-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kamatera-port-25-open/index.html",
+      "destination": "/buy-kamatera-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/product/linode-free-trial/",
+      "destination": "/buy-linode-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/linode-free-trial",
+      "destination": "/buy-linode-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/linode-free-trial/index.html",
+      "destination": "/buy-linode-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/linode-port-25-open-10-ips/",
+      "destination": "/buy-linode-port-25-open-10-ips/",
+      "permanent": true
+    },
+    {
+      "source": "/product/linode-port-25-open-10-ips",
+      "destination": "/buy-linode-port-25-open-10-ips/",
+      "permanent": true
+    },
+    {
+      "source": "/product/linode-port-25-open-10-ips/index.html",
+      "destination": "/buy-linode-port-25-open-10-ips/",
+      "permanent": true
+    },
+    {
+      "source": "/product/linode-port-25-open-50-ips/",
+      "destination": "/buy-linode-port-25-open-50-ips/",
+      "permanent": true
+    },
+    {
+      "source": "/product/linode-port-25-open-50-ips",
+      "destination": "/buy-linode-port-25-open-50-ips/",
+      "permanent": true
+    },
+    {
+      "source": "/product/linode-port-25-open-50-ips/index.html",
+      "destination": "/buy-linode-port-25-open-50-ips/",
+      "permanent": true
+    },
+    {
+      "source": "/product/oracle-cloud-free-trial/",
+      "destination": "/buy-oracle-cloud-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/oracle-cloud-free-trial",
+      "destination": "/buy-oracle-cloud-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/oracle-cloud-free-trial/index.html",
+      "destination": "/buy-oracle-cloud-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/oracle-cloud-pay-as-you-go/",
+      "destination": "/buy-oracle-cloud-pay-as-you-go/",
+      "permanent": true
+    },
+    {
+      "source": "/product/oracle-cloud-pay-as-you-go",
+      "destination": "/buy-oracle-cloud-pay-as-you-go/",
+      "permanent": true
+    },
+    {
+      "source": "/product/oracle-cloud-pay-as-you-go/index.html",
+      "destination": "/buy-oracle-cloud-pay-as-you-go/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ovhcloud-free-trial-34-vcpu/",
+      "destination": "/buy-ovhcloud-free-trial-34-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ovhcloud-free-trial-34-vcpu",
+      "destination": "/buy-ovhcloud-free-trial-34-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ovhcloud-free-trial-34-vcpu/index.html",
+      "destination": "/buy-ovhcloud-free-trial-34-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ovhcloud-paid-account-34-vcpu/",
+      "destination": "/buy-ovhcloud-paid-account-34-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ovhcloud-paid-account-34-vcpu",
+      "destination": "/buy-ovhcloud-paid-account-34-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ovhcloud-paid-account-34-vcpu/index.html",
+      "destination": "/buy-ovhcloud-paid-account-34-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/amazon-ses-smtp-50k-daily-limit/",
+      "destination": "/buy-amazon-ses-smtp-50k-daily-limit/",
+      "permanent": true
+    },
+    {
+      "source": "/product/amazon-ses-smtp-50k-daily-limit",
+      "destination": "/buy-amazon-ses-smtp-50k-daily-limit/",
+      "permanent": true
+    },
+    {
+      "source": "/product/amazon-ses-smtp-50k-daily-limit/index.html",
+      "destination": "/buy-amazon-ses-smtp-50k-daily-limit/",
+      "permanent": true
+    },
+    {
+      "source": "/product/amazon-ses-smtp-50k-daily-limit-3-regions/",
+      "destination": "/buy-amazon-ses-smtp-50k-daily-limit-3-regions/",
+      "permanent": true
+    },
+    {
+      "source": "/product/amazon-ses-smtp-50k-daily-limit-3-regions",
+      "destination": "/buy-amazon-ses-smtp-50k-daily-limit-3-regions/",
+      "permanent": true
+    },
+    {
+      "source": "/product/amazon-ses-smtp-50k-daily-limit-3-regions/index.html",
+      "destination": "/buy-amazon-ses-smtp-50k-daily-limit-3-regions/",
+      "permanent": true
+    },
+    {
+      "source": "/product/amazon-ses-smtp-100k-daily-limit/",
+      "destination": "/buy-amazon-ses-smtp-100k-daily-limit/",
+      "permanent": true
+    },
+    {
+      "source": "/product/amazon-ses-smtp-100k-daily-limit",
+      "destination": "/buy-amazon-ses-smtp-100k-daily-limit/",
+      "permanent": true
+    },
+    {
+      "source": "/product/amazon-ses-smtp-100k-daily-limit/index.html",
+      "destination": "/buy-amazon-ses-smtp-100k-daily-limit/",
+      "permanent": true
+    },
+    {
+      "source": "/product/upcloud-free-trial/",
+      "destination": "/buy-upcloud-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/upcloud-free-trial",
+      "destination": "/buy-upcloud-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/upcloud-free-trial/index.html",
+      "destination": "/buy-upcloud-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/upcloud-paid-account/",
+      "destination": "/buy-upcloud-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/product/upcloud-paid-account",
+      "destination": "/buy-upcloud-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/product/upcloud-paid-account/index.html",
+      "destination": "/buy-upcloud-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ibm-cloud-free-trial/",
+      "destination": "/buy-ibm-cloud-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ibm-cloud-free-trial",
+      "destination": "/buy-ibm-cloud-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ibm-cloud-free-trial/index.html",
+      "destination": "/buy-ibm-cloud-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ibm-cloud-pay-as-you-go/",
+      "destination": "/buy-ibm-cloud-pay-as-you-go/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ibm-cloud-pay-as-you-go",
+      "destination": "/buy-ibm-cloud-pay-as-you-go/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ibm-cloud-pay-as-you-go/index.html",
+      "destination": "/buy-ibm-cloud-pay-as-you-go/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ibm-cloud-port-25-open/",
+      "destination": "/buy-ibm-cloud-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ibm-cloud-port-25-open",
+      "destination": "/buy-ibm-cloud-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ibm-cloud-port-25-open/index.html",
+      "destination": "/buy-ibm-cloud-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/product/heroku-free-trial-port-25-open/",
+      "destination": "/buy-heroku-free-trial-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/product/heroku-free-trial-port-25-open",
+      "destination": "/buy-heroku-free-trial-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/product/heroku-free-trial-port-25-open/index.html",
+      "destination": "/buy-heroku-free-trial-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/product/heroku-port-25-open/",
+      "destination": "/buy-heroku-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/product/heroku-port-25-open",
+      "destination": "/buy-heroku-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/product/heroku-port-25-open/index.html",
+      "destination": "/buy-heroku-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vultr-200-credits/",
+      "destination": "/buy-vultr-200-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vultr-200-credits",
+      "destination": "/buy-vultr-200-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vultr-200-credits/index.html",
+      "destination": "/buy-vultr-200-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vultr-250-credits/",
+      "destination": "/buy-vultr-250-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vultr-250-credits",
+      "destination": "/buy-vultr-250-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vultr-250-credits/index.html",
+      "destination": "/buy-vultr-250-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vultr-95-credits/",
+      "destination": "/buy-vultr-95-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vultr-95-credits",
+      "destination": "/buy-vultr-95-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vultr-95-credits/index.html",
+      "destination": "/buy-vultr-95-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/cart",
+      "destination": "/cart/",
+      "permanent": true
+    },
+    {
+      "source": "/cart/index.html",
+      "destination": "/cart/",
+      "permanent": true
+    },
+    {
+      "source": "/checkout",
+      "destination": "/checkout/",
+      "permanent": true
+    },
+    {
+      "source": "/checkout/index.html",
+      "destination": "/checkout/",
+      "permanent": true
+    },
+    {
+      "source": "/marketplace",
+      "destination": "/marketplace/",
+      "permanent": true
+    },
+    {
+      "source": "/marketplace/index.html",
+      "destination": "/marketplace/",
+      "permanent": true
+    },
+    {
+      "source": "/cloud-platforms",
+      "destination": "/cloud-platforms/",
+      "permanent": true
+    },
+    {
+      "source": "/cloud-platforms/index.html",
+      "destination": "/cloud-platforms/",
+      "permanent": true
+    },
+    {
+      "source": "/compare-products",
+      "destination": "/compare-products/",
+      "permanent": true
+    },
+    {
+      "source": "/compare-products/index.html",
+      "destination": "/compare-products/",
+      "permanent": true
+    },
+    {
+      "source": "/buying-guides",
+      "destination": "/buying-guides/",
+      "permanent": true
+    },
+    {
+      "source": "/buying-guides/index.html",
+      "destination": "/buying-guides/",
+      "permanent": true
+    },
+    {
+      "source": "/help-center",
+      "destination": "/help-center/",
+      "permanent": true
+    },
+    {
+      "source": "/help-center/index.html",
+      "destination": "/help-center/",
+      "permanent": true
+    },
+    {
+      "source": "/contact-sales",
+      "destination": "/contact-sales/",
+      "permanent": true
+    },
+    {
+      "source": "/contact-sales/index.html",
+      "destination": "/contact-sales/",
+      "permanent": true
+    },
+    {
+      "source": "/seller-profile",
+      "destination": "/seller-profile/",
+      "permanent": true
+    },
+    {
+      "source": "/seller-profile/index.html",
+      "destination": "/seller-profile/",
+      "permanent": true
+    },
+    {
+      "source": "/verification/public-proof",
+      "destination": "/verification/public-proof/",
+      "permanent": true
+    },
+    {
+      "source": "/verification/public-proof/index.html",
+      "destination": "/verification/public-proof/",
+      "permanent": true
+    },
+    {
+      "source": "/buying-guides/how-to-choose-a-cloud-account-for-your-project",
+      "destination": "/buying-guides/how-to-choose-a-cloud-account-for-your-project/",
+      "permanent": true
+    },
+    {
+      "source": "/buying-guides/how-to-choose-a-cloud-account-for-your-project/index.html",
+      "destination": "/buying-guides/how-to-choose-a-cloud-account-for-your-project/",
+      "permanent": true
+    },
+    {
+      "source": "/buying-guides/buying-cloud-credits-value-eligibility-and-expiry",
+      "destination": "/buying-guides/buying-cloud-credits-value-eligibility-and-expiry/",
+      "permanent": true
+    },
+    {
+      "source": "/buying-guides/buying-cloud-credits-value-eligibility-and-expiry/index.html",
+      "destination": "/buying-guides/buying-cloud-credits-value-eligibility-and-expiry/",
+      "permanent": true
+    },
+    {
+      "source": "/buying-guides/your-cloud-account-delivery-and-security-checklist",
+      "destination": "/buying-guides/your-cloud-account-delivery-and-security-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/buying-guides/your-cloud-account-delivery-and-security-checklist/index.html",
+      "destination": "/buying-guides/your-cloud-account-delivery-and-security-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-accounts",
+      "destination": "/buy-aws-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-accounts/index.html",
+      "destination": "/buy-aws-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-azure-accounts",
+      "destination": "/buy-azure-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-azure-accounts/index.html",
+      "destination": "/buy-azure-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-digitalocean-accounts",
+      "destination": "/buy-digitalocean-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-digitalocean-accounts/index.html",
+      "destination": "/buy-digitalocean-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-accounts",
+      "destination": "/buy-google-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-accounts/index.html",
+      "destination": "/buy-google-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-hetzner-accounts",
+      "destination": "/buy-hetzner-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-hetzner-accounts/index.html",
+      "destination": "/buy-hetzner-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-kamatera-accounts",
+      "destination": "/buy-kamatera-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-kamatera-accounts/index.html",
+      "destination": "/buy-kamatera-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-linode-accounts",
+      "destination": "/buy-linode-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-linode-accounts/index.html",
+      "destination": "/buy-linode-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-oracle-cloud-accounts",
+      "destination": "/buy-oracle-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-oracle-cloud-accounts/index.html",
+      "destination": "/buy-oracle-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-ovhcloud-accounts",
+      "destination": "/buy-ovhcloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-ovhcloud-accounts/index.html",
+      "destination": "/buy-ovhcloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-amazon-ses-accounts",
+      "destination": "/buy-amazon-ses-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-amazon-ses-accounts/index.html",
+      "destination": "/buy-amazon-ses-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-upcloud-accounts",
+      "destination": "/buy-upcloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-upcloud-accounts/index.html",
+      "destination": "/buy-upcloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-ibm-cloud-accounts",
+      "destination": "/buy-ibm-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-ibm-cloud-accounts/index.html",
+      "destination": "/buy-ibm-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-heroku-accounts",
+      "destination": "/buy-heroku-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-heroku-accounts/index.html",
+      "destination": "/buy-heroku-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-vultr-accounts",
+      "destination": "/buy-vultr-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-vultr-accounts/index.html",
+      "destination": "/buy-vultr-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-free-trial",
+      "destination": "/buy-aws-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-free-trial/index.html",
+      "destination": "/buy-aws-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-8-vcpu",
+      "destination": "/buy-aws-8-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-8-vcpu/index.html",
+      "destination": "/buy-aws-8-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-32-vcpu",
+      "destination": "/buy-aws-32-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-32-vcpu/index.html",
+      "destination": "/buy-aws-32-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-64-vcpu",
+      "destination": "/buy-aws-64-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-64-vcpu/index.html",
+      "destination": "/buy-aws-64-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-128-vcpu",
+      "destination": "/buy-aws-128-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-128-vcpu/index.html",
+      "destination": "/buy-aws-128-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-256-vcpu",
+      "destination": "/buy-aws-256-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-256-vcpu/index.html",
+      "destination": "/buy-aws-256-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-512-vcpu",
+      "destination": "/buy-aws-512-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-512-vcpu/index.html",
+      "destination": "/buy-aws-512-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-640-vcpu",
+      "destination": "/buy-aws-640-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-640-vcpu/index.html",
+      "destination": "/buy-aws-640-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-1920-vcpu",
+      "destination": "/buy-aws-1920-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-1920-vcpu/index.html",
+      "destination": "/buy-aws-1920-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-5k-credits",
+      "destination": "/buy-aws-5k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-5k-credits/index.html",
+      "destination": "/buy-aws-5k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-10k-credits",
+      "destination": "/buy-aws-10k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-10k-credits/index.html",
+      "destination": "/buy-aws-10k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-25k-credits",
+      "destination": "/buy-aws-25k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-25k-credits/index.html",
+      "destination": "/buy-aws-25k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-100k-credits",
+      "destination": "/buy-aws-100k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-100k-credits/index.html",
+      "destination": "/buy-aws-100k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-32-vcpu-10-rpm-bedrock-enabled",
+      "destination": "/buy-aws-32-vcpu-10-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-32-vcpu-10-rpm-bedrock-enabled/index.html",
+      "destination": "/buy-aws-32-vcpu-10-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-32-vcpu-50-rpm-bedrock-enabled",
+      "destination": "/buy-aws-32-vcpu-50-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-32-vcpu-50-rpm-bedrock-enabled/index.html",
+      "destination": "/buy-aws-32-vcpu-50-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-256-vcpu-10k-rpm-bedrock-enabled",
+      "destination": "/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/index.html",
+      "destination": "/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled",
+      "destination": "/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/index.html",
+      "destination": "/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2",
+      "destination": "/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/index.html",
+      "destination": "/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5",
+      "destination": "/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/index.html",
+      "destination": "/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-5k-credits-10k-rpm-bedrock-enabled",
+      "destination": "/buy-aws-5k-credits-10k-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-5k-credits-10k-rpm-bedrock-enabled/index.html",
+      "destination": "/buy-aws-5k-credits-10k-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-10k-credits-10k-rpm-bedrock-enabled",
+      "destination": "/buy-aws-10k-credits-10k-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-10k-credits-10k-rpm-bedrock-enabled/index.html",
+      "destination": "/buy-aws-10k-credits-10k-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-25k-credits-10k-rpm-bedrock-enabled",
+      "destination": "/buy-aws-25k-credits-10k-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-aws-25k-credits-10k-rpm-bedrock-enabled/index.html",
+      "destination": "/buy-aws-25k-credits-10k-rpm-bedrock-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-azure-free-trial-200-credits",
+      "destination": "/buy-azure-free-trial-200-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-azure-free-trial-200-credits/index.html",
+      "destination": "/buy-azure-free-trial-200-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-azure-pay-as-you-go",
+      "destination": "/buy-azure-pay-as-you-go/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-azure-pay-as-you-go/index.html",
+      "destination": "/buy-azure-pay-as-you-go/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-azure-5k-credits",
+      "destination": "/buy-azure-5k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-azure-5k-credits/index.html",
+      "destination": "/buy-azure-5k-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-azure-10k-credits-gpt-enabled",
+      "destination": "/buy-azure-10k-credits-gpt-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-azure-10k-credits-gpt-enabled/index.html",
+      "destination": "/buy-azure-10k-credits-gpt-enabled/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5",
+      "destination": "/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/index.html",
+      "destination": "/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5",
+      "destination": "/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/index.html",
+      "destination": "/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5",
+      "destination": "/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/index.html",
+      "destination": "/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5",
+      "destination": "/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/index.html",
+      "destination": "/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-digitalocean-3-droplets-free-trial",
+      "destination": "/buy-digitalocean-3-droplets-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-digitalocean-3-droplets-free-trial/index.html",
+      "destination": "/buy-digitalocean-3-droplets-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-digitalocean-10-droplets-free-trial",
+      "destination": "/buy-digitalocean-10-droplets-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-digitalocean-10-droplets-free-trial/index.html",
+      "destination": "/buy-digitalocean-10-droplets-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-digitalocean-200-droplets-port-25-open",
+      "destination": "/buy-digitalocean-200-droplets-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-digitalocean-200-droplets-port-25-open/index.html",
+      "destination": "/buy-digitalocean-200-droplets-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-digitalocean-500-droplets-port-25-open",
+      "destination": "/buy-digitalocean-500-droplets-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-digitalocean-500-droplets-port-25-open/index.html",
+      "destination": "/buy-digitalocean-500-droplets-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-free-trial-300-credits",
+      "destination": "/buy-google-cloud-free-trial-300-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-free-trial-300-credits/index.html",
+      "destination": "/buy-google-cloud-free-trial-300-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-300-credits-paid-account",
+      "destination": "/buy-google-cloud-300-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-300-credits-paid-account/index.html",
+      "destination": "/buy-google-cloud-300-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-2k-credits-paid-account",
+      "destination": "/buy-google-cloud-2k-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-2k-credits-paid-account/index.html",
+      "destination": "/buy-google-cloud-2k-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-5k-credits-paid-account",
+      "destination": "/buy-google-cloud-5k-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-5k-credits-paid-account/index.html",
+      "destination": "/buy-google-cloud-5k-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-10k-credits-paid-account",
+      "destination": "/buy-google-cloud-10k-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-10k-credits-paid-account/index.html",
+      "destination": "/buy-google-cloud-10k-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-25k-credits-paid-account",
+      "destination": "/buy-google-cloud-25k-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-25k-credits-paid-account/index.html",
+      "destination": "/buy-google-cloud-25k-credits-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2",
+      "destination": "/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/index.html",
+      "destination": "/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2",
+      "destination": "/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/index.html",
+      "destination": "/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2",
+      "destination": "/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/index.html",
+      "destination": "/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2",
+      "destination": "/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/index.html",
+      "destination": "/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-hetzner-free-trial",
+      "destination": "/buy-hetzner-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-hetzner-free-trial/index.html",
+      "destination": "/buy-hetzner-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-hetzner-port-limit-50-servers",
+      "destination": "/buy-hetzner-port-limit-50-servers/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-hetzner-port-limit-50-servers/index.html",
+      "destination": "/buy-hetzner-port-limit-50-servers/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-kamatera-free-trial",
+      "destination": "/buy-kamatera-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-kamatera-free-trial/index.html",
+      "destination": "/buy-kamatera-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-kamatera-port-25-open",
+      "destination": "/buy-kamatera-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-kamatera-port-25-open/index.html",
+      "destination": "/buy-kamatera-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-linode-free-trial",
+      "destination": "/buy-linode-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-linode-free-trial/index.html",
+      "destination": "/buy-linode-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-linode-port-25-open-10-ips",
+      "destination": "/buy-linode-port-25-open-10-ips/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-linode-port-25-open-10-ips/index.html",
+      "destination": "/buy-linode-port-25-open-10-ips/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-linode-port-25-open-50-ips",
+      "destination": "/buy-linode-port-25-open-50-ips/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-linode-port-25-open-50-ips/index.html",
+      "destination": "/buy-linode-port-25-open-50-ips/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-oracle-cloud-free-trial",
+      "destination": "/buy-oracle-cloud-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-oracle-cloud-free-trial/index.html",
+      "destination": "/buy-oracle-cloud-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-oracle-cloud-pay-as-you-go",
+      "destination": "/buy-oracle-cloud-pay-as-you-go/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-oracle-cloud-pay-as-you-go/index.html",
+      "destination": "/buy-oracle-cloud-pay-as-you-go/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-ovhcloud-free-trial-34-vcpu",
+      "destination": "/buy-ovhcloud-free-trial-34-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-ovhcloud-free-trial-34-vcpu/index.html",
+      "destination": "/buy-ovhcloud-free-trial-34-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-ovhcloud-paid-account-34-vcpu",
+      "destination": "/buy-ovhcloud-paid-account-34-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-ovhcloud-paid-account-34-vcpu/index.html",
+      "destination": "/buy-ovhcloud-paid-account-34-vcpu/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-amazon-ses-smtp-50k-daily-limit",
+      "destination": "/buy-amazon-ses-smtp-50k-daily-limit/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-amazon-ses-smtp-50k-daily-limit/index.html",
+      "destination": "/buy-amazon-ses-smtp-50k-daily-limit/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-amazon-ses-smtp-50k-daily-limit-3-regions",
+      "destination": "/buy-amazon-ses-smtp-50k-daily-limit-3-regions/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-amazon-ses-smtp-50k-daily-limit-3-regions/index.html",
+      "destination": "/buy-amazon-ses-smtp-50k-daily-limit-3-regions/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-amazon-ses-smtp-100k-daily-limit",
+      "destination": "/buy-amazon-ses-smtp-100k-daily-limit/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-amazon-ses-smtp-100k-daily-limit/index.html",
+      "destination": "/buy-amazon-ses-smtp-100k-daily-limit/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-upcloud-free-trial",
+      "destination": "/buy-upcloud-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-upcloud-free-trial/index.html",
+      "destination": "/buy-upcloud-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-upcloud-paid-account",
+      "destination": "/buy-upcloud-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-upcloud-paid-account/index.html",
+      "destination": "/buy-upcloud-paid-account/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-ibm-cloud-free-trial",
+      "destination": "/buy-ibm-cloud-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-ibm-cloud-free-trial/index.html",
+      "destination": "/buy-ibm-cloud-free-trial/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-ibm-cloud-pay-as-you-go",
+      "destination": "/buy-ibm-cloud-pay-as-you-go/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-ibm-cloud-pay-as-you-go/index.html",
+      "destination": "/buy-ibm-cloud-pay-as-you-go/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-ibm-cloud-port-25-open",
+      "destination": "/buy-ibm-cloud-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-ibm-cloud-port-25-open/index.html",
+      "destination": "/buy-ibm-cloud-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-heroku-free-trial-port-25-open",
+      "destination": "/buy-heroku-free-trial-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-heroku-free-trial-port-25-open/index.html",
+      "destination": "/buy-heroku-free-trial-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-heroku-port-25-open",
+      "destination": "/buy-heroku-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-heroku-port-25-open/index.html",
+      "destination": "/buy-heroku-port-25-open/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-vultr-200-credits",
+      "destination": "/buy-vultr-200-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-vultr-200-credits/index.html",
+      "destination": "/buy-vultr-200-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-vultr-250-credits",
+      "destination": "/buy-vultr-250-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-vultr-250-credits/index.html",
+      "destination": "/buy-vultr-250-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-vultr-95-credits",
+      "destination": "/buy-vultr-95-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/buy-vultr-95-credits/index.html",
+      "destination": "/buy-vultr-95-credits/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
       "permanent": true
     }
   ],

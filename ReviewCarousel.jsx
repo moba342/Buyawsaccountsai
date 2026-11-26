@@ -1,3 +1,4 @@
+import { productPath } from "./catalogPaths";
 import React, { useRef } from "react";
 import { Cpu, Layers, ArrowUpRight } from "lucide-react";
 import ProviderLogo from "./ProviderLogo";
@@ -105,7 +106,7 @@ export default function ReviewCarousel() {
                       <a
                         className="review-buy"
                         tabIndex={copy === 1 ? -1 : 0}
-                        href={"/" + productRoute(account) + "/"}
+                        href={productPath(account)}
                       >
                         View reference{" "}
                         <ArrowUpRight size={14} aria-hidden="true" />

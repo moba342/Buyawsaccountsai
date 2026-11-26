@@ -115,3 +115,5 @@ console.log(
 );
 
 await import("./generate-catalog-seo.mjs");
+
+await import("./generate-url-mapping.mjs");

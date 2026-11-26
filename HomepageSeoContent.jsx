@@ -29,7 +29,7 @@ export default function HomepageSeoContent() {
             proposed capacity, account eligibility, region, billing setup, and
             ongoing usage costs alongside the reference price.
           </p>
-          <a className="text-button" href="/aws-accounts/">
+          <a className="text-button" href="/buy-aws-accounts/">
             Explore AWS accounts
           </a>
         </article>
@@ -59,7 +59,7 @@ export default function HomepageSeoContent() {
             For AWS Bedrock API pricing, ask about provider usage charges and
             credit conditions separately from the account purchase price.
           </p>
-          <a className="text-button" href="/aws-accounts/#package-options">
+          <a className="text-button" href="/buy-aws-accounts/#package-options">
             Review Bedrock-enabled options
           </a>
         </article>

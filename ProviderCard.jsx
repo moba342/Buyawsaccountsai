@@ -1,3 +1,4 @@
+import { routePath } from "./routing";
 import { categoryPublication } from "./offer-publication";
 import { products } from "./catalog";
 import React from "react";
@@ -46,7 +47,7 @@ export default function ProviderCard({
       </div>
       <div className="provider-showcase-bottom">
         <a
-          href={"/" + route + "/"}
+          href={routePath(route)}
           onClick={() => navigate(route)}
           className="provider-showcase-action"
         >
@@ -54,7 +55,7 @@ export default function ProviderCard({
           <ArrowRight size={18} aria-hidden="true" />
         </a>
         <a
-          href={"/" + route + "/"}
+          href={routePath(route)}
           onClick={() => navigate(route)}
           className="secondary"
           aria-label={"View details for " + brand.full}

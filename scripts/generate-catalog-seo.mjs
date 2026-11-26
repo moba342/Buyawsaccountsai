@@ -1,3 +1,4 @@
+import { routePath } from "../routing.js";
 import { catalogSeoRecords, catalogSeoReadiness } from "../catalog-seo.js";
 import fs from "node:fs/promises";
 import { products, brands } from "../catalog.js";
@@ -27,8 +28,8 @@ const data = catalogSeoRecords.map((record) => {
     ? list
         .filter((p) => p.name !== product.name)
         .slice(0, 4)
-        .map((p) => SITE_URL + "/" + productRoute(p) + "/")
-    : list.map((p) => SITE_URL + "/" + productRoute(p) + "/");
+        .map((p) => SITE_URL + routePath(productRoute(p)))
+    : list.map((p) => SITE_URL + routePath(productRoute(p)));
   return {
     productId: record.id,
     parentProductId: product ? providerRoute(brand) : null,
@@ -42,7 +43,7 @@ const data = catalogSeoRecords.map((record) => {
     archivedProposal: proposal,
     archivedProposalApplied: false,
     activeMetadataSource: "catalog-seo.js",
-    slug: record.id,
+    slug: routePath(record.id).slice(1, -1),
     canonicalUrl: seo.canonical,
     primaryKeyword: record.primaryKeyword,
     secondaryKeywords: record.secondaryKeywords,
@@ -107,7 +108,7 @@ const data = catalogSeoRecords.map((record) => {
       ? publication.review?.supportedRegions || []
       : [],
     relatedProducts: related,
-    relatedGuides: guides.map((g) => SITE_URL + "/" + guideRoute(g) + "/"),
+    relatedGuides: guides.map((g) => SITE_URL + routePath(guideRoute(g))),
     seoStatus: "IMPLEMENTED",
     commercialPublicationStatus: publication.publicationStatus,
     commercialVerificationStatus: publication.status,

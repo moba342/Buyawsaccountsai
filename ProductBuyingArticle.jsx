@@ -1,3 +1,4 @@
+import { productPath, providerPath } from "./catalogPaths";
 import { productPublication } from "./offer-publication";
 import { guides } from "./editorialContent";
 import { guideRoute } from "./guideRoutes";
@@ -84,9 +85,7 @@ export default function ProductBuyingArticle({ product, brand, onOrder }) {
           className="product-resource-links"
           aria-label="Related product buying resources"
         >
-          <a href={"/" + providerRoute(brand) + "/"}>
-            {brand.name} reference collection
-          </a>
+          <a href={providerPath(brand)}>{brand.name} reference collection</a>
           <a href="/compare-products/">Compare product specifications</a>
           <a href={"/" + guideRoute(guides[0]) + "/"}>
             Read the cloud account buying guide
@@ -162,7 +161,7 @@ export function CatalogBuyingArticles({ brands, products }) {
                     <article key={productRoute(product)}>
                       <div>
                         <h3>
-                          <a href={"/" + productRoute(product) + "/"}>
+                          <a href={productPath(product)}>
                             {brand.name} {product.name}
                             <ArrowUpRight size={15} aria-hidden="true" />
                           </a>

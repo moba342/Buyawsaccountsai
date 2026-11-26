@@ -1,12 +1,12 @@
 // SEO describes supplied catalog information. It never authorizes purchases.
 import { brands, products } from "./catalog.js";
-import { productRoute, providerRoute } from "./catalogPaths.js";
+import { productRoute, providerRoute, buyingKeyword } from "./catalogPaths.js";
 const compact = (value, length) =>
   value.length <= length
     ? value
     : value.slice(0, length - 1).replace(/\s+\S*$/, "") + "…";
 const metadata = (name, label, description, category) => ({
-  primaryKeyword: "buy " + name.toLowerCase(),
+  primaryKeyword: buyingKeyword(name),
   secondaryKeywords: [
     `buy ${name.toLowerCase()} online`,
     `purchase ${name.toLowerCase()}`,

@@ -1,3 +1,4 @@
+import { productPath } from "./catalogPaths";
 import { productPublication } from "./offer-publication";
 import React from "react";
 import { ArrowRight, Plus, ShoppingCart } from "lucide-react";
@@ -32,7 +33,7 @@ export default function CatalogAccountCard({
       </div>
       <div className="account-card-copy">
         <h3>
-          <a href={"/" + productRoute(product) + "/"}>{product.name}</a>
+          <a href={productPath(product)}>{product.name}</a>
         </h3>
         <p>{product.type}</p>
         {!publication.published && (
@@ -94,7 +95,7 @@ export default function CatalogAccountCard({
           </button>
           <a
             className="secondary"
-            href={"/" + productRoute(product) + "/"}
+            href={productPath(product)}
             aria-label={
               "View details: " + product.provider + " " + product.name
             }

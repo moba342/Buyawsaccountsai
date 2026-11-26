@@ -31,7 +31,7 @@ export default function GuideArticlePage({ id }) {
           seller.
         </p>
         <nav aria-label="Related buying resources">
-          <a href="/aws-accounts/">Explore AWS account products</a>
+          <a href="/buy-aws-accounts/">Explore AWS account products</a>
           <a href="/marketplace/">Browse the cloud marketplace</a>
           <a href="/help-center/">Read purchase and payment questions</a>
           <a href="/contact-sales/">Contact sales</a>

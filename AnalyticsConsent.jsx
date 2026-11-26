@@ -1,3 +1,4 @@
+import { productPath } from "./catalogPaths";
 import { productPublication, canPurchaseProduct } from "./offer-publication";
 import React, { useEffect, useRef, useState } from "react";
 import {
@@ -93,9 +94,7 @@ export default function AnalyticsConsent({ page, pathname, cart }) {
       const a = event.target.closest?.("a[href]");
       if (!a) return;
       const url = new URL(a.href, location.href),
-        product = products.find(
-          (p) => url.pathname === "/" + productRoute(p) + "/",
-        );
+        product = products.find((p) => url.pathname === productPath(p));
       if (product && productPublication(product).published)
         trackEvent("select_item", { items: [publicAnalyticsItem(product)] });
       const method =

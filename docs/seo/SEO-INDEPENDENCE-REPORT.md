@@ -1,3 +1,5 @@
+> Subsequent URL migration: [SEO-URL-MAPPING.md](SEO-URL-MAPPING.md). SEO/commercial separation remains unchanged; the 82 public catalog paths now use buying-keyword slugs while the stable IDs below remain unchanged.
+
 # Independent catalog SEO — final implementation report
 
 Date: 2026-11-27 (Asia/Dhaka). Branch: `seo/independent-catalog-2026-11-27`. Application baseline: `ec7a7bc`. This source update is not deployed and has not changed production.

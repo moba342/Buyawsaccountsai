@@ -1,3 +1,4 @@
+import { providerPath } from "./catalogPaths";
 import CatalogPublicationNotice from "./CatalogPublicationNotice";
 import { productPublication } from "./offer-publication";
 import { catalogEditorial } from "./catalog-editorial-data";
@@ -72,10 +73,7 @@ function Collection({ brand, list, product, onOrder, onCompare, onAddToCart }) {
           </p>
         </div>
         {product && (
-          <a
-            className="account-text-link"
-            href={"/" + providerRoute(brand) + "/"}
-          >
+          <a className="account-text-link" href={providerPath(brand)}>
             View all {list.length} variants
             <ArrowRight size={15} aria-hidden="true" />
           </a>
@@ -285,10 +283,7 @@ function Planning({ brand, copy }) {
             growing teams should review administration and operating costs
             before the next deployment.
           </p>
-          <a
-            href={"/" + providerRoute(brand) + "/"}
-            className="account-text-link"
-          >
+          <a href={providerPath(brand)} className="account-text-link">
             Explore the {brand.name} collection
             <ArrowRight size={15} aria-hidden="true" />
           </a>
@@ -635,7 +630,7 @@ export function CatalogPage({
           {brands
             .filter((b) => b.name !== brand.name)
             .map((b) => (
-              <a key={b.name} href={"/" + providerRoute(b) + "/"}>
+              <a key={b.name} href={providerPath(b)}>
                 {b.full}
                 <ArrowRight size={13} aria-hidden="true" />
               </a>

@@ -1,3 +1,5 @@
+> The subsequent [keyword URL mapping](seo/SEO-URL-MAPPING.md) controls catalog public paths. Utility paths described below are retained.
+
 # Clean page URLs
 
 Main navigation uses `/marketplace/`, `/cloud-platforms/`, `/compare-products/`, `/buying-guides/`, `/help-center/`, and `/contact-sales/`. The root `/` remains the homepage. Provider pages use paths such as `/aws-accounts/`; individual variants use paths such as `/product/aws-free-trial/`.

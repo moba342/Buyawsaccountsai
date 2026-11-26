@@ -1,3 +1,4 @@
+import { productPath, providerPath } from "./catalogPaths";
 import { canPurchaseProduct } from "./offer-publication";
 import {
   ProvidersPage,
@@ -607,7 +608,7 @@ export default function App({ initialRoute, initialPathname } = {}) {
               {brands.map((b) => (
                 <a
                   key={b.name}
-                  href={"/" + providerRoute(b) + "/"}
+                  href={providerPath(b)}
                   onClick={() => navigate(providerRoute(b))}
                 >
                   {b.full}
@@ -656,7 +657,7 @@ export default function App({ initialRoute, initialPathname } = {}) {
               {products.slice(0, 4).map((p) => (
                 <a
                   key={productRoute(p)}
-                  href={"/" + productRoute(p) + "/"}
+                  href={productPath(p)}
                   onClick={() => navigate(productRoute(p))}
                 >
                   {p.provider} {p.name}
