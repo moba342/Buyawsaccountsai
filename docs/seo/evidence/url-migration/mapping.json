@@ -37,17 +37,6 @@
       "decision": "Retain established utility/resource URL; no keyword-only migration"
     },
     {
-      "id": "payment-refund-policy",
-      "name": "Payment & Refund Policy",
-      "primaryKeyword": "payment and refund policy",
-      "existingUrl": "https://buyawsaccountsai.com/payment-refund-policy/",
-      "optimizedUrl": "https://buyawsaccountsai.com/payment-refund-policy/",
-      "canonicalUrl": "https://buyawsaccountsai.com/payment-refund-policy/",
-      "redirectStatus": "Retained; existing aliases normalize directly",
-      "indexabilityStatus": "index, follow",
-      "decision": "Retain established utility/resource URL; no keyword-only migration"
-    },
-    {
       "id": "products",
       "name": "Cloud Accounts, Credits & AI API Marketplace",
       "primaryKeyword": "cloud accounts marketplace",

@@ -43,7 +43,6 @@ function Steps({ checkout }) {
         <span>03</span> Seller confirmation
       </li>
     </ol>
-    {checkout && <p className="commerce-policy-link"><a href="/payment-refund-policy/">Read the Payment &amp; Refund Policy</a></p>}
     </>
   );
 }

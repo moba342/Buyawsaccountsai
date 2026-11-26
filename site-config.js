@@ -1,4 +1,3 @@
-import { refundPolicyReady } from "./refund-policy.js";
 import { products } from "./catalog.js";
 import { productPublication } from "./offer-publication.js";
 export const hasPurchasableOffers = products.some(p => productPublication(p).purchasable);
@@ -22,13 +21,6 @@ export const SITE = {
   telephone: "+14582624274",
 };
 export const pageSeo = {
-  "payment-refund-policy": {
-    title: "Payment & Refund Policy | BuyAWSAccountsAI",
-    description: "Review USDT payment networks, transaction records and how to request a payment review. Confirm the refund terms for your order with BuyAWSAccountsAI.",
-    h1: "Payment & Refund Policy",
-    primaryKeyword: "payment and refund policy",
-    noindex: !refundPolicyReady,
-  },
   home: {
     primaryKeyword: "buy cloud products",
     title: "Buy Cloud Products & Compare Plans | BuyAWSAccountsAI",

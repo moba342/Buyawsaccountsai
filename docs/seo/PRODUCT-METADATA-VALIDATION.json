@@ -25,8 +25,8 @@
     "variations": 68,
     "totalRecords": 82,
     "independentlyIndexable": 82,
-    "canonicalPages": 97,
-    "indexablePages": 95
+    "canonicalPages": 96,
+    "indexablePages": 94
   },
   "mainPages": [
     {
@@ -89,28 +89,6 @@
         "Organization",
         "WebSite",
         "WebPage"
-      ],
-      "evidence": "Actual generated initial HTML",
-      "metadataMatchesSource": true
-    },
-    {
-      "id": "payment-refund-policy",
-      "url": "https://buyawsaccountsai.com/payment-refund-policy/",
-      "title": "Payment & Refund Policy | BuyAWSAccountsAI",
-      "titleLength": 42,
-      "metaDescription": "Review USDT payment networks, transaction records and how to request a payment review. Confirm the refund terms for your order with BuyAWSAccountsAI.",
-      "descriptionLength": 149,
-      "h1": "Payment & Refund Policy",
-      "metaKeywords": "payment and refund policy",
-      "metaKeywordTagCount": 1,
-      "metaKeywordTagCorrect": true,
-      "robots": "index, follow",
-      "indexable": true,
-      "schemaTypes": [
-        "Organization",
-        "WebSite",
-        "WebPage",
-        "BreadcrumbList"
       ],
       "evidence": "Actual generated initial HTML",
       "metadataMatchesSource": true
@@ -2252,12 +2230,6 @@
       "path": "/",
       "primaryKeyword": "buy cloud products",
       "preferredRankingUrl": "https://buyawsaccountsai.com/"
-    },
-    {
-      "page": "payment-refund-policy",
-      "path": "/payment-refund-policy/",
-      "primaryKeyword": "payment and refund policy",
-      "preferredRankingUrl": "https://buyawsaccountsai.com/payment-refund-policy/"
     },
     {
       "page": "products",

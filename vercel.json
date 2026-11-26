@@ -14,10 +14,6 @@
       "destination": "/checkout/index.html"
     },
     {
-      "source": "/payment-refund-policy/",
-      "destination": "/payment-refund-policy/index.html"
-    },
-    {
       "source": "/marketplace/",
       "destination": "/marketplace/index.html"
     },
@@ -884,6 +880,21 @@
     {
       "source": "/atlantic-net-accounts",
       "destination": "https://buyawsaccountsai.com/cloud-platforms/",
+      "permanent": true
+    },
+    {
+      "source": "/payment-refund-policy/",
+      "destination": "https://buyawsaccountsai.com/contact-sales/",
+      "permanent": true
+    },
+    {
+      "source": "/payment-refund-policy",
+      "destination": "https://buyawsaccountsai.com/contact-sales/",
+      "permanent": true
+    },
+    {
+      "source": "/payment-refund-policy/index.html",
+      "destination": "https://buyawsaccountsai.com/contact-sales/",
       "permanent": true
     },
     {
@@ -2137,16 +2148,6 @@
       "permanent": true
     },
     {
-      "source": "/payment-refund-policy",
-      "destination": "https://buyawsaccountsai.com/payment-refund-policy/",
-      "permanent": true
-    },
-    {
-      "source": "/payment-refund-policy/index.html",
-      "destination": "https://buyawsaccountsai.com/payment-refund-policy/",
-      "permanent": true
-    },
-    {
       "source": "/marketplace",
       "destination": "https://buyawsaccountsai.com/marketplace/",
       "permanent": true
@@ -3106,17 +3107,6 @@
     {
       "source": "/checkout/",
       "destination": "https://buyawsaccountsai.com/checkout/",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.buyawsaccountsai.com"
-        }
-      ],
-      "permanent": true
-    },
-    {
-      "source": "/payment-refund-policy/",
-      "destination": "https://buyawsaccountsai.com/payment-refund-policy/",
       "has": [
         {
           "type": "host",

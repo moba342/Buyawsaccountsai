@@ -145,5 +145,3 @@
 #root .commerce-sidebar .public-seller-heading h2{font-size:20px}
 #root .commerce-sidebar .public-seller-caption{font-size:11px}
 @media(max-width:767px){#root .commerce-sidebar{gap:20px}#root .commerce-sidebar>.public-seller-card{padding:20px}}
-
-.commerce-policy-link{margin:0 0 24px;font-size:14px}.commerce-policy-link a{color:var(--navy);text-underline-offset:3px}

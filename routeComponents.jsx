@@ -20,7 +20,6 @@ const routes = {
   catalog: loadable(() =>
     import("./DetailPages").then((m) => ({ default: m.CatalogPage })),
   ),
-  "payment-refund-policy": loadable(() => import("./PaymentRefundPolicyPage")),
   contact: loadable(() => import("./ContactPage")),
   verified: loadable(() => import("./SellerVerificationPage")),
   proof: loadable(() => import("./PublicProofPage")),
@@ -35,7 +34,6 @@ const routes = {
 export const ProvidersPage = routes.providers.View,
   CatalogPage = routes.catalog.View,
   ContactPage = routes.contact.View,
-  PaymentRefundPolicyPage = routes["payment-refund-policy"].View,
   SellerVerificationPage = routes.verified.View,
   PublicProofPage = routes.proof.View,
   GuideArticlePage = routes.article.View,

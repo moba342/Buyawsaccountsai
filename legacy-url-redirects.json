@@ -243,5 +243,15 @@
     "source": "/atlantic-net-accounts/",
     "destination": "/cloud-platforms/",
     "permanent": true
+  },
+  {
+    "source": "/payment-refund-policy/",
+    "destination": "/contact-sales/",
+    "permanent": true
+  },
+  {
+    "source": "/payment-refund-policy/index.html",
+    "destination": "/contact-sales/",
+    "permanent": true
   }
 ]

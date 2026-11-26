@@ -1,3 +1,5 @@
+> Removed from the active website on 2026-11-27. The retired URL and its aliases redirect permanently to Contact Sales; footer/checkout links, implementation and sitemap entry are removed. The results below are historical.
+
 # Payment & Refund Policy page
 
 URL: https://buyawsaccountsai.com/payment-refund-policy/
