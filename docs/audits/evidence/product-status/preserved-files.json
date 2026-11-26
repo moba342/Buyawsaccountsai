@@ -1,0 +1,76 @@
+{
+  "baselineCommit": "e04ec57",
+  "releaseCommit": "ffe8a72",
+  "files": [
+    {
+      "file": "catalog.js",
+      "unchanged": true,
+      "sha256": "c071beb2589caf72a40bbc2c9d4262dce37e859e0601008411922fd584777cef"
+    },
+    {
+      "file": "catalog-data.js",
+      "unchanged": true,
+      "sha256": "5b49586f82d805cc5ac253e6af8b6f4cdb83c2b37fdbbd6f3b014c6212761e2d"
+    },
+    {
+      "file": "offer-publication.js",
+      "unchanged": true,
+      "sha256": "41ca3491e842b062b3e915903a31e8edc8567901c36d2b961a9437af8d87d3f4"
+    },
+    {
+      "file": "offer-review-records.js",
+      "unchanged": true,
+      "sha256": "862ececbd84419e9f09980c2f9ec52c98da7262985de25abb07f5cd783b21e78"
+    },
+    {
+      "file": "catalog-seo.js",
+      "unchanged": true,
+      "sha256": "38cdc8e065aa604be03c56221b5b8f11d7ad8a448f07f5b4b3cb5433df341d39"
+    },
+    {
+      "file": "catalog-metadata-copy.js",
+      "unchanged": true,
+      "sha256": "c8daa9bd55cc70355f69d399e27cff81b587d6db4b70645a775195a1977f4d79"
+    },
+    {
+      "file": "catalogPaths.js",
+      "unchanged": true,
+      "sha256": "45329fc3efa32dbdd091b47c77d6b152129ecb0bc2cd625737f692eb1a37f618"
+    },
+    {
+      "file": "routing.js",
+      "unchanged": true,
+      "sha256": "50e2189aaab5fb0e594c64625806d797375c6dd8bd7645e32dab28e8e40cddf0"
+    },
+    {
+      "file": "seo.js",
+      "unchanged": true,
+      "sha256": "3953b9e91f5ec145581444414d10fcb1fd7b0594b27ddfb00fe600bd16cced5c"
+    },
+    {
+      "file": "payments.js",
+      "unchanged": true,
+      "sha256": "3991d046606534e22094fd6c102eb3246b4611ffe30747d6202d0e45b2088a54"
+    },
+    {
+      "file": "PaymentRefundPolicyPage.jsx",
+      "unchanged": true,
+      "sha256": "dde631215da98d05d602d9d382345c7874e4aa506345ea379e120ebc28d4e2b7"
+    },
+    {
+      "file": "refund-policy.js",
+      "unchanged": true,
+      "sha256": "a0ef826b75ecd42cc1b0a4dc86b21778b8d65fcfe346877e200cdbb95cf1c457"
+    },
+    {
+      "file": "vercel.json",
+      "unchanged": true,
+      "sha256": "602647c8baee179b26425c3bb9f70ba650e5a070245a2a338dc2e9d1095b2c93"
+    },
+    {
+      "file": "hosting-redirect-policy.json",
+      "unchanged": true,
+      "sha256": "d8bd2054f4b2795958b558c76cfcb8ac51450604402c1c31810bf152459cc663"
+    }
+  ]
+}
