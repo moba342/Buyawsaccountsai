@@ -1,3 +1,5 @@
+> Subsequent hosting fix: [HOSTING-REDIRECT-REPORT.md](HOSTING-REDIRECT-REPORT.md). HTTPS apex legacy chains are now eliminated; the mandatory HTTP apex TLS hop remains. The earlier domain-normalization observations below are historical.
+
 # Final production readiness audit
 
 Date: 2026-11-27 (Asia/Dhaka). Migration reviewed: `7600b60`; application candidate includes `b64982c` (requested generic notice removal). Owner subsequently requested production deployment in the final SEO instructions. No Search Console or analytics credentials were requested.

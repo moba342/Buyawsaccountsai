@@ -1,3 +1,5 @@
+> Subsequent hosting fix: [HOSTING-REDIRECT-REPORT.md](HOSTING-REDIRECT-REPORT.md). HTTPS apex legacy chains are now eliminated; the mandatory HTTP apex TLS hop remains. The earlier domain-normalization observations below are historical.
+
 # Final SEO implementation and production report
 
 Date: 2026-11-27 (Asia/Dhaka).

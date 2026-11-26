@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-27",
+  "dnsChanges": false,
+  "domains": [
+    {
+      "name": "buyawsaccountsai.com",
+      "redirect": null,
+      "verified": true
+    },
+    {
+      "name": "www.buyawsaccountsai.com",
+      "redirect": null,
+      "redirectStatusCode": null,
+      "verified": true
+    },
+    {
+      "name": "buyawsaccountsai.vercel.app",
+      "redirect": "www.buyawsaccountsai.com",
+      "redirectStatusCode": 307,
+      "verified": true
+    }
+  ]
+}

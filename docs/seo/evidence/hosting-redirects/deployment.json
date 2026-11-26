@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-27",
+  "id": "dpl_FUjNRwNgCuVb1JNerSgrqQdJL4FX",
+  "url": "buyawsaccountsai-qdrm56o7y-mo-ba2.vercel.app",
+  "sourceCommit": "c1ea091f532b18dee68bf2fa261dee583db5ed49",
+  "target": "production",
+  "state": "READY",
+  "aliases": [
+    "buyawsaccountsai.com",
+    "www.buyawsaccountsai.com",
+    "buyawsaccountsai.vercel.app",
+    "buyawsaccountsai-mo-ba2.vercel.app",
+    "buyawsaccountsai-git-main-mo-ba2.vercel.app"
+  ],
+  "domainRedirectRemoved": true,
+  "dnsChanges": false,
+  "temporaryCredentialsRemaining": 0,
+  "filesPreservedFromBaseline": [
+    "catalog-data.js",
+    "catalog.js",
+    "catalog-seo.js",
+    "seo.js",
+    "routing.js",
+    "catalogPaths.js",
+    "payments.js",
+    "cart.js",
+    "App.jsx",
+    "CommercePages.jsx",
+    "offer-publication.js",
+    "offer-review-records.js",
+    "server/payment-verifier.js",
+    "api/verify-payment.js",
+    "style.css",
+    "package-lock.json"
+  ],
+  "queryCheckedTraces": 20
+}
