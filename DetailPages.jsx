@@ -393,7 +393,6 @@ export function CatalogPage({
             product ? "Selected package purchase" : "Collection overview"
           }
         >
-          {!product && <CatalogPublicationNotice />}
           <div className="account-purchase-top">
             <span>
               {product ? "YOUR SELECTED PACKAGE" : "COLLECTION OVERVIEW"}

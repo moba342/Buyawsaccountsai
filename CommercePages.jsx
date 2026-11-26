@@ -1,5 +1,4 @@
 import { canPurchaseProduct } from "./offer-publication";
-import CatalogPublicationNotice from "./CatalogPublicationNotice";
 import { trackEvent, publicAnalyticsItem } from "./analytics";
 import PaymentIcon, { PaymentOptions } from "./PaymentIcon";
 import SellerProfileCard from "./SellerProfileCard";
@@ -294,7 +293,6 @@ export function CheckoutPage({ cart }) {
         </div>
         <section className="checkout-publication-hold">
           <h2>Ordering is unavailable for these references</h2>
-          <CatalogPublicationNotice />
           <p>
             Your saved selections and original prices have been retained.
             Payment instructions and verification are withheld until every

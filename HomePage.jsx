@@ -1,4 +1,3 @@
-import CatalogPublicationNotice from "./CatalogPublicationNotice";
 import { pageHeading, hasPublishedOffers } from "./site-config";
 import HomepageSeoContent from "./HomepageSeoContent";
 import { scrollPageTo } from "./SmoothScrolling";
@@ -232,7 +231,6 @@ export default function HomePage({
             browse();
           }}
         />
-        <CatalogPublicationNotice />
         {catalog}
         <CatalogBuyingArticles brands={brands} products={products} />
         <BuyingArticle />
@@ -391,7 +389,6 @@ export default function HomePage({
           </div>
         </div>
       </section>
-      <CatalogPublicationNotice />
       <div className="home-provider-band">
         <span>CLOUD PLATFORMS. ONE PLACE TO COMPARE.</span>
         <ProviderStrip brands={brands} navigate={navigate} />
