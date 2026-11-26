@@ -4,6 +4,7 @@ import {
   ProvidersPage,
   CatalogPage,
   ContactPage,
+  PaymentRefundPolicyPage,
   SellerVerificationPage,
   PublicProofPage,
   GuideArticlePage,
@@ -303,6 +304,8 @@ export default function App({ initialRoute, initialPathname } = {}) {
           <PublicProofPage />
         ) : page === "verified" ? (
           <SellerVerificationPage />
+        ) : page === "payment-refund-policy" ? (
+          <PaymentRefundPolicyPage />
         ) : page === "contact" ? (
           <ContactPage navigate={navigate} />
         ) : detailRoutes.includes(page) ? (
@@ -618,6 +621,7 @@ export default function App({ initialRoute, initialPathname } = {}) {
             <div>
               <h3>EXPLORE</h3>
               <a href="/cart/">Shopping Cart</a>
+              <a href="/payment-refund-policy/" onClick={() => navigate("payment-refund-policy")}>Payment &amp; Refund Policy</a>
               <a href="/checkout/">Checkout</a>
               <a href="/contact-sales/" onClick={() => navigate("contact")}>
                 Contact Sales

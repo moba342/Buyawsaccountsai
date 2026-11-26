@@ -1,7 +1,7 @@
 {
   "date": "2026-11-27",
   "catalogMigrations": 82,
-  "redirects": 633,
+  "redirects": 636,
   "rows": [
     {
       "id": "products",
@@ -34,6 +34,17 @@
       "canonicalUrl": "https://buyawsaccountsai.com/checkout/",
       "redirectStatus": "Retained; existing aliases normalize directly",
       "indexabilityStatus": "noindex, follow",
+      "decision": "Retain established utility/resource URL; no keyword-only migration"
+    },
+    {
+      "id": "payment-refund-policy",
+      "name": "Payment & Refund Policy",
+      "primaryKeyword": "payment and refund policy",
+      "existingUrl": "https://buyawsaccountsai.com/payment-refund-policy/",
+      "optimizedUrl": "https://buyawsaccountsai.com/payment-refund-policy/",
+      "canonicalUrl": "https://buyawsaccountsai.com/payment-refund-policy/",
+      "redirectStatus": "Retained; existing aliases normalize directly",
+      "indexabilityStatus": "index, follow",
       "decision": "Retain established utility/resource URL; no keyword-only migration"
     },
     {

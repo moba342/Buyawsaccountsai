@@ -9,6 +9,7 @@ export const pageNames = {
   contact: 'Contact Sales',
   cart: 'Your Shopping Cart',
   checkout: 'USDT Checkout',
+  'payment-refund-policy': 'Payment & Refund Policy',
   'verification/public-proof': 'Seller Declaration',
 };
 export const navigationNames = {

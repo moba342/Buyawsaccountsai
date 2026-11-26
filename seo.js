@@ -194,7 +194,7 @@ export function getPageSeo(id, pathname = routePath(id)) {
     canonical: notFound ? null : url,
     url,
     robots:
-      notFound || ["cart", "checkout"].includes(id) || override.noindex
+      notFound || ["cart", "checkout"].includes(id) || override.noindex || core?.noindex
         ? "noindex, follow"
         : "index, follow",
     image: absolute(

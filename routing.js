@@ -20,6 +20,7 @@ const slug = (value) =>
 export const routeIds = [
   "cart",
   "checkout",
+  "payment-refund-policy",
   "products",
   "providers",
   "compare",

@@ -39,12 +39,12 @@ test("the eight core pages use the supplied SEO titles, descriptions and H1s", (
   );
   assert.equal(getPageSeo("products", "/").keywords, undefined);
 });
-test("all 96 generated pages have unique metadata and self-referencing canonical URLs", () => {
+test("all 97 generated pages have unique metadata and self-referencing canonical URLs", () => {
   const pages = [
     getPageSeo("products", "/"),
     ...routeIds.map((id) => getPageSeo(id)),
   ];
-  assert.equal(pages.length, 96);
+  assert.equal(pages.length, 97);
   for (const key of ["title", "description", "canonical", "h1"])
     assert.equal(new Set(pages.map((p) => p[key])).size, pages.length, key);
   for (const id of routeIds) {
@@ -52,7 +52,7 @@ test("all 96 generated pages have unique metadata and self-referencing canonical
     assert.equal(seo.canonical, SITE_URL + routePath(id));
     assert.equal(
       seo.robots,
-      ["cart", "checkout"].includes(id) ? "noindex, follow" : "index, follow",
+      ["cart", "checkout"].includes(id) || pageSeo[id]?.noindex ? "noindex, follow" : "index, follow",
     );
   }
   for (const p of pages) {

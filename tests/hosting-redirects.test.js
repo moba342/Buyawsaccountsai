@@ -10,7 +10,7 @@ const policy = JSON.parse(
   fs.readFileSync(new URL("../hosting-redirect-policy.json", import.meta.url)),
 );
 test("all 535 production redirect mappings are preserved with final absolute HTTPS non-WWW destinations", () => {
-  const rules = config.redirects.filter((r) => !r.has);
+  const rules = config.redirects.filter((r) => !r.has && !(policy.additionalNormalizationPaths || []).includes(r.source));
   assert.equal(rules.length, policy.preservedMappings);
   const rows = rules
     .map((r) => {
@@ -27,7 +27,7 @@ test("all 535 production redirect mappings are preserved with final absolute HTT
 });
 test("noncanonical host pages have direct host-conditional redirects before the fallback", () => {
   const rules = config.redirects.filter((r) => r.has);
-  assert.equal(rules.length, 98);
+  assert.equal(rules.length, routeIds.length + 3);
   for (const source of ["/", ...routeIds.map(routePath)]) {
     const rule = rules.find((r) => r.source === source);
     assert(rule);

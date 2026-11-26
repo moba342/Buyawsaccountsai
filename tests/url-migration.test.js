@@ -44,7 +44,7 @@ test("every old catalog URL directly redirects and no configured redirect chains
       .filter((r) => !r.has)
       .map((r) => [r.source, new URL(r.destination).pathname]),
   );
-  assert.equal(map.size, 535);
+  assert.equal(map.size, 537);
   assert.equal(config.trailingSlash, undefined);
   for (const r of catalogSeoRecords)
     for (const source of [

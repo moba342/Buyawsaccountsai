@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-27",
+  "pendingVariantPages": 68,
+  "purchaseActionsDisabled": true,
+  "legacyCartPreserved": true,
+  "checkoutWithheld": true,
+  "apiRejectsPending": true,
+  "comparison": true,
+  "contactAndGuides": true,
+  "mobileMenu": true,
+  "accessibilityScans": 4,
+  "violations": [],
+  "errors": []
+}

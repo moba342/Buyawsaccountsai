@@ -24,6 +24,7 @@ import { paymentMethods } from "./payments";
 const sellerContact = "https://t.me/dexterw4tts";
 function Steps({ checkout }) {
   return (
+    <>
     <ol className="commerce-steps" aria-label="Purchase steps">
       <li
         className={!checkout ? "current" : ""}
@@ -41,6 +42,8 @@ function Steps({ checkout }) {
         <span>03</span> Seller confirmation
       </li>
     </ol>
+    {checkout && <p className="commerce-policy-link"><a href="/payment-refund-policy/">Read the Payment &amp; Refund Policy</a></p>}
+    </>
   );
 }
 function Empty() {
