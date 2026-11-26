@@ -18,7 +18,7 @@
     ],
     "allDescriptions140To160": true,
     "primaryClusterConflicts": [],
-    "phase": "LOCAL DOM VERIFIED"
+    "phase": "LIVE VERIFIED"
   },
   "primaryKeywordClusters": [
     {
@@ -701,7 +701,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "BuyAWSAccountsAI cloud account marketplace",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "aws-accounts",
@@ -1081,7 +1081,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "BuyAWSAccountsAI cloud account marketplace",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "azure-accounts",
@@ -1341,7 +1341,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "BuyAWSAccountsAI cloud account marketplace",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "digitalocean-accounts",
@@ -1581,7 +1581,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "BuyAWSAccountsAI cloud account marketplace",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "google-cloud-accounts",
@@ -1853,7 +1853,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "BuyAWSAccountsAI cloud account marketplace",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "hetzner-accounts",
@@ -2061,7 +2061,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "BuyAWSAccountsAI cloud account marketplace",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "kamatera-accounts",
@@ -2271,7 +2271,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "BuyAWSAccountsAI cloud account marketplace",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "linode-accounts",
@@ -2487,7 +2487,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "BuyAWSAccountsAI cloud account marketplace",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "oracle-cloud-accounts",
@@ -2695,7 +2695,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "BuyAWSAccountsAI cloud account marketplace",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "ovhcloud-accounts",
@@ -2905,7 +2905,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "BuyAWSAccountsAI cloud account marketplace",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "amazon-ses-accounts",
@@ -3121,7 +3121,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "BuyAWSAccountsAI cloud account marketplace",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "upcloud-accounts",
@@ -3331,7 +3331,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "BuyAWSAccountsAI cloud account marketplace",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "ibm-cloud-accounts",
@@ -3547,7 +3547,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "BuyAWSAccountsAI cloud account marketplace",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "heroku-accounts",
@@ -3757,7 +3757,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "BuyAWSAccountsAI cloud account marketplace",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "vultr-accounts",
@@ -3971,7 +3971,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS Free Trial — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-free-trial",
@@ -4169,7 +4169,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS 8 vCPU — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-8-vcpu",
@@ -4367,7 +4367,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS 32 vCPU — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-32-vcpu",
@@ -4565,7 +4565,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS 64 vCPU — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-64-vcpu",
@@ -4763,7 +4763,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS 128 vCPU — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-128-vcpu",
@@ -4961,7 +4961,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS 256 vCPU — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-256-vcpu",
@@ -5159,7 +5159,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS 512 vCPU — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-512-vcpu",
@@ -5357,7 +5357,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS 640 vCPU — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-640-vcpu",
@@ -5555,7 +5555,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS 1920 vCPU — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-1920-vcpu",
@@ -5753,7 +5753,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS $5K Credits — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-5k-credits",
@@ -5951,7 +5951,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS $10K Credits — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-10k-credits",
@@ -6149,7 +6149,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS $25K Credits — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-25k-credits",
@@ -6347,7 +6347,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS $100K Credits — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-100k-credits",
@@ -6545,7 +6545,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS 32 vCPU · 10 RPM · Bedrock Enabled — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-32-vcpu-10-rpm-bedrock-enabled",
@@ -6743,7 +6743,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS 32 vCPU · 50 RPM · Bedrock Enabled — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-32-vcpu-50-rpm-bedrock-enabled",
@@ -6941,7 +6941,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS 256 vCPU · 10K RPM · Bedrock Enabled — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-256-vcpu-10k-rpm-bedrock-enabled",
@@ -7139,7 +7139,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS 512 vCPU · 10K RPM · High TPM · Bedrock Enabled — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled",
@@ -7337,7 +7337,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS 640 vCPU · 10K RPM · High TPM · Bedrock F5.2 — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2",
@@ -7535,7 +7535,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS 1920 vCPU · 10K RPM · High TPM · 4.6 / 4.7 / 4.8 / Opus 5 / Fable 5 — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5",
@@ -7733,7 +7733,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS $5K Credits · 10K RPM · Bedrock Enabled — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-5k-credits-10k-rpm-bedrock-enabled",
@@ -7931,7 +7931,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS $10K Credits · 10K RPM · Bedrock Enabled — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-10k-credits-10k-rpm-bedrock-enabled",
@@ -8129,7 +8129,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "AWS $25K Credits · 10K RPM · Bedrock Enabled — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/aws-25k-credits-10k-rpm-bedrock-enabled",
@@ -8327,7 +8327,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Azure Free Trial · $200 Credits — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/azure-free-trial-200-credits",
@@ -8525,7 +8525,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Azure Pay As You Go — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/azure-pay-as-you-go",
@@ -8723,7 +8723,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Azure $5K Credits — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/azure-5k-credits",
@@ -8921,7 +8921,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Azure $10K Credits · GPT Enabled — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/azure-10k-credits-gpt-enabled",
@@ -9119,7 +9119,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Azure $5K Credits · GPT 6 Astra · High TPM T5 — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/azure-5k-credits-gpt-6-astra-high-tpm-t5",
@@ -9317,7 +9317,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Azure $10K Credits · GPT 6 Astra · High TPM T5 — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/azure-10k-credits-gpt-6-astra-high-tpm-t5",
@@ -9515,7 +9515,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Azure $25K Credits · GPT 6 Astra · High TPM T5 — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/azure-25k-credits-gpt-6-astra-high-tpm-t5",
@@ -9713,7 +9713,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Azure $100K Credits · GPT 6 Astra · High TPM T5 — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/azure-100k-credits-gpt-6-astra-high-tpm-t5",
@@ -9910,7 +9910,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "DigitalOcean 3 Droplets · Free Trial — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/digitalocean-3-droplets-free-trial",
@@ -10107,7 +10107,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "DigitalOcean 10 Droplets · Free Trial — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/digitalocean-10-droplets-free-trial",
@@ -10304,7 +10304,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "DigitalOcean 200 Droplets · Port 25 Open — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/digitalocean-200-droplets-port-25-open",
@@ -10501,7 +10501,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "DigitalOcean 500 Droplets · Port 25 Open — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/digitalocean-500-droplets-port-25-open",
@@ -10699,7 +10699,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Google Cloud Free Trial · $300 Credits — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/google-cloud-free-trial-300-credits",
@@ -10897,7 +10897,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Google Cloud $300 Credits · Paid Account — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/google-cloud-300-credits-paid-account",
@@ -11095,7 +11095,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Google Cloud $2K Credits · Paid Account — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/google-cloud-2k-credits-paid-account",
@@ -11293,7 +11293,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Google Cloud $5K Credits · Paid Account — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/google-cloud-5k-credits-paid-account",
@@ -11491,7 +11491,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Google Cloud $10K Credits · Paid Account — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/google-cloud-10k-credits-paid-account",
@@ -11689,7 +11689,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Google Cloud $25K Credits · Paid Account — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/google-cloud-25k-credits-paid-account",
@@ -11887,7 +11887,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Google Cloud $2K Credits · VT Gemini AI · F5.2 and F5.2 — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2",
@@ -12085,7 +12085,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Google Cloud $5K Credits · VT Gemini AI · F5.2 and F5.2 — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2",
@@ -12283,7 +12283,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Google Cloud $10K Credits · VT Gemini AI · F5.2 and F5.2 — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2",
@@ -12481,7 +12481,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Google Cloud $25K Credits · VT Gemini AI · F5.2 and F5.2 — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2",
@@ -12676,7 +12676,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Hetzner Free Trial — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/hetzner-free-trial",
@@ -12871,7 +12871,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Hetzner Port Limit · 50 Servers — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/hetzner-port-limit-50-servers",
@@ -13066,7 +13066,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Kamatera Free Trial — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/kamatera-free-trial",
@@ -13261,7 +13261,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Kamatera Port 25 Open — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/kamatera-port-25-open",
@@ -13457,7 +13457,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Linode Free Trial — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/linode-free-trial",
@@ -13653,7 +13653,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Linode Port 25 Open · 10 IPs — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/linode-port-25-open-10-ips",
@@ -13849,7 +13849,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Linode Port 25 Open · 50 IPs — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/linode-port-25-open-50-ips",
@@ -14044,7 +14044,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Oracle Cloud Free Trial — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/oracle-cloud-free-trial",
@@ -14239,7 +14239,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Oracle Cloud Pay As You Go — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/oracle-cloud-pay-as-you-go",
@@ -14434,7 +14434,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "OVHcloud Free Trial · 34 vCPU — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/ovhcloud-free-trial-34-vcpu",
@@ -14629,7 +14629,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "OVHcloud Paid Account · 34 vCPU — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/ovhcloud-paid-account-34-vcpu",
@@ -14825,7 +14825,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Amazon SES SMTP · 50K Daily Limit — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/amazon-ses-smtp-50k-daily-limit",
@@ -15021,7 +15021,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Amazon SES SMTP · 50K Daily Limit · 3 Regions — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/amazon-ses-smtp-50k-daily-limit-3-regions",
@@ -15217,7 +15217,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Amazon SES SMTP · 100K Daily Limit — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/amazon-ses-smtp-100k-daily-limit",
@@ -15412,7 +15412,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "UpCloud Free Trial — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/upcloud-free-trial",
@@ -15607,7 +15607,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "UpCloud Paid Account — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/upcloud-paid-account",
@@ -15803,7 +15803,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "IBM Cloud Free Trial — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/ibm-cloud-free-trial",
@@ -15999,7 +15999,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "IBM Cloud Pay As You Go — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/ibm-cloud-pay-as-you-go",
@@ -16195,7 +16195,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "IBM Cloud Port 25 Open — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/ibm-cloud-port-25-open",
@@ -16390,7 +16390,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Heroku Free Trial · Port 25 Open — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/heroku-free-trial-port-25-open",
@@ -16585,7 +16585,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Heroku Port 25 Open — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/heroku-port-25-open",
@@ -16781,7 +16781,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Vultr $200 Credits — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/vultr-200-credits",
@@ -16977,7 +16977,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Vultr $250 Credits — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/vultr-250-credits",
@@ -17173,7 +17173,7 @@
       "metaKeywordTagCorrect": true,
       "imageAlt": "Vultr $95 Credits — catalog reference illustration",
       "missingImageAlt": 0,
-      "validationStage": "LOCAL SSR + HYDRATED DOM",
+      "validationStage": "LIVE SSR + HYDRATED DOM",
       "technicalEligibility": "INDEXABLE CATALOG CONTENT; COMMERCIAL ACTIVATION IS SEPARATE",
       "dom": {
         "id": "product/vultr-95-credits",

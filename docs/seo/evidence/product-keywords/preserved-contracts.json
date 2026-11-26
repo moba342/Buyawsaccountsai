@@ -1,0 +1,36 @@
+{
+  "baselineCommit": "c1ea091",
+  "productionCommit": "dd812b1",
+  "files": [
+    {
+      "path": "catalog.js",
+      "unchanged": true,
+      "sha256": "c071beb2589caf72a40bbc2c9d4262dce37e859e0601008411922fd584777cef"
+    },
+    {
+      "path": "payments.js",
+      "unchanged": true,
+      "sha256": "3991d046606534e22094fd6c102eb3246b4611ffe30747d6202d0e45b2088a54"
+    },
+    {
+      "path": "offer-publication.js",
+      "unchanged": true,
+      "sha256": "41ca3491e842b062b3e915903a31e8edc8567901c36d2b961a9437af8d87d3f4"
+    },
+    {
+      "path": "offer-review-records.js",
+      "unchanged": true,
+      "sha256": "862ececbd84419e9f09980c2f9ec52c98da7262985de25abb07f5cd783b21e78"
+    },
+    {
+      "path": "vercel.json",
+      "unchanged": true,
+      "sha256": "3c67d5508551e76b20a676be9e69abc78ee64bd2eb8a55a6936287f929b702b3"
+    },
+    {
+      "path": "hosting-redirect-policy.json",
+      "unchanged": true,
+      "sha256": "303df68af56e5a1664b6a5234d83cd8394db8476aaced9f8c5bc5036eef3d9d2"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "before": {
+    "records": 82,
+    "missingFullPrimaryTitle": 10,
+    "missingFullPrimaryMetaDescription": 82,
+    "descriptionsOutsideTarget": 11,
+    "titlesOutsideTarget": 67,
+    "missingMetaKeywords": 82,
+    "javascriptErrors": []
+  },
+  "live": {
+    "records": 82,
+    "missingFullPrimaryTitle": 0,
+    "missingFullPrimaryMetaDescription": 0,
+    "descriptionsOutsideTarget": 0,
+    "titlesOutsideTarget": 1,
+    "missingMetaKeywords": 0,
+    "javascriptErrors": []
+  }
+}
