@@ -208,3 +208,5 @@ The current account-card layout uses an inset navy identity band with a separate
 Product artwork is now limited to the provider/product page hero. Shared catalog and related-product cards omit artwork and retain the compact purchase layout. The hero lockup and illustration labels show the relevant collection or exact product title; long visual titles clamp without changing their accessible names.
 
 Provider collection heroes now show the category lockup and artwork in place of the introductory marketing block. The adjacent collection summary is vertically centered with a centered reference amount. Mobile stacks the panels; the collection navigation action remains in the summary. Individual-product introductions and specifications remain intact.
+
+Collection titles occupy a shared row above the artwork and price overview. Desktop media/price panels stretch to a consistent minimum-height grid row, aligning both edges across providers; tablet/mobile stack naturally. No fixed viewport overlay or footer overlap is introduced.
