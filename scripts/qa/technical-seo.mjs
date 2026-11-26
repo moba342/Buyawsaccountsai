@@ -223,14 +223,18 @@ for (const src of images) {
 const config = JSON.parse(
   await fs.readFile(new URL("../../vercel.json", import.meta.url), "utf8"),
 );
-for (const r of config.redirects) {
+for (const r of config.redirects.filter((r) => !r.has)) {
   const res = await fetch(base + r.source + "?campaign=qa", {
     redirect: "manual",
   });
   assert.equal(res.status, 308, r.source);
   assert.equal(res.headers.get("location"), r.destination + "?campaign=qa");
   assert.equal(
-    (await fetch(base + r.destination, { redirect: "manual" })).status,
+    (
+      await fetch(base + new URL(r.destination, base).pathname, {
+        redirect: "manual",
+      })
+    ).status,
     200,
   );
   report.redirects++;

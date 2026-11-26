@@ -79,24 +79,33 @@ await batches(pages, async ({ id, url }) => {
   report.pages++;
   if (!seo.robots.startsWith("noindex")) report.indexable200++;
 });
-await batches(config.redirects, async (r) => {
-  const response = await fetch(
-    base + r.source + "?utm_source=url-audit&keep=1",
-    { redirect: "manual" },
-  );
-  assert.equal(response.status, 308, r.source);
-  const target = new URL(response.headers.get("location"), base);
-  assert.equal(target.pathname, r.destination, r.source);
-  assert.equal(
-    target.search,
-    "?utm_source=url-audit&keep=1",
-    r.source + " query",
-  );
-  const final = await fetch(target, { redirect: "manual" });
-  assert.equal(final.status, 200, r.source + " final must be one-hop 200");
-  report.directRedirects++;
-  report.queryPreserved++;
-});
+await batches(
+  config.redirects.filter((r) => !r.has),
+  async (r) => {
+    const response = await fetch(
+      base + r.source + "?utm_source=url-audit&keep=1",
+      { redirect: "manual" },
+    );
+    assert.equal(response.status, 308, r.source);
+    const target = new URL(response.headers.get("location"), base);
+    assert.equal(
+      target.href,
+      r.destination + "?utm_source=url-audit&keep=1",
+      r.source,
+    );
+    assert.equal(
+      target.search,
+      "?utm_source=url-audit&keep=1",
+      r.source + " query",
+    );
+    const final = await fetch(base + target.pathname + target.search, {
+      redirect: "manual",
+    });
+    assert.equal(final.status, 200, r.source + " final must be one-hop 200");
+    report.directRedirects++;
+    report.queryPreserved++;
+  },
+);
 await batches([...internal], async (url) => {
   assert.equal(
     (await fetch(base + url, { redirect: "manual" })).status,

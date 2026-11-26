@@ -39,8 +39,12 @@ test("all 82 canonical paths exactly match assigned buying keywords without chan
     assert.equal(providerPath(b), routePath(providerRoute(b)));
 });
 test("every old catalog URL directly redirects and no configured redirect chains or loops exist", () => {
-  const map = new Map(config.redirects.map((r) => [r.source, r.destination]));
-  assert.equal(map.size, config.redirects.length);
+  const map = new Map(
+    config.redirects
+      .filter((r) => !r.has)
+      .map((r) => [r.source, new URL(r.destination).pathname]),
+  );
+  assert.equal(map.size, 535);
   assert.equal(config.trailingSlash, undefined);
   for (const r of catalogSeoRecords)
     for (const source of [
@@ -49,11 +53,11 @@ test("every old catalog URL directly redirects and no configured redirect chains
       "/" + r.id + "/index.html",
     ])
       assert.equal(map.get(source), routePath(r.id));
-  for (const r of config.redirects) {
+  for (const r of config.redirects.filter((r) => !r.has)) {
     assert(r.permanent);
-    assert(!map.has(r.destination), r.source);
-    assert(pathRoute(r.destination));
-    assert.notEqual(r.source, r.destination);
+    assert(!map.has(new URL(r.destination).pathname), r.source);
+    assert(pathRoute(new URL(r.destination).pathname));
+    assert.notEqual(r.source, new URL(r.destination).pathname);
   }
 });
 test("product, eligible-offer, breadcrumb and social URL sources use the canonical path", () => {

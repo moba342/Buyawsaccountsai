@@ -4,6 +4,8 @@ Date: 2026-11-27 (Asia/Dhaka). Source branch: seo/keyword-url-migration-2026-11-
 
 ## Audit and decisions
 
+For subsequent cross-host routing changes, actual hop counts and the platform HTTP limitation, see [HOSTING-REDIRECT-REPORT.md](HOSTING-REDIRECT-REPORT.md).
+
 The active assigned keywords are in catalog-seo.js, derived from the supplied catalog. All 14 category and 68 variant public URLs now use the exact lowercase slug of that assigned primary buying keyword. For example, buy AWS accounts becomes /buy-aws-accounts/. The illustrative “compute plans” wording is not inserted into a record whose assigned keyword is simply “buy AWS 32 vCPU”. No models, product specifications, pricing, service or availability claims are changed.
 
 This replaces 82 existing public URLs; it does not create 82 additional indexable copies. All 68 existing variants retain their stable identities and substantive content. Variations differ by provider, quota/capacity, credit value, model/access labels or network scope; they are not multiplied into extra query/feature landing pages. There are still 96 rendered pages and 94 sitemap URLs. Individual technical noindex overrides continue to apply.
@@ -14,7 +16,7 @@ Established homepage, marketplace, platform directory, compare, guide, help, sel
 
 Catalog/order IDs remain unchanged (for example product/aws-8-vcpu). New productPath/providerPath and routePath helpers provide the public URL. Cart storage, comparison IDs, commercial review keys, API item identifiers, editorial copy keys and original image paths keep their existing identities. Purchase/publication safeguards and current source indexability are unchanged.
 
-vercel.json contains 535 explicit permanent 308 redirects: prior aliases and retired product aliases are flattened to the final destination; all 82 old catalog URLs plus slash/no-slash/index.html forms go directly to the new canonical. Canonical non-slash and index.html aliases are also direct. Global trailingSlash normalization is replaced by explicit canonical redirects so an old no-slash URL does not first redirect to an old slash URL. All 95 rendered non-home routes have exact static rewrites. No canonical destination is a redirect source. Query strings are preserved. Host/domain normalization remains controlled by existing hosting settings and must be checked on an eventual live release; no domain setting was changed.
+vercel.json contains 632 explicit permanent 308 redirects: prior aliases and retired product aliases are flattened to the final destination; all 82 old catalog URLs plus slash/no-slash/index.html forms go directly to the new canonical. Canonical non-slash and index.html aliases are also direct. The original 535 mappings now use absolute final HTTPS www destinations, with 97 additional apex-only canonical/fallback rules. Global trailingSlash normalization is replaced by explicit canonical redirects so an old no-slash URL does not first redirect to an old slash URL. All 95 rendered non-home routes have exact static rewrites. No canonical destination is a redirect source. Query strings are preserved. Host/domain normalization remains controlled by existing hosting settings and must be checked on an eventual live release; no domain setting was changed.
 
 Updated references: navigation/card/footer/provider links, related products/guides, breadcrumbs and BreadcrumbList, canonical/Open Graph URLs, Product/eligible Offer URLs and ItemList links, generated catalog reports and XML sitemap. Stable logo/social-image asset URLs do not need to move. The build regenerates URL configuration before SSG and this report after SSG.
 
@@ -129,7 +131,7 @@ Generating this mapping does not deploy or activate commercial products. For the
 
 ## Recorded validation results — PASS
 
-- 55/55 unit tests; production client/SSR/SSG build and SEO artifact validation passed.
+- The original URL migration passed 55/55 unit tests, production client/SSR/SSG build and SEO artifact validation. Subsequent hosting-fix results are recorded separately in HOSTING-REDIRECT-REPORT.md.
 - 96 canonical pages tested; 94 indexable URLs returned direct 200. All 96 page schemas/canonicals/Open Graph entries matched.
 - 535 permanent redirects reached a direct final 200; all 535 preserved query strings. Every one of 96 distinct rendered internal destinations was canonical and returned 200.
 - Browser crawl: 96 raw and 96 hydrated routes, 268 views across eight widths, 194 link checks, 85 images, 535 redirect checks, no orphans, overflow or reported JS errors.

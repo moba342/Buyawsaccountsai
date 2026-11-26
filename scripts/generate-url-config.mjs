@@ -2,6 +2,7 @@
 import fs from "node:fs/promises";
 import { routeIds, routePath, pathRoute } from "../routing.js";
 import { catalogSeoRecords } from "../catalog-seo.js";
+import { SITE } from "../site-config.js";
 const config = JSON.parse(await fs.readFile("vercel.json", "utf8"));
 const legacy = JSON.parse(
   await fs.readFile("legacy-url-redirects.json", "utf8"),
@@ -44,14 +45,31 @@ for (const [source, destination] of map) {
 delete config.trailingSlash;
 config.redirects = [...map].map(([source, destination]) => ({
   source,
-  destination,
+  destination: SITE.url + destination,
   permanent: true,
 }));
+// Domain-level apex redirects must be disabled only AFTER this routing is deployed.
+// Exact canonical paths avoid a catch-all dropping the trailing slash and adding a hop.
+const apexHost = new URL(SITE.url).hostname.replace(/^www\./, "");
+const hostCondition = [{ type: "host", value: apexHost }];
+for (const source of ["/", ...routeIds.map(routePath)])
+  config.redirects.push({
+    source,
+    destination: SITE.url + source,
+    has: hostCondition,
+    permanent: true,
+  });
+config.redirects.push({
+  source: "/:path*",
+  destination: SITE.url + "/:path*",
+  has: hostCondition,
+  permanent: true,
+});
 config.rewrites = routeIds.map((id) => ({
   source: routePath(id),
   destination: routePath(id) + "index.html",
 }));
 await fs.writeFile("vercel.json", JSON.stringify(config, null, 2) + "\n");
 console.log(
-  `URL configuration: ${catalogSeoRecords.length} keyword paths; ${map.size} direct permanent redirects; ${routeIds.length} exact static rewrites.`,
+  `URL configuration: ${catalogSeoRecords.length} keyword paths; ${map.size} preserved permanent mappings plus ${config.redirects.length - map.size} apex-host rules; ${routeIds.length} exact static rewrites.`,
 );

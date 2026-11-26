@@ -1,0 +1,154 @@
+{
+  "date": "2026-11-27",
+  "productionCommit": "7ea14d0",
+  "results": [
+    {
+      "source": "http://buyawsaccountsai.com/",
+      "redirects": 2,
+      "hops": [
+        {
+          "url": "http://buyawsaccountsai.com/",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/",
+          "status": 308,
+          "location": "https://www.buyawsaccountsai.com/"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "https://buyawsaccountsai.com/",
+      "redirects": 1,
+      "hops": [
+        {
+          "url": "https://buyawsaccountsai.com/",
+          "status": 308,
+          "location": "https://www.buyawsaccountsai.com/"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "http://www.buyawsaccountsai.com/",
+      "redirects": 1,
+      "hops": [
+        {
+          "url": "http://www.buyawsaccountsai.com/",
+          "status": 308,
+          "location": "https://www.buyawsaccountsai.com/"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "https://www.buyawsaccountsai.com/",
+      "redirects": 0,
+      "hops": [
+        {
+          "url": "https://www.buyawsaccountsai.com/",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "http://buyawsaccountsai.com/aws-accounts/?utm_source=before&keep=1",
+      "redirects": 3,
+      "hops": [
+        {
+          "url": "http://buyawsaccountsai.com/aws-accounts/?utm_source=before&keep=1",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/aws-accounts/?utm_source=before&keep=1"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/aws-accounts/?utm_source=before&keep=1",
+          "status": 308,
+          "location": "https://www.buyawsaccountsai.com/aws-accounts/?utm_source=before&keep=1"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/aws-accounts/?utm_source=before&keep=1",
+          "status": 308,
+          "location": "/buy-aws-accounts/?utm_source=before&keep=1"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/buy-aws-accounts/?utm_source=before&keep=1",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "https://buyawsaccountsai.com/aws-accounts/?utm_source=before&keep=1",
+      "redirects": 2,
+      "hops": [
+        {
+          "url": "https://buyawsaccountsai.com/aws-accounts/?utm_source=before&keep=1",
+          "status": 308,
+          "location": "https://www.buyawsaccountsai.com/aws-accounts/?utm_source=before&keep=1"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/aws-accounts/?utm_source=before&keep=1",
+          "status": 308,
+          "location": "/buy-aws-accounts/?utm_source=before&keep=1"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/buy-aws-accounts/?utm_source=before&keep=1",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "https://buyawsaccountsai.com/product/aws-8-vcpu/?utm_source=before&keep=1",
+      "redirects": 2,
+      "hops": [
+        {
+          "url": "https://buyawsaccountsai.com/product/aws-8-vcpu/?utm_source=before&keep=1",
+          "status": 308,
+          "location": "https://www.buyawsaccountsai.com/product/aws-8-vcpu/?utm_source=before&keep=1"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/product/aws-8-vcpu/?utm_source=before&keep=1",
+          "status": 308,
+          "location": "/buy-aws-8-vcpu/?utm_source=before&keep=1"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/buy-aws-8-vcpu/?utm_source=before&keep=1",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=before&keep=1",
+      "redirects": 1,
+      "hops": [
+        {
+          "url": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=before&keep=1",
+          "status": 308,
+          "location": "https://www.buyawsaccountsai.com/buy-aws-accounts/?utm_source=before&keep=1"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/buy-aws-accounts/?utm_source=before&keep=1",
+          "status": 200,
+          "location": null
+        }
+      ]
+    }
+  ]
+}

@@ -65,11 +65,21 @@ const server = http.createServer(async (req, res) => {
       return;
     }
     const redirect = config.redirects.find(
-      (r) => !r.has && !r.source.includes(":") && r.source === pathname,
+      (r) =>
+        (r.source === pathname || r.source === "/:path*") &&
+        (!r.has ||
+          r.has.every(
+            (condition) =>
+              condition.type === "host" &&
+              condition.value ===
+                (req.headers.host || "").split(":")[0].toLowerCase(),
+          )),
     );
     if (redirect) {
       res.writeHead(redirect.permanent ? 308 : 307, {
-        Location: redirect.destination + url.search,
+        Location:
+          redirect.destination.replace(":path*", pathname.replace(/^\//, "")) +
+          url.search,
       });
       res.end();
       return;
