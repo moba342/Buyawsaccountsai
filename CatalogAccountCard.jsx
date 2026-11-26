@@ -1,4 +1,3 @@
-import ProductVisual from './ProductVisual';
 import React from 'react';
 import { ArrowRight, Plus, ShoppingCart } from 'lucide-react';
 import ProviderLogo from './ProviderLogo';
@@ -29,7 +28,6 @@ export default function CatalogAccountCard({
           {(product.group || product.provider).split(' ')[0]}
         </span>
       </div>
-      <ProductVisual provider={product.provider} />
       <div className="account-card-copy">
         <h3>
           <a href={'/' + productRoute(product) + '/'}>{product.name}</a>

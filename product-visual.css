@@ -20,3 +20,6 @@
 @keyframes product-visual-light{to{left:140%}}
 html[data-scroll-active=true] #root .product-visual-logo{transition:none}html[data-scroll-active=true] #root .product-visual-sheen{animation:none!important}
 @media(prefers-reduced-motion:reduce){#root .account-product-visual .product-visual-logo{transition:none;translate:none}#root .product-visual-sheen{display:none}}
+/* Artwork belongs to the page hero, while product cards remain compact. */
+#root .product-visual-topline>span:first-child{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+#root .product-visual-caption strong{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}

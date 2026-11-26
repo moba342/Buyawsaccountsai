@@ -28,17 +28,18 @@ const collections = Object.fromEntries(
   }),
 );
 
-export default function ProductVisual({ provider, className = '' }) {
+export default function ProductVisual({ provider, title, className = '' }) {
   const collection = collections[provider];
   if (!collection) return null;
+  const productTitle = title || collection.name + ' Accounts';
   return (
     <figure
       className={`account-product-visual ${className}`}
       role="img"
-      aria-label={`${collection.full} account collection: ${collection.options.join(', ')}`}
+      aria-label={`${productTitle}: ${collection.options.join(', ')}`}
     >
       <div className="product-visual-topline">
-        <span>{collection.full}</span>
+        <span title={productTitle}>{productTitle}</span>
         <span className="product-visual-edition">CLOUD COLLECTION</span>
       </div>
       <svg
@@ -87,7 +88,7 @@ export default function ProductVisual({ provider, className = '' }) {
         })}
       </div>
       <figcaption className="product-visual-caption">
-        <strong>{collection.name} Accounts</strong>
+        <strong title={productTitle}>{productTitle}</strong>
         <small>
           Explore your
           <br />

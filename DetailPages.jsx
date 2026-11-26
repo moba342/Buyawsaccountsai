@@ -349,7 +349,9 @@ export function CatalogPage({
               <ProviderLogo name={brand.name} decorative />
             </span>
             <div>
-              <strong>{brand.full}</strong>
+              <strong>
+                {product ? product.name : brand.name + ' Accounts'}
+              </strong>
               <span>{product ? product.group : 'ACCOUNT COLLECTION'}</span>
             </div>
           </div>
@@ -370,7 +372,9 @@ export function CatalogPage({
               : brand.summary +
                 ' Compare the listed details, select a package, and speak directly with the seller before you buy.'}
           </p>
-          {product && <ProductVisual provider={product.provider} />}
+          {product && (
+            <ProductVisual provider={product.provider} title={product.name} />
+          )}
           {product ? (
             <section
               className="account-product-specs"
@@ -420,6 +424,10 @@ export function CatalogPage({
                   <ArrowRight size={13} aria-hidden="true" />
                 </a>
               </div>
+              <ProductVisual
+                provider={brand.name}
+                title={brand.name + ' Accounts'}
+              />
             </>
           )}
         </div>
