@@ -185,4 +185,6 @@ The capsule header stays at the top with an opaque surface rather than live back
 
 ### Header utility actions
 
-The shared header includes icon-only Telegram, WhatsApp (using the supplied contact number +14582624274), and cart links, plus an orange Check Pricing action to `/products/`. Cart quantity is reflected in the accessible label and count badge. Navigation collapses below 1280px; mobile actions use a second row with 44px touch targets. Sticky-header offsets resize automatically.
+The shared header includes icon-only Telegram and cart links, plus a Midnight Sapphire Check Pricing action to `/products/`. Cart quantity is reflected in the accessible label and count badge. Navigation collapses below 1280px; mobile actions use a second row with 44px touch targets. Sticky-header offsets resize automatically.
+
+The pricing CTA uses the shared navy gradient, white text, border and shadow tokens. Hover adds a one-shot sheen, a small lift and arrow movement; pressing settles the button. Reduced-motion preferences disable movement.
