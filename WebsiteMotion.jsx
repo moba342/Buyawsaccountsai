@@ -7,7 +7,9 @@ const entrances = `${surfaces
   .filter((s) => s !== '.home-hero')
   .join(
     ',',
-  )},.account-process>ol>li,.account-workloads>*,.home-section-heading,.process-item,.page-intro-copy>*,.home-hero-content>*,.account-page-hero-copy>*`;
+  )},.account-process>ol>li,.account-workloads>*,.home-section-heading,.process-item,.page-intro-copy>*,.home-hero-content>*,.account-page-hero-copy>*,.guide-card,.faq-page>details,.account-faq>details`;
+const motionButtons =
+  'a.primary,button.primary,a.secondary,button.secondary,.header-button,.provider-showcase-action,.account-card-actions>button';
 const heroParts =
   '.home-hero-content>*,.page-intro-copy>*,.account-page-hero-copy>*';
 
@@ -19,6 +21,8 @@ export default function WebsiteMotion({ routeKey, paused }) {
     const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
     const seen = new WeakSet();
     const animations = new Set();
+    const sheenNodes = new Set();
+    const activeSheens = new WeakMap();
     let observer,
       ambientObserver,
       mutations,
@@ -36,13 +40,15 @@ export default function WebsiteMotion({ routeKey, paused }) {
       target?.classList.remove('motion-lit');
       target?.style.removeProperty('--pointer-depth-x');
       target?.style.removeProperty('--pointer-depth-y');
+      target?.style.removeProperty('--card-pitch');
+      target?.style.removeProperty('--card-yaw');
       target = bounds = point = null;
       light.remove();
     }
     function draw() {
       frame = 0;
       if (!target?.isConnected || !bounds || !point) return clearLight();
-      if (target.matches('.home-hero')) {
+      if (target.matches('.home-hero,.account-card,.provider-showcase-card')) {
         const x = Math.max(
           -1,
           Math.min(1, ((point.x - bounds.left) / bounds.width) * 2 - 1),
@@ -51,6 +57,8 @@ export default function WebsiteMotion({ routeKey, paused }) {
           -1,
           Math.min(1, ((point.y - bounds.top) / bounds.height) * 2 - 1),
         );
+        target.style.setProperty('--card-pitch', `${-y * 1.1}deg`);
+        target.style.setProperty('--card-yaw', `${x * 1.1}deg`);
         target.style.setProperty('--pointer-depth-x', `${x * 7}px`);
         target.style.setProperty('--pointer-depth-y', `${y * 5}px`);
       }
@@ -76,6 +84,48 @@ export default function WebsiteMotion({ routeKey, paused }) {
       }
       point = { x: event.clientX, y: event.clientY };
       if (!frame) frame = requestAnimationFrame(draw);
+    }
+    function sweep(event) {
+      if (
+        reduced.matches ||
+        !finePointer.matches ||
+        document.hidden ||
+        document.documentElement.dataset.scrollActive === 'true'
+      )
+        return;
+      const button = event.target.closest?.(motionButtons);
+      if (
+        !button ||
+        button.contains(event.relatedTarget) ||
+        button.disabled ||
+        button.getAttribute('aria-disabled') === 'true' ||
+        activeSheens.has(button)
+      )
+        return;
+      const sheen = document.createElement('span');
+      sheen.className = 'button-motion-sheen';
+      sheen.setAttribute('aria-hidden', 'true');
+      button.classList.add('motion-button');
+      button.appendChild(sheen);
+      sheenNodes.add(sheen);
+      const animation = sheen.animate(
+        [
+          { transform: 'translateX(-140%) skewX(-18deg)', opacity: 0 },
+          { opacity: 0.7, offset: 0.3 },
+          { transform: 'translateX(420%) skewX(-18deg)', opacity: 0 },
+        ],
+        { duration: 650, easing: 'cubic-bezier(.2,.6,.3,1)' },
+      );
+      activeSheens.set(button, animation);
+      animations.add(animation);
+      animation.finished
+        .catch(() => {})
+        .finally(() => {
+          sheen.remove();
+          sheenNodes.delete(sheen);
+          animations.delete(animation);
+          activeSheens.delete(button);
+        });
     }
     function discover(root) {
       if (!(root instanceof Element)) return;
@@ -147,7 +197,11 @@ export default function WebsiteMotion({ routeKey, paused }) {
       mutations = new MutationObserver((records) => {
         for (const record of records)
           for (const node of record.addedNodes) {
-            if (node !== light) discover(node);
+            if (
+              node !== light &&
+              !node.classList?.contains('button-motion-sheen')
+            )
+              discover(node);
           }
       });
       const main = document.getElementById('page-content');
@@ -162,6 +216,7 @@ export default function WebsiteMotion({ routeKey, paused }) {
     reduced.addEventListener('change', configure);
     finePointer.addEventListener('change', clearLight);
     document.addEventListener('pointermove', move, { passive: true });
+    document.addEventListener('pointerover', sweep, { passive: true });
     document.addEventListener('pointerleave', clearLight);
     document.addEventListener('visibilitychange', visibility);
     window.addEventListener('scroll', clearLight, { passive: true });
@@ -176,6 +231,8 @@ export default function WebsiteMotion({ routeKey, paused }) {
       reduced.removeEventListener('change', configure);
       finePointer.removeEventListener('change', clearLight);
       document.removeEventListener('pointermove', move);
+      document.removeEventListener('pointerover', sweep);
+      for (const node of sheenNodes) node.remove();
       document.removeEventListener('pointerleave', clearLight);
       document.removeEventListener('visibilitychange', visibility);
       window.removeEventListener('scroll', clearLight);
