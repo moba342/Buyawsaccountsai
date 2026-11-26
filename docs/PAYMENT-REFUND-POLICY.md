@@ -15,3 +15,9 @@ Local checks:
 - Existing cart/checkout publication regression passed for all 68 held variants; four further accessibility scans had no violations. No payment or order was sent.
 
 Evidence: docs/seo/evidence/payment-refund-policy/local/. Deployment/live checks are recorded below after actual completion.
+
+Production release: commit `e72bb35e651a96ec8143d01c6528fb5ccc0461c9`, Ready Vercel deployment `dpl_B33MNZZM7eJrj268BeqbxFc32XJ3`. Canonical page https://buyawsaccountsai.com/payment-refund-policy/ returns 200. WWW is assigned to this release and normalizes permanently to the apex.
+
+Actual live acceptance: policy layout passed at all five widths with two accessibility scans, no overflow, JavaScript errors or violations; checkout and footer link navigation passed. Full URL validation passed for 97 pages, 95 indexable 200s, all 537 redirects/query-preservation cases, 97 schemas and 97 canonical internal destinations. Six new policy URL/alias checks across both HTTPS hosts passed: canonical apex direct 200, slash/index/WWW aliases one permanent 308 to the final canonical with queries intact. Sitemap and robots match the current build.
+
+Evidence: docs/seo/evidence/payment-refund-policy/live/. The specific refund window and other order-specific conditions remain to be confirmed in writing; the published page does not invent them. No commercial product was activated and no payment or order was sent during testing.

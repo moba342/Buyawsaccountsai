@@ -1,0 +1,44 @@
+[
+  {
+    "source": "https://buyawsaccountsai.com/payment-refund-policy/?source=policy-check",
+    "status": 200,
+    "location": null,
+    "hops": 0,
+    "finalStatus": 200
+  },
+  {
+    "source": "https://buyawsaccountsai.com/payment-refund-policy?source=policy-check",
+    "status": 308,
+    "location": "https://buyawsaccountsai.com/payment-refund-policy/?source=policy-check",
+    "hops": 1,
+    "finalStatus": 200
+  },
+  {
+    "source": "https://buyawsaccountsai.com/payment-refund-policy/index.html?source=policy-check",
+    "status": 308,
+    "location": "https://buyawsaccountsai.com/payment-refund-policy/?source=policy-check",
+    "hops": 1,
+    "finalStatus": 200
+  },
+  {
+    "source": "https://www.buyawsaccountsai.com/payment-refund-policy/?source=policy-check",
+    "status": 308,
+    "location": "https://buyawsaccountsai.com/payment-refund-policy/?source=policy-check",
+    "hops": 1,
+    "finalStatus": 200
+  },
+  {
+    "source": "https://www.buyawsaccountsai.com/payment-refund-policy?source=policy-check",
+    "status": 308,
+    "location": "https://buyawsaccountsai.com/payment-refund-policy/?source=policy-check",
+    "hops": 1,
+    "finalStatus": 200
+  },
+  {
+    "source": "https://www.buyawsaccountsai.com/payment-refund-policy/index.html?source=policy-check",
+    "status": 308,
+    "location": "https://buyawsaccountsai.com/payment-refund-policy/?source=policy-check",
+    "hops": 1,
+    "finalStatus": 200
+  }
+]
