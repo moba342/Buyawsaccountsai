@@ -1,3 +1,5 @@
+> Historical release/audit record. Current SEO requirements are defined in [the independent SEO implementation report](docs/seo/SEO-INDEPENDENCE-REPORT.md). Any earlier requirement to verify commercial documents before SEO development, metadata, crawlability or sitemap inclusion is superseded. Commercial purchase safeguards remain separate.
+
 # Initial technical SEO audit
 
 Date: 2026-11-26 (Asia/Dhaka). Baseline commit: `89d09ac`. Production: https://www.buyawsaccountsai.com/.

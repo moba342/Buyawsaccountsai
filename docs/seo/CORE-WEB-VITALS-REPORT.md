@@ -1,24 +1,20 @@
-# Core Web Vitals and performance report
+# Independent SEO performance and Core Web Vitals report
 
-## Measured lab results
+Date: 2026-11-27. Lighthouse 13.6.0 with the same Chrome and compressed local production-like server. Baseline: clean `ec7a7bc` archive at port 4174; candidate: this source branch at port 4173. Sequential single runs with default mobile simulation or desktop preset; no concurrent browser QA during these measurements.
 
-Date: 2026-11-26. Lighthouse 13.6.0, Chrome on this Mac, sequential single runs, compressed production-like preview servers. Baseline is a clean archive of `a5ed490` on port 4174; candidate is this branch on port 4173. Mobile uses Lighthouse default simulated throttling; desktop uses its desktop preset. No real user, production edge, Search Console or CrUX measurement is implied.
-
-| Build / page | Device | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
+| Build / page | Device | Performance | Accessibility | Best practices | SEO | LCP | TBT | CLS |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| before / home | mobile | 100 | 100 | 100 | 100 | 1.06s | 0 | 12ms |
-| before / product | mobile | 100 | 100 | 100 | 100 | 1.05s | 0 | 0ms |
-| after / home | mobile | 100 | 100 | 100 | 100 | 1.05s | 0 | 14.5ms |
-| after / product | mobile | 100 | 100 | 100 | 69 | 1.05s | 0 | 0ms |
-| after / home | desktop | 100 | 100 | 100 | 100 | 0.43s | 0 | 0ms |
-| after / product | desktop | 100 | 100 | 100 | 69 | 0.28s | 0 | 0ms |
+| before / home | mobile | 100 | 100 | 100 | 100 | 1.06s | 0ms | 0 |
+| before / product | mobile | 100 | 100 | 100 | 69 | 1.05s | 4.5ms | 0 |
+| after / home | mobile | 100 | 100 | 100 | 100 | 1.06s | 15ms | 0 |
+| after / product | mobile | 100 | 100 | 100 | 100 | 1.05s | 0ms | 0 |
+| after / home | desktop | 100 | 100 | 100 | 100 | 0.28s | 0ms | 0 |
+| after / product | desktop | 100 | 100 | 100 | 100 | 0.28s | 0ms | 0 |
 
-All measured candidate performance scores meet the 90+ lab target. The candidate product's SEO score of **69 is deliberate**: its only failing SEO audit is `is-crawlable`, because the brief requires pending offers to remain **noindex**. Removing that safeguard merely to raise a score would contradict the publication requirements. The homepage scores 100 across all four categories. No claim that performance improved causally is supported by these single runs; baseline also scores 100.
+Total generated JavaScript across route chunks (not a single-page transfer): baseline 556627 raw / 152127 gzip bytes; candidate 477349 raw / 142857 gzip bytes.
 
-Measured candidate mobile LCP is approximately 1.05s on these local runs, CLS 0, and TBT at most 14.5ms. These are lab observations, not a field Core Web Vitals pass. INP cannot be established by this Lighthouse navigation run. Real field targets remain LCP <=2.5s, CLS <=0.1, INP <=200ms at the 75th percentile; owner-approved deployment and enough genuine traffic/CrUX data are required to assess them.
+The archived service-keyword proposals were removed from runtime commercial imports. No runtime package was added. Chunking, initial-route preload, responsive assets, local fonts, stable dimensions and reduced-motion behavior remain.
 
-## Preserved performance architecture
+The baseline product's SEO score reflects its old noindex hold; candidate SEO indexability is independent of commerce. These single local measurements do not establish real-user field performance, a causal speed improvement, production edge behavior or Google indexing. No measured field INP is available; TBT is not INP. Real field assessment requires enough genuine traffic/CrUX data after a separate release. No fixed 120-FPS or zero-frame-drop promise is made.
 
-No new runtime package, framework migration, heavy animation or render-blocking third-party tracker was added. Existing route splitting, server rendering, initial-route preload, local font/media optimization, explicit image dimensions, reduced-motion behavior and consent-gated analytics remain. Added reference data is static and generated through the existing pipeline. Do not assert “120 FPS” or zero frame drops on all devices; refresh rate, GPU, browser and workload vary.
-
-Full local Lighthouse JSON is retained in ignored `.qa-seo/catalog-*.json`; compact reproducible metrics and versions are committed in `evidence/lighthouse.json`. Repeat under production conditions after an approved release; do not compare a local compressed preview to an unrelated earlier uncompressed/live run as an optimization gain.
+Compact evidence: `evidence/independent-seo/lighthouse.json`. Full local JSON remains in ignored `.qa-seo/independent-*.json`. Earlier production lab reports remain historical and are not presented as measurements of this source-only change.

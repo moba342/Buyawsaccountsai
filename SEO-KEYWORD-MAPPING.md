@@ -1,3 +1,5 @@
+> Historical release/audit record. Current SEO requirements are defined in [the independent SEO implementation report](docs/seo/SEO-INDEPENDENCE-REPORT.md). Any earlier requirement to verify commercial documents before SEO development, metadata, crawlability or sitemap inclusion is superseded. Commercial purchase safeguards remain separate.
+
 # Keyword and canonical mapping
 
 Date: 2026-11-26. Keywords are editorial targets, not obsolete meta-keyword tags or ranking guarantees. All established canonical slugs are preserved. Homepage targets the broad AWS buying intent; marketplace targets cross-cloud shopping; platforms target provider discovery; individual variants target their exact specifications. Guides address informational intent, comparison addresses evaluation, and help/seller/contact pages address support, trust and sales inquiries.

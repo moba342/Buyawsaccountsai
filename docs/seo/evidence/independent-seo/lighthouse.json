@@ -1,0 +1,108 @@
+{
+  "date": "2026-11-27",
+  "method": "Sequential single local lab runs, same Chrome/Lighthouse and compressed production-like preview; baseline ec7a7bc port4174, candidate port4173. Not field INP or Google coverage.",
+  "results": [
+    {
+      "name": "before-home-mobile",
+      "fetchTime": "2026-11-26T18:23:40.068Z",
+      "url": "http://localhost:4174/",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 1055.9426,
+      "tbtMs": 0,
+      "cls": 0
+    },
+    {
+      "name": "before-product-mobile",
+      "fetchTime": "2026-11-26T18:23:50.736Z",
+      "url": "http://localhost:4174/product/aws-free-trial/",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69
+      },
+      "lcpMs": 1053.0976,
+      "tbtMs": 4.5,
+      "cls": 0
+    },
+    {
+      "name": "after-home-mobile",
+      "fetchTime": "2026-11-26T18:24:01.217Z",
+      "url": "http://localhost:4173/",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 1056.5919,
+      "tbtMs": 15,
+      "cls": 0
+    },
+    {
+      "name": "after-product-mobile",
+      "fetchTime": "2026-11-26T18:24:11.953Z",
+      "url": "http://localhost:4173/product/aws-free-trial/",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 1054.7178,
+      "tbtMs": 0,
+      "cls": 0
+    },
+    {
+      "name": "after-home-desktop",
+      "fetchTime": "2026-11-26T18:24:22.385Z",
+      "url": "http://localhost:4173/",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 283.8767,
+      "tbtMs": 0,
+      "cls": 0
+    },
+    {
+      "name": "after-product-desktop",
+      "fetchTime": "2026-11-26T18:24:33.142Z",
+      "url": "http://localhost:4173/product/aws-free-trial/",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 283.9194,
+      "tbtMs": 0,
+      "cls": 0
+    }
+  ],
+  "bundles": {
+    "baseline": {
+      "chunks": 13,
+      "rawBytes": 556627,
+      "gzipBytes": 152127
+    },
+    "candidate": {
+      "chunks": 13,
+      "rawBytes": 477349,
+      "gzipBytes": 142857
+    }
+  }
+}

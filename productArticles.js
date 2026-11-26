@@ -117,16 +117,12 @@ export function getProductArticle(product, brand) {
     )
     .slice(0, 3);
   return {
-    title:
-      (publication.published ? "Product overview: " : "Reference overview: ") +
-      brand.full +
-      " " +
-      product.name,
+    title: "Buying guide: " + brand.full + " " + product.name,
     intro,
     price,
     sections: [
       {
-        title: "Available configurations",
+        title: "Compare product configurations",
         paragraphs: [
           peers.length
             ? "Compare this " +
@@ -159,7 +155,7 @@ export function getProductArticle(product, brand) {
         ],
       },
       {
-        title: "Product requirements and publication review",
+        title: "Purchase requirements and commercial eligibility",
         paragraphs: [
           publication.published
             ? "This record has a documented publication review. Review its actual scope, regions, and current availability before deciding whether to order. This is not a claim of independent seller certification."

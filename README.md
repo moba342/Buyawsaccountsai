@@ -1,3 +1,5 @@
+> Current workflow: [Independent catalog SEO](docs/seo/SEO-INDEPENDENCE-REPORT.md). SEO development and catalog indexability do not require commercial verification documents. Earlier release notes below are historical; payment and commercial activation remain separately controlled.
+
 # BuyAWSAccountsAI — Cloud Account Storefront
 
 Responsive React storefront with a Midnight Sapphire Navy theme with soft white surfaces and a midnight footer, 68 product variants across 14 providers, and original provider logo assets stored locally.
@@ -259,3 +261,10 @@ This review branch preserves 68 catalog variants and 14 collection URLs, maps al
 ### Approved catalog SEO production release — 2026-11-27
 
 The owner subsequently approved deployment of `ec7a7bc`, including the pending catalog purchase/indexing holds. Main was fast-forwarded and pushed, and Vercel production was updated. See [the release record](docs/seo/PRODUCTION-RELEASE-2026-11-27.md) for live verification, deployment IDs and remaining owner actions. Earlier review-branch statements describe the pre-release state.
+
+
+### Independent catalog SEO — 2026-11-27
+
+The active workflow is now [documented here](docs/seo/SEO-INDEPENDENCE-REPORT.md). `catalog-seo.js` builds all 82 transactional SEO records from the unchanged product catalog; metadata, crawlability, factual schema and the 94-URL sitemap do not require commercial documents. `offer-publication.js` controls purchase/offer activation separately and no longer contains SEO index/proposal decisions. Existing cart/payment safeguards remain intact.
+
+Run `npm test`, `npm run build`, `npm run validate:seo`. Active metadata/keywords and separate commerce statuses regenerate in `docs/seo/PRODUCT-SEO-CATALOG.json` and `PRODUCT-KEYWORD-MAPPING.csv`. Optional browser QA uses `QA_TOOLS_PACKAGE_JSON`; set `QA_EVIDENCE_DIR` to save a new run without overwriting historical evidence. The source-only independence update has not been deployed by this task. Search Console preparation is complete; actual owner verification/submission is not claimed.

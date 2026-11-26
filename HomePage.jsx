@@ -243,7 +243,7 @@ export default function HomePage({
       <section className="home-hero">
         <div className="home-hero-content">
           <div className="home-kicker">
-            <span className="kicker-line" /> CLOUD PRODUCT REFERENCE CATALOG
+            <span className="kicker-line" /> CLOUD ACCOUNTS & CREDIT PRODUCTS
           </div>
           <h1>{pageHeading("home")}</h1>
           <p>

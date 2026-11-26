@@ -1,7 +1,7 @@
+// COMMERCIAL POLICY ONLY: authorization, availability and purchase activation.
+// This module does not decide keywords, technical SEO, robots or sitemap inclusion.
 import { publicationReviews } from "./offer-review-records.js";
-import { suppliedProductSeo } from "./product-seo-records.js";
 import { productRoute, providerRoute } from "./catalogPaths.js";
-export const seoRecordById = new Map(suppliedProductSeo.map((r) => [r.id, r]));
 const specKeys = [
   "name",
   "kind",
@@ -40,9 +40,7 @@ export function productPublication(
   product,
   review = publicationReviews[productRoute(product)],
 ) {
-  const record = seoRecordById.get(productRoute(product)),
-    reasons = [];
-  if (!record) reasons.push("No reconciled SEO record");
+  const reasons = [];
   if (review?.status !== "approved") reasons.push("Publication review pending");
   if (!validText(review?.reviewedBy) || !validDate(review?.reviewedAt))
     reasons.push("Named human review and genuine review date required");
@@ -142,33 +140,17 @@ export function productPublication(
     review?.editorialReview?.actualOfferApproved !== true
   )
     reasons.push("Human editorial/scope review required");
-  const published = reasons.length === 0,
-    indexable =
-      published &&
-      review?.editorialReview?.distinctContentApproved === true &&
-      review?.editorialReview?.indexApproved === true;
+  const published = reasons.length === 0;
   return {
     id: productRoute(product),
-    record,
     status: published ? "APPROVED" : "PENDING VERIFICATION",
     publicationStatus: published ? "published" : "pending-verification",
     published,
-    indexable,
-    metadataProposalEligible:
-      published &&
-      record.proposedOfferingType === (product.offeringType || "account") &&
-      review.editorialReview.proposalApproved === true &&
-      review.editorialReview.metadataMatchesOffering === true,
     purchasable:
       published &&
       ["InStock", "LimitedAvailability"].includes(review.availability),
     review,
     reasons,
-    indexingReason: indexable
-      ? "Explicit distinct-content indexing approval"
-      : published
-        ? "Distinct-content/indexing review pending"
-        : "Unverified reference; commercial publication withheld",
   };
 }
 export const canPurchaseProduct = (product) =>
@@ -178,8 +160,7 @@ export function categoryPublication(
   list,
   review = publicationReviews[providerRoute(brand)],
 ) {
-  const published = list.filter((p) => productPublication(p).published),
-    record = seoRecordById.get(providerRoute(brand));
+  const published = list.filter((p) => productPublication(p).published);
   const approved =
     published.length > 0 &&
     review?.status === "approved" &&
@@ -189,26 +170,13 @@ export function categoryPublication(
     validDate(review.reviewedAt);
   return {
     id: providerRoute(brand),
-    record,
     review,
     status: approved ? "APPROVED" : "PENDING VERIFICATION",
     publicationStatus: approved ? "published" : "reference-only",
     published: approved,
-    metadataProposalEligible:
-      approved &&
-      review.editorialReview.proposalApproved === true &&
-      (record?.proposedOfferingType !== "service" ||
-        published.every((p) => p.offeringType === "service")),
-    indexable:
-      approved &&
-      review.editorialReview.distinctContentApproved === true &&
-      review.editorialReview.indexApproved === true,
     reasons: approved
       ? []
       : ["Requires eligible child offers and category editorial review"],
-    indexingReason: approved
-      ? "Category review applies; distinct-content approval required"
-      : "No approved category offer; reference only",
   };
 }
 export const pendingMessage =

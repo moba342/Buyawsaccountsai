@@ -1,3 +1,4 @@
+import path from "node:path";
 // Browser QA is optional tooling, intentionally separate from runtime dependencies.
 // Set QA_TOOLS_PACKAGE_JSON to a tools package with playwright and @axe-core/playwright.
 import { createRequire } from "node:module";
@@ -7,9 +8,9 @@ const require = createRequire(
 );
 const { chromium } = require("playwright");
 const AxeBuilder = require("@axe-core/playwright").default;
-const evidence = fileURLToPath(
-  new URL("../../docs/seo/evidence/", import.meta.url),
-);
+const evidence =
+  process.env.QA_EVIDENCE_DIR ||
+  fileURLToPath(new URL("../../docs/seo/evidence/", import.meta.url));
 const chrome = process.env.CHROME_PATH
   ? { executablePath: process.env.CHROME_PATH }
   : { channel: "chrome" };
@@ -83,10 +84,7 @@ assert.equal(
   0,
   "prerendered product must not flash a loading fallback",
 );
-assert.equal(
-  await p.locator("h1").innerText(),
-  "Review AWS Free Trial reference",
-);
+assert.equal(await p.locator("h1").innerText(), "Buy AWS Free Trial");
 await p.unroute("**/assets/DetailPages-*.js");
 await p.goto("http://localhost:4173/");
 await p.locator('a.home-quiet-link[href="/compare-products/"]').click();
@@ -110,7 +108,7 @@ const header = await p.locator("header").boundingBox();
 assert(header.y >= 0 && header.y < 60);
 result.stickyHeader = true;
 await fs.writeFile(
-  evidence + "accessibility-extra.json",
+  path.join(evidence, "accessibility-extra.json"),
   JSON.stringify(result, null, 2),
 );
 await b.close();

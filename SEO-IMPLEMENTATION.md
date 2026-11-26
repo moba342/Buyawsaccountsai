@@ -1,3 +1,5 @@
+> Historical release/audit record. Current SEO requirements are defined in [the independent SEO implementation report](docs/seo/SEO-INDEPENDENCE-REPORT.md). Any earlier requirement to verify commercial documents before SEO development, metadata, crawlability or sitemap inclusion is superseded. Commercial purchase safeguards remain separate.
+
 # Technical SEO implementation
 
 Date: 2026-11-26 (Asia/Dhaka). Project: BuyAWSAccountsAI. Preferred origin: `https://www.buyawsaccountsai.com`. The owner subsequently approved production release. Source commit `c93f234` was merged/pushed to main and deployed to the preferred domain. See `SEO-PRODUCTION-RELEASE.md` and `seo-evidence/production-release.json` for live checks. The sections below document the original implementation and remaining owner configuration.

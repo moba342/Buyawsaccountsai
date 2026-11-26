@@ -1,3 +1,5 @@
+> Historical deployed release. The subsequent [independent SEO source update](SEO-INDEPENDENCE-REPORT.md) separates SEO from commercial activation; it has not been deployed by this task.
+
 # Approved catalog SEO production release
 
 Date: 2026-11-27 (Asia/Dhaka). Owner approval: “Run the production deployment all seo”. This explicitly approved the reviewed release after the prior response disclosed that all 82 catalog references remain pending, purchasing is blocked and production had not changed.

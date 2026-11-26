@@ -7,9 +7,9 @@ const require = createRequire(
 );
 const { chromium } = require("playwright");
 const AxeBuilder = require("@axe-core/playwright").default;
-const evidence = fileURLToPath(
-  new URL("../../docs/seo/evidence/", import.meta.url),
-);
+const evidence =
+  process.env.QA_EVIDENCE_DIR ||
+  fileURLToPath(new URL("../../docs/seo/evidence/", import.meta.url));
 const chrome = process.env.CHROME_PATH
   ? { executablePath: process.env.CHROME_PATH }
   : { channel: "chrome" };
@@ -35,7 +35,7 @@ const pages = [
   ...routeIds.map((id) => ({ id, path: routePath(id) })),
 ];
 const report = {
-  date: "2026-11-26",
+  date: "2026-11-27",
   rawPages: 0,
   hydratedPages: 0,
   responsiveViews: 0,

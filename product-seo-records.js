@@ -1,4 +1,5 @@
-// Exact supplied metadata proposals, reconciled to stable catalog IDs. Not publication approval.
+// ARCHIVED supplied proposals: retained for traceability, not the active SEO configuration.
+// catalog-seo.js derives active metadata from real catalog records without inventing services.
 export const suppliedProductSeo = [
   {
     id: "aws-accounts",

@@ -1,17 +1,11 @@
 # Technical SEO report
 
-## PASS — implementation
+The existing React 19/Vite 6 SSG pipeline renders 96 complete route documents plus a real custom 404. This is build-time server rendering and client hydration, not request-time SSR. Initial-route preloading, route chunks and one shared metadata/schema source remain; there is no duplicate SEO plugin or parallel sitemap generator.
 
-The React/Vite architecture, complete prerendering, initial-route hydration protection, canonical URL mapping, three actual guide URLs and SPA metadata updates remain. The build generates 96 application documents plus a noindex custom 404. Existing product/provider and seven renamed main URLs are not renamed. All 49 permanent mappings remain; arbitrary missing paths do not become marketplace 200s.
+Canonical URLs use HTTPS www and trailing slashes. Existing 49 permanent mappings, route names, native internal links, breadcrumbs, related product/category/guide links, real missing-route status, API security headers and payment endpoint remain. Sitemap now includes 94 public canonical URLs; all 82 catalog pages are technically indexable without commercial documents. Robots allows pages/assets and disallows API, leaving cart/checkout accessible for noindex processing.
 
-One publication policy now decides product/category commercial publication and indexability. Default data has no approved evidence: all 82 references are noindex, self-canonical and absent from the sitemap; the 12 useful main/support/guide/declaration pages remain indexable. References retain useful factual content and existing URLs rather than being redirected to unrelated pages or deleted. No automatic 68-page index expansion, filter/sort URLs, fabricated countries, hreflang or dates are introduced.
+`catalog-seo.js` is active metadata; `product-seo-records.js` is archived proposal history used only in report generation. Commercial logic no longer imports the archive, reducing unnecessary client payload. Image dimensions/alt, original 69 social images, Open Graph/Twitter tags, local optimized fonts and media generation remain. Social artwork uses listed price, not a verified-stock claim.
 
-Product-specific original descriptions and related parent/comparison/guide/help links improve buyer context. Proposed buying keywords remain review data until they match a genuine, approved offering. Homepage discovery intent is separated from the AWS category's proposed broad buying cluster.
+Search Console token support is retained in `.env.example` and the build. Use a genuine owner token or DNS verification, publish the approved version and submit `/sitemap.xml`, then inspect actual URLs. No token, property verification, indexing or analytics ID is fabricated. Optional analytics remains consent/privacy gated.
 
-Response headers, local fonts, compressed/cached assets, mobile layouts, image dimensions/srcset, safe JSON-LD and consent gating are preserved. Pending checkout blocks wallet instructions and RPC payment matching; the account catalog, prices and owner wallets are unchanged. No database/authentication migration or new dependency is introduced.
-
-## MANUAL ACTION REQUIRED
-
-The actual production deployment is still the previously approved release. This new branch is not deployed or pushed to main. Its intended noindex/purchase hold would materially affect the 82 references if released; the owner must review that change explicitly. Actual authorization, stock, service scope, model/region/quota facts, legal policy content and editorial approval remain missing.
-
-Search Console verification/submission and real analytics configuration require genuine owner values and access. Purchase/lead-success events still require a persisted order/lead system; a TXID check is not a completed order. The known HTTP apex two-hop hosting redirect remains an owner edge/domain review; all generated links and canonicals use HTTPS www directly. See the validation and performance reports for actual executed checks, and the deployment checklist for release steps.
+See [Google JavaScript SEO guidance](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics) for why initial renderable content and consistent canonicals/robots matter. Technical preparation is complete without needing commercial verification.

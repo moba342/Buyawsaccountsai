@@ -26,10 +26,9 @@ export default function ProductsIntro({
         </span>
         <h1 id="products-title">{pageHeading("products")}</h1>
         <p>
-          Review AWS and multi-cloud catalog references for your project.
-          Explore {products.length} options across {brands.length} providers,
-          compare recorded prices and requirements; publication review is
-          pending.
+          Compare AWS and multi-cloud account products for your project. Explore{" "}
+          {products.length} options across {brands.length} providers, compare
+          listed prices, specifications and buying requirements.
         </p>
         <div className="products-intro-actions">
           <button className="primary" onClick={() => onProvider("All")}>

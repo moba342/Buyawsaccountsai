@@ -1,3 +1,4 @@
+import { catalogSeoById } from "../catalog-seo.js";
 import { approvedReview } from "./fixtures/publication.js";
 import { publicationReviews } from "../offer-review-records.js";
 import test from "node:test";
@@ -34,7 +35,7 @@ test("the eight core pages use the supplied SEO titles, descriptions and H1s", (
   }
   assert.equal(
     getPageSeo("products", "/").title,
-    "Cloud Product Reference Catalog | BuyAWSAccountsAI",
+    "Buy Cloud Products & Compare Plans | BuyAWSAccountsAI",
   );
   assert.equal(getPageSeo("products", "/").keywords, undefined);
 });
@@ -51,9 +52,7 @@ test("all 96 generated pages have unique metadata and self-referencing canonical
     assert.equal(seo.canonical, SITE_URL + routePath(id));
     assert.equal(
       seo.robots,
-      getPageSeo(id).publication || ["cart", "checkout"].includes(id)
-        ? "noindex, follow"
-        : "index, follow",
+      ["cart", "checkout"].includes(id) ? "noindex, follow" : "index, follow",
     );
   }
   for (const p of pages) {
@@ -62,16 +61,12 @@ test("all 96 generated pages have unique metadata and self-referencing canonical
     assert.equal(new URL(p.canonical).protocol, "https:");
   }
 });
-test("pending references have WebPage/breadcrumb data without Product, Service or Offer claims", () => {
+test("catalog products have factual Product data without unsupported Offer claims", () => {
   for (const p of products) {
     const seo = getPageSeo(productRoute(p)),
       schema = siteSchema(seo);
-    assert(
-      !schema["@graph"].some((n) =>
-        ["Product", "Service", "Offer"].includes(n["@type"]),
-      ),
-    );
-    assert.equal(seo.robots, "noindex, follow");
+    assert(!schema["@graph"].some((n) => n["@type"] === "Offer" || n.offers));
+    assert.equal(seo.robots, "index, follow");
     assert(seo.description && seo.h1);
   }
 });
@@ -91,8 +86,8 @@ test("only a complete publication review permits a truthful offer and commercial
     assert(item);
     assert.equal(item.offers.price, p.price);
     assert.equal(item.description, facts.publicDescription);
-    assert.equal(seo.title, "Buy AWS 8 vCPU Compute Plans | Cloud Hosting");
-    assert.equal(seo.secondaryKeywords.length, 7);
+    assert.equal(seo.title, catalogSeoById.get(id).seoTitle);
+    assert.equal(seo.secondaryKeywords.length, 6);
     assert.equal(seo.robots, "index, follow");
     assert(!item.aggregateRating);
     assert(!item.sku);
@@ -100,20 +95,21 @@ test("only a complete publication review permits a truthful offer and commercial
     delete publicationReviews[id];
   }
 });
-test("SEO overrides cannot publish or index a pending record", () => {
+test("SEO controls are independent of commercial activation", () => {
   const id = productRoute(products[0]);
   seoOverrides[id] = {
-    title: "Buy unreviewed service",
-    h1: "Buy unreviewed service",
-    noindex: false,
+    title: "AWS Trial Account Buying Requirements",
+    noindex: true,
   };
   try {
-    const seo = getPageSeo(id);
-    assert.equal(seo.robots, "noindex, follow");
-    assert(!seo.title.includes("unreviewed service"));
+    assert.equal(getPageSeo(id).title, "AWS Trial Account Buying Requirements");
+    assert.equal(getPageSeo(id).robots, "noindex, follow");
+    assert.equal(confirmedOffer(products[0]), null);
+    assert.equal(getPageSeo(id).publication.purchasable, false);
   } finally {
     delete seoOverrides[id];
   }
+  assert.equal(getPageSeo(id).robots, "index, follow");
 });
 test("breadcrumbs use real canonical parents and sequential schema positions", () => {
   for (const id of routeIds) {
@@ -134,11 +130,12 @@ test("breadcrumbs use real canonical parents and sequential schema positions", (
     });
   }
 });
-test("pending categories do not advertise commercial ItemLists; guides stay crawlable", () => {
+test("categories link factual catalog ItemLists without assuming commercial offers", () => {
   for (const brand of brands) {
     const graph = siteSchema(getPageSeo(providerRoute(brand)))["@graph"];
     assert(graph.some((n) => n["@type"] === "CollectionPage"));
-    assert(!graph.some((n) => ["Product", "ItemList"].includes(n["@type"])));
+    assert(graph.some((n) => n["@type"] === "ItemList"));
+    assert(!graph.some((n) => n.offers));
   }
   const graph = siteSchema(getPageSeo("guides"))["@graph"];
   assert.equal(graph.find((n) => n["@type"] === "ItemList").numberOfItems, 3);
@@ -239,10 +236,7 @@ test("a real service catalog annotation and reviewed scope use Service instead o
     assert(service);
     assert(!graph.some((n) => n["@type"] === "Product"));
     assert.equal(service.name, publicationReviews[id].serviceName);
-    assert.equal(
-      seo.title,
-      "Buy AWS Cloud Setup | Free Trial Eligibility & Plans",
-    );
+    assert.equal(seo.title, catalogSeoById.get(id).seoTitle);
     assert(!service.sku);
     assert(!service.additionalProperty);
   } finally {
@@ -251,7 +245,7 @@ test("a real service catalog annotation and reviewed scope use Service instead o
     else p.offeringType = old;
   }
 });
-test("category commercial metadata needs both eligible child offers and a named category review", () => {
+test("category SEO lists all catalog children independently of commercial approval", () => {
   const p = products[1],
     id = productRoute(p),
     cat = "aws-accounts";
@@ -271,15 +265,15 @@ test("category commercial metadata needs both eligible child offers and a named 
   };
   try {
     const seo = getPageSeo(cat);
-    assert.equal(
-      seo.title,
-      "Buy AWS Accounts Online | Cloud Compute & AI Plans",
-    );
+    assert.equal(seo.title, catalogSeoById.get(cat).seoTitle);
     assert.equal(seo.robots, "index, follow");
     const items = siteSchema(seo)["@graph"].find(
       (n) => n["@type"] === "ItemList",
     );
-    assert.equal(items.numberOfItems, 1);
+    assert.equal(
+      items.numberOfItems,
+      products.filter((p) => p.provider === "AWS").length,
+    );
   } finally {
     delete publicationReviews[id];
     delete publicationReviews[cat];

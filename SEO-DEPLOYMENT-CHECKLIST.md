@@ -1,3 +1,5 @@
+> Historical release/audit record. Current SEO requirements are defined in [the independent SEO implementation report](docs/seo/SEO-INDEPENDENCE-REPORT.md). Any earlier requirement to verify commercial documents before SEO development, metadata, crawlability or sitemap inclusion is superseded. Commercial purchase safeguards remain separate.
+
 # Deployment and indexing checklist
 
 Date: 2026-11-26. Status: **PASS — owner approved; production release deployed**. See `SEO-PRODUCTION-RELEASE.md` for executed live checks. Remaining legal/measurement inputs below are still manual. The attached brief explicitly says “Do not deploy to production without approval.” That approval was subsequently received before source `c93f234` was pushed to main and deployed.

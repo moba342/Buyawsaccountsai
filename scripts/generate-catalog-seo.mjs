@@ -1,3 +1,4 @@
+import { catalogSeoRecords, catalogSeoReadiness } from "../catalog-seo.js";
 import fs from "node:fs/promises";
 import { products, brands } from "../catalog.js";
 import { productRoute, providerRoute } from "../catalogPaths.js";
@@ -13,7 +14,8 @@ import { guideRoute } from "../guideRoutes.js";
 import { catalogEditorial } from "../catalog-editorial-data.js";
 const folder = "docs/seo";
 await fs.mkdir(folder, { recursive: true });
-const data = suppliedProductSeo.map((record) => {
+const data = catalogSeoRecords.map((record) => {
+  const proposal = suppliedProductSeo.find((r) => r.id === record.id);
   const product = products.find((p) => productRoute(p) === record.id),
     brand = brands.find((b) => b.name === record.provider),
     list = products.filter((p) => p.provider === record.provider),
@@ -36,7 +38,10 @@ const data = suppliedProductSeo.map((record) => {
       ? product.provider + " " + product.name
       : brand.full + " accounts",
     variantName: product?.name || null,
-    suppliedName: record.suppliedName,
+    suppliedName: proposal?.suppliedName || record.id,
+    archivedProposal: proposal,
+    archivedProposalApplied: false,
+    activeMetadataSource: "catalog-seo.js",
     slug: record.id,
     canonicalUrl: seo.canonical,
     primaryKeyword: record.primaryKeyword,
@@ -46,13 +51,12 @@ const data = suppliedProductSeo.map((record) => {
     metaDescription: record.metaDescription,
     h1: record.h1,
     searchIntent: record.searchIntent,
-    proposedOfferingType: record.proposedOfferingType,
+    proposedOfferingType: proposal?.proposedOfferingType,
     actualOfferingType: product
       ? product.offeringType || "account"
       : "collection",
-    proposedMetadataStatus: publication.metadataProposalEligible
-      ? "APPROVED"
-      : "PENDING HUMAN SCOPE REVIEW",
+    proposedMetadataStatus: "CATALOG-ALIGNED SEO IMPLEMENTED",
+    seoReady: catalogSeoReadiness(record.id).ready,
     effectiveMetadata: {
       title: seo.title,
       description: seo.description,
@@ -63,18 +67,18 @@ const data = suppliedProductSeo.map((record) => {
     },
     headings: product
       ? [
-          "Reference overview",
+          "Product buying guide",
           "Product specifications",
-          "Available configurations",
+          "Compare product configurations",
           "Pricing and billing",
-          "Product requirements and publication review",
+          "Purchase requirements and commercial eligibility",
           "Delivery or deployment conditions",
           "Compare plans and discuss requirements",
           "Frequently asked questions",
           "Related reference records",
         ]
       : [
-          "Reference collection",
+          "Product collection",
           "Catalog variants",
           "Provider requirements",
           "Buying guidance",
@@ -104,23 +108,24 @@ const data = suppliedProductSeo.map((record) => {
       : [],
     relatedProducts: related,
     relatedGuides: guides.map((g) => SITE_URL + "/" + guideRoute(g) + "/"),
-    publicationStatus: publication.publicationStatus,
-    verificationStatus: publication.status,
+    seoStatus: "IMPLEMENTED",
+    commercialPublicationStatus: publication.publicationStatus,
+    commercialVerificationStatus: publication.status,
     robotsDirective: seo.robots,
-    indexable: publication.indexable,
+    indexable: !seo.robots.startsWith("noindex"),
     purchasable: product ? publication.purchasable : false,
-    indexabilityReason:
-      publication.indexingReason || publication.reasons.join("; "),
-    verificationBlockers: publication.reasons,
+    indexabilityReason: catalogSeoReadiness(record.id).reason,
+    commercialActivationBlockers: publication.reasons,
+    seoDocumentPrerequisites: [],
     dateModified: publication.review?.contentUpdatedAt || null,
     humanEditorialReview: publication.published
-      ? "Actual offer reviewed; proposal requires separate matching-scope approval"
-      : "PENDING HUMAN REVIEW",
+      ? "Commercial offer reviewed separately"
+      : "Commercial review pending; SEO development complete",
   };
 });
 if (
-  data.length !== 82 ||
-  data.filter((r) => r.recordType === "variant").length !== 68
+  data.length !== products.length + brands.length ||
+  data.filter((r) => r.recordType === "variant").length !== products.length
 )
   throw Error("Catalog SEO reconciliation mismatch");
 await fs.writeFile(
@@ -128,9 +133,9 @@ await fs.writeFile(
   JSON.stringify(
     {
       website: "BuyAWSAccountsAI",
-      reviewDate: "2026-11-26",
-      sourceCommit: "a5ed490",
-      note: "Proposed buying metadata is preserved exactly. Effective pending-reference metadata, publication and indexability are generated from the same runtime policy as the storefront. No authorization, stock, service or legal fact is inferred.",
+      reviewDate: "2026-11-27",
+      baselineCommit: "ec7a7bc",
+      note: "Active SEO is generated from the existing catalog independently of commercial approval. Earlier proposals are archived without inventing services. SEO readiness is not availability, authorization or purchase activation.",
       records: data,
     },
     null,
@@ -149,8 +154,9 @@ const columns = [
   "metaDescription",
   "h1",
   "canonicalUrl",
-  "publicationStatus",
-  "verificationStatus",
+  "seoStatus",
+  "commercialPublicationStatus",
+  "commercialVerificationStatus",
   "proposedMetadataStatus",
   "robotsDirective",
   "indexabilityReason",
@@ -162,20 +168,26 @@ const csv = (v) =>
 await fs.writeFile(
   folder + "/PRODUCT-KEYWORD-MAPPING.csv",
   columns.map(csv).join(",") +
-    "\r\n" +
-    data.map((r) => columns.map((k) => csv(r[k])).join(",")).join("\r\n") +
-    "\r\n",
+    "\n" +
+    data.map((r) => columns.map((k) => csv(r[k])).join(",")).join("\n") +
+    "\n",
 );
 const count = {
   records: data.length,
   categories: data.filter((r) => r.recordType === "category").length,
   variants: data.filter((r) => r.recordType === "variant").length,
-  proposedServices: data.filter((r) => r.proposedOfferingType === "service")
-    .length,
-  published: data.filter((r) => r.publicationStatus === "published").length,
+  archivedServiceProposals: data.filter(
+    (r) => r.proposedOfferingType === "service",
+  ).length,
+  seoReady: data.filter((r) => r.seoReady).length,
+  commercialPublished: data.filter(
+    (r) => r.commercialPublicationStatus === "published",
+  ).length,
+  purchasable: data.filter((r) => r.purchasable).length,
   indexable: data.filter((r) => r.indexable).length,
-  pending: data.filter((r) => r.verificationStatus === "PENDING VERIFICATION")
-    .length,
+  commercialPending: data.filter(
+    (r) => r.commercialVerificationStatus === "PENDING VERIFICATION",
+  ).length,
 };
 await fs.writeFile(
   folder + "/catalog-summary.json",

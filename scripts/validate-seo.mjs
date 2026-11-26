@@ -116,20 +116,22 @@ for (const item of [
   const seo = getPageSeo(item.id);
   assert.equal(
     urls.includes(seo.canonical),
-    item.state.indexable,
+    !seo.robots.startsWith("noindex"),
     item.id + " publication sitemap",
   );
   if (!item.state.published) {
-    assert(seo.robots.startsWith("noindex"), item.id + " pending noindex");
+    assert.equal(
+      seo.robots,
+      "index, follow",
+      item.id + " SEO independent of commerce",
+    );
     const schema = siteSchema(seo);
     assert(
-      !schema["@graph"].some((n) =>
-        ["Product", "Service", "Offer"].includes(n["@type"]),
-      ),
+      !schema["@graph"].some((n) => n["@type"] === "Offer" || n.offers),
       item.id + " unsupported commercial schema",
     );
   }
 }
 console.log(
-  "PASS: all 82 catalog publication/indexing states match generated artifacts.",
+  "PASS: all 82 catalog SEO states match artifacts; pending commercial offers remain absent.",
 );

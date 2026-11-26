@@ -1,3 +1,5 @@
+> Historical release/audit record. Current SEO requirements are defined in [the independent SEO implementation report](docs/seo/SEO-INDEPENDENCE-REPORT.md). Any earlier requirement to verify commercial documents before SEO development, metadata, crawlability or sitemap inclusion is superseded. Commercial purchase safeguards remain separate.
+
 # Technical SEO validation report
 
 Date: 2026-11-26 (Asia/Dhaka). Baseline: `89d09ac`. Review branch: `seo/technical-audit-2026-11-26`. Production deployment: **PASS — owner approved and release deployed**. See `SEO-PRODUCTION-RELEASE.md` for live verification; the detailed lab results below describe the pre-release validation.

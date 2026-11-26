@@ -24,21 +24,21 @@ export const pageSeo = {
     primaryKeyword: "buy cloud products",
     title: "Buy Cloud Products & Compare Plans | BuyAWSAccountsAI",
     description:
-      "Buy AWS accounts, cloud credits and Bedrock API access. Browse available cloud products, compare features and pricing, and choose the right plan.",
+      "Buy AWS accounts, cloud credits and Bedrock API access. Browse listed cloud products, compare features and pricing, and choose the right plan.",
     h1: "Buy cloud products. Compare the details.",
   },
   products: {
     primaryKeyword: "cloud accounts marketplace",
     title: "Cloud Accounts Marketplace | Buy Accounts & Credits",
     description:
-      "Shop cloud accounts, cloud credits and AI API access in one marketplace. Compare available products, account specifications and pricing before buying.",
+      "Shop cloud accounts, cloud credits and AI API access in one marketplace. Compare listed products, account specifications and pricing before buying.",
     h1: "Cloud Accounts, Credits & AI API Marketplace",
   },
   providers: {
     primaryKeyword: "buy cloud accounts",
     title: "Buy Cloud Accounts | AWS, Azure, Google Cloud & IBM",
     description:
-      "Explore cloud account options across AWS, Azure, Google Cloud and IBM Cloud. Compare available services, cloud credits, features and pricing.",
+      "Explore cloud account options across AWS, Azure, Google Cloud and IBM Cloud. Compare listed products, cloud credits, features and pricing.",
     h1: "Explore Cloud Accounts Across Leading Cloud Platforms",
   },
   compare: {
@@ -139,42 +139,3 @@ const secondaryTargets = {
 };
 for (const [id, keywords] of Object.entries(secondaryTargets))
   pageSeo[id].secondaryKeywords = keywords;
-
-if (!hasPublishedOffers) {
-  Object.assign(pageSeo.home, {
-    primaryKeyword: "cloud product reference catalog",
-    title: "Cloud Product Reference Catalog | BuyAWSAccountsAI",
-    description:
-      "Review cloud product references, account requirements and original buying guides. Compare seller-listed specifications while publication review is pending.",
-    h1: "Compare cloud product references and requirements",
-    secondaryKeywords: [
-      "cloud product specifications",
-      "cloud buying requirements",
-      "cloud account buying guide",
-    ],
-  });
-  Object.assign(pageSeo.products, {
-    primaryKeyword: "cloud account reference catalog",
-    title: "Cloud Account Reference Catalog | Product Requirements",
-    description:
-      "Review 68 seller-listed cloud account references across 14 providers. Compare specifications and recorded prices; unverified entries are unavailable to order.",
-    h1: "Cloud account references, specifications and requirements",
-    secondaryKeywords: [
-      "cloud account specifications",
-      "cloud product reference prices",
-      "cloud account requirements",
-    ],
-  });
-  Object.assign(pageSeo.providers, {
-    primaryKeyword: "cloud platform reference directory",
-    title: "Cloud Platform Directory | AWS, Azure, Google Cloud & IBM",
-    description:
-      "Explore cloud platform reference collections and provider-specific buying requirements. Review catalog details while authorization and availability are pending.",
-    h1: "Explore cloud platform references and buying requirements",
-    secondaryKeywords: [
-      "cloud platform directory",
-      "cloud provider requirements",
-      "cloud account reference collections",
-    ],
-  });
-}

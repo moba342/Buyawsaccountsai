@@ -1,0 +1,478 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.buyawsaccountsai.com/#organization",
+      "name": "BuyAWSAccountsAI",
+      "url": "https://www.buyawsaccountsai.com/",
+      "description": "Cloud account products, credit options and seller-listed AI access with clear specifications and purchase terms.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.buyawsaccountsai.com/logos/buyawsaccountsai-header-logo.png"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "url": "https://www.buyawsaccountsai.com/contact-sales/",
+        "email": "dexter-watts@buyawsaccountsai.com",
+        "telephone": "+14582624274",
+        "availableLanguage": "English"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.buyawsaccountsai.com/#website",
+      "url": "https://www.buyawsaccountsai.com/",
+      "name": "BuyAWSAccountsAI",
+      "publisher": {
+        "@id": "https://www.buyawsaccountsai.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.buyawsaccountsai.com/marketplace/#webpage",
+      "url": "https://www.buyawsaccountsai.com/marketplace/",
+      "name": "Cloud Accounts Marketplace | Buy Accounts & Credits",
+      "description": "Shop cloud accounts, cloud credits and AI API access in one marketplace. Compare listed products, account specifications and pricing before buying.",
+      "isPartOf": {
+        "@id": "https://www.buyawsaccountsai.com/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.buyawsaccountsai.com/marketplace/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.buyawsaccountsai.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cloud Account Marketplace",
+          "item": "https://www.buyawsaccountsai.com/marketplace/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://www.buyawsaccountsai.com/marketplace/#products",
+      "numberOfItems": 68,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "AWS Free Trial",
+          "url": "https://www.buyawsaccountsai.com/product/aws-free-trial/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AWS 8 vCPU",
+          "url": "https://www.buyawsaccountsai.com/product/aws-8-vcpu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "AWS 32 vCPU",
+          "url": "https://www.buyawsaccountsai.com/product/aws-32-vcpu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "AWS 64 vCPU",
+          "url": "https://www.buyawsaccountsai.com/product/aws-64-vcpu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "AWS 128 vCPU",
+          "url": "https://www.buyawsaccountsai.com/product/aws-128-vcpu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "AWS 256 vCPU",
+          "url": "https://www.buyawsaccountsai.com/product/aws-256-vcpu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "AWS 512 vCPU",
+          "url": "https://www.buyawsaccountsai.com/product/aws-512-vcpu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "AWS 640 vCPU",
+          "url": "https://www.buyawsaccountsai.com/product/aws-640-vcpu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "AWS 1920 vCPU",
+          "url": "https://www.buyawsaccountsai.com/product/aws-1920-vcpu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "AWS $5K Credits",
+          "url": "https://www.buyawsaccountsai.com/product/aws-5k-credits/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "name": "AWS $10K Credits",
+          "url": "https://www.buyawsaccountsai.com/product/aws-10k-credits/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "name": "AWS $25K Credits",
+          "url": "https://www.buyawsaccountsai.com/product/aws-25k-credits/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "name": "AWS $100K Credits",
+          "url": "https://www.buyawsaccountsai.com/product/aws-100k-credits/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "name": "AWS 32 vCPU · 10 RPM · Bedrock Enabled",
+          "url": "https://www.buyawsaccountsai.com/product/aws-32-vcpu-10-rpm-bedrock-enabled/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "name": "AWS 32 vCPU · 50 RPM · Bedrock Enabled",
+          "url": "https://www.buyawsaccountsai.com/product/aws-32-vcpu-50-rpm-bedrock-enabled/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "name": "AWS 256 vCPU · 10K RPM · Bedrock Enabled",
+          "url": "https://www.buyawsaccountsai.com/product/aws-256-vcpu-10k-rpm-bedrock-enabled/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 17,
+          "name": "AWS 512 vCPU · 10K RPM · High TPM · Bedrock Enabled",
+          "url": "https://www.buyawsaccountsai.com/product/aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 18,
+          "name": "AWS 640 vCPU · 10K RPM · High TPM · Bedrock F5.2",
+          "url": "https://www.buyawsaccountsai.com/product/aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 19,
+          "name": "AWS 1920 vCPU · 10K RPM · High TPM · 4.6 / 4.7 / 4.8 / Opus 5 / Fable 5",
+          "url": "https://www.buyawsaccountsai.com/product/aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 20,
+          "name": "AWS $5K Credits · 10K RPM · Bedrock Enabled",
+          "url": "https://www.buyawsaccountsai.com/product/aws-5k-credits-10k-rpm-bedrock-enabled/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 21,
+          "name": "AWS $10K Credits · 10K RPM · Bedrock Enabled",
+          "url": "https://www.buyawsaccountsai.com/product/aws-10k-credits-10k-rpm-bedrock-enabled/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 22,
+          "name": "AWS $25K Credits · 10K RPM · Bedrock Enabled",
+          "url": "https://www.buyawsaccountsai.com/product/aws-25k-credits-10k-rpm-bedrock-enabled/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 23,
+          "name": "Azure Free Trial · $200 Credits",
+          "url": "https://www.buyawsaccountsai.com/product/azure-free-trial-200-credits/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 24,
+          "name": "Azure Pay As You Go",
+          "url": "https://www.buyawsaccountsai.com/product/azure-pay-as-you-go/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 25,
+          "name": "Azure $5K Credits",
+          "url": "https://www.buyawsaccountsai.com/product/azure-5k-credits/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 26,
+          "name": "Azure $10K Credits · GPT Enabled",
+          "url": "https://www.buyawsaccountsai.com/product/azure-10k-credits-gpt-enabled/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 27,
+          "name": "Azure $5K Credits · GPT 6 Astra · High TPM T5",
+          "url": "https://www.buyawsaccountsai.com/product/azure-5k-credits-gpt-6-astra-high-tpm-t5/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 28,
+          "name": "Azure $10K Credits · GPT 6 Astra · High TPM T5",
+          "url": "https://www.buyawsaccountsai.com/product/azure-10k-credits-gpt-6-astra-high-tpm-t5/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 29,
+          "name": "Azure $25K Credits · GPT 6 Astra · High TPM T5",
+          "url": "https://www.buyawsaccountsai.com/product/azure-25k-credits-gpt-6-astra-high-tpm-t5/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 30,
+          "name": "Azure $100K Credits · GPT 6 Astra · High TPM T5",
+          "url": "https://www.buyawsaccountsai.com/product/azure-100k-credits-gpt-6-astra-high-tpm-t5/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 31,
+          "name": "DigitalOcean 3 Droplets · Free Trial",
+          "url": "https://www.buyawsaccountsai.com/product/digitalocean-3-droplets-free-trial/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 32,
+          "name": "DigitalOcean 10 Droplets · Free Trial",
+          "url": "https://www.buyawsaccountsai.com/product/digitalocean-10-droplets-free-trial/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 33,
+          "name": "DigitalOcean 200 Droplets · Port 25 Open",
+          "url": "https://www.buyawsaccountsai.com/product/digitalocean-200-droplets-port-25-open/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 34,
+          "name": "DigitalOcean 500 Droplets · Port 25 Open",
+          "url": "https://www.buyawsaccountsai.com/product/digitalocean-500-droplets-port-25-open/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 35,
+          "name": "Google Cloud Free Trial · $300 Credits",
+          "url": "https://www.buyawsaccountsai.com/product/google-cloud-free-trial-300-credits/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 36,
+          "name": "Google Cloud $300 Credits · Paid Account",
+          "url": "https://www.buyawsaccountsai.com/product/google-cloud-300-credits-paid-account/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 37,
+          "name": "Google Cloud $2K Credits · Paid Account",
+          "url": "https://www.buyawsaccountsai.com/product/google-cloud-2k-credits-paid-account/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 38,
+          "name": "Google Cloud $5K Credits · Paid Account",
+          "url": "https://www.buyawsaccountsai.com/product/google-cloud-5k-credits-paid-account/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 39,
+          "name": "Google Cloud $10K Credits · Paid Account",
+          "url": "https://www.buyawsaccountsai.com/product/google-cloud-10k-credits-paid-account/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 40,
+          "name": "Google Cloud $25K Credits · Paid Account",
+          "url": "https://www.buyawsaccountsai.com/product/google-cloud-25k-credits-paid-account/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 41,
+          "name": "Google Cloud $2K Credits · VT Gemini AI · F5.2 and F5.2",
+          "url": "https://www.buyawsaccountsai.com/product/google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 42,
+          "name": "Google Cloud $5K Credits · VT Gemini AI · F5.2 and F5.2",
+          "url": "https://www.buyawsaccountsai.com/product/google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 43,
+          "name": "Google Cloud $10K Credits · VT Gemini AI · F5.2 and F5.2",
+          "url": "https://www.buyawsaccountsai.com/product/google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 44,
+          "name": "Google Cloud $25K Credits · VT Gemini AI · F5.2 and F5.2",
+          "url": "https://www.buyawsaccountsai.com/product/google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 45,
+          "name": "Hetzner Free Trial",
+          "url": "https://www.buyawsaccountsai.com/product/hetzner-free-trial/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 46,
+          "name": "Hetzner Port Limit · 50 Servers",
+          "url": "https://www.buyawsaccountsai.com/product/hetzner-port-limit-50-servers/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 47,
+          "name": "Kamatera Free Trial",
+          "url": "https://www.buyawsaccountsai.com/product/kamatera-free-trial/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 48,
+          "name": "Kamatera Port 25 Open",
+          "url": "https://www.buyawsaccountsai.com/product/kamatera-port-25-open/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 49,
+          "name": "Linode Free Trial",
+          "url": "https://www.buyawsaccountsai.com/product/linode-free-trial/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 50,
+          "name": "Linode Port 25 Open · 10 IPs",
+          "url": "https://www.buyawsaccountsai.com/product/linode-port-25-open-10-ips/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 51,
+          "name": "Linode Port 25 Open · 50 IPs",
+          "url": "https://www.buyawsaccountsai.com/product/linode-port-25-open-50-ips/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 52,
+          "name": "Oracle Cloud Free Trial",
+          "url": "https://www.buyawsaccountsai.com/product/oracle-cloud-free-trial/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 53,
+          "name": "Oracle Cloud Pay As You Go",
+          "url": "https://www.buyawsaccountsai.com/product/oracle-cloud-pay-as-you-go/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 54,
+          "name": "OVHcloud Free Trial · 34 vCPU",
+          "url": "https://www.buyawsaccountsai.com/product/ovhcloud-free-trial-34-vcpu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 55,
+          "name": "OVHcloud Paid Account · 34 vCPU",
+          "url": "https://www.buyawsaccountsai.com/product/ovhcloud-paid-account-34-vcpu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 56,
+          "name": "Amazon SES SMTP · 50K Daily Limit",
+          "url": "https://www.buyawsaccountsai.com/product/amazon-ses-smtp-50k-daily-limit/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 57,
+          "name": "Amazon SES SMTP · 50K Daily Limit · 3 Regions",
+          "url": "https://www.buyawsaccountsai.com/product/amazon-ses-smtp-50k-daily-limit-3-regions/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 58,
+          "name": "Amazon SES SMTP · 100K Daily Limit",
+          "url": "https://www.buyawsaccountsai.com/product/amazon-ses-smtp-100k-daily-limit/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 59,
+          "name": "UpCloud Free Trial",
+          "url": "https://www.buyawsaccountsai.com/product/upcloud-free-trial/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 60,
+          "name": "UpCloud Paid Account",
+          "url": "https://www.buyawsaccountsai.com/product/upcloud-paid-account/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 61,
+          "name": "IBM Cloud Free Trial",
+          "url": "https://www.buyawsaccountsai.com/product/ibm-cloud-free-trial/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 62,
+          "name": "IBM Cloud Pay As You Go",
+          "url": "https://www.buyawsaccountsai.com/product/ibm-cloud-pay-as-you-go/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 63,
+          "name": "IBM Cloud Port 25 Open",
+          "url": "https://www.buyawsaccountsai.com/product/ibm-cloud-port-25-open/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 64,
+          "name": "Heroku Free Trial · Port 25 Open",
+          "url": "https://www.buyawsaccountsai.com/product/heroku-free-trial-port-25-open/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 65,
+          "name": "Heroku Port 25 Open",
+          "url": "https://www.buyawsaccountsai.com/product/heroku-port-25-open/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 66,
+          "name": "Vultr $200 Credits",
+          "url": "https://www.buyawsaccountsai.com/product/vultr-200-credits/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 67,
+          "name": "Vultr $250 Credits",
+          "url": "https://www.buyawsaccountsai.com/product/vultr-250-credits/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 68,
+          "name": "Vultr $95 Credits",
+          "url": "https://www.buyawsaccountsai.com/product/vultr-95-credits/"
+        }
+      ]
+    }
+  ]
+}

@@ -11,7 +11,9 @@ import { products } from "../../catalog.js";
 import { productRoute } from "../../catalogPaths.js";
 import { paymentMethods } from "../../payments.js";
 const base = process.env.QA_URL || "http://localhost:4173",
-  out = fileURLToPath(new URL("../../docs/seo/evidence/", import.meta.url));
+  out =
+    process.env.QA_EVIDENCE_DIR ||
+    fileURLToPath(new URL("../../docs/seo/evidence/", import.meta.url));
 await fs.mkdir(out, { recursive: true });
 const browser = await chromium.launch(
     process.env.CHROME_PATH
@@ -23,7 +25,7 @@ const browser = await chromium.launch(
 const errors = [];
 page.on("pageerror", (e) => errors.push(e.message));
 const report = {
-  date: "2026-11-26",
+  date: "2026-11-27",
   pendingVariantPages: 0,
   purchaseActionsDisabled: false,
   legacyCartPreserved: false,

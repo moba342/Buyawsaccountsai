@@ -33,11 +33,11 @@ test("all 82 supplied records match exactly 14 categories and 68 current variant
     );
   }
 });
-test("no record is assumed authorized, available or indexable from an SEO proposal", () => {
+test("no record is assumed authorized or available from an SEO proposal", () => {
   assert.deepEqual(publicationReviews, {});
   for (const p of products) {
     const state = productPublication(p);
-    assert(!state.published && !state.indexable && !state.purchasable);
+    assert(!state.published && !state.purchasable);
     assert(state.reasons.length > 5);
   }
   for (const b of brands)
@@ -45,19 +45,19 @@ test("no record is assumed authorized, available or indexable from an SEO propos
       !categoryPublication(
         b,
         products.filter((p) => p.provider === b.name),
-      ).indexable,
+      ).published,
     );
 });
-test("a complete synthetic account review allows the preserved offer; indexing is separately approved", () => {
+test("commercial review allows the preserved offer without controlling SEO indexing", () => {
   const p = products[1],
     r = approvedReview(p);
   assert(productPublication(p, r).purchasable);
-  assert(productPublication(p, r).indexable);
+  assert.equal(productPublication(p, r).indexable, undefined);
   assert(
-    !productPublication(p, {
+    productPublication(p, {
       ...r,
       editorialReview: { ...r.editorialReview, indexApproved: false },
-    }).indexable,
+    }).published,
   );
   assert(productPublication(p, { ...r, availability: "OutOfStock" }).published);
   assert(
@@ -92,7 +92,7 @@ test("service proposals do not turn a valid account into an invented consulting 
   const p = products[0],
     r = approvedReview(p);
   assert(productPublication(p, r).published);
-  assert(!productPublication(p, r).metadataProposalEligible);
+  assert.equal(productPublication(p, r).metadataProposalEligible, undefined);
   const service = { ...p, offeringType: "service" };
   assert(!productPublication(service, r).published);
   const serviceReview = {
@@ -113,7 +113,7 @@ test("service proposals do not turn a valid account into an invented consulting 
       },
     ],
   };
-  assert(productPublication(service, serviceReview).metadataProposalEligible);
+  assert(productPublication(service, serviceReview).published);
   assert(
     productPublication(service, {
       ...serviceReview,

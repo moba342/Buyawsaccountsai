@@ -1,7 +1,7 @@
+import { catalogSeoById } from "./catalog-seo.js";
 import {
   productPublication,
   categoryPublication,
-  seoRecordById,
 } from "./offer-publication.js";
 import { catalogEditorial } from "./catalog-editorial-data.js";
 import { brands, products } from "./catalog.js";
@@ -63,13 +63,10 @@ export function getPageSeo(id, pathname = routePath(id)) {
           products.filter((p) => p.provider === provider.name),
         )
       : null;
-  const record = seoRecordById.get(id);
-  const planned = publication?.metadataProposalEligible ? record : null;
+  const record = catalogSeoById.get(id);
+  const planned = catalogSeoById.get(id);
   const core = home ? pageSeo.home : pageSeo[id];
-  const override =
-    publication && !publication.published
-      ? {}
-      : seoOverrides[home ? "home" : id] || {};
+  const override = seoOverrides[home ? "home" : id] || {};
   const title =
     override.title ||
     core?.title ||
@@ -119,6 +116,7 @@ export function getPageSeo(id, pathname = routePath(id)) {
     guide,
     publication,
     record,
+    seoRecord: planned,
     title,
     description,
     h1:
@@ -196,10 +194,7 @@ export function getPageSeo(id, pathname = routePath(id)) {
     canonical: notFound ? null : url,
     url,
     robots:
-      notFound ||
-      ["cart", "checkout"].includes(id) ||
-      override.noindex ||
-      (publication && !publication.indexable)
+      notFound || ["cart", "checkout"].includes(id) || override.noindex
         ? "noindex, follow"
         : "index, follow",
     image: absolute(
@@ -301,7 +296,7 @@ export function siteSchema(seo) {
         item: SITE_URL + c.path,
       })),
     });
-  if (seo.product && seo.publication.published) {
+  if (seo.product) {
     const brand = brands.find((b) => b.name === seo.product.provider),
       offer = confirmedOffer(seo.product);
     const item = {
@@ -309,7 +304,8 @@ export function siteSchema(seo) {
       "@id": seo.url + "#product",
       name:
         seo.product.offeringType === "service"
-          ? seo.publication.review.serviceName
+          ? seo.publication.review?.serviceName ||
+            publicProductName(seo.product)
           : publicProductName(seo.product),
       description: getProductArticle(seo.product, brand).intro,
       url: seo.url,
@@ -348,7 +344,9 @@ export function siteSchema(seo) {
         ? products.slice(0, 6)
         : products
       : null;
-  const list = candidates?.filter((p) => productPublication(p).indexable);
+  const list = candidates?.filter(
+    (p) => !getPageSeo(productRoute(p)).robots.startsWith("noindex"),
+  );
   if (list?.length)
     graph.push({
       "@type": "ItemList",
