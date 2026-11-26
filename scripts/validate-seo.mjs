@@ -144,5 +144,5 @@ for (const item of [
   }
 }
 console.log(
-  "PASS: all 82 catalog SEO states match artifacts; pending commercial offers remain absent.",
+  "PASS: all 82 catalog SEO states and commercial offers match artifacts.",
 );

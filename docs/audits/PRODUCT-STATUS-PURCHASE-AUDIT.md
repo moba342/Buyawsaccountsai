@@ -1,3 +1,5 @@
+> Historical audit. The custom review prerequisite described below was superseded on 2026-11-27 by owner-confirmed inventory. Current rules and test results: [PRODUCT-AVAILABILITY-UPDATE.md](PRODUCT-AVAILABILITY-UPDATE.md).
+
 # Product status and purchasing audit
 
 Date: 2026-11-27 (Asia/Dhaka). All 14 categories and 68 variations inspected. **0 commercial review records, 0 published variations, 0 purchasable variations.** All 82 catalog records remain technically indexable. No offer is activated by this audit.

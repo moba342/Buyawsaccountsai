@@ -16,7 +16,7 @@ export default function PurchaseSummary({ brand, product, packages, onOrder }) {
         <span>YOUR ACCOUNT PURCHASE</span>
       </div>
       <p className="purchase-summary-label">
-        {state?.published ? "Package price" : product ? "Reference package price" : "Reference prices from"}
+        {state?.published ? "Package price" : product ? "Package price" : "Prices from"}
       </p>
       <div className="purchase-summary-price">
         {formatPrice(price)}
@@ -47,7 +47,7 @@ export default function PurchaseSummary({ brand, product, packages, onOrder }) {
         className="primary"
         onClick={() => { if (state?.purchasable) onOrder(selectedProduct); }}
       >
-        {state ? state.buyLabel : "Pending publication review"}
+        {state ? state.buyLabel : "Currently unavailable"}
       </button>
       <a href="#package-options">
         {product ? "Review package details" : "Browse account variants"}{" "}

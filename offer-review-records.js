@@ -1,5 +1,5 @@
-// Actual reviewed publication facts keyed by stable product/category route ID.
-// Empty intentionally: neither an SEO proposal nor seller self-declaration proves authorization.
-// Store only public, redacted evidence references; never credentials or private customer records.
-// See docs/seo/PRODUCT-VERIFICATION-REPORT.md for the required review fields.
+// Optional merchant restrictions or legacy commercial facts keyed by stable route ID.
+// No review document, editorial sign-off or SEO approval is required to manage stock.
+// Never put credentials or private customer information in this public module.
+// Example: { "product/aws-free-trial": { saleEnabled: false } }
 export const publicationReviews = {};

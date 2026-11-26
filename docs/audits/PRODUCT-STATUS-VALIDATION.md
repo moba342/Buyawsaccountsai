@@ -1,3 +1,5 @@
+> Historical audit. The custom review prerequisite described below was superseded on 2026-11-27 by owner-confirmed inventory. Current rules and test results: [PRODUCT-AVAILABILITY-UPDATE.md](PRODUCT-AVAILABILITY-UPDATE.md).
+
 # Product status audit — validation and release
 
 Date: 2026-11-27 (Asia/Dhaka).

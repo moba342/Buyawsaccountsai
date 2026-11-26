@@ -5,9 +5,9 @@ export default function CatalogPublicationNotice({ product }) {
   return (
     <aside
       className="catalog-publication-notice"
-      aria-label="Catalog publication status"
+      aria-label="Product availability"
     >
-      <strong>Reference record · pending verification</strong>
+      <strong>Product currently unavailable</strong>
       <p>{pendingMessage}</p>
       <a href="/contact-sales/">Ask about requirements</a>
     </aside>

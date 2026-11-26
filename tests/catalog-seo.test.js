@@ -34,18 +34,18 @@ test("all 82 catalog SEO records are transactional, unique, useful and catalog-a
     assert.equal(seo.robots, "index, follow");
   }
 });
-test("SEO completes with no approval records and does not activate purchases or offers", () => {
+test("SEO is independent of review paperwork and offers reflect owner-confirmed inventory", () => {
   assert.deepEqual(publicationReviews, {});
   for (const p of products) {
     const seo = getPageSeo(productRoute(p));
     assert.equal(seo.robots, "index, follow");
-    assert(!productPublication(p).purchasable);
-    assert.equal(confirmedOffer(p), null);
+    assert(productPublication(p).purchasable);
+    assert.equal(confirmedOffer(p).availability, "https://schema.org/InStock");
     const node = siteSchema(seo)["@graph"].find(
       (n) => n["@type"] === "Product",
     );
     assert(node);
-    assert.equal(node.offers, undefined);
+    assert.equal(node.offers.price, p.price);
     assert.equal(node.aggregateRating, undefined);
     assert.equal(node.sku, undefined);
   }

@@ -1,183 +1,42 @@
-// COMMERCIAL POLICY ONLY: authorization, availability and purchase activation.
-// This module does not decide keywords, technical SEO, robots or sitemap inclusion.
+// Commercial availability only; SEO indexing never authorizes or disables sales.
 import { publicationReviews } from "./offer-review-records.js";
+import { inventoryFor } from "./inventory.js";
 import { productRoute, providerRoute } from "./catalogPaths.js";
-const specKeys = [
-  "name",
-  "kind",
-  "vcpus",
-  "credit",
-  "rpm",
-  "tpm",
-  "models",
-  "capacity",
-  "dailyLimit",
-  "regions",
-  "ips",
-  "port25",
-];
-export const specificationSnapshot = (product) =>
-  Object.fromEntries(specKeys.map((k) => [k, product[k] ?? null]));
-const evidenceKinds = [
-  "provider-authorization",
-  "transfer-eligibility",
-  "specifications",
-  "availability",
-  "billing",
-];
-const validText = (value) =>
-  typeof value === "string" && value.trim().length > 2;
-const validDate = (value) =>
-  typeof value === "string" &&
-  /^\d{4}-\d{2}-\d{2}$/.test(value) &&
-  !Number.isNaN(Date.parse(value)) &&
-  new Date(value).toISOString().slice(0, 10) === value &&
-  Date.parse(value) <= Date.now();
-const hasEvidence = (review, kind) =>
-  Array.isArray(review?.evidence) &&
-  review.evidence.some((e) => e?.kind === kind && validText(e.reference));
-export function productPublication(
-  product,
-  review = publicationReviews[productRoute(product)],
-) {
+const specKeys = ["name", "kind", "vcpus", "credit", "rpm", "tpm", "models", "capacity", "dailyLimit", "regions", "ips", "port25"];
+export const specificationSnapshot = product => Object.fromEntries(specKeys.map(k => [k, product[k] ?? null]));
+const stocks = ["InStock", "LimitedAvailability", "OutOfStock", "PreOrder", "BackOrder"];
+export function productPublication(product, overrides = publicationReviews[productRoute(product)]) {
+  const stock = inventoryFor(product);
+  const facts = { ...stock, ...overrides, price: product.price, priceCurrency: "USD" };
   const reasons = [];
-  if (review?.status !== "approved") reasons.push("Publication review pending");
-  if (!validText(review?.reviewedBy) || !validDate(review?.reviewedAt))
-    reasons.push("Named human review and genuine review date required");
-  const service = product.offeringType === "service";
-  if (service) {
-    if (
-      review?.customerOwnedAccount !== true ||
-      review?.noAccountTransfer !== true ||
-      review?.creditsIncluded !== false ||
-      review?.serviceScopePermitted !== true
-    )
-      reasons.push(
-        "Service must use a customer-owned account without account or promotional-credit resale",
-      );
-    if (review?.programPermitted !== true)
-      reasons.push("Applicable service/program conditions unconfirmed");
-  } else {
-    if (review?.resaleAuthorized !== true || review?.transferEligible !== true)
-      reasons.push(
-        "Provider authorization and transfer eligibility unconfirmed",
-      );
-    if (review?.nonTransferable !== false || review?.programPermitted !== true)
-      reasons.push("Applicable program/transfer restrictions unconfirmed");
+  if (facts.saleEnabled !== true || facts.status === "disabled") reasons.push("Sales disabled by merchant");
+  if (!stocks.includes(facts.availability)) reasons.push("Invalid inventory status");
+  if (!Number.isFinite(product.price) || product.price <= 0) reasons.push("Invalid selling price");
+  // Known provider/program restrictions always override merchant stock. Unknown
+  // details are not presented as independently verified or provider-approved.
+  if (product.offeringType === "service") {
+    if (facts.customerOwnedAccount !== true || facts.noAccountTransfer !== true || facts.creditsIncluded !== false || facts.serviceScopePermitted !== true || facts.serviceProvided !== true || !facts.serviceScope)
+      reasons.push("Service scope or customer-account conditions not established");
+  } else if (facts.resaleAuthorized === false || facts.transferEligible === false || facts.nonTransferable === true) {
+    reasons.push("Provider resale or transfer restriction");
   }
-  for (const kind of evidenceKinds.filter(
-    (kind) => !service || kind !== "transfer-eligibility",
-  ))
-    if (!hasEvidence(review, kind))
-      reasons.push("Missing " + kind + " evidence");
-  if (
-    review?.confirmed !== true ||
-    review?.price !== product.price ||
-    review?.priceCurrency !== "USD" ||
-    review?.priceScopeVerified !== true
-  )
-    reasons.push("Actual purchase price and scope unconfirmed");
-  if (
-    ![
-      "InStock",
-      "LimitedAvailability",
-      "OutOfStock",
-      "PreOrder",
-      "BackOrder",
-    ].includes(review?.availability)
-  )
-    reasons.push("Genuine availability unconfirmed");
-  if (
-    !Array.isArray(review?.supportedRegions) ||
-    !review.supportedRegions.length ||
-    !review.supportedRegions.every(validText)
-  )
-    reasons.push("Supported regions unconfirmed");
-  if (
-    !specKeys.every(
-      (k) =>
-        (review?.verifiedSpecifications?.[k] ?? null) === (product[k] ?? null),
-    )
-  )
-    reasons.push("Catalog specifications changed or unverified");
-  if (
-    (product.vcpus ||
-      product.rpm ||
-      product.tpm ||
-      product.capacity ||
-      product.dailyLimit ||
-      product.ips) &&
-    review?.quotasVerified !== true
-  )
-    reasons.push("Approved quota/capacity evidence required");
-  if (product.models && review?.modelsVerified !== true)
-    reasons.push("Exact model/service identifiers unconfirmed");
-  if (
-    (product.kind === "Credit" || product.kind === "Trial" || product.credit) &&
-    !hasEvidence(review, "program-terms")
-  )
-    reasons.push("Trial/credit program evidence required");
-  if (product.port25 && !hasEvidence(review, "network-permission"))
-    reasons.push("Provider-approved network permission required");
-  if (
-    product.offeringType === "service" &&
-    (review?.serviceProvided !== true ||
-      !validText(review?.serviceScope) ||
-      !validText(review?.serviceName) ||
-      !hasEvidence(review, "service-scope") ||
-      !hasEvidence(review, "customer-authorization"))
-  )
-    reasons.push("Actual service scope and evidence required");
-  if (
-    !validText(review?.publicDescription) ||
-    review.publicDescription.length < 120
-  )
-    reasons.push("Reviewed public description required");
-  if (!validText(review?.deliveryTerms) || !validText(review?.supportTerms))
-    reasons.push("Actual delivery and support terms required");
-  if (
-    review?.editorialReview?.approved !== true ||
-    review?.editorialReview?.actualOfferApproved !== true
-  )
-    reasons.push("Human editorial/scope review required");
+  for (const key of ["resaleAuthorized", "transferEligible", "nonTransferable", "programPermitted", "networkPermitted", "modelsVerified", "quotasVerified"])
+    if (facts[key] !== undefined && typeof facts[key] !== "boolean") reasons.push("Invalid restriction flag: " + key);
+  if (product.models && facts.modelsVerified === false) reasons.push("Model specifications require correction");
+  if (facts.quotasVerified === false) reasons.push("Quota specifications require correction");
+  if (facts.programPermitted === false) reasons.push("Provider program restriction");
+  if (product.port25 && facts.networkPermitted === false) reasons.push("Provider network restriction");
   const published = reasons.length === 0;
   return {
-    id: productRoute(product),
-    status: published ? "APPROVED" : "PENDING VERIFICATION",
-    publicationStatus: published ? "published" : "pending-verification",
-    published,
-    purchasable:
-      published &&
-      ["InStock", "LimitedAvailability"].includes(review.availability),
-    review,
-    reasons,
+    id: productRoute(product), status: published ? "ACTIVE" : "UNAVAILABLE",
+    publicationStatus: published ? "published" : "unavailable", published,
+    purchasable: published && ["InStock", "LimitedAvailability"].includes(facts.availability),
+    review: facts, reasons,
   };
 }
-export const canPurchaseProduct = (product) =>
-  Boolean(product && productPublication(product).purchasable);
-export function categoryPublication(
-  brand,
-  list,
-  review = publicationReviews[providerRoute(brand)],
-) {
-  const published = list.filter((p) => productPublication(p).published);
-  const approved =
-    published.length > 0 &&
-    review?.status === "approved" &&
-    review?.editorialReview?.approved === true &&
-    review?.editorialReview?.actualOfferApproved === true &&
-    validText(review.reviewedBy) &&
-    validDate(review.reviewedAt);
-  return {
-    id: providerRoute(brand),
-    review,
-    status: approved ? "APPROVED" : "PENDING VERIFICATION",
-    publicationStatus: approved ? "published" : "reference-only",
-    published: approved,
-    reasons: approved
-      ? []
-      : ["Requires eligible child offers and category editorial review"],
-  };
+export const canPurchaseProduct = product => Boolean(product && productPublication(product).purchasable);
+export function categoryPublication(brand, list, overrides) {
+  const published = list.some(product => productPublication(product).published) && overrides?.saleEnabled !== false;
+  return { id: providerRoute(brand), review: overrides, status: published ? "ACTIVE" : "UNAVAILABLE", publicationStatus: published ? "published" : "unavailable", published, reasons: published ? [] : ["No active products in this category"] };
 }
-export const pendingMessage =
-  "Publication review pending. This reference is not available to order.";
+export const pendingMessage = "This product is currently unavailable to order.";

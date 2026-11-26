@@ -13,10 +13,10 @@ export default function HomepageSeoContent() {
           <span>Review the proposed scope first.</span>
         </h2>
         <p>
-          Use the AWS reference collection to review compute tiers, credit
-          conditions and seller-listed AI labels. Publication and purchasing
-          remain unavailable until authorization, scope and availability are
-          documented.
+          Explore the AWS collection to compare compute tiers, credit
+          conditions and seller-listed AI options. In-stock products can be
+          purchased through checkout. Review applicable provider conditions
+          and delivery details for your selected product.
         </p>
       </div>
       <div className="buying-article-grid">
@@ -27,7 +27,7 @@ export default function HomepageSeoContent() {
             Compare AWS account products from free-trial options to
             higher-capacity vCPU listings. For each reference, review the
             proposed capacity, account eligibility, region, billing setup, and
-            ongoing usage costs alongside the reference price.
+            ongoing usage costs alongside the selling price.
           </p>
           <a className="text-button" href="/buy-aws-accounts/">
             Explore AWS accounts

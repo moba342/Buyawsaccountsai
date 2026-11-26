@@ -171,7 +171,7 @@ function Collection({ brand, list, product, onOrder, onCompare, onAddToCart }) {
             </button>
           )}
           <p className="account-price-note">
-            Reference prices apply to the listed account package. Confirm
+            Prices apply to the listed account package. Confirm
             availability, the final quote, provider usage charges, and delivery
             terms before payment.
           </p>
@@ -311,7 +311,7 @@ export function CatalogPage({
   const questions = [
     [
       purchaseQuestion(buyerName),
-      product ? `Review the ${product.group} specifications and the ${formatPrice(product.price)} listed reference price. Confirm the account region, billing responsibility and written purchase terms for the selected configuration.` : `${list.length} variants are listed in this collection. Compare account types and reference prices, then confirm the selected account details, billing responsibility and purchase terms.`,
+      product ? `Review the ${product.group} specifications and the ${formatPrice(product.price)} listed selling price. Confirm the account region, billing responsibility and written purchase terms for the selected configuration.` : `${list.length} variants are listed in this collection. Compare account types and selling prices, then confirm the selected account details, billing responsibility and purchase terms.`,
     ],
     purchaseFAQs[0],
     purchaseFAQs[1],

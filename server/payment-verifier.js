@@ -344,7 +344,7 @@ export async function verifyPayment(body, options = {}) {
       throw new InputError(
         publication.published
           ? "The selected product is currently unavailable to purchase."
-          : "The selected reference is pending publication review and cannot be paid for.",
+          : "The selected product is not eligible for purchase.",
       );
   }
   const endpoint =

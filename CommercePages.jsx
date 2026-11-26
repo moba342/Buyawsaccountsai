@@ -253,7 +253,7 @@ export function CheckoutPage({ cart }) {
   });
   const pricesConfirmed = cart.lines.length > 0 && cart.lines.every(line => productPurchaseState(line.product).published);
   const blockedLines = cart.lines.filter(line => !canPurchaseProduct(line.product));
-  const hasPendingPublication = blockedLines.some(line => !productPurchaseState(line.product).published);
+
   const orderText = `ACCOUNT ORDER REQUEST\nName: ${name.trim()}\nEmail: ${email.trim()}\nPhone: ${phone.trim() || "Not provided"}\nTelegram: ${telegram.trim() || "Not provided"}\n\n${cart.lines.map(({ product, quantity }) => `${product.provider} ${product.name} × ${quantity} — ${formatPrice(product.price * quantity)}`).join("\n")}\n${pricesConfirmed ? "Total" : "Reference total"}: ${formatPrice(cart.total)} USD\nPreferred payment: ${method.label} (${method.network})\nTXID: ${txid.trim() || "Not provided"}\nBlockchain check: ${check.result?.status || "Not checked"}${check.result?.checkedAt ? " at " + check.result.checkedAt : ""}\n${check.result?.receivedAmount ? "Received: " + check.result.receivedAmount + " USDT\n" : ""}${note.trim() ? "Notes: " + note.trim() + "\n" : ""}\nPlease confirm availability, the final USDT amount, receiving wallet, delivery and refund terms. This request is not proof of payment.`;
   const signature = JSON.stringify({
     lines: cart.lines.map(({ id, quantity }) => ({ id, quantity })),
@@ -299,12 +299,10 @@ export function CheckoutPage({ cart }) {
           <h1>Checkout.</h1>
         </div>
         <section className="checkout-publication-hold">
-          <h2>{hasPendingPublication ? "Ordering is unavailable for these references" : "Selected products are currently unavailable"}</h2>
+          <h2>Selected products are currently unavailable</h2>
           <p>
             Your saved selections and original prices have been retained.
-            {hasPendingPublication
-              ? " Payment instructions and verification are withheld until every selected item has both a completed commercial review and purchasable availability."
-              : " These reviewed products cannot currently be ordered. Payment instructions and verification remain withheld until every selected item is available to purchase."}
+            Payment instructions remain withheld until every selected item is eligible for sale and in stock.
           </p>
           <ul>
             {cart.lines.map((line) => (

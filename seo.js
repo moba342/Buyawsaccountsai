@@ -216,7 +216,9 @@ export function confirmedOffer(
   product,
   facts = confirmedCommerceFacts[productRoute(product)],
 ) {
-  if (!productPublication(product, facts).published) return null;
+  const state = productPublication(product, facts);
+  if (!state.published) return null;
+  facts = state.review;
   return {
     "@type": "Offer",
     url: SITE_URL + routePath(productRoute(product)),
@@ -319,7 +321,7 @@ export function siteSchema(seo) {
         })),
         {
           "@type": "PropertyValue",
-          name: "Reference price (USD)",
+          name: "Price (USD)",
           value: seo.product.price,
         },
       ],

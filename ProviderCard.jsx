@@ -42,7 +42,7 @@ export default function ProviderCard({
         </div>
         <p>{brand.summary}</p>
         {!publication.published && (
-          <span className="reference-status">Pending publication review</span>
+          <span className="reference-status">Currently unavailable</span>
         )}
         {publication.published && !publication.availableCount && <span className="reference-status">Currently unavailable to order</span>}
       </div>

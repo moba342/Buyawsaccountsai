@@ -33,20 +33,17 @@ test("all 82 supplied records match exactly 14 categories and 68 current variant
     );
   }
 });
-test("no record is assumed authorized or available from an SEO proposal", () => {
+test("owner-confirmed stock activates all 68 products and 14 categories without review documents", () => {
   assert.deepEqual(publicationReviews, {});
   for (const p of products) {
     const state = productPublication(p);
-    assert(!state.published && !state.purchasable);
-    assert(state.reasons.length > 5);
+    assert(state.published && state.purchasable);
+    assert.equal(state.review.availability, "InStock");
+    assert.equal(state.review.source, "website-owner");
+    assert.equal(state.review.price, p.price);
+    assert.equal(state.review.resaleAuthorized, undefined);
   }
-  for (const b of brands)
-    assert(
-      !categoryPublication(
-        b,
-        products.filter((p) => p.provider === b.name),
-      ).published,
-    );
+  for (const b of brands) assert(categoryPublication(b, products.filter(p => p.provider === b.name)).published);
 });
 test("commercial review allows the preserved offer without controlling SEO indexing", () => {
   const p = products[1],
@@ -64,29 +61,15 @@ test("commercial review allows the preserved offer without controlling SEO index
     !productPublication(p, { ...r, availability: "OutOfStock" }).purchasable,
   );
 });
-test("missing evidence, changed facts, nontransferable programs, false strings and invalid dates fail closed", () => {
-  const p = products[0],
-    r = approvedReview(p);
+test("explicit merchant pauses, provider restrictions and malformed inventory block purchasing", () => {
+  const p = products[0];
   for (const changes of [
-    { resaleAuthorized: "true" },
-    { transferEligible: false },
-    { nonTransferable: true },
-    { programPermitted: false },
-    { confirmed: false },
-    { price: 1 },
-    { supportedRegions: [] },
-    { reviewedAt: "2026-99-01" },
-    { reviewedAt: "2999-01-01" },
-    { evidence: [] },
-    { evidence: "not an array" },
-    { verifiedSpecifications: {} },
-    { evidence: r.evidence.filter((e) => e.kind !== "program-terms") },
-    { editorialReview: { ...r.editorialReview, actualOfferApproved: false } },
-  ])
-    assert(
-      !productPublication(p, { ...r, ...changes }).published,
-      JSON.stringify(changes),
-    );
+    {saleEnabled:false}, {status:"disabled"}, {resaleAuthorized:"true"},
+    {resaleAuthorized:false}, {transferEligible:false}, {nonTransferable:true},
+    {programPermitted:false}, {availability:"invented-stock"},
+  ]) assert(!productPublication(p, changes).purchasable, JSON.stringify(changes));
+  // Removing the bespoke paperwork workflow does not bypass any known restriction.
+  assert(productPublication(p, {evidence:[], reviewedAt:"", editorialReview:{approved:false}}).purchasable);
 });
 test("service proposals do not turn a valid account into an invented consulting service", () => {
   const p = products[0],
@@ -131,7 +114,7 @@ test("service proposals do not turn a valid account into an invented consulting 
       .published,
   );
 });
-test("unreviewed model and network quota claims cannot be sold", () => {
+test("explicitly disputed model and network specifications block purchasing", () => {
   const ai = products.find((p) => p.models),
     mail = products.find((p) => p.port25);
   assert(
@@ -141,13 +124,11 @@ test("unreviewed model and network quota claims cannot be sold", () => {
   assert(
     !productPublication(mail, {
       ...approvedReview(mail),
-      evidence: approvedReview(mail).evidence.filter(
-        (e) => e.kind !== "network-permission",
-      ),
+      networkPermitted: false,
     }).published,
   );
 });
-test("the real payment entry rejects pending references before any RPC; body approval cannot bypass it", async () => {
+test("payment rejects merchant-disabled products before RPC and ignores client approval flags", async () => {
   let calls = 0;
   const body = {
     network: "trc20",
@@ -159,6 +140,7 @@ test("the real payment entry rejects pending references before any RPC; body app
   await assert.rejects(
     () =>
       verifyPayment(body, {
+        publicationReviews: {[productRoute(products[0])]: {saleEnabled:false}},
         fetch: () => {
           calls++;
           throw Error("RPC must not run");

@@ -1,0 +1,40 @@
+{
+  "syntheticOnly": true,
+  "productionReviewRecordsWritten": 0,
+  "cardCases": [
+    {
+      "availability": "NO REVIEW",
+      "buttonDisabled": false,
+      "priceLabel": "Price"
+    },
+    {
+      "availability": "InStock",
+      "buttonDisabled": false,
+      "priceLabel": "Price"
+    },
+    {
+      "availability": "LimitedAvailability",
+      "buttonDisabled": false,
+      "priceLabel": "Price"
+    },
+    {
+      "availability": "OutOfStock",
+      "buttonDisabled": true,
+      "priceLabel": "Price"
+    },
+    {
+      "availability": "PreOrder",
+      "buttonDisabled": true,
+      "priceLabel": "Price"
+    },
+    {
+      "availability": "BackOrder",
+      "buttonDisabled": true,
+      "priceLabel": "Price"
+    }
+  ],
+  "laterEligiblePackageSelection": true,
+  "providerPriceExcludesDisabledTrial": true,
+  "approvedCartAndCheckoutEnabled": true,
+  "outOfStockCheckoutHeldWithCorrectReason": true
+}

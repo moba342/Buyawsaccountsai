@@ -86,7 +86,7 @@ const data = catalogSeoRecords.map((record) => {
         ],
     productDescription: product
       ? publication.published
-        ? publication.review.publicDescription
+        ? publication.review.publicDescription || productBuyingDescription(product)
         : productBuyingDescription(product)
       : categoryOpening(brand),
     openGraphTitle: seo.title,
@@ -94,10 +94,10 @@ const data = catalogSeoRecords.map((record) => {
     openGraphImage: seo.image,
     imageAlt: seo.imageAlt,
     price: product?.price ?? null,
-    referencePriceFrom: product ? null : Math.min(...list.map((p) => p.price)),
+    priceFrom: product ? null : Math.min(...list.map((p) => p.price)),
     priceCurrency: "USD",
     creditFaceValue: product?.credit || null,
-    purchasePriceVerified: !!product && publication.published,
+    sellingPriceConfirmedByOwner: !!product && publication.published,
     availability: publication.review?.availability || null,
     sku: publication.published ? publication.review?.sku || null : null,
     originalSpecifications: product ? specificationSnapshot(product) : null,
@@ -119,9 +119,8 @@ const data = catalogSeoRecords.map((record) => {
     commercialActivationBlockers: publication.reasons,
     seoDocumentPrerequisites: [],
     dateModified: publication.review?.contentUpdatedAt || null,
-    humanEditorialReview: publication.published
-      ? "Commercial offer reviewed separately"
-      : "Commercial review pending; SEO development complete",
+    stockSource: product ? publication.review.source || "merchant" : "derived-from-products",
+    commercialManagement: "Merchant inventory; independent of editorial and SEO approvals",
   };
 });
 if (

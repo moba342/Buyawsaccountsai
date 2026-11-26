@@ -102,7 +102,7 @@ export default function ProductBuyingArticle({ product, brand, onOrder }) {
             <ShoppingBag size={16} aria-hidden="true" />
             {publication.purchasable
               ? "Buy " + brand.name + " " + product.name
-              : publication.published ? publication.unavailableLabel : "Publication review pending"}
+              : publication.published ? publication.unavailableLabel : "Currently unavailable"}
           </button>
           <a className="secondary" href="/contact-sales/">
             Ask about this package
@@ -128,7 +128,7 @@ export function CatalogBuyingArticles({ brands, products }) {
         </h2>
         <p>
           Shop cloud account and credit packages with product-specific
-          information, transparent reference pricing, and direct seller contact.
+          information, transparent pricing, and direct seller contact.
           Read the original guide for each listing, compare the proposed scope,
           and bring the right questions to your buying conversation.
         </p>
@@ -186,10 +186,9 @@ export function CatalogBuyingArticles({ brands, products }) {
         <div>
           <h3>From product research to an agreed purchase.</h3>
           <p>
-            Review each reference and its requirements. Purchase and payment
-            capabilities are reserved for offers that pass publication review.
-            No current reference is made eligible by its price or description
-            alone.
+            Compare each product and its requirements. Eligible in-stock products
+            can be added to your cart and paid for at checkout. Delivery is
+            arranged with the seller after your payment is matched.
           </p>
         </div>
         <a className="secondary" href="/contact-sales/">

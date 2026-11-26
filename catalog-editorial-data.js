@@ -62,7 +62,7 @@ export const catalogEditorial = {
   },
   "product/aws-100k-credits": {
     intro:
-      "A $100,000 credit headline warrants a documented program review rather than an assumption of enterprise entitlement. Credit restrictions, account ownership, and the separate catalog reference price must all be reconciled before publication.",
+      "A $100,000 credit headline warrants a documented program review rather than an assumption of enterprise entitlement. Credit restrictions, account ownership, and the separate catalog selling price must all be reviewed before ordering.",
     editorialStatus: "PENDING HUMAN REVIEW",
   },
   "product/aws-32-vcpu-10-rpm-bedrock-enabled": {
@@ -167,7 +167,7 @@ export const catalogEditorial = {
   },
   "product/digitalocean-500-droplets-port-25-open": {
     intro:
-      "The 500-Droplet entry requires a documented capacity and network-permission assessment. Clarify the deployment region, instance sizes, and ongoing charges independently of the catalog's separate account-reference price.",
+      "The 500-Droplet entry requires a documented capacity and network-permission assessment. Clarify the deployment region, instance sizes, and ongoing charges independently of the catalog's separate account-selling price.",
     editorialStatus: "PENDING HUMAN REVIEW",
   },
   "product/google-cloud-free-trial-300-credits": {
@@ -232,7 +232,7 @@ export const catalogEditorial = {
   },
   "product/kamatera-free-trial": {
     intro:
-      "The Kamatera trial entry needs a defined evaluation scope, resource allowance, and billing agreement. The reference price alone does not identify trial eligibility, an included server size, or a transferable account arrangement.",
+      "The Kamatera trial entry needs a defined evaluation scope, resource allowance, and billing agreement. The selling price alone does not identify trial eligibility, an included server size, or a transferable account arrangement.",
     editorialStatus: "PENDING HUMAN REVIEW",
   },
   "product/kamatera-port-25-open": {
@@ -272,7 +272,7 @@ export const catalogEditorial = {
   },
   "product/ovhcloud-paid-account-34-vcpu": {
     intro:
-      "The paid OVHcloud 34 vCPU reference does not identify memory, storage, or a dedicated host. Review the quota or resource definition and recurring charges separately from the account-reference price.",
+      "The paid OVHcloud 34 vCPU reference does not identify memory, storage, or a dedicated host. Review the quota or resource definition and recurring charges separately from the account-selling price.",
     editorialStatus: "PENDING HUMAN REVIEW",
   },
   "product/amazon-ses-smtp-50k-daily-limit": {
@@ -302,7 +302,7 @@ export const catalogEditorial = {
   },
   "product/ibm-cloud-free-trial": {
     intro:
-      "The IBM Cloud trial entry requires confirmation of the current trial terms and permitted ownership arrangement. The catalog reference price does not establish a free usage entitlement or a verified setup service.",
+      "The IBM Cloud trial entry requires confirmation of the current trial terms and permitted ownership arrangement. The catalog selling price does not establish a free usage entitlement or a verified setup service.",
     editorialStatus: "PENDING HUMAN REVIEW",
   },
   "product/ibm-cloud-pay-as-you-go": {

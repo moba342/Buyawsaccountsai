@@ -61,21 +61,24 @@ test("all 96 generated pages have unique metadata and self-referencing canonical
     assert.equal(new URL(p.canonical).protocol, "https:");
   }
 });
-test("catalog products have factual Product data without unsupported Offer claims", () => {
+test("catalog Product offers match owner-confirmed inventory and current prices", () => {
   for (const p of products) {
     const seo = getPageSeo(productRoute(p)),
       schema = siteSchema(seo);
-    assert(!schema["@graph"].some((n) => n["@type"] === "Offer" || n.offers));
+    const item = schema["@graph"].find(n => n["@type"] === "Product");
+    assert.equal(item.offers.price, p.price);
+    assert.equal(item.offers.availability, "https://schema.org/InStock");
+    assert.equal(item.aggregateRating, undefined);
     assert.equal(seo.robots, "index, follow");
     assert(seo.description && seo.h1);
   }
 });
-test("only a complete publication review permits a truthful offer and commercial metadata", () => {
+test("optional descriptions preserve metadata while inventory controls Offers", () => {
   const p = products[1],
     id = productRoute(p),
     facts = approvedReview(p);
-  assert.equal(confirmedOffer(p), null);
-  assert.equal(confirmedOffer(p, { ...facts, confirmed: "true" }), null);
+  assert.equal(confirmedOffer(p).price, p.price);
+  assert.equal(confirmedOffer(p, {saleEnabled:false}), null);
   const offer = confirmedOffer(p, facts);
   assert.equal(offer.price, p.price);
   assert.equal(offer.availability, "https://schema.org/InStock");
@@ -104,8 +107,8 @@ test("SEO controls are independent of commercial activation", () => {
   try {
     assert.equal(getPageSeo(id).title, "AWS Trial Account Buying Requirements");
     assert.equal(getPageSeo(id).robots, "noindex, follow");
-    assert.equal(confirmedOffer(products[0]), null);
-    assert.equal(getPageSeo(id).publication.purchasable, false);
+    assert.equal(confirmedOffer(products[0]).price, products[0].price);
+    assert.equal(getPageSeo(id).publication.purchasable, true);
   } finally {
     delete seoOverrides[id];
   }

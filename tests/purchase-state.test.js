@@ -6,12 +6,13 @@ import { approvedReview } from "./fixtures/publication.js";
 import { verifyPayment, InputError } from "../server/payment-verifier.js";
 import { productRoute } from "../catalogPaths.js";
 
-test("pending, approved-stock and approved-unavailable states have truthful prices and actions", () => {
+test("in-stock, limited-stock and unavailable states have truthful prices and actions", () => {
   const product=products[1];
   const pending=productPurchaseState(product);
-  assert.equal(pending.priceLabel,"Reference price");
-  assert.equal(pending.cartLabel,"Pending review");
-  assert(!pending.purchasable);
+  assert.equal(pending.priceLabel,"Price");
+  assert.equal(pending.cartLabel,"Add to cart");
+  assert.equal(pending.statusText,"In Stock");
+  assert(pending.purchasable);
   for(const availability of ["InStock","LimitedAvailability","OutOfStock","PreOrder","BackOrder"]){
     const state=productPurchaseState(product,approvedReview(product,{availability}));
     assert(state.published);

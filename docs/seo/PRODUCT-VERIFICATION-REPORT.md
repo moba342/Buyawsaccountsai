@@ -1,3 +1,5 @@
+> Historical audit. The custom review prerequisite described below was superseded on 2026-11-27 by owner-confirmed inventory. Current rules and test results: [PRODUCT-AVAILABILITY-UPDATE.md](../audits/PRODUCT-AVAILABILITY-UPDATE.md).
+
 # Commercial activation boundary — separate from SEO
 
 This filename is retained for existing links. It is **not an SEO verification prerequisite**. The earlier Product Verification & Publishing Rules have been removed from the SEO workflow.
