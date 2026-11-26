@@ -170,3 +170,7 @@ The browser cart key changed to `baa-cart-v2` to avoid carrying removed variants
 ### Product storefront layout
 
 Provider collections use category navigation, package search, and responsive two-column product cards. Product detail pages include a specification summary, variant selector, purchase panel, and related packages. Shared catalog cards support direct cart actions; existing buying articles remain available in the collection reading room. Styling is centralized in `catalog-pages.css` using the Midnight Sapphire theme.
+
+### Website motion
+
+`WebsiteMotion.jsx` adds one-shot viewport entrances and event-driven sapphire cursor lighting to shared storefront surfaces. Pointer updates share one requested animation frame, stop on scroll/blur/hidden tabs, and create no idle animation loop. Touch devices omit cursor lighting; reduced-motion preferences disable both effects. `website-motion.css` defines the surface lighting and restrained button interactions.

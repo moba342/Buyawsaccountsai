@@ -1,0 +1,143 @@
+import { useEffect } from 'react';
+
+const surfaces =
+  '.account-card,.provider-showcase-card,.account-purchase-panel,.page-intro-panel,.home-hero,.footer-callout,.public-seller-card,.seller-details-panel';
+const entrances = `${surfaces},.account-process>ol>li,.account-workloads>*`;
+
+// Event-driven lighting: one layer and at most one frame, with no idle render loop.
+export default function WebsiteMotion({ routeKey, paused }) {
+  useEffect(() => {
+    if (paused) return;
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+    const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
+    const seen = new WeakSet();
+    const animations = new Set();
+    let observer,
+      mutations,
+      frame = 0,
+      target = null,
+      bounds = null,
+      point = null;
+    const light = document.createElement('span');
+    light.className = 'cursor-surface-light';
+    light.setAttribute('aria-hidden', 'true');
+
+    function clearLight() {
+      cancelAnimationFrame(frame);
+      frame = 0;
+      target?.classList.remove('motion-lit');
+      target = bounds = point = null;
+      light.remove();
+    }
+    function draw() {
+      frame = 0;
+      if (!target?.isConnected || !bounds || !point) return clearLight();
+      light.style.transform = `translate3d(${point.x - bounds.left - 180}px,${point.y - bounds.top - 180}px,0)`;
+    }
+    function move(event) {
+      if (
+        !finePointer.matches ||
+        reduced.matches ||
+        document.hidden ||
+        event.pointerType === 'touch' ||
+        document.documentElement.dataset.scrollActive === 'true'
+      )
+        return clearLight();
+      const surface = event.target.closest?.(surfaces);
+      if (!surface || surface.closest('[role="dialog"]')) return clearLight();
+      if (target !== surface) {
+        clearLight();
+        target = surface;
+        bounds = surface.getBoundingClientRect();
+        surface.classList.add('motion-surface', 'motion-lit');
+        surface.appendChild(light);
+      }
+      point = { x: event.clientX, y: event.clientY };
+      if (!frame) frame = requestAnimationFrame(draw);
+    }
+    function discover(root) {
+      if (!(root instanceof Element)) return;
+      const nodes = [
+        ...(root.matches(entrances) ? [root] : []),
+        ...root.querySelectorAll(entrances),
+      ];
+      for (const node of nodes) {
+        if (seen.has(node)) continue;
+        seen.add(node);
+        observer?.observe(node);
+      }
+    }
+    function configure() {
+      observer?.disconnect();
+      mutations?.disconnect();
+      clearLight();
+      for (const animation of animations) animation.cancel();
+      animations.clear();
+      if (reduced.matches) return;
+      observer = new IntersectionObserver(
+        (entries) => {
+          let order = 0;
+          for (const entry of entries) {
+            if (!entry.isIntersecting) continue;
+            observer.unobserve(entry.target);
+            if (document.hidden) continue;
+            const animation = entry.target.animate(
+              [
+                { opacity: 0.45, transform: 'translateY(14px)' },
+                { opacity: 1, transform: 'translateY(0)' },
+              ],
+              {
+                duration: 460,
+                delay: Math.min(order++ * 45, 135),
+                easing: 'cubic-bezier(.2,.7,.2,1)',
+              },
+            );
+            animations.add(animation);
+            animation.finished
+              .catch(() => {})
+              .finally(() => animations.delete(animation));
+          }
+        },
+        { threshold: 0.08 },
+      );
+      discover(document.getElementById('page-content'));
+      mutations = new MutationObserver((records) => {
+        for (const record of records)
+          for (const node of record.addedNodes) {
+            if (node !== light) discover(node);
+          }
+      });
+      const main = document.getElementById('page-content');
+      if (main) mutations.observe(main, { childList: true, subtree: true });
+    }
+    function visibility() {
+      clearLight();
+      if (document.hidden)
+        for (const animation of animations) animation.cancel();
+    }
+    configure();
+    reduced.addEventListener('change', configure);
+    finePointer.addEventListener('change', clearLight);
+    document.addEventListener('pointermove', move, { passive: true });
+    document.addEventListener('pointerleave', clearLight);
+    document.addEventListener('visibilitychange', visibility);
+    window.addEventListener('scroll', clearLight, { passive: true });
+    window.addEventListener('resize', clearLight, { passive: true });
+    window.addEventListener('blur', clearLight);
+    return () => {
+      observer?.disconnect();
+      mutations?.disconnect();
+      clearLight();
+      for (const animation of animations) animation.cancel();
+      reduced.removeEventListener('change', configure);
+      finePointer.removeEventListener('change', clearLight);
+      document.removeEventListener('pointermove', move);
+      document.removeEventListener('pointerleave', clearLight);
+      document.removeEventListener('visibilitychange', visibility);
+      window.removeEventListener('scroll', clearLight);
+      window.removeEventListener('resize', clearLight);
+      window.removeEventListener('blur', clearLight);
+    };
+  }, [routeKey, paused]);
+  return null;
+}

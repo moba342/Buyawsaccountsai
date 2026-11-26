@@ -1,0 +1,12 @@
+/* Sapphire illumination stays inside the hovered surface, clear of all controls. */
+#root .motion-surface{isolation:isolate;overflow:hidden}
+#root .motion-surface:not(.account-purchase-panel){position:relative}
+#root .cursor-surface-light{position:absolute;left:0;top:0;width:360px;height:360px;border-radius:50%;pointer-events:none;z-index:1;background:radial-gradient(circle,rgba(66,103,167,.12),rgba(66,103,167,.035) 42%,transparent 70%);will-change:transform;contain:strict}
+#root :is(.account-purchase-panel,.page-intro-panel,.provider-showcase-card,.footer-callout,.public-seller-card,.seller-details-panel)>.cursor-surface-light{background:radial-gradient(circle,rgba(153,190,241,.16),rgba(153,190,241,.04) 44%,transparent 70%)}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+ #root :is(button.primary,a.primary,.account-card-actions>button,.header-button){transition:transform 200ms ease,box-shadow 200ms ease,background-color 200ms ease,border-color 200ms ease}
+ #root :is(button.primary,a.primary,.account-card-actions>button,.header-button):hover{transform:translateY(-2px)}
+ #root :is(button.primary,a.primary,.account-card-actions>button,.header-button):active{transform:translateY(0) scale(.985)}
+}
+@media(prefers-reduced-motion:reduce),(hover:none),(pointer:coarse){#root .cursor-surface-light{display:none}}
+html[data-scroll-active=true] #root .cursor-surface-light{display:none}
