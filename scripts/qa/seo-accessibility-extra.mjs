@@ -94,7 +94,7 @@ await p.waitForFunction(
 );
 assert.equal(
   await p.locator("link[rel=canonical]").getAttribute("href"),
-  "https://www.buyawsaccountsai.com/compare-products/",
+  "https://buyawsaccountsai.com/compare-products/",
 );
 assert(
   (await p.locator("#site-seo-schema").textContent()).includes(

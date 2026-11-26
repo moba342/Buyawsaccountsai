@@ -394,3753 +394,3753 @@
   "redirects": [
     {
       "source": "/products/",
-      "destination": "https://www.buyawsaccountsai.com/marketplace/",
+      "destination": "https://buyawsaccountsai.com/marketplace/",
       "permanent": true
     },
     {
       "source": "/products",
-      "destination": "https://www.buyawsaccountsai.com/marketplace/",
+      "destination": "https://buyawsaccountsai.com/marketplace/",
       "permanent": true
     },
     {
       "source": "/providers/",
-      "destination": "https://www.buyawsaccountsai.com/cloud-platforms/",
+      "destination": "https://buyawsaccountsai.com/cloud-platforms/",
       "permanent": true
     },
     {
       "source": "/providers",
-      "destination": "https://www.buyawsaccountsai.com/cloud-platforms/",
+      "destination": "https://buyawsaccountsai.com/cloud-platforms/",
       "permanent": true
     },
     {
       "source": "/compare/",
-      "destination": "https://www.buyawsaccountsai.com/compare-products/",
+      "destination": "https://buyawsaccountsai.com/compare-products/",
       "permanent": true
     },
     {
       "source": "/compare",
-      "destination": "https://www.buyawsaccountsai.com/compare-products/",
+      "destination": "https://buyawsaccountsai.com/compare-products/",
       "permanent": true
     },
     {
       "source": "/guides/",
-      "destination": "https://www.buyawsaccountsai.com/buying-guides/",
+      "destination": "https://buyawsaccountsai.com/buying-guides/",
       "permanent": true
     },
     {
       "source": "/guides",
-      "destination": "https://www.buyawsaccountsai.com/buying-guides/",
+      "destination": "https://buyawsaccountsai.com/buying-guides/",
       "permanent": true
     },
     {
       "source": "/faq/",
-      "destination": "https://www.buyawsaccountsai.com/help-center/",
+      "destination": "https://buyawsaccountsai.com/help-center/",
       "permanent": true
     },
     {
       "source": "/faq",
-      "destination": "https://www.buyawsaccountsai.com/help-center/",
+      "destination": "https://buyawsaccountsai.com/help-center/",
       "permanent": true
     },
     {
       "source": "/verified/",
-      "destination": "https://www.buyawsaccountsai.com/seller-profile/",
+      "destination": "https://buyawsaccountsai.com/seller-profile/",
       "permanent": true
     },
     {
       "source": "/verified",
-      "destination": "https://www.buyawsaccountsai.com/seller-profile/",
+      "destination": "https://buyawsaccountsai.com/seller-profile/",
       "permanent": true
     },
     {
       "source": "/contact/",
-      "destination": "https://www.buyawsaccountsai.com/contact-sales/",
+      "destination": "https://buyawsaccountsai.com/contact-sales/",
       "permanent": true
     },
     {
       "source": "/contact",
-      "destination": "https://www.buyawsaccountsai.com/contact-sales/",
+      "destination": "https://buyawsaccountsai.com/contact-sales/",
       "permanent": true
     },
     {
       "source": "/product/aws-1k-credit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-accounts/",
       "permanent": true
     },
     {
       "source": "/product/aws-1k-credit",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-accounts/",
       "permanent": true
     },
     {
       "source": "/product/aws-5k-credit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-accounts/",
       "permanent": true
     },
     {
       "source": "/product/aws-5k-credit",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-accounts/",
       "permanent": true
     },
     {
       "source": "/product/aws-10k-credit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-accounts/",
       "permanent": true
     },
     {
       "source": "/product/aws-10k-credit",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-accounts/",
       "permanent": true
     },
     {
       "source": "/product/aws-25k-credit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-accounts/",
       "permanent": true
     },
     {
       "source": "/product/aws-25k-credit",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-accounts/",
       "permanent": true
     },
     {
       "source": "/product/aws-100k-credit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-accounts/",
       "permanent": true
     },
     {
       "source": "/product/aws-100k-credit",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-accounts/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-300-credit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-300-credit",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-400-credit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-400-credit",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-1k-credit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-1k-credit",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-5k-credit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-5k-credit",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-10k-credit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-10k-credit",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-25k-credit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-25k-credit",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/azure-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-accounts/",
       "permanent": true
     },
     {
       "source": "/product/azure-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-accounts/",
       "permanent": true
     },
     {
       "source": "/product/azure-1k-credit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-accounts/",
       "permanent": true
     },
     {
       "source": "/product/azure-1k-credit",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-accounts/",
       "permanent": true
     },
     {
       "source": "/product/azure-5k-credit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-accounts/",
       "permanent": true
     },
     {
       "source": "/product/azure-5k-credit",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-accounts/",
       "permanent": true
     },
     {
       "source": "/product/azure-25k-credit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-accounts/",
       "permanent": true
     },
     {
       "source": "/product/azure-25k-credit",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-close-port-3/",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-close-port-3",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-close-port-10/",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-close-port-10",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-close-port-25/",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-close-port-25",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-open-port-3/",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-open-port-3",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-open-port-10/",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-open-port-10",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-open-port-25/",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-open-port-25",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/product/oracle-cloud-300-credit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/oracle-cloud-300-credit",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/oracle-cloud-new-account/",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/oracle-cloud-new-account",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/oracle-cloud-old-account/",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/oracle-cloud-old-account",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/oracle-cloud-upgraded-account/",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/oracle-cloud-upgraded-account",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-5-servers/",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-accounts/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-5-servers",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-accounts/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-10-servers/",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-accounts/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-10-servers",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-accounts/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-25-servers/",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-accounts/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-25-servers",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-accounts/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-100-servers/",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-accounts/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-100-servers",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-accounts/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-old-account/",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-accounts/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-old-account",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-accounts/",
       "permanent": true
     },
     {
       "source": "/product/vultr-200-credit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-accounts/",
       "permanent": true
     },
     {
       "source": "/product/vultr-200-credit",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-accounts/",
       "permanent": true
     },
     {
       "source": "/product/vultr-250-credit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-accounts/",
       "permanent": true
     },
     {
       "source": "/product/vultr-250-credit",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-accounts/",
       "permanent": true
     },
     {
       "source": "/product/vultr-300-credit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-accounts/",
       "permanent": true
     },
     {
       "source": "/product/vultr-300-credit",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-accounts/",
       "permanent": true
     },
     {
       "source": "/product/linode-100-credit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-accounts/",
       "permanent": true
     },
     {
       "source": "/product/linode-100-credit",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-accounts/",
       "permanent": true
     },
     {
       "source": "/product/linode-port-25-open/",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-accounts/",
       "permanent": true
     },
     {
       "source": "/product/linode-port-25-open",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-accounts/",
       "permanent": true
     },
     {
       "source": "/product/alibaba-cloud-personal-account/",
-      "destination": "https://www.buyawsaccountsai.com/marketplace/",
+      "destination": "https://buyawsaccountsai.com/marketplace/",
       "permanent": true
     },
     {
       "source": "/product/alibaba-cloud-personal-account",
-      "destination": "https://www.buyawsaccountsai.com/marketplace/",
+      "destination": "https://buyawsaccountsai.com/marketplace/",
       "permanent": true
     },
     {
       "source": "/product/alibaba-cloud-business-account/",
-      "destination": "https://www.buyawsaccountsai.com/marketplace/",
+      "destination": "https://buyawsaccountsai.com/marketplace/",
       "permanent": true
     },
     {
       "source": "/product/alibaba-cloud-business-account",
-      "destination": "https://www.buyawsaccountsai.com/marketplace/",
+      "destination": "https://buyawsaccountsai.com/marketplace/",
       "permanent": true
     },
     {
       "source": "/product/atlantic-net-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/marketplace/",
+      "destination": "https://buyawsaccountsai.com/marketplace/",
       "permanent": true
     },
     {
       "source": "/product/atlantic-net-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/marketplace/",
+      "destination": "https://buyawsaccountsai.com/marketplace/",
       "permanent": true
     },
     {
       "source": "/product/atlantic-net-port-25-open/",
-      "destination": "https://www.buyawsaccountsai.com/marketplace/",
+      "destination": "https://buyawsaccountsai.com/marketplace/",
       "permanent": true
     },
     {
       "source": "/product/atlantic-net-port-25-open",
-      "destination": "https://www.buyawsaccountsai.com/marketplace/",
+      "destination": "https://buyawsaccountsai.com/marketplace/",
       "permanent": true
     },
     {
       "source": "/alibaba-cloud-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/cloud-platforms/",
+      "destination": "https://buyawsaccountsai.com/cloud-platforms/",
       "permanent": true
     },
     {
       "source": "/alibaba-cloud-accounts",
-      "destination": "https://www.buyawsaccountsai.com/cloud-platforms/",
+      "destination": "https://buyawsaccountsai.com/cloud-platforms/",
       "permanent": true
     },
     {
       "source": "/atlantic-net-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/cloud-platforms/",
+      "destination": "https://buyawsaccountsai.com/cloud-platforms/",
       "permanent": true
     },
     {
       "source": "/atlantic-net-accounts",
-      "destination": "https://www.buyawsaccountsai.com/cloud-platforms/",
+      "destination": "https://buyawsaccountsai.com/cloud-platforms/",
       "permanent": true
     },
     {
       "source": "/aws-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-accounts/",
       "permanent": true
     },
     {
       "source": "/aws-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-accounts/",
       "permanent": true
     },
     {
       "source": "/aws-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-accounts/",
       "permanent": true
     },
     {
       "source": "/azure-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-accounts/",
       "permanent": true
     },
     {
       "source": "/azure-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-accounts/",
       "permanent": true
     },
     {
       "source": "/azure-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-accounts/",
       "permanent": true
     },
     {
       "source": "/digitalocean-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/digitalocean-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/digitalocean-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/google-cloud-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/google-cloud-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/google-cloud-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/hetzner-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-accounts/",
       "permanent": true
     },
     {
       "source": "/hetzner-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-accounts/",
       "permanent": true
     },
     {
       "source": "/hetzner-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-accounts/",
       "permanent": true
     },
     {
       "source": "/kamatera-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-kamatera-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-kamatera-accounts/",
       "permanent": true
     },
     {
       "source": "/kamatera-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-kamatera-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-kamatera-accounts/",
       "permanent": true
     },
     {
       "source": "/kamatera-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-kamatera-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-kamatera-accounts/",
       "permanent": true
     },
     {
       "source": "/linode-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-accounts/",
       "permanent": true
     },
     {
       "source": "/linode-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-accounts/",
       "permanent": true
     },
     {
       "source": "/linode-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-accounts/",
       "permanent": true
     },
     {
       "source": "/oracle-cloud-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/oracle-cloud-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/oracle-cloud-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/ovhcloud-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-ovhcloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-ovhcloud-accounts/",
       "permanent": true
     },
     {
       "source": "/ovhcloud-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-ovhcloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-ovhcloud-accounts/",
       "permanent": true
     },
     {
       "source": "/ovhcloud-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-ovhcloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-ovhcloud-accounts/",
       "permanent": true
     },
     {
       "source": "/amazon-ses-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-accounts/",
       "permanent": true
     },
     {
       "source": "/amazon-ses-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-accounts/",
       "permanent": true
     },
     {
       "source": "/amazon-ses-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-accounts/",
       "permanent": true
     },
     {
       "source": "/upcloud-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-upcloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-upcloud-accounts/",
       "permanent": true
     },
     {
       "source": "/upcloud-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-upcloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-upcloud-accounts/",
       "permanent": true
     },
     {
       "source": "/upcloud-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-upcloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-upcloud-accounts/",
       "permanent": true
     },
     {
       "source": "/ibm-cloud-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/ibm-cloud-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/ibm-cloud-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/heroku-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-heroku-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-heroku-accounts/",
       "permanent": true
     },
     {
       "source": "/heroku-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-heroku-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-heroku-accounts/",
       "permanent": true
     },
     {
       "source": "/heroku-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-heroku-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-heroku-accounts/",
       "permanent": true
     },
     {
       "source": "/vultr-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-accounts/",
       "permanent": true
     },
     {
       "source": "/vultr-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-accounts/",
       "permanent": true
     },
     {
       "source": "/vultr-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-accounts/",
       "permanent": true
     },
     {
       "source": "/product/aws-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/aws-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/aws-free-trial/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/aws-8-vcpu/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-8-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-8-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-8-vcpu",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-8-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-8-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-8-vcpu/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-8-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-8-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-32-vcpu/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-32-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-32-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-32-vcpu",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-32-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-32-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-32-vcpu/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-32-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-32-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-64-vcpu/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-64-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-64-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-64-vcpu",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-64-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-64-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-64-vcpu/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-64-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-64-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-128-vcpu/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-128-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-128-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-128-vcpu",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-128-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-128-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-128-vcpu/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-128-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-128-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-256-vcpu/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-256-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-256-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-256-vcpu",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-256-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-256-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-256-vcpu/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-256-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-256-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-512-vcpu/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-512-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-512-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-512-vcpu",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-512-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-512-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-512-vcpu/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-512-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-512-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-640-vcpu/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-640-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-640-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-640-vcpu",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-640-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-640-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-640-vcpu/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-640-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-640-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-1920-vcpu/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-1920-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-1920-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-1920-vcpu",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-1920-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-1920-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-1920-vcpu/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-1920-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-1920-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/aws-5k-credits/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-5k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-5k-credits/",
       "permanent": true
     },
     {
       "source": "/product/aws-5k-credits",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-5k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-5k-credits/",
       "permanent": true
     },
     {
       "source": "/product/aws-5k-credits/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-5k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-5k-credits/",
       "permanent": true
     },
     {
       "source": "/product/aws-10k-credits/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-10k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-10k-credits/",
       "permanent": true
     },
     {
       "source": "/product/aws-10k-credits",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-10k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-10k-credits/",
       "permanent": true
     },
     {
       "source": "/product/aws-10k-credits/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-10k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-10k-credits/",
       "permanent": true
     },
     {
       "source": "/product/aws-25k-credits/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-25k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-25k-credits/",
       "permanent": true
     },
     {
       "source": "/product/aws-25k-credits",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-25k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-25k-credits/",
       "permanent": true
     },
     {
       "source": "/product/aws-25k-credits/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-25k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-25k-credits/",
       "permanent": true
     },
     {
       "source": "/product/aws-100k-credits/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-100k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-100k-credits/",
       "permanent": true
     },
     {
       "source": "/product/aws-100k-credits",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-100k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-100k-credits/",
       "permanent": true
     },
     {
       "source": "/product/aws-100k-credits/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-100k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-100k-credits/",
       "permanent": true
     },
     {
       "source": "/product/aws-32-vcpu-10-rpm-bedrock-enabled/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-32-vcpu-10-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-32-vcpu-10-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/aws-32-vcpu-10-rpm-bedrock-enabled",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-32-vcpu-10-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-32-vcpu-10-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/aws-32-vcpu-10-rpm-bedrock-enabled/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-32-vcpu-10-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-32-vcpu-10-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/aws-32-vcpu-50-rpm-bedrock-enabled/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-32-vcpu-50-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-32-vcpu-50-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/aws-32-vcpu-50-rpm-bedrock-enabled",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-32-vcpu-50-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-32-vcpu-50-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/aws-32-vcpu-50-rpm-bedrock-enabled/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-32-vcpu-50-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-32-vcpu-50-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/aws-256-vcpu-10k-rpm-bedrock-enabled/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/aws-256-vcpu-10k-rpm-bedrock-enabled",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/aws-256-vcpu-10k-rpm-bedrock-enabled/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
       "permanent": true
     },
     {
       "source": "/product/aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
       "permanent": true
     },
     {
       "source": "/product/aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
       "permanent": true
     },
     {
       "source": "/product/aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
       "permanent": true
     },
     {
       "source": "/product/aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
       "permanent": true
     },
     {
       "source": "/product/aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
       "permanent": true
     },
     {
       "source": "/product/aws-5k-credits-10k-rpm-bedrock-enabled/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-5k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-5k-credits-10k-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/aws-5k-credits-10k-rpm-bedrock-enabled",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-5k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-5k-credits-10k-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/aws-5k-credits-10k-rpm-bedrock-enabled/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-5k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-5k-credits-10k-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/aws-10k-credits-10k-rpm-bedrock-enabled/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-10k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-10k-credits-10k-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/aws-10k-credits-10k-rpm-bedrock-enabled",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-10k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-10k-credits-10k-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/aws-10k-credits-10k-rpm-bedrock-enabled/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-10k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-10k-credits-10k-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/aws-25k-credits-10k-rpm-bedrock-enabled/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-25k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-25k-credits-10k-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/aws-25k-credits-10k-rpm-bedrock-enabled",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-25k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-25k-credits-10k-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/aws-25k-credits-10k-rpm-bedrock-enabled/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-25k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-25k-credits-10k-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/product/azure-free-trial-200-credits/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-free-trial-200-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-free-trial-200-credits/",
       "permanent": true
     },
     {
       "source": "/product/azure-free-trial-200-credits",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-free-trial-200-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-free-trial-200-credits/",
       "permanent": true
     },
     {
       "source": "/product/azure-free-trial-200-credits/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-free-trial-200-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-free-trial-200-credits/",
       "permanent": true
     },
     {
       "source": "/product/azure-pay-as-you-go/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-pay-as-you-go/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-pay-as-you-go/",
       "permanent": true
     },
     {
       "source": "/product/azure-pay-as-you-go",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-pay-as-you-go/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-pay-as-you-go/",
       "permanent": true
     },
     {
       "source": "/product/azure-pay-as-you-go/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-pay-as-you-go/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-pay-as-you-go/",
       "permanent": true
     },
     {
       "source": "/product/azure-5k-credits/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-5k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-5k-credits/",
       "permanent": true
     },
     {
       "source": "/product/azure-5k-credits",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-5k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-5k-credits/",
       "permanent": true
     },
     {
       "source": "/product/azure-5k-credits/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-5k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-5k-credits/",
       "permanent": true
     },
     {
       "source": "/product/azure-10k-credits-gpt-enabled/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-10k-credits-gpt-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-10k-credits-gpt-enabled/",
       "permanent": true
     },
     {
       "source": "/product/azure-10k-credits-gpt-enabled",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-10k-credits-gpt-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-10k-credits-gpt-enabled/",
       "permanent": true
     },
     {
       "source": "/product/azure-10k-credits-gpt-enabled/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-10k-credits-gpt-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-10k-credits-gpt-enabled/",
       "permanent": true
     },
     {
       "source": "/product/azure-5k-credits-gpt-6-astra-high-tpm-t5/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/",
       "permanent": true
     },
     {
       "source": "/product/azure-5k-credits-gpt-6-astra-high-tpm-t5",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/",
       "permanent": true
     },
     {
       "source": "/product/azure-5k-credits-gpt-6-astra-high-tpm-t5/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/",
       "permanent": true
     },
     {
       "source": "/product/azure-10k-credits-gpt-6-astra-high-tpm-t5/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/",
       "permanent": true
     },
     {
       "source": "/product/azure-10k-credits-gpt-6-astra-high-tpm-t5",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/",
       "permanent": true
     },
     {
       "source": "/product/azure-10k-credits-gpt-6-astra-high-tpm-t5/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/",
       "permanent": true
     },
     {
       "source": "/product/azure-25k-credits-gpt-6-astra-high-tpm-t5/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/",
       "permanent": true
     },
     {
       "source": "/product/azure-25k-credits-gpt-6-astra-high-tpm-t5",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/",
       "permanent": true
     },
     {
       "source": "/product/azure-25k-credits-gpt-6-astra-high-tpm-t5/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/",
       "permanent": true
     },
     {
       "source": "/product/azure-100k-credits-gpt-6-astra-high-tpm-t5/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/",
       "permanent": true
     },
     {
       "source": "/product/azure-100k-credits-gpt-6-astra-high-tpm-t5",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/",
       "permanent": true
     },
     {
       "source": "/product/azure-100k-credits-gpt-6-astra-high-tpm-t5/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-3-droplets-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-3-droplets-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-3-droplets-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-3-droplets-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-3-droplets-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-3-droplets-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-3-droplets-free-trial/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-3-droplets-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-3-droplets-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-10-droplets-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-10-droplets-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-10-droplets-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-10-droplets-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-10-droplets-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-10-droplets-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-10-droplets-free-trial/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-10-droplets-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-10-droplets-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-200-droplets-port-25-open/",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-200-droplets-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-200-droplets-port-25-open/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-200-droplets-port-25-open",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-200-droplets-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-200-droplets-port-25-open/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-200-droplets-port-25-open/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-200-droplets-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-200-droplets-port-25-open/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-500-droplets-port-25-open/",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-500-droplets-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-500-droplets-port-25-open/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-500-droplets-port-25-open",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-500-droplets-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-500-droplets-port-25-open/",
       "permanent": true
     },
     {
       "source": "/product/digitalocean-500-droplets-port-25-open/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-500-droplets-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-500-droplets-port-25-open/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-free-trial-300-credits/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-free-trial-300-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-free-trial-300-credits/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-free-trial-300-credits",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-free-trial-300-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-free-trial-300-credits/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-free-trial-300-credits/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-free-trial-300-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-free-trial-300-credits/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-300-credits-paid-account/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-300-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-300-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-300-credits-paid-account",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-300-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-300-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-300-credits-paid-account/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-300-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-300-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-2k-credits-paid-account/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-2k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-2k-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-2k-credits-paid-account",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-2k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-2k-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-2k-credits-paid-account/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-2k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-2k-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-5k-credits-paid-account/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-5k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-5k-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-5k-credits-paid-account",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-5k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-5k-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-5k-credits-paid-account/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-5k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-5k-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-10k-credits-paid-account/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-10k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-10k-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-10k-credits-paid-account",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-10k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-10k-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-10k-credits-paid-account/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-10k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-10k-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-25k-credits-paid-account/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-25k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-25k-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-25k-credits-paid-account",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-25k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-25k-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-25k-credits-paid-account/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-25k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-25k-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "permanent": true
     },
     {
       "source": "/product/google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-free-trial/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-port-limit-50-servers/",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-port-limit-50-servers/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-port-limit-50-servers/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-port-limit-50-servers",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-port-limit-50-servers/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-port-limit-50-servers/",
       "permanent": true
     },
     {
       "source": "/product/hetzner-port-limit-50-servers/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-port-limit-50-servers/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-port-limit-50-servers/",
       "permanent": true
     },
     {
       "source": "/product/kamatera-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/buy-kamatera-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-kamatera-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/kamatera-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/buy-kamatera-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-kamatera-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/kamatera-free-trial/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-kamatera-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-kamatera-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/kamatera-port-25-open/",
-      "destination": "https://www.buyawsaccountsai.com/buy-kamatera-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-kamatera-port-25-open/",
       "permanent": true
     },
     {
       "source": "/product/kamatera-port-25-open",
-      "destination": "https://www.buyawsaccountsai.com/buy-kamatera-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-kamatera-port-25-open/",
       "permanent": true
     },
     {
       "source": "/product/kamatera-port-25-open/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-kamatera-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-kamatera-port-25-open/",
       "permanent": true
     },
     {
       "source": "/product/linode-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/linode-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/linode-free-trial/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/linode-port-25-open-10-ips/",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-port-25-open-10-ips/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-port-25-open-10-ips/",
       "permanent": true
     },
     {
       "source": "/product/linode-port-25-open-10-ips",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-port-25-open-10-ips/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-port-25-open-10-ips/",
       "permanent": true
     },
     {
       "source": "/product/linode-port-25-open-10-ips/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-port-25-open-10-ips/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-port-25-open-10-ips/",
       "permanent": true
     },
     {
       "source": "/product/linode-port-25-open-50-ips/",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-port-25-open-50-ips/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-port-25-open-50-ips/",
       "permanent": true
     },
     {
       "source": "/product/linode-port-25-open-50-ips",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-port-25-open-50-ips/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-port-25-open-50-ips/",
       "permanent": true
     },
     {
       "source": "/product/linode-port-25-open-50-ips/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-port-25-open-50-ips/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-port-25-open-50-ips/",
       "permanent": true
     },
     {
       "source": "/product/oracle-cloud-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/oracle-cloud-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/oracle-cloud-free-trial/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/oracle-cloud-pay-as-you-go/",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-pay-as-you-go/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-pay-as-you-go/",
       "permanent": true
     },
     {
       "source": "/product/oracle-cloud-pay-as-you-go",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-pay-as-you-go/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-pay-as-you-go/",
       "permanent": true
     },
     {
       "source": "/product/oracle-cloud-pay-as-you-go/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-pay-as-you-go/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-pay-as-you-go/",
       "permanent": true
     },
     {
       "source": "/product/ovhcloud-free-trial-34-vcpu/",
-      "destination": "https://www.buyawsaccountsai.com/buy-ovhcloud-free-trial-34-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-ovhcloud-free-trial-34-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/ovhcloud-free-trial-34-vcpu",
-      "destination": "https://www.buyawsaccountsai.com/buy-ovhcloud-free-trial-34-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-ovhcloud-free-trial-34-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/ovhcloud-free-trial-34-vcpu/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-ovhcloud-free-trial-34-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-ovhcloud-free-trial-34-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/ovhcloud-paid-account-34-vcpu/",
-      "destination": "https://www.buyawsaccountsai.com/buy-ovhcloud-paid-account-34-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-ovhcloud-paid-account-34-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/ovhcloud-paid-account-34-vcpu",
-      "destination": "https://www.buyawsaccountsai.com/buy-ovhcloud-paid-account-34-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-ovhcloud-paid-account-34-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/ovhcloud-paid-account-34-vcpu/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-ovhcloud-paid-account-34-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-ovhcloud-paid-account-34-vcpu/",
       "permanent": true
     },
     {
       "source": "/product/amazon-ses-smtp-50k-daily-limit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit/",
       "permanent": true
     },
     {
       "source": "/product/amazon-ses-smtp-50k-daily-limit",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit/",
       "permanent": true
     },
     {
       "source": "/product/amazon-ses-smtp-50k-daily-limit/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit/",
       "permanent": true
     },
     {
       "source": "/product/amazon-ses-smtp-50k-daily-limit-3-regions/",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit-3-regions/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit-3-regions/",
       "permanent": true
     },
     {
       "source": "/product/amazon-ses-smtp-50k-daily-limit-3-regions",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit-3-regions/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit-3-regions/",
       "permanent": true
     },
     {
       "source": "/product/amazon-ses-smtp-50k-daily-limit-3-regions/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit-3-regions/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit-3-regions/",
       "permanent": true
     },
     {
       "source": "/product/amazon-ses-smtp-100k-daily-limit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-smtp-100k-daily-limit/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-smtp-100k-daily-limit/",
       "permanent": true
     },
     {
       "source": "/product/amazon-ses-smtp-100k-daily-limit",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-smtp-100k-daily-limit/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-smtp-100k-daily-limit/",
       "permanent": true
     },
     {
       "source": "/product/amazon-ses-smtp-100k-daily-limit/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-smtp-100k-daily-limit/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-smtp-100k-daily-limit/",
       "permanent": true
     },
     {
       "source": "/product/upcloud-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/buy-upcloud-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-upcloud-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/upcloud-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/buy-upcloud-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-upcloud-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/upcloud-free-trial/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-upcloud-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-upcloud-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/upcloud-paid-account/",
-      "destination": "https://www.buyawsaccountsai.com/buy-upcloud-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-upcloud-paid-account/",
       "permanent": true
     },
     {
       "source": "/product/upcloud-paid-account",
-      "destination": "https://www.buyawsaccountsai.com/buy-upcloud-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-upcloud-paid-account/",
       "permanent": true
     },
     {
       "source": "/product/upcloud-paid-account/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-upcloud-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-upcloud-paid-account/",
       "permanent": true
     },
     {
       "source": "/product/ibm-cloud-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/ibm-cloud-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/ibm-cloud-free-trial/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-free-trial/",
       "permanent": true
     },
     {
       "source": "/product/ibm-cloud-pay-as-you-go/",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-pay-as-you-go/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-pay-as-you-go/",
       "permanent": true
     },
     {
       "source": "/product/ibm-cloud-pay-as-you-go",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-pay-as-you-go/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-pay-as-you-go/",
       "permanent": true
     },
     {
       "source": "/product/ibm-cloud-pay-as-you-go/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-pay-as-you-go/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-pay-as-you-go/",
       "permanent": true
     },
     {
       "source": "/product/ibm-cloud-port-25-open/",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-port-25-open/",
       "permanent": true
     },
     {
       "source": "/product/ibm-cloud-port-25-open",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-port-25-open/",
       "permanent": true
     },
     {
       "source": "/product/ibm-cloud-port-25-open/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-port-25-open/",
       "permanent": true
     },
     {
       "source": "/product/heroku-free-trial-port-25-open/",
-      "destination": "https://www.buyawsaccountsai.com/buy-heroku-free-trial-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-heroku-free-trial-port-25-open/",
       "permanent": true
     },
     {
       "source": "/product/heroku-free-trial-port-25-open",
-      "destination": "https://www.buyawsaccountsai.com/buy-heroku-free-trial-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-heroku-free-trial-port-25-open/",
       "permanent": true
     },
     {
       "source": "/product/heroku-free-trial-port-25-open/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-heroku-free-trial-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-heroku-free-trial-port-25-open/",
       "permanent": true
     },
     {
       "source": "/product/heroku-port-25-open/",
-      "destination": "https://www.buyawsaccountsai.com/buy-heroku-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-heroku-port-25-open/",
       "permanent": true
     },
     {
       "source": "/product/heroku-port-25-open",
-      "destination": "https://www.buyawsaccountsai.com/buy-heroku-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-heroku-port-25-open/",
       "permanent": true
     },
     {
       "source": "/product/heroku-port-25-open/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-heroku-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-heroku-port-25-open/",
       "permanent": true
     },
     {
       "source": "/product/vultr-200-credits/",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-200-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-200-credits/",
       "permanent": true
     },
     {
       "source": "/product/vultr-200-credits",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-200-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-200-credits/",
       "permanent": true
     },
     {
       "source": "/product/vultr-200-credits/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-200-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-200-credits/",
       "permanent": true
     },
     {
       "source": "/product/vultr-250-credits/",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-250-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-250-credits/",
       "permanent": true
     },
     {
       "source": "/product/vultr-250-credits",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-250-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-250-credits/",
       "permanent": true
     },
     {
       "source": "/product/vultr-250-credits/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-250-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-250-credits/",
       "permanent": true
     },
     {
       "source": "/product/vultr-95-credits/",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-95-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-95-credits/",
       "permanent": true
     },
     {
       "source": "/product/vultr-95-credits",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-95-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-95-credits/",
       "permanent": true
     },
     {
       "source": "/product/vultr-95-credits/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-95-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-95-credits/",
       "permanent": true
     },
     {
       "source": "/cart",
-      "destination": "https://www.buyawsaccountsai.com/cart/",
+      "destination": "https://buyawsaccountsai.com/cart/",
       "permanent": true
     },
     {
       "source": "/cart/index.html",
-      "destination": "https://www.buyawsaccountsai.com/cart/",
+      "destination": "https://buyawsaccountsai.com/cart/",
       "permanent": true
     },
     {
       "source": "/checkout",
-      "destination": "https://www.buyawsaccountsai.com/checkout/",
+      "destination": "https://buyawsaccountsai.com/checkout/",
       "permanent": true
     },
     {
       "source": "/checkout/index.html",
-      "destination": "https://www.buyawsaccountsai.com/checkout/",
+      "destination": "https://buyawsaccountsai.com/checkout/",
       "permanent": true
     },
     {
       "source": "/marketplace",
-      "destination": "https://www.buyawsaccountsai.com/marketplace/",
+      "destination": "https://buyawsaccountsai.com/marketplace/",
       "permanent": true
     },
     {
       "source": "/marketplace/index.html",
-      "destination": "https://www.buyawsaccountsai.com/marketplace/",
+      "destination": "https://buyawsaccountsai.com/marketplace/",
       "permanent": true
     },
     {
       "source": "/cloud-platforms",
-      "destination": "https://www.buyawsaccountsai.com/cloud-platforms/",
+      "destination": "https://buyawsaccountsai.com/cloud-platforms/",
       "permanent": true
     },
     {
       "source": "/cloud-platforms/index.html",
-      "destination": "https://www.buyawsaccountsai.com/cloud-platforms/",
+      "destination": "https://buyawsaccountsai.com/cloud-platforms/",
       "permanent": true
     },
     {
       "source": "/compare-products",
-      "destination": "https://www.buyawsaccountsai.com/compare-products/",
+      "destination": "https://buyawsaccountsai.com/compare-products/",
       "permanent": true
     },
     {
       "source": "/compare-products/index.html",
-      "destination": "https://www.buyawsaccountsai.com/compare-products/",
+      "destination": "https://buyawsaccountsai.com/compare-products/",
       "permanent": true
     },
     {
       "source": "/buying-guides",
-      "destination": "https://www.buyawsaccountsai.com/buying-guides/",
+      "destination": "https://buyawsaccountsai.com/buying-guides/",
       "permanent": true
     },
     {
       "source": "/buying-guides/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buying-guides/",
+      "destination": "https://buyawsaccountsai.com/buying-guides/",
       "permanent": true
     },
     {
       "source": "/help-center",
-      "destination": "https://www.buyawsaccountsai.com/help-center/",
+      "destination": "https://buyawsaccountsai.com/help-center/",
       "permanent": true
     },
     {
       "source": "/help-center/index.html",
-      "destination": "https://www.buyawsaccountsai.com/help-center/",
+      "destination": "https://buyawsaccountsai.com/help-center/",
       "permanent": true
     },
     {
       "source": "/contact-sales",
-      "destination": "https://www.buyawsaccountsai.com/contact-sales/",
+      "destination": "https://buyawsaccountsai.com/contact-sales/",
       "permanent": true
     },
     {
       "source": "/contact-sales/index.html",
-      "destination": "https://www.buyawsaccountsai.com/contact-sales/",
+      "destination": "https://buyawsaccountsai.com/contact-sales/",
       "permanent": true
     },
     {
       "source": "/seller-profile",
-      "destination": "https://www.buyawsaccountsai.com/seller-profile/",
+      "destination": "https://buyawsaccountsai.com/seller-profile/",
       "permanent": true
     },
     {
       "source": "/seller-profile/index.html",
-      "destination": "https://www.buyawsaccountsai.com/seller-profile/",
+      "destination": "https://buyawsaccountsai.com/seller-profile/",
       "permanent": true
     },
     {
       "source": "/verification/public-proof",
-      "destination": "https://www.buyawsaccountsai.com/verification/public-proof/",
+      "destination": "https://buyawsaccountsai.com/verification/public-proof/",
       "permanent": true
     },
     {
       "source": "/verification/public-proof/index.html",
-      "destination": "https://www.buyawsaccountsai.com/verification/public-proof/",
+      "destination": "https://buyawsaccountsai.com/verification/public-proof/",
       "permanent": true
     },
     {
       "source": "/buying-guides/how-to-choose-a-cloud-account-for-your-project",
-      "destination": "https://www.buyawsaccountsai.com/buying-guides/how-to-choose-a-cloud-account-for-your-project/",
+      "destination": "https://buyawsaccountsai.com/buying-guides/how-to-choose-a-cloud-account-for-your-project/",
       "permanent": true
     },
     {
       "source": "/buying-guides/how-to-choose-a-cloud-account-for-your-project/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buying-guides/how-to-choose-a-cloud-account-for-your-project/",
+      "destination": "https://buyawsaccountsai.com/buying-guides/how-to-choose-a-cloud-account-for-your-project/",
       "permanent": true
     },
     {
       "source": "/buying-guides/buying-cloud-credits-value-eligibility-and-expiry",
-      "destination": "https://www.buyawsaccountsai.com/buying-guides/buying-cloud-credits-value-eligibility-and-expiry/",
+      "destination": "https://buyawsaccountsai.com/buying-guides/buying-cloud-credits-value-eligibility-and-expiry/",
       "permanent": true
     },
     {
       "source": "/buying-guides/buying-cloud-credits-value-eligibility-and-expiry/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buying-guides/buying-cloud-credits-value-eligibility-and-expiry/",
+      "destination": "https://buyawsaccountsai.com/buying-guides/buying-cloud-credits-value-eligibility-and-expiry/",
       "permanent": true
     },
     {
       "source": "/buying-guides/your-cloud-account-delivery-and-security-checklist",
-      "destination": "https://www.buyawsaccountsai.com/buying-guides/your-cloud-account-delivery-and-security-checklist/",
+      "destination": "https://buyawsaccountsai.com/buying-guides/your-cloud-account-delivery-and-security-checklist/",
       "permanent": true
     },
     {
       "source": "/buying-guides/your-cloud-account-delivery-and-security-checklist/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buying-guides/your-cloud-account-delivery-and-security-checklist/",
+      "destination": "https://buyawsaccountsai.com/buying-guides/your-cloud-account-delivery-and-security-checklist/",
       "permanent": true
     },
     {
       "source": "/buy-aws-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-aws-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-azure-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-azure-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-digitalocean-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-digitalocean-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-hetzner-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-hetzner-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-kamatera-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-kamatera-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-kamatera-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-kamatera-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-kamatera-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-kamatera-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-linode-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-linode-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-oracle-cloud-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-oracle-cloud-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-ovhcloud-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-ovhcloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-ovhcloud-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-ovhcloud-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-ovhcloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-ovhcloud-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-amazon-ses-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-amazon-ses-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-upcloud-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-upcloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-upcloud-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-upcloud-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-upcloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-upcloud-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-ibm-cloud-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-ibm-cloud-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-heroku-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-heroku-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-heroku-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-heroku-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-heroku-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-heroku-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-vultr-accounts",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-vultr-accounts/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-accounts/",
       "permanent": true
     },
     {
       "source": "/buy-aws-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-free-trial/",
       "permanent": true
     },
     {
       "source": "/buy-aws-free-trial/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-free-trial/",
       "permanent": true
     },
     {
       "source": "/buy-aws-8-vcpu",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-8-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-8-vcpu/",
       "permanent": true
     },
     {
       "source": "/buy-aws-8-vcpu/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-8-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-8-vcpu/",
       "permanent": true
     },
     {
       "source": "/buy-aws-32-vcpu",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-32-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-32-vcpu/",
       "permanent": true
     },
     {
       "source": "/buy-aws-32-vcpu/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-32-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-32-vcpu/",
       "permanent": true
     },
     {
       "source": "/buy-aws-64-vcpu",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-64-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-64-vcpu/",
       "permanent": true
     },
     {
       "source": "/buy-aws-64-vcpu/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-64-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-64-vcpu/",
       "permanent": true
     },
     {
       "source": "/buy-aws-128-vcpu",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-128-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-128-vcpu/",
       "permanent": true
     },
     {
       "source": "/buy-aws-128-vcpu/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-128-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-128-vcpu/",
       "permanent": true
     },
     {
       "source": "/buy-aws-256-vcpu",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-256-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-256-vcpu/",
       "permanent": true
     },
     {
       "source": "/buy-aws-256-vcpu/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-256-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-256-vcpu/",
       "permanent": true
     },
     {
       "source": "/buy-aws-512-vcpu",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-512-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-512-vcpu/",
       "permanent": true
     },
     {
       "source": "/buy-aws-512-vcpu/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-512-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-512-vcpu/",
       "permanent": true
     },
     {
       "source": "/buy-aws-640-vcpu",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-640-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-640-vcpu/",
       "permanent": true
     },
     {
       "source": "/buy-aws-640-vcpu/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-640-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-640-vcpu/",
       "permanent": true
     },
     {
       "source": "/buy-aws-1920-vcpu",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-1920-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-1920-vcpu/",
       "permanent": true
     },
     {
       "source": "/buy-aws-1920-vcpu/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-1920-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-1920-vcpu/",
       "permanent": true
     },
     {
       "source": "/buy-aws-5k-credits",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-5k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-5k-credits/",
       "permanent": true
     },
     {
       "source": "/buy-aws-5k-credits/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-5k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-5k-credits/",
       "permanent": true
     },
     {
       "source": "/buy-aws-10k-credits",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-10k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-10k-credits/",
       "permanent": true
     },
     {
       "source": "/buy-aws-10k-credits/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-10k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-10k-credits/",
       "permanent": true
     },
     {
       "source": "/buy-aws-25k-credits",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-25k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-25k-credits/",
       "permanent": true
     },
     {
       "source": "/buy-aws-25k-credits/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-25k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-25k-credits/",
       "permanent": true
     },
     {
       "source": "/buy-aws-100k-credits",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-100k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-100k-credits/",
       "permanent": true
     },
     {
       "source": "/buy-aws-100k-credits/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-100k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-100k-credits/",
       "permanent": true
     },
     {
       "source": "/buy-aws-32-vcpu-10-rpm-bedrock-enabled",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-32-vcpu-10-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-32-vcpu-10-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/buy-aws-32-vcpu-10-rpm-bedrock-enabled/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-32-vcpu-10-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-32-vcpu-10-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/buy-aws-32-vcpu-50-rpm-bedrock-enabled",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-32-vcpu-50-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-32-vcpu-50-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/buy-aws-32-vcpu-50-rpm-bedrock-enabled/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-32-vcpu-50-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-32-vcpu-50-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/buy-aws-256-vcpu-10k-rpm-bedrock-enabled",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
       "permanent": true
     },
     {
       "source": "/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
       "permanent": true
     },
     {
       "source": "/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
       "permanent": true
     },
     {
       "source": "/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
       "permanent": true
     },
     {
       "source": "/buy-aws-5k-credits-10k-rpm-bedrock-enabled",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-5k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-5k-credits-10k-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/buy-aws-5k-credits-10k-rpm-bedrock-enabled/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-5k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-5k-credits-10k-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/buy-aws-10k-credits-10k-rpm-bedrock-enabled",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-10k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-10k-credits-10k-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/buy-aws-10k-credits-10k-rpm-bedrock-enabled/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-10k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-10k-credits-10k-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/buy-aws-25k-credits-10k-rpm-bedrock-enabled",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-25k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-25k-credits-10k-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/buy-aws-25k-credits-10k-rpm-bedrock-enabled/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-25k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-25k-credits-10k-rpm-bedrock-enabled/",
       "permanent": true
     },
     {
       "source": "/buy-azure-free-trial-200-credits",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-free-trial-200-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-free-trial-200-credits/",
       "permanent": true
     },
     {
       "source": "/buy-azure-free-trial-200-credits/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-free-trial-200-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-free-trial-200-credits/",
       "permanent": true
     },
     {
       "source": "/buy-azure-pay-as-you-go",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-pay-as-you-go/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-pay-as-you-go/",
       "permanent": true
     },
     {
       "source": "/buy-azure-pay-as-you-go/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-pay-as-you-go/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-pay-as-you-go/",
       "permanent": true
     },
     {
       "source": "/buy-azure-5k-credits",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-5k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-5k-credits/",
       "permanent": true
     },
     {
       "source": "/buy-azure-5k-credits/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-5k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-5k-credits/",
       "permanent": true
     },
     {
       "source": "/buy-azure-10k-credits-gpt-enabled",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-10k-credits-gpt-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-10k-credits-gpt-enabled/",
       "permanent": true
     },
     {
       "source": "/buy-azure-10k-credits-gpt-enabled/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-10k-credits-gpt-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-10k-credits-gpt-enabled/",
       "permanent": true
     },
     {
       "source": "/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/",
       "permanent": true
     },
     {
       "source": "/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/",
       "permanent": true
     },
     {
       "source": "/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/",
       "permanent": true
     },
     {
       "source": "/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/",
       "permanent": true
     },
     {
       "source": "/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/",
       "permanent": true
     },
     {
       "source": "/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/",
       "permanent": true
     },
     {
       "source": "/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/",
       "permanent": true
     },
     {
       "source": "/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/",
       "permanent": true
     },
     {
       "source": "/buy-digitalocean-3-droplets-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-3-droplets-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-3-droplets-free-trial/",
       "permanent": true
     },
     {
       "source": "/buy-digitalocean-3-droplets-free-trial/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-3-droplets-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-3-droplets-free-trial/",
       "permanent": true
     },
     {
       "source": "/buy-digitalocean-10-droplets-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-10-droplets-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-10-droplets-free-trial/",
       "permanent": true
     },
     {
       "source": "/buy-digitalocean-10-droplets-free-trial/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-10-droplets-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-10-droplets-free-trial/",
       "permanent": true
     },
     {
       "source": "/buy-digitalocean-200-droplets-port-25-open",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-200-droplets-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-200-droplets-port-25-open/",
       "permanent": true
     },
     {
       "source": "/buy-digitalocean-200-droplets-port-25-open/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-200-droplets-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-200-droplets-port-25-open/",
       "permanent": true
     },
     {
       "source": "/buy-digitalocean-500-droplets-port-25-open",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-500-droplets-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-500-droplets-port-25-open/",
       "permanent": true
     },
     {
       "source": "/buy-digitalocean-500-droplets-port-25-open/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-500-droplets-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-500-droplets-port-25-open/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-free-trial-300-credits",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-free-trial-300-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-free-trial-300-credits/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-free-trial-300-credits/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-free-trial-300-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-free-trial-300-credits/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-300-credits-paid-account",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-300-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-300-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-300-credits-paid-account/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-300-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-300-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-2k-credits-paid-account",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-2k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-2k-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-2k-credits-paid-account/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-2k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-2k-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-5k-credits-paid-account",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-5k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-5k-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-5k-credits-paid-account/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-5k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-5k-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-10k-credits-paid-account",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-10k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-10k-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-10k-credits-paid-account/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-10k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-10k-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-25k-credits-paid-account",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-25k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-25k-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-25k-credits-paid-account/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-25k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-25k-credits-paid-account/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "permanent": true
     },
     {
       "source": "/buy-hetzner-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-free-trial/",
       "permanent": true
     },
     {
       "source": "/buy-hetzner-free-trial/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-free-trial/",
       "permanent": true
     },
     {
       "source": "/buy-hetzner-port-limit-50-servers",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-port-limit-50-servers/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-port-limit-50-servers/",
       "permanent": true
     },
     {
       "source": "/buy-hetzner-port-limit-50-servers/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-port-limit-50-servers/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-port-limit-50-servers/",
       "permanent": true
     },
     {
       "source": "/buy-kamatera-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/buy-kamatera-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-kamatera-free-trial/",
       "permanent": true
     },
     {
       "source": "/buy-kamatera-free-trial/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-kamatera-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-kamatera-free-trial/",
       "permanent": true
     },
     {
       "source": "/buy-kamatera-port-25-open",
-      "destination": "https://www.buyawsaccountsai.com/buy-kamatera-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-kamatera-port-25-open/",
       "permanent": true
     },
     {
       "source": "/buy-kamatera-port-25-open/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-kamatera-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-kamatera-port-25-open/",
       "permanent": true
     },
     {
       "source": "/buy-linode-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-free-trial/",
       "permanent": true
     },
     {
       "source": "/buy-linode-free-trial/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-free-trial/",
       "permanent": true
     },
     {
       "source": "/buy-linode-port-25-open-10-ips",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-port-25-open-10-ips/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-port-25-open-10-ips/",
       "permanent": true
     },
     {
       "source": "/buy-linode-port-25-open-10-ips/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-port-25-open-10-ips/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-port-25-open-10-ips/",
       "permanent": true
     },
     {
       "source": "/buy-linode-port-25-open-50-ips",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-port-25-open-50-ips/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-port-25-open-50-ips/",
       "permanent": true
     },
     {
       "source": "/buy-linode-port-25-open-50-ips/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-port-25-open-50-ips/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-port-25-open-50-ips/",
       "permanent": true
     },
     {
       "source": "/buy-oracle-cloud-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-free-trial/",
       "permanent": true
     },
     {
       "source": "/buy-oracle-cloud-free-trial/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-free-trial/",
       "permanent": true
     },
     {
       "source": "/buy-oracle-cloud-pay-as-you-go",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-pay-as-you-go/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-pay-as-you-go/",
       "permanent": true
     },
     {
       "source": "/buy-oracle-cloud-pay-as-you-go/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-pay-as-you-go/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-pay-as-you-go/",
       "permanent": true
     },
     {
       "source": "/buy-ovhcloud-free-trial-34-vcpu",
-      "destination": "https://www.buyawsaccountsai.com/buy-ovhcloud-free-trial-34-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-ovhcloud-free-trial-34-vcpu/",
       "permanent": true
     },
     {
       "source": "/buy-ovhcloud-free-trial-34-vcpu/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-ovhcloud-free-trial-34-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-ovhcloud-free-trial-34-vcpu/",
       "permanent": true
     },
     {
       "source": "/buy-ovhcloud-paid-account-34-vcpu",
-      "destination": "https://www.buyawsaccountsai.com/buy-ovhcloud-paid-account-34-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-ovhcloud-paid-account-34-vcpu/",
       "permanent": true
     },
     {
       "source": "/buy-ovhcloud-paid-account-34-vcpu/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-ovhcloud-paid-account-34-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-ovhcloud-paid-account-34-vcpu/",
       "permanent": true
     },
     {
       "source": "/buy-amazon-ses-smtp-50k-daily-limit",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit/",
       "permanent": true
     },
     {
       "source": "/buy-amazon-ses-smtp-50k-daily-limit/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit/",
       "permanent": true
     },
     {
       "source": "/buy-amazon-ses-smtp-50k-daily-limit-3-regions",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit-3-regions/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit-3-regions/",
       "permanent": true
     },
     {
       "source": "/buy-amazon-ses-smtp-50k-daily-limit-3-regions/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit-3-regions/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit-3-regions/",
       "permanent": true
     },
     {
       "source": "/buy-amazon-ses-smtp-100k-daily-limit",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-smtp-100k-daily-limit/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-smtp-100k-daily-limit/",
       "permanent": true
     },
     {
       "source": "/buy-amazon-ses-smtp-100k-daily-limit/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-smtp-100k-daily-limit/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-smtp-100k-daily-limit/",
       "permanent": true
     },
     {
       "source": "/buy-upcloud-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/buy-upcloud-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-upcloud-free-trial/",
       "permanent": true
     },
     {
       "source": "/buy-upcloud-free-trial/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-upcloud-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-upcloud-free-trial/",
       "permanent": true
     },
     {
       "source": "/buy-upcloud-paid-account",
-      "destination": "https://www.buyawsaccountsai.com/buy-upcloud-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-upcloud-paid-account/",
       "permanent": true
     },
     {
       "source": "/buy-upcloud-paid-account/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-upcloud-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-upcloud-paid-account/",
       "permanent": true
     },
     {
       "source": "/buy-ibm-cloud-free-trial",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-free-trial/",
       "permanent": true
     },
     {
       "source": "/buy-ibm-cloud-free-trial/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-free-trial/",
       "permanent": true
     },
     {
       "source": "/buy-ibm-cloud-pay-as-you-go",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-pay-as-you-go/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-pay-as-you-go/",
       "permanent": true
     },
     {
       "source": "/buy-ibm-cloud-pay-as-you-go/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-pay-as-you-go/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-pay-as-you-go/",
       "permanent": true
     },
     {
       "source": "/buy-ibm-cloud-port-25-open",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-port-25-open/",
       "permanent": true
     },
     {
       "source": "/buy-ibm-cloud-port-25-open/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-port-25-open/",
       "permanent": true
     },
     {
       "source": "/buy-heroku-free-trial-port-25-open",
-      "destination": "https://www.buyawsaccountsai.com/buy-heroku-free-trial-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-heroku-free-trial-port-25-open/",
       "permanent": true
     },
     {
       "source": "/buy-heroku-free-trial-port-25-open/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-heroku-free-trial-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-heroku-free-trial-port-25-open/",
       "permanent": true
     },
     {
       "source": "/buy-heroku-port-25-open",
-      "destination": "https://www.buyawsaccountsai.com/buy-heroku-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-heroku-port-25-open/",
       "permanent": true
     },
     {
       "source": "/buy-heroku-port-25-open/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-heroku-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-heroku-port-25-open/",
       "permanent": true
     },
     {
       "source": "/buy-vultr-200-credits",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-200-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-200-credits/",
       "permanent": true
     },
     {
       "source": "/buy-vultr-200-credits/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-200-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-200-credits/",
       "permanent": true
     },
     {
       "source": "/buy-vultr-250-credits",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-250-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-250-credits/",
       "permanent": true
     },
     {
       "source": "/buy-vultr-250-credits/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-250-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-250-credits/",
       "permanent": true
     },
     {
       "source": "/buy-vultr-95-credits",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-95-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-95-credits/",
       "permanent": true
     },
     {
       "source": "/buy-vultr-95-credits/index.html",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-95-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-95-credits/",
       "permanent": true
     },
     {
       "source": "/index.html",
-      "destination": "https://www.buyawsaccountsai.com/",
+      "destination": "https://buyawsaccountsai.com/",
       "permanent": true
     },
     {
       "source": "/",
-      "destination": "https://www.buyawsaccountsai.com/",
+      "destination": "https://buyawsaccountsai.com/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/cart/",
-      "destination": "https://www.buyawsaccountsai.com/cart/",
+      "destination": "https://buyawsaccountsai.com/cart/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/checkout/",
-      "destination": "https://www.buyawsaccountsai.com/checkout/",
+      "destination": "https://buyawsaccountsai.com/checkout/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/marketplace/",
-      "destination": "https://www.buyawsaccountsai.com/marketplace/",
+      "destination": "https://buyawsaccountsai.com/marketplace/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/cloud-platforms/",
-      "destination": "https://www.buyawsaccountsai.com/cloud-platforms/",
+      "destination": "https://buyawsaccountsai.com/cloud-platforms/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/compare-products/",
-      "destination": "https://www.buyawsaccountsai.com/compare-products/",
+      "destination": "https://buyawsaccountsai.com/compare-products/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buying-guides/",
-      "destination": "https://www.buyawsaccountsai.com/buying-guides/",
+      "destination": "https://buyawsaccountsai.com/buying-guides/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/help-center/",
-      "destination": "https://www.buyawsaccountsai.com/help-center/",
+      "destination": "https://buyawsaccountsai.com/help-center/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/contact-sales/",
-      "destination": "https://www.buyawsaccountsai.com/contact-sales/",
+      "destination": "https://buyawsaccountsai.com/contact-sales/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/seller-profile/",
-      "destination": "https://www.buyawsaccountsai.com/seller-profile/",
+      "destination": "https://buyawsaccountsai.com/seller-profile/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/verification/public-proof/",
-      "destination": "https://www.buyawsaccountsai.com/verification/public-proof/",
+      "destination": "https://buyawsaccountsai.com/verification/public-proof/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buying-guides/how-to-choose-a-cloud-account-for-your-project/",
-      "destination": "https://www.buyawsaccountsai.com/buying-guides/how-to-choose-a-cloud-account-for-your-project/",
+      "destination": "https://buyawsaccountsai.com/buying-guides/how-to-choose-a-cloud-account-for-your-project/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buying-guides/buying-cloud-credits-value-eligibility-and-expiry/",
-      "destination": "https://www.buyawsaccountsai.com/buying-guides/buying-cloud-credits-value-eligibility-and-expiry/",
+      "destination": "https://buyawsaccountsai.com/buying-guides/buying-cloud-credits-value-eligibility-and-expiry/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buying-guides/your-cloud-account-delivery-and-security-checklist/",
-      "destination": "https://www.buyawsaccountsai.com/buying-guides/your-cloud-account-delivery-and-security-checklist/",
+      "destination": "https://buyawsaccountsai.com/buying-guides/your-cloud-account-delivery-and-security-checklist/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-accounts/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-azure-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-accounts/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-digitalocean-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-accounts/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-accounts/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-hetzner-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-accounts/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-kamatera-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-kamatera-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-kamatera-accounts/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-linode-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-accounts/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-oracle-cloud-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-accounts/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-ovhcloud-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-ovhcloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-ovhcloud-accounts/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-amazon-ses-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-accounts/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-upcloud-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-upcloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-upcloud-accounts/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-ibm-cloud-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-accounts/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-heroku-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-heroku-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-heroku-accounts/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-vultr-accounts/",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-accounts/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-accounts/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-free-trial/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-8-vcpu/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-8-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-8-vcpu/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-32-vcpu/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-32-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-32-vcpu/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-64-vcpu/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-64-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-64-vcpu/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-128-vcpu/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-128-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-128-vcpu/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-256-vcpu/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-256-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-256-vcpu/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-512-vcpu/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-512-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-512-vcpu/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-640-vcpu/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-640-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-640-vcpu/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-1920-vcpu/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-1920-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-1920-vcpu/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-5k-credits/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-5k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-5k-credits/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-10k-credits/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-10k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-10k-credits/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-25k-credits/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-25k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-25k-credits/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-100k-credits/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-100k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-100k-credits/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-32-vcpu-10-rpm-bedrock-enabled/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-32-vcpu-10-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-32-vcpu-10-rpm-bedrock-enabled/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-32-vcpu-50-rpm-bedrock-enabled/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-32-vcpu-50-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-32-vcpu-50-rpm-bedrock-enabled/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-5k-credits-10k-rpm-bedrock-enabled/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-5k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-5k-credits-10k-rpm-bedrock-enabled/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-10k-credits-10k-rpm-bedrock-enabled/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-10k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-10k-credits-10k-rpm-bedrock-enabled/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-aws-25k-credits-10k-rpm-bedrock-enabled/",
-      "destination": "https://www.buyawsaccountsai.com/buy-aws-25k-credits-10k-rpm-bedrock-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-aws-25k-credits-10k-rpm-bedrock-enabled/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-azure-free-trial-200-credits/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-free-trial-200-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-free-trial-200-credits/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-azure-pay-as-you-go/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-pay-as-you-go/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-pay-as-you-go/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-azure-5k-credits/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-5k-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-5k-credits/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-azure-10k-credits-gpt-enabled/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-10k-credits-gpt-enabled/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-10k-credits-gpt-enabled/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/",
-      "destination": "https://www.buyawsaccountsai.com/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/",
+      "destination": "https://buyawsaccountsai.com/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-digitalocean-3-droplets-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-3-droplets-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-3-droplets-free-trial/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-digitalocean-10-droplets-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-10-droplets-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-10-droplets-free-trial/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-digitalocean-200-droplets-port-25-open/",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-200-droplets-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-200-droplets-port-25-open/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-digitalocean-500-droplets-port-25-open/",
-      "destination": "https://www.buyawsaccountsai.com/buy-digitalocean-500-droplets-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-digitalocean-500-droplets-port-25-open/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-free-trial-300-credits/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-free-trial-300-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-free-trial-300-credits/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-300-credits-paid-account/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-300-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-300-credits-paid-account/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-2k-credits-paid-account/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-2k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-2k-credits-paid-account/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-5k-credits-paid-account/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-5k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-5k-credits-paid-account/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-10k-credits-paid-account/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-10k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-10k-credits-paid-account/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-25k-credits-paid-account/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-25k-credits-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-25k-credits-paid-account/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
-      "destination": "https://www.buyawsaccountsai.com/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "destination": "https://buyawsaccountsai.com/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-hetzner-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-free-trial/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-hetzner-port-limit-50-servers/",
-      "destination": "https://www.buyawsaccountsai.com/buy-hetzner-port-limit-50-servers/",
+      "destination": "https://buyawsaccountsai.com/buy-hetzner-port-limit-50-servers/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-kamatera-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/buy-kamatera-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-kamatera-free-trial/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-kamatera-port-25-open/",
-      "destination": "https://www.buyawsaccountsai.com/buy-kamatera-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-kamatera-port-25-open/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-linode-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-free-trial/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-linode-port-25-open-10-ips/",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-port-25-open-10-ips/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-port-25-open-10-ips/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-linode-port-25-open-50-ips/",
-      "destination": "https://www.buyawsaccountsai.com/buy-linode-port-25-open-50-ips/",
+      "destination": "https://buyawsaccountsai.com/buy-linode-port-25-open-50-ips/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-oracle-cloud-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-free-trial/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-oracle-cloud-pay-as-you-go/",
-      "destination": "https://www.buyawsaccountsai.com/buy-oracle-cloud-pay-as-you-go/",
+      "destination": "https://buyawsaccountsai.com/buy-oracle-cloud-pay-as-you-go/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-ovhcloud-free-trial-34-vcpu/",
-      "destination": "https://www.buyawsaccountsai.com/buy-ovhcloud-free-trial-34-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-ovhcloud-free-trial-34-vcpu/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-ovhcloud-paid-account-34-vcpu/",
-      "destination": "https://www.buyawsaccountsai.com/buy-ovhcloud-paid-account-34-vcpu/",
+      "destination": "https://buyawsaccountsai.com/buy-ovhcloud-paid-account-34-vcpu/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-amazon-ses-smtp-50k-daily-limit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-amazon-ses-smtp-50k-daily-limit-3-regions/",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit-3-regions/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-smtp-50k-daily-limit-3-regions/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-amazon-ses-smtp-100k-daily-limit/",
-      "destination": "https://www.buyawsaccountsai.com/buy-amazon-ses-smtp-100k-daily-limit/",
+      "destination": "https://buyawsaccountsai.com/buy-amazon-ses-smtp-100k-daily-limit/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-upcloud-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/buy-upcloud-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-upcloud-free-trial/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-upcloud-paid-account/",
-      "destination": "https://www.buyawsaccountsai.com/buy-upcloud-paid-account/",
+      "destination": "https://buyawsaccountsai.com/buy-upcloud-paid-account/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-ibm-cloud-free-trial/",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-free-trial/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-free-trial/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-ibm-cloud-pay-as-you-go/",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-pay-as-you-go/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-pay-as-you-go/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-ibm-cloud-port-25-open/",
-      "destination": "https://www.buyawsaccountsai.com/buy-ibm-cloud-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-ibm-cloud-port-25-open/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-heroku-free-trial-port-25-open/",
-      "destination": "https://www.buyawsaccountsai.com/buy-heroku-free-trial-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-heroku-free-trial-port-25-open/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-heroku-port-25-open/",
-      "destination": "https://www.buyawsaccountsai.com/buy-heroku-port-25-open/",
+      "destination": "https://buyawsaccountsai.com/buy-heroku-port-25-open/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-vultr-200-credits/",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-200-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-200-credits/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-vultr-250-credits/",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-250-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-250-credits/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/buy-vultr-95-credits/",
-      "destination": "https://www.buyawsaccountsai.com/buy-vultr-95-credits/",
+      "destination": "https://buyawsaccountsai.com/buy-vultr-95-credits/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/:path*/",
-      "destination": "https://www.buyawsaccountsai.com/:path*/",
+      "destination": "https://buyawsaccountsai.com/:path*/",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true
     },
     {
       "source": "/:path*",
-      "destination": "https://www.buyawsaccountsai.com/:path*",
+      "destination": "https://buyawsaccountsai.com/:path*",
       "has": [
         {
           "type": "host",
-          "value": "buyawsaccountsai.com"
+          "value": "www.buyawsaccountsai.com"
         }
       ],
       "permanent": true

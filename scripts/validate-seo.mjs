@@ -20,6 +20,15 @@ const pages = [
   { id: "products", path: "/" },
   ...routeIds.map((id) => ({ id, path: routePath(id) })),
 ];
+// Scan deployable text artifacts, not archived test evidence or legacy host rules.
+let domainArtifactsChecked = 0;
+for (const entry of await fs.readdir("dist", { recursive: true, withFileTypes: true })) {
+  if (!entry.isFile() || !/\.(html|js|xml|txt|json|svg)$/.test(entry.name)) continue;
+  const file = (entry.parentPath || entry.path) + "/" + entry.name;
+  const content = await fs.readFile(file, "utf8");
+  assert(!content.toLowerCase().includes("www." + new URL("https://buyawsaccountsai.com").hostname), file + " legacy WWW reference in deployable artifact");
+  domainArtifactsChecked++;
+}
 const titles = new Set(),
   descriptions = new Set(),
   images = new Set();
@@ -69,7 +78,7 @@ assert.equal(
 assert.equal(new Set(urls).size, urls.length);
 assert(!xml.includes("<lastmod>"));
 for (const url of urls) {
-  assert.equal(new URL(url).origin, "https://www.buyawsaccountsai.com");
+  assert.equal(new URL(url).origin, "https://buyawsaccountsai.com");
   assert(pages.some((p) => p.path === new URL(url).pathname));
 }
 for (const src of images) {
@@ -83,6 +92,7 @@ assert(!missing.includes('rel="canonical"'));
 console.log(
   JSON.stringify(
     {
+      domainArtifactsChecked,
       generatedPages: pages.length,
       uniqueTitles: titles.size,
       uniqueDescriptions: descriptions.size,

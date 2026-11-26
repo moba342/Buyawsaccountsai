@@ -1,6 +1,6 @@
 > Latest hosting release: [actual redirect results](docs/seo/HOSTING-REDIRECT-REPORT.md). Source `c1ea091` is deployed. All 535 mappings are preserved; HTTPS apex legacy redirects are now one hop. The HTTP apex root remains two hops due to Vercel’s mandatory TLS upgrade. No DNS changes were made.
 
-> Latest release: [Final SEO production report](docs/seo/FINAL-SEO-IMPLEMENTATION-REPORT.md). Source `7ea14d0` is deployed at https://www.buyawsaccountsai.com/ with 82 buying-keyword catalog URLs and a 94-URL sitemap. Earlier source-only release statements below are historical. Google Search Console: **PENDING - MANUAL SETUP BY WEBSITE OWNER**.
+> Canonical production domain: https://buyawsaccountsai.com/. Current domain migration results: [Domain migration report](docs/seo/DOMAIN-MIGRATION-REPORT.md). Existing keyword URLs and publication controls are preserved. Google Search Console: **PENDING - MANUAL SETUP BY WEBSITE OWNER**.
 
 > Current URL migration: [SEO-URL-MAPPING.md](docs/seo/SEO-URL-MAPPING.md). The 82 catalog public URLs now use assigned buying-keyword slugs; stable product/cart/payment IDs and commercial status are unchanged. Earlier URL statements are historical. This migration is source-only until a separate deployment.
 
@@ -12,14 +12,14 @@ Responsive React storefront with a Midnight Sapphire Navy theme with soft white 
 
 ## Links
 
-- Website: https://www.buyawsaccountsai.com/
-- Marketplace: https://www.buyawsaccountsai.com/marketplace/
-- Cloud Platforms: https://www.buyawsaccountsai.com/cloud-platforms/
-- Compare Products: https://www.buyawsaccountsai.com/compare-products/
-- Buying Guides: https://www.buyawsaccountsai.com/buying-guides/
-- Help Center: https://www.buyawsaccountsai.com/help-center/
-- Seller Profile: https://www.buyawsaccountsai.com/seller-profile/
-- Contact Sales: https://www.buyawsaccountsai.com/contact-sales/
+- Website: https://buyawsaccountsai.com/
+- Marketplace: https://buyawsaccountsai.com/marketplace/
+- Cloud Platforms: https://buyawsaccountsai.com/cloud-platforms/
+- Compare Products: https://buyawsaccountsai.com/compare-products/
+- Buying Guides: https://buyawsaccountsai.com/buying-guides/
+- Help Center: https://buyawsaccountsai.com/help-center/
+- Seller Profile: https://buyawsaccountsai.com/seller-profile/
+- Contact Sales: https://buyawsaccountsai.com/contact-sales/
 - Telegram: https://t.me/dexterw4tts
 - Support email: dexter-watts@buyawsaccountsai.com
 

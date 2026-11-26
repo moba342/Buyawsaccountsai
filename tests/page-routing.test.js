@@ -29,7 +29,7 @@ test("old pages permanently redirect to rewritten canonical pages without redire
       config.redirects.some(
         (r) =>
           r.source === `/${id}/` &&
-          new URL(r.destination, "https://www.buyawsaccountsai.com")
+          new URL(r.destination, "https://buyawsaccountsai.com")
             .pathname === `/${slug}/` &&
           r.permanent,
       ),
@@ -47,7 +47,7 @@ test("old pages permanently redirect to rewritten canonical pages without redire
         (other) =>
           !other.has &&
           other.source ===
-            new URL(r.destination, "https://www.buyawsaccountsai.com").pathname,
+            new URL(r.destination, "https://buyawsaccountsai.com").pathname,
       ),
       r.source,
     );

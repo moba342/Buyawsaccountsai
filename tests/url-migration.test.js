@@ -28,7 +28,7 @@ test("all 82 canonical paths exactly match assigned buying keywords without chan
     assert.match(url, /^\/buy-[a-z0-9-]+\/$/);
     assert.equal(
       getPageSeo(r.id).canonical,
-      "https://www.buyawsaccountsai.com" + url,
+      "https://buyawsaccountsai.com" + url,
     );
   }
   for (const p of products) {

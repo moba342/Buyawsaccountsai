@@ -48,10 +48,11 @@ config.redirects = [...map].map(([source, destination]) => ({
   destination: SITE.url + destination,
   permanent: true,
 }));
-// Domain-level apex redirects must be disabled only AFTER this routing is deployed.
+// Keep domain-level redirects disabled: application rules normalize host and legacy path together.
 // Exact canonical paths avoid a catch-all dropping the trailing slash and adding a hop.
-const apexHost = new URL(SITE.url).hostname.replace(/^www\./, "");
-const hostCondition = [{ type: "host", value: apexHost }];
+const canonicalHost = new URL(SITE.url).hostname;
+const redirectHost = canonicalHost.startsWith("www.") ? canonicalHost.slice(4) : "www." + canonicalHost;
+const hostCondition = [{ type: "host", value: redirectHost }];
 for (const source of ["/", ...routeIds.map(routePath)])
   config.redirects.push({
     source,
@@ -77,5 +78,5 @@ config.rewrites = routeIds.map((id) => ({
 }));
 await fs.writeFile("vercel.json", JSON.stringify(config, null, 2) + "\n");
 console.log(
-  `URL configuration: ${catalogSeoRecords.length} keyword paths; ${map.size} preserved permanent mappings plus ${config.redirects.length - map.size} apex-host rules; ${routeIds.length} exact static rewrites.`,
+  `URL configuration: ${catalogSeoRecords.length} keyword paths; ${map.size} preserved permanent mappings plus ${config.redirects.length - map.size} noncanonical-host rules; ${routeIds.length} exact static rewrites.`,
 );

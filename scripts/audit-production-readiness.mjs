@@ -120,7 +120,7 @@ for (const path of [
   "/aws-accounts/",
   "/buy-aws-accounts/",
 ]) {
-  const response = await fetch("https://www.buyawsaccountsai.com" + path, {
+  const response = await fetch("https://buyawsaccountsai.com" + path, {
       redirect: "manual",
     }),
     text = await response.text();

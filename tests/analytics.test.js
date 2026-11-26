@@ -44,9 +44,9 @@ test("page view drops query/hash identifiers and item quantities are bounded", (
   assert.deepEqual(
     sanitizedEvent("page_view", {
       page_location:
-        "https://www.buyawsaccountsai.com/cart/?email=private#secret",
+        "https://buyawsaccountsai.com/cart/?email=private#secret",
     }),
-    { page_location: "https://www.buyawsaccountsai.com/cart/" },
+    { page_location: "https://buyawsaccountsai.com/cart/" },
   );
   assert.equal(publicAnalyticsItem(products[0], 999).quantity, 99);
 });

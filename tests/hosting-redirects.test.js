@@ -9,7 +9,7 @@ const config = JSON.parse(
 const policy = JSON.parse(
   fs.readFileSync(new URL("../hosting-redirect-policy.json", import.meta.url)),
 );
-test("all 535 production redirect mappings are preserved with final absolute HTTPS www destinations", () => {
+test("all 535 production redirect mappings are preserved with final absolute HTTPS non-WWW destinations", () => {
   const rules = config.redirects.filter((r) => !r.has);
   assert.equal(rules.length, policy.preservedMappings);
   const rows = rules
@@ -25,13 +25,13 @@ test("all 535 production redirect mappings are preserved with final absolute HTT
     policy.mappingSha256,
   );
 });
-test("canonical apex pages have direct host-conditional redirects before the fallback", () => {
+test("noncanonical host pages have direct host-conditional redirects before the fallback", () => {
   const rules = config.redirects.filter((r) => r.has);
   assert.equal(rules.length, 98);
   for (const source of ["/", ...routeIds.map(routePath)]) {
     const rule = rules.find((r) => r.source === source);
     assert(rule);
-    assert.deepEqual(rule.has, [{ type: "host", value: policy.apexHost }]);
+    assert.deepEqual(rule.has, [{ type: "host", value: policy.redirectHost }]);
     assert.equal(rule.destination, policy.canonicalOrigin + source);
     assert(rule.permanent);
   }
@@ -42,11 +42,18 @@ test("canonical apex pages have direct host-conditional redirects before the fal
   );
   assert.equal(config.redirects.at(-1).source, "/:path*");
   assert.deepEqual(config.redirects.at(-1).has, [
-    { type: "host", value: policy.apexHost },
+    { type: "host", value: policy.redirectHost },
   ]);
   assert.equal(
     config.redirects.at(-1).destination,
     policy.canonicalOrigin + "/:path*",
   );
   assert(config.redirects.slice(0, 535).every((r) => !r.has));
+});
+
+test("canonical domain cannot match a host redirect rule", () => {
+  const canonicalHost = new URL(policy.canonicalOrigin).hostname;
+  assert.equal(canonicalHost, policy.apexHost);
+  assert.notEqual(policy.redirectHost, canonicalHost);
+  for (const rule of config.redirects.filter(r => r.has)) assert(rule.has.every(c => c.type !== "host" || c.value !== canonicalHost));
 });

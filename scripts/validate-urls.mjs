@@ -3,6 +3,8 @@ import fs from "node:fs/promises";
 import assert from "node:assert/strict";
 import { routeIds, routePath, pathRoute } from "../routing.js";
 import { getPageSeo, SITE_URL, siteSchema, socialEntries } from "../seo.js";
+import { catalogSeoRecords } from "../catalog-seo.js";
+import { slug } from "../catalogPaths.js";
 const base = process.env.QA_URL || "http://localhost:4173";
 const evidence =
   process.env.QA_EVIDENCE_DIR || "docs/seo/evidence/url-migration";
@@ -28,8 +30,17 @@ const esc = (s) =>
     .replaceAll('"', "&quot;")
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;");
-const xml = await fs.readFile("dist/sitemap.xml", "utf8");
+const sitemapResponse = await fetch(base + "/sitemap.xml", { redirect: "manual" });
+assert.equal(sitemapResponse.status, 200, "live sitemap status");
+const xml = await sitemapResponse.text();
+assert.equal(xml, await fs.readFile("dist/sitemap.xml", "utf8"), "served sitemap matches build");
 const sitemap = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+assert.equal(new Set(sitemap).size, sitemap.length, "duplicate sitemap URLs");
+const robotsResponse = await fetch(base + "/robots.txt", { redirect: "manual" });
+assert.equal(robotsResponse.status, 200, "robots status");
+assert((await robotsResponse.text()).includes("Sitemap: " + SITE_URL + "/sitemap.xml"), "robots sitemap declaration");
+for (const record of catalogSeoRecords) assert.equal(routePath(record.id), "/" + slug(record.primaryKeyword) + "/", record.id + " assigned keyword URL");
+Object.assign(report, { categories: catalogSeoRecords.filter(r => r.type === "category").length, variations: catalogSeoRecords.filter(r => r.type === "variant").length, sitemapUrls: sitemap.length, servedSitemapMatchesBuild: true, robots: true });
 const internal = new Set();
 async function batches(items, fn) {
   for (let i = 0; i < items.length; i += 8)

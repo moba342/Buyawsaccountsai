@@ -19,8 +19,8 @@ const rows = config.redirects.filter((r) => !r.has),
     mode: local ? "local host simulation" : "live actual HTTP/TLS",
     preservedMappings: rows.length,
     legacyChecks: 0,
-    apexCanonicalChecks: 0,
-    wwwCanonicalChecks: 0,
+    redirectHostCanonicalChecks: 0,
+    canonicalHostChecks: 0,
     queryPreserved: 0,
     chains: [],
     certificates: [],
@@ -63,7 +63,7 @@ async function batch(list, fn) {
     await Promise.all(list.slice(i, i + 8).map(fn));
 }
 const query = "?utm_source=host-audit&keep=a%2Bb";
-for (const host of [policy.apexHost, new URL(policy.canonicalOrigin).hostname])
+for (const host of [policy.redirectHost, new URL(policy.canonicalOrigin).hostname])
   await batch(rows, async (r) => {
     await direct(
       "https://" + host + r.source + query,
@@ -74,24 +74,24 @@ for (const host of [policy.apexHost, new URL(policy.canonicalOrigin).hostname])
   });
 await batch(pages, async (p) => {
   await direct(
-    "https://" + policy.apexHost + p + query,
+    "https://" + policy.redirectHost + p + query,
     policy.canonicalOrigin + p + query,
     1,
   );
-  report.apexCanonicalChecks++;
+  report.redirectHostCanonicalChecks++;
   await direct(
     policy.canonicalOrigin + p + query,
     policy.canonicalOrigin + p + query,
     0,
   );
-  report.wwwCanonicalChecks++;
+  report.canonicalHostChecks++;
 });
-report.apexFallbackChecks = [];
+report.redirectHostFallbackChecks = [];
 for (const [path, finalStatus] of [
   ["/favicon.png", 200],
   ["/definitely-missing-host-audit/", 404],
 ]) {
-  const source = "https://" + policy.apexHost + path + query,
+  const source = "https://" + policy.redirectHost + path + query,
     r = await request(source);
   assert.equal(r.status, 308, source);
   const target = new URL(r.headers.get("location"), source);
@@ -99,7 +99,7 @@ for (const [path, finalStatus] of [
   assert.equal(target.search, query);
   const end = await request(target.href);
   assert.equal(end.status, finalStatus);
-  report.apexFallbackChecks.push({ source, target: target.href, finalStatus });
+  report.redirectHostFallbackChecks.push({ source, target: target.href, finalStatus });
 }
 if (!local) {
   const cases = [
@@ -146,7 +146,7 @@ if (!local) {
     report.chains.push({ source, redirects: hops.length - 1, hops });
   }
   for (const host of [
-    policy.apexHost,
+    policy.redirectHost,
     new URL(policy.canonicalOrigin).hostname,
   ]) {
     const cert = await new Promise((resolve, reject) => {
@@ -185,8 +185,8 @@ console.log(
       mode: report.mode,
       preservedMappings: report.preservedMappings,
       legacyChecks: report.legacyChecks,
-      apexCanonicalChecks: report.apexCanonicalChecks,
-      wwwCanonicalChecks: report.wwwCanonicalChecks,
+      redirectHostCanonicalChecks: report.redirectHostCanonicalChecks,
+      canonicalHostChecks: report.canonicalHostChecks,
       queryPreserved: report.queryPreserved,
       chains: report.chains.map(({ source, redirects }) => ({
         source,

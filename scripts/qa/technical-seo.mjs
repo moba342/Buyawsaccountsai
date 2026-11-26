@@ -124,7 +124,7 @@ for (const { id, path } of pages) {
     } catch {
       throw Error("Invalid link " + href);
     }
-    if (u.origin === base || u.origin === "https://www.buyawsaccountsai.com") {
+    if (u.origin === base || u.origin === "https://buyawsaccountsai.com") {
       const local = u.pathname + u.hash;
       links.set(local, true);
       linkedPages.add(u.pathname);
@@ -174,7 +174,7 @@ assert.equal(
 assert.equal(xml.lastmods, 0);
 assert.equal(new Set(xml.urls).size, xml.urls.length);
 for (const url of xml.urls) {
-  assert(url.startsWith("https://www.buyawsaccountsai.com/"));
+  assert(url.startsWith("https://buyawsaccountsai.com/"));
   assert(
     !["/cart/", "/checkout/", "/api/"].some((s) =>
       new URL(url).pathname.startsWith(s),
@@ -259,7 +259,7 @@ const robots = await (await fetch(base + "/robots.txt")).text();
 assert(robots.includes("Disallow: /api/"));
 assert(!robots.includes("Disallow: /cart/"));
 assert(
-  robots.includes("Sitemap: https://www.buyawsaccountsai.com/sitemap.xml"),
+  robots.includes("Sitemap: https://buyawsaccountsai.com/sitemap.xml"),
 );
 report.robots = true;
 await rawContext.close();

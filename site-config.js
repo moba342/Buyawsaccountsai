@@ -5,7 +5,7 @@ export const hasPublishedOffers = products.some(
 );
 import { seoOverrides } from "./seo-overrides.js";
 export const SITE = {
-  url: "https://www.buyawsaccountsai.com",
+  url: "https://buyawsaccountsai.com",
   name: "BuyAWSAccountsAI",
   defaultTitle: "Cloud Account Products | BuyAWSAccountsAI",
   titleTemplate: "%s | BuyAWSAccountsAI",

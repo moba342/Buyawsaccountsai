@@ -1,3 +1,5 @@
+> Historical release record. Current canonical-domain policy and live results are maintained in [DOMAIN-MIGRATION-REPORT.md](docs/seo/DOMAIN-MIGRATION-REPORT.md). Prior tested URLs below are archival evidence.
+
 > Historical release/audit record. Current SEO requirements are defined in [the independent SEO implementation report](docs/seo/SEO-INDEPENDENCE-REPORT.md). Any earlier requirement to verify commercial documents before SEO development, metadata, crawlability or sitemap inclusion is superseded. Commercial purchase safeguards remain separate.
 
 # Approved production release

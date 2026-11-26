@@ -227,7 +227,7 @@ export default function App({ initialRoute, initialPathname } = {}) {
         Skip to content
       </a>
       <header>
-        <a className="brand" href="https://www.buyawsaccountsai.com/">
+        <a className="brand" href="https://buyawsaccountsai.com/">
           <img
             className="site-brand-logo"
             src="/optimized/brand-header-480.webp"
@@ -557,7 +557,7 @@ export default function App({ initialRoute, initialPathname } = {}) {
         <div className="footer-shell">
           <section className="footer-callout">
             <div>
-              <a className="brand" href="https://www.buyawsaccountsai.com/">
+              <a className="brand" href="https://buyawsaccountsai.com/">
                 <img
                   className="site-brand-logo"
                   src="/optimized/brand-footer-480.webp"

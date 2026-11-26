@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-27",
+  "mode": "local host simulation",
+  "preservedMappings": 535,
+  "legacyChecks": 1070,
+  "redirectHostCanonicalChecks": 96,
+  "canonicalHostChecks": 96,
+  "queryPreserved": 1166,
+  "chains": [],
+  "certificates": [],
+  "errors": [],
+  "redirectHostFallbackChecks": [
+    {
+      "source": "https://www.buyawsaccountsai.com/favicon.png?utm_source=host-audit&keep=a%2Bb",
+      "target": "https://buyawsaccountsai.com/favicon.png?utm_source=host-audit&keep=a%2Bb",
+      "finalStatus": 200
+    },
+    {
+      "source": "https://www.buyawsaccountsai.com/definitely-missing-host-audit/?utm_source=host-audit&keep=a%2Bb",
+      "target": "https://buyawsaccountsai.com/definitely-missing-host-audit/?utm_source=host-audit&keep=a%2Bb",
+      "finalStatus": 404
+    }
+  ]
+}

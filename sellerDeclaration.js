@@ -2,7 +2,7 @@
 export const sellerDeclaration = {
   sellerName: "Dexter Watts",
   businessName: "BuyAWSAccountsAI",
-  website: "https://www.buyawsaccountsai.com/",
+  website: "https://buyawsaccountsai.com/",
   websiteLabel: "BuyAWSAccountsAI.com",
   telegram: "@dexterw4tts",
   telegramUrl: "https://t.me/dexterw4tts",
