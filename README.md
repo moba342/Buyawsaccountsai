@@ -200,3 +200,7 @@ Compute specifications use “Product variation limit” without changing seller
 Product-card headers show the source catalog account category rather than an abbreviated provider label. Details use bold navy text. Visible cards receive a subtle compositor opacity price highlight and transform-only details sweep; lighting pauses while scrolling or hidden and is disabled for reduced motion. The duplicate visual price layer is hidden from assistive technology.
 
 The current account-card layout uses an inset navy identity band with a separate logo tile, a compact price row above the specifications, normal-weight details and a distinct action footer. Collection grids align cards at the start to avoid stretched whitespace. Existing lighting, categories, catalog values and buying actions are retained.
+
+### Product artwork
+
+`ProductVisual.jsx` and `product-visual.css` integrate the standalone HTML artwork into all shared account cards and individual product heroes. Each illustration uses the current provider logo and options derived from actual catalog kinds. Native SVG/HTML stays sharp and requires no external image host; hover-only lighting and reduced-motion support retain the scroll budget. Prices, cart actions, specification text and checkout are unchanged.

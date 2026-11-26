@@ -1,3 +1,4 @@
+import ProductVisual from './ProductVisual';
 import React, { useEffect, useState } from 'react';
 import {
   ArrowRight,
@@ -369,6 +370,7 @@ export function CatalogPage({
               : brand.summary +
                 ' Compare the listed details, select a package, and speak directly with the seller before you buy.'}
           </p>
+          {product && <ProductVisual provider={product.provider} />}
           {product ? (
             <section
               className="account-product-specs"

@@ -1,0 +1,22 @@
+/* Native vector product art shared with the standalone HTML design. */
+#root .account-product-visual{position:relative;isolation:isolate;overflow:hidden;container-type:inline-size;margin:10px 0 0;aspect-ratio:1.42;border:1px solid #425779;border-radius:11px;background:linear-gradient(135deg,#263D68 0%,#142440 48%,#080F24 100%);color:#FFFFFF}
+#root .account-product-visual::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(#ffffff05 1px,transparent 1px),linear-gradient(90deg,#ffffff05 1px,transparent 1px);background-size:28px 28px;mask-image:linear-gradient(150deg,#000,transparent 82%)}
+#root .product-visual-topline{position:absolute;top:6%;left:5%;right:5%;display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:clamp(8px,2.2cqw,10px);font-weight:600;line-height:1.5;letter-spacing:.08em;color:#CBD5E1;text-transform:uppercase}
+#root .product-visual-topline>span:first-child{max-width:56%}
+#root .product-visual-edition{font-size:clamp(7px,1.9cqw,9px);letter-spacing:.04em;border:1px solid #6B809F;padding:4px 6px;border-radius:5px;color:#E2E8F0;background:#ffffff06;white-space:nowrap}
+#root .product-visual-scene{position:absolute;left:0;right:0;top:14%;height:65%;width:100%;overflow:visible}
+#root .product-visual-logo{position:absolute;top:27%;left:12%;width:27%;aspect-ratio:1;border:1px solid #DCE3ED;border-radius:clamp(12px,4cqw,18px);display:grid;place-items:center;background:#F8FAFC;box-shadow:0 12px 28px #080f2433,inset 0 1px 0 #FFFFFF;rotate:-4deg}
+#root .account-product-visual .product-visual-logo img{width:65%;height:50%;max-width:none;object-fit:contain;padding:0;border:0;border-radius:0;background:transparent;filter:brightness(0) saturate(100%);rotate:4deg}
+#root .product-visual-options{position:absolute;top:27%;right:7%;width:38%;display:grid;gap:clamp(6px,2cqw,10px)}
+#root .product-visual-option{display:flex;align-items:center;gap:clamp(5px,2cqw,9px);padding:clamp(6px,2cqw,10px);background:#142440CC;border:1px solid #536A8C;border-radius:7px;font-size:clamp(8px,2.4cqw,11px);line-height:1.4;color:#E2E8F0;box-shadow:inset 0 1px 0 #ffffff0a}
+#root .product-visual-option svg{width:clamp(12px,3.5cqw,16px);height:clamp(12px,3.5cqw,16px);flex-shrink:0;stroke:#C4D5EB;stroke-width:1.5}
+#root .product-visual-caption{position:absolute;bottom:6%;left:5%;right:5%;border-top:1px solid #ffffff21;padding-top:3%;display:flex;justify-content:space-between;gap:12px;align-items:end}
+#root .product-visual-caption strong{font-family:var(--font-heading);font-size:clamp(16px,5cqw,24px);line-height:1.3;font-weight:700;letter-spacing:-.03em;color:#FFFFFF;max-width:77%;overflow-wrap:anywhere}
+#root .product-visual-caption small{font-size:clamp(7px,2cqw,10px);line-height:1.6;color:#CBD5E1;text-align:right}
+#root .product-visual-sheen{position:absolute;inset:0 auto 0 -70%;width:50%;background:linear-gradient(90deg,transparent,#b6cce211,transparent);transform:skewX(-15deg);pointer-events:none}
+#root .account-page-hero-copy>.account-product-visual{margin-top:28px;max-width:540px;width:100%}
+@container(max-width:320px){#root .product-visual-caption small{display:none}#root .product-visual-caption strong{max-width:100%}#root .product-visual-topline{letter-spacing:.035em}#root .product-visual-options{width:40%;right:6%}}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){#root .account-product-visual:hover .product-visual-sheen{animation:product-visual-light 1.1s ease forwards}#root .product-visual-logo{transition:rotate 400ms ease,translate 400ms ease}#root .account-product-visual:hover .product-visual-logo{rotate:-2deg;translate:0 -3px}}
+@keyframes product-visual-light{to{left:140%}}
+html[data-scroll-active=true] #root .product-visual-logo{transition:none}html[data-scroll-active=true] #root .product-visual-sheen{animation:none!important}
+@media(prefers-reduced-motion:reduce){#root .account-product-visual .product-visual-logo{transition:none;translate:none}#root .product-visual-sheen{display:none}}
