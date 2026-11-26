@@ -50,3 +50,7 @@ Lighthouse baseline is collected before implementation under ignored `.qa-seo/`;
 ## Final HTTP follow-up
 
 A four-origin HEAD trace confirmed the preferred origin returns 200; HTTP www and HTTPS apex each redirect once. HTTP apex currently takes two hosting-managed 308 hops (HTTPS apex, then HTTPS www). This is a **Low Priority / MANUAL ACTION REQUIRED** hosting normalization review after release approval; it is not an application-route loop or indexable duplicate. All application links/canonicals use the preferred HTTPS/www URL directly. Evidence: `seo-evidence/production-baseline-http.json`.
+
+## Post-audit release update
+
+The owner subsequently approved production deployment. Source commit `c93f234` was merged/pushed to main and released to the preferred domain. The original approval hold above describes the audit phase, not the current deployment status. See `SEO-PRODUCTION-RELEASE.md` for live validation and remaining manual items.

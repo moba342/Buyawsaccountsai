@@ -28,5 +28,5 @@
   },
   "lint": "NOT APPLICABLE: no existing lint configuration/script",
   "typecheck": "NOT APPLICABLE: JavaScript repository, no typecheck script",
-  "productionDeployment": "NOT RUN: owner approval required"
+  "productionDeployment": "PASS: owner-approved release c93f234, live HTTP/browser checks in production-release.json"
 }

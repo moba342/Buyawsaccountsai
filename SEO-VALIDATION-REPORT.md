@@ -1,6 +1,6 @@
 # Technical SEO validation report
 
-Date: 2026-11-26 (Asia/Dhaka). Baseline: `89d09ac`. Review branch: `seo/technical-audit-2026-11-26`. Production deployment: **MANUAL ACTION REQUIRED — not performed**.
+Date: 2026-11-26 (Asia/Dhaka). Baseline: `89d09ac`. Review branch: `seo/technical-audit-2026-11-26`. Production deployment: **PASS — owner approved and release deployed**. See `SEO-PRODUCTION-RELEASE.md` for live verification; the detailed lab results below describe the pre-release validation.
 
 ## Executed checks
 
@@ -40,7 +40,7 @@ Date: 2026-11-26 (Asia/Dhaka). Baseline: `89d09ac`. Review branch: `seo/technica
 | Search Console | MANUAL ACTION REQUIRED | No token/property access supplied. Build supports real verification values; DNS/HTML verification, sitemap submission, URL inspection and index monitoring not claimed. |
 | Legal/trust policy pages | MANUAL ACTION REQUIRED | Privacy, Terms and Refund pages/content absent. No fabricated policy, registration, independent verification, official affiliation or fake review schema added. |
 | Real-user CWV / INP / indexing | MANUAL ACTION REQUIRED | No CrUX/Search Console field dataset or verified indexing access. Lighthouse/TBT is not field INP or a 75th-percentile CWV result. |
-| Production release | MANUAL ACTION REQUIRED | Approval is explicitly required by the supplied brief. No main push or production deployment occurred. |
+| Production release | PASS | Owner approval received. Source `c93f234` merged/pushed to main and deployed on Vercel; all 96 live pages, sitemap, redirects, custom 404s and assets checked. See the production release report for the full scope. |
 
 Browser widths: **320, 375, 390, 414, 768, 1024, 1440, 1920 px**. Core coverage includes home, marketplace, platforms, compare, guides, help, seller and contact. The 13 representative responsive samples also include the AWS collection, longest product name, an article, populated cart and populated checkout. Independent mobile/desktop checks cover every current individual product and platform collection.
 
@@ -81,3 +81,7 @@ The JavaScript reduction is about 11.6% uncompressed / 8.7% gzip. CSS grows mode
 ## Remaining manual actions
 
 Approve release, provide genuine legal policy content and confirmed merchant facts, configure actual Search Console/optional analytics, complete the authenticated Google rich-results test, and verify live HTTP/header/performance behavior after deployment. Use `SEO-DEPLOYMENT-CHECKLIST.md`. No ranking, rich-result or indexing guarantee is made.
+
+## Post-approval production verification
+
+The approved `c93f234` application is live. All 96 public/commerce route responses, 94 sitemap URLs, 49 redirects, 69 social images, custom 404s, headers/compression/cache and invalid-payment rejection were checked on the public canonical domain. Browser cart/checkout, network wallets/QRs, prepared request, product actions, comparison, menu, guide and contact checks also passed with controlled payment-status fixtures and no real transfer or message. Live mobile Lighthouse performance: homepage **100**, product **98**; accessibility/best-practices/SEO **100** for both; CLS **0**. Full scope and remaining manual inputs: `SEO-PRODUCTION-RELEASE.md`, `seo-evidence/production-release.json`, `seo-evidence/production-lighthouse.json`.

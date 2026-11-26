@@ -163,13 +163,35 @@ await p
   .waitFor();
 report.cart = true;
 await p.goto(base + "/product/aws-free-trial/");
+// Initial HTML is available before interactive route hydration completes.
+await p.waitForFunction(() => {
+  const button = document.querySelector(".account-purchase-panel button");
+  return (
+    button && Object.keys(button).some((key) => key.startsWith("__reactProps"))
+  );
+});
 await p
   .locator(".account-purchase-panel")
   .getByRole("button", { name: "Add to cart", exact: true })
   .click();
 await p.waitForURL("**/cart/");
 assert((await p.locator(".commerce-total").innerText()).includes("$15"));
+await p.waitForFunction(() => {
+  const lines = JSON.parse(localStorage.getItem("baa-cart-v2") || "[]");
+  return lines.some(
+    (line) => line.id === "product/aws-free-trial" && line.quantity === 1,
+  );
+});
 await p.goto(base + "/product/aws-free-trial/");
+// Initial HTML is available before interactive route hydration completes.
+await p.waitForFunction(() => {
+  const button = document.querySelector(".account-purchase-panel button");
+  return (
+    button && Object.keys(button).some((key) => key.startsWith("__reactProps"))
+  );
+});
+await p.locator(".header-cart-count").waitFor();
+assert.equal(await p.locator(".header-cart-count").innerText(), "1");
 await p
   .locator(".account-purchase-panel")
   .getByRole("button", { name: "Buy Now", exact: true })

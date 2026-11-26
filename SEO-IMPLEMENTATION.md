@@ -1,6 +1,6 @@
 # Technical SEO implementation
 
-Date: 2026-11-26 (Asia/Dhaka). Project: BuyAWSAccountsAI. Preferred origin: `https://www.buyawsaccountsai.com`. Changes are local on `seo/technical-audit-2026-11-26`; production has not been deployed or main pushed for this brief.
+Date: 2026-11-26 (Asia/Dhaka). Project: BuyAWSAccountsAI. Preferred origin: `https://www.buyawsaccountsai.com`. The owner subsequently approved production release. Source commit `c93f234` was merged/pushed to main and deployed to the preferred domain. See `SEO-PRODUCTION-RELEASE.md` and `seo-evidence/production-release.json` for live checks. The sections below document the original implementation and remaining owner configuration.
 
 ## Architecture and preserved behavior — PASS
 

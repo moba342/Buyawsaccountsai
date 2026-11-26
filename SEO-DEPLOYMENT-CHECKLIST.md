@@ -1,6 +1,6 @@
 # Deployment and indexing checklist
 
-Date: 2026-11-26. Status: **MANUAL ACTION REQUIRED — production approval pending**. The attached brief explicitly says “Do not deploy to production without approval.” Nothing in this SEO work has been deployed or pushed to main.
+Date: 2026-11-26. Status: **PASS — owner approved; production release deployed**. See `SEO-PRODUCTION-RELEASE.md` for executed live checks. Remaining legal/measurement inputs below are still manual. The attached brief explicitly says “Do not deploy to production without approval.” That approval was subsequently received before source `c93f234` was pushed to main and deployed.
 
 ## Review before approval
 
@@ -35,7 +35,7 @@ Blank/unavailable values remain blank. Never invent IDs or put RPC/private keys 
 
 For local GSC testing, export the actual verification token before building. In Vercel, set it for the appropriate build environment. Do not publish staging with production analytics enabled. Protect any preview deployment using Deployment Protection; no public staging deployment is created by this change.
 
-## Approved release procedure — NOT RUN
+## Approved release procedure — EXECUTED (see release evidence)
 
 1. After approval, review and merge the feature branch into the deployment branch, or use the owner's approved Vercel production release path for project `buyawsaccountsai`. Do not deploy an outdated `dist/` or omit the postbuild step.
 2. Keep the existing preferred-domain configuration: HTTP → HTTPS and apex → `https://www.buyawsaccountsai.com`. Confirm certificate/HSTS behavior. Existing HTTP apex takes two hosting-managed hops; review whether edge/domain settings can safely collapse this after approval, without redirect loops. Application links already bypass it. Protect preview deployments before they become public.

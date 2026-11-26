@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-26",
+  "commit": "c93f234",
+  "deploymentId": "dpl_5qk7YZz5nmVZk87x2EukKfoX15j1",
+  "deploymentUrl": "https://buyawsaccountsai-m38uddis9-mo-ba2.vercel.app",
+  "productionUrl": "https://www.buyawsaccountsai.com",
+  "publicPages": 96,
+  "redirects": 49,
+  "socialImages": 69,
+  "missingPages": [
+    "/missing-seo-release-check/",
+    "/product/missing-seo-release-check/",
+    "/buying-guides/missing-seo-release-check/",
+    "/MARKETPLACE/"
+  ],
+  "errors": [],
+  "sitemapUrls": 94,
+  "robots": true,
+  "headers": {
+    "content-encoding": "br",
+    "content-security-policy": "object-src 'none'; base-uri 'self'; frame-ancestors 'self'; upgrade-insecure-requests",
+    "permissions-policy": "camera=(), microphone=(), geolocation=()",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "strict-transport-security": "max-age=63072000",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN"
+  },
+  "assetCache": "public, max-age=31536000, immutable",
+  "invalidPaymentRejected": true,
+  "approval": "Owner explicitly approved production deployment",
+  "browserChecks": {
+    "cart": true,
+    "persistedCart": true,
+    "paymentNetworks": [
+      "trc20",
+      "bep20",
+      "erc20"
+    ],
+    "paymentStates": [
+      "pending",
+      "not_found",
+      "failed",
+      "unmatched",
+      "amount_mismatch",
+      "unavailable",
+      "invalid",
+      "confirmed",
+      "mismatched-network-rejected",
+      "http-error-confirmed-rejected"
+    ],
+    "orderRequest": true,
+    "productActions": true,
+    "comparison": true,
+    "mobileMenu": true,
+    "guideNavigation": true,
+    "contactLinks": true,
+    "errors": []
+  },
+  "browserTestNote": "Live browser cart/checkout flow, wallet/QR/clipboard, request preparation, product actions, comparison, mobile menu, guide navigation and contact links. Payment status UI used controlled fixtures, not real transactions. Tests await hydration and saved-cart persistence before cross-document navigation.",
+  "mobileLighthouse": {
+    "date": "2026-11-26",
+    "scope": "Actual post-release mobile laboratory runs against the public preferred domain; not field INP/CrUX data or a ranking guarantee.",
+    "measurements": [
+      {
+        "page": "home",
+        "url": "https://www.buyawsaccountsai.com/",
+        "lighthouseVersion": "13.6.0",
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "lcpMs": 1393.2715,
+        "tbtMs": 0,
+        "cls": 0
+      },
+      {
+        "page": "product",
+        "url": "https://www.buyawsaccountsai.com/product/aws-free-trial/",
+        "lighthouseVersion": "13.6.0",
+        "scores": {
+          "performance": 98,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "lcpMs": 1287.3049999999998,
+        "tbtMs": 16,
+        "cls": 0
+      }
+    ]
+  }
+}
