@@ -1,0 +1,390 @@
+{
+  "date": "2026-11-27",
+  "mode": "live actual HTTP/TLS",
+  "preservedMappings": 535,
+  "legacyChecks": 1070,
+  "redirectHostCanonicalChecks": 96,
+  "canonicalHostChecks": 96,
+  "queryPreserved": 1166,
+  "chains": [
+    {
+      "source": "http://buyawsaccountsai.com/",
+      "redirects": 1,
+      "hops": [
+        {
+          "url": "http://buyawsaccountsai.com/",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "https://buyawsaccountsai.com/",
+      "redirects": 0,
+      "hops": [
+        {
+          "url": "https://buyawsaccountsai.com/",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "http://www.buyawsaccountsai.com/",
+      "redirects": 2,
+      "hops": [
+        {
+          "url": "http://www.buyawsaccountsai.com/",
+          "status": 308,
+          "location": "https://www.buyawsaccountsai.com/"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "https://www.buyawsaccountsai.com/",
+      "redirects": 1,
+      "hops": [
+        {
+          "url": "https://www.buyawsaccountsai.com/",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "http://buyawsaccountsai.com/aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+      "redirects": 2,
+      "hops": [
+        {
+          "url": "http://buyawsaccountsai.com/aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/aws-accounts/?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "http://buyawsaccountsai.com/product/aws-8-vcpu/?utm_source=host-audit&keep=a%2Bb",
+      "redirects": 2,
+      "hops": [
+        {
+          "url": "http://buyawsaccountsai.com/product/aws-8-vcpu/?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/product/aws-8-vcpu/?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/product/aws-8-vcpu/?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/buy-aws-8-vcpu/?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/buy-aws-8-vcpu/?utm_source=host-audit&keep=a%2Bb",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "http://buyawsaccountsai.com/buy-aws-accounts?utm_source=host-audit&keep=a%2Bb",
+      "redirects": 2,
+      "hops": [
+        {
+          "url": "http://buyawsaccountsai.com/buy-aws-accounts?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/buy-aws-accounts?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/buy-aws-accounts?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "http://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+      "redirects": 1,
+      "hops": [
+        {
+          "url": "http://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "http://www.buyawsaccountsai.com/aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+      "redirects": 2,
+      "hops": [
+        {
+          "url": "http://www.buyawsaccountsai.com/aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://www.buyawsaccountsai.com/aws-accounts/?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "http://www.buyawsaccountsai.com/product/aws-8-vcpu/?utm_source=host-audit&keep=a%2Bb",
+      "redirects": 2,
+      "hops": [
+        {
+          "url": "http://www.buyawsaccountsai.com/product/aws-8-vcpu/?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://www.buyawsaccountsai.com/product/aws-8-vcpu/?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/product/aws-8-vcpu/?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/buy-aws-8-vcpu/?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/buy-aws-8-vcpu/?utm_source=host-audit&keep=a%2Bb",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "http://www.buyawsaccountsai.com/buy-aws-accounts?utm_source=host-audit&keep=a%2Bb",
+      "redirects": 2,
+      "hops": [
+        {
+          "url": "http://www.buyawsaccountsai.com/buy-aws-accounts?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://www.buyawsaccountsai.com/buy-aws-accounts?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/buy-aws-accounts?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "http://www.buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+      "redirects": 2,
+      "hops": [
+        {
+          "url": "http://www.buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://www.buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "https://buyawsaccountsai.com/aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+      "redirects": 1,
+      "hops": [
+        {
+          "url": "https://buyawsaccountsai.com/aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "https://buyawsaccountsai.com/product/aws-8-vcpu/?utm_source=host-audit&keep=a%2Bb",
+      "redirects": 1,
+      "hops": [
+        {
+          "url": "https://buyawsaccountsai.com/product/aws-8-vcpu/?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/buy-aws-8-vcpu/?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/buy-aws-8-vcpu/?utm_source=host-audit&keep=a%2Bb",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "https://buyawsaccountsai.com/buy-aws-accounts?utm_source=host-audit&keep=a%2Bb",
+      "redirects": 1,
+      "hops": [
+        {
+          "url": "https://buyawsaccountsai.com/buy-aws-accounts?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+      "redirects": 0,
+      "hops": [
+        {
+          "url": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "https://www.buyawsaccountsai.com/aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+      "redirects": 1,
+      "hops": [
+        {
+          "url": "https://www.buyawsaccountsai.com/aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "https://www.buyawsaccountsai.com/product/aws-8-vcpu/?utm_source=host-audit&keep=a%2Bb",
+      "redirects": 1,
+      "hops": [
+        {
+          "url": "https://www.buyawsaccountsai.com/product/aws-8-vcpu/?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/buy-aws-8-vcpu/?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/buy-aws-8-vcpu/?utm_source=host-audit&keep=a%2Bb",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "https://www.buyawsaccountsai.com/buy-aws-accounts?utm_source=host-audit&keep=a%2Bb",
+      "redirects": 1,
+      "hops": [
+        {
+          "url": "https://www.buyawsaccountsai.com/buy-aws-accounts?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "https://www.buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+      "redirects": 1,
+      "hops": [
+        {
+          "url": "https://www.buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/buy-aws-accounts/?utm_source=host-audit&keep=a%2Bb",
+          "status": 200,
+          "location": null
+        }
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "host": "www.buyawsaccountsai.com",
+      "authorized": true,
+      "validFrom": "Nov 24 21:12:10 2026 GMT",
+      "validTo": "Feb 22 21:12:09 2027 GMT",
+      "subjectAltName": "DNS:www.buyawsaccountsai.com"
+    },
+    {
+      "host": "buyawsaccountsai.com",
+      "authorized": true,
+      "validFrom": "Nov 24 21:12:15 2026 GMT",
+      "validTo": "Feb 22 21:12:14 2027 GMT",
+      "subjectAltName": "DNS:buyawsaccountsai.com"
+    }
+  ],
+  "errors": [],
+  "redirectHostFallbackChecks": [
+    {
+      "source": "https://www.buyawsaccountsai.com/favicon.png?utm_source=host-audit&keep=a%2Bb",
+      "target": "https://buyawsaccountsai.com/favicon.png?utm_source=host-audit&keep=a%2Bb",
+      "finalStatus": 200
+    },
+    {
+      "source": "https://www.buyawsaccountsai.com/definitely-missing-host-audit/?utm_source=host-audit&keep=a%2Bb",
+      "target": "https://buyawsaccountsai.com/definitely-missing-host-audit/?utm_source=host-audit&keep=a%2Bb",
+      "finalStatus": 404
+    }
+  ]
+}

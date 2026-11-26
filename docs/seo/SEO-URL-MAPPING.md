@@ -141,4 +141,8 @@ Generating this mapping does not deploy or activate commercial products. For the
 
 Evidence: evidence/url-migration/validation.json, technical-qa.json, publication-ui.json, accessibility-extra.json and mapping.json. These mapping-run results used the local production-like server. Actual live acceptance results are recorded separately in FINAL-SEO-IMPLEMENTATION-REPORT.md. Automated accessibility is not a claim of manual assistive-technology coverage.
 
-Current production re-audit evidence unavailable: Current live evidence does not match the expected scope
+## Current production re-audit — actual live results
+
+Canonical host: https://buyawsaccountsai.com. All 14 categories and 68 variations have exact primary-keyword slugs. 96 canonical pages, 94 indexable HTTP 200 pages, 535 one-hop permanent legacy redirects and 535 query-preservation cases passed. All 96 page schemas and 96 distinct canonical internal destinations passed. The served sitemap exactly matches the build, has 94 unique URLs and is declared in robots.txt. No additional routes or publication changes were made.
+
+Evidence: [current live URL validation](evidence/url-reaudit/validation.json). No broken or chained canonical-host redirects were found by these tests. HTTP requests on the old WWW host may require the platform HTTPS upgrade before host normalization; actual hop counts are recorded in the domain migration report. Google Search Console remains PENDING - MANUAL SETUP BY WEBSITE OWNER. Semantic search competition and backlink value require owner performance data; no ranking result is promised.
