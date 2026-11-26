@@ -342,7 +342,11 @@ export function CatalogPage({
           </>
         )}
       </nav>
-      <section className={'account-page-hero ' + (product ? 'is-product' : '')}>
+      <section
+        className={
+          'account-page-hero ' + (product ? 'is-product' : 'is-collection')
+        }
+      >
         <div className="account-page-hero-copy">
           <div className="account-provider-lockup">
             <span>
@@ -355,75 +359,33 @@ export function CatalogPage({
               <span>{product ? product.group : 'ACCOUNT COLLECTION'}</span>
             </div>
           </div>
-          <h1>
-            {product ? (
-              product.name
-            ) : (
-              <>
-                Buy {brand.name} accounts.
-                <br />
-                <span>A clearer way to choose.</span>
-              </>
-            )}
-          </h1>
-          <p>
-            {product
-              ? `Review this ${product.type.toLowerCase()} from the ${product.group} collection. Compare the seller-listed specification, choose your variant, and confirm the account details and purchase terms directly with us.`
-              : brand.summary +
-                ' Compare the listed details, select a package, and speak directly with the seller before you buy.'}
-          </p>
-          {product && (
-            <ProductVisual provider={product.provider} title={product.name} />
-          )}
           {product ? (
-            <section
-              className="account-product-specs"
-              aria-labelledby="account-specs-title"
-            >
-              <h2 id="account-specs-title">Listed package details</h2>
-              <dl>
-                {productSpecifications(product).map(([label, value]) => (
-                  <div key={label}>
-                    <dt>{label}</dt>
-                    <dd>{value}</dd>
-                  </div>
-                ))}
-              </dl>
-              <p>
-                Specification and model labels are supplied by the seller.
-                Confirm the details for the account offered.
-              </p>
-            </section>
+            <>
+              <h1>{product.name}</h1>
+              <p className="account-product-introduction">{`Review this ${product.type.toLowerCase()} from the ${product.group} collection. Compare the seller-listed specification, choose your variant, and confirm the account details and purchase terms directly with us.`}</p>
+              <ProductVisual provider={product.provider} title={product.name} />
+              <section
+                className="account-product-specs"
+                aria-labelledby="account-specs-title"
+              >
+                <h2 id="account-specs-title">Listed package details</h2>
+                <dl>
+                  {productSpecifications(product).map(([label, value]) => (
+                    <div key={label}>
+                      <dt>{label}</dt>
+                      <dd>{value}</dd>
+                    </div>
+                  ))}
+                </dl>
+                <p>
+                  Specification and model labels are supplied by the seller.
+                  Confirm the details for the account offered.
+                </p>
+              </section>
+            </>
           ) : (
             <>
-              <div className="account-hero-actions">
-                <button
-                  className="primary"
-                  onClick={() =>
-                    scrollPageTo(document.getElementById('package-options'))
-                  }
-                >
-                  Browse {list.length} packages
-                  <ArrowDown size={16} aria-hidden="true" />
-                </button>
-                <a
-                  className="secondary"
-                  href={seller.telegramUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <MessageCircle size={16} aria-hidden="true" />
-                  Talk to the seller
-                </a>
-              </div>
-              <div className="account-hero-note">
-                <span>Listed prices in USD</span>
-                <span>Direct seller contact</span>
-                <a href="/verified/">
-                  Seller information
-                  <ArrowRight size={13} aria-hidden="true" />
-                </a>
-              </div>
+              <h1 className="sr-only">{brand.name} Accounts</h1>
               <ProductVisual
                 provider={brand.name}
                 title={brand.name + ' Accounts'}

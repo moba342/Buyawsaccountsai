@@ -23,3 +23,12 @@ html[data-scroll-active=true] #root .product-visual-logo{transition:none}html[da
 /* Artwork belongs to the page hero, while product cards remain compact. */
 #root .product-visual-topline>span:first-child{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
 #root .product-visual-caption strong{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+/* Collection hero: artwork replaces introductory marketing copy. */
+#root .account-page-hero.is-collection{grid-template-columns:minmax(0,1.25fr) minmax(300px,.85fr);gap:48px;align-items:center}
+#root .account-page-hero.is-collection .account-provider-lockup{margin-bottom:20px}
+#root .account-page-hero.is-collection .account-product-visual{margin-top:0;max-width:none}
+html body #root .account-page-hero.is-collection>.account-purchase-panel{position:relative;top:auto;align-self:center;justify-self:center;width:100%;max-width:440px}
+#root .account-page-hero.is-collection .account-purchase-price{text-align:center}
+#root .account-product-introduction{font-size:17px;line-height:1.85;color:var(--body-text);max-width:64ch;margin:0}
+@media(max-width:1023px){#root .account-page-hero.is-collection{gap:28px;grid-template-columns:minmax(0,1fr) minmax(280px,.9fr)}}
+@media(max-width:767px){#root .account-page-hero.is-collection{grid-template-columns:minmax(0,1fr);gap:28px}html body #root .account-page-hero.is-collection>.account-purchase-panel{max-width:none}#root .account-product-introduction{font-size:15px}}
