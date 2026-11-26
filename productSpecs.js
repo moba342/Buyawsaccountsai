@@ -2,7 +2,7 @@ export function productSpecifications(product) {
   return [
     ['Package type', product.type],
     ...(product.vcpus
-      ? [['Listed compute tier', product.vcpus + ' vCPU']]
+      ? [['Product variation limit', product.vcpus + ' vCPU']]
       : []),
     ...(product.credit
       ? [['Listed credit value', '$' + product.credit.toLocaleString('en-US')]]

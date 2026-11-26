@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Plus, ShoppingCart } from 'lucide-react';
+import { ArrowRight, Plus, ShoppingCart, Layers } from 'lucide-react';
 import ProviderLogo from './ProviderLogo';
 import { productRoute } from './catalogPaths';
 import { formatPrice } from './catalog';
@@ -20,6 +20,7 @@ export default function CatalogAccountCard({
           {brand?.name || product.provider}
         </span>
         <span className="account-card-kind">
+          <Layers size={12} aria-hidden="true" />
           {product.kind === 'AI' ? 'AI access' : product.kind}
         </span>
       </div>
@@ -81,7 +82,7 @@ export default function CatalogAccountCard({
             aria-label={'Compare ' + product.provider + ' ' + product.name}
           >
             <Plus size={13} aria-hidden="true" />
-            Compare this package
+            Compare this product
           </button>
         )}
       </div>
