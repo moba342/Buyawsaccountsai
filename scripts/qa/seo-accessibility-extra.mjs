@@ -18,6 +18,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs/promises";
 import { guides } from "../../editorialContent.js";
 import { guideRoute } from "../../guideRoutes.js";
+const base = process.env.QA_URL || "http://localhost:4173";
 const b = await chromium.launch({ ...chrome }),
   c = await b.newContext({ reducedMotion: "reduce" }),
   p = await c.newPage(),
@@ -50,7 +51,7 @@ for (const width of [375, 1440]) {
     "/product/aws-free-trial/",
     "/" + guideRoute(guides[0]) + "/",
   ]) {
-    await p.goto("http://localhost:4173" + path);
+    await p.goto(base + path);
     await p.waitForFunction(() =>
       document.querySelector("main:not(.route-loading)"),
     );
@@ -74,7 +75,7 @@ await p.route("**/assets/DetailPages-*.js", async (route) => {
   await new Promise((resolve) => setTimeout(resolve, 400));
   await route.continue();
 });
-await p.goto("http://localhost:4173/product/aws-free-trial/");
+await p.goto(base + "/product/aws-free-trial/");
 await p.waitForTimeout(1200);
 result.initialHydrationFallbacks = await p.evaluate(
   () => window.__initialRouteFallbacks,
@@ -86,7 +87,7 @@ assert.equal(
 );
 assert.equal(await p.locator("h1").innerText(), "Buy AWS Free Trial");
 await p.unroute("**/assets/DetailPages-*.js");
-await p.goto("http://localhost:4173/");
+await p.goto(base + "/");
 await p.locator('a.home-quiet-link[href="/compare-products/"]').click();
 await p.waitForURL("**/compare-products/");
 await p.waitForFunction(

@@ -1,6 +1,8 @@
 > Latest hosting release: [actual redirect results](docs/seo/HOSTING-REDIRECT-REPORT.md). Source `c1ea091` is deployed. All 535 mappings are preserved; HTTPS apex legacy redirects are now one hop. The HTTP apex root remains two hops due to Vercel’s mandatory TLS upgrade. No DNS changes were made.
 
 > Canonical production domain: https://buyawsaccountsai.com/. Current domain migration results: [Domain migration report](docs/seo/DOMAIN-MIGRATION-REPORT.md). Existing keyword URLs and publication controls are preserved. Google Search Console: **PENDING - MANUAL SETUP BY WEBSITE OWNER**.
+Latest product metadata implementation and measured results: [TECHNICAL-SEO-VALIDATION.md](docs/seo/TECHNICAL-SEO-VALIDATION.md).
+
 
 > Current URL migration: [SEO-URL-MAPPING.md](docs/seo/SEO-URL-MAPPING.md). The 82 catalog public URLs now use assigned buying-keyword slugs; stable product/cart/payment IDs and commercial status are unchanged. Earlier URL statements are historical. This migration is source-only until a separate deployment.
 

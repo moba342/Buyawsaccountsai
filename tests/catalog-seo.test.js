@@ -56,6 +56,18 @@ test("compatibility keyword metadata is deduplicated and catalog sourced", async
   assert.equal(metaKeywordContent({}), "");
   assert.equal(metaKeywordContent({ primaryKeyword: "buy accounts", secondaryKeywords: ["buy accounts", "account pricing"] }), "buy accounts, account pricing");
   for (const record of catalogSeoRecords) {
-    assert.equal(metaKeywordContent(getPageSeo(record.id)), [record.primaryKeyword, ...record.secondaryKeywords].join(", "));
+    assert.equal(metaKeywordContent(getPageSeo(record.id)), [record.primaryKeyword, ...record.secondaryKeywords, ...record.longTailKeywords].join(", "));
+  }
+});
+
+
+test("editorial metadata covers all records without generic suffix filling", async () => {
+  const { catalogMetadataCopy } = await import("../catalog-metadata-copy.js");
+  assert.equal(Object.keys(catalogMetadataCopy).length, 82);
+  assert.equal(new Set(Object.values(catalogMetadataCopy).map(r => r.descriptionBody)).size, 82);
+  for (const record of catalogSeoRecords) {
+    assert(catalogMetadataCopy[record.id]);
+    assert(!record.seoTitle.includes("Pricing, Limits & Account Details"));
+    assert(record.metaDescription.endsWith(catalogMetadataCopy[record.id].descriptionBody));
   }
 });

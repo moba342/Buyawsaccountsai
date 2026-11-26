@@ -1,6 +1,7 @@
 // Buying guidance describes supplied records; it does not activate commercial offers.
 import { productRoute } from './catalogPaths.js';
 import { catalogEditorial } from './catalog-editorial-data.js';
+import { catalogMetadataCopy } from './catalog-metadata-copy.js';
 export const categoryBuyerFocus = {
  AWS: 'Compare vCPU tiers, credit values and seller-listed Bedrock configurations. Keep account limits separate from reserved compute capacity and ongoing AWS usage charges.',
  Azure: 'Separate trial and pay-as-you-go billing from credit packages and seller-listed GPT access. Compare the listed credit value, account price and AI configuration independently.',
@@ -19,8 +20,9 @@ export const categoryBuyerFocus = {
 };
 export const productName = p => p.provider + ' ' + p.name;
 export function productOpening(p) {
- const focus=p.kind==='AI'?'the listed AI configuration and account quota':p.credit?'the credit value, account price and program conditions':p.vcpus?'the relevant compute quota, region and billing':p.port25?'the listed network permissions and account limits':p.kind==='Trial'?'trial eligibility, account scope and billing':'account scope, listed limits and billing';
- return `Before you buy ${productName(p)} online, review ${focus}. Compare the specifications below with your intended workload.`;
+ const body=catalogMetadataCopy[productRoute(p)]?.descriptionBody;
+ if(!body)throw Error('Missing product-specific buying focus '+productRoute(p));
+ return `Buy ${productName(p)} online: ${body}`;
 }
 export function productBuyingDescription(p) {
  const original=catalogEditorial[productRoute(p)]?.intro;
