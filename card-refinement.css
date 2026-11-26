@@ -40,7 +40,7 @@
 #root .account-card-category{min-width:0;overflow-wrap:anywhere;font-size:12px;line-height:1.6;font-weight:700;color:var(--navy)}
 #root .account-card-kind{flex-shrink:0;max-width:45%}
 #root .account-card-copy ul{position:relative;overflow:hidden;isolation:isolate}
-#root .account-card-copy li{font-weight:700;color:var(--navy);line-height:1.8}
+#root .account-card-copy li{font-weight:400;color:var(--body-text);line-height:1.8}
 #root .account-card-price-value{display:inline-block;position:relative;isolation:isolate;color:var(--heading)}
 #root .account-price-glow{position:absolute;inset:0;color:var(--sapphire);text-shadow:0 0 12px rgba(38,61,104,.22);pointer-events:none;opacity:0}
 #root .account-card-copy ul::after{content:'';position:absolute;top:0;bottom:0;left:0;width:35%;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(148,180,221,.12),transparent);transform:translateX(-140%);opacity:0}
@@ -53,3 +53,6 @@
 html[data-scroll-active=true] #root .account-card .account-price-glow,html[data-scroll-active=true] #root .account-card-copy ul::after,html[data-motion-hidden=true] #root .account-card .account-price-glow,html[data-motion-hidden=true] #root .account-card-copy ul::after{animation-play-state:paused!important;opacity:0!important}
 @media(prefers-reduced-motion:reduce){#root .account-price-glow,#root .account-card-copy ul::after{display:none}}
 @media(max-width:374px){#root .account-card-top{flex-wrap:wrap}#root .account-card-top>span:first-child{flex-basis:100%}#root .account-card-kind{max-width:100%}}
+
+/* Interaction emphasizes the soft detail lighting without bold text. */
+@media(prefers-reduced-motion:no-preference){#root .account-card:hover .account-card-copy ul::after,#root .account-card:focus-within .account-card-copy ul::after{background:linear-gradient(90deg,transparent,rgba(117,156,207,.2),transparent);animation-duration:5s}}
