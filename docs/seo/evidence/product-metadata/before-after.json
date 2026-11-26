@@ -1,0 +1,22 @@
+{
+  "before": {
+    "records": 82,
+    "presentKeywordTags": 82,
+    "incompleteAssignedKeywordSets": 82,
+    "genericSuffixTitles": 15,
+    "distinctDescriptionBodies": 30,
+    "titles50To60": 81,
+    "descriptions140To160": 82,
+    "javascriptErrors": []
+  },
+  "live": {
+    "records": 82,
+    "presentKeywordTags": 82,
+    "incompleteAssignedKeywordSets": 0,
+    "genericSuffixTitles": 0,
+    "distinctDescriptionBodies": 82,
+    "titles50To60": 81,
+    "descriptions140To160": 82,
+    "javascriptErrors": []
+  }
+}
