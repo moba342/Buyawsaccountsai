@@ -16,7 +16,7 @@ Established homepage, marketplace, platform directory, compare, guide, help, sel
 
 Catalog/order IDs remain unchanged (for example product/aws-8-vcpu). New productPath/providerPath and routePath helpers provide the public URL. Cart storage, comparison IDs, commercial review keys, API item identifiers, editorial copy keys and original image paths keep their existing identities. Purchase/publication safeguards and current source indexability are unchanged.
 
-vercel.json contains 636 explicit permanent 308 redirects: prior aliases and retired product aliases are flattened to the final destination; all 82 old catalog URLs plus slash/no-slash/index.html forms go directly to the new canonical. Canonical non-slash and index.html aliases are also direct. The original 535 mappings are preserved with absolute final HTTPS non-WWW destinations; new resource pages add canonical slash/index aliases. There are 538 path rules in total and 98 WWW-only canonical/fallback rules. Global trailingSlash normalization is replaced by explicit canonical redirects so an old no-slash URL does not first redirect to an old slash URL. All 95 rendered non-home routes have exact static rewrites. No canonical destination is a redirect source. Query strings are preserved. Host/domain normalization is controlled by Vercel. Both domains remain assigned without blanket project redirects; WWW-only application rules normalize directly to the non-WWW canonical.
+vercel.json contains 633 explicit permanent 308 redirects: prior aliases and retired product aliases are flattened to the final destination; all 82 old catalog URLs plus slash/no-slash/index.html forms go directly to the new canonical. Canonical non-slash and index.html aliases are also direct. The original 535 mappings are preserved with absolute final HTTPS non-WWW destinations; new resource pages add canonical slash/index aliases. There are 535 path rules in total and 98 WWW-only canonical/fallback rules. Global trailingSlash normalization is replaced by explicit canonical redirects so an old no-slash URL does not first redirect to an old slash URL. All 95 rendered non-home routes have exact static rewrites. No canonical destination is a redirect source. Query strings are preserved. Host/domain normalization is controlled by Vercel. Both domains remain assigned without blanket project redirects; WWW-only application rules normalize directly to the non-WWW canonical.
 
 Updated references: navigation/card/footer/provider links, related products/guides, breadcrumbs and BreadcrumbList, canonical/Open Graph URLs, Product/eligible Offer URLs and ItemList links, generated catalog reports and XML sitemap. Stable logo/social-image asset URLs do not need to move. The build regenerates URL configuration before SSG and this report after SSG.
 
@@ -129,6 +129,20 @@ Run npm test, npm run build, npm run validate:seo and npm run validate:urls. The
 
 Generating this mapping does not deploy or activate commercial products. For the authorized production release, verify edge redirects on the preferred HTTPS non-WWW host, real 200/308/404 statuses, Search Console sitemap/coverage and existing backlinks. Retain permanent legacy redirects; do not remove them after the first crawl. No account verification document is required to implement or validate the URL migration.
 
-Full run evidence must be regenerated if missing or stale: Re-run URL validation after config change
+## Recorded validation results — PASS
 
-Current production re-audit evidence unavailable: Current live evidence does not match the expected scope
+- The original URL migration passed 55/55 unit tests, production client/SSR/SSG build and SEO artifact validation. Subsequent hosting-fix results are recorded separately in HOSTING-REDIRECT-REPORT.md.
+- 96 canonical pages tested; 94 indexable URLs returned direct 200. All 96 page schemas/canonicals/Open Graph entries matched.
+- 535 permanent redirects reached a direct final 200; all 535 preserved query strings. Every one of 96 distinct rendered internal destinations was canonical and returned 200.
+- Browser crawl: 96 raw and 96 hydrated routes, 268 views across eight widths, 194 link checks, 85 images, 535 redirect checks, no orphans, overflow or reported JS errors.
+- 30 automated axe scans had no violations. Mobile menu, SPA metadata, sticky header and initial hydration checks passed.
+- All 68 pending purchase controls remained disabled; saved carts were preserved, checkout stayed blocked and the API rejected pending items. No commercial activation, transfer or order occurred.
+- Unknown test routes returned a genuine 404. Current sitemap remains 94; no extra variant pages were introduced.
+
+Evidence: evidence/url-migration/validation.json, technical-qa.json, publication-ui.json, accessibility-extra.json and mapping.json. These mapping-run results used the local production-like server. Actual live acceptance results are recorded separately in FINAL-SEO-IMPLEMENTATION-REPORT.md. Automated accessibility is not a claim of manual assistive-technology coverage.
+
+## Current production re-audit — actual live results
+
+Canonical host: https://buyawsaccountsai.com. All 14 categories and 68 variations have exact primary-keyword slugs. 96 canonical pages, 94 indexable HTTP 200 pages, 535 one-hop permanent legacy redirects and 535 query-preservation cases passed. All 96 page schemas and 96 distinct canonical internal destinations passed. The served sitemap exactly matches the build, has 94 unique URLs and is declared in robots.txt. No additional routes or publication changes were made.
+
+Evidence: [current live URL validation](evidence/url-reaudit/validation.json). No broken or chained canonical-host redirects were found by these tests. HTTP requests on the old WWW host may require the platform HTTPS upgrade before host normalization; actual hop counts are recorded in the domain migration report. Google Search Console remains PENDING - MANUAL SETUP BY WEBSITE OWNER. Semantic search competition and backlink value require owner performance data; no ranking result is promised.

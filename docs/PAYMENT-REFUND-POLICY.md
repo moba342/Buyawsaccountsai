@@ -1,4 +1,4 @@
-> Removed from the active website on 2026-11-27. The retired URL and its aliases redirect permanently to Contact Sales; footer/checkout links, implementation and sitemap entry are removed. The results below are historical.
+> Removed from the active website on 2026-11-27. Policy-specific redirects have also been removed: retired paths now resolve to the normal not-found response. No footer/checkout links, implementation or sitemap entry remain. The results below are historical.
 
 # Payment & Refund Policy page
 

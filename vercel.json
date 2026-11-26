@@ -883,21 +883,6 @@
       "permanent": true
     },
     {
-      "source": "/payment-refund-policy/",
-      "destination": "https://buyawsaccountsai.com/contact-sales/",
-      "permanent": true
-    },
-    {
-      "source": "/payment-refund-policy",
-      "destination": "https://buyawsaccountsai.com/contact-sales/",
-      "permanent": true
-    },
-    {
-      "source": "/payment-refund-policy/index.html",
-      "destination": "https://buyawsaccountsai.com/contact-sales/",
-      "permanent": true
-    },
-    {
       "source": "/aws-accounts/",
       "destination": "https://buyawsaccountsai.com/buy-aws-accounts/",
       "permanent": true
