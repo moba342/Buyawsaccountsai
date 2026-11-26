@@ -17,7 +17,7 @@ const chrome = process.env.CHROME_PATH
 import assert from "node:assert/strict";
 import fs from "node:fs/promises";
 import { routeIds, routePath } from "../../routing.js";
-import { getPageSeo, siteSchema } from "../../seo.js";
+import { getPageSeo, siteSchema, metaKeywordContent } from "../../seo.js";
 import { products, brands } from "../../catalog.js";
 import { productRoute, providerRoute } from "../../catalogPaths.js";
 import { pageSeo } from "../../site-config.js";
@@ -72,7 +72,8 @@ for (const { id, path } of pages) {
     seo.robots,
     path,
   );
-  assert.equal(await raw.locator("meta[name=keywords]").count(), 0, path);
+  assert.equal(await raw.locator("meta[name=keywords]").count(), metaKeywordContent(seo) ? 1 : 0, path);
+  if (metaKeywordContent(seo)) assert.equal(await raw.locator("meta[name=keywords]").getAttribute("content"), metaKeywordContent(seo));
   assert.equal(await raw.locator("h1").count(), 1, path);
   assert.equal(await raw.locator("h1").innerText(), seo.h1, path);
   assert.deepEqual(

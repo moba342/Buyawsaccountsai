@@ -20,8 +20,10 @@ test("all 82 catalog SEO records are transactional, unique, useful and catalog-a
     assert(r.primaryKeyword.startsWith("buy "));
     assert(r.secondaryKeywords.length >= 5);
     assert(r.longTailKeywords.length >= 3);
-    assert(r.seoTitle.length <= 70);
-    assert(r.metaDescription.length <= 160 && r.metaDescription.length >= 70);
+    assert(r.seoTitle.length <= Math.max(60, r.primaryKeyword.length));
+    assert(r.seoTitle.toLowerCase().includes(r.primaryKeyword));
+    assert(r.metaDescription.toLowerCase().includes(r.primaryKeyword));
+    assert(r.metaDescription.length <= 160 && r.metaDescription.length >= 140);
     assert(
       !/verified seller|in stock|guaranteed|instant delivery|setup services|consulting services/i.test(
         r.metaDescription + " " + r.seoTitle,
@@ -46,5 +48,14 @@ test("SEO completes with no approval records and does not activate purchases or 
     assert.equal(node.offers, undefined);
     assert.equal(node.aggregateRating, undefined);
     assert.equal(node.sku, undefined);
+  }
+});
+
+test("compatibility keyword metadata is deduplicated and catalog sourced", async () => {
+  const { metaKeywordContent } = await import("../seo.js");
+  assert.equal(metaKeywordContent({}), "");
+  assert.equal(metaKeywordContent({ primaryKeyword: "buy accounts", secondaryKeywords: ["buy accounts", "account pricing"] }), "buy accounts, account pricing");
+  for (const record of catalogSeoRecords) {
+    assert.equal(metaKeywordContent(getPageSeo(record.id)), [record.primaryKeyword, ...record.secondaryKeywords].join(", "));
   }
 });

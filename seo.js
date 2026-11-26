@@ -373,6 +373,8 @@ export function siteSchema(seo) {
     });
   return { "@context": "https://schema.org", "@graph": graph };
 }
+// Third-party compatibility only: Google does not use meta keywords for ranking.
+export const metaKeywordContent = seo => [...new Set([seo.primaryKeyword, ...(seo.secondaryKeywords || [])].filter(value => typeof value === 'string' && value.trim()).map(value => value.trim()))].join(', ');
 export const safeJson = (value) =>
   JSON.stringify(value)
     .replace(/</g, "\\u003c")
@@ -418,7 +420,7 @@ export function applyPageSeo(id, pathname) {
   };
   meta("description", seo.description);
   meta("robots", seo.robots);
-  meta("keywords", "");
+  meta("keywords", metaKeywordContent(seo));
   for (const [key, value] of Object.entries(socialEntries(seo)))
     meta(key, value, true);
   for (const [key, value] of Object.entries(twitterEntries(seo)))

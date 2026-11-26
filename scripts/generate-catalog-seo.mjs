@@ -12,7 +12,7 @@ import {
 import { getPageSeo, SITE_URL } from "../seo.js";
 import { guides } from "../editorialContent.js";
 import { guideRoute } from "../guideRoutes.js";
-import { catalogEditorial } from "../catalog-editorial-data.js";
+import { productBuyingDescription, categoryOpening } from "../catalog-buying-copy.js";
 const folder = "docs/seo";
 await fs.mkdir(folder, { recursive: true });
 const data = catalogSeoRecords.map((record) => {
@@ -87,8 +87,8 @@ const data = catalogSeoRecords.map((record) => {
     productDescription: product
       ? publication.published
         ? publication.review.publicDescription
-        : catalogEditorial[record.id].intro
-      : brand.summary,
+        : productBuyingDescription(product)
+      : categoryOpening(brand),
     openGraphTitle: seo.title,
     openGraphDescription: seo.description,
     openGraphImage: seo.image,

@@ -1,7 +1,7 @@
+import { productOpening, categoryOpening, productName, purchaseQuestion } from "./catalog-buying-copy";
 import { providerPath } from "./catalogPaths";
 import CatalogPublicationNotice from "./CatalogPublicationNotice";
 import { productPublication } from "./offer-publication";
-import { catalogEditorial } from "./catalog-editorial-data";
 import { getPageSeo, confirmedOffer } from "./seo";
 import ProductVisual from "./ProductVisual";
 import React, { useEffect, useState } from "react";
@@ -64,7 +64,7 @@ function Collection({ brand, list, product, onOrder, onCompare, onAddToCart }) {
           <h2 id="account-collection-title">
             {product
               ? "More " + brand.name + " options"
-              : "All " + brand.name + " accounts"}
+              : "Compare " + brand.name + " Accounts"}
           </h2>
           <p>
             {product
@@ -307,10 +307,11 @@ export function CatalogPage({
     groups = [...new Set(list.map((p) => p.group))],
     copy = providerEditorial[brand.name],
     lowest = Math.min(...list.map((p) => p.price));
+  const buyerName = product ? productName(product) : brand.name + " Accounts";
   const questions = [
     [
-      `Which ${brand.name} accounts are listed?`,
-      `${list.length} variants are listed in this collection. Compare the account types and reference prices, then confirm current account details and availability for your selected package.`,
+      purchaseQuestion(buyerName),
+      product ? `Review the ${product.group} specifications and the ${formatPrice(product.price)} listed reference price. Confirm the account region, billing responsibility and written purchase terms for the selected configuration.` : `${list.length} variants are listed in this collection. Compare account types and reference prices, then confirm the selected account details, billing responsibility and purchase terms.`,
     ],
     purchaseFAQs[0],
     purchaseFAQs[1],
@@ -348,12 +349,8 @@ export function CatalogPage({
           {product ? (
             <>
               <h1>{getPageSeo(productRoute(product)).h1}</h1>
+              <p className="account-product-introduction" data-keyword-opening="true">{productOpening(product)}</p>
               <CatalogPublicationNotice product={product} />
-              <p className="account-product-introduction">
-                {publication?.published && publication.review.publicDescription
-                  ? publication.review.publicDescription
-                  : catalogEditorial[productRoute(product)].intro}
-              </p>
               <ProductVisual
                 provider={product.provider}
                 title={product.name}
@@ -363,7 +360,7 @@ export function CatalogPage({
                 className="account-product-specs"
                 aria-labelledby="account-specs-title"
               >
-                <h2 id="account-specs-title">Product specifications</h2>
+                <h2 id="account-specs-title">{productName(product)} specifications</h2>
                 <dl>
                   {productSpecifications(product).map(([label, value]) => (
                     <div key={label}>
@@ -380,6 +377,12 @@ export function CatalogPage({
             </>
           ) : (
             <>
+              <p className="account-product-introduction" data-keyword-opening="true" data-keyword-description="true">{categoryOpening(brand)}</p>
+              <section className="account-product-specs" aria-labelledby="category-specs-title">
+                <h2 id="category-specs-title">{brand.name} Accounts specifications</h2>
+                <p>Before you purchase {brand.name} Accounts, compare the listed options and their scope. {brand.name} Accounts pricing ranges from {formatPrice(lowest)} to {formatPrice(Math.max(...list.map(p => p.price)))} across {list.length} variations.</p>
+                <dl><div><dt>Listed variations</dt><dd>{list.length}</dd></div><div><dt>Account categories</dt><dd>{groups.join(', ')}</dd></div></dl>
+              </section>
               <ProductVisual
                 provider={brand.name}
                 title={brand.name + " Accounts"}

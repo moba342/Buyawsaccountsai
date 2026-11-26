@@ -1,4 +1,4 @@
-import { catalogEditorial } from "./catalog-editorial-data.js";
+import { productBuyingDescription, productName } from "./catalog-buying-copy.js";
 import { productRoute } from "./catalogPaths.js";
 import { productPublication } from "./offer-publication.js";
 import { catalogDefinitions } from "./catalog-data.js";
@@ -6,14 +6,7 @@ import { products } from "./catalog.js";
 export const providerBuyingNotes = Object.fromEntries(
   catalogDefinitions.map((def) => [def.name, def.overview]),
 );
-function introduction(product) {
-  const value = catalogEditorial[productRoute(product)]?.intro;
-  if (!value)
-    throw new Error(
-      "Missing original editorial copy: " + productRoute(product),
-    );
-  return value;
-}
+function introduction(product) { return productBuyingDescription(product); }
 export const variantIntroductions = Object.fromEntries(
   catalogDefinitions.map((def) => [
     def.name,
@@ -122,7 +115,7 @@ export function getProductArticle(product, brand) {
     price,
     sections: [
       {
-        title: "Compare product configurations",
+        title: "Compare " + productName(product),
         paragraphs: [
           peers.length
             ? "Compare this " +
@@ -138,13 +131,13 @@ export function getProductArticle(product, brand) {
       },
       { title: kind.title, paragraphs: [kind.body], checks: kind.checks },
       {
-        title: "Pricing and billing",
+        title: productName(product) + " pricing and billing",
         paragraphs: [
-          "The preserved seller reference price for " +
+          "Before you purchase " +
             brand.name +
             " " +
             product.name +
-            " is " +
+            ", review the listed reference price of " +
             price +
             " per account. It is not an infrastructure usage budget, a resource reservation, or a currently payable offer while publication review is pending.",
           product.credit

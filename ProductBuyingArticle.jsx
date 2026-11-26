@@ -30,7 +30,7 @@ export default function ProductBuyingArticle({ product, brand, onOrder }) {
       <div className="product-article-heading">
         <span>PRODUCT BUYING GUIDE · {brand.full}</span>
         <h2 id="product-article-title">{article.title}</h2>
-        <p>{article.intro}</p>
+        <p data-keyword-description="true">{article.intro}</p>
         <div className="product-article-facts">
           <span>
             Reference price <strong>{article.price} / account</strong>
@@ -85,7 +85,7 @@ export default function ProductBuyingArticle({ product, brand, onOrder }) {
           className="product-resource-links"
           aria-label="Related product buying resources"
         >
-          <a href={providerPath(brand)}>{brand.name} reference collection</a>
+          <a href={providerPath(brand)}>Buy {brand.name} Accounts: compare variants</a>
           <a href="/compare-products/">Compare product specifications</a>
           <a href={"/" + guideRoute(guides[0]) + "/"}>
             Read the cloud account buying guide
@@ -162,7 +162,7 @@ export function CatalogBuyingArticles({ brands, products }) {
                       <div>
                         <h3>
                           <a href={productPath(product)}>
-                            {brand.name} {product.name}
+                            Buy {brand.name} {product.name}
                             <ArrowUpRight size={15} aria-hidden="true" />
                           </a>
                         </h3>

@@ -6,6 +6,7 @@ import {
   safeJson,
   socialEntries,
   twitterEntries,
+  metaKeywordContent,
   SITE_URL,
 } from "../seo.js";
 import { routeIds, routePath } from "../routing.js";
@@ -34,6 +35,7 @@ async function pageHtml(id, pathname) {
       ? [`<link rel="canonical" href="${escape(seo.canonical)}"/>`]
       : []),
     meta("robots", seo.robots),
+    ...(metaKeywordContent(seo) ? [meta("keywords", metaKeywordContent(seo))] : []),
     ...Object.entries(socialEntries(seo)).map(([k, v]) => meta(k, v, true)),
     ...Object.entries(twitterEntries(seo)).map(([k, v]) => meta(k, v)),
     ...(schema
@@ -117,3 +119,5 @@ console.log(
 await import("./generate-catalog-seo.mjs");
 
 await import("./generate-url-mapping.mjs");
+
+await import("./generate-product-keyword-audit.mjs");

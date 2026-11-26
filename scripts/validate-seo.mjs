@@ -3,7 +3,7 @@ import fs from "node:fs/promises";
 import assert from "node:assert/strict";
 import sharp from "sharp";
 import { routeIds, routePath } from "../routing.js";
-import { getPageSeo, siteSchema, safeJson } from "../seo.js";
+import { getPageSeo, siteSchema, safeJson, metaKeywordContent } from "../seo.js";
 import { products, brands } from "../catalog.js";
 import { productRoute, providerRoute } from "../catalogPaths.js";
 import {
@@ -45,7 +45,8 @@ for (const { id, path } of pages) {
     html.includes('name="robots" content="' + seo.robots + '"'),
     path + " robots",
   );
-  assert(!html.includes('name="keywords"'), path + " obsolete keywords");
+  assert.equal((html.match(/<meta name="keywords"/g) || []).length, metaKeywordContent(seo) ? 1 : 0, path + " meta keyword count");
+  if (metaKeywordContent(seo)) assert(html.includes('name="keywords" content="' + escape(metaKeywordContent(seo)) + '"'), path + " assigned meta keywords");
   assert(html.includes(safeJson(siteSchema(seo))), path + " schema");
   assert(html.includes('data-prerendered="true"'), path + " SSG");
   assert(
