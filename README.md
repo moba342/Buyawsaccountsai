@@ -1,3 +1,5 @@
+> Latest release: [Final SEO production report](docs/seo/FINAL-SEO-IMPLEMENTATION-REPORT.md). Source `7ea14d0` is deployed at https://www.buyawsaccountsai.com/ with 82 buying-keyword catalog URLs and a 94-URL sitemap. Earlier source-only release statements below are historical. Google Search Console: **PENDING - MANUAL SETUP BY WEBSITE OWNER**.
+
 > Current URL migration: [SEO-URL-MAPPING.md](docs/seo/SEO-URL-MAPPING.md). The 82 catalog public URLs now use assigned buying-keyword slugs; stable product/cart/payment IDs and commercial status are unchanged. Earlier URL statements are historical. This migration is source-only until a separate deployment.
 
 > Current workflow: [Independent catalog SEO](docs/seo/SEO-INDEPENDENCE-REPORT.md). SEO development and catalog indexability do not require commercial verification documents. Earlier release notes below are historical; payment and commercial activation remain separately controlled.

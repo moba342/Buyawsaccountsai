@@ -12,7 +12,7 @@ Date: 2026-11-27. Deployment is authorized by the user's final SEO instructions;
 - [x] Revoke the temporary preview automation bypass; preserve deployment protection.
 - [x] Prepare the existing Vercel project `mo-ba2/buyawsaccountsai` and retain previous production deployment for rollback.
 
-## Production execution and acceptance
+## Production execution and acceptance — COMPLETED
 
 - Promote the tested source commit through existing Git/Vercel production release; record source commit, deployment ID, READY state and preferred domain alias.
 - Verify **on HTTPS www production**, not the protected preview: all new canonical paths return 200; all old paths redirect directly; query parameters survive; real canonical/robots/JSON-LD/OG agree with source.
@@ -30,3 +30,17 @@ Previous application deployment: `dpl_6coh1ndcCLbqAQs3cWYpUeAJ7AF6`, https://buy
 Google Search Console: **PENDING - MANUAL SETUP BY WEBSITE OWNER**. After owner setup, submit https://www.buyawsaccountsai.com/sitemap.xml, inspect representative new/old URLs and monitor coverage/backlink migration. No property verification, sitemap submission or Google indexing is claimed here. Analytics is optional and remains unconfigured until genuine owner settings and consent/privacy requirements are supplied in the owner's own workflow.
 
 Factual Product identity markup does not fabricate a purchasable Offer/review. Google merchant/product-rich-result eligibility and external tool login follow-up remain separate from successful technical SEO. Commercial activation remains unchanged.
+
+
+## Recorded release acceptance
+
+- [x] GitHub main source `7ea14d0` deployed to production `dpl_7GW9kvg1JQeAXTKurqQBzHVFojLE`, READY; HTTPS www alias verified.
+- [x] Live 96-page canonical/metadata/schema check; 94 indexable direct 200s, all 535 one-hop preferred-host redirects and query preservation.
+- [x] Live robots/sitemap, header indexing directives, links, images, custom 404, 268 responsive views and 18 live automated axe scans passed.
+- [x] All 68 pending purchase controls and saved cart/checkout/API safeguards preserved; no paid order or funds transferred.
+- [x] Homepage/product mobile and desktop live Lighthouse runs recorded: 100 in all four categories on the measured samples.
+- [x] Comprehensive report and evidence saved in `FINAL-SEO-IMPLEMENTATION-REPORT.md` and `evidence/final-release/live/`.
+- [x] Existing apex/cross-host extra redirect hops disclosed as a separate nonblocking hosting optimization; no preferred-host application chains/loops found.
+- [ ] Google Search Console: **PENDING - MANUAL SETUP BY WEBSITE OWNER** — not a technical SEO failure and not requested during this release.
+
+All claimed production results are measured against the deployed release; earlier local results remain separately labeled. No Google indexing, field INP or merchant-rich-result success is fabricated.

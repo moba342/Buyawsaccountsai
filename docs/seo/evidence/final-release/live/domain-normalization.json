@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-27",
+  "note": "Read-only existing domain settings; preferred-host application redirects are validated separately.",
+  "results": [
+    {
+      "source": "http://buyawsaccountsai.com/",
+      "hops": [
+        {
+          "url": "http://buyawsaccountsai.com/",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/"
+        },
+        {
+          "url": "https://buyawsaccountsai.com/",
+          "status": 308,
+          "location": "https://www.buyawsaccountsai.com/"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "https://buyawsaccountsai.com/",
+      "hops": [
+        {
+          "url": "https://buyawsaccountsai.com/",
+          "status": 308,
+          "location": "https://www.buyawsaccountsai.com/"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "http://www.buyawsaccountsai.com/",
+      "hops": [
+        {
+          "url": "http://www.buyawsaccountsai.com/",
+          "status": 308,
+          "location": "https://www.buyawsaccountsai.com/"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "source": "https://buyawsaccountsai.com/aws-accounts/",
+      "hops": [
+        {
+          "url": "https://buyawsaccountsai.com/aws-accounts/",
+          "status": 308,
+          "location": "https://www.buyawsaccountsai.com/aws-accounts/"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/aws-accounts/",
+          "status": 308,
+          "location": "/buy-aws-accounts/"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/buy-aws-accounts/",
+          "status": 200,
+          "location": null
+        }
+      ]
+    }
+  ]
+}

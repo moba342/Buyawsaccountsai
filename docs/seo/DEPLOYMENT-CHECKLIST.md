@@ -1,3 +1,5 @@
+> Subsequent production release completed. See [the final checklist](FINAL-DEPLOYMENT-CHECKLIST.md) and [actual live report](FINAL-SEO-IMPLEMENTATION-REPORT.md). This earlier independent-SEO checklist remains historical context.
+
 # Independent SEO deployment checklist
 
 SEO development has no mandatory commercial-document step. Commercial authorization/activation remains a separate workflow.

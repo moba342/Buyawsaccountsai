@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-27",
+  "method": "Sequential mobile/desktop live production lab runs after other browser QA. Not field INP, ranking or indexing.",
+  "results": [
+    {
+      "page": "Homepage",
+      "device": "mobile",
+      "url": "https://www.buyawsaccountsai.com/",
+      "fetchTime": "2026-11-26T18:51:09.385Z",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 1248.1985,
+      "tbtMs": 69,
+      "cls": 0,
+      "warnings": []
+    },
+    {
+      "page": "Homepage",
+      "device": "desktop",
+      "url": "https://www.buyawsaccountsai.com/",
+      "fetchTime": "2026-11-26T18:51:20.904Z",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 463.379,
+      "tbtMs": 0,
+      "cls": 0,
+      "warnings": []
+    },
+    {
+      "page": "AWS 8 vCPU product",
+      "device": "mobile",
+      "url": "https://www.buyawsaccountsai.com/buy-aws-8-vcpu/",
+      "fetchTime": "2026-11-26T18:51:32.358Z",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 1093.6799999999998,
+      "tbtMs": 26,
+      "cls": 0,
+      "warnings": []
+    },
+    {
+      "page": "AWS 8 vCPU product",
+      "device": "desktop",
+      "url": "https://www.buyawsaccountsai.com/buy-aws-8-vcpu/",
+      "fetchTime": "2026-11-26T18:51:43.568Z",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 346.618,
+      "tbtMs": 0,
+      "cls": 0,
+      "warnings": []
+    }
+  ]
+}

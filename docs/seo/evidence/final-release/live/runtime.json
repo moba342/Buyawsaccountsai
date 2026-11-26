@@ -1,0 +1,603 @@
+{
+  "date": "2026-11-27",
+  "deployment": {
+    "id": "dpl_7GW9kvg1JQeAXTKurqQBzHVFojLE",
+    "url": "buyawsaccountsai-9gm7rrm0q-mo-ba2.vercel.app",
+    "sourceCommit": "7ea14d0f05074b04aed3c602ef19905e429f1885",
+    "readyState": "READY",
+    "target": "production",
+    "aliases": [
+      "www.buyawsaccountsai.com",
+      "buyawsaccountsai.com",
+      "buyawsaccountsai.vercel.app",
+      "buyawsaccountsai-mo-ba2.vercel.app",
+      "buyawsaccountsai-git-main-mo-ba2.vercel.app"
+    ]
+  },
+  "production": "https://www.buyawsaccountsai.com",
+  "searchConsoleStatus": "PENDING - MANUAL SETUP BY WEBSITE OWNER",
+  "manifest": {
+    "pages": 96,
+    "sitemapUrls": 94,
+    "verificationConfigured": false
+  },
+  "temporaryBypassesRemaining": 0,
+  "headers": [
+    {
+      "path": "/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/help-center/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buying-guides/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/cart/",
+      "status": 200,
+      "htmlRobots": "noindex, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/compare-products/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/checkout/",
+      "status": 200,
+      "htmlRobots": "noindex, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/cloud-platforms/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/marketplace/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-accounts/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/contact-sales/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/verification/public-proof/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/seller-profile/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buying-guides/buying-cloud-credits-value-eligibility-and-expiry/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buying-guides/how-to-choose-a-cloud-account-for-your-project/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buying-guides/your-cloud-account-delivery-and-security-checklist/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-azure-accounts/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-digitalocean-accounts/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-ovhcloud-accounts/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-oracle-cloud-accounts/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-linode-accounts/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-google-cloud-accounts/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-hetzner-accounts/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-kamatera-accounts/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-amazon-ses-accounts/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-upcloud-accounts/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-ibm-cloud-accounts/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-heroku-accounts/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-32-vcpu/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-8-vcpu/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-vultr-accounts/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-free-trial/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-64-vcpu/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-128-vcpu/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-25k-credits/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-512-vcpu/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-1920-vcpu/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-10k-credits/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-5k-credits/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-640-vcpu/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-256-vcpu/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-100k-credits/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-5k-credits-10k-rpm-bedrock-enabled/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-256-vcpu-10k-rpm-bedrock-enabled/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-32-vcpu-50-rpm-bedrock-enabled/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-32-vcpu-10-rpm-bedrock-enabled/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-azure-5k-credits-gpt-6-astra-high-tpm-t5/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-10k-credits-10k-rpm-bedrock-enabled/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-azure-pay-as-you-go/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-azure-10k-credits-gpt-enabled/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-aws-25k-credits-10k-rpm-bedrock-enabled/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-azure-5k-credits/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-azure-10k-credits-gpt-6-astra-high-tpm-t5/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-azure-free-trial-200-credits/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-google-cloud-free-trial-300-credits/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-azure-25k-credits-gpt-6-astra-high-tpm-t5/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-digitalocean-500-droplets-port-25-open/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-google-cloud-300-credits-paid-account/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-digitalocean-10-droplets-free-trial/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-digitalocean-200-droplets-port-25-open/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-digitalocean-3-droplets-free-trial/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-azure-100k-credits-gpt-6-astra-high-tpm-t5/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-google-cloud-2k-credits-paid-account/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-google-cloud-25k-credits-paid-account/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-google-cloud-5k-credits-paid-account/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-google-cloud-10k-credits-paid-account/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-hetzner-free-trial/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-oracle-cloud-free-trial/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-linode-port-25-open-50-ips/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-linode-port-25-open-10-ips/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-hetzner-port-limit-50-servers/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-kamatera-port-25-open/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-kamatera-free-trial/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-linode-free-trial/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-oracle-cloud-pay-as-you-go/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-upcloud-free-trial/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-ovhcloud-paid-account-34-vcpu/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-ovhcloud-free-trial-34-vcpu/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-amazon-ses-smtp-100k-daily-limit/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-amazon-ses-smtp-50k-daily-limit-3-regions/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-upcloud-paid-account/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-amazon-ses-smtp-50k-daily-limit/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-vultr-250-credits/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-ibm-cloud-free-trial/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-ibm-cloud-pay-as-you-go/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-heroku-free-trial-port-25-open/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-vultr-200-credits/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-heroku-port-25-open/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-ibm-cloud-port-25-open/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    },
+    {
+      "path": "/buy-vultr-95-credits/",
+      "status": 200,
+      "htmlRobots": "index, follow",
+      "xRobotsTag": null
+    }
+  ]
+}
