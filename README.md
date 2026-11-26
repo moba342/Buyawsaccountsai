@@ -230,3 +230,5 @@ Public page paths now match the new page names. Internal app IDs remain stable.
 | `/contact/` | `/contact-sales/` |
 
 Vercel permanently redirects previous paths; SPA navigation, canonical metadata, existing legacy hash links, and all shared links use the canonical paths. Retired catalog redirects lead directly to canonical destinations. The homepage, cart, checkout, provider collections, product URLs and public seller declaration retain their routes.
+
+`GuideArtwork.jsx` provides original cloud, credit-layer and security SVG symbols for the buying-guide card headers. Frames and icon sizes remain centered at responsive widths; the old decorative oval is removed. `guide-artwork.css` uses the shared navy tokens, short hover movement and reduced-motion support.

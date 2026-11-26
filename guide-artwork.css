@@ -1,0 +1,16 @@
+/* Bespoke guide symbols with a consistent frame, scale and optical center. */
+#root .guides-page .guide-art.guide-art-refined{height:188px;display:flex;align-items:center;justify-content:center;padding:22px 24px 40px;background:#F0F4FA;border-bottom:1px solid var(--card-border);position:relative;isolation:isolate;overflow:hidden}
+#root .guide-symbol-frame{position:relative;display:grid;place-items:center;flex:0 0 100px;width:100px;height:100px;border:1px solid #D2DDEC;border-radius:25px;background:#FFFFFF;box-shadow:0 6px 18px rgba(8,15,36,.035);z-index:1}
+#root .guide-symbol-tile{display:grid;place-items:center;width:80px;height:80px;border:1px solid #536C91;border-radius:18px;background:var(--gradient-primary);color:#FFFFFF;box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 4px 10px rgba(8,15,36,.13)}
+#root .guide-symbol-tile>svg{display:block;width:46px;height:46px;color:#E5EFFC;filter:none;stroke-width:1.7;flex-shrink:0}
+#root .guide-art-rail{position:absolute;top:calc(50% - 9px);height:1px;width:calc(50% - 78px);background:#CEDAEB;pointer-events:none}
+#root .guide-art-rail-left{left:20px}
+#root .guide-art-rail-right{right:20px}
+#root .guide-art-rail::after{content:'';position:absolute;top:-3px;width:7px;height:7px;border:1px solid #BACBE1;background:#F8FAFC;border-radius:2px}
+#root .guide-art-rail-left::after{left:0}
+#root .guide-art-rail-right::after{right:0}
+#root .guide-art-caption{position:absolute;left:20px;right:20px;bottom:16px;color:var(--sapphire);font-family:var(--font-body);font-size:10px;font-weight:600;line-height:1.5;letter-spacing:.12em;text-transform:uppercase;text-align:center}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){#root .guide-symbol-frame{transition:transform 250ms ease,box-shadow 250ms ease}#root .guide-card:hover .guide-symbol-frame{transform:translateY(-2px);box-shadow:0 8px 22px rgba(8,15,36,.08)}}
+@media(max-width:767px){#root .guides-page .guide-art.guide-art-refined{height:172px}#root .guide-symbol-frame{width:92px;height:92px;flex-basis:92px;border-radius:23px}#root .guide-symbol-tile{width:74px;height:74px;border-radius:17px}#root .guide-symbol-tile>svg{width:42px;height:42px}}
+html[data-scroll-active=true] #root .guide-card .guide-symbol-frame{transform:none;transition:none}
+@media(prefers-reduced-motion:reduce){#root .guide-symbol-frame{transition:none;transform:none}}
