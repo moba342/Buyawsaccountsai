@@ -87,3 +87,11 @@ html[data-scroll-active=true] #root .account-card .account-price-glow,html[data-
 #root .account-card-logo{display:inline-flex;align-items:center;justify-content:center;flex:0 0 34px;width:34px;height:34px;background:#F8FAFC;border:1px solid #DCE3ED;border-radius:9px}
 #root .account-card-top .account-card-logo img{width:22px;height:22px;padding:0;border:0;border-radius:0;background:transparent}
 @media(max-width:374px){#root .account-card-logo{width:30px;height:30px;flex-basis:30px}#root .account-card-top .account-card-logo img{width:20px;height:20px}}
+
+/* Category header matches the light variation-limit panel. */
+#root .account-card-top{background:#F8FAFC;border:1px solid #DCE3ED;border-radius:9px;box-shadow:none;padding:14px;min-height:64px}
+#root .account-card-category{color:var(--navy);font-size:14px;font-weight:600;line-height:1.5;letter-spacing:-.01em}
+#root .account-card-kind{background:var(--gradient-primary);border-color:var(--premium-border);color:#FFFFFF;box-shadow:var(--shadow-inset)}
+#root .account-card-logo{background:#FFFFFF;border-color:#DCE3ED}
+@media(max-width:767px){#root .account-card-category{font-size:13px}}
+@media(max-width:374px){#root .account-card-top{padding:12px;gap:8px}#root .account-card-category{font-size:13px}#root .account-card-kind{font-size:9px}}
