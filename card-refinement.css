@@ -56,3 +56,34 @@ html[data-scroll-active=true] #root .account-card .account-price-glow,html[data-
 
 /* Interaction emphasizes the soft detail lighting without bold text. */
 @media(prefers-reduced-motion:no-preference){#root .account-card:hover .account-card-copy ul::after,#root .account-card:focus-within .account-card-copy ul::after{background:linear-gradient(90deg,transparent,rgba(117,156,207,.2),transparent);animation-duration:5s}}
+
+/* Current product-card edition: an inset identity band and a compact purchase hierarchy. */
+#root .account-card{border-radius:18px;padding:10px;background:#FFFFFF;border-color:#DCE3ED;box-shadow:0 3px 12px rgba(8,15,36,.045);height:auto}
+#root .account-collection-grid,#root .home-product-grid{align-items:start}
+#root .account-card-top{padding:15px;border:1px solid var(--premium-border);border-radius:11px;background:var(--gradient-primary);align-items:center;gap:12px;min-height:70px}
+#root .account-card-top>span:first-child{align-items:center;gap:10px}
+#root .account-card-top img{width:34px;height:34px;padding:6px;background:#F8FAFC;border:1px solid #DCE3ED;border-radius:9px;object-fit:contain}
+#root .account-card-category{color:#FFFFFF;font-weight:600;font-size:11px;line-height:1.65}
+#root .account-card-kind{background:rgba(255,255,255,.07);border:1px solid #7185A4;color:#F8FAFC;box-shadow:inset 0 1px 0 rgba(255,255,255,.06);border-radius:6px;padding:5px 8px;max-width:42%;font-size:10px;gap:5px}
+#root .account-card-copy{padding:24px 14px 20px;flex:none}
+#root .account-card h3{font-size:24px;line-height:1.35;letter-spacing:-.03em;margin-bottom:6px}
+#root .account-card-copy>p{font-size:12px;line-height:1.7;margin-bottom:0;color:#475569}
+#root .account-card-copy>.account-card-price{border:0;border-bottom:1px solid var(--card-border);padding:20px 0;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 16px}
+#root .account-card-price>span{font-size:11px;line-height:1.6;margin:0;color:#475569}
+#root .account-card-price strong{font-size:34px;line-height:1.2;letter-spacing:-.04em}
+#root .account-card-price small{font-size:11px;letter-spacing:0;white-space:nowrap}
+#root .account-card-copy dl{margin:0 0 20px;padding:10px 12px;border:1px solid #DCE3ED;border-radius:9px;background:#F8FAFC}
+#root .account-card-details-label{display:block;color:var(--sapphire);font-size:10px;line-height:1.6;font-weight:600;letter-spacing:.07em;text-transform:uppercase;margin-bottom:12px}
+#root .account-card-copy ul{margin:0;gap:10px}
+#root .account-card-copy li{font-size:13px;line-height:1.75;font-weight:400;color:#475569;padding-left:14px}
+#root .account-card li::before{width:4px;height:4px;top:.7em;background:#7185A4}
+#root .account-card-bottom{padding:16px 14px 6px;border-top:1px solid var(--card-border);border-radius:0 0 10px 10px;background:#F8FAFC}
+#root .account-card-actions{margin-top:0;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:10px}
+#root .account-card-actions>*{font-size:12px;min-height:46px;padding:10px 12px;border-radius:9px}
+#root .account-card-compare{margin-top:8px;font-size:11px;font-weight:500;min-height:40px;color:var(--sapphire)}
+#root .account-card-compare:hover{background:#EDF2F9}
+@media(max-width:767px){#root .account-card{padding:8px;border-radius:16px}#root .account-card-top{padding:14px}#root .account-card h3{font-size:22px}#root .account-card-copy{padding:22px 12px 20px}#root .account-card-bottom{padding:14px 12px 4px}#root .account-card-price strong{font-size:32px}}
+@media(max-width:374px){#root .account-card-top>span:first-child{flex-basis:auto}#root .account-card-top{flex-wrap:nowrap;gap:8px}#root .account-card-category{font-size:10px}#root .account-card-kind{padding:5px 6px;font-size:9px;gap:4px}#root .account-card-top img{width:30px;height:30px;padding:5px}#root .account-card-actions{grid-template-columns:minmax(0,1fr)}#root .account-card-price strong{font-size:30px}}
+#root .account-card-logo{display:inline-flex;align-items:center;justify-content:center;flex:0 0 34px;width:34px;height:34px;background:#F8FAFC;border:1px solid #DCE3ED;border-radius:9px}
+#root .account-card-top .account-card-logo img{width:22px;height:22px;padding:0;border:0;border-radius:0;background:transparent}
+@media(max-width:374px){#root .account-card-logo{width:30px;height:30px;flex-basis:30px}#root .account-card-top .account-card-logo img{width:20px;height:20px}}

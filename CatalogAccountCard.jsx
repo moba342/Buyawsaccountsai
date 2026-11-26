@@ -16,7 +16,9 @@ export default function CatalogAccountCard({
     <article className="account-card">
       <div className="account-card-top">
         <span>
-          <ProviderLogo name={product.provider} decorative />
+          <span className="account-card-logo">
+            <ProviderLogo name={product.provider} decorative />
+          </span>
           <span className="account-card-category">
             {product.group || product.type}
           </span>
@@ -31,23 +33,6 @@ export default function CatalogAccountCard({
           <a href={'/' + productRoute(product) + '/'}>{product.name}</a>
         </h3>
         <p>{product.type}</p>
-        {facts.length > 0 && (
-          <dl>
-            {facts.map(([label, value]) => (
-              <div key={label}>
-                <dt>{label}</dt>
-                <dd>{value}</dd>
-              </div>
-            ))}
-          </dl>
-        )}
-        <ul>
-          {product.features.slice(facts.length ? 1 : 0).map((text) => (
-            <li key={text}>{text}</li>
-          ))}
-        </ul>
-      </div>
-      <div className="account-card-bottom">
         <div className="account-card-price">
           <span>Reference price</span>
           <strong>
@@ -60,6 +45,25 @@ export default function CatalogAccountCard({
             <small> / account</small>
           </strong>
         </div>
+
+        {facts.length > 0 && (
+          <dl>
+            {facts.map(([label, value]) => (
+              <div key={label}>
+                <dt>{label}</dt>
+                <dd>{value}</dd>
+              </div>
+            ))}
+          </dl>
+        )}
+        <span className="account-card-details-label">Account details</span>
+        <ul>
+          {product.features.slice(facts.length ? 1 : 0).map((text) => (
+            <li key={text}>{text}</li>
+          ))}
+        </ul>
+      </div>
+      <div className="account-card-bottom">
         <div className="account-card-actions">
           <button
             className="primary"
