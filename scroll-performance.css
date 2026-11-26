@@ -12,3 +12,14 @@ html[data-motion-hidden=true] #root *,html[data-motion-hidden=true] #root *::bef
 html[data-scroll-active=true] #root :is(.home-kicker,.eyebrow,.section-kicker,.home-product-badge,.pill,.badge,.shot-tag,.shot-brand-chip,.shot-availability,.shot-product-header>small,.provider-showcase-count)::before,
 html[data-scroll-active=true] #root .footer-wordmark::after{animation-play-state:paused!important}
 @media(hover:hover) and (pointer:fine){html[data-scroll-active=true] #root :is(.provider-showcase-card,.catalog-product-card,.account-card):hover{transform:none;box-shadow:var(--shadow-card);transition:none}html[data-scroll-active=true] #root .provider-showcase-card:hover::before{opacity:0;transition:none}}
+
+/* An opaque sticky navigation avoids repainting the page through backdrop blur. */
+html{scroll-padding-top:var(--sticky-header-offset,128px)}
+html body #root>header{position:sticky;top:max(12px,env(safe-area-inset-top));z-index:60;background:#FFFFFF;backdrop-filter:none;-webkit-backdrop-filter:none}
+@media(max-width:767px){html body #root>header{top:max(8px,env(safe-area-inset-top))}}
+html body #root .account-purchase-panel,html body #root .account-category-nav{top:var(--sticky-header-offset,128px)}
+/* Preserve motion at rest; scrolling gets the rendering budget. */
+html[data-scroll-active=true] #root :is(.provider-motion-track,.review-track,.visual-halo,.button-motion-sheen){animation-play-state:paused!important}
+html[data-scroll-active=true] #root :is(.visual-provider,.cloud-sculpture,.home-hero-profile){transition:none!important}
+
+html[data-scroll-active=true] #root .button-motion-sheen{display:none}

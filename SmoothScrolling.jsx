@@ -11,6 +11,14 @@ export function scrollPageTo(target, { immediate = false } = {}) {
     active.engine.scrollTo(target, {
       immediate: immediate || reduced,
       duration: 0.85,
+      offset:
+        typeof target === 'number'
+          ? 0
+          : -Number.parseFloat(
+              getComputedStyle(document.documentElement).getPropertyValue(
+                '--sticky-header-offset',
+              ) || '128',
+            ),
     });
     return;
   }
@@ -19,6 +27,23 @@ export function scrollPageTo(target, { immediate = false } = {}) {
   else target.scrollIntoView({ behavior, block: 'start' });
 }
 export default function SmoothScrolling({ paused, routeKey }) {
+  useEffect(() => {
+    const header = document.querySelector('#root > header');
+    if (!header) return;
+    // Measure only when the header changes size, never in the scroll frame loop.
+    const measure = () =>
+      document.documentElement.style.setProperty(
+        '--sticky-header-offset',
+        `${Math.ceil(header.getBoundingClientRect().height) + 32}px`,
+      );
+    const observer = new ResizeObserver(measure);
+    observer.observe(header);
+    measure();
+    return () => {
+      observer.disconnect();
+      document.documentElement.style.removeProperty('--sticky-header-offset');
+    };
+  }, []);
   useEffect(() => {
     let timer = 0,
       moving = false;

@@ -178,3 +178,7 @@ Provider collections use category navigation, package search, and responsive two
 The motion treatment also sequences hero content and section headings, staggers collection cards, and adds bounded pointer parallax to the homepage illustration. A slow sapphire halo runs only while the hero is visible on fine-pointer devices, pausing during scroll and in hidden tabs. Reduced-motion mode disables these treatments.
 
 Primary and secondary actions receive a one-shot hover sheen with decorative layers cleaned up after completion. Fine-pointer product/provider cards use a bounded 1.1-degree tilt that resets on scroll and is disabled immediately while controls have keyboard focus. Buying guides and FAQ rows share the one-time reveal system. No cursor replacement or moving click targets are used.
+
+### Sticky navigation and scroll budget
+
+The capsule header stays at the top with an opaque surface rather than live backdrop blur. A ResizeObserver measures header height only when it changes; native anchor scroll padding and Lenis navigation offsets leave room for the header. Collection sidebars use the same offset. Decorative carousels and hero motion pause during scrolling; pointer/keyboard/native touch behavior is preserved. Actual refresh rate remains dependent on browser and hardware.
