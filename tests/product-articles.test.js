@@ -9,7 +9,7 @@ import {
 import { productRoute, providerRoute } from '../catalogPaths.js';
 import { routeIds } from '../routing.js';
 test('every catalog variant has a complete, product-specific original buying article', () => {
-  assert.equal(products.length, 53);
+  assert.equal(products.length, 68);
   const intros = new Set(),
     titles = new Set();
   for (const product of products) {
@@ -35,10 +35,10 @@ test('every catalog variant has a complete, product-specific original buying art
     intros.add(article.intro);
     titles.add(article.title);
   }
-  assert.equal(intros.size, 53);
-  assert.equal(titles.size, 53);
+  assert.equal(intros.size, 68);
+  assert.equal(titles.size, 68);
 });
-test('every provider has buying guidance and unchanged provider routes', () => {
+test('every current provider has buying guidance and valid routes', () => {
   for (const brand of brands) {
     assert(providerBuyingNotes[brand.name]?.length > 100);
     assert(routeIds.includes(providerRoute(brand)));

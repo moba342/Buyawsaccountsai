@@ -1,31 +1,112 @@
-import{providerEditorial}from'./editorialContent.js';
-const definitions=[
-['AWS','Amazon Web Services','aws','#ff9c36',[
-['Free Trial',15,'Trial'],['8 vCPU',35,'Compute'],['32 vCPU',80,'Compute'],['64 vCPU',120,'Compute'],['128 vCPU',150,'Compute'],['256 vCPU',190,'Compute'],['512 vCPU',299,'Compute'],['$1K Credit',250,'Credit',1000],['$5K Credit',999,'Credit',5000],['$10K Credit',2499,'Credit',10000],['$25K Credit',4999,'Credit',25000],['$100K Credit',13000,'Credit',100000]]],
-['Google Cloud','Google Cloud','G','#84adff',[
-['$300 Credit',45,'Credit',300],['$400 Credit',55,'Credit',400],['$1K Credit',199,'Credit',1000],['$5K Credit',499,'Credit',5000],['$10K Credit',999,'Credit',10000],['$25K Credit',1499,'Credit',25000]]],
-['Azure','Microsoft Azure','▦','#60bdff',[
-['Free Trial',30,'Trial'],['Pay As You Go',40,'Account'],['$1K Credit',199,'Credit',1000],['$5K Credit',699,'Credit',5000],['$25K Credit',1999,'Credit',25000]]],
-['DigitalOcean','DigitalOcean','◕','#5799ff',[
-['Free Trial',20,'Trial'],['Close Port 3',29,'Droplet'],['Close Port 10',39,'Droplet'],['Close Port 25',50,'Droplet'],['Open Port 3',99,'Droplet'],['Open Port 10',199,'Droplet'],['Open Port 25',299,'Droplet']]],
-['Oracle Cloud','Oracle Cloud','O','#ef746d',[
-['$300 Credit',45,'Credit',300],['New Account',40,'Account'],['Old Account',90,'Account'],['Upgraded Account',130,'Account'],['Pay As You Go',110,'Account']]],
-['Hetzner','Hetzner Cloud','H','#ee7188',[
-['5 Servers',45,'Server'],['10 Servers',90,'Server'],['25 Servers',190,'Server'],['100 Servers',999,'Server'],['Old Account',180,'Account']]],
-['Vultr','Vultr','V','#71abff',[
-['$200 Credit',30,'Credit',200],['$250 Credit',60,'Credit',250],['$300 Credit',99,'Credit',300]]],
-['Linode','Linode (Akamai)','L','#6fcb9b',[
-['$100 Credit',25,'Credit',100],['Port 25 Open',130,'SMTP']]],
-['IBM Cloud','IBM Cloud','IBM','#97b5ec',[
-['Free Trial',30,'Trial'],['Port 25 Open',80,'SMTP']]],
-['Kamatera','Kamatera','K','#ab92ef',[
-['Free Trial',25,'Trial'],['Port 25 Open',45,'SMTP']]],
-['Alibaba Cloud','Alibaba Cloud','A','#ffa157',[
-['Personal Account',50,'Account'],['Business Account',90,'Account']]],
-['Atlantic.Net','Atlantic.Net','AT','#66c5ce',[
-['Free Trial',50,'Trial'],['Port 25 Open',199,'SMTP']]]
-];
-export const products=definitions.flatMap(([provider,full,logo,color,rows])=>rows.map(([name,price,kind,credit],i)=>({provider,name,price,kind,credit:credit||0,label:name==='32 vCPU'?'Popular':i===0?'Starter':kind==='Credit'?'Credit package':'Account',type:kind==='Credit'?'Cloud credit account':kind==='Compute'?'Compute account':kind==='Droplet'?'Droplet capacity account':kind==='Server'?'Server capacity account':kind==='SMTP'?'SMTP-enabled account':kind==='Trial'?'Free trial account':'Cloud account',delivery:provider==='AWS'?'2–8 hours':'30 min–12 hours',features:kind==='Credit'?[`$${credit.toLocaleString('en-US')} listed credit value`,'Confirm account and provider eligibility','Review credit expiry and redemption terms']:kind==='Compute'?[`${name} listed compute tier`,'Confirm region and account limits','Agree delivery terms before payment']:kind==='Droplet'?[`${name.match(/\d+/)?.[0]} Droplet capacity variant`,name.startsWith('Open')?'Open-port variant':'Standard-port variant','Confirm current availability']:kind==='Server'?[`${name} listed capacity`,'Confirm region and account limits','Confirm current availability']:['Account package: '+name,'Confirm account and provider eligibility','Review final terms before payment']})));
-const providerSummaries=Object.fromEntries(Object.entries(providerEditorial).map(([name,copy])=>[name,copy.summary]));
-export const brands=definitions.map(([name,full,logo,color])=>({name,full,logo,color,summary:providerSummaries[name],from:Math.min(...products.filter(p=>p.provider===name).map(p=>p.price)),desc:`Buy ${full} account packages with clear pricing, account-specific checks, and direct seller contact.`}));
-export const formatPrice=n=>'$'+n.toLocaleString('en-US');
+import { catalogDefinitions } from './catalog-data.js';
+import { providerEditorial } from './editorialContent.js';
+const money = (n) => '$' + n.toLocaleString('en-US');
+function features(row) {
+  if (row.kind === 'AI')
+    return [
+      'Seller-listed: ' +
+        [
+          row.vcpus ? `${row.vcpus} vCPU` : null,
+          row.credit ? `${money(row.credit)} credits` : null,
+          row.rpm,
+          row.tpm,
+          row.models,
+        ]
+          .filter(Boolean)
+          .join(' · '),
+      'Confirm exact AI service, models, region, and quotas',
+      'Agree credit eligibility, delivery, and billing terms',
+    ];
+  if (row.dailyLimit)
+    return [
+      `Seller-listed ${row.dailyLimit.toLocaleString('en-US')} daily sending limit`,
+      row.regions
+        ? `Seller-listed ${row.regions} regions`
+        : 'Confirm sending scope and regional quota',
+      'Confirm permitted use, billing, and delivery',
+    ];
+  if (row.kind === 'Credit')
+    return [
+      `${money(row.credit)} seller-listed credit value`,
+      'Confirm eligibility, redemption, and expiry',
+      'Review billing and delivery terms',
+    ];
+  if (row.kind === 'Compute')
+    return [
+      `${row.vcpus} seller-listed vCPU tier`,
+      'Confirm quota, region, and resource availability',
+      'Agree billing and delivery terms',
+    ];
+  if (row.kind === 'Droplet')
+    return [
+      `${row.capacity} seller-listed Droplet capacity`,
+      row.port25 ? 'Seller-listed port 25 open' : 'Confirm networking scope',
+      'Confirm resource availability and recurring charges',
+    ];
+  if (row.kind === 'Server')
+    return [
+      `${row.capacity} seller-listed server limit`,
+      'Confirm the meaning and scope of the listed port limit',
+      'Review region, billing, and resource availability',
+    ];
+  if (row.kind === 'SMTP')
+    return [
+      row.ips
+        ? `Seller-listed port 25 open · ${row.ips} IPs`
+        : 'Seller-listed port 25 open',
+      'Confirm permissions and acceptable-use requirements',
+      'Review hosting charges and delivery terms',
+    ];
+  return [
+    'Seller-listed: ' + row.name,
+    'Confirm eligibility, account setup, and billing',
+    'Review account details and purchase terms',
+  ];
+}
+export const products = catalogDefinitions.flatMap((def) =>
+  def.rows.map((row, index) => ({
+    ...row,
+    provider: def.name,
+    credit: row.credit || 0,
+    label:
+      row.name === '32 vCPU'
+        ? 'Popular'
+        : row.kind === 'AI'
+          ? 'AI package'
+          : index === 0
+            ? 'Starter'
+            : row.kind === 'Credit'
+              ? 'Credit package'
+              : 'Account',
+    type:
+      row.kind === 'AI'
+        ? 'AI-enabled cloud account'
+        : row.kind === 'Credit'
+          ? 'Cloud credit account'
+          : row.kind === 'Compute'
+            ? 'Compute account'
+            : row.kind === 'Droplet'
+              ? 'Droplet capacity account'
+              : row.kind === 'Server'
+                ? 'Server-limit account'
+                : row.kind === 'SMTP'
+                  ? 'SMTP-enabled account'
+                  : row.kind === 'Trial'
+                    ? 'Trial account'
+                    : 'Cloud account',
+    delivery: 'Confirm in quote',
+    features: features(row),
+  })),
+);
+export const brands = catalogDefinitions.map((def) => ({
+  name: def.name,
+  full: def.full,
+  logo: def.name,
+  color: def.color,
+  summary: providerEditorial[def.name].summary,
+  from: Math.min(
+    ...products.filter((p) => p.provider === def.name).map((p) => p.price),
+  ),
+  desc: `Compare ${def.full} account packages, listed prices, and seller-provided account details.`,
+}));
+export const formatPrice = money;

@@ -39,3 +39,10 @@
 #root .home-catalog .home-pricing-note{max-width:74ch;margin:24px auto 0;line-height:1.7;font-size:12px}
 @media(min-width:768px) and (max-width:1023px){#root .home-catalog .home-section-heading{display:block}#root .home-catalog .home-search{margin-top:24px;max-width:100%}}
 @media(max-width:767px){#root .home-catalog .home-section-heading{display:block;text-align:left}#root .home-catalog .home-section-heading .home-kicker{justify-content:flex-start}#root .home-catalog .home-section-heading h2{font-size:28px}#root .home-catalog .home-search{margin-top:24px;max-width:none}#root .home-catalog .home-catalog-caption{flex-wrap:wrap;gap:12px}#root .catalog-sort{width:100%;justify-content:space-between}#root .catalog-sort select{min-height:48px;flex:1;max-width:220px}#root article.home-product.catalog-product-card{padding:20px;border-radius:16px}#root .catalog-product-card .catalog-product-intro h3{font-size:26px}#root .catalog-product-card .home-product-price{font-size:32px}#root .catalog-product-card .home-product-actions>:is(a,button){min-height:48px}#root .catalog-price-row{gap:10px}}
+/* New catalog groups and long AI variant labels. */
+#root .home-catalog-caption{flex-wrap:wrap;align-items:center}
+#root .catalog-sort select{max-width:min(100%,320px)}
+#root .catalog-product-card h3,#root .shot-product-header,#root .shot-product-description,#root .order-provider-title{overflow-wrap:anywhere}
+#root .shot-table td:first-child strong{white-space:normal;overflow-wrap:anywhere}
+#root .variant-trigger>span,#root .variant-options [role=option]{white-space:normal;overflow-wrap:anywhere}
+@media(max-width:767px){#root .home-catalog-caption .catalog-sort{width:100%;justify-content:space-between}#root .home-catalog-caption .catalog-sort select{width:70%;min-width:0}}

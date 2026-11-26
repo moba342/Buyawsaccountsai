@@ -59,5 +59,217 @@
     "api/verify-payment.js": {
       "maxDuration": 30
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/product/aws-1k-credit/",
+      "destination": "/aws-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-5k-credit/",
+      "destination": "/aws-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-10k-credit/",
+      "destination": "/aws-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-25k-credit/",
+      "destination": "/aws-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aws-100k-credit/",
+      "destination": "/aws-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-300-credit/",
+      "destination": "/google-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-400-credit/",
+      "destination": "/google-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-1k-credit/",
+      "destination": "/google-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-5k-credit/",
+      "destination": "/google-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-10k-credit/",
+      "destination": "/google-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/google-cloud-25k-credit/",
+      "destination": "/google-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-free-trial/",
+      "destination": "/azure-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-1k-credit/",
+      "destination": "/azure-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-5k-credit/",
+      "destination": "/azure-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/azure-25k-credit/",
+      "destination": "/azure-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-free-trial/",
+      "destination": "/digitalocean-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-close-port-3/",
+      "destination": "/digitalocean-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-close-port-10/",
+      "destination": "/digitalocean-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-close-port-25/",
+      "destination": "/digitalocean-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-open-port-3/",
+      "destination": "/digitalocean-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-open-port-10/",
+      "destination": "/digitalocean-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/digitalocean-open-port-25/",
+      "destination": "/digitalocean-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/oracle-cloud-300-credit/",
+      "destination": "/oracle-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/oracle-cloud-new-account/",
+      "destination": "/oracle-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/oracle-cloud-old-account/",
+      "destination": "/oracle-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/oracle-cloud-upgraded-account/",
+      "destination": "/oracle-cloud-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hetzner-5-servers/",
+      "destination": "/hetzner-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hetzner-10-servers/",
+      "destination": "/hetzner-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hetzner-25-servers/",
+      "destination": "/hetzner-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hetzner-100-servers/",
+      "destination": "/hetzner-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hetzner-old-account/",
+      "destination": "/hetzner-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vultr-200-credit/",
+      "destination": "/vultr-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vultr-250-credit/",
+      "destination": "/vultr-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vultr-300-credit/",
+      "destination": "/vultr-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/linode-100-credit/",
+      "destination": "/linode-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/linode-port-25-open/",
+      "destination": "/linode-accounts/",
+      "permanent": true
+    },
+    {
+      "source": "/product/alibaba-cloud-personal-account/",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/product/alibaba-cloud-business-account/",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/product/atlantic-net-free-trial/",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/product/atlantic-net-port-25-open/",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/alibaba-cloud-accounts/",
+      "destination": "/providers/",
+      "permanent": true
+    },
+    {
+      "source": "/atlantic-net-accounts/",
+      "destination": "/providers/",
+      "permanent": true
+    }
+  ]
 }

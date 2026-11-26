@@ -2,7 +2,7 @@
 
 # Cloudlane — Cloud Account Storefront
 
-Responsive React storefront with a Midnight Sapphire Navy theme with soft white surfaces and a midnight footer, 53 product variants across 12 providers, and original provider logo assets stored locally.
+Responsive React storefront with a Midnight Sapphire Navy theme with soft white surfaces and a midnight footer, 68 product variants across 14 providers, and original provider logo assets stored locally.
 
 ## Links
 
@@ -43,7 +43,7 @@ The `.openai/hosting.json` file records the existing Sites project identity and 
 ## Features
 
 - Product catalog with provider filters and search.
-- Twelve provider pages and 53 individual product variant pages.
+- Twelve provider pages and 68 individual product variant pages.
 - Custom themed dropdowns with keyboard controls and live variant prices.
 - Side-by-side comparison of up to three variants.
 - Buying guides and expandable FAQs.
@@ -159,3 +159,10 @@ When adding a product, add its introduction to `variantIntroductions`; `npm test
 Validation covered desktop wheel easing, idle RAF shutdown, keyboard and nested scrolling, modal locks, catalog/top actions, animation visibility, live reduced-motion changes, and native touch. A local Chrome 1440×1000 scrolling sample recorded a 16.7 ms median and 16.8 ms p95 frame interval, with no frame gaps above 33 ms or long tasks during the 2.5-second sample. These are local measurements, not a universal FPS guarantee.
 
 High-refresh displays: scrolling uses browser-provided RAF timestamps and time-based interpolation; there is no fixed 60 FPS timer. During active scrolling, cosmetic badge/horizon motion and hover elevation are suspended and resume at rest. Footer pointer lighting batches geometry reads and writes into one RAF and skips updates while the page is moving. Reaching 120 FPS still requires a compatible display, browser, and sufficient rendering capacity; it cannot be forced on 60 Hz hardware.
+
+
+## Replacement catalog — November 26, 2026
+
+`catalog-data.js` is the canonical seller-supplied list: 68 variants across 14 providers. It preserves all submitted prices, including Azure 5K Credits at $7,550 and both AWS 5K/10K Bedrock credit packages at $1,099. Model and quota names are seller-supplied listing labels, not verified official specifications. Category filtering separates the large AWS, Azure, and Google Cloud collections.
+
+The browser cart key changed to `baa-cart-v2` to avoid carrying removed variants or old selections into checkout. Server-side TXID checks continue deriving amounts from the current catalog. Retired product/provider URLs redirect through `vercel.json`; current product routes, prices, article entries, provider counts, and feature cards derive from the replacement data. OVHcloud and UpCloud SVG marks come from the Simple Icons project, with the Heroku mark from its 15.0.0 archive; Amazon SES uses the existing AWS mark.
