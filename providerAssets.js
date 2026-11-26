@@ -1,0 +1,16 @@
+export const providerAssets = {
+  AWS: "aws.svg",
+  "Google Cloud": "google-cloud.svg",
+  Azure: "azure.svg",
+  DigitalOcean: "digitalocean.svg",
+  "Oracle Cloud": "oracle-cloud.svg",
+  Hetzner: "hetzner-sapphire.svg",
+  Vultr: "vultr.png",
+  Linode: "linode-sapphire.svg",
+  "IBM Cloud": "ibm-cloud.png",
+  Kamatera: "kamatera.png",
+  OVHcloud: "ovhcloud-sapphire.svg",
+  "Amazon SES": "aws.svg",
+  UpCloud: "upcloud-sapphire.svg",
+  Heroku: "heroku-sapphire.svg",
+};

@@ -1,0 +1,33 @@
+{
+  "before": {
+    "entryJavaScript": {
+      "file": "/assets/index-DOFDCLII.js",
+      "bytes": 428109,
+      "gzipBytes": 123706
+    },
+    "css": {
+      "file": "/assets/index-D6mubdjb.css",
+      "bytes": 338408,
+      "gzipBytes": 56112
+    }
+  },
+  "after": {
+    "entryJavaScript": {
+      "file": "/assets/index-DaLPWp4g.js",
+      "bytes": 378241,
+      "gzipBytes": 112931
+    },
+    "css": {
+      "file": "/assets/index-DsA09NeR.css",
+      "bytes": 341708,
+      "gzipBytes": 56702
+    }
+  },
+  "images": {
+    "public/seller/dexter-watts-profile.png": 2018615,
+    "public/optimized/dexter-watts-240.webp": 7850,
+    "public/optimized/dexter-watts-400.webp": 15680,
+    "public/logos/buyawsaccountsai-logo-840.png": 150345,
+    "public/optimized/brand-header-840.webp": 48252
+  }
+}

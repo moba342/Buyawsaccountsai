@@ -1,0 +1,28 @@
+{
+  "cart": true,
+  "persistedCart": true,
+  "paymentNetworks": [
+    "trc20",
+    "bep20",
+    "erc20"
+  ],
+  "paymentStates": [
+    "pending",
+    "not_found",
+    "failed",
+    "unmatched",
+    "amount_mismatch",
+    "unavailable",
+    "invalid",
+    "confirmed",
+    "mismatched-network-rejected",
+    "http-error-confirmed-rejected"
+  ],
+  "orderRequest": true,
+  "productActions": true,
+  "comparison": true,
+  "mobileMenu": true,
+  "guideNavigation": true,
+  "contactLinks": true,
+  "errors": []
+}

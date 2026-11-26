@@ -68,7 +68,7 @@ export default function ProductVisual({ provider, title, className = '' }) {
         <path d="M26 56V35h21M368 166v21h-21" stroke="#7086A6" opacity=".45" />
       </svg>
       <span className="product-visual-logo">
-        <ProviderLogo name={provider} decorative />
+        <ProviderLogo name={provider} decorative priority />
       </span>
       <div className="product-visual-options">
         {collection.options.map((label, index) => {

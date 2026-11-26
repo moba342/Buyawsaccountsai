@@ -1,0 +1,1500 @@
+[
+  {
+    "id": "home",
+    "path": "/",
+    "canonical": "https://www.buyawsaccountsai.com/",
+    "title": "Buy AWS Accounts Online | AWS Cloud Accounts for Sale",
+    "description": "Buy AWS accounts, cloud credits and Bedrock API access. Browse available cloud products, compare features and pricing, and choose the right plan.",
+    "h1": "Buy AWS Accounts, Cloud Credits & AI API Access",
+    "primaryKeyword": "buy AWS accounts",
+    "secondaryKeywords": [
+      "buy AWS account",
+      "AWS accounts for sale",
+      "buy AWS accounts online",
+      "buy Amazon AWS accounts",
+      "AWS cloud accounts for sale",
+      "buy AWS credits"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Homepage"
+  },
+  {
+    "id": "cart",
+    "path": "/cart/",
+    "canonical": "https://www.buyawsaccountsai.com/cart/",
+    "title": "Your Shopping Cart | BuyAWSAccountsAI",
+    "description": "Review your selected cloud account products and quantities before checkout.",
+    "h1": "Shopping Cart.",
+    "primaryKeyword": "",
+    "secondaryKeywords": [],
+    "robots": "noindex, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Main/support page"
+  },
+  {
+    "id": "checkout",
+    "path": "/checkout/",
+    "canonical": "https://www.buyawsaccountsai.com/checkout/",
+    "title": "USDT Checkout | BuyAWSAccountsAI",
+    "description": "Prepare your cloud account order and select USDT TRC20, BEP20, or ERC20 payment instructions.",
+    "h1": "Checkout.",
+    "primaryKeyword": "",
+    "secondaryKeywords": [],
+    "robots": "noindex, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Main/support page"
+  },
+  {
+    "id": "products",
+    "path": "/marketplace/",
+    "canonical": "https://www.buyawsaccountsai.com/marketplace/",
+    "title": "Cloud Accounts Marketplace | Buy Accounts & Credits",
+    "description": "Shop cloud accounts, cloud credits and AI API access in one marketplace. Compare available products, account specifications and pricing before buying.",
+    "h1": "Cloud Accounts, Credits & AI API Marketplace",
+    "primaryKeyword": "cloud accounts marketplace",
+    "secondaryKeywords": [
+      "cloud accounts for sale",
+      "cloud credits marketplace",
+      "cloud account store",
+      "cloud products for sale",
+      "AI API marketplace"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Main/support page"
+  },
+  {
+    "id": "providers",
+    "path": "/cloud-platforms/",
+    "canonical": "https://www.buyawsaccountsai.com/cloud-platforms/",
+    "title": "Buy Cloud Accounts | AWS, Azure, Google Cloud & IBM",
+    "description": "Explore cloud account options across AWS, Azure, Google Cloud and IBM Cloud. Compare available services, cloud credits, features and pricing.",
+    "h1": "Explore Cloud Accounts Across Leading Cloud Platforms",
+    "primaryKeyword": "buy cloud accounts",
+    "secondaryKeywords": [
+      "buy Azure accounts",
+      "buy Google Cloud accounts",
+      "buy GCP accounts",
+      "buy IBM Cloud accounts",
+      "cloud platform accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Main/support page"
+  },
+  {
+    "id": "compare",
+    "path": "/compare-products/",
+    "canonical": "https://www.buyawsaccountsai.com/compare-products/",
+    "title": "Compare Cloud Accounts, Credits & API Pricing",
+    "description": "Compare cloud accounts, credits, AI API access, product features and pricing. Find the right cloud product for your development needs and budget.",
+    "h1": "Compare Cloud Products, Features & Pricing",
+    "primaryKeyword": "compare cloud accounts",
+    "secondaryKeywords": [
+      "cloud account comparison",
+      "cloud account pricing",
+      "AWS account pricing",
+      "compare cloud credits",
+      "cloud API pricing"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Main/support page"
+  },
+  {
+    "id": "guides",
+    "path": "/buying-guides/",
+    "canonical": "https://www.buyawsaccountsai.com/buying-guides/",
+    "title": "AWS Account Buying Guide | Cloud Accounts & Credits",
+    "description": "Explore buying guides for AWS accounts, cloud credits and AI API access. Understand product features, pricing and requirements before making a purchase.",
+    "h1": "Cloud Account & AWS Product Buying Guides",
+    "primaryKeyword": "AWS account buying guide",
+    "secondaryKeywords": [
+      "how to buy AWS accounts",
+      "where to buy AWS accounts",
+      "cloud account buying guide",
+      "AWS credits guide",
+      "AWS Bedrock API guide"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Main/support page"
+  },
+  {
+    "id": "faq",
+    "path": "/help-center/",
+    "canonical": "https://www.buyawsaccountsai.com/help-center/",
+    "title": "Cloud Account Help Center | Orders & Customer Support",
+    "description": "Find answers about cloud account purchases, payments, product requirements, order processing and customer support in our cloud product help center.",
+    "h1": "Cloud Account Help Center & Customer Support",
+    "primaryKeyword": "cloud account help center",
+    "secondaryKeywords": [
+      "AWS account purchase support",
+      "cloud account FAQ",
+      "cloud product support",
+      "cloud account payment support"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Main/support page"
+  },
+  {
+    "id": "contact",
+    "path": "/contact-sales/",
+    "canonical": "https://www.buyawsaccountsai.com/contact-sales/",
+    "title": "Contact Cloud Account Sales | BuyAWSAccountsAI",
+    "description": "Contact our sales team for cloud account purchases, AWS credits, AI API access, product availability, pricing and cloud service inquiries.",
+    "h1": "Contact Our Cloud Product Sales Team",
+    "primaryKeyword": "cloud account sales",
+    "secondaryKeywords": [
+      "AWS account sales",
+      "cloud credits sales",
+      "cloud product sales support",
+      "cloud account inquiries"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Main/support page"
+  },
+  {
+    "id": "verified",
+    "path": "/seller-profile/",
+    "canonical": "https://www.buyawsaccountsai.com/seller-profile/",
+    "title": "AWS Account Seller Profile | BuyAWSAccountsAI",
+    "description": "Learn about BuyAWSAccountsAI, our cloud product offerings, seller information, business policies and customer support before purchasing.",
+    "h1": "Meet Your Cloud Account Seller",
+    "primaryKeyword": "AWS account seller",
+    "secondaryKeywords": [
+      "cloud account seller",
+      "cloud product seller",
+      "AWS credits seller",
+      "cloud marketplace seller"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Main/support page"
+  },
+  {
+    "id": "verification/public-proof",
+    "path": "/verification/public-proof/",
+    "canonical": "https://www.buyawsaccountsai.com/verification/public-proof/",
+    "title": "Seller Declaration | BuyAWSAccountsAI",
+    "description": "Read the first-party seller declaration and supplied business information for BuyAWSAccountsAI.",
+    "h1": "Seller Declaration.\nA record of supplied information.",
+    "primaryKeyword": "",
+    "secondaryKeywords": [],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Main/support page"
+  },
+  {
+    "id": "buying-guides/how-to-choose-a-cloud-account-for-your-project",
+    "path": "/buying-guides/how-to-choose-a-cloud-account-for-your-project/",
+    "canonical": "https://www.buyawsaccountsai.com/buying-guides/how-to-choose-a-cloud-account-for-your-project/",
+    "title": "How to choose a cloud account for your project | BuyAWSAccountsAI",
+    "description": "A useful cloud purchase begins with a clear workload. Write down what you plan to run, where it needs to operate, and the capacity you expect during the…",
+    "h1": "How to choose a cloud account for your project",
+    "primaryKeyword": "how to choose a cloud account for your project",
+    "secondaryKeywords": [],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Guide article"
+  },
+  {
+    "id": "buying-guides/buying-cloud-credits-value-eligibility-and-expiry",
+    "path": "/buying-guides/buying-cloud-credits-value-eligibility-and-expiry/",
+    "canonical": "https://www.buyawsaccountsai.com/buying-guides/buying-cloud-credits-value-eligibility-and-expiry/",
+    "title": "Buying cloud credits: value, eligibility, and expiry | BuyAWSAccountsAI",
+    "description": "A credit amount is only useful when it can support the services you intend to use. Start by separating the price of the package from the credit value shown…",
+    "h1": "Buying cloud credits: value, eligibility, and expiry",
+    "primaryKeyword": "buying cloud credits: value, eligibility, and expiry",
+    "secondaryKeywords": [],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Guide article"
+  },
+  {
+    "id": "buying-guides/your-cloud-account-delivery-and-security-checklist",
+    "path": "/buying-guides/your-cloud-account-delivery-and-security-checklist/",
+    "canonical": "https://www.buyawsaccountsai.com/buying-guides/your-cloud-account-delivery-and-security-checklist/",
+    "title": "Your cloud account delivery and security checklist | BuyAWSAccountsAI",
+    "description": "Account delivery should follow an agreed process with clear responsibilities. Before payment, confirm the account ownership arrangement, the items to be…",
+    "h1": "Your cloud account delivery and security checklist",
+    "primaryKeyword": "your cloud account delivery and security checklist",
+    "secondaryKeywords": [],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Guide article"
+  },
+  {
+    "id": "aws-accounts",
+    "path": "/aws-accounts/",
+    "canonical": "https://www.buyawsaccountsai.com/aws-accounts/",
+    "title": "Buy AWS Accounts | Cloud Products",
+    "description": "Explore Amazon Web Services account products, credit options and listed prices. Compare 22 variants and confirm account details before purchase.",
+    "h1": "AWS Accounts",
+    "primaryKeyword": "buy aws accounts",
+    "secondaryKeywords": [],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Platform collection"
+  },
+  {
+    "id": "azure-accounts",
+    "path": "/azure-accounts/",
+    "canonical": "https://www.buyawsaccountsai.com/azure-accounts/",
+    "title": "Buy Azure Accounts | Cloud Products",
+    "description": "Explore Microsoft Azure account products, credit options and listed prices. Compare 8 variants and confirm account details before purchase.",
+    "h1": "Azure Accounts",
+    "primaryKeyword": "buy azure accounts",
+    "secondaryKeywords": [],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Platform collection"
+  },
+  {
+    "id": "digitalocean-accounts",
+    "path": "/digitalocean-accounts/",
+    "canonical": "https://www.buyawsaccountsai.com/digitalocean-accounts/",
+    "title": "Buy DigitalOcean Accounts | Cloud Products",
+    "description": "Explore DigitalOcean account products, credit options and listed prices. Compare 4 variants and confirm account details before purchase.",
+    "h1": "DigitalOcean Accounts",
+    "primaryKeyword": "buy digitalocean accounts",
+    "secondaryKeywords": [],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Platform collection"
+  },
+  {
+    "id": "google-cloud-accounts",
+    "path": "/google-cloud-accounts/",
+    "canonical": "https://www.buyawsaccountsai.com/google-cloud-accounts/",
+    "title": "Buy Google Cloud Accounts | Cloud Products",
+    "description": "Explore Google Cloud account products, credit options and listed prices. Compare 10 variants and confirm account details before purchase.",
+    "h1": "Google Cloud Accounts",
+    "primaryKeyword": "buy google cloud accounts",
+    "secondaryKeywords": [],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Platform collection"
+  },
+  {
+    "id": "hetzner-accounts",
+    "path": "/hetzner-accounts/",
+    "canonical": "https://www.buyawsaccountsai.com/hetzner-accounts/",
+    "title": "Buy Hetzner Accounts | Cloud Products",
+    "description": "Explore Hetzner Cloud account products, credit options and listed prices. Compare 2 variants and confirm account details before purchase.",
+    "h1": "Hetzner Accounts",
+    "primaryKeyword": "buy hetzner accounts",
+    "secondaryKeywords": [],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Platform collection"
+  },
+  {
+    "id": "kamatera-accounts",
+    "path": "/kamatera-accounts/",
+    "canonical": "https://www.buyawsaccountsai.com/kamatera-accounts/",
+    "title": "Buy Kamatera Accounts | Cloud Products",
+    "description": "Explore Kamatera account products, credit options and listed prices. Compare 2 variants and confirm account details before purchase.",
+    "h1": "Kamatera Accounts",
+    "primaryKeyword": "buy kamatera accounts",
+    "secondaryKeywords": [],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Platform collection"
+  },
+  {
+    "id": "linode-accounts",
+    "path": "/linode-accounts/",
+    "canonical": "https://www.buyawsaccountsai.com/linode-accounts/",
+    "title": "Buy Linode Accounts | Cloud Products",
+    "description": "Explore Linode (Akamai) account products, credit options and listed prices. Compare 3 variants and confirm account details before purchase.",
+    "h1": "Linode Accounts",
+    "primaryKeyword": "buy linode accounts",
+    "secondaryKeywords": [],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Platform collection"
+  },
+  {
+    "id": "oracle-cloud-accounts",
+    "path": "/oracle-cloud-accounts/",
+    "canonical": "https://www.buyawsaccountsai.com/oracle-cloud-accounts/",
+    "title": "Buy Oracle Cloud Accounts | Cloud Products",
+    "description": "Explore Oracle Cloud account products, credit options and listed prices. Compare 2 variants and confirm account details before purchase.",
+    "h1": "Oracle Cloud Accounts",
+    "primaryKeyword": "buy oracle cloud accounts",
+    "secondaryKeywords": [],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Platform collection"
+  },
+  {
+    "id": "ovhcloud-accounts",
+    "path": "/ovhcloud-accounts/",
+    "canonical": "https://www.buyawsaccountsai.com/ovhcloud-accounts/",
+    "title": "Buy OVHcloud Accounts | Cloud Products",
+    "description": "Explore OVHcloud account products, credit options and listed prices. Compare 2 variants and confirm account details before purchase.",
+    "h1": "OVHcloud Accounts",
+    "primaryKeyword": "buy ovhcloud accounts",
+    "secondaryKeywords": [],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Platform collection"
+  },
+  {
+    "id": "amazon-ses-accounts",
+    "path": "/amazon-ses-accounts/",
+    "canonical": "https://www.buyawsaccountsai.com/amazon-ses-accounts/",
+    "title": "Buy Amazon SES Accounts | Cloud Products",
+    "description": "Explore Amazon Simple Email Service account products, credit options and listed prices. Compare 3 variants and confirm account details before purchase.",
+    "h1": "Amazon SES Accounts",
+    "primaryKeyword": "buy amazon ses accounts",
+    "secondaryKeywords": [],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Platform collection"
+  },
+  {
+    "id": "upcloud-accounts",
+    "path": "/upcloud-accounts/",
+    "canonical": "https://www.buyawsaccountsai.com/upcloud-accounts/",
+    "title": "Buy UpCloud Accounts | Cloud Products",
+    "description": "Explore UpCloud account products, credit options and listed prices. Compare 2 variants and confirm account details before purchase.",
+    "h1": "UpCloud Accounts",
+    "primaryKeyword": "buy upcloud accounts",
+    "secondaryKeywords": [],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Platform collection"
+  },
+  {
+    "id": "ibm-cloud-accounts",
+    "path": "/ibm-cloud-accounts/",
+    "canonical": "https://www.buyawsaccountsai.com/ibm-cloud-accounts/",
+    "title": "Buy IBM Cloud Accounts | Cloud Products",
+    "description": "Explore IBM Cloud account products, credit options and listed prices. Compare 3 variants and confirm account details before purchase.",
+    "h1": "IBM Cloud Accounts",
+    "primaryKeyword": "buy ibm cloud accounts",
+    "secondaryKeywords": [],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Platform collection"
+  },
+  {
+    "id": "heroku-accounts",
+    "path": "/heroku-accounts/",
+    "canonical": "https://www.buyawsaccountsai.com/heroku-accounts/",
+    "title": "Buy Heroku Accounts | Cloud Products",
+    "description": "Explore Heroku account products, credit options and listed prices. Compare 2 variants and confirm account details before purchase.",
+    "h1": "Heroku Accounts",
+    "primaryKeyword": "buy heroku accounts",
+    "secondaryKeywords": [],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Platform collection"
+  },
+  {
+    "id": "vultr-accounts",
+    "path": "/vultr-accounts/",
+    "canonical": "https://www.buyawsaccountsai.com/vultr-accounts/",
+    "title": "Buy Vultr Accounts | Cloud Products",
+    "description": "Explore Vultr Cloud account products, credit options and listed prices. Compare 3 variants and confirm account details before purchase.",
+    "h1": "Vultr Accounts",
+    "primaryKeyword": "buy vultr accounts",
+    "secondaryKeywords": [],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/cloud-account-marketplace.png",
+    "type": "Platform collection"
+  },
+  {
+    "id": "product/aws-free-trial",
+    "path": "/product/aws-free-trial/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-free-trial/",
+    "title": "AWS Free Trial | BuyAWSAccountsAI",
+    "description": "Explore AWS Free Trial, listed specifications, $15 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "AWS Free Trial",
+    "primaryKeyword": "buy aws free trial",
+    "secondaryKeywords": [
+      "aws free trial price",
+      "aws vcpu accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-free-trial.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-8-vcpu",
+    "path": "/product/aws-8-vcpu/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-8-vcpu/",
+    "title": "AWS 8 vCPU | BuyAWSAccountsAI",
+    "description": "Explore AWS 8 vCPU, listed specifications, $25 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "AWS 8 vCPU",
+    "primaryKeyword": "buy aws 8 vcpu",
+    "secondaryKeywords": [
+      "aws 8 vcpu price",
+      "aws vcpu accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-8-vcpu.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-32-vcpu",
+    "path": "/product/aws-32-vcpu/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-32-vcpu/",
+    "title": "AWS 32 vCPU | BuyAWSAccountsAI",
+    "description": "Explore AWS 32 vCPU, listed specifications, $35 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "AWS 32 vCPU",
+    "primaryKeyword": "buy aws 32 vcpu",
+    "secondaryKeywords": [
+      "aws 32 vcpu price",
+      "aws vcpu accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-32-vcpu.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-64-vcpu",
+    "path": "/product/aws-64-vcpu/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-64-vcpu/",
+    "title": "AWS 64 vCPU | BuyAWSAccountsAI",
+    "description": "Explore AWS 64 vCPU, listed specifications, $110 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "AWS 64 vCPU",
+    "primaryKeyword": "buy aws 64 vcpu",
+    "secondaryKeywords": [
+      "aws 64 vcpu price",
+      "aws vcpu accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-64-vcpu.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-128-vcpu",
+    "path": "/product/aws-128-vcpu/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-128-vcpu/",
+    "title": "AWS 128 vCPU | BuyAWSAccountsAI",
+    "description": "Explore AWS 128 vCPU, listed specifications, $145 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "AWS 128 vCPU",
+    "primaryKeyword": "buy aws 128 vcpu",
+    "secondaryKeywords": [
+      "aws 128 vcpu price",
+      "aws vcpu accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-128-vcpu.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-256-vcpu",
+    "path": "/product/aws-256-vcpu/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-256-vcpu/",
+    "title": "AWS 256 vCPU | BuyAWSAccountsAI",
+    "description": "Explore AWS 256 vCPU, listed specifications, $199 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "AWS 256 vCPU",
+    "primaryKeyword": "buy aws 256 vcpu",
+    "secondaryKeywords": [
+      "aws 256 vcpu price",
+      "aws vcpu accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-256-vcpu.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-512-vcpu",
+    "path": "/product/aws-512-vcpu/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-512-vcpu/",
+    "title": "AWS 512 vCPU | BuyAWSAccountsAI",
+    "description": "Explore AWS 512 vCPU, listed specifications, $299 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "AWS 512 vCPU",
+    "primaryKeyword": "buy aws 512 vcpu",
+    "secondaryKeywords": [
+      "aws 512 vcpu price",
+      "aws vcpu accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-512-vcpu.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-640-vcpu",
+    "path": "/product/aws-640-vcpu/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-640-vcpu/",
+    "title": "AWS 640 vCPU | BuyAWSAccountsAI",
+    "description": "Explore AWS 640 vCPU, listed specifications, $499 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "AWS 640 vCPU",
+    "primaryKeyword": "buy aws 640 vcpu",
+    "secondaryKeywords": [
+      "aws 640 vcpu price",
+      "aws vcpu accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-640-vcpu.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-1920-vcpu",
+    "path": "/product/aws-1920-vcpu/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-1920-vcpu/",
+    "title": "AWS 1920 vCPU | BuyAWSAccountsAI",
+    "description": "Explore AWS 1920 vCPU, listed specifications, $1,299 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "AWS 1920 vCPU",
+    "primaryKeyword": "buy aws 1920 vcpu",
+    "secondaryKeywords": [
+      "aws 1920 vcpu price",
+      "aws vcpu accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-1920-vcpu.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-5k-credits",
+    "path": "/product/aws-5k-credits/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-5k-credits/",
+    "title": "AWS $5K Credits | BuyAWSAccountsAI",
+    "description": "Explore AWS $5K Credits, listed specifications, $1,250 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "AWS $5K Credits",
+    "primaryKeyword": "buy aws $5k credits",
+    "secondaryKeywords": [
+      "aws $5k credits price",
+      "aws credits accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-5k-credits.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-10k-credits",
+    "path": "/product/aws-10k-credits/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-10k-credits/",
+    "title": "AWS $10K Credits | BuyAWSAccountsAI",
+    "description": "Explore AWS $10K Credits, listed specifications, $2,500 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "AWS $10K Credits",
+    "primaryKeyword": "buy aws $10k credits",
+    "secondaryKeywords": [
+      "aws $10k credits price",
+      "aws credits accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-10k-credits.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-25k-credits",
+    "path": "/product/aws-25k-credits/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-25k-credits/",
+    "title": "AWS $25K Credits | BuyAWSAccountsAI",
+    "description": "Explore AWS $25K Credits, listed specifications, $6,500 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "AWS $25K Credits",
+    "primaryKeyword": "buy aws $25k credits",
+    "secondaryKeywords": [
+      "aws $25k credits price",
+      "aws credits accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-25k-credits.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-100k-credits",
+    "path": "/product/aws-100k-credits/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-100k-credits/",
+    "title": "AWS $100K Credits | BuyAWSAccountsAI",
+    "description": "Explore AWS $100K Credits, listed specifications, $18,000 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "AWS $100K Credits",
+    "primaryKeyword": "buy aws $100k credits",
+    "secondaryKeywords": [
+      "aws $100k credits price",
+      "aws credits accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-100k-credits.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-32-vcpu-10-rpm-bedrock-enabled",
+    "path": "/product/aws-32-vcpu-10-rpm-bedrock-enabled/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-32-vcpu-10-rpm-bedrock-enabled/",
+    "title": "AWS 32 vCPU Bedrock 10 RPM | BuyAWSAccountsAI",
+    "description": "Explore AWS 32 vCPU · 10 RPM · Bedrock Enabled, listed specifications, $75 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "AWS 32 vCPU · 10 RPM · Bedrock Enabled",
+    "primaryKeyword": "buy aws 32 vcpu · 10 rpm · bedrock enabled",
+    "secondaryKeywords": [
+      "aws 32 vcpu · 10 rpm · bedrock enabled price",
+      "aws bedrock ai accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-32-vcpu-10-rpm-bedrock-enabled.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-32-vcpu-50-rpm-bedrock-enabled",
+    "path": "/product/aws-32-vcpu-50-rpm-bedrock-enabled/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-32-vcpu-50-rpm-bedrock-enabled/",
+    "title": "AWS 32 vCPU Bedrock 50 RPM | BuyAWSAccountsAI",
+    "description": "Explore AWS 32 vCPU · 50 RPM · Bedrock Enabled, listed specifications, $120 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "AWS 32 vCPU · 50 RPM · Bedrock Enabled",
+    "primaryKeyword": "buy aws 32 vcpu · 50 rpm · bedrock enabled",
+    "secondaryKeywords": [
+      "aws 32 vcpu · 50 rpm · bedrock enabled price",
+      "aws bedrock ai accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-32-vcpu-50-rpm-bedrock-enabled.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-256-vcpu-10k-rpm-bedrock-enabled",
+    "path": "/product/aws-256-vcpu-10k-rpm-bedrock-enabled/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-256-vcpu-10k-rpm-bedrock-enabled/",
+    "title": "AWS 256 vCPU Bedrock 10K RPM | BuyAWSAccountsAI",
+    "description": "Explore AWS 256 vCPU · 10K RPM · Bedrock Enabled, listed specifications, $900 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "AWS 256 vCPU · 10K RPM · Bedrock Enabled",
+    "primaryKeyword": "buy aws 256 vcpu · 10k rpm · bedrock enabled",
+    "secondaryKeywords": [
+      "aws 256 vcpu · 10k rpm · bedrock enabled price",
+      "aws bedrock ai accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-256-vcpu-10k-rpm-bedrock-enabled.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled",
+    "path": "/product/aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/",
+    "title": "AWS 512 vCPU Bedrock 10K RPM | BuyAWSAccountsAI",
+    "description": "Explore AWS 512 vCPU · 10K RPM · High TPM · Bedrock Enabled, listed specifications, $5,500 reference pricing and account requirements. Compare options…",
+    "h1": "AWS 512 vCPU · 10K RPM · High TPM · Bedrock Enabled",
+    "primaryKeyword": "buy aws 512 vcpu · 10k rpm · high tpm · bedrock enabled",
+    "secondaryKeywords": [
+      "aws 512 vcpu · 10k rpm · high tpm · bedrock enabled price",
+      "aws bedrock ai accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2",
+    "path": "/product/aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/",
+    "title": "AWS 640 vCPU Bedrock 10K RPM | BuyAWSAccountsAI",
+    "description": "Explore AWS 640 vCPU · 10K RPM · High TPM · Bedrock F5.2, listed specifications, $6,500 reference pricing and account requirements. Compare options before…",
+    "h1": "AWS 640 vCPU · 10K RPM · High TPM · Bedrock F5.2",
+    "primaryKeyword": "buy aws 640 vcpu · 10k rpm · high tpm · bedrock f5.2",
+    "secondaryKeywords": [
+      "aws 640 vcpu · 10k rpm · high tpm · bedrock f5.2 price",
+      "aws bedrock ai accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5",
+    "path": "/product/aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/",
+    "title": "AWS 1920 vCPU Bedrock 10K RPM | BuyAWSAccountsAI",
+    "description": "Explore AWS 1920 vCPU · 10K RPM · High TPM · 4.6 / 4.7 / 4.8 / Opus 5 / Fable 5, listed specifications, $9,999 reference pricing and account requirements.…",
+    "h1": "AWS 1920 vCPU · 10K RPM · High TPM · 4.6 / 4.7 / 4.8 / Opus 5 / Fable 5",
+    "primaryKeyword": "buy aws 1920 vcpu · 10k rpm · high tpm · 4.6 / 4.7 / 4.8 / opus 5 / fable 5",
+    "secondaryKeywords": [
+      "aws 1920 vcpu · 10k rpm · high tpm · 4.6 / 4.7 / 4.8 / opus 5 / fable 5 price",
+      "aws bedrock ai accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-5k-credits-10k-rpm-bedrock-enabled",
+    "path": "/product/aws-5k-credits-10k-rpm-bedrock-enabled/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-5k-credits-10k-rpm-bedrock-enabled/",
+    "title": "AWS $5,000 Credits Bedrock 10K RPM | BuyAWSAccountsAI",
+    "description": "Explore AWS $5K Credits · 10K RPM · Bedrock Enabled, listed specifications, $1,099 reference pricing and account requirements. Compare options before…",
+    "h1": "AWS $5K Credits · 10K RPM · Bedrock Enabled",
+    "primaryKeyword": "buy aws $5k credits · 10k rpm · bedrock enabled",
+    "secondaryKeywords": [
+      "aws $5k credits · 10k rpm · bedrock enabled price",
+      "aws bedrock ai accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-5k-credits-10k-rpm-bedrock-enabled.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-10k-credits-10k-rpm-bedrock-enabled",
+    "path": "/product/aws-10k-credits-10k-rpm-bedrock-enabled/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-10k-credits-10k-rpm-bedrock-enabled/",
+    "title": "AWS $10,000 Credits Bedrock 10K RPM | BuyAWSAccountsAI",
+    "description": "Explore AWS $10K Credits · 10K RPM · Bedrock Enabled, listed specifications, $1,099 reference pricing and account requirements. Compare options before…",
+    "h1": "AWS $10K Credits · 10K RPM · Bedrock Enabled",
+    "primaryKeyword": "buy aws $10k credits · 10k rpm · bedrock enabled",
+    "secondaryKeywords": [
+      "aws $10k credits · 10k rpm · bedrock enabled price",
+      "aws bedrock ai accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-10k-credits-10k-rpm-bedrock-enabled.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/aws-25k-credits-10k-rpm-bedrock-enabled",
+    "path": "/product/aws-25k-credits-10k-rpm-bedrock-enabled/",
+    "canonical": "https://www.buyawsaccountsai.com/product/aws-25k-credits-10k-rpm-bedrock-enabled/",
+    "title": "AWS $25,000 Credits Bedrock 10K RPM | BuyAWSAccountsAI",
+    "description": "Explore AWS $25K Credits · 10K RPM · Bedrock Enabled, listed specifications, $2,500 reference pricing and account requirements. Compare options before…",
+    "h1": "AWS $25K Credits · 10K RPM · Bedrock Enabled",
+    "primaryKeyword": "buy aws $25k credits · 10k rpm · bedrock enabled",
+    "secondaryKeywords": [
+      "aws $25k credits · 10k rpm · bedrock enabled price",
+      "aws bedrock ai accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/aws-25k-credits-10k-rpm-bedrock-enabled.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/azure-free-trial-200-credits",
+    "path": "/product/azure-free-trial-200-credits/",
+    "canonical": "https://www.buyawsaccountsai.com/product/azure-free-trial-200-credits/",
+    "title": "Azure Free Trial · $200 Credits | BuyAWSAccountsAI",
+    "description": "Explore Azure Free Trial · $200 Credits, listed specifications, $35 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Azure Free Trial · $200 Credits",
+    "primaryKeyword": "buy azure free trial · $200 credits",
+    "secondaryKeywords": [
+      "azure free trial · $200 credits price",
+      "azure accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/azure-free-trial-200-credits.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/azure-pay-as-you-go",
+    "path": "/product/azure-pay-as-you-go/",
+    "canonical": "https://www.buyawsaccountsai.com/product/azure-pay-as-you-go/",
+    "title": "Azure Pay As You Go | BuyAWSAccountsAI",
+    "description": "Explore Azure Pay As You Go, listed specifications, $55 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Azure Pay As You Go",
+    "primaryKeyword": "buy azure pay as you go",
+    "secondaryKeywords": [
+      "azure pay as you go price",
+      "azure accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/azure-pay-as-you-go.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/azure-5k-credits",
+    "path": "/product/azure-5k-credits/",
+    "canonical": "https://www.buyawsaccountsai.com/product/azure-5k-credits/",
+    "title": "Azure $5K Credits | BuyAWSAccountsAI",
+    "description": "Explore Azure $5K Credits, listed specifications, $7,550 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Azure $5K Credits",
+    "primaryKeyword": "buy azure $5k credits",
+    "secondaryKeywords": [
+      "azure $5k credits price",
+      "azure accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/azure-5k-credits.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/azure-10k-credits-gpt-enabled",
+    "path": "/product/azure-10k-credits-gpt-enabled/",
+    "canonical": "https://www.buyawsaccountsai.com/product/azure-10k-credits-gpt-enabled/",
+    "title": "Azure $10,000 Credits GPT Enabled | BuyAWSAccountsAI",
+    "description": "Explore Azure $10K Credits · GPT Enabled, listed specifications, $1,500 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Azure $10K Credits · GPT Enabled",
+    "primaryKeyword": "buy azure $10k credits · gpt enabled",
+    "secondaryKeywords": [
+      "azure $10k credits · gpt enabled price",
+      "azure accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/azure-10k-credits-gpt-enabled.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/azure-5k-credits-gpt-6-astra-high-tpm-t5",
+    "path": "/product/azure-5k-credits-gpt-6-astra-high-tpm-t5/",
+    "canonical": "https://www.buyawsaccountsai.com/product/azure-5k-credits-gpt-6-astra-high-tpm-t5/",
+    "title": "Azure $5,000 Credits GPT 6 Astra T5 | BuyAWSAccountsAI",
+    "description": "Explore Azure $5K Credits · GPT 6 Astra · High TPM T5, listed specifications, $999 reference pricing and account requirements. Compare options before…",
+    "h1": "Azure $5K Credits · GPT 6 Astra · High TPM T5",
+    "primaryKeyword": "buy azure $5k credits · gpt 6 astra · high tpm t5",
+    "secondaryKeywords": [
+      "azure $5k credits · gpt 6 astra · high tpm t5 price",
+      "azure gpt ai accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/azure-5k-credits-gpt-6-astra-high-tpm-t5.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/azure-10k-credits-gpt-6-astra-high-tpm-t5",
+    "path": "/product/azure-10k-credits-gpt-6-astra-high-tpm-t5/",
+    "canonical": "https://www.buyawsaccountsai.com/product/azure-10k-credits-gpt-6-astra-high-tpm-t5/",
+    "title": "Azure $10,000 Credits GPT 6 Astra T5 | BuyAWSAccountsAI",
+    "description": "Explore Azure $10K Credits · GPT 6 Astra · High TPM T5, listed specifications, $1,999 reference pricing and account requirements. Compare options before…",
+    "h1": "Azure $10K Credits · GPT 6 Astra · High TPM T5",
+    "primaryKeyword": "buy azure $10k credits · gpt 6 astra · high tpm t5",
+    "secondaryKeywords": [
+      "azure $10k credits · gpt 6 astra · high tpm t5 price",
+      "azure gpt ai accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/azure-10k-credits-gpt-6-astra-high-tpm-t5.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/azure-25k-credits-gpt-6-astra-high-tpm-t5",
+    "path": "/product/azure-25k-credits-gpt-6-astra-high-tpm-t5/",
+    "canonical": "https://www.buyawsaccountsai.com/product/azure-25k-credits-gpt-6-astra-high-tpm-t5/",
+    "title": "Azure $25,000 Credits GPT 6 Astra T5 | BuyAWSAccountsAI",
+    "description": "Explore Azure $25K Credits · GPT 6 Astra · High TPM T5, listed specifications, $5,500 reference pricing and account requirements. Compare options before…",
+    "h1": "Azure $25K Credits · GPT 6 Astra · High TPM T5",
+    "primaryKeyword": "buy azure $25k credits · gpt 6 astra · high tpm t5",
+    "secondaryKeywords": [
+      "azure $25k credits · gpt 6 astra · high tpm t5 price",
+      "azure gpt ai accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/azure-25k-credits-gpt-6-astra-high-tpm-t5.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/azure-100k-credits-gpt-6-astra-high-tpm-t5",
+    "path": "/product/azure-100k-credits-gpt-6-astra-high-tpm-t5/",
+    "canonical": "https://www.buyawsaccountsai.com/product/azure-100k-credits-gpt-6-astra-high-tpm-t5/",
+    "title": "Azure $100,000 Credits GPT 6 Astra T5 | BuyAWSAccountsAI",
+    "description": "Explore Azure $100K Credits · GPT 6 Astra · High TPM T5, listed specifications, $14,500 reference pricing and account requirements. Compare options before…",
+    "h1": "Azure $100K Credits · GPT 6 Astra · High TPM T5",
+    "primaryKeyword": "buy azure $100k credits · gpt 6 astra · high tpm t5",
+    "secondaryKeywords": [
+      "azure $100k credits · gpt 6 astra · high tpm t5 price",
+      "azure gpt ai accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/azure-100k-credits-gpt-6-astra-high-tpm-t5.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/digitalocean-3-droplets-free-trial",
+    "path": "/product/digitalocean-3-droplets-free-trial/",
+    "canonical": "https://www.buyawsaccountsai.com/product/digitalocean-3-droplets-free-trial/",
+    "title": "DigitalOcean 3 Droplets · Free Trial | BuyAWSAccountsAI",
+    "description": "Explore DigitalOcean 3 Droplets · Free Trial, listed specifications, $20 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "DigitalOcean 3 Droplets · Free Trial",
+    "primaryKeyword": "buy digitalocean 3 droplets · free trial",
+    "secondaryKeywords": [
+      "digitalocean 3 droplets · free trial price",
+      "digitalocean accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/digitalocean-3-droplets-free-trial.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/digitalocean-10-droplets-free-trial",
+    "path": "/product/digitalocean-10-droplets-free-trial/",
+    "canonical": "https://www.buyawsaccountsai.com/product/digitalocean-10-droplets-free-trial/",
+    "title": "DigitalOcean 10 Droplets · Free Trial | BuyAWSAccountsAI",
+    "description": "Explore DigitalOcean 10 Droplets · Free Trial, listed specifications, $30 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "DigitalOcean 10 Droplets · Free Trial",
+    "primaryKeyword": "buy digitalocean 10 droplets · free trial",
+    "secondaryKeywords": [
+      "digitalocean 10 droplets · free trial price",
+      "digitalocean accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/digitalocean-10-droplets-free-trial.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/digitalocean-200-droplets-port-25-open",
+    "path": "/product/digitalocean-200-droplets-port-25-open/",
+    "canonical": "https://www.buyawsaccountsai.com/product/digitalocean-200-droplets-port-25-open/",
+    "title": "DigitalOcean 200 Droplets · Port 25 Open | BuyAWSAccountsAI",
+    "description": "Explore DigitalOcean 200 Droplets · Port 25 Open, listed specifications, $5,800 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "DigitalOcean 200 Droplets · Port 25 Open",
+    "primaryKeyword": "buy digitalocean 200 droplets · port 25 open",
+    "secondaryKeywords": [
+      "digitalocean 200 droplets · port 25 open price",
+      "digitalocean accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/digitalocean-200-droplets-port-25-open.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/digitalocean-500-droplets-port-25-open",
+    "path": "/product/digitalocean-500-droplets-port-25-open/",
+    "canonical": "https://www.buyawsaccountsai.com/product/digitalocean-500-droplets-port-25-open/",
+    "title": "DigitalOcean 500 Droplets · Port 25 Open | BuyAWSAccountsAI",
+    "description": "Explore DigitalOcean 500 Droplets · Port 25 Open, listed specifications, $9,800 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "DigitalOcean 500 Droplets · Port 25 Open",
+    "primaryKeyword": "buy digitalocean 500 droplets · port 25 open",
+    "secondaryKeywords": [
+      "digitalocean 500 droplets · port 25 open price",
+      "digitalocean accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/digitalocean-500-droplets-port-25-open.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/google-cloud-free-trial-300-credits",
+    "path": "/product/google-cloud-free-trial-300-credits/",
+    "canonical": "https://www.buyawsaccountsai.com/product/google-cloud-free-trial-300-credits/",
+    "title": "Google Cloud Free Trial · $300 Credits | BuyAWSAccountsAI",
+    "description": "Explore Google Cloud Free Trial · $300 Credits, listed specifications, $55 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Google Cloud Free Trial · $300 Credits",
+    "primaryKeyword": "buy google cloud free trial · $300 credits",
+    "secondaryKeywords": [
+      "google cloud free trial · $300 credits price",
+      "google cloud trial & credits"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/google-cloud-free-trial-300-credits.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/google-cloud-300-credits-paid-account",
+    "path": "/product/google-cloud-300-credits-paid-account/",
+    "canonical": "https://www.buyawsaccountsai.com/product/google-cloud-300-credits-paid-account/",
+    "title": "Google Cloud $300 Credits · Paid Account | BuyAWSAccountsAI",
+    "description": "Explore Google Cloud $300 Credits · Paid Account, listed specifications, $80 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Google Cloud $300 Credits · Paid Account",
+    "primaryKeyword": "buy google cloud $300 credits · paid account",
+    "secondaryKeywords": [
+      "google cloud $300 credits · paid account price",
+      "google cloud trial & credits"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/google-cloud-300-credits-paid-account.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/google-cloud-2k-credits-paid-account",
+    "path": "/product/google-cloud-2k-credits-paid-account/",
+    "canonical": "https://www.buyawsaccountsai.com/product/google-cloud-2k-credits-paid-account/",
+    "title": "Google Cloud $2K Credits · Paid Account | BuyAWSAccountsAI",
+    "description": "Explore Google Cloud $2K Credits · Paid Account, listed specifications, $199 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Google Cloud $2K Credits · Paid Account",
+    "primaryKeyword": "buy google cloud $2k credits · paid account",
+    "secondaryKeywords": [
+      "google cloud $2k credits · paid account price",
+      "google cloud trial & credits"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/google-cloud-2k-credits-paid-account.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/google-cloud-5k-credits-paid-account",
+    "path": "/product/google-cloud-5k-credits-paid-account/",
+    "canonical": "https://www.buyawsaccountsai.com/product/google-cloud-5k-credits-paid-account/",
+    "title": "Google Cloud $5K Credits · Paid Account | BuyAWSAccountsAI",
+    "description": "Explore Google Cloud $5K Credits · Paid Account, listed specifications, $699 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Google Cloud $5K Credits · Paid Account",
+    "primaryKeyword": "buy google cloud $5k credits · paid account",
+    "secondaryKeywords": [
+      "google cloud $5k credits · paid account price",
+      "google cloud trial & credits"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/google-cloud-5k-credits-paid-account.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/google-cloud-10k-credits-paid-account",
+    "path": "/product/google-cloud-10k-credits-paid-account/",
+    "canonical": "https://www.buyawsaccountsai.com/product/google-cloud-10k-credits-paid-account/",
+    "title": "Google Cloud $10K Credits · Paid Account | BuyAWSAccountsAI",
+    "description": "Explore Google Cloud $10K Credits · Paid Account, listed specifications, $1,299 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Google Cloud $10K Credits · Paid Account",
+    "primaryKeyword": "buy google cloud $10k credits · paid account",
+    "secondaryKeywords": [
+      "google cloud $10k credits · paid account price",
+      "google cloud trial & credits"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/google-cloud-10k-credits-paid-account.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/google-cloud-25k-credits-paid-account",
+    "path": "/product/google-cloud-25k-credits-paid-account/",
+    "canonical": "https://www.buyawsaccountsai.com/product/google-cloud-25k-credits-paid-account/",
+    "title": "Google Cloud $25K Credits · Paid Account | BuyAWSAccountsAI",
+    "description": "Explore Google Cloud $25K Credits · Paid Account, listed specifications, $2,999 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Google Cloud $25K Credits · Paid Account",
+    "primaryKeyword": "buy google cloud $25k credits · paid account",
+    "secondaryKeywords": [
+      "google cloud $25k credits · paid account price",
+      "google cloud trial & credits"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/google-cloud-25k-credits-paid-account.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2",
+    "path": "/product/google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+    "canonical": "https://www.buyawsaccountsai.com/product/google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+    "title": "Google Cloud $2,000 Credits Gemini AI | BuyAWSAccountsAI",
+    "description": "Explore Google Cloud $2K Credits · VT Gemini AI · F5.2 and F5.2, listed specifications, $299 reference pricing and account requirements. Compare options…",
+    "h1": "Google Cloud $2K Credits · VT Gemini AI · F5.2 and F5.2",
+    "primaryKeyword": "buy google cloud $2k credits · vt gemini ai · f5.2 and f5.2",
+    "secondaryKeywords": [
+      "google cloud $2k credits · vt gemini ai · f5.2 and f5.2 price",
+      "gcp vt gemini ai accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2",
+    "path": "/product/google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+    "canonical": "https://www.buyawsaccountsai.com/product/google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+    "title": "Google Cloud $5,000 Credits Gemini AI | BuyAWSAccountsAI",
+    "description": "Explore Google Cloud $5K Credits · VT Gemini AI · F5.2 and F5.2, listed specifications, $999 reference pricing and account requirements. Compare options…",
+    "h1": "Google Cloud $5K Credits · VT Gemini AI · F5.2 and F5.2",
+    "primaryKeyword": "buy google cloud $5k credits · vt gemini ai · f5.2 and f5.2",
+    "secondaryKeywords": [
+      "google cloud $5k credits · vt gemini ai · f5.2 and f5.2 price",
+      "gcp vt gemini ai accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2",
+    "path": "/product/google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+    "canonical": "https://www.buyawsaccountsai.com/product/google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+    "title": "Google Cloud $10,000 Credits Gemini AI | BuyAWSAccountsAI",
+    "description": "Explore Google Cloud $10K Credits · VT Gemini AI · F5.2 and F5.2, listed specifications, $1,899 reference pricing and account requirements. Compare options…",
+    "h1": "Google Cloud $10K Credits · VT Gemini AI · F5.2 and F5.2",
+    "primaryKeyword": "buy google cloud $10k credits · vt gemini ai · f5.2 and f5.2",
+    "secondaryKeywords": [
+      "google cloud $10k credits · vt gemini ai · f5.2 and f5.2 price",
+      "gcp vt gemini ai accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2",
+    "path": "/product/google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+    "canonical": "https://www.buyawsaccountsai.com/product/google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2/",
+    "title": "Google Cloud $25,000 Credits Gemini AI | BuyAWSAccountsAI",
+    "description": "Explore Google Cloud $25K Credits · VT Gemini AI · F5.2 and F5.2, listed specifications, $5,500 reference pricing and account requirements. Compare options…",
+    "h1": "Google Cloud $25K Credits · VT Gemini AI · F5.2 and F5.2",
+    "primaryKeyword": "buy google cloud $25k credits · vt gemini ai · f5.2 and f5.2",
+    "secondaryKeywords": [
+      "google cloud $25k credits · vt gemini ai · f5.2 and f5.2 price",
+      "gcp vt gemini ai accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/hetzner-free-trial",
+    "path": "/product/hetzner-free-trial/",
+    "canonical": "https://www.buyawsaccountsai.com/product/hetzner-free-trial/",
+    "title": "Hetzner Free Trial | BuyAWSAccountsAI",
+    "description": "Explore Hetzner Free Trial, listed specifications, $30 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Hetzner Free Trial",
+    "primaryKeyword": "buy hetzner free trial",
+    "secondaryKeywords": [
+      "hetzner free trial price",
+      "hetzner accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/hetzner-free-trial.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/hetzner-port-limit-50-servers",
+    "path": "/product/hetzner-port-limit-50-servers/",
+    "canonical": "https://www.buyawsaccountsai.com/product/hetzner-port-limit-50-servers/",
+    "title": "Hetzner Port Limit · 50 Servers | BuyAWSAccountsAI",
+    "description": "Explore Hetzner Port Limit · 50 Servers, listed specifications, $35 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Hetzner Port Limit · 50 Servers",
+    "primaryKeyword": "buy hetzner port limit · 50 servers",
+    "secondaryKeywords": [
+      "hetzner port limit · 50 servers price",
+      "hetzner accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/hetzner-port-limit-50-servers.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/kamatera-free-trial",
+    "path": "/product/kamatera-free-trial/",
+    "canonical": "https://www.buyawsaccountsai.com/product/kamatera-free-trial/",
+    "title": "Kamatera Free Trial | BuyAWSAccountsAI",
+    "description": "Explore Kamatera Free Trial, listed specifications, $30 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Kamatera Free Trial",
+    "primaryKeyword": "buy kamatera free trial",
+    "secondaryKeywords": [
+      "kamatera free trial price",
+      "kamatera accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/kamatera-free-trial.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/kamatera-port-25-open",
+    "path": "/product/kamatera-port-25-open/",
+    "canonical": "https://www.buyawsaccountsai.com/product/kamatera-port-25-open/",
+    "title": "Kamatera Port 25 Open | BuyAWSAccountsAI",
+    "description": "Explore Kamatera Port 25 Open, listed specifications, $50 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Kamatera Port 25 Open",
+    "primaryKeyword": "buy kamatera port 25 open",
+    "secondaryKeywords": [
+      "kamatera port 25 open price",
+      "kamatera accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/kamatera-port-25-open.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/linode-free-trial",
+    "path": "/product/linode-free-trial/",
+    "canonical": "https://www.buyawsaccountsai.com/product/linode-free-trial/",
+    "title": "Linode Free Trial | BuyAWSAccountsAI",
+    "description": "Explore Linode Free Trial, listed specifications, $30 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Linode Free Trial",
+    "primaryKeyword": "buy linode free trial",
+    "secondaryKeywords": [
+      "linode free trial price",
+      "linode accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/linode-free-trial.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/linode-port-25-open-10-ips",
+    "path": "/product/linode-port-25-open-10-ips/",
+    "canonical": "https://www.buyawsaccountsai.com/product/linode-port-25-open-10-ips/",
+    "title": "Linode Port 25 Open · 10 IPs | BuyAWSAccountsAI",
+    "description": "Explore Linode Port 25 Open · 10 IPs, listed specifications, $120 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Linode Port 25 Open · 10 IPs",
+    "primaryKeyword": "buy linode port 25 open · 10 ips",
+    "secondaryKeywords": [
+      "linode port 25 open · 10 ips price",
+      "linode accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/linode-port-25-open-10-ips.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/linode-port-25-open-50-ips",
+    "path": "/product/linode-port-25-open-50-ips/",
+    "canonical": "https://www.buyawsaccountsai.com/product/linode-port-25-open-50-ips/",
+    "title": "Linode Port 25 Open · 50 IPs | BuyAWSAccountsAI",
+    "description": "Explore Linode Port 25 Open · 50 IPs, listed specifications, $480 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Linode Port 25 Open · 50 IPs",
+    "primaryKeyword": "buy linode port 25 open · 50 ips",
+    "secondaryKeywords": [
+      "linode port 25 open · 50 ips price",
+      "linode accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/linode-port-25-open-50-ips.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/oracle-cloud-free-trial",
+    "path": "/product/oracle-cloud-free-trial/",
+    "canonical": "https://www.buyawsaccountsai.com/product/oracle-cloud-free-trial/",
+    "title": "Oracle Cloud Free Trial | BuyAWSAccountsAI",
+    "description": "Explore Oracle Cloud Free Trial, listed specifications, $45 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Oracle Cloud Free Trial",
+    "primaryKeyword": "buy oracle cloud free trial",
+    "secondaryKeywords": [
+      "oracle cloud free trial price",
+      "oracle cloud accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/oracle-cloud-free-trial.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/oracle-cloud-pay-as-you-go",
+    "path": "/product/oracle-cloud-pay-as-you-go/",
+    "canonical": "https://www.buyawsaccountsai.com/product/oracle-cloud-pay-as-you-go/",
+    "title": "Oracle Cloud Pay As You Go | BuyAWSAccountsAI",
+    "description": "Explore Oracle Cloud Pay As You Go, listed specifications, $120 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Oracle Cloud Pay As You Go",
+    "primaryKeyword": "buy oracle cloud pay as you go",
+    "secondaryKeywords": [
+      "oracle cloud pay as you go price",
+      "oracle cloud accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/oracle-cloud-pay-as-you-go.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/ovhcloud-free-trial-34-vcpu",
+    "path": "/product/ovhcloud-free-trial-34-vcpu/",
+    "canonical": "https://www.buyawsaccountsai.com/product/ovhcloud-free-trial-34-vcpu/",
+    "title": "OVHcloud Free Trial · 34 vCPU | BuyAWSAccountsAI",
+    "description": "Explore OVHcloud Free Trial · 34 vCPU, listed specifications, $30 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "OVHcloud Free Trial · 34 vCPU",
+    "primaryKeyword": "buy ovhcloud free trial · 34 vcpu",
+    "secondaryKeywords": [
+      "ovhcloud free trial · 34 vcpu price",
+      "ovhcloud accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/ovhcloud-free-trial-34-vcpu.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/ovhcloud-paid-account-34-vcpu",
+    "path": "/product/ovhcloud-paid-account-34-vcpu/",
+    "canonical": "https://www.buyawsaccountsai.com/product/ovhcloud-paid-account-34-vcpu/",
+    "title": "OVHcloud Paid Account · 34 vCPU | BuyAWSAccountsAI",
+    "description": "Explore OVHcloud Paid Account · 34 vCPU, listed specifications, $80 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "OVHcloud Paid Account · 34 vCPU",
+    "primaryKeyword": "buy ovhcloud paid account · 34 vcpu",
+    "secondaryKeywords": [
+      "ovhcloud paid account · 34 vcpu price",
+      "ovhcloud accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/ovhcloud-paid-account-34-vcpu.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/amazon-ses-smtp-50k-daily-limit",
+    "path": "/product/amazon-ses-smtp-50k-daily-limit/",
+    "canonical": "https://www.buyawsaccountsai.com/product/amazon-ses-smtp-50k-daily-limit/",
+    "title": "Amazon SES SMTP · 50K Daily Limit | BuyAWSAccountsAI",
+    "description": "Explore Amazon SES SMTP · 50K Daily Limit, listed specifications, $500 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Amazon SES SMTP · 50K Daily Limit",
+    "primaryKeyword": "buy amazon ses smtp · 50k daily limit",
+    "secondaryKeywords": [
+      "amazon ses smtp · 50k daily limit price",
+      "amazon ses smtp accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/amazon-ses-smtp-50k-daily-limit.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/amazon-ses-smtp-50k-daily-limit-3-regions",
+    "path": "/product/amazon-ses-smtp-50k-daily-limit-3-regions/",
+    "canonical": "https://www.buyawsaccountsai.com/product/amazon-ses-smtp-50k-daily-limit-3-regions/",
+    "title": "Amazon SES SMTP · 50K Daily Limit · 3 Regions | BuyAWSAccountsAI",
+    "description": "Explore Amazon SES SMTP · 50K Daily Limit · 3 Regions, listed specifications, $899 reference pricing and account requirements. Compare options before…",
+    "h1": "Amazon SES SMTP · 50K Daily Limit · 3 Regions",
+    "primaryKeyword": "buy amazon ses smtp · 50k daily limit · 3 regions",
+    "secondaryKeywords": [
+      "amazon ses smtp · 50k daily limit · 3 regions price",
+      "amazon ses smtp accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/amazon-ses-smtp-50k-daily-limit-3-regions.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/amazon-ses-smtp-100k-daily-limit",
+    "path": "/product/amazon-ses-smtp-100k-daily-limit/",
+    "canonical": "https://www.buyawsaccountsai.com/product/amazon-ses-smtp-100k-daily-limit/",
+    "title": "Amazon SES SMTP · 100K Daily Limit | BuyAWSAccountsAI",
+    "description": "Explore Amazon SES SMTP · 100K Daily Limit, listed specifications, $1,599 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Amazon SES SMTP · 100K Daily Limit",
+    "primaryKeyword": "buy amazon ses smtp · 100k daily limit",
+    "secondaryKeywords": [
+      "amazon ses smtp · 100k daily limit price",
+      "amazon ses smtp accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/amazon-ses-smtp-100k-daily-limit.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/upcloud-free-trial",
+    "path": "/product/upcloud-free-trial/",
+    "canonical": "https://www.buyawsaccountsai.com/product/upcloud-free-trial/",
+    "title": "UpCloud Free Trial | BuyAWSAccountsAI",
+    "description": "Explore UpCloud Free Trial, listed specifications, $30 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "UpCloud Free Trial",
+    "primaryKeyword": "buy upcloud free trial",
+    "secondaryKeywords": [
+      "upcloud free trial price",
+      "upcloud accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/upcloud-free-trial.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/upcloud-paid-account",
+    "path": "/product/upcloud-paid-account/",
+    "canonical": "https://www.buyawsaccountsai.com/product/upcloud-paid-account/",
+    "title": "UpCloud Paid Account | BuyAWSAccountsAI",
+    "description": "Explore UpCloud Paid Account, listed specifications, $75 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "UpCloud Paid Account",
+    "primaryKeyword": "buy upcloud paid account",
+    "secondaryKeywords": [
+      "upcloud paid account price",
+      "upcloud accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/upcloud-paid-account.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/ibm-cloud-free-trial",
+    "path": "/product/ibm-cloud-free-trial/",
+    "canonical": "https://www.buyawsaccountsai.com/product/ibm-cloud-free-trial/",
+    "title": "IBM Cloud Free Trial | BuyAWSAccountsAI",
+    "description": "Explore IBM Cloud Free Trial, listed specifications, $45 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "IBM Cloud Free Trial",
+    "primaryKeyword": "buy ibm cloud free trial",
+    "secondaryKeywords": [
+      "ibm cloud free trial price",
+      "ibm cloud accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/ibm-cloud-free-trial.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/ibm-cloud-pay-as-you-go",
+    "path": "/product/ibm-cloud-pay-as-you-go/",
+    "canonical": "https://www.buyawsaccountsai.com/product/ibm-cloud-pay-as-you-go/",
+    "title": "IBM Cloud Pay As You Go | BuyAWSAccountsAI",
+    "description": "Explore IBM Cloud Pay As You Go, listed specifications, $120 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "IBM Cloud Pay As You Go",
+    "primaryKeyword": "buy ibm cloud pay as you go",
+    "secondaryKeywords": [
+      "ibm cloud pay as you go price",
+      "ibm cloud accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/ibm-cloud-pay-as-you-go.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/ibm-cloud-port-25-open",
+    "path": "/product/ibm-cloud-port-25-open/",
+    "canonical": "https://www.buyawsaccountsai.com/product/ibm-cloud-port-25-open/",
+    "title": "IBM Cloud Port 25 Open | BuyAWSAccountsAI",
+    "description": "Explore IBM Cloud Port 25 Open, listed specifications, $80 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "IBM Cloud Port 25 Open",
+    "primaryKeyword": "buy ibm cloud port 25 open",
+    "secondaryKeywords": [
+      "ibm cloud port 25 open price",
+      "ibm cloud accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/ibm-cloud-port-25-open.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/heroku-free-trial-port-25-open",
+    "path": "/product/heroku-free-trial-port-25-open/",
+    "canonical": "https://www.buyawsaccountsai.com/product/heroku-free-trial-port-25-open/",
+    "title": "Heroku Free Trial · Port 25 Open | BuyAWSAccountsAI",
+    "description": "Explore Heroku Free Trial · Port 25 Open, listed specifications, $50 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Heroku Free Trial · Port 25 Open",
+    "primaryKeyword": "buy heroku free trial · port 25 open",
+    "secondaryKeywords": [
+      "heroku free trial · port 25 open price",
+      "heroku accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/heroku-free-trial-port-25-open.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/heroku-port-25-open",
+    "path": "/product/heroku-port-25-open/",
+    "canonical": "https://www.buyawsaccountsai.com/product/heroku-port-25-open/",
+    "title": "Heroku Port 25 Open | BuyAWSAccountsAI",
+    "description": "Explore Heroku Port 25 Open, listed specifications, $85 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Heroku Port 25 Open",
+    "primaryKeyword": "buy heroku port 25 open",
+    "secondaryKeywords": [
+      "heroku port 25 open price",
+      "heroku accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/heroku-port-25-open.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/vultr-200-credits",
+    "path": "/product/vultr-200-credits/",
+    "canonical": "https://www.buyawsaccountsai.com/product/vultr-200-credits/",
+    "title": "Vultr $200 Credits | BuyAWSAccountsAI",
+    "description": "Explore Vultr $200 Credits, listed specifications, $30 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Vultr $200 Credits",
+    "primaryKeyword": "buy vultr $200 credits",
+    "secondaryKeywords": [
+      "vultr $200 credits price",
+      "vultr credit accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/vultr-200-credits.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/vultr-250-credits",
+    "path": "/product/vultr-250-credits/",
+    "canonical": "https://www.buyawsaccountsai.com/product/vultr-250-credits/",
+    "title": "Vultr $250 Credits | BuyAWSAccountsAI",
+    "description": "Explore Vultr $250 Credits, listed specifications, $55 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Vultr $250 Credits",
+    "primaryKeyword": "buy vultr $250 credits",
+    "secondaryKeywords": [
+      "vultr $250 credits price",
+      "vultr credit accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/vultr-250-credits.png",
+    "type": "Product"
+  },
+  {
+    "id": "product/vultr-95-credits",
+    "path": "/product/vultr-95-credits/",
+    "canonical": "https://www.buyawsaccountsai.com/product/vultr-95-credits/",
+    "title": "Vultr $95 Credits | BuyAWSAccountsAI",
+    "description": "Explore Vultr $95 Credits, listed specifications, $55 reference pricing and account requirements. Compare options before ordering.",
+    "h1": "Vultr $95 Credits",
+    "primaryKeyword": "buy vultr $95 credits",
+    "secondaryKeywords": [
+      "vultr $95 credits price",
+      "vultr credit accounts"
+    ],
+    "robots": "index, follow",
+    "image": "https://www.buyawsaccountsai.com/social/products/vultr-95-credits.png",
+    "type": "Product"
+  }
+]

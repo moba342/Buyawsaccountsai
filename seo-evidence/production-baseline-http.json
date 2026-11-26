@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-26",
+  "note": "Existing production only; SEO release has not been deployed.",
+  "result": [
+    {
+      "origin": "http://buyawsaccountsai.com",
+      "hops": [
+        {
+          "url": "http://buyawsaccountsai.com/",
+          "status": 308,
+          "location": "https://buyawsaccountsai.com/",
+          "hsts": null
+        },
+        {
+          "url": "https://buyawsaccountsai.com/",
+          "status": 308,
+          "location": "https://www.buyawsaccountsai.com/",
+          "hsts": "max-age=63072000"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/",
+          "status": 200,
+          "location": null,
+          "hsts": "max-age=63072000"
+        }
+      ]
+    },
+    {
+      "origin": "http://www.buyawsaccountsai.com",
+      "hops": [
+        {
+          "url": "http://www.buyawsaccountsai.com/",
+          "status": 308,
+          "location": "https://www.buyawsaccountsai.com/",
+          "hsts": null
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/",
+          "status": 200,
+          "location": null,
+          "hsts": "max-age=63072000"
+        }
+      ]
+    },
+    {
+      "origin": "https://buyawsaccountsai.com",
+      "hops": [
+        {
+          "url": "https://buyawsaccountsai.com/",
+          "status": 308,
+          "location": "https://www.buyawsaccountsai.com/",
+          "hsts": "max-age=63072000"
+        },
+        {
+          "url": "https://www.buyawsaccountsai.com/",
+          "status": 200,
+          "location": null,
+          "hsts": "max-age=63072000"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.buyawsaccountsai.com",
+      "hops": [
+        {
+          "url": "https://www.buyawsaccountsai.com/",
+          "status": 200,
+          "location": null,
+          "hsts": "max-age=63072000"
+        }
+      ]
+    }
+  ]
+}

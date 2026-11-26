@@ -11,3 +11,8 @@ dist/
 .vercel/
 .vercel
 .env*
+.ssg-build/
+.qa-seo/
+!.env.example
+public/optimized/
+public/social/

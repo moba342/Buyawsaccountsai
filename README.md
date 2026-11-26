@@ -1,22 +1,19 @@
-# Buyawsaccountsai
-
-# Cloudlane — Cloud Account Storefront
+# BuyAWSAccountsAI — Cloud Account Storefront
 
 Responsive React storefront with a Midnight Sapphire Navy theme with soft white surfaces and a midnight footer, 68 product variants across 14 providers, and original provider logo assets stored locally.
 
 ## Links
 
-- Website: https://cloudlane-market-mobarak.giftedcondor8.chatgpt.site
-- Products: https://cloudlane-market-mobarak.giftedcondor8.chatgpt.site/#products
-- Providers: https://cloudlane-market-mobarak.giftedcondor8.chatgpt.site/#providers
-- Compare: https://cloudlane-market-mobarak.giftedcondor8.chatgpt.site/#compare
-- Guides: https://cloudlane-market-mobarak.giftedcondor8.chatgpt.site/#guides
-- FAQ: https://cloudlane-market-mobarak.giftedcondor8.chatgpt.site/#faq
-- Contact: https://cloudlane-market-mobarak.giftedcondor8.chatgpt.site/#contact
+- Website: https://www.buyawsaccountsai.com/
+- Marketplace: https://www.buyawsaccountsai.com/marketplace/
+- Cloud Platforms: https://www.buyawsaccountsai.com/cloud-platforms/
+- Compare Products: https://www.buyawsaccountsai.com/compare-products/
+- Buying Guides: https://www.buyawsaccountsai.com/buying-guides/
+- Help Center: https://www.buyawsaccountsai.com/help-center/
+- Seller Profile: https://www.buyawsaccountsai.com/seller-profile/
+- Contact Sales: https://www.buyawsaccountsai.com/contact-sales/
 - Telegram: https://t.me/dexterw4tts
 - Support email: dexter-watts@buyawsaccountsai.com
-
-The current Sites publication is private and may require the owner's sign-in.
 
 ## Run locally
 
@@ -101,7 +98,7 @@ Color and surface reference: https://dotmirror.com/ (palette applied without cop
 
 ## Vercel
 
-Import this GitHub repository into Vercel. The root `vercel.json` selects Vite, installs with `npm ci`, builds with `npm run build`, and publishes `dist`. No environment variables are required. Clean routes, including `/cart/` and `/checkout/`, use the SPA rewrite rules in `vercel.json`. `.vercelignore` excludes local dependencies, Git history, and Sites-only metadata from CLI uploads.
+Import this GitHub repository into Vercel. The root `vercel.json` selects Vite, installs with `npm ci`, builds with `npm run build`, and publishes `dist`. No environment variables are required. Clean routes, including `/cart/` and `/checkout/`, serve their prerendered HTML through `vercel.json`; interactive navigation hydrates React. `.vercelignore` excludes local dependencies, Git history, and Sites-only metadata from CLI uploads.
 
 ## Responsive optimization
 
@@ -185,7 +182,7 @@ The capsule header stays at the top with an opaque surface rather than live back
 
 ### Header utility actions
 
-The shared header includes icon-only Telegram and cart links, plus a Midnight Sapphire Check Pricing action to `/products/`. Cart quantity is reflected in the accessible label and count badge. Navigation collapses below 1280px; mobile actions use a second row with 44px touch targets. Sticky-header offsets resize automatically.
+The shared header includes icon-only Telegram and cart links, plus a Midnight Sapphire Check Pricing action to `/marketplace/`. Cart quantity is reflected in the accessible label and count badge. Navigation collapses below 1280px; mobile actions use a second row with 44px touch targets. Sticky-header offsets resize automatically.
 
 The pricing CTA uses the shared navy gradient, white text, border and shadow tokens. Hover adds a one-shot sheen, a small lift and arrow movement; pressing settles the button. Reduced-motion preferences disable movement.
 
@@ -235,6 +232,16 @@ Vercel permanently redirects previous paths; SPA navigation, canonical metadata,
 
 ### Homepage and technical SEO
 
-`seo.js` holds the exact requested homepage title/description, deduplicated keyword themes, route-specific canonical/social metadata, and factual Organization/WebSite/WebPage structured data. The homepage H1 targets “Buy AWS accounts”; `HomepageSeoContent.jsx` adds original account, credit and Bedrock buying content without unsupported guarantees.
+`site-config.js` and `seo.js` centralize exact requested page metadata, canonical/social tags and factual structured data. Obsolete meta keywords are removed. `HomepageSeoContent.jsx` retains original buying guidance without unsupported guarantees.
 
-After Vite builds, `scripts/generate-seo.mjs` generates initial HTML head metadata for the homepage and all 92 application routes, plus `/sitemap.xml` (91 public URLs) and `/robots.txt`. Vercel rewrites serve each route’s generated HTML file. The React application remains client rendered; these generated files provide static SEO heads, not full server-rendered page bodies. Client navigation updates the same metadata and removes homepage-only keywords on other pages. Cart/checkout remain noindex and are excluded from the sitemap. No analytics IDs, search-console verification, fake reviews or unsubstantiated seller certifications are added.
+The build generates 96 complete React HTML pages, a custom 404, a 94-URL sitemap and robots.txt. Individual products include truthful Product data, collections use CollectionPage/ItemList and relevant pages have matching visible/schema breadcrumbs. Guide articles have independent crawlable URLs. Cart/checkout are noindex. Optional Search Console/analytics support remains unconfigured until genuine owner inputs are available.
+
+### Technical SEO build and validation
+
+The build now renders each public route with React on the build server, then hydrates the same content in the browser. Run `npm ci`, `npm test`, `npm run build`, and `npm run validate:seo`. Use `npm run preview:production` for generated route HTML, redirects and genuine 404s at `http://localhost:4173`; Vite's development SPA fallback is not an HTTP-status test. The production API still runs on Vercel; the local production-like preview also adapts `/api/verify-payment` for validation.
+
+SEO configuration lives in `site-config.js`, `seo.js`, and `seo-overrides.js`. Product/provider data stays in the existing catalog. Social assets and responsive WebP images regenerate during prebuild. Do not enable Product offers until confirmed inventory and binding prices are available. Cart and checkout are crawlable but noindex.
+
+See `SEO-IMPLEMENTATION.md`, `SEO-VALIDATION-REPORT.md`, `SEO-KEYWORD-MAPPING.md`, and `SEO-DEPLOYMENT-CHECKLIST.md` for the audit results and owner setup. `.env.example` contains public verification/analytics variable names; optional trackers require consent and an actual published privacy notice. Production deployment requires approval for this SEO change.
+
+Optional browser QA scripts are in `scripts/qa/`. Install Playwright and `@axe-core/playwright` in a separate tools package, set `QA_TOOLS_PACKAGE_JSON` to that package's absolute `package.json`, and optionally `CHROME_PATH` to Chrome's executable. With the production-like preview running, execute `node scripts/qa/technical-seo.mjs`, `node scripts/qa/seo-commerce-regression.mjs`, and `node scripts/qa/seo-accessibility-extra.mjs`. Commerce payment responses are controlled test fixtures; no funds are transferred and no actual customer orders are placed.

@@ -1,0 +1,208 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.buyawsaccountsai.com/#organization",
+      "name": "BuyAWSAccountsAI",
+      "url": "https://www.buyawsaccountsai.com/",
+      "description": "Cloud account products, credit options and seller-listed AI access with clear specifications and purchase terms.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.buyawsaccountsai.com/logos/buyawsaccountsai-header-logo.png"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "url": "https://www.buyawsaccountsai.com/contact-sales/",
+        "email": "dexter-watts@buyawsaccountsai.com",
+        "telephone": "+14582624274",
+        "availableLanguage": "English"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.buyawsaccountsai.com/#website",
+      "url": "https://www.buyawsaccountsai.com/",
+      "name": "BuyAWSAccountsAI",
+      "publisher": {
+        "@id": "https://www.buyawsaccountsai.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.buyawsaccountsai.com/aws-accounts/#webpage",
+      "url": "https://www.buyawsaccountsai.com/aws-accounts/",
+      "name": "Buy AWS Accounts | Cloud Products",
+      "description": "Explore Amazon Web Services account products, credit options and listed prices. Compare 22 variants and confirm account details before purchase.",
+      "isPartOf": {
+        "@id": "https://www.buyawsaccountsai.com/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.buyawsaccountsai.com/aws-accounts/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.buyawsaccountsai.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cloud Platforms",
+          "item": "https://www.buyawsaccountsai.com/cloud-platforms/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "AWS Accounts",
+          "item": "https://www.buyawsaccountsai.com/aws-accounts/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://www.buyawsaccountsai.com/aws-accounts/#products",
+      "numberOfItems": 22,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "AWS Free Trial",
+          "url": "https://www.buyawsaccountsai.com/product/aws-free-trial/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AWS 8 vCPU",
+          "url": "https://www.buyawsaccountsai.com/product/aws-8-vcpu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "AWS 32 vCPU",
+          "url": "https://www.buyawsaccountsai.com/product/aws-32-vcpu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "AWS 64 vCPU",
+          "url": "https://www.buyawsaccountsai.com/product/aws-64-vcpu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "AWS 128 vCPU",
+          "url": "https://www.buyawsaccountsai.com/product/aws-128-vcpu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "AWS 256 vCPU",
+          "url": "https://www.buyawsaccountsai.com/product/aws-256-vcpu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "AWS 512 vCPU",
+          "url": "https://www.buyawsaccountsai.com/product/aws-512-vcpu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "AWS 640 vCPU",
+          "url": "https://www.buyawsaccountsai.com/product/aws-640-vcpu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "AWS 1920 vCPU",
+          "url": "https://www.buyawsaccountsai.com/product/aws-1920-vcpu/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "AWS $5K Credits",
+          "url": "https://www.buyawsaccountsai.com/product/aws-5k-credits/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "name": "AWS $10K Credits",
+          "url": "https://www.buyawsaccountsai.com/product/aws-10k-credits/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "name": "AWS $25K Credits",
+          "url": "https://www.buyawsaccountsai.com/product/aws-25k-credits/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "name": "AWS $100K Credits",
+          "url": "https://www.buyawsaccountsai.com/product/aws-100k-credits/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "name": "AWS 32 vCPU · 10 RPM · Bedrock Enabled",
+          "url": "https://www.buyawsaccountsai.com/product/aws-32-vcpu-10-rpm-bedrock-enabled/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "name": "AWS 32 vCPU · 50 RPM · Bedrock Enabled",
+          "url": "https://www.buyawsaccountsai.com/product/aws-32-vcpu-50-rpm-bedrock-enabled/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "name": "AWS 256 vCPU · 10K RPM · Bedrock Enabled",
+          "url": "https://www.buyawsaccountsai.com/product/aws-256-vcpu-10k-rpm-bedrock-enabled/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 17,
+          "name": "AWS 512 vCPU · 10K RPM · High TPM · Bedrock Enabled",
+          "url": "https://www.buyawsaccountsai.com/product/aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 18,
+          "name": "AWS 640 vCPU · 10K RPM · High TPM · Bedrock F5.2",
+          "url": "https://www.buyawsaccountsai.com/product/aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 19,
+          "name": "AWS 1920 vCPU · 10K RPM · High TPM · 4.6 / 4.7 / 4.8 / Opus 5 / Fable 5",
+          "url": "https://www.buyawsaccountsai.com/product/aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 20,
+          "name": "AWS $5K Credits · 10K RPM · Bedrock Enabled",
+          "url": "https://www.buyawsaccountsai.com/product/aws-5k-credits-10k-rpm-bedrock-enabled/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 21,
+          "name": "AWS $10K Credits · 10K RPM · Bedrock Enabled",
+          "url": "https://www.buyawsaccountsai.com/product/aws-10k-credits-10k-rpm-bedrock-enabled/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 22,
+          "name": "AWS $25K Credits · 10K RPM · Bedrock Enabled",
+          "url": "https://www.buyawsaccountsai.com/product/aws-25k-credits-10k-rpm-bedrock-enabled/"
+        }
+      ]
+    }
+  ]
+}

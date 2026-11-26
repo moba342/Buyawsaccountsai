@@ -1,0 +1,101 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.buyawsaccountsai.com/#organization",
+      "name": "BuyAWSAccountsAI",
+      "url": "https://www.buyawsaccountsai.com/",
+      "description": "Cloud account products, credit options and seller-listed AI access with clear specifications and purchase terms.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.buyawsaccountsai.com/logos/buyawsaccountsai-header-logo.png"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "url": "https://www.buyawsaccountsai.com/contact-sales/",
+        "email": "dexter-watts@buyawsaccountsai.com",
+        "telephone": "+14582624274",
+        "availableLanguage": "English"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.buyawsaccountsai.com/#website",
+      "url": "https://www.buyawsaccountsai.com/",
+      "name": "BuyAWSAccountsAI",
+      "publisher": {
+        "@id": "https://www.buyawsaccountsai.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.buyawsaccountsai.com/product/aws-free-trial/#webpage",
+      "url": "https://www.buyawsaccountsai.com/product/aws-free-trial/",
+      "name": "AWS Free Trial | BuyAWSAccountsAI",
+      "description": "Explore AWS Free Trial, listed specifications, $15 reference pricing and account requirements. Compare options before ordering.",
+      "isPartOf": {
+        "@id": "https://www.buyawsaccountsai.com/#website"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.buyawsaccountsai.com/product/aws-free-trial/#product"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.buyawsaccountsai.com/product/aws-free-trial/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.buyawsaccountsai.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Marketplace",
+          "item": "https://www.buyawsaccountsai.com/marketplace/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "AWS Accounts",
+          "item": "https://www.buyawsaccountsai.com/aws-accounts/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Free Trial",
+          "item": "https://www.buyawsaccountsai.com/product/aws-free-trial/"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.buyawsaccountsai.com/product/aws-free-trial/#product",
+      "name": "AWS Free Trial",
+      "description": "Explore the AWS Free Trial package for an account evaluation with a defined project goal. Review the seller-listed trial conditions, billing arrangement, and permitted setup before paying the separate $15 account-package price.",
+      "url": "https://www.buyawsaccountsai.com/product/aws-free-trial/",
+      "image": [
+        "https://www.buyawsaccountsai.com/social/products/aws-free-trial.png"
+      ],
+      "category": "AWS vCPU Accounts",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Package type",
+          "value": "Trial account"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Reference price (USD)",
+          "value": 15
+        }
+      ]
+    }
+  ]
+}

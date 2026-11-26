@@ -1,3 +1,4 @@
+import { trackEvent, publicAnalyticsItem } from './analytics';
 import PaymentIcon, { PaymentOptions } from './PaymentIcon';
 import SellerProfileCard from './SellerProfileCard';
 import PaymentVerification, {
@@ -11,7 +12,6 @@ import {
   Trash2,
   Minus,
   Plus,
-  Wallet,
   Send,
   Copy,
   Check,
@@ -396,6 +396,14 @@ export function CheckoutPage({ cart }) {
                       checked={network === m.id}
                       onChange={() => {
                         setNetwork(m.id);
+                        trackEvent('add_payment_info', {
+                          currency: 'USD',
+                          value: cart.total,
+                          payment_type: m.label,
+                          items: cart.lines.map((l) =>
+                            publicAnalyticsItem(l.product, l.quantity),
+                          ),
+                        });
                         setCopyStatus('');
                         setWalletStatus('');
                       }}

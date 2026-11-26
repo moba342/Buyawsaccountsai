@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-26",
+  "mode": "Public JSON-LD code samples; unpublished build, not live production",
+  "results": [
+    {
+      "tool": "Schema.org Validator",
+      "sample": "homepage",
+      "url": "https://validator.schema.org/",
+      "errors": 0,
+      "warnings": 0,
+      "rootItems": 2,
+      "status": "PASS",
+      "summary": "Detected\n0 ERRORS0 WARNINGS2 ITEMS\nWebPage\n0 ERRORS0 WARNINGS1 ITEM\nItemList\n0 ERRORS0 WARNINGS1 ITEM\nplay_arrow\nVALIDATE"
+    },
+    {
+      "tool": "Schema.org Validator",
+      "sample": "marketplace",
+      "url": "https://validator.schema.org/",
+      "errors": 0,
+      "warnings": 0,
+      "rootItems": 3,
+      "status": "PASS",
+      "summary": "Detected\n0 ERRORS0 WARNINGS3 ITEMS\nCollectionPage\n0 ERRORS0 WARNINGS1 ITEM\nBreadcrumbList\n0 ERRORS0 WARNINGS1 ITEM\nItemList\n0 ERRORS0 WARNINGS1 ITEM\nplay_arrow\nVALIDATE"
+    },
+    {
+      "tool": "Schema.org Validator",
+      "sample": "aws-collection",
+      "url": "https://validator.schema.org/",
+      "errors": 0,
+      "warnings": 0,
+      "rootItems": 3,
+      "status": "PASS",
+      "summary": "Detected\n0 ERRORS0 WARNINGS3 ITEMS\nCollectionPage\n0 ERRORS0 WARNINGS1 ITEM\nBreadcrumbList\n0 ERRORS0 WARNINGS1 ITEM\nItemList\n0 ERRORS0 WARNINGS1 ITEM\nplay_arrow\nVALIDATE"
+    },
+    {
+      "tool": "Schema.org Validator",
+      "sample": "aws-product",
+      "url": "https://validator.schema.org/",
+      "errors": 0,
+      "warnings": 0,
+      "rootItems": 2,
+      "status": "PASS",
+      "summary": "Detected\n0 ERRORS0 WARNINGS2 ITEMS\nWebPage\n0 ERRORS0 WARNINGS1 ITEM\nBreadcrumbList\n0 ERRORS0 WARNINGS1 ITEM\nplay_arrow\nVALIDATE"
+    },
+    {
+      "tool": "Schema.org Validator",
+      "sample": "buying-guide",
+      "url": "https://validator.schema.org/",
+      "errors": 0,
+      "warnings": 0,
+      "rootItems": 2,
+      "status": "PASS",
+      "summary": "Detected\n0 ERRORS0 WARNINGS2 ITEMS\nBreadcrumbList\n0 ERRORS0 WARNINGS1 ITEM\nArticle\n0 ERRORS0 WARNINGS1 ITEM\nplay_arrow\nVALIDATE"
+    },
+    {
+      "tool": "Google Rich Results Test",
+      "sample": "aws-product",
+      "url": "https://search.google.com/test/rich-results",
+      "status": "MANUAL ACTION REQUIRED",
+      "summary": "Code submitted using the ordinary Google Rich Results Test UI. Google returned: Something went wrong. Log in and try again. No result or pass is claimed."
+    }
+  ]
+}

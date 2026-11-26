@@ -1,3 +1,4 @@
+import { getPageSeo, confirmedOffer } from './seo';
 import ProductVisual from './ProductVisual';
 import React, { useEffect, useState } from 'react';
 import {
@@ -324,24 +325,6 @@ export function CatalogPage({
       className="catalog-detail-page"
       data-provider={brand.name}
     >
-      <nav className="account-breadcrumb" aria-label="Breadcrumb">
-        <a href="/marketplace/">Products</a>
-        <span>/</span>
-        <a
-          href={'/' + providerRoute(brand) + '/'}
-          aria-current={product ? undefined : 'page'}
-        >
-          {brand.full}
-        </a>
-        {product && (
-          <>
-            <span>/</span>
-            <span title={product.name} aria-current="page">
-              {product.name}
-            </span>
-          </>
-        )}
-      </nav>
       <section
         className={
           'account-page-hero ' + (product ? 'is-product' : 'is-collection')
@@ -350,18 +333,16 @@ export function CatalogPage({
         <div className="account-page-hero-copy">
           <div className="account-provider-lockup">
             <span>
-              <ProviderLogo name={brand.name} decorative />
+              <ProviderLogo name={brand.name} decorative priority />
             </span>
             <div>
-              <strong>
-                {product ? product.name : brand.name + ' Accounts'}
-              </strong>
+              {product ? <strong>{product.name}</strong> : <h1 className="account-collection-title">{getPageSeo(providerRoute(brand)).h1}</h1>}
               <span>{product ? product.group : 'ACCOUNT COLLECTION'}</span>
             </div>
           </div>
           {product ? (
             <>
-              <h1>{product.name}</h1>
+              <h1>{getPageSeo(productRoute(product)).h1}</h1>
               <p className="account-product-introduction">{`Review this ${product.type.toLowerCase()} from the ${product.group} collection. Compare the seller-listed specification, choose your variant, and confirm the account details and purchase terms directly with us.`}</p>
               <ProductVisual provider={product.provider} title={product.name} />
               <section
@@ -385,7 +366,6 @@ export function CatalogPage({
             </>
           ) : (
             <>
-              <h1 className="sr-only">{brand.name} Accounts</h1>
               <ProductVisual
                 provider={brand.name}
                 title={brand.name + ' Accounts'}
@@ -412,6 +392,7 @@ export function CatalogPage({
               <small>USD</small>
             </strong>
             <p>Per account · Confirm final quote</p>
+            {product && <p className="account-availability">Availability: {confirmedOffer(product)?.availability?.split('/').pop()?.replace(/([a-z])([A-Z])/g, '$1 $2') || 'Confirm with seller'}</p>}
           </div>
           {product ? (
             <>
@@ -485,7 +466,7 @@ export function CatalogPage({
           )}
           <a className="account-panel-seller" href="/seller-profile/">
             <img
-              src="/seller/dexter-watts-profile.png"
+              src="/optimized/dexter-watts-400.webp" srcSet="/optimized/dexter-watts-240.webp 240w, /optimized/dexter-watts-400.webp 400w, /optimized/dexter-watts-640.webp 640w" sizes="(max-width:767px)160px,200px"
               width="36"
               height="36"
               alt=""

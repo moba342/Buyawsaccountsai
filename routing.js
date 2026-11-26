@@ -1,3 +1,5 @@
+import {guides} from './editorialContent.js';
+import {guideRoute} from './guideRoutes.js';
 import { brands, products } from './catalog.js';
 
 export const pageSlugs = {
@@ -25,6 +27,7 @@ export const routeIds = [
   'contact',
   'verified',
   'verification/public-proof',
+  ...guides.map(guideRoute),
   ...brands.map((b) => slug(b.name) + '-accounts'),
   ...products.map((p) => 'product/' + slug(p.provider + ' ' + p.name)),
 ];
@@ -52,5 +55,5 @@ export function migrateLegacyRoute() {
 }
 export function currentRoute() {
   migrateLegacyRoute();
-  return pathRoute(window.location.pathname) || 'products';
+  return pathRoute(window.location.pathname) || 'not-found';
 }

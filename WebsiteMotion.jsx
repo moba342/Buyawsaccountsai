@@ -168,6 +168,7 @@ export default function WebsiteMotion({ routeKey, paused }) {
             if (!entry.isIntersecting) continue;
             observer.unobserve(entry.target);
             if (document.hidden) continue;
+            if (window.scrollY===0 && entry.boundingClientRect.top<window.innerHeight) continue;
             const headingPart = entry.target.matches(heroParts);
             const siblingIndex = headingPart
               ? [...entry.target.parentElement.children].indexOf(entry.target)
@@ -206,7 +207,7 @@ export default function WebsiteMotion({ routeKey, paused }) {
           }
       });
       const main = document.getElementById('page-content');
-      if (main) mutations.observe(main, { childList: true, subtree: true });
+      if (main) mutations.observe(document.getElementById('root'), { childList: true, subtree: true });
     }
     function visibility() {
       clearLight();
