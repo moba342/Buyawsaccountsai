@@ -95,3 +95,8 @@ html[data-scroll-active=true] #root .account-card .account-price-glow,html[data-
 #root .account-card-logo{background:#FFFFFF;border-color:#DCE3ED}
 @media(max-width:767px){#root .account-card-category{font-size:13px}}
 @media(max-width:374px){#root .account-card-top{padding:12px;gap:8px}#root .account-card-category{font-size:13px}#root .account-card-kind{font-size:9px}}
+
+/* Platform identity replaces the generic account-type badge. */
+#root .account-card-top .account-card-kind img{width:17px;height:17px;flex:0 0 17px;padding:0;border:0;border-radius:0;background:transparent;object-fit:contain;filter:brightness(0) invert(1)}
+#root .account-card-kind{gap:6px;font-size:11px;line-height:1.5}
+@media(max-width:374px){#root .account-card-kind{font-size:10px;padding-inline:6px;gap:5px}#root .account-card-top .account-card-kind img{width:15px;height:15px;flex-basis:15px}}

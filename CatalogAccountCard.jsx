@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Plus, ShoppingCart, Layers } from 'lucide-react';
+import { ArrowRight, Plus, ShoppingCart } from 'lucide-react';
 import ProviderLogo from './ProviderLogo';
 import { productRoute } from './catalogPaths';
 import { formatPrice } from './catalog';
@@ -24,8 +24,8 @@ export default function CatalogAccountCard({
           </span>
         </span>
         <span className="account-card-kind">
-          <Layers size={12} aria-hidden="true" />
-          {product.kind === 'AI' ? 'AI access' : product.kind}
+          <ProviderLogo name={product.provider} decorative />
+          {(product.group || product.provider).split(' ')[0]}
         </span>
       </div>
       <div className="account-card-copy">
