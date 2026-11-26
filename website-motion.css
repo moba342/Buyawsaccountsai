@@ -10,3 +10,14 @@
 }
 @media(prefers-reduced-motion:reduce),(hover:none),(pointer:coarse){#root .cursor-surface-light{display:none}}
 html[data-scroll-active=true] #root .cursor-surface-light{display:none}
+
+/* Layered illustration depth preserves the existing logo rotations and layout. */
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+ #root .home-hero .cloud-sculpture,#root .home-hero .home-hero-profile{translate:var(--pointer-depth-x,0px) var(--pointer-depth-y,0px);transition:translate 380ms cubic-bezier(.16,1,.3,1)}
+ #root .home-hero .visual-provider{translate:calc(var(--pointer-depth-x,0px) * -.65) calc(var(--pointer-depth-y,0px) * -.65);transition:translate 500ms cubic-bezier(.16,1,.3,1)}
+ #root .home-hero[data-ambient-visible=true] .visual-halo{animation:sapphire-breathe 9s ease-in-out infinite;transform-origin:center;will-change:transform}
+ #root .home-hero .visual-provider:focus-visible{translate:0 0}
+}
+@keyframes sapphire-breathe{0%,100%{transform:scale(.97);opacity:.65}50%{transform:scale(1.035);opacity:.9}}
+html[data-scroll-active=true] #root .visual-halo,html[data-motion-hidden=true] #root .visual-halo{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){#root .home-hero :is(.visual-provider,.cloud-sculpture,.home-hero-profile){translate:none!important;transition:none!important}#root .home-hero .visual-halo{animation:none!important}}

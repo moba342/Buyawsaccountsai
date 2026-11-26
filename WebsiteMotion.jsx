@@ -2,7 +2,14 @@ import { useEffect } from 'react';
 
 const surfaces =
   '.account-card,.provider-showcase-card,.account-purchase-panel,.page-intro-panel,.home-hero,.footer-callout,.public-seller-card,.seller-details-panel';
-const entrances = `${surfaces},.account-process>ol>li,.account-workloads>*`;
+const entrances = `${surfaces
+  .split(',')
+  .filter((s) => s !== '.home-hero')
+  .join(
+    ',',
+  )},.account-process>ol>li,.account-workloads>*,.home-section-heading,.process-item,.page-intro-copy>*,.home-hero-content>*,.account-page-hero-copy>*`;
+const heroParts =
+  '.home-hero-content>*,.page-intro-copy>*,.account-page-hero-copy>*';
 
 // Event-driven lighting: one layer and at most one frame, with no idle render loop.
 export default function WebsiteMotion({ routeKey, paused }) {
@@ -13,6 +20,7 @@ export default function WebsiteMotion({ routeKey, paused }) {
     const seen = new WeakSet();
     const animations = new Set();
     let observer,
+      ambientObserver,
       mutations,
       frame = 0,
       target = null,
@@ -26,12 +34,26 @@ export default function WebsiteMotion({ routeKey, paused }) {
       cancelAnimationFrame(frame);
       frame = 0;
       target?.classList.remove('motion-lit');
+      target?.style.removeProperty('--pointer-depth-x');
+      target?.style.removeProperty('--pointer-depth-y');
       target = bounds = point = null;
       light.remove();
     }
     function draw() {
       frame = 0;
       if (!target?.isConnected || !bounds || !point) return clearLight();
+      if (target.matches('.home-hero')) {
+        const x = Math.max(
+          -1,
+          Math.min(1, ((point.x - bounds.left) / bounds.width) * 2 - 1),
+        );
+        const y = Math.max(
+          -1,
+          Math.min(1, ((point.y - bounds.top) / bounds.height) * 2 - 1),
+        );
+        target.style.setProperty('--pointer-depth-x', `${x * 7}px`);
+        target.style.setProperty('--pointer-depth-y', `${y * 5}px`);
+      }
       light.style.transform = `translate3d(${point.x - bounds.left - 180}px,${point.y - bounds.top - 180}px,0)`;
     }
     function move(event) {
@@ -65,15 +87,29 @@ export default function WebsiteMotion({ routeKey, paused }) {
         if (seen.has(node)) continue;
         seen.add(node);
         observer?.observe(node);
+        if (
+          node.matches('.home-hero-content>*') &&
+          node.parentElement?.parentElement
+        ) {
+          ambientObserver?.observe(node.parentElement.parentElement);
+        }
       }
     }
     function configure() {
       observer?.disconnect();
+      ambientObserver?.disconnect();
       mutations?.disconnect();
       clearLight();
       for (const animation of animations) animation.cancel();
       animations.clear();
       if (reduced.matches) return;
+      ambientObserver = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries)
+            entry.target.dataset.ambientVisible = String(entry.isIntersecting);
+        },
+        { threshold: 0.05 },
+      );
       observer = new IntersectionObserver(
         (entries) => {
           let order = 0;
@@ -81,15 +117,22 @@ export default function WebsiteMotion({ routeKey, paused }) {
             if (!entry.isIntersecting) continue;
             observer.unobserve(entry.target);
             if (document.hidden) continue;
+            const headingPart = entry.target.matches(heroParts);
+            const siblingIndex = headingPart
+              ? [...entry.target.parentElement.children].indexOf(entry.target)
+              : order++;
             const animation = entry.target.animate(
               [
-                { opacity: 0.45, transform: 'translateY(14px)' },
+                {
+                  opacity: 0.18,
+                  transform: `translateY(${headingPart ? 20 : 26}px)`,
+                },
                 { opacity: 1, transform: 'translateY(0)' },
               ],
               {
-                duration: 460,
-                delay: Math.min(order++ * 45, 135),
-                easing: 'cubic-bezier(.2,.7,.2,1)',
+                duration: headingPart ? 640 : 580,
+                delay: Math.min(siblingIndex * 75, headingPart ? 300 : 225),
+                easing: 'cubic-bezier(.16,1,.3,1)',
               },
             );
             animations.add(animation);
@@ -126,6 +169,7 @@ export default function WebsiteMotion({ routeKey, paused }) {
     window.addEventListener('blur', clearLight);
     return () => {
       observer?.disconnect();
+      ambientObserver?.disconnect();
       mutations?.disconnect();
       clearLight();
       for (const animation of animations) animation.cancel();

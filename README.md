@@ -174,3 +174,5 @@ Provider collections use category navigation, package search, and responsive two
 ### Website motion
 
 `WebsiteMotion.jsx` adds one-shot viewport entrances and event-driven sapphire cursor lighting to shared storefront surfaces. Pointer updates share one requested animation frame, stop on scroll/blur/hidden tabs, and create no idle animation loop. Touch devices omit cursor lighting; reduced-motion preferences disable both effects. `website-motion.css` defines the surface lighting and restrained button interactions.
+
+The motion treatment also sequences hero content and section headings, staggers collection cards, and adds bounded pointer parallax to the homepage illustration. A slow sapphire halo runs only while the hero is visible on fine-pointer devices, pausing during scroll and in hidden tabs. Reduced-motion mode disables these treatments.
