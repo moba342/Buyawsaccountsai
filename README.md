@@ -254,3 +254,8 @@ The latest master brief adds a separate evidence and editorial gate. See [the ne
 This review branch preserves 68 catalog variants and 14 collection URLs, maps all 82 supplied SEO proposals, and holds their purchase/indexing status pending actual evidence. Its generated sitemap contains 12 eligible supporting URLs, not the earlier 94. Proposed service copy does not create a service. `offer-review-records.js` is intentionally empty; do not copy synthetic test fixtures into it. Publication, purchase and index approval are separate decisions enforced by shared policy.
 
 `npm run build` regenerates `docs/seo/PRODUCT-SEO-CATALOG.json` and `PRODUCT-KEYWORD-MAPPING.csv`. Run `npm test` and `npm run validate:seo`. Optional `scripts/qa/catalog-publication.mjs` verifies the pending UI/API safeguards; the historical positive commerce browser test is not applicable with no approved purchasable inventory. Owner evidence, human editorial review and new release approval are required before production changes. No new deployment was made for this branch.
+
+
+### Approved catalog SEO production release — 2026-11-27
+
+The owner subsequently approved deployment of `ec7a7bc`, including the pending catalog purchase/indexing holds. Main was fast-forwarded and pushed, and Vercel production was updated. See [the release record](docs/seo/PRODUCTION-RELEASE-2026-11-27.md) for live verification, deployment IDs and remaining owner actions. Earlier review-branch statements describe the pre-release state.

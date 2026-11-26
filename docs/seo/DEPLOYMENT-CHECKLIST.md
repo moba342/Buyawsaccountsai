@@ -1,6 +1,8 @@
 # Catalog SEO deployment checklist
 
-Status: **MANUAL ACTION REQUIRED — no new production approval**. The new master brief says “Do not deploy without owner approval.” The earlier approval applied to the previous release; this new catalog/publication change is kept on its review branch.
+Release update: **Owner approved production on 2026-11-27** with “Run the production deployment all seo”. See `PRODUCTION-RELEASE-2026-11-27.md` for live results. The pre-release checklist and remaining evidence requirements below are retained for context.
+
+Pre-release status: **MANUAL ACTION REQUIRED — no new production approval**. The new master brief says “Do not deploy without owner approval.” The earlier approval applied to the previous release; this new catalog/publication change is kept on its review branch.
 
 ## Review the release impact first
 

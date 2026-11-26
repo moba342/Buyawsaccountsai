@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-27",
+  "timezone": "Asia/Dhaka",
+  "approval": "Run the production deployment all seo",
+  "sourceCommit": "ec7a7bc",
+  "project": "mo-ba2/buyawsaccountsai",
+  "production": "https://www.buyawsaccountsai.com/",
+  "deploymentId": "dpl_6coh1ndcCLbqAQs3cWYpUeAJ7AF6",
+  "deploymentUrl": "https://buyawsaccountsai-pexx3d5cc-mo-ba2.vercel.app",
+  "status": "READY",
+  "target": "production",
+  "initialCliDeployment": "dpl_4pjrwynAnciFRAkFCkhbVtWNFGK3",
+  "previousApplicationDeployment": "https://buyawsaccountsai-m38uddis9-mo-ba2.vercel.app",
+  "pendingCatalogRecords": 82,
+  "sitemapUrls": 12,
+  "offerApprovalGranted": false
+}

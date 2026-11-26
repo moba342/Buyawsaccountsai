@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-27",
+  "method": "Sequential mobile production lab runs, not real-user field INP or guaranteed performance.",
+  "results": [
+    {
+      "page": "home",
+      "url": "https://www.buyawsaccountsai.com/",
+      "fetchTime": "2026-11-26T18:11:50.390Z",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 1876.643,
+      "tbtMs": 49,
+      "cls": 0,
+      "failedSeoAudits": []
+    },
+    {
+      "page": "product",
+      "url": "https://www.buyawsaccountsai.com/product/aws-free-trial/",
+      "fetchTime": "2026-11-26T18:12:02.065Z",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69
+      },
+      "lcpMs": 1094.233,
+      "tbtMs": 0,
+      "cls": 0,
+      "failedSeoAudits": [
+        "is-crawlable"
+      ]
+    }
+  ]
+}
