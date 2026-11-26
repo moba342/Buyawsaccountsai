@@ -35,7 +35,7 @@ test('old pages permanently redirect to rewritten canonical pages without redire
     );
     assert(
       config.rewrites.some(
-        (r) => r.source === `/${slug}/` && r.destination === '/index.html',
+        (r) => r.source === `/${slug}/` && r.destination === `/${slug}/index.html`,
       ),
     );
   }

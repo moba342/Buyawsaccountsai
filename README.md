@@ -232,3 +232,9 @@ Public page paths now match the new page names. Internal app IDs remain stable.
 Vercel permanently redirects previous paths; SPA navigation, canonical metadata, existing legacy hash links, and all shared links use the canonical paths. Retired catalog redirects lead directly to canonical destinations. The homepage, cart, checkout, provider collections, product URLs and public seller declaration retain their routes.
 
 `GuideArtwork.jsx` provides original cloud, credit-layer and security SVG symbols for the buying-guide card headers. Frames and icon sizes remain centered at responsive widths; the old decorative oval is removed. `guide-artwork.css` uses the shared navy tokens, short hover movement and reduced-motion support.
+
+### Homepage and technical SEO
+
+`seo.js` holds the exact requested homepage title/description, deduplicated keyword themes, route-specific canonical/social metadata, and factual Organization/WebSite/WebPage structured data. The homepage H1 targets “Buy AWS accounts”; `HomepageSeoContent.jsx` adds original account, credit and Bedrock buying content without unsupported guarantees.
+
+After Vite builds, `scripts/generate-seo.mjs` generates initial HTML head metadata for the homepage and all 92 application routes, plus `/sitemap.xml` (91 public URLs) and `/robots.txt`. Vercel rewrites serve each route’s generated HTML file. The React application remains client rendered; these generated files provide static SEO heads, not full server-rendered page bodies. Client navigation updates the same metadata and removes homepage-only keywords on other pages. Cart/checkout remain noindex and are excluded from the sitemap. No analytics IDs, search-console verification, fake reviews or unsubstantiated seller certifications are added.

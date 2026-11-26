@@ -8,51 +8,51 @@
   "rewrites": [
     {
       "source": "/cart/",
-      "destination": "/index.html"
+      "destination": "/cart/index.html"
     },
     {
       "source": "/checkout/",
-      "destination": "/index.html"
+      "destination": "/checkout/index.html"
     },
     {
       "source": "/marketplace/",
-      "destination": "/index.html"
+      "destination": "/marketplace/index.html"
     },
     {
       "source": "/cloud-platforms/",
-      "destination": "/index.html"
+      "destination": "/cloud-platforms/index.html"
     },
     {
       "source": "/compare-products/",
-      "destination": "/index.html"
+      "destination": "/compare-products/index.html"
     },
     {
       "source": "/buying-guides/",
-      "destination": "/index.html"
+      "destination": "/buying-guides/index.html"
     },
     {
       "source": "/help-center/",
-      "destination": "/index.html"
+      "destination": "/help-center/index.html"
     },
     {
       "source": "/contact-sales/",
-      "destination": "/index.html"
+      "destination": "/contact-sales/index.html"
     },
     {
       "source": "/seller-profile/",
-      "destination": "/index.html"
+      "destination": "/seller-profile/index.html"
     },
     {
       "source": "/verification/public-proof/",
-      "destination": "/index.html"
+      "destination": "/verification/public-proof/index.html"
     },
     {
       "source": "/:provider-accounts/",
-      "destination": "/index.html"
+      "destination": "/:provider-accounts/index.html"
     },
     {
       "source": "/product/:slug/",
-      "destination": "/index.html"
+      "destination": "/product/:slug/index.html"
     }
   ],
   "functions": {
