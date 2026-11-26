@@ -1,4 +1,4 @@
-import { pageHeading, hasPublishedOffers } from "./site-config";
+import { pageHeading, hasPurchasableOffers } from "./site-config";
 import HomepageSeoContent from "./HomepageSeoContent";
 import { scrollPageTo } from "./SmoothScrolling";
 import { CatalogBuyingArticles } from "./ProductBuyingArticle";
@@ -245,7 +245,7 @@ export default function HomePage({
           </div>
           <h1>{pageHeading("home")}</h1>
           <p>
-            {hasPublishedOffers
+            {hasPurchasableOffers
               ? "Review available cloud products and their documented purchase terms."
               : "Review seller-listed cloud account references and the requirements behind each configuration."}
             <br className="wide-break" /> Compare specifications and recorded

@@ -1,5 +1,5 @@
 import { productPath } from "./catalogPaths";
-import { productPublication } from "./offer-publication";
+import { productPurchaseState } from "./purchase-state";
 import React from "react";
 import { ArrowRight, Plus, ShoppingCart } from "lucide-react";
 import ProviderLogo from "./ProviderLogo";
@@ -13,7 +13,7 @@ export default function CatalogAccountCard({
   onCompare,
   onAddToCart,
 }) {
-  const publication = productPublication(product);
+  const publication = productPurchaseState(product);
   const facts = productSpecifications(product).slice(1, 3);
   return (
     <article className="account-card">
@@ -36,18 +36,14 @@ export default function CatalogAccountCard({
           <a href={productPath(product)}>{product.name}</a>
         </h3>
         <p>{product.type}</p>
-        {!publication.published && (
-          <span className="reference-status">
-            Pending verification · not available to order
-          </span>
-        )}
+        <span className="reference-status">{publication.statusText}</span>
         <div className="account-card-price">
-          <span>Reference price</span>
+          <span>{publication.priceLabel}</span>
           <strong>
             <span className="account-card-price-value">
-              {formatPrice(product.price)}
+              {formatPrice(publication.price)}
               <span className="account-price-glow" aria-hidden="true">
-                {formatPrice(product.price)}
+                {formatPrice(publication.price)}
               </span>
             </span>
             <small> / account</small>
@@ -80,18 +76,14 @@ export default function CatalogAccountCard({
               onAddToCart ? onAddToCart(product) : onOrder(product)
             }
             aria-label={
-              (publication.purchasable ? "Add to cart: " : "Pending review: ") +
+              (publication.cartLabel + ": ") +
               product.provider +
               " " +
               product.name
             }
           >
             <ShoppingCart size={16} aria-hidden="true" />
-            {publication.purchasable
-              ? "Add to cart"
-              : publication.published
-                ? "Currently unavailable"
-                : "Pending review"}
+            {publication.cartLabel}
           </button>
           <a
             className="secondary"

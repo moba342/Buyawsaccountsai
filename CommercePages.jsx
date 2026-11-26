@@ -1,3 +1,4 @@
+import { productPurchaseState } from "./purchase-state";
 import { canPurchaseProduct } from "./offer-publication";
 import { trackEvent, publicAnalyticsItem } from "./analytics";
 import PaymentIcon, { PaymentOptions } from "./PaymentIcon";
@@ -66,6 +67,7 @@ function Empty() {
   );
 }
 function Summary({ cart, checkout = false }) {
+  const pricesConfirmed = cart.lines.length > 0 && cart.lines.every(line => productPurchaseState(line.product).published);
   return (
     <aside className="commerce-summary" aria-labelledby="order-summary-title">
       <span className="commerce-eyebrow">YOUR SELECTION</span>
@@ -76,12 +78,12 @@ function Summary({ cart, checkout = false }) {
           <dd>{cart.count}</dd>
         </div>
         <div>
-          <dt>Listed subtotal</dt>
+          <dt>{pricesConfirmed ? "Subtotal" : "Listed subtotal"}</dt>
           <dd>{formatPrice(cart.total)} USD</dd>
         </div>
       </dl>
       <div className="commerce-total">
-        <span>Reference total</span>
+        <span>{pricesConfirmed ? "Total" : "Reference total"}</span>
         <strong>
           {formatPrice(cart.total)}
           <small>USD</small>
@@ -250,7 +252,10 @@ export function CheckoutPage({ cart }) {
     txid,
     items: cart.lines.map(({ id, quantity }) => ({ id, quantity })),
   });
-  const orderText = `ACCOUNT ORDER REQUEST\nName: ${name.trim()}\nEmail: ${email.trim()}\nPhone: ${phone.trim() || "Not provided"}\nTelegram: ${telegram.trim() || "Not provided"}\n\n${cart.lines.map(({ product, quantity }) => `${product.provider} ${product.name} × ${quantity} — ${formatPrice(product.price * quantity)}`).join("\n")}\nReference total: ${formatPrice(cart.total)} USD\nPreferred payment: ${method.label} (${method.network})\nTXID: ${txid.trim() || "Not provided"}\nBlockchain check: ${check.result?.status || "Not checked"}${check.result?.checkedAt ? " at " + check.result.checkedAt : ""}\n${check.result?.receivedAmount ? "Received: " + check.result.receivedAmount + " USDT\n" : ""}${note.trim() ? "Notes: " + note.trim() + "\n" : ""}\nPlease confirm availability, the final USDT amount, receiving wallet, delivery and refund terms. This request is not proof of payment.`;
+  const pricesConfirmed = cart.lines.length > 0 && cart.lines.every(line => productPurchaseState(line.product).published);
+  const blockedLines = cart.lines.filter(line => !canPurchaseProduct(line.product));
+  const hasPendingPublication = blockedLines.some(line => !productPurchaseState(line.product).published);
+  const orderText = `ACCOUNT ORDER REQUEST\nName: ${name.trim()}\nEmail: ${email.trim()}\nPhone: ${phone.trim() || "Not provided"}\nTelegram: ${telegram.trim() || "Not provided"}\n\n${cart.lines.map(({ product, quantity }) => `${product.provider} ${product.name} × ${quantity} — ${formatPrice(product.price * quantity)}`).join("\n")}\n${pricesConfirmed ? "Total" : "Reference total"}: ${formatPrice(cart.total)} USD\nPreferred payment: ${method.label} (${method.network})\nTXID: ${txid.trim() || "Not provided"}\nBlockchain check: ${check.result?.status || "Not checked"}${check.result?.checkedAt ? " at " + check.result.checkedAt : ""}\n${check.result?.receivedAmount ? "Received: " + check.result.receivedAmount + " USDT\n" : ""}${note.trim() ? "Notes: " + note.trim() + "\n" : ""}\nPlease confirm availability, the final USDT amount, receiving wallet, delivery and refund terms. This request is not proof of payment.`;
   const signature = JSON.stringify({
     lines: cart.lines.map(({ id, quantity }) => ({ id, quantity })),
     network,
@@ -283,7 +288,7 @@ export function CheckoutPage({ cart }) {
       0,
     );
   }
-  if (cart.lines.some((line) => !canPurchaseProduct(line.product)))
+  if (blockedLines.length)
     return (
       <main
         id="page-content"
@@ -295,17 +300,18 @@ export function CheckoutPage({ cart }) {
           <h1>Checkout.</h1>
         </div>
         <section className="checkout-publication-hold">
-          <h2>Ordering is unavailable for these references</h2>
+          <h2>{hasPendingPublication ? "Ordering is unavailable for these references" : "Selected products are currently unavailable"}</h2>
           <p>
             Your saved selections and original prices have been retained.
-            Payment instructions and verification are withheld until every
-            selected item has an approved publication record.
+            {hasPendingPublication
+              ? " Payment instructions and verification are withheld until every selected item has both a completed commercial review and purchasable availability."
+              : " These reviewed products cannot currently be ordered. Payment instructions and verification remain withheld until every selected item is available to purchase."}
           </p>
           <ul>
             {cart.lines.map((line) => (
               <li key={line.id}>
                 {line.product.provider} · {line.product.name} —{" "}
-                {formatPrice(line.product.price)} reference price
+                {formatPrice(line.product.price)} {productPurchaseState(line.product).priceLabel.toLowerCase()}
               </li>
             ))}
           </ul>
@@ -577,9 +583,9 @@ export function CheckoutPage({ cart }) {
                   onChange={(e) => setAgreed(e.target.checked)}
                 />
                 <span>
-                  I understand that listed prices are references and will
-                  confirm availability, final payment instructions, delivery,
-                  and refund terms with the seller before payment.
+                  I have reviewed the displayed product prices and will confirm
+                  availability, payment instructions, delivery and refund terms
+                  with the seller before payment.
                 </span>
               </label>
               <button className="primary commerce-prepare" type="submit">

@@ -1,4 +1,5 @@
 import { productPath, providerPath } from "./catalogPaths";
+import { productPurchaseState } from "./purchase-state";
 import { canPurchaseProduct } from "./offer-publication";
 import {
   ProvidersPage,
@@ -441,7 +442,7 @@ export default function App({ initialRoute, initialPathname } = {}) {
                   </thead>
                   <tbody>
                     {[
-                      ["Reference price", (p) => `${formatPrice(p.price)}`],
+                      ["Price", (p) => `${formatPrice(productPurchaseState(p).price)} · ${productPurchaseState(p).priceLabel}`],
                       ["Package type", (p) => p.type],
                       ["Included service", (p) => p.features[0]],
                       ["Guidance", (p) => p.features[1]],
@@ -467,9 +468,7 @@ export default function App({ initialRoute, initialPathname } = {}) {
                                 setOrder(products[i]);
                             }}
                           >
-                            {canPurchaseProduct(products[i])
-                              ? "Buy Now"
-                              : "Pending review"}
+                            {productPurchaseState(products[i]).buyLabel}
                           </button>
                         </td>
                       ))}

@@ -339,9 +339,12 @@ export async function verifyPayment(body, options = {}) {
   for (const item of body.items) {
     const product = products.find((p) => productRoute(p) === item.id);
     const review = options.publicationReviews?.[item.id];
-    if (!productPublication(product, review).purchasable)
+    const publication = productPublication(product, review);
+    if (!publication.purchasable)
       throw new InputError(
-        "The selected reference is pending publication review and cannot be paid for.",
+        publication.published
+          ? "The selected product is currently unavailable to purchase."
+          : "The selected reference is pending publication review and cannot be paid for.",
       );
   }
   const endpoint =

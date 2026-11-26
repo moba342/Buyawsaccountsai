@@ -1,11 +1,12 @@
+import { productPurchaseState } from "./purchase-state";
 import { canPurchaseProduct } from "./offer-publication";
 import React from "react";
 import { ArrowDown, Check, ShoppingBag } from "lucide-react";
 import { formatPrice } from "./catalog";
 export default function PurchaseSummary({ brand, product, packages, onOrder }) {
-  const price = product
-    ? product.price
-    : Math.min(...packages.map((p) => p.price));
+  const selectedProduct = product || packages.find(canPurchaseProduct) || null;
+  const state = selectedProduct ? productPurchaseState(selectedProduct) : null;
+  const price = selectedProduct ? state.price : Math.min(...packages.map(p => p.price));
   return (
     <aside className="purchase-summary">
       <div className="purchase-summary-heading">
@@ -15,13 +16,13 @@ export default function PurchaseSummary({ brand, product, packages, onOrder }) {
         <span>YOUR ACCOUNT PURCHASE</span>
       </div>
       <p className="purchase-summary-label">
-        {product ? "Listed package price" : "Packages starting from"}
+        {state?.published ? "Package price" : product ? "Reference package price" : "Reference prices from"}
       </p>
       <div className="purchase-summary-price">
         {formatPrice(price)}
         <span>/ account</span>
       </div>
-      <h2>{product ? product.name : brand.name + " account options"}</h2>
+      <h2>{selectedProduct ? selectedProduct.name : brand.name + " account options"}</h2>
       <p className="purchase-summary-copy">
         {product
           ? "Review the proposed scope, then confirm current account details and your final quote."
@@ -42,15 +43,11 @@ export default function PurchaseSummary({ brand, product, packages, onOrder }) {
         ))}
       </ul>
       <button
-        disabled={!canPurchaseProduct(product || packages[0])}
+        disabled={!state?.purchasable}
         className="primary"
-        onClick={() => onOrder(product || packages[0])}
+        onClick={() => { if (state?.purchasable) onOrder(selectedProduct); }}
       >
-        {canPurchaseProduct(product || packages[0])
-          ? product
-            ? "Buy Now"
-            : "Discuss a package"
-          : "Pending publication review"}
+        {state ? state.buyLabel : "Pending publication review"}
       </button>
       <a href="#package-options">
         {product ? "Review package details" : "Browse account variants"}{" "}

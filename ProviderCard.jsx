@@ -1,5 +1,5 @@
 import { routePath } from "./routing";
-import { categoryPublication } from "./offer-publication";
+import { categoryPurchaseState } from "./purchase-state";
 import { products } from "./catalog";
 import React from "react";
 import { ArrowRight } from "lucide-react";
@@ -14,7 +14,7 @@ export default function ProviderCard({
 }) {
   const Heading = heading;
   const route = providerRoute(brand);
-  const publication = categoryPublication(
+  const publication = categoryPurchaseState(
     brand,
     products.filter((p) => p.provider === brand.name),
   );
@@ -33,17 +33,18 @@ export default function ProviderCard({
         </div>
         <span className="provider-showcase-eyebrow">Premium cloud</span>
         <Heading>{brand.full}</Heading>
-        <p>Cloud account reference collection</p>
+        <p>{publication.published ? "Cloud account collection" : "Cloud account reference collection"}</p>
       </div>
       <div className="provider-showcase-copy">
         <div className="provider-showcase-price">
-          <span>Reference prices from</span>
-          <strong>{formatPrice(brand.from)}</strong>
+          <span>{publication.priceLabel}</span>
+          <strong>{formatPrice(publication.priceFrom ?? brand.from)}</strong>
         </div>
         <p>{brand.summary}</p>
         {!publication.published && (
           <span className="reference-status">Pending publication review</span>
         )}
+        {publication.published && !publication.availableCount && <span className="reference-status">Currently unavailable to order</span>}
       </div>
       <div className="provider-showcase-bottom">
         <a

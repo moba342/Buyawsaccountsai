@@ -133,13 +133,9 @@ export function getProductArticle(product, brand) {
       {
         title: productName(product) + " pricing and billing",
         paragraphs: [
-          "Before you purchase " +
-            brand.name +
-            " " +
-            product.name +
-            ", review the listed reference price of " +
-            price +
-            " per account. It is not an infrastructure usage budget, a resource reservation, or a currently payable offer while publication review is pending.",
+          publication.published
+            ? "Before you purchase " + productName(product) + ", review the confirmed product price of " + price + " per account. Infrastructure usage and any separate provider charges are not included unless stated in the reviewed offer."
+            : "Before you purchase " + brand.name + " " + product.name + ", review the listed reference price of " + price + " per account. It is not an infrastructure usage budget, a resource reservation, or a currently payable offer while publication review is pending.",
           product.credit
             ? "The separate listed credit face value is $" +
               product.credit.toLocaleString("en-US") +

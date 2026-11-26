@@ -1,7 +1,7 @@
 import { productOpening, categoryOpening, productName, purchaseQuestion } from "./catalog-buying-copy";
 import { providerPath } from "./catalogPaths";
 import CatalogPublicationNotice from "./CatalogPublicationNotice";
-import { productPublication } from "./offer-publication";
+import { productPurchaseState } from "./purchase-state";
 import { getPageSeo, confirmedOffer } from "./seo";
 import ProductVisual from "./ProductVisual";
 import React, { useEffect, useState } from "react";
@@ -302,7 +302,7 @@ export function CatalogPage({
   onCompare,
   onAddToCart,
 }) {
-  const publication = product ? productPublication(product) : null;
+  const publication = product ? productPurchaseState(product) : null;
   const list = products.filter((p) => p.provider === brand.name),
     groups = [...new Set(list.map((p) => p.group))],
     copy = providerEditorial[brand.name],
@@ -403,18 +403,15 @@ export function CatalogPage({
             <span>{product ? product.kind : list.length + " variants"}</span>
           </div>
           <div className="account-purchase-price">
-            <span>{product ? "Reference package price" : "Packages from"}</span>
+            <span>{product ? (publication.published ? "Package price" : "Reference package price") : "Packages from"}</span>
             <strong>
               {formatPrice(product ? product.price : lowest)}
               <small>USD</small>
             </strong>
-            <p>Per account · Confirm final quote</p>
+            <p>{publication?.published ? "Per account · USD" : "Per account · Confirm final quote"}</p>
             {product && (
               <p className="account-availability">
-                Publication:{" "}
-                {publication.published
-                  ? "Reviewed offer"
-                  : "Pending verification — not available to order"}
+                {publication.statusText}
               </p>
             )}
           </div>
@@ -449,11 +446,7 @@ export function CatalogPage({
                 disabled={!publication.purchasable}
                 onClick={() => onOrder(product)}
               >
-                {publication.purchasable
-                  ? "Buy Now"
-                  : publication.published
-                    ? "Currently unavailable"
-                    : "Pending verification"}
+                {publication.buyLabel}
                 <ArrowRight size={16} aria-hidden="true" />
               </button>
               <button

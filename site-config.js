@@ -1,6 +1,7 @@
 import { refundPolicyReady } from "./refund-policy.js";
 import { products } from "./catalog.js";
 import { productPublication } from "./offer-publication.js";
+export const hasPurchasableOffers = products.some(p => productPublication(p).purchasable);
 export const hasPublishedOffers = products.some(
   (p) => productPublication(p).published,
 );

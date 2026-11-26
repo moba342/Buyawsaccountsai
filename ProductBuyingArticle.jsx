@@ -1,5 +1,5 @@
 import { productPath, providerPath } from "./catalogPaths";
-import { productPublication } from "./offer-publication";
+import { productPurchaseState } from "./purchase-state";
 import { guides } from "./editorialContent";
 import { guideRoute } from "./guideRoutes";
 import { providerRoute } from "./catalogPaths";
@@ -20,7 +20,7 @@ import ProviderLogo from "./ProviderLogo";
 import { productRoute } from "./catalogPaths";
 import { formatPrice } from "./catalog";
 export default function ProductBuyingArticle({ product, brand, onOrder }) {
-  const publication = productPublication(product);
+  const publication = productPurchaseState(product);
   const article = getProductArticle(product, brand);
   return (
     <article
@@ -33,7 +33,7 @@ export default function ProductBuyingArticle({ product, brand, onOrder }) {
         <p data-keyword-description="true">{article.intro}</p>
         <div className="product-article-facts">
           <span>
-            Reference price <strong>{article.price} / account</strong>
+            {publication.priceLabel} <strong>{article.price} / account</strong>
           </span>
           <span>
             Package <strong>{product.type}</strong>
