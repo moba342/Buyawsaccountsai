@@ -192,3 +192,7 @@ The pricing CTA uses the shared navy gradient, white text, border and shadow tok
 ### Product card refinements
 
 Compute specifications use “Product variation limit” without changing seller-supplied values. Product cards use navy category chips and compare-product actions. Homepage provider cards use a three-column desktop grid, two columns on tablets and one on small screens, with grouped variation counts, prominent starting prices, and paired actions. Styles live in `card-refinement.css`.
+
+### Cart and checkout presentation
+
+`commerce-refinement.css` gives commerce pages an editorial purchase layout with white order summaries, a navy total, clear line items and structured form panels. `PaymentIcon.jsx` supplies local vector USDT/TRON/BNB/Ethereum marks for accepted networks; wallet addresses, QR payloads, transaction verification, contact privacy and manual seller matching remain unchanged. Cart controls, copy/download actions, and request preparation retain their existing behavior.
