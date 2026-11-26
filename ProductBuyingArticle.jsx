@@ -102,7 +102,7 @@ export default function ProductBuyingArticle({ product, brand, onOrder }) {
             <ShoppingBag size={16} aria-hidden="true" />
             {publication.purchasable
               ? "Buy " + brand.name + " " + product.name
-              : "Publication review pending"}
+              : publication.published ? publication.unavailableLabel : "Publication review pending"}
           </button>
           <a className="secondary" href="/contact-sales/">
             Ask about this package

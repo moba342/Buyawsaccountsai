@@ -14,6 +14,7 @@ try {
   const {default:Summary}=await vite.ssrLoadModule('/PurchaseSummary.jsx');
   const {default:Provider}=await vite.ssrLoadModule('/ProviderCard.jsx');
   const {CartPage,CheckoutPage}=await vite.ssrLoadModule('/CommercePages.jsx');
+  const {default:BuyingArticle}=await vite.ssrLoadModule('/ProductBuyingArticle.jsx');
   const product=products[1],brand=brands.find(b=>b.name===product.provider),id=productRoute(product),cases=[];
   assert.equal(Object.keys(publicationReviews).length,0);
   for(const availability of [null,'InStock','LimitedAvailability','OutOfStock','PreOrder','BackOrder']){
@@ -23,6 +24,8 @@ try {
     assert.equal(disabled,!["InStock","LimitedAvailability"].includes(availability));
     if(availability){assert(!html.includes('Reference price'));assert(!html.includes('Pending review'));assert(!html.includes('Pending verification'));}
     else{assert(html.includes('Reference price'));assert(html.includes('Pending verification'));}
+    const article=renderToStaticMarkup(React.createElement(BuyingArticle,{product,brand,onOrder(){}}));
+    if(availability)assert(!article.slice(article.indexOf('class="product-article-actions"')).includes('Publication review pending'));
     cases.push({availability:availability||'NO REVIEW',buttonDisabled:disabled,priceLabel:availability?'Price':'Reference price'});
   }
   delete publicationReviews[id];
