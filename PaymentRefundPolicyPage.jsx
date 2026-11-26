@@ -1,13 +1,12 @@
 import React from "react";
-import { ArrowUpRight, ClipboardList, Mail, MessageCircle, ReceiptText, WalletCards } from "lucide-react";
+import { ArrowUpRight, Mail, MessageCircle, ReceiptText, WalletCards } from "lucide-react";
 import PaymentIcon from "./PaymentIcon";
 import { paymentMethods } from "./payments";
-import { confirmedRefundTerms, refundPolicyReady } from "./refund-policy";
+import { refundPolicyReady } from "./refund-policy";
 import { SITE } from "./site-config";
 import "./payment-refund-policy.css";
 
 export default function PaymentRefundPolicyPage() {
-  const terms = confirmedRefundTerms;
   return (
     <main id="page-content" tabIndex={-1} className="payment-policy-page section inner">
       <section className="payment-policy-hero" aria-labelledby="payment-policy-heading">
@@ -33,7 +32,6 @@ export default function PaymentRefundPolicyPage() {
           <span>ON THIS PAGE</span>
           <a href="#accepted-payments">Payment methods</a>
           <a href="#payment-records">Payment confirmation</a>
-          <a href="#refund-terms">Refund terms</a>
           <a href="#request-refund">Request a review</a>
           <a href="#policy-contact">Contact support</a>
         </nav>
@@ -50,15 +48,6 @@ export default function PaymentRefundPolicyPage() {
             <h2 id="payment-records-title">Keep your payment reference</h2>
             <p>Keep your order reference, selected network, amount and transaction hash (TXID). Checkout checks the submitted transaction on the selected network; a blockchain result does not by itself confirm order acceptance, delivery or refund approval.</p>
             <p>If the transaction cannot be matched, contact support with the reference and TXID. Do not send a second payment solely because a check is pending or has not found the transfer.</p>
-          </section>
-          <section id="refund-terms" aria-labelledby="refund-terms-title">
-            <span className="payment-policy-section-label"><ClipboardList size={19} aria-hidden="true" /> REFUND CONDITIONS</span>
-            <h2 id="refund-terms-title">Review the terms for your order</h2>
-            {terms ? <>
-              <dl className="payment-policy-terms"><div><dt>Request window</dt><dd>{terms.window}</dd></div><div><dt>Processing after approval</dt><dd>{terms.processingTime}</dd></div><div><dt>Refund asset and network</dt><dd>{terms.returnNetwork}</dd></div><div><dt>Network fees</dt><dd>{terms.fees}</dd></div></dl>
-              <h3>Eligible requests</h3><ul>{terms.eligible.map(item => <li key={item}>{item}</li>)}</ul>
-              <h3>Exceptions</h3><ul>{terms.exclusions.map(item => <li key={item}>{item}</li>)}</ul>
-            </> : <p>Refund eligibility and any request deadline depend on the terms confirmed for your order. Before payment, ask the seller to confirm qualifying circumstances, exceptions, processing time, return network and fee handling in writing. Keep the confirmed terms with your order reference. A request does not guarantee a refund, and no fixed refund window is advertised here.</p>}
           </section>
           <section id="request-refund" aria-labelledby="request-refund-title">
             <span className="payment-policy-section-label"><MessageCircle size={19} aria-hidden="true" /> SUPPORT PROCESS</span>
