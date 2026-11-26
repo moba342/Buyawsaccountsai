@@ -19,6 +19,7 @@ export const SITE = {
   imageHeight: 630,
   email: "dexter-watts@buyawsaccountsai.com",
   telephone: "+14582624274",
+  whatsapp: { number: "+12513532578", display: "+1 251 353 2578", url: "https://wa.me/12513532578" },
 };
 export const pageSeo = {
   home: {

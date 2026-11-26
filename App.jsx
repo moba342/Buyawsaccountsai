@@ -15,7 +15,8 @@ import AnalyticsConsent from "./AnalyticsConsent";
 import SiteBreadcrumbs from "./SiteBreadcrumbs";
 import NotFoundPage from "./NotFoundPage";
 import { guideByRoute, guideRoute } from "./guideRoutes";
-import { pageHeading } from "./site-config";
+import { SITE, pageHeading } from "./site-config";
+import WhatsAppIcon from "./WhatsAppIcon";
 import { applyPageSeo } from "./seo";
 import GuideArtwork from "./GuideArtwork";
 import { navigationNames } from "./pageNames";
@@ -597,6 +598,7 @@ export default function App({ initialRoute, initialPathname } = {}) {
               >
                 Talk on Telegram ↗
               </a>
+              <a className="secondary" href={SITE.whatsapp.url} target="_blank" rel="noopener noreferrer"><WhatsAppIcon size={18}/> Chat on WhatsApp</a>
               <button className="secondary" onClick={() => browse()}>
                 Explore products
               </button>
