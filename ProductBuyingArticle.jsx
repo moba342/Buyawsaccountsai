@@ -65,7 +65,7 @@ export default function ProductBuyingArticle({ product, brand, onOrder }) {
               Read the seller-supplied profile and public declaration before
               discussing this package.
             </p>
-            <a href="/verified/">
+            <a href="/seller-profile/">
               View seller details
               <ArrowUpRight size={15} aria-hidden="true" />
             </a>
@@ -80,7 +80,7 @@ export default function ProductBuyingArticle({ product, brand, onOrder }) {
             <ShoppingBag size={16} aria-hidden="true" />
             Buy {brand.name} {product.name}
           </button>
-          <a className="secondary" href="/contact/">
+          <a className="secondary" href="/contact-sales/">
             Ask about this package
             <ArrowUpRight size={15} aria-hidden="true" />
           </a>
@@ -109,7 +109,7 @@ export function CatalogBuyingArticles({ brands, products }) {
           and bring the right questions to your buying conversation.
         </p>
         <p>
-          Review <a href="/verified/">our seller profile</a> and the published
+          Review <a href="/seller-profile/">our seller profile</a> and the published
           declaration, then request the account details relevant to your chosen
           product. Verification should relate to the account being offered, the
           permitted setup, and the written purchase terms.
@@ -167,7 +167,7 @@ export function CatalogBuyingArticles({ brands, products }) {
             seller matches the payment to your order and arranges delivery.
           </p>
         </div>
-        <a className="secondary" href="/contact/">
+        <a className="secondary" href="/contact-sales/">
           Discuss your requirements
           <ArrowUpRight size={15} aria-hidden="true" />
         </a>

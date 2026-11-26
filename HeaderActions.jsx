@@ -5,6 +5,6 @@ export default function HeaderActions({ count }) {
   return <div className="header-actions" aria-label="Contact and shopping">
     <a className="header-action-icon" href="https://t.me/dexterw4tts" target="_blank" rel="noopener noreferrer" aria-label="Contact Dexter Watts on Telegram" title="Telegram"><Send size={18} aria-hidden="true"/></a>
     <a className="header-action-icon header-cart-icon" href="/cart/" aria-label={`Shopping cart, ${count} ${count === 1 ? 'product' : 'products'}`} title="Shopping cart"><ShoppingCart size={18} aria-hidden="true"/>{count > 0 && <span className="header-cart-count" aria-hidden="true">{count > 99 ? '99+' : count}</span>}</a>
-    <a className="header-pricing" href="/products/">Check Pricing<ArrowRight size={17} aria-hidden="true"/></a>
+    <a className="header-pricing" href="/marketplace/">Check Pricing<ArrowRight size={17} aria-hidden="true"/></a>
   </div>;
 }

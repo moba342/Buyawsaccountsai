@@ -1,6 +1,6 @@
 # Seller verification information page
 
-Route: `/verified/`. Linked from the homepage seller-information link and the footer Explore column. Includes seller-provided contact details and the Telegram profile at `https://t.me/dexterw4tts`.
+Route: `/seller-profile/`. Linked from the homepage seller-information link and the footer Explore column. Includes seller-provided contact details and the Telegram profile at `https://t.me/dexterw4tts`.
 
 The third-party record is explicitly **Pending documentation**. No verification provider, record identifier, date, scope, or independent proof was supplied. These fields are not fabricated. The page must not be described as a completed verification or provider endorsement unless real supporting evidence is reviewed and published.
 

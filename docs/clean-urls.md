@@ -1,6 +1,6 @@
 # Clean page URLs
 
-Main navigation uses `/products/`, `/providers/`, `/compare/`, `/guides/`, `/faq/`, and `/contact/`. The root `/` remains the homepage. Provider pages use paths such as `/aws-accounts/`; individual variants use paths such as `/product/aws-free-trial/`.
+Main navigation uses `/marketplace/`, `/cloud-platforms/`, `/compare-products/`, `/buying-guides/`, `/help-center/`, and `/contact-sales/`. The root `/` remains the homepage. Provider pages use paths such as `/aws-accounts/`; individual variants use paths such as `/product/aws-free-trial/`.
 
 Internal navigation uses browser history without reloading the application. Old route hashes are converted to the matching clean path on load or hash navigation. In-page anchors remain supported. Canonical URLs follow the current page. Vercel rewrites serve the React app for direct visits and refreshes; trailing slashes are normalized by the host.
 

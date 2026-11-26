@@ -1,6 +1,6 @@
 # First-party public seller declaration
 
-Published route: `/verification/public-proof/`. The `/verified/` page displays the same seller profile card and links to the declaration.
+Published route: `/verification/public-proof/`. The `/seller-profile/` page displays the same seller profile card and links to the declaration.
 
 The seller supplied the following record details:
 

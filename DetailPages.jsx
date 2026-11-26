@@ -107,7 +107,7 @@ function Collection({ brand, list, product, onOrder, onCompare, onAddToCart }) {
               <strong>{options.filter((p) => p.group === name).length}</strong>
             </button>
           ))}
-          <a href="/contact/">
+          <a href="/contact-sales/">
             Need help choosing?
             <ArrowRight size={14} aria-hidden="true" />
           </a>
@@ -325,7 +325,7 @@ export function CatalogPage({
       data-provider={brand.name}
     >
       <nav className="account-breadcrumb" aria-label="Breadcrumb">
-        <a href="/products/">Products</a>
+        <a href="/marketplace/">Products</a>
         <span>/</span>
         <a
           href={'/' + providerRoute(brand) + '/'}
@@ -483,7 +483,7 @@ export function CatalogPage({
               </button>
             </>
           )}
-          <a className="account-panel-seller" href="/verified/">
+          <a className="account-panel-seller" href="/seller-profile/">
             <img
               src="/seller/dexter-watts-profile.png"
               width="36"
@@ -578,7 +578,7 @@ export function CatalogPage({
             <h2 id="account-faq-title">Questions worth asking.</h2>
             <p>Practical answers for your account purchase.</p>
           </div>
-          <a href="/faq/" className="account-text-link">
+          <a href="/help-center/" className="account-text-link">
             All FAQs
             <ArrowRight size={15} aria-hidden="true" />
           </a>
@@ -602,11 +602,11 @@ export function CatalogPage({
             next package.
           </p>
           <div>
-            <a href="/compare/">
+            <a href="/compare-products/">
               Compare products
               <ArrowRight size={14} aria-hidden="true" />
             </a>
-            <a href="/guides/">
+            <a href="/buying-guides/">
               Read buying guides
               <ArrowRight size={14} aria-hidden="true" />
             </a>

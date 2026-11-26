@@ -53,7 +53,7 @@ function Empty() {
         Your cart is empty. Explore the collection and choose an account
         package.
       </p>
-      <a className="primary" href="/products/">
+      <a className="primary" href="/marketplace/">
         Explore accounts
         <ArrowRight size={17} aria-hidden="true" />
       </a>
@@ -137,7 +137,7 @@ export function CartPage({ cart }) {
             ready.
           </p>
         </div>
-        <a href="/products/" className="commerce-back">
+        <a href="/marketplace/" className="commerce-back">
           <ArrowLeft size={16} aria-hidden="true" />
           Continue shopping
         </a>

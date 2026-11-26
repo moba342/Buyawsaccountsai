@@ -214,3 +214,19 @@ Collection titles occupy a shared row above the artwork and price overview. Desk
 ### Page naming
 
 `pageNames.js` centralizes browser titles and compact navigation labels: Marketplace, Cloud Platforms, Compare, Buying Guides, Help Center, Seller Profile and Contact Sales. Core page headings use matching editorial names. Existing route paths, provider/product names, seller evidence and checkout behavior are unchanged.
+
+### Named page URLs
+
+Public page paths now match the new page names. Internal app IDs remain stable.
+
+| Previous URL | Canonical URL |
+| --- | --- |
+| `/products/` | `/marketplace/` |
+| `/providers/` | `/cloud-platforms/` |
+| `/compare/` | `/compare-products/` |
+| `/guides/` | `/buying-guides/` |
+| `/faq/` | `/help-center/` |
+| `/verified/` | `/seller-profile/` |
+| `/contact/` | `/contact-sales/` |
+
+Vercel permanently redirects previous paths; SPA navigation, canonical metadata, existing legacy hash links, and all shared links use the canonical paths. Retired catalog redirects lead directly to canonical destinations. The homepage, cart, checkout, provider collections, product URLs and public seller declaration retain their routes.
