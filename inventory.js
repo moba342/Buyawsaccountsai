@@ -1,15 +1,84 @@
-// Merchant-managed availability. Owner confirmed all current catalog stock on 2026-11-27.
-// This records inventory, not independent verification or provider endorsement.
-import { products } from "./catalog.js";
+// Owner-confirmed inventory snapshot, 2026-11-27. Not independent verification or provider endorsement.
+// New catalog entries are NOT activated automatically: add their stable ID only when stocked and eligible.
 import { productRoute } from "./catalogPaths.js";
-export const inventory = Object.fromEntries(products.map(product => [productRoute(product), {
+const ownerConfirmedIds = [
+  "product/aws-free-trial",
+  "product/aws-8-vcpu",
+  "product/aws-32-vcpu",
+  "product/aws-64-vcpu",
+  "product/aws-128-vcpu",
+  "product/aws-256-vcpu",
+  "product/aws-512-vcpu",
+  "product/aws-640-vcpu",
+  "product/aws-1920-vcpu",
+  "product/aws-5k-credits",
+  "product/aws-10k-credits",
+  "product/aws-25k-credits",
+  "product/aws-100k-credits",
+  "product/aws-32-vcpu-10-rpm-bedrock-enabled",
+  "product/aws-32-vcpu-50-rpm-bedrock-enabled",
+  "product/aws-256-vcpu-10k-rpm-bedrock-enabled",
+  "product/aws-512-vcpu-10k-rpm-high-tpm-bedrock-enabled",
+  "product/aws-640-vcpu-10k-rpm-high-tpm-bedrock-f5-2",
+  "product/aws-1920-vcpu-10k-rpm-high-tpm-4-6-4-7-4-8-opus-5-fable-5",
+  "product/aws-5k-credits-10k-rpm-bedrock-enabled",
+  "product/aws-10k-credits-10k-rpm-bedrock-enabled",
+  "product/aws-25k-credits-10k-rpm-bedrock-enabled",
+  "product/azure-free-trial-200-credits",
+  "product/azure-pay-as-you-go",
+  "product/azure-5k-credits",
+  "product/azure-10k-credits-gpt-enabled",
+  "product/azure-5k-credits-gpt-6-astra-high-tpm-t5",
+  "product/azure-10k-credits-gpt-6-astra-high-tpm-t5",
+  "product/azure-25k-credits-gpt-6-astra-high-tpm-t5",
+  "product/azure-100k-credits-gpt-6-astra-high-tpm-t5",
+  "product/digitalocean-3-droplets-free-trial",
+  "product/digitalocean-10-droplets-free-trial",
+  "product/digitalocean-200-droplets-port-25-open",
+  "product/digitalocean-500-droplets-port-25-open",
+  "product/google-cloud-free-trial-300-credits",
+  "product/google-cloud-300-credits-paid-account",
+  "product/google-cloud-2k-credits-paid-account",
+  "product/google-cloud-5k-credits-paid-account",
+  "product/google-cloud-10k-credits-paid-account",
+  "product/google-cloud-25k-credits-paid-account",
+  "product/google-cloud-2k-credits-vt-gemini-ai-f5-2-and-f5-2",
+  "product/google-cloud-5k-credits-vt-gemini-ai-f5-2-and-f5-2",
+  "product/google-cloud-10k-credits-vt-gemini-ai-f5-2-and-f5-2",
+  "product/google-cloud-25k-credits-vt-gemini-ai-f5-2-and-f5-2",
+  "product/hetzner-free-trial",
+  "product/hetzner-port-limit-50-servers",
+  "product/kamatera-free-trial",
+  "product/kamatera-port-25-open",
+  "product/linode-free-trial",
+  "product/linode-port-25-open-10-ips",
+  "product/linode-port-25-open-50-ips",
+  "product/oracle-cloud-free-trial",
+  "product/oracle-cloud-pay-as-you-go",
+  "product/ovhcloud-free-trial-34-vcpu",
+  "product/ovhcloud-paid-account-34-vcpu",
+  "product/amazon-ses-smtp-50k-daily-limit",
+  "product/amazon-ses-smtp-50k-daily-limit-3-regions",
+  "product/amazon-ses-smtp-100k-daily-limit",
+  "product/upcloud-free-trial",
+  "product/upcloud-paid-account",
+  "product/ibm-cloud-free-trial",
+  "product/ibm-cloud-pay-as-you-go",
+  "product/ibm-cloud-port-25-open",
+  "product/heroku-free-trial-port-25-open",
+  "product/heroku-port-25-open",
+  "product/vultr-200-credits",
+  "product/vultr-250-credits",
+  "product/vultr-95-credits"
+];
+export const inventory = Object.fromEntries(ownerConfirmedIds.map(id => [id, {
   availability: "InStock",
   saleEnabled: true,
   source: "website-owner",
   updatedAt: "2026-11-27",
 }]));
-// Per-product overrides: saleEnabled:false pauses sales; OutOfStock stops checkout.
-// Restriction flags are enforced separately from stock and SEO.
+// Edit an individual entry to OutOfStock or saleEnabled:false to pause purchasing.
+// Known restrictions in offer-review-records.js override stock without requiring review paperwork.
 export function inventoryFor(product) {
   return inventory[productRoute(product)] || { availability: "OutOfStock", saleEnabled: false };
 }

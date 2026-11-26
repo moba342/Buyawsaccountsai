@@ -24,7 +24,7 @@ The previous empty `publicationReviews` registry was the cause of catalog-wide d
 | `server/payment-verifier.js` | Rechecks SKU eligibility and catalog totals on the server before RPC. Client approval flags and prices are not trusted. |
 | `seo.js` | Product Offer price and availability use the same state as the visible UI. Canonical URLs and indexing are independent of inventory. No invented ratings or certifications. |
 
-To change stock, update a product's `inventory.js` entry and deploy. Set `saleEnabled: false` to pause it. Optional known restrictions can be recorded under the same stable ID in `offer-review-records.js`; do not store credentials there. This is static merchant-managed inventory, not a live stock-counting admin system.
+The inventory snapshot contains only the 68 confirmed product IDs. Future catalog additions default to unavailable until explicitly entered. To change stock, update a product's `inventory.js` entry and deploy. Set `saleEnabled: false` to pause it. Optional known restrictions can be recorded under the same stable ID in `offer-review-records.js`; do not store credentials there. This is static merchant-managed inventory, not a live stock-counting admin system.
 
 ## Customer flow and remaining limits
 
@@ -38,7 +38,7 @@ The previously removed Payment & Refund Policy page and retired URLs remain remo
 
 ## Validation
 
-- Automated tests: **62 passed, 0 failed**. Coverage includes stock transitions, merchant sale pauses, explicit provider restrictions, server rejection before RPC, client approval spoofing, token/recipient/chain/amount/finality checks, SEO independence and canonical migration.
+- Automated tests: **63 passed, 0 failed**. Coverage includes stock transitions, merchant sale pauses, explicit provider restrictions, server rejection before RPC, client approval spoofing, token/recipient/chain/amount/finality checks, SEO independence and canonical migration.
 - Production build: **passed**; 96 generated pages.
 - SEO artifact validation: **passed**; 96 unique titles/descriptions, 94 sitemap URLs, 69 social images.
 - Local URL validation: **passed**; 94 indexable HTTP 200 pages, 535 direct legacy redirects with query preservation, 96 internal-link and schema checks, matching sitemap and robots.
@@ -49,3 +49,21 @@ The previously removed Payment & Refund Policy page and retired URLs remain remo
 - No real payments submitted. Live release results follow below.
 
 Machine-readable audit of all 82 catalog records: `PRODUCT-AVAILABILITY-UPDATE.json`. Browser source: `scripts/qa/inventory-purchasing.mjs`. Evidence: `evidence/inventory/`.
+
+## Production validation
+
+The first release, `f31a5e4`, was deployed through the existing GitHub → Vercel production workflow and promoted to `https://buyawsaccountsai.com/` (deployment `dpl_3HFpQQHrL2vi8FFdRDFhHp8uPmwF`).
+
+Actual live checks passed:
+
+- 68 product pages with enabled Buy Now dialogs and Add to Cart, correct catalog prices, **In Stock** labels and matching Product Offers.
+- 14 category pages; cart and checkout retained all 68 test selections.
+- TRC20, BEP20 and ERC20 wallet addresses and QR codes displayed correctly.
+- Invalid-TXID API request returned HTTP 400; no funds or genuine transaction hashes submitted.
+- 18 mobile/tablet/desktop views; six automated WCAG A/AA scans, zero violations and zero JavaScript page errors.
+- 94 indexable pages returned HTTP 200; all 535 legacy redirects remained direct with query strings preserved; 96 internal-link/schema checks passed.
+- Homepage, cart and checkout returned HTTP 200. Retired `/payment-refund-policy/` returned HTTP 404.
+
+Live evidence: `evidence/inventory/live/purchasing.json`, `evidence/inventory/live/urls/validation.json` and checkout screenshots.
+
+The final follow-up restricts this stock declaration to the explicit 68-product snapshot and removes obsolete review-prerequisite wording from the unavailable-product fallback. Future products default to unavailable. The follow-up passed the 63-test suite, production build and SEO artifact validation; it changes no current stock, selling prices, checkout controls or payment behavior.

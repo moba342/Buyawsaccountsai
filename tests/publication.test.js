@@ -150,3 +150,9 @@ test("payment rejects merchant-disabled products before RPC and ignores client a
   );
   assert.equal(calls, 0);
 });
+test("new catalog records are unavailable until explicitly added to inventory", () => {
+ const unstocked={...products[0],name:'Future unstocked product'};
+ const state=productPublication(unstocked);
+ assert.equal(state.purchasable,false);
+ assert.equal(state.review.availability,'OutOfStock');
+});

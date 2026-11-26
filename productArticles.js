@@ -135,7 +135,7 @@ export function getProductArticle(product, brand) {
         paragraphs: [
           publication.published
             ? "Before you purchase " + productName(product) + ", review the confirmed product price of " + price + " per account. Infrastructure usage and any separate provider charges are not included unless stated in the product details."
-            : "Before you purchase " + brand.name + " " + product.name + ", review the listed reference price of " + price + " per account. It is not an infrastructure usage budget, a resource reservation, or a currently payable offer while publication review is pending.",
+            : "Before you purchase " + brand.name + " " + product.name + ", review the listed selling price of " + price + " per account. This is the product charge, separate from infrastructure usage. Payment is disabled while this product is unavailable.",
           product.credit
             ? "The separate listed credit face value is $" +
               product.credit.toLocaleString("en-US") +
@@ -148,7 +148,7 @@ export function getProductArticle(product, brand) {
         paragraphs: [
           publication.published
             ? "Stock is confirmed by the website owner. Review the product specifications and applicable provider conditions before ordering. Stock confirmation does not imply independent certification or provider endorsement."
-            : "This reference is pending verification and is not available to order. Required evidence includes provider authorization, transfer eligibility, program conditions, availability, exact specifications, and confirmation of the actual price and scope. A proposed SEO title is not evidence that a consulting or setup service exists.",
+            : "This product is currently unavailable. Ordering resumes only when the merchant enables sales, purchasable stock is available and any recorded provider restrictions have been resolved. SEO readiness does not activate a product.",
           "The seller profile and declaration identify the seller-supplied contact details. They do not independently certify account ownership, establish provider permission, or approve a model, quota, or credit program.",
         ],
       },
@@ -157,8 +157,8 @@ export function getProductArticle(product, brand) {
         paragraphs: publication.published
           ? [publication.review.deliveryTerms || "Delivery is arranged with the seller after payment has been matched to your order. Contact Sales for the delivery format and timing for this product.", publication.review.supportTerms || "For product access and support, contact the seller using your order details and transaction hash. No automatic access delivery or fixed support response time is promised."]
           : [
-              "No delivery time or deployment service is promised for this pending record. The seller must first document what can legitimately be supplied, who administers access, and the applicable billing, support, cancellation, and refund conditions.",
-              "Cart and payment capabilities remain available in the application for approved offers. This record cannot be added as a new purchase or used to start payment verification until its publication requirements are satisfied.",
+              "Delivery cannot start for an unavailable product. Contact the seller about future stock and the applicable access format, billing responsibilities and support terms.",
+              "Cart and payment remain available for eligible in-stock products. This product cannot be purchased while its sale or inventory status prevents ordering.",
             ],
       },
       {
