@@ -210,3 +210,7 @@ Product artwork is now limited to the provider/product page hero. Shared catalog
 Provider collection heroes now show the category lockup and artwork in place of the introductory marketing block. The adjacent collection summary is vertically centered with a centered reference amount. Mobile stacks the panels; the collection navigation action remains in the summary. Individual-product introductions and specifications remain intact.
 
 Collection titles occupy a shared row above the artwork and price overview. Desktop media/price panels stretch to a consistent minimum-height grid row, aligning both edges across providers; tablet/mobile stack naturally. No fixed viewport overlay or footer overlap is introduced.
+
+### Page naming
+
+`pageNames.js` centralizes browser titles and compact navigation labels: Marketplace, Cloud Platforms, Compare, Buying Guides, Help Center, Seller Profile and Contact Sales. Core page headings use matching editorial names. Existing route paths, provider/product names, seller evidence and checkout behavior are unchanged.

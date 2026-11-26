@@ -131,7 +131,7 @@ export function CartPage({ cart }) {
       <div className="commerce-heading">
         <div>
           <span className="section-label">READY FOR YOUR NEXT PROJECT</span>
-          <h1>Your cart.</h1>
+          <h1>Shopping Cart.</h1>
           <p>
             Review your products, adjust quantities, and continue when you’re
             ready.
