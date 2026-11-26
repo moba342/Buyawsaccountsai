@@ -1,3 +1,4 @@
+import { canPurchaseProduct, productPublication } from "./offer-publication";
 import { trackProductEvent } from "./analytics";
 import { useEffect, useState } from "react";
 import { products } from "./catalog";
@@ -61,6 +62,7 @@ export function useCart() {
     return () => window.removeEventListener("storage", sync);
   }, []);
   const add = (product) => {
+    if (!canPurchaseProduct(product)) return false;
     trackProductEvent("add_to_cart", product, 1);
     setCart((rows) =>
       sanitizeCart([...rows, { id: productRoute(product), quantity: 1 }]),
@@ -93,6 +95,7 @@ export function useCart() {
   }));
   return {
     lines,
+    blockedLines: lines.filter((line) => !canPurchaseProduct(line.product)),
     count: cart.reduce((n, row) => n + row.quantity, 0),
     total: lines.reduce((n, row) => n + row.quantity * row.product.price, 0),
     add,

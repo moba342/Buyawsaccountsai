@@ -1,3 +1,4 @@
+import { productPublication, canPurchaseProduct } from "./offer-publication";
 import React, { useEffect, useRef, useState } from "react";
 import {
   analyticsConfiguration,
@@ -47,7 +48,7 @@ export default function AnalyticsConsent({ page, pathname, cart }) {
     }
     const product = products.find((p) => productRoute(p) === page),
       provider = brands.find((b) => providerRoute(b) === page);
-    if (navigationChanged && product)
+    if (navigationChanged && product && productPublication(product).published)
       trackEvent("view_item", {
         currency: "USD",
         value: product.price,
@@ -61,7 +62,9 @@ export default function AnalyticsConsent({ page, pathname, cart }) {
           : products;
       trackEvent("view_item_list", {
         item_list_name: provider?.name || "Marketplace",
-        items: list.map((p) => publicAnalyticsItem(p)),
+        items: list
+          .filter((p) => productPublication(p).published)
+          .map((p) => publicAnalyticsItem(p)),
       });
     }
     if (page !== "checkout") lastCheckout.current = "";
@@ -71,6 +74,7 @@ export default function AnalyticsConsent({ page, pathname, cart }) {
     if (
       page === "checkout" &&
       cart.lines.length &&
+      cart.lines.every((l) => canPurchaseProduct(l.product)) &&
       checkoutSignature !== lastCheckout.current
     ) {
       lastCheckout.current = checkoutSignature;
@@ -92,7 +96,7 @@ export default function AnalyticsConsent({ page, pathname, cart }) {
         product = products.find(
           (p) => url.pathname === "/" + productRoute(p) + "/",
         );
-      if (product)
+      if (product && productPublication(product).published)
         trackEvent("select_item", { items: [publicAnalyticsItem(product)] });
       const method =
         url.hostname === "t.me"

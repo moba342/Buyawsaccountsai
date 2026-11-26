@@ -1,10 +1,12 @@
-import { trackEvent, publicAnalyticsItem } from './analytics';
-import PaymentIcon, { PaymentOptions } from './PaymentIcon';
-import SellerProfileCard from './SellerProfileCard';
+import { canPurchaseProduct } from "./offer-publication";
+import CatalogPublicationNotice from "./CatalogPublicationNotice";
+import { trackEvent, publicAnalyticsItem } from "./analytics";
+import PaymentIcon, { PaymentOptions } from "./PaymentIcon";
+import SellerProfileCard from "./SellerProfileCard";
 import PaymentVerification, {
   usePaymentVerification,
-} from './PaymentVerification';
-import React, { useState } from 'react';
+} from "./PaymentVerification";
+import React, { useState } from "react";
 import {
   ArrowLeft,
   ArrowRight,
@@ -16,23 +18,23 @@ import {
   Copy,
   Check,
   Info,
-} from 'lucide-react';
-import ProviderLogo from './ProviderLogo';
-import { formatPrice } from './catalog';
-import { paymentMethods } from './payments';
-const sellerContact = 'https://t.me/dexterw4tts';
+} from "lucide-react";
+import ProviderLogo from "./ProviderLogo";
+import { formatPrice } from "./catalog";
+import { paymentMethods } from "./payments";
+const sellerContact = "https://t.me/dexterw4tts";
 function Steps({ checkout }) {
   return (
     <ol className="commerce-steps" aria-label="Purchase steps">
       <li
-        className={!checkout ? 'current' : ''}
-        aria-current={!checkout ? 'step' : undefined}
+        className={!checkout ? "current" : ""}
+        aria-current={!checkout ? "step" : undefined}
       >
         <span>01</span> Your cart
       </li>
       <li
-        className={checkout ? 'current' : ''}
-        aria-current={checkout ? 'step' : undefined}
+        className={checkout ? "current" : ""}
+        aria-current={checkout ? "step" : undefined}
       >
         <span>02</span> Checkout
       </li>
@@ -87,11 +89,17 @@ function Summary({ cart, checkout = false }) {
         Confirm availability, final pricing, delivery, and refund terms with the
         seller before payment. Any network fees are paid through your wallet.
       </p>
-      {!checkout && (
+      {!checkout && !cart.blockedLines?.length && (
         <a className="primary" href="/checkout/">
           Continue to checkout
           <ArrowRight size={17} aria-hidden="true" />
         </a>
+      )}
+      {!!cart.blockedLines?.length && (
+        <p className="commerce-notice">
+          Ordering unavailable: selected items are not currently eligible for
+          checkout.
+        </p>
       )}
       <div className="commerce-summary-networks">
         <PaymentIcon />
@@ -172,7 +180,7 @@ export function CartPage({ cart }) {
                 <div className="commerce-item-copy">
                   <span>{product.provider}</span>
                   <h3>
-                    <a href={'/' + id + '/'}>{product.name}</a>
+                    <a href={"/" + id + "/"}>{product.name}</a>
                   </h3>
                   <p>{formatPrice(product.price)} / account</p>
                 </div>
@@ -223,24 +231,24 @@ export function CartPage({ cart }) {
   );
 }
 export function CheckoutPage({ cart }) {
-  const [network, setNetwork] = useState('trc20'),
-    [name, setName] = useState(''),
-    [email, setEmail] = useState(''),
-    [phone, setPhone] = useState(''),
-    [telegram, setTelegram] = useState(''),
-    [txid, setTxid] = useState(''),
-    [note, setNote] = useState(''),
+  const [network, setNetwork] = useState("trc20"),
+    [name, setName] = useState(""),
+    [email, setEmail] = useState(""),
+    [phone, setPhone] = useState(""),
+    [telegram, setTelegram] = useState(""),
+    [txid, setTxid] = useState(""),
+    [note, setNote] = useState(""),
     [agreed, setAgreed] = useState(false),
     [draft, setDraft] = useState(null),
-    [copyStatus, setCopyStatus] = useState(''),
-    [walletStatus, setWalletStatus] = useState('');
+    [copyStatus, setCopyStatus] = useState(""),
+    [walletStatus, setWalletStatus] = useState("");
   const method = paymentMethods.find((m) => m.id === network);
   const check = usePaymentVerification({
     network,
     txid,
     items: cart.lines.map(({ id, quantity }) => ({ id, quantity })),
   });
-  const orderText = `ACCOUNT ORDER REQUEST\nName: ${name.trim()}\nEmail: ${email.trim()}\nPhone: ${phone.trim() || 'Not provided'}\nTelegram: ${telegram.trim() || 'Not provided'}\n\n${cart.lines.map(({ product, quantity }) => `${product.provider} ${product.name} × ${quantity} — ${formatPrice(product.price * quantity)}`).join('\n')}\nReference total: ${formatPrice(cart.total)} USD\nPreferred payment: ${method.label} (${method.network})\nTXID: ${txid.trim() || 'Not provided'}\nBlockchain check: ${check.result?.status || 'Not checked'}${check.result?.checkedAt ? ' at ' + check.result.checkedAt : ''}\n${check.result?.receivedAmount ? 'Received: ' + check.result.receivedAmount + ' USDT\n' : ''}${note.trim() ? 'Notes: ' + note.trim() + '\n' : ''}\nPlease confirm availability, the final USDT amount, receiving wallet, delivery and refund terms. This request is not proof of payment.`;
+  const orderText = `ACCOUNT ORDER REQUEST\nName: ${name.trim()}\nEmail: ${email.trim()}\nPhone: ${phone.trim() || "Not provided"}\nTelegram: ${telegram.trim() || "Not provided"}\n\n${cart.lines.map(({ product, quantity }) => `${product.provider} ${product.name} × ${quantity} — ${formatPrice(product.price * quantity)}`).join("\n")}\nReference total: ${formatPrice(cart.total)} USD\nPreferred payment: ${method.label} (${method.network})\nTXID: ${txid.trim() || "Not provided"}\nBlockchain check: ${check.result?.status || "Not checked"}${check.result?.checkedAt ? " at " + check.result.checkedAt : ""}\n${check.result?.receivedAmount ? "Received: " + check.result.receivedAmount + " USDT\n" : ""}${note.trim() ? "Notes: " + note.trim() + "\n" : ""}\nPlease confirm availability, the final USDT amount, receiving wallet, delivery and refund terms. This request is not proof of payment.`;
   const signature = JSON.stringify({
     lines: cart.lines.map(({ id, quantity }) => ({ id, quantity })),
     network,
@@ -260,19 +268,55 @@ export function CheckoutPage({ cart }) {
       await navigator.clipboard.writeText(text);
       status(success);
     } catch {
-      status('Copy unavailable. Select and copy the text manually.');
+      status("Copy unavailable. Select and copy the text manually.");
     }
   }
   function prepare(e) {
     e.preventDefault();
     if (!agreed || !cart.lines.length) return;
     setDraft({ signature, text: orderText });
-    setCopyStatus('');
+    setCopyStatus("");
     setTimeout(
-      () => document.getElementById('checkout-request-title')?.focus(),
+      () => document.getElementById("checkout-request-title")?.focus(),
       0,
     );
   }
+  if (cart.lines.some((line) => !canPurchaseProduct(line.product)))
+    return (
+      <main
+        id="page-content"
+        tabIndex={-1}
+        className="section inner commerce-page"
+      >
+        <Steps checkout />
+        <div className="commerce-heading">
+          <h1>Checkout.</h1>
+        </div>
+        <section className="checkout-publication-hold">
+          <h2>Ordering is unavailable for these references</h2>
+          <CatalogPublicationNotice />
+          <p>
+            Your saved selections and original prices have been retained.
+            Payment instructions and verification are withheld until every
+            selected item has an approved publication record.
+          </p>
+          <ul>
+            {cart.lines.map((line) => (
+              <li key={line.id}>
+                {line.product.provider} · {line.product.name} —{" "}
+                {formatPrice(line.product.price)} reference price
+              </li>
+            ))}
+          </ul>
+          <a className="secondary" href="/cart/">
+            Review saved selections
+          </a>
+          <a className="secondary" href="/contact-sales/">
+            Ask about requirements
+          </a>
+        </section>
+      </main>
+    );
   return (
     <main
       id="page-content"
@@ -317,7 +361,7 @@ export function CheckoutPage({ cart }) {
                   Your name
                   <input
                     required
-                    pattern={'.*\\S.*'}
+                    pattern={".*\\S.*"}
                     maxLength={100}
                     autoComplete="name"
                     value={name}
@@ -387,7 +431,7 @@ export function CheckoutPage({ cart }) {
                 {paymentMethods.map((m) => (
                   <label
                     key={m.id}
-                    className={network === m.id ? 'selected' : ''}
+                    className={network === m.id ? "selected" : ""}
                   >
                     <input
                       type="radio"
@@ -396,16 +440,16 @@ export function CheckoutPage({ cart }) {
                       checked={network === m.id}
                       onChange={() => {
                         setNetwork(m.id);
-                        trackEvent('add_payment_info', {
-                          currency: 'USD',
+                        trackEvent("add_payment_info", {
+                          currency: "USD",
                           value: cart.total,
                           payment_type: m.label,
                           items: cart.lines.map((l) =>
                             publicAnalyticsItem(l.product, l.quantity),
                           ),
                         });
-                        setCopyStatus('');
-                        setWalletStatus('');
+                        setCopyStatus("");
+                        setWalletStatus("");
                       }}
                     />
                     <PaymentIcon network={m.id} />
@@ -448,7 +492,7 @@ export function CheckoutPage({ cart }) {
                       </figure>
                       <div className="commerce-wallet-information">
                         <p className="commerce-qr-instructions">
-                          The QR code contains the wallet address only. Select{' '}
+                          The QR code contains the wallet address only. Select{" "}
                           {method.network} in your wallet before sending USDT.
                         </p>
                         <label>
@@ -464,7 +508,7 @@ export function CheckoutPage({ cart }) {
                           type="button"
                           className="secondary"
                           onClick={() =>
-                            copy(method.address, 'Wallet address copied', true)
+                            copy(method.address, "Wallet address copied", true)
                           }
                         >
                           <Copy size={15} aria-hidden="true" />
@@ -491,7 +535,7 @@ export function CheckoutPage({ cart }) {
                   </>
                 ) : (
                   <p className="commerce-wallet-pending">
-                    Payment instructions are provided by the seller. Request the{' '}
+                    Payment instructions are provided by the seller. Request the{" "}
                     {method.label} receiving address and final amount on
                     Telegram before sending funds.
                   </p>
@@ -517,7 +561,7 @@ export function CheckoutPage({ cart }) {
                 {cart.lines.map(({ id, product, quantity }) => (
                   <li key={id}>
                     <span>
-                      {product.provider} · {product.name}{' '}
+                      {product.provider} · {product.name}{" "}
                       <small>× {quantity}</small>
                     </span>
                     <strong>{formatPrice(product.price * quantity)}</strong>
@@ -569,7 +613,7 @@ export function CheckoutPage({ cart }) {
                   <button
                     type="button"
                     className="primary"
-                    onClick={() => copy(draft.text, 'Order request copied')}
+                    onClick={() => copy(draft.text, "Order request copied")}
                   >
                     <Copy size={16} aria-hidden="true" />
                     Copy request

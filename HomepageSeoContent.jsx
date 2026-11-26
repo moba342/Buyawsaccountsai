@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 export default function HomepageSeoContent() {
   return (
     <section
@@ -8,15 +8,15 @@ export default function HomepageSeoContent() {
       <div className="buying-article-heading">
         <span className="home-kicker">AWS ACCOUNTS & CLOUD ACCESS</span>
         <h2 id="aws-account-buying-title">
-          Buy AWS accounts.
+          Understand AWS account requirements.
           <br />
-          <span>Find the right access for your project.</span>
+          <span>Review the proposed scope first.</span>
         </h2>
         <p>
-          Explore AWS accounts for sale, cloud credit packages, and
-          seller-listed Bedrock-enabled options. Compare the account
-          specification, listed price, and purchase terms against the
-          requirements of your workload.
+          Use the AWS reference collection to review compute tiers, credit
+          conditions and seller-listed AI labels. Publication and purchasing
+          remain unavailable until authorization, scope and availability are
+          documented.
         </p>
       </div>
       <div className="buying-article-grid">
@@ -25,10 +25,9 @@ export default function HomepageSeoContent() {
           <h3>AWS cloud accounts and vCPU options</h3>
           <p>
             Compare AWS account products from free-trial options to
-            higher-capacity vCPU listings. If you are comparing cheap AWS
-            accounts, review the proposed capacity, account eligibility, region,
-            billing setup, and ongoing usage costs alongside the reference
-            price.
+            higher-capacity vCPU listings. For each reference, review the
+            proposed capacity, account eligibility, region, billing setup, and
+            ongoing usage costs alongside the reference price.
           </p>
           <a className="text-button" href="/aws-accounts/">
             Explore AWS accounts
@@ -36,7 +35,7 @@ export default function HomepageSeoContent() {
         </article>
         <article>
           <span>CREDITS & PLATFORMS</span>
-          <h3>Buy AWS credits and compare cloud plans</h3>
+          <h3>Understand credit eligibility and cloud costs</h3>
           <p>
             Review AWS credit accounts and explore cloud account options across
             Google Cloud, Azure, and other listed platforms. Before you buy
@@ -52,10 +51,9 @@ export default function HomepageSeoContent() {
           <h3>AWS Bedrock accounts and API access</h3>
           <p>
             Review seller-listed AWS Bedrock account options, including stated
-            request quotas and model-access details. If you want to buy an AWS
-            Bedrock API key or need Amazon Bedrock API access, confirm the
-            permitted credential setup, account ownership, model permissions,
-            and exact scope of the offer.
+            request quotas and model-access details. For any intended Amazon
+            Bedrock API integration, confirm the permitted credential setup,
+            account ownership, model permissions, and exact scope of the offer.
           </p>
           <p>
             For AWS Bedrock API pricing, ask about provider usage charges and

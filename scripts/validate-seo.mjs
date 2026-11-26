@@ -4,6 +4,12 @@ import assert from "node:assert/strict";
 import sharp from "sharp";
 import { routeIds, routePath } from "../routing.js";
 import { getPageSeo, siteSchema, safeJson } from "../seo.js";
+import { products, brands } from "../catalog.js";
+import { productRoute, providerRoute } from "../catalogPaths.js";
+import {
+  productPublication,
+  categoryPublication,
+} from "../offer-publication.js";
 const escape = (s) =>
   s
     .replaceAll("&", "&amp;")
@@ -87,4 +93,43 @@ console.log(
     null,
     2,
   ),
+);
+
+const catalog = JSON.parse(
+  await fs.readFile("docs/seo/PRODUCT-SEO-CATALOG.json", "utf8"),
+);
+const records = Array.isArray(catalog) ? catalog : catalog.records;
+assert.equal(records.length, products.length + brands.length);
+for (const item of [
+  ...products.map((p) => ({
+    id: productRoute(p),
+    state: productPublication(p),
+  })),
+  ...brands.map((b) => ({
+    id: providerRoute(b),
+    state: categoryPublication(
+      b,
+      products.filter((p) => p.provider === b.name),
+    ),
+  })),
+]) {
+  const seo = getPageSeo(item.id);
+  assert.equal(
+    urls.includes(seo.canonical),
+    item.state.indexable,
+    item.id + " publication sitemap",
+  );
+  if (!item.state.published) {
+    assert(seo.robots.startsWith("noindex"), item.id + " pending noindex");
+    const schema = siteSchema(seo);
+    assert(
+      !schema["@graph"].some((n) =>
+        ["Product", "Service", "Offer"].includes(n["@type"]),
+      ),
+      item.id + " unsupported commercial schema",
+    );
+  }
+}
+console.log(
+  "PASS: all 82 catalog publication/indexing states match generated artifacts.",
 );

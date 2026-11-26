@@ -1,14 +1,14 @@
-import test from 'node:test';
-import assert from 'node:assert/strict';
-import { products, brands } from '../catalog.js';
+import test from "node:test";
+import assert from "node:assert/strict";
+import { products, brands } from "../catalog.js";
 import {
   getProductArticle,
   variantIntroductions,
   providerBuyingNotes,
-} from '../productArticles.js';
-import { productRoute, providerRoute } from '../catalogPaths.js';
-import { routeIds } from '../routing.js';
-test('every catalog variant has a complete, product-specific original buying article', () => {
+} from "../productArticles.js";
+import { productRoute, providerRoute } from "../catalogPaths.js";
+import { routeIds } from "../routing.js";
+test("every catalog variant has a complete, product-specific original buying article", () => {
   assert.equal(products.length, 68);
   const intros = new Set(),
     titles = new Set();
@@ -21,14 +21,14 @@ test('every catalog variant has a complete, product-specific original buying art
     );
     assert(article.intro.length > 130);
     assert(article.title.includes(product.name));
-    assert.equal(article.price, '$' + product.price.toLocaleString('en-US'));
-    assert.equal(article.sections.length, 4);
+    assert.equal(article.price, "$" + product.price.toLocaleString("en-US"));
+    assert(article.sections.length >= 6);
     assert.equal(article.sections[1].checks.length, 3);
     const words = [
       article.intro,
       ...article.sections.flatMap((s) => s.paragraphs),
     ]
-      .join(' ')
+      .join(" ")
       .split(/\s+/).length;
     assert(words >= 350, `${productRoute(product)} has only ${words} words`);
     assert(routeIds.includes(productRoute(product)));
@@ -38,7 +38,7 @@ test('every catalog variant has a complete, product-specific original buying art
   assert.equal(intros.size, 68);
   assert.equal(titles.size, 68);
 });
-test('every current provider has buying guidance and valid routes', () => {
+test("every current provider has buying guidance and valid routes", () => {
   for (const brand of brands) {
     assert(providerBuyingNotes[brand.name]?.length > 100);
     assert(routeIds.includes(providerRoute(brand)));

@@ -1,20 +1,25 @@
-import React from 'react';
+import { productPublication } from "./offer-publication";
+import { guides } from "./editorialContent";
+import { guideRoute } from "./guideRoutes";
+import { providerRoute } from "./catalogPaths";
+import React from "react";
 import {
   ArrowUpRight,
   BookOpen,
   ChevronDown,
   ShoppingBag,
   FileText,
-} from 'lucide-react';
+} from "lucide-react";
 import {
   getProductArticle,
   providerBuyingNotes,
   variantIntroductions,
-} from './productArticles';
-import ProviderLogo from './ProviderLogo';
-import { productRoute } from './catalogPaths';
-import { formatPrice } from './catalog';
+} from "./productArticles";
+import ProviderLogo from "./ProviderLogo";
+import { productRoute } from "./catalogPaths";
+import { formatPrice } from "./catalog";
 export default function ProductBuyingArticle({ product, brand, onOrder }) {
+  const publication = productPublication(product);
   const article = getProductArticle(product, brand);
   return (
     <article
@@ -42,7 +47,7 @@ export default function ProductBuyingArticle({ product, brand, onOrder }) {
         {article.sections.map((section, i) => (
           <section key={section.title}>
             <span className="product-article-number">
-              {String(i + 1).padStart(2, '0')}
+              {String(i + 1).padStart(2, "0")}
             </span>
             <h3>{section.title}</h3>
             {section.paragraphs.map((text) => (
@@ -75,10 +80,30 @@ export default function ProductBuyingArticle({ product, brand, onOrder }) {
             </a>
           </div>
         </div>
+        <nav
+          className="product-resource-links"
+          aria-label="Related product buying resources"
+        >
+          <a href={"/" + providerRoute(brand) + "/"}>
+            {brand.name} reference collection
+          </a>
+          <a href="/compare-products/">Compare product specifications</a>
+          <a href={"/" + guideRoute(guides[0]) + "/"}>
+            Read the cloud account buying guide
+          </a>
+          <a href="/help-center/">Product requirements and support</a>
+          <a href="/contact-sales/">Ask about applicable policies</a>
+        </nav>
         <div className="product-article-actions">
-          <button className="primary" onClick={() => onOrder(product)}>
+          <button
+            className="primary"
+            disabled={!publication.purchasable}
+            onClick={() => onOrder(product)}
+          >
             <ShoppingBag size={16} aria-hidden="true" />
-            Buy {brand.name} {product.name}
+            {publication.purchasable
+              ? "Buy " + brand.name + " " + product.name
+              : "Publication review pending"}
           </button>
           <a className="secondary" href="/contact-sales/">
             Ask about this package
@@ -109,10 +134,10 @@ export function CatalogBuyingArticles({ brands, products }) {
           and bring the right questions to your buying conversation.
         </p>
         <p>
-          Review <a href="/seller-profile/">our seller profile</a> and the published
-          declaration, then request the account details relevant to your chosen
-          product. Verification should relate to the account being offered, the
-          permitted setup, and the written purchase terms.
+          Review <a href="/seller-profile/">our seller profile</a> and the
+          published declaration, then request the account details relevant to
+          your chosen product. Verification should relate to the account being
+          offered, the permitted setup, and the written purchase terms.
         </p>
       </div>
       <div className="catalog-article-providers">
@@ -137,7 +162,7 @@ export function CatalogBuyingArticles({ brands, products }) {
                     <article key={productRoute(product)}>
                       <div>
                         <h3>
-                          <a href={'/' + productRoute(product) + '/'}>
+                          <a href={"/" + productRoute(product) + "/"}>
                             {brand.name} {product.name}
                             <ArrowUpRight size={15} aria-hidden="true" />
                           </a>
@@ -162,9 +187,10 @@ export function CatalogBuyingArticles({ brands, products }) {
         <div>
           <h3>From product research to an agreed purchase.</h3>
           <p>
-            Select your variant, review the account details, and confirm the
-            quote. Checkout supports USDT network selection and TXID checks; the
-            seller matches the payment to your order and arranges delivery.
+            Review each reference and its requirements. Purchase and payment
+            capabilities are reserved for offers that pass publication review.
+            No current reference is made eligible by its price or description
+            alone.
           </p>
         </div>
         <a className="secondary" href="/contact-sales/">

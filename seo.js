@@ -1,3 +1,9 @@
+import {
+  productPublication,
+  categoryPublication,
+  seoRecordById,
+} from "./offer-publication.js";
+import { catalogEditorial } from "./catalog-editorial-data.js";
 import { brands, products } from "./catalog.js";
 import { productRoute, providerRoute } from "./catalogPaths.js";
 import { guides } from "./editorialContent.js";
@@ -49,30 +55,50 @@ export function getPageSeo(id, pathname = routePath(id)) {
     provider = brands.find((b) => providerRoute(b) === id),
     guide = guideByRoute(id),
     notFound = id === "not-found";
+  const publication = product
+    ? productPublication(product)
+    : provider
+      ? categoryPublication(
+          provider,
+          products.filter((p) => p.provider === provider.name),
+        )
+      : null;
+  const record = seoRecordById.get(id);
+  const planned = publication?.metadataProposalEligible ? record : null;
   const core = home ? pageSeo.home : pageSeo[id];
-  const override = seoOverrides[home ? "home" : id] || {};
+  const override =
+    publication && !publication.published
+      ? {}
+      : seoOverrides[home ? "home" : id] || {};
   const title =
     override.title ||
     core?.title ||
+    planned?.seoTitle ||
     (notFound
       ? "Page Not Found | " + SITE.name
       : product
-        ? productTitle(product)
+        ? (publication.published ? "Buy " : "Reference: ") +
+          productTitle(product).replace(/ \| .*$/, "")
         : provider
-          ? `Buy ${provider.name} Accounts | Cloud Products`
+          ? publication.published
+            ? `Buy ${provider.name} Accounts | Product Requirements`
+            : `${provider.name} Account Reference Catalog | Review Details`
           : guide
             ? guide.title + " | " + SITE.name
             : (pageNames[id] || "Cloud Products") + " | " + SITE.name);
   const description =
     override.description ||
     core?.description ||
+    planned?.metaDescription ||
     (product
       ? short(
-          `Explore ${publicProductName(product)}, listed specifications, $${product.price.toLocaleString("en-US")} reference pricing and account requirements. Compare options before ordering.`,
+          publication.published
+            ? publication.review.publicDescription
+            : catalogEditorial[productRoute(product)].intro,
         )
       : provider
         ? short(
-            `Explore ${provider.full} account products, credit options and listed prices. Compare ${products.filter((p) => p.provider === provider.name).length} variants and confirm account details before purchase.`,
+            `Review ${provider.full} catalog references, specifications and publication requirements. ${products.filter((p) => p.provider === provider.name).length} seller-listed variations await authorization and availability review.`,
           )
         : guide
           ? short(guide.text)
@@ -91,15 +117,21 @@ export function getPageSeo(id, pathname = routePath(id)) {
     product,
     provider,
     guide,
+    publication,
+    record,
     title,
     description,
     h1:
       override.h1 ||
       core?.h1 ||
-      (product && publicProductName(product)) ||
+      planned?.h1 ||
+      (product &&
+        (publication.published
+          ? "Buy " + publicProductName(product)
+          : "Review " + publicProductName(product) + " reference")) ||
       guide?.title ||
       (provider
-        ? provider.name + " Accounts"
+        ? provider.name + " reference collection"
         : notFound
           ? "We couldn’t find that page."
           : id === "cart"
@@ -112,26 +144,62 @@ export function getPageSeo(id, pathname = routePath(id)) {
     primaryKeyword:
       override.primaryKeyword ||
       core?.primaryKeyword ||
+      planned?.primaryKeyword ||
       (product
-        ? "buy " + publicProductName(product).toLowerCase()
+        ? publication.published
+          ? "buy " + publicProductName(product).toLowerCase()
+          : publicProductName(product).toLowerCase() + " reference"
         : provider
-          ? "buy " + provider.name.toLowerCase() + " accounts"
+          ? provider.name.toLowerCase() + " account references"
           : guide
             ? guide.title.toLowerCase()
             : ""),
     secondaryKeywords:
       override.secondaryKeywords ||
       core?.secondaryKeywords ||
+      planned?.secondaryKeywords ||
       (product
-        ? [
-            publicProductName(product).toLowerCase() + " price",
-            product.group.toLowerCase(),
-          ]
-        : []),
+        ? publication.published
+          ? [
+              "buy " + publicProductName(product).toLowerCase() + " online",
+              "purchase " + publicProductName(product).toLowerCase(),
+              "order " + publicProductName(product).toLowerCase(),
+              "shop " + publicProductName(product).toLowerCase(),
+              publicProductName(product).toLowerCase() +
+                " pricing and requirements",
+              publicProductName(product).toLowerCase() + " account terms",
+            ]
+          : [
+              publicProductName(product).toLowerCase() + " reference",
+              product.group.toLowerCase(),
+            ]
+        : provider && publication.published
+          ? [
+              "buy " + provider.name.toLowerCase() + " accounts online",
+              "purchase " + provider.name.toLowerCase() + " accounts",
+              "order " + provider.name.toLowerCase() + " accounts",
+              "shop " + provider.name.toLowerCase() + " accounts",
+              provider.name.toLowerCase() + " account pricing",
+              provider.name.toLowerCase() + " account requirements",
+            ]
+          : []),
+    longTailKeywords: planned?.longTailKeywords || [],
+    searchIntent:
+      planned?.searchIntent ||
+      (publication?.published
+        ? "Transactional"
+        : publication
+          ? "Reference / informational"
+          : core?.primaryKeyword?.startsWith("buy ")
+            ? "Transactional"
+            : "Informational"),
     canonical: notFound ? null : url,
     url,
     robots:
-      notFound || ["cart", "checkout"].includes(id) || override.noindex
+      notFound ||
+      ["cart", "checkout"].includes(id) ||
+      override.noindex ||
+      (publication && !publication.indexable)
         ? "noindex, follow"
         : "index, follow",
     image: absolute(
@@ -140,7 +208,10 @@ export function getPageSeo(id, pathname = routePath(id)) {
     imageAlt:
       override.imageAlt ||
       (product
-        ? publicProductName(product) + " — cloud account product"
+        ? publicProductName(product) +
+          (publication.published
+            ? " — cloud account product"
+            : " — catalog reference illustration")
         : SITE.name + " cloud account marketplace"),
     imageWidth: SITE.imageWidth,
     imageHeight: SITE.imageHeight,
@@ -150,23 +221,7 @@ export function confirmedOffer(
   product,
   facts = confirmedCommerceFacts[productRoute(product)],
 ) {
-  const allowed = [
-    "InStock",
-    "OutOfStock",
-    "PreOrder",
-    "BackOrder",
-    "LimitedAvailability",
-    "Discontinued",
-  ];
-  if (
-    facts?.confirmed !== true ||
-    !Number.isFinite(facts.price) ||
-    facts.price <= 0 ||
-    facts.price !== product.price ||
-    facts.priceCurrency !== "USD" ||
-    !allowed.includes(facts.availability)
-  )
-    return null;
+  if (!productPublication(product, facts).published) return null;
   return {
     "@type": "Offer",
     url: SITE_URL + routePath(productRoute(product)),
@@ -246,13 +301,16 @@ export function siteSchema(seo) {
         item: SITE_URL + c.path,
       })),
     });
-  if (seo.product) {
+  if (seo.product && seo.publication.published) {
     const brand = brands.find((b) => b.name === seo.product.provider),
       offer = confirmedOffer(seo.product);
     const item = {
-      "@type": "Product",
+      "@type": seo.product.offeringType === "service" ? "Service" : "Product",
       "@id": seo.url + "#product",
-      name: publicProductName(seo.product),
+      name:
+        seo.product.offeringType === "service"
+          ? seo.publication.review.serviceName
+          : publicProductName(seo.product),
       description: getProductArticle(seo.product, brand).intro,
       url: seo.url,
       image: [seo.image],
@@ -270,20 +328,28 @@ export function siteSchema(seo) {
         },
       ],
     };
+    if (seo.product.offeringType === "service") {
+      delete item.additionalProperty;
+      delete item.category;
+      item.serviceType = seo.product.group;
+      item.provider = { "@id": SITE_URL + "/#organization" };
+    }
     if (offer) item.offers = offer;
     const sku = confirmedCommerceFacts[productRoute(seo.product)]?.sku;
-    if (typeof sku === "string" && sku.trim()) item.sku = sku;
+    if (item["@type"] === "Product" && typeof sku === "string" && sku.trim())
+      item.sku = sku;
     graph.push(item);
     webPage.mainEntity = { "@id": item["@id"] };
   }
-  const list = seo.provider
+  const candidates = seo.provider
     ? products.filter((p) => p.provider === seo.provider.name)
     : seo.id === "products"
       ? seo.home
         ? products.slice(0, 6)
         : products
       : null;
-  if (list)
+  const list = candidates?.filter((p) => productPublication(p).indexable);
+  if (list?.length)
     graph.push({
       "@type": "ItemList",
       "@id": seo.url + "#products",

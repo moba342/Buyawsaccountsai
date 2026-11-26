@@ -1,2 +1,67 @@
-import React from'react';import{ArrowRight}from'lucide-react';import ProviderLogo from'./ProviderLogo';import{providerRoute}from'./catalogPaths';import{formatPrice}from'./catalog';
-export default function ProviderCard({brand,count,navigate,heading='h3'}){const Heading=heading;const route=providerRoute(brand);return <article className="provider-showcase-card"><div className="provider-showcase-banner"><div className="provider-showcase-top"><span className="provider-showcase-logo"><ProviderLogo name={brand.name}/></span><span className="provider-showcase-count"><ProviderLogo name={brand.name} decorative/><strong>{count}</strong><span>variations</span></span></div><span className="provider-showcase-eyebrow">Premium cloud</span><Heading>{brand.full}</Heading><p>Cloud accounts &amp; credit packages</p></div><div className="provider-showcase-copy"><div className="provider-showcase-price"><span>Products from</span><strong>{formatPrice(brand.from)}</strong></div><p>{brand.summary}</p></div><div className="provider-showcase-bottom"><a href={'/'+route+'/'} onClick={()=>navigate(route)} className="provider-showcase-action"><span>View Accounts</span><ArrowRight size={18} aria-hidden="true"/></a><a href={'/'+route+'/'} onClick={()=>navigate(route)} className="secondary" aria-label={'View details for '+brand.full}>View Details</a></div></article>}
+import { categoryPublication } from "./offer-publication";
+import { products } from "./catalog";
+import React from "react";
+import { ArrowRight } from "lucide-react";
+import ProviderLogo from "./ProviderLogo";
+import { providerRoute } from "./catalogPaths";
+import { formatPrice } from "./catalog";
+export default function ProviderCard({
+  brand,
+  count,
+  navigate,
+  heading = "h3",
+}) {
+  const Heading = heading;
+  const route = providerRoute(brand);
+  const publication = categoryPublication(
+    brand,
+    products.filter((p) => p.provider === brand.name),
+  );
+  return (
+    <article className="provider-showcase-card">
+      <div className="provider-showcase-banner">
+        <div className="provider-showcase-top">
+          <span className="provider-showcase-logo">
+            <ProviderLogo name={brand.name} />
+          </span>
+          <span className="provider-showcase-count">
+            <ProviderLogo name={brand.name} decorative />
+            <strong>{count}</strong>
+            <span>variations</span>
+          </span>
+        </div>
+        <span className="provider-showcase-eyebrow">Premium cloud</span>
+        <Heading>{brand.full}</Heading>
+        <p>Cloud account reference collection</p>
+      </div>
+      <div className="provider-showcase-copy">
+        <div className="provider-showcase-price">
+          <span>Reference prices from</span>
+          <strong>{formatPrice(brand.from)}</strong>
+        </div>
+        <p>{brand.summary}</p>
+        {!publication.published && (
+          <span className="reference-status">Pending publication review</span>
+        )}
+      </div>
+      <div className="provider-showcase-bottom">
+        <a
+          href={"/" + route + "/"}
+          onClick={() => navigate(route)}
+          className="provider-showcase-action"
+        >
+          <span>View Accounts</span>
+          <ArrowRight size={18} aria-hidden="true" />
+        </a>
+        <a
+          href={"/" + route + "/"}
+          onClick={() => navigate(route)}
+          className="secondary"
+          aria-label={"View details for " + brand.full}
+        >
+          View Details
+        </a>
+      </div>
+    </article>
+  );
+}

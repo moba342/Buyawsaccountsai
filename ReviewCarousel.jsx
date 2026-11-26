@@ -1,8 +1,126 @@
-import useViewportMotion from './useViewportMotion';
-import React,{useRef}from'react';
-import{Quote,Star,ArrowUpRight}from'lucide-react';
-import{products,formatPrice}from'./catalog';
-import ProviderLogo from'./ProviderLogo';
-import './reviews.css';
-const samples=[{provider:'AWS',name:'Daniel Morgan',role:'Startup founder',initials:'SF',tag:'Cloud credits',quote:'Having the account options and reference prices together makes it easier to plan a cloud budget before starting a project.'},{provider:'Google Cloud',name:'Amelia Brooks',role:'AI developer',initials:'AD',tag:'AI & data',quote:'A straightforward way to explore cloud credit packages and compare the details that matter for a new application.'},{provider:'Azure',name:'Ethan Hayes',role:'Agency lead',initials:'AT',tag:'Client projects',quote:'Clear package descriptions help us prepare the right questions about regions, access, and setup for our next client project.'},{provider:'Hetzner',name:'Sophie Bennett',role:'Independent builder',initials:'IB',tag:'Infrastructure',quote:'Seeing the available variants in one place is a useful starting point when choosing infrastructure for a growing workload.'},{provider:'DigitalOcean',name:'Oliver Reed',role:'Product engineer',initials:'PE',tag:'App hosting',quote:'The side-by-side comparison makes it easier to narrow down a package before confirming the final details with the seller.'},{provider:'Linode',name:'Charlotte Evans',role:'Platform engineer',initials:'PT',tag:'Cloud setup',quote:'A simple catalog helps keep the conversation focused on our actual requirements, from networking to delivery and support.'}];
-export default function ReviewCarousel({onOrder}){const root=useRef(null),visible=useViewportMotion(root);return <section ref={root} className="review-showcase" aria-labelledby="review-heading" data-running={visible}><div className="review-heading"><span className="eyebrow"><Star size={13} aria-hidden="true"/> REVIEW SHOWCASE</span><h2 id="review-heading">Cloud projects.<br className="review-mobile-break"/> Different perspectives.</h2><p>Sample reviews shown for design preview. These are illustrative examples, not verified customer testimonials. Names are fictional and portraits are stock photos.</p></div><div className="review-viewport"><div className="review-track">{[0,1].map(copy=><div className="review-group" key={copy} aria-hidden={copy===1?true:undefined}>{samples.map((review,index)=>{const account=products.find(p=>p.provider===review.provider&&p.label==='Popular')||products.find(p=>p.provider===review.provider);return <article className="review-card" key={review.provider}><div className="review-card-top"><Quote size={25} aria-hidden="true"/><span className="review-provider"><ProviderLogo name={review.provider} decorative/></span></div><div className="review-stars" role="img" aria-label="Illustrative five-star rating">{[0,1,2,3,4].map(i=><Star key={i} size={14} fill="currentColor" aria-hidden="true"/>)}</div><blockquote>{review.quote}</blockquote><div className="review-person"><span className="review-avatar" aria-hidden="true"><img className="review-photo" src={'/testimonials/profile-'+(index+1)+'.jpg'} width="160" height="160" loading="lazy" decoding="async" alt=""/></span><div><strong>{review.name}</strong><span className="review-role">{review.role}</span><small>Fictional profile · stock photo</small></div><span className="review-tag">{review.tag}</span></div>{account&&<div className="review-account"><div><small>Explore this account</small><strong>{account.provider} · {account.name}</strong><span>{formatPrice(account.price)} / account</span></div><button type="button" className="review-buy" tabIndex={copy===1?-1:0} onClick={()=>onOrder(account)} aria-label={'Buy '+account.provider+' '+account.name}>Buy account <ArrowUpRight size={14} aria-hidden="true"/></button></div>}</article>})}</div>)}</div></div><div className="review-controls"><span>Explore the possibilities. Confirm the details.</span></div></section>}
+import React, { useRef } from "react";
+import { Cpu, Layers, ArrowUpRight } from "lucide-react";
+import ProviderLogo from "./ProviderLogo";
+import { products } from "./catalog";
+import { productRoute } from "./catalogPaths";
+import useViewportMotion from "./useViewportMotion";
+const scenarios = [
+  {
+    provider: "AWS",
+    title: "Compute planning",
+    body: "Separate the EC2 vCPU quota from the size of an individual instance. Region, memory, storage and recurring costs belong in the same deployment brief.",
+    tag: "Compute",
+  },
+  {
+    provider: "Google Cloud",
+    title: "AI and billing scope",
+    body: "Review model identifiers, project permissions and the billing arrangement independently. A credit label does not establish access to an AI service.",
+    tag: "AI & data",
+  },
+  {
+    provider: "Azure",
+    title: "Application requirements",
+    body: "Identify the intended Azure services and deployment region before comparing tiers. Confirm subscription permissions and any model-specific quota.",
+    tag: "Applications",
+  },
+  {
+    provider: "Hetzner",
+    title: "Infrastructure capacity",
+    body: "Clarify server-count and port-limit labels with account-specific evidence. A catalog reference does not reserve hardware or include recurring hosting charges.",
+    tag: "Infrastructure",
+  },
+  {
+    provider: "DigitalOcean",
+    title: "Multi-node hosting",
+    body: "Define the size of each Droplet and the network access your workload requires. Capacity and provider-approved networking are separate requirements.",
+    tag: "Cloud hosting",
+  },
+  {
+    provider: "Linode",
+    title: "Network allocation",
+    body: "Document the intended use, address allocation and permitted outbound traffic. IP counts and port labels do not establish mail delivery or policy exemptions.",
+    tag: "Networking",
+  },
+];
+export default function ReviewCarousel() {
+  const root = useRef(null),
+    visible = useViewportMotion(root);
+  return (
+    <section
+      ref={root}
+      className="review-showcase"
+      aria-labelledby="review-heading"
+      data-running={visible}
+    >
+      <div className="review-heading">
+        <span className="eyebrow">
+          <Layers size={13} aria-hidden="true" /> BUYING SCENARIOS
+        </span>
+        <h2 id="review-heading">
+          Different workloads.
+          <br className="review-mobile-break" /> Specific requirements.
+        </h2>
+        <p>
+          Use these planning examples to prepare a clear project brief and
+          identify the evidence each catalog reference needs.
+        </p>
+      </div>
+      <div className="review-viewport">
+        <div className="review-track">
+          {[0, 1].map((copy) => (
+            <div
+              className="review-group"
+              key={copy}
+              aria-hidden={copy === 1 ? true : undefined}
+            >
+              {scenarios.map((s) => {
+                const account = products.find((p) => p.provider === s.provider);
+                return (
+                  <article className="review-card" key={s.provider}>
+                    <div className="review-card-top">
+                      <Cpu size={25} aria-hidden="true" />
+                      <span className="review-provider">
+                        <ProviderLogo name={s.provider} decorative />
+                      </span>
+                    </div>
+                    <blockquote>{s.body}</blockquote>
+                    <div className="review-person">
+                      <span className="review-avatar" aria-hidden="true">
+                        <Layers size={20} />
+                      </span>
+                      <div>
+                        <strong>{s.title}</strong>
+                        <span className="review-role">Planning checklist</span>
+                      </div>
+                      <span className="review-tag">{s.tag}</span>
+                    </div>
+                    <div className="review-account">
+                      <div>
+                        <small>Catalog reference</small>
+                        <strong>
+                          {account.provider} · {account.name}
+                        </strong>
+                        <span>Publication review pending</span>
+                      </div>
+                      <a
+                        className="review-buy"
+                        tabIndex={copy === 1 ? -1 : 0}
+                        href={"/" + productRoute(account) + "/"}
+                      >
+                        View reference{" "}
+                        <ArrowUpRight size={14} aria-hidden="true" />
+                      </a>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="review-controls">
+        <span>Review the scope. Document the requirements.</span>
+      </div>
+    </section>
+  );
+}

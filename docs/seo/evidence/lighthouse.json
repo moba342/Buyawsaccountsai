@@ -1,0 +1,116 @@
+{
+  "date": "2026-11-26",
+  "baseline": "a5ed490 local clean archive port4174",
+  "candidate": "catalog review branch port4173",
+  "method": "Sequential single lab runs, same Chrome/Lighthouse, compressed local production-like server. No field INP or ranking inference.",
+  "results": [
+    {
+      "name": "before-home-mobile",
+      "url": "http://localhost:4174/",
+      "fetchTime": "2026-11-26T15:37:59.255Z",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "fcpMs": 1055.6693,
+      "lcpMs": 1055.6693,
+      "cls": 0,
+      "tbtMs": 12,
+      "speedIndexMs": 1531.5932239985182,
+      "warnings": []
+    },
+    {
+      "name": "before-product-mobile",
+      "url": "http://localhost:4174/product/aws-free-trial/",
+      "fetchTime": "2026-11-26T15:38:09.908Z",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "fcpMs": 1054.8282,
+      "lcpMs": 1054.8282,
+      "cls": 0,
+      "tbtMs": 0,
+      "speedIndexMs": 1054.8282,
+      "warnings": []
+    },
+    {
+      "name": "after-home-mobile",
+      "url": "http://localhost:4173/",
+      "fetchTime": "2026-11-26T15:37:34.052Z",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "fcpMs": 1053.371,
+      "lcpMs": 1053.371,
+      "cls": 0,
+      "tbtMs": 14.5,
+      "speedIndexMs": 1610.774013998443,
+      "warnings": []
+    },
+    {
+      "name": "after-product-mobile",
+      "url": "http://localhost:4173/product/aws-free-trial/",
+      "fetchTime": "2026-11-26T15:38:20.277Z",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69
+      },
+      "fcpMs": 1054.5121,
+      "lcpMs": 1054.5121,
+      "cls": 0,
+      "tbtMs": 0,
+      "speedIndexMs": 1054.5121,
+      "warnings": []
+    },
+    {
+      "name": "after-home-desktop",
+      "url": "http://localhost:4173/",
+      "fetchTime": "2026-11-26T15:38:30.634Z",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "fcpMs": 428.96659999999997,
+      "lcpMs": 428.96659999999997,
+      "cls": 0,
+      "tbtMs": 0,
+      "speedIndexMs": 462.94017966668184,
+      "warnings": []
+    },
+    {
+      "name": "after-product-desktop",
+      "url": "http://localhost:4173/product/aws-free-trial/",
+      "fetchTime": "2026-11-26T15:38:41.279Z",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69
+      },
+      "fcpMs": 283.0208,
+      "lcpMs": 283.0208,
+      "cls": 0,
+      "tbtMs": 0,
+      "speedIndexMs": 283.0208,
+      "warnings": []
+    }
+  ]
+}

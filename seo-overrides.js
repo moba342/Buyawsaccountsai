@@ -6,4 +6,4 @@ export const seoOverrides = {};
 // confirmed:true. Leave empty while prices are references and stock is unconfirmed.
 // Accepted availability: InStock, OutOfStock, PreOrder, BackOrder, LimitedAvailability,
 // Discontinued. Optional genuine sku/priceValidUntil must come from your records.
-export const confirmedCommerceFacts = {};
+export { publicationReviews as confirmedCommerceFacts } from "./offer-review-records.js";

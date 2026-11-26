@@ -1,17 +1,17 @@
-import React from 'react';
-import { Cpu, CreditCard, Sparkles, SlidersHorizontal } from 'lucide-react';
-import ProviderLogo from './ProviderLogo';
-import { brands, products } from './catalog';
+import React from "react";
+import { Cpu, CreditCard, Sparkles, SlidersHorizontal } from "lucide-react";
+import ProviderLogo from "./ProviderLogo";
+import { brands, products } from "./catalog";
 
 const kinds = {
-  Compute: 'Compute options',
-  Droplet: 'Droplet options',
-  Server: 'Server options',
-  Credit: 'Credit packages',
-  AI: 'AI variants',
-  SMTP: 'SMTP options',
-  Trial: 'Trial accounts',
-  Account: 'Account options',
+  Compute: "Compute options",
+  Droplet: "Droplet options",
+  Server: "Server options",
+  Credit: "Credit packages",
+  AI: "AI variants",
+  SMTP: "SMTP options",
+  Trial: "Trial accounts",
+  Account: "Account options",
 };
 const collections = Object.fromEntries(
   brands.map((brand) => {
@@ -22,21 +22,37 @@ const collections = Object.fromEntries(
       .filter(([kind]) => available.has(kind))
       .map(([, label]) => label)
       .slice(0, 3);
-    for (const label of ['Account details', 'Purchase terms'])
+    for (const label of ["Account details", "Purchase terms"])
       if (options.length < 3) options.push(label);
     return [brand.name, { name: brand.name, full: brand.full, options }];
   }),
 );
 
-export default function ProductVisual({ provider, title, className = '' }) {
+export default function ProductVisual({
+  provider,
+  title,
+  product,
+  className = "",
+}) {
   const collection = collections[provider];
   if (!collection) return null;
-  const productTitle = title || collection.name + ' Accounts';
+  const options = product
+    ? [
+        kinds[product.kind] || "Account reference",
+        product.credit
+          ? "Credit conditions"
+          : product.vcpus
+            ? "Quota verification"
+            : "Account requirements",
+        "Publication review",
+      ]
+    : collection.options;
+  const productTitle = title || collection.name + " Accounts";
   return (
     <figure
       className={`account-product-visual ${className}`}
       role="img"
-      aria-label={`${productTitle}: ${collection.options.join(', ')}`}
+      aria-label={`${productTitle}: ${options.join(", ")}`}
     >
       <div className="product-visual-topline">
         <span title={productTitle}>{productTitle}</span>
@@ -71,10 +87,10 @@ export default function ProductVisual({ provider, title, className = '' }) {
         <ProviderLogo name={provider} decorative priority />
       </span>
       <div className="product-visual-options">
-        {collection.options.map((label, index) => {
-          const Icon = label.includes('AI')
+        {options.map((label, index) => {
+          const Icon = label.includes("AI")
             ? Sparkles
-            : label.includes('Credit')
+            : label.includes("Credit")
               ? CreditCard
               : index === 0
                 ? Cpu

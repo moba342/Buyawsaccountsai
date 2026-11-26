@@ -1,9 +1,10 @@
-import React from 'react';
-import { ArrowRight, Plus, ShoppingCart } from 'lucide-react';
-import ProviderLogo from './ProviderLogo';
-import { productRoute } from './catalogPaths';
-import { formatPrice } from './catalog';
-import { productSpecifications } from './productSpecs';
+import { productPublication } from "./offer-publication";
+import React from "react";
+import { ArrowRight, Plus, ShoppingCart } from "lucide-react";
+import ProviderLogo from "./ProviderLogo";
+import { productRoute } from "./catalogPaths";
+import { formatPrice } from "./catalog";
+import { productSpecifications } from "./productSpecs";
 export default function CatalogAccountCard({
   product,
   brand,
@@ -11,6 +12,7 @@ export default function CatalogAccountCard({
   onCompare,
   onAddToCart,
 }) {
+  const publication = productPublication(product);
   const facts = productSpecifications(product).slice(1, 3);
   return (
     <article className="account-card">
@@ -25,14 +27,19 @@ export default function CatalogAccountCard({
         </span>
         <span className="account-card-kind">
           <ProviderLogo name={product.provider} decorative />
-          {(product.group || product.provider).split(' ')[0]}
+          {(product.group || product.provider).split(" ")[0]}
         </span>
       </div>
       <div className="account-card-copy">
         <h3>
-          <a href={'/' + productRoute(product) + '/'}>{product.name}</a>
+          <a href={"/" + productRoute(product) + "/"}>{product.name}</a>
         </h3>
         <p>{product.type}</p>
+        {!publication.published && (
+          <span className="reference-status">
+            Pending verification · not available to order
+          </span>
+        )}
         <div className="account-card-price">
           <span>Reference price</span>
           <strong>
@@ -67,19 +74,29 @@ export default function CatalogAccountCard({
         <div className="account-card-actions">
           <button
             className="primary"
+            disabled={!publication.purchasable}
             onClick={() =>
               onAddToCart ? onAddToCart(product) : onOrder(product)
             }
-            aria-label={'Add to cart: ' + product.provider + ' ' + product.name}
+            aria-label={
+              (publication.purchasable ? "Add to cart: " : "Pending review: ") +
+              product.provider +
+              " " +
+              product.name
+            }
           >
             <ShoppingCart size={16} aria-hidden="true" />
-            Add to cart
+            {publication.purchasable
+              ? "Add to cart"
+              : publication.published
+                ? "Currently unavailable"
+                : "Pending review"}
           </button>
           <a
             className="secondary"
-            href={'/' + productRoute(product) + '/'}
+            href={"/" + productRoute(product) + "/"}
             aria-label={
-              'View details: ' + product.provider + ' ' + product.name
+              "View details: " + product.provider + " " + product.name
             }
           >
             Details
@@ -90,7 +107,7 @@ export default function CatalogAccountCard({
           <button
             className="account-card-compare"
             onClick={() => onCompare(product)}
-            aria-label={'Compare ' + product.provider + ' ' + product.name}
+            aria-label={"Compare " + product.provider + " " + product.name}
           >
             <Plus size={13} aria-hidden="true" />
             Compare this product

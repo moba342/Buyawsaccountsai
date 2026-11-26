@@ -113,3 +113,5 @@ await fs.writeFile(
 console.log(
   `Prerendered ${routeIds.length + 1} pages and custom 404 with complete React content; ${urls.length} canonical sitemap URLs. Search Console token: ${verification ? "configured" : "not configured"}.`,
 );
+
+await import("./generate-catalog-seo.mjs");

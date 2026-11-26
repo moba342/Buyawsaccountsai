@@ -1,6 +1,9 @@
-import { getPageSeo, confirmedOffer } from './seo';
-import ProductVisual from './ProductVisual';
-import React, { useEffect, useState } from 'react';
+import CatalogPublicationNotice from "./CatalogPublicationNotice";
+import { productPublication } from "./offer-publication";
+import { catalogEditorial } from "./catalog-editorial-data";
+import { getPageSeo, confirmedOffer } from "./seo";
+import ProductVisual from "./ProductVisual";
+import React, { useEffect, useState } from "react";
 import {
   ArrowRight,
   ArrowDown,
@@ -13,35 +16,35 @@ import {
   Check,
   Globe,
   Layers,
-} from 'lucide-react';
+} from "lucide-react";
 import ProductBuyingArticle, {
   CatalogBuyingArticles,
-} from './ProductBuyingArticle';
-import CatalogAccountCard from './CatalogAccountCard';
-import ProviderLogo from './ProviderLogo';
-import VariantSelect from './VariantSelect';
-import { providerEditorial, faqs as purchaseFAQs } from './editorialContent';
-import { formatPrice } from './catalog';
-import { providerRoute, productRoute } from './catalogPaths';
-import { productSpecifications } from './productSpecs';
-import { scrollPageTo } from './SmoothScrolling';
-import { sellerDeclaration as seller } from './sellerDeclaration';
-export { slug, providerRoute, productRoute } from './catalogPaths';
+} from "./ProductBuyingArticle";
+import CatalogAccountCard from "./CatalogAccountCard";
+import ProviderLogo from "./ProviderLogo";
+import VariantSelect from "./VariantSelect";
+import { providerEditorial, faqs as purchaseFAQs } from "./editorialContent";
+import { formatPrice } from "./catalog";
+import { providerRoute, productRoute } from "./catalogPaths";
+import { productSpecifications } from "./productSpecs";
+import { scrollPageTo } from "./SmoothScrolling";
+import { sellerDeclaration as seller } from "./sellerDeclaration";
+export { slug, providerRoute, productRoute } from "./catalogPaths";
 function Collection({ brand, list, product, onOrder, onCompare, onAddToCart }) {
-  const [group, setGroup] = useState('All'),
-    [query, setQuery] = useState(''),
+  const [group, setGroup] = useState("All"),
+    [query, setQuery] = useState(""),
     [expanded, setExpanded] = useState(false);
   useEffect(() => {
-    setGroup('All');
-    setQuery('');
+    setGroup("All");
+    setQuery("");
     setExpanded(false);
   }, [brand.name, product?.name]);
   const groups = [...new Set(list.map((p) => p.group))],
     options = list.filter((p) => p !== product),
     filtered = options.filter(
       (p) =>
-        (group === 'All' || p.group === group) &&
-        (p.name + ' ' + p.features.join(' '))
+        (group === "All" || p.group === group) &&
+        (p.name + " " + p.features.join(" "))
           .toLowerCase()
           .includes(query.toLowerCase()),
     ),
@@ -55,23 +58,23 @@ function Collection({ brand, list, product, onOrder, onCompare, onAddToCart }) {
       <div className="account-section-heading">
         <div>
           <span className="account-eyebrow">
-            {product ? 'CONTINUE EXPLORING' : 'THE ACCOUNT COLLECTION'}
+            {product ? "CONTINUE EXPLORING" : "THE ACCOUNT COLLECTION"}
           </span>
           <h2 id="account-collection-title">
             {product
-              ? 'More ' + brand.name + ' options'
-              : 'All ' + brand.name + ' accounts'}
+              ? "More " + brand.name + " options"
+              : "All " + brand.name + " accounts"}
           </h2>
           <p>
             {product
-              ? 'Compare other variants from this provider.'
-              : 'Compare the listed scope and price, then choose the package you want to discuss.'}
+              ? "Compare other variants from this provider."
+              : "Compare the listed scope and price, then choose the package you want to discuss."}
           </p>
         </div>
         {product && (
           <a
             className="account-text-link"
-            href={'/' + providerRoute(brand) + '/'}
+            href={"/" + providerRoute(brand) + "/"}
           >
             View all {list.length} variants
             <ArrowRight size={15} aria-hidden="true" />
@@ -80,16 +83,16 @@ function Collection({ brand, list, product, onOrder, onCompare, onAddToCart }) {
       </div>
       <div
         className={
-          'account-collection-layout ' +
-          (groups.length === 1 ? 'single-group' : '')
+          "account-collection-layout " +
+          (groups.length === 1 ? "single-group" : "")
         }
       >
         <div className="account-category-nav">
           <span>Account categories</span>
           <button
-            aria-pressed={group === 'All'}
+            aria-pressed={group === "All"}
             onClick={() => {
-              setGroup('All');
+              setGroup("All");
               setExpanded(true);
             }}
           >
@@ -104,7 +107,7 @@ function Collection({ brand, list, product, onOrder, onCompare, onAddToCart }) {
                 setExpanded(true);
               }}
             >
-              {name.replace(brand.name + ' ', '')}
+              {name.replace(brand.name + " ", "")}
               <strong>{options.filter((p) => p.group === name).length}</strong>
             </button>
           ))}
@@ -116,7 +119,7 @@ function Collection({ brand, list, product, onOrder, onCompare, onAddToCart }) {
         <div className="account-collection-results">
           <div className="account-collection-toolbar">
             <span>
-              {filtered.length} {filtered.length === 1 ? 'package' : 'packages'}{' '}
+              {filtered.length} {filtered.length === 1 ? "package" : "packages"}{" "}
               · Prices in USD
             </span>
             <label>
@@ -152,8 +155,8 @@ function Collection({ brand, list, product, onOrder, onCompare, onAddToCart }) {
               <button
                 className="secondary"
                 onClick={() => {
-                  setQuery('');
-                  setGroup('All');
+                  setQuery("");
+                  setGroup("All");
                 }}
               >
                 Reset filters
@@ -197,20 +200,20 @@ function BuyingProcess() {
       <ol>
         {[
           [
-            'Choose your package',
-            'Compare the account type, listed price, and proposed scope against your workload.',
+            "Choose your package",
+            "Compare the account type, listed price, and proposed scope against your workload.",
           ],
           [
-            'Confirm the details',
-            'Request current account information, a final quote, delivery arrangements, and support terms in writing.',
+            "Confirm the details",
+            "Request current account information, a final quote, delivery arrangements, and support terms in writing.",
           ],
           [
-            'Checkout and review',
-            'Review your cart, choose the USDT network, and check the TXID after payment. The seller matches the transfer to your order and arranges delivery.',
+            "Checkout and review",
+            "Review your cart, choose the USDT network, and check the TXID after payment. The seller matches the transfer to your order and arranges delivery.",
           ],
         ].map(([title, body], i) => (
           <li key={title}>
-            <span>{String(i + 1).padStart(2, '0')}</span>
+            <span>{String(i + 1).padStart(2, "0")}</span>
             <h3>{title}</h3>
             <p>{body}</p>
           </li>
@@ -232,28 +235,28 @@ function Planning({ brand, copy }) {
       <div className="account-workloads">
         {[
           [
-            'Application hosting',
-            'Describe your application and deployment plan so you can check the required services, region, and resource limits.',
+            "Application hosting",
+            "Describe your application and deployment plan so you can check the required services, region, and resource limits.",
           ],
           [
-            'Data & storage',
-            'Plan storage capacity, data location, and access needs alongside the account package and ongoing usage budget.',
+            "Data & storage",
+            "Plan storage capacity, data location, and access needs alongside the account package and ongoing usage budget.",
           ],
           [
-            'Infrastructure',
-            'Review compute quotas, networking requirements, and billing responsibility before selecting the account.',
+            "Infrastructure",
+            "Review compute quotas, networking requirements, and billing responsibility before selecting the account.",
           ],
           [
-            'Automation',
-            'Identify scheduled workloads and integration needs so the proposed setup can be evaluated against them.',
+            "Automation",
+            "Identify scheduled workloads and integration needs so the proposed setup can be evaluated against them.",
           ],
           [
-            'AI & experimentation',
-            'Estimate the resources and services your experiments need, then confirm access and spending controls.',
+            "AI & experimentation",
+            "Estimate the resources and services your experiments need, then confirm access and spending controls.",
           ],
           [
-            'Cloud operations',
-            'Establish who manages access, recovery, billing, and monitoring after the agreed delivery process.',
+            "Cloud operations",
+            "Establish who manages access, recovery, billing, and monitoring after the agreed delivery process.",
           ],
         ].map(([title, body]) => (
           <div key={title}>
@@ -283,7 +286,7 @@ function Planning({ brand, copy }) {
             before the next deployment.
           </p>
           <a
-            href={'/' + providerRoute(brand) + '/'}
+            href={"/" + providerRoute(brand) + "/"}
             className="account-text-link"
           >
             Explore the {brand.name} collection
@@ -304,6 +307,7 @@ export function CatalogPage({
   onCompare,
   onAddToCart,
 }) {
+  const publication = product ? productPublication(product) : null;
   const list = products.filter((p) => p.provider === brand.name),
     groups = [...new Set(list.map((p) => p.group))],
     copy = providerEditorial[brand.name],
@@ -327,7 +331,7 @@ export function CatalogPage({
     >
       <section
         className={
-          'account-page-hero ' + (product ? 'is-product' : 'is-collection')
+          "account-page-hero " + (product ? "is-product" : "is-collection")
         }
       >
         <div className="account-page-hero-copy">
@@ -336,20 +340,35 @@ export function CatalogPage({
               <ProviderLogo name={brand.name} decorative priority />
             </span>
             <div>
-              {product ? <strong>{product.name}</strong> : <h1 className="account-collection-title">{getPageSeo(providerRoute(brand)).h1}</h1>}
-              <span>{product ? product.group : 'ACCOUNT COLLECTION'}</span>
+              {product ? (
+                <strong>{product.name}</strong>
+              ) : (
+                <h1 className="account-collection-title">
+                  {getPageSeo(providerRoute(brand)).h1}
+                </h1>
+              )}
+              <span>{product ? product.group : "ACCOUNT COLLECTION"}</span>
             </div>
           </div>
           {product ? (
             <>
               <h1>{getPageSeo(productRoute(product)).h1}</h1>
-              <p className="account-product-introduction">{`Review this ${product.type.toLowerCase()} from the ${product.group} collection. Compare the seller-listed specification, choose your variant, and confirm the account details and purchase terms directly with us.`}</p>
-              <ProductVisual provider={product.provider} title={product.name} />
+              <CatalogPublicationNotice product={product} />
+              <p className="account-product-introduction">
+                {publication?.published && publication.review.publicDescription
+                  ? publication.review.publicDescription
+                  : catalogEditorial[productRoute(product)].intro}
+              </p>
+              <ProductVisual
+                provider={product.provider}
+                title={product.name}
+                product={product}
+              />
               <section
                 className="account-product-specs"
                 aria-labelledby="account-specs-title"
               >
-                <h2 id="account-specs-title">Listed package details</h2>
+                <h2 id="account-specs-title">Product specifications</h2>
                 <dl>
                   {productSpecifications(product).map(([label, value]) => (
                     <div key={label}>
@@ -368,7 +387,7 @@ export function CatalogPage({
             <>
               <ProductVisual
                 provider={brand.name}
-                title={brand.name + ' Accounts'}
+                title={brand.name + " Accounts"}
               />
             </>
           )}
@@ -376,23 +395,31 @@ export function CatalogPage({
         <aside
           className="account-purchase-panel"
           aria-label={
-            product ? 'Selected package purchase' : 'Collection overview'
+            product ? "Selected package purchase" : "Collection overview"
           }
         >
+          {!product && <CatalogPublicationNotice />}
           <div className="account-purchase-top">
             <span>
-              {product ? 'YOUR SELECTED PACKAGE' : 'COLLECTION OVERVIEW'}
+              {product ? "YOUR SELECTED PACKAGE" : "COLLECTION OVERVIEW"}
             </span>
-            <span>{product ? product.kind : list.length + ' variants'}</span>
+            <span>{product ? product.kind : list.length + " variants"}</span>
           </div>
           <div className="account-purchase-price">
-            <span>{product ? 'Reference package price' : 'Packages from'}</span>
+            <span>{product ? "Reference package price" : "Packages from"}</span>
             <strong>
               {formatPrice(product ? product.price : lowest)}
               <small>USD</small>
             </strong>
             <p>Per account · Confirm final quote</p>
-            {product && <p className="account-availability">Availability: {confirmedOffer(product)?.availability?.split('/').pop()?.replace(/([a-z])([A-Z])/g, '$1 $2') || 'Confirm with seller'}</p>}
+            {product && (
+              <p className="account-availability">
+                Publication:{" "}
+                {publication.published
+                  ? "Reviewed offer"
+                  : "Pending verification — not available to order"}
+              </p>
+            )}
           </div>
           {product ? (
             <>
@@ -409,7 +436,7 @@ export function CatalogPage({
                 onChange={navigate}
                 options={list.map((p) => ({
                   value: productRoute(p),
-                  label: p.name + ' — ' + formatPrice(p.price),
+                  label: p.name + " — " + formatPrice(p.price),
                 }))}
               />
               <ul className="account-purchase-checks">
@@ -420,12 +447,21 @@ export function CatalogPage({
                   </li>
                 ))}
               </ul>
-              <button className="primary" onClick={() => onOrder(product)}>
-                Buy Now
+              <button
+                className="primary"
+                disabled={!publication.purchasable}
+                onClick={() => onOrder(product)}
+              >
+                {publication.purchasable
+                  ? "Buy Now"
+                  : publication.published
+                    ? "Currently unavailable"
+                    : "Pending verification"}
                 <ArrowRight size={16} aria-hidden="true" />
               </button>
               <button
                 className="secondary"
+                disabled={!publication.purchasable}
                 onClick={() =>
                   onAddToCart ? onAddToCart(product) : onOrder(product)
                 }
@@ -446,7 +482,7 @@ export function CatalogPage({
               <div className="account-overview-categories">
                 {groups.map((group) => (
                   <div key={group}>
-                    <span>{group.replace(brand.name + ' ', '')}</span>
+                    <span>{group.replace(brand.name + " ", "")}</span>
                     <strong>
                       {list.filter((p) => p.group === group).length}
                     </strong>
@@ -456,7 +492,7 @@ export function CatalogPage({
               <button
                 className="primary"
                 onClick={() =>
-                  scrollPageTo(document.getElementById('package-options'))
+                  scrollPageTo(document.getElementById("package-options"))
                 }
               >
                 View the collection
@@ -466,7 +502,9 @@ export function CatalogPage({
           )}
           <a className="account-panel-seller" href="/seller-profile/">
             <img
-              src="/optimized/dexter-watts-400.webp" srcSet="/optimized/dexter-watts-240.webp 240w, /optimized/dexter-watts-400.webp 400w, /optimized/dexter-watts-640.webp 640w" sizes="(max-width:767px)160px,200px"
+              src="/optimized/dexter-watts-400.webp"
+              srcSet="/optimized/dexter-watts-240.webp 240w, /optimized/dexter-watts-400.webp 400w, /optimized/dexter-watts-640.webp 640w"
+              sizes="(max-width:767px)160px,200px"
               width="36"
               height="36"
               alt=""
@@ -483,23 +521,23 @@ export function CatalogPage({
         {[
           [
             Layers,
-            'A defined selection',
-            'Account types and variants in one collection.',
+            "A defined selection",
+            "Account types and variants in one collection.",
           ],
           [
             FileText,
-            'Clear purchase terms',
-            'Confirm the scope, price, and delivery in writing.',
+            "Clear purchase terms",
+            "Confirm the scope, price, and delivery in writing.",
           ],
           [
             Globe,
-            'Account-specific checks',
-            'Review region, eligibility, and relevant limits.',
+            "Account-specific checks",
+            "Review region, eligibility, and relevant limits.",
           ],
           [
             MessageCircle,
-            'Direct seller contact',
-            'Discuss your requirements before ordering.',
+            "Direct seller contact",
+            "Discuss your requirements before ordering.",
           ],
         ].map(([Icon, title, body]) => (
           <div key={title}>
@@ -597,7 +635,7 @@ export function CatalogPage({
           {brands
             .filter((b) => b.name !== brand.name)
             .map((b) => (
-              <a key={b.name} href={'/' + providerRoute(b) + '/'}>
+              <a key={b.name} href={"/" + providerRoute(b) + "/"}>
                 {b.full}
                 <ArrowRight size={13} aria-hidden="true" />
               </a>

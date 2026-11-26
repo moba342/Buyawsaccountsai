@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-26",
+  "mode": "New unpublished build",
+  "results": [
+    {
+      "tool": "Schema.org Validator",
+      "sample": "homepage",
+      "status": "MANUAL ACTION REQUIRED",
+      "error": "Code snippet editor unavailable in anonymous browser session; timed out after 30 seconds. No external pass claimed."
+    },
+    {
+      "tool": "Google Rich Results Test",
+      "sample": "aws-product",
+      "status": "MANUAL ACTION REQUIRED",
+      "result": "Submitted current JSON-LD code. Tool returned: Something went wrong. Log in and try again. No external pass claimed."
+    }
+  ]
+}

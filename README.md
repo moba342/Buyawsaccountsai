@@ -245,3 +245,12 @@ SEO configuration lives in `site-config.js`, `seo.js`, and `seo-overrides.js`. P
 See `SEO-IMPLEMENTATION.md`, `SEO-VALIDATION-REPORT.md`, `SEO-KEYWORD-MAPPING.md`, and `SEO-DEPLOYMENT-CHECKLIST.md` for the audit results and owner setup. `.env.example` contains public verification/analytics variable names; optional trackers require consent and an actual published privacy notice. The owner-approved SEO release is live; see `SEO-PRODUCTION-RELEASE.md` for release verification.
 
 Optional browser QA scripts are in `scripts/qa/`. Install Playwright and `@axe-core/playwright` in a separate tools package, set `QA_TOOLS_PACKAGE_JSON` to that package's absolute `package.json`, and optionally `CHROME_PATH` to Chrome's executable. With the production-like preview running, execute `node scripts/qa/technical-seo.mjs`, `node scripts/qa/seo-commerce-regression.mjs`, and `node scripts/qa/seo-accessibility-extra.mjs`. Commerce payment responses are controlled test fixtures; no funds are transferred and no actual customer orders are placed.
+
+
+### Catalog editorial review branch — 2026-11-26
+
+The latest master brief adds a separate evidence and editorial gate. See [the new implementation report](docs/seo/SEO-IMPLEMENTATION.md) and [deployment checklist](docs/seo/DEPLOYMENT-CHECKLIST.md); earlier SEO release notes above describe the earlier production version.
+
+This review branch preserves 68 catalog variants and 14 collection URLs, maps all 82 supplied SEO proposals, and holds their purchase/indexing status pending actual evidence. Its generated sitemap contains 12 eligible supporting URLs, not the earlier 94. Proposed service copy does not create a service. `offer-review-records.js` is intentionally empty; do not copy synthetic test fixtures into it. Publication, purchase and index approval are separate decisions enforced by shared policy.
+
+`npm run build` regenerates `docs/seo/PRODUCT-SEO-CATALOG.json` and `PRODUCT-KEYWORD-MAPPING.csv`. Run `npm test` and `npm run validate:seo`. Optional `scripts/qa/catalog-publication.mjs` verifies the pending UI/API safeguards; the historical positive commerce browser test is not applicable with no approved purchasable inventory. Owner evidence, human editorial review and new release approval are required before production changes. No new deployment was made for this branch.

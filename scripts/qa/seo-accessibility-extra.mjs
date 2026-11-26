@@ -7,7 +7,9 @@ const require = createRequire(
 );
 const { chromium } = require("playwright");
 const AxeBuilder = require("@axe-core/playwright").default;
-const evidence = fileURLToPath(new URL("../../seo-evidence/", import.meta.url));
+const evidence = fileURLToPath(
+  new URL("../../docs/seo/evidence/", import.meta.url),
+);
 const chrome = process.env.CHROME_PATH
   ? { executablePath: process.env.CHROME_PATH }
   : { channel: "chrome" };
@@ -81,7 +83,10 @@ assert.equal(
   0,
   "prerendered product must not flash a loading fallback",
 );
-assert.equal(await p.locator("h1").innerText(), "AWS Free Trial");
+assert.equal(
+  await p.locator("h1").innerText(),
+  "Review AWS Free Trial reference",
+);
 await p.unroute("**/assets/DetailPages-*.js");
 await p.goto("http://localhost:4173/");
 await p.locator('a.home-quiet-link[href="/compare-products/"]').click();

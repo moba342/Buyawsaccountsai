@@ -7,14 +7,24 @@ const require = createRequire(
 );
 const { chromium } = require("playwright");
 const AxeBuilder = require("@axe-core/playwright").default;
-const evidence = fileURLToPath(new URL("../../seo-evidence/", import.meta.url));
+const evidence = fileURLToPath(
+  new URL("../../docs/seo/evidence/", import.meta.url),
+);
 const chrome = process.env.CHROME_PATH
   ? { executablePath: process.env.CHROME_PATH }
   : { channel: "chrome" };
 import assert from "node:assert/strict";
 import fs from "node:fs/promises";
 import { paymentMethods } from "../../payments.js";
-const base = "http://localhost:4173",
+import { products } from "../../catalog.js";
+import { canPurchaseProduct } from "../../offer-publication.js";
+if (!products.some(canPurchaseProduct)) {
+  console.log(
+    "NOT APPLICABLE: no approved purchasable offers. Run catalog-publication.mjs to verify pending checkout safeguards.",
+  );
+  process.exit(0);
+}
+const base = process.env.QA_URL || "http://localhost:4173",
   browser = await chromium.launch({ ...chrome }),
   context = await browser.newContext({
     permissions: ["clipboard-read", "clipboard-write"],

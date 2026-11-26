@@ -7,7 +7,9 @@ const require = createRequire(
 );
 const { chromium } = require("playwright");
 const AxeBuilder = require("@axe-core/playwright").default;
-const evidence = fileURLToPath(new URL("../../seo-evidence/", import.meta.url));
+const evidence = fileURLToPath(
+  new URL("../../docs/seo/evidence/", import.meta.url),
+);
 const chrome = process.env.CHROME_PATH
   ? { executablePath: process.env.CHROME_PATH }
   : { channel: "chrome" };
@@ -22,7 +24,7 @@ import { pageSeo } from "../../site-config.js";
 import { breadcrumbsFor } from "../../breadcrumbData.js";
 import { guideRoute } from "../../guideRoutes.js";
 import { guides } from "../../editorialContent.js";
-const base = "http://localhost:4173",
+const base = process.env.QA_URL || "http://localhost:4173",
   out = evidence;
 await fs.mkdir(out, { recursive: true });
 const browser = await chromium.launch({ ...chrome });
@@ -87,7 +89,7 @@ for (const { id, path } of pages) {
       path,
     );
     assert(
-      (await raw.locator("main").innerText()).includes("Confirm with seller"),
+      (await raw.locator("main").innerText()).includes("Pending verification"),
       path,
     );
   }
@@ -163,9 +165,13 @@ const xml = await raw.evaluate(async () => {
   };
 });
 assert.equal(xml.error, false);
-assert.equal(xml.urls.length, 94);
+assert.equal(
+  xml.urls.length,
+  pages.filter((p) => !getPageSeo(p.id, p.path).robots.startsWith("noindex"))
+    .length,
+);
 assert.equal(xml.lastmods, 0);
-assert.equal(new Set(xml.urls).size, 94);
+assert.equal(new Set(xml.urls).size, xml.urls.length);
 for (const url of xml.urls) {
   assert(url.startsWith("https://www.buyawsaccountsai.com/"));
   assert(

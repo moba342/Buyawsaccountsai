@@ -1,3 +1,4 @@
+import { canPurchaseProduct } from "./offer-publication";
 import {
   ProvidersPage,
   CatalogPage,
@@ -322,7 +323,7 @@ export default function App({ initialRoute, initialPathname } = {}) {
               navigate("cart");
             }}
             onOrder={(p) => {
-              setOrder(p);
+              if (canPurchaseProduct(p)) setOrder(p);
             }}
             onCompare={(p) => {
               setSelected((s) =>
@@ -345,7 +346,7 @@ export default function App({ initialRoute, initialPathname } = {}) {
               navigate("cart");
             }}
             onOrder={(p) => {
-              setOrder(p);
+              if (canPurchaseProduct(p)) setOrder(p);
             }}
             onCompare={(p) => {
               setSelected((s) =>
@@ -456,11 +457,15 @@ export default function App({ initialRoute, initialPathname } = {}) {
                         <td key={i}>
                           <button
                             className="primary"
+                            disabled={!canPurchaseProduct(products[i])}
                             onClick={() => {
-                              setOrder(products[i]);
+                              if (canPurchaseProduct(products[i]))
+                                setOrder(products[i]);
                             }}
                           >
-                            Buy Now
+                            {canPurchaseProduct(products[i])
+                              ? "Buy Now"
+                              : "Pending review"}
                           </button>
                         </td>
                       ))}
@@ -739,7 +744,10 @@ export default function App({ initialRoute, initialPathname } = {}) {
                     setOrder(products.find((p) => productRoute(p) === value));
                   }}
                   options={products
-                    .filter((p) => p.provider === order.provider)
+                    .filter(
+                      (p) =>
+                        p.provider === order.provider && canPurchaseProduct(p),
+                    )
                     .map((p) => ({
                       value: productRoute(p),
                       label: `${p.name} — ${formatPrice(p.price)}`,
@@ -766,6 +774,7 @@ export default function App({ initialRoute, initialPathname } = {}) {
               <div className="order-cart-actions">
                 <button
                   className="secondary"
+                  disabled={!canPurchaseProduct(order)}
                   onClick={() => {
                     cart.add(order);
                     setOrder(null);
@@ -777,6 +786,7 @@ export default function App({ initialRoute, initialPathname } = {}) {
                 </button>
                 <button
                   className="primary"
+                  disabled={!canPurchaseProduct(order)}
                   onClick={() => {
                     cart.add(order);
                     setOrder(null);
