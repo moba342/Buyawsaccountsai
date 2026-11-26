@@ -196,3 +196,5 @@ Compute specifications use “Product variation limit” without changing seller
 ### Cart and checkout presentation
 
 `commerce-refinement.css` gives commerce pages an editorial purchase layout with white order summaries, a navy total, clear line items and structured form panels. `PaymentIcon.jsx` supplies local vector USDT/TRON/BNB/Ethereum marks for accepted networks; wallet addresses, QR payloads, transaction verification, contact privacy and manual seller matching remain unchanged. Cart controls, copy/download actions, and request preparation retain their existing behavior.
+
+Product-card headers show the source catalog account category rather than an abbreviated provider label. Details use bold navy text. Visible cards receive a subtle compositor opacity price highlight and transform-only details sweep; lighting pauses while scrolling or hidden and is disabled for reduced motion. The duplicate visual price layer is hidden from assistive technology.

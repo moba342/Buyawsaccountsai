@@ -17,7 +17,9 @@ export default function CatalogAccountCard({
       <div className="account-card-top">
         <span>
           <ProviderLogo name={product.provider} decorative />
-          {brand?.name || product.provider}
+          <span className="account-card-category">
+            {product.group || product.type}
+          </span>
         </span>
         <span className="account-card-kind">
           <Layers size={12} aria-hidden="true" />
@@ -49,7 +51,12 @@ export default function CatalogAccountCard({
         <div className="account-card-price">
           <span>Reference price</span>
           <strong>
-            {formatPrice(product.price)}
+            <span className="account-card-price-value">
+              {formatPrice(product.price)}
+              <span className="account-price-glow" aria-hidden="true">
+                {formatPrice(product.price)}
+              </span>
+            </span>
             <small> / account</small>
           </strong>
         </div>

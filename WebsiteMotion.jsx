@@ -137,6 +137,7 @@ export default function WebsiteMotion({ routeKey, paused }) {
         if (seen.has(node)) continue;
         seen.add(node);
         observer?.observe(node);
+        if (node.matches('.account-card')) ambientObserver?.observe(node);
         if (
           node.matches('.home-hero-content>*') &&
           node.parentElement?.parentElement
