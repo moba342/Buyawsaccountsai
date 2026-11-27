@@ -246,14 +246,14 @@ export default function HomePage({
           <h1>{pageHeading("home")}</h1>
           <p>
             {hasPurchasableOffers
-              ? "Review available cloud products and their documented purchase terms."
+              ? "Explore AWS account products, cloud credits and seller-listed Bedrock API access."
               : "Review seller-listed cloud account references and the requirements behind each configuration."}
             <br className="wide-break" /> Compare specifications and recorded
-            prices before discussing your requirements.
+            prices to choose the product that fits your cloud requirements.
           </p>
           <div className="home-hero-actions">
             <button className="primary" onClick={browse}>
-              <Layers size={17} /> Explore references
+              <Layers size={17} /> Explore products
             </button>
             <a
               href="/compare-products/"

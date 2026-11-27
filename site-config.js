@@ -23,11 +23,11 @@ export const SITE = {
 };
 export const pageSeo = {
   home: {
-    primaryKeyword: "buy cloud products",
-    title: "Buy Cloud Products & Compare Plans | BuyAWSAccountsAI",
+    primaryKeyword: "buy AWS accounts & cloud credits",
+    title: "Buy AWS Accounts & Cloud Credits | BuyAWSAccountsAI",
     description:
-      "Buy AWS accounts, cloud credits and Bedrock API access. Browse listed cloud products, compare features and pricing, and choose the right plan.",
-    h1: "Buy cloud products. Compare the details.",
+      "Buy AWS accounts and explore cloud credits, Bedrock API access, and cloud account options. Compare available plans and pricing for your cloud requirements.",
+    h1: "Buy AWS accounts & cloud credits.",
   },
   products: {
     primaryKeyword: "cloud accounts marketplace",
@@ -85,12 +85,13 @@ export const pageHeading = (id, fallback = "") =>
 
 const secondaryTargets = {
   home: [
-    "buy cloud products online",
-    "purchase cloud products",
-    "order cloud products",
-    "cloud product catalog",
-    "compare cloud products",
-    "cloud buying guides",
+    "buy AWS account",
+    "AWS accounts for sale",
+    "buy AWS accounts online",
+    "buy AWS credits",
+    "buy cloud accounts",
+    "buy AWS Bedrock account",
+    "buy AWS Bedrock API key",
   ],
   products: [
     "cloud accounts for sale",

@@ -32,12 +32,12 @@
     {
       "id": "products",
       "url": "https://buyawsaccountsai.com/",
-      "title": "Buy Cloud Products & Compare Plans | BuyAWSAccountsAI",
-      "titleLength": 53,
-      "metaDescription": "Buy AWS accounts, cloud credits and Bedrock API access. Browse listed cloud products, compare features and pricing, and choose the right plan.",
-      "descriptionLength": 142,
-      "h1": "Buy cloud products. Compare the details.",
-      "metaKeywords": "buy cloud products, buy cloud products online, purchase cloud products, order cloud products, cloud product catalog, compare cloud products, cloud buying guides",
+      "title": "Buy AWS Accounts & Cloud Credits | BuyAWSAccountsAI",
+      "titleLength": 51,
+      "metaDescription": "Buy AWS accounts and explore cloud credits, Bedrock API access, and cloud account options. Compare available plans and pricing for your cloud requirements.",
+      "descriptionLength": 155,
+      "h1": "Buy AWS accounts & cloud credits.",
+      "metaKeywords": "buy AWS accounts & cloud credits, buy AWS account, AWS accounts for sale, buy AWS accounts online, buy AWS credits, buy cloud accounts, buy AWS Bedrock account, buy AWS Bedrock API key",
       "metaKeywordTagCount": 1,
       "metaKeywordTagCorrect": true,
       "robots": "index, follow",
@@ -2228,7 +2228,7 @@
     {
       "page": "products",
       "path": "/",
-      "primaryKeyword": "buy cloud products",
+      "primaryKeyword": "buy AWS accounts & cloud credits",
       "preferredRankingUrl": "https://buyawsaccountsai.com/"
     },
     {

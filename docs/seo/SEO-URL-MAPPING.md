@@ -26,7 +26,7 @@ Permanent server redirects, full URL mapping and direct internal links follow [G
 
 | Product / page name | Primary keyword | Existing URL | Optimized URL | Canonical URL | Redirect status | Indexability status |
 | --- | --- | --- | --- | --- | --- | --- |
-| Homepage | buy cloud products | https://buyawsaccountsai.com/ | https://buyawsaccountsai.com/ | https://buyawsaccountsai.com/ | Retained; existing aliases normalize directly | index, follow |
+| Homepage | buy AWS accounts & cloud credits | https://buyawsaccountsai.com/ | https://buyawsaccountsai.com/ | https://buyawsaccountsai.com/ | Retained; existing aliases normalize directly | index, follow |
 | Shopping Cart. |  | https://buyawsaccountsai.com/cart/ | https://buyawsaccountsai.com/cart/ | https://buyawsaccountsai.com/cart/ | Retained; existing aliases normalize directly | noindex, follow |
 | Checkout. |  | https://buyawsaccountsai.com/checkout/ | https://buyawsaccountsai.com/checkout/ | https://buyawsaccountsai.com/checkout/ | Retained; existing aliases normalize directly | noindex, follow |
 | Cloud Accounts, Credits & AI API Marketplace | cloud accounts marketplace | https://buyawsaccountsai.com/marketplace/ | https://buyawsaccountsai.com/marketplace/ | https://buyawsaccountsai.com/marketplace/ | Retained; existing aliases normalize directly | index, follow |

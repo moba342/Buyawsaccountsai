@@ -35,7 +35,7 @@ test("the eight core pages use the supplied SEO titles, descriptions and H1s", (
   }
   assert.equal(
     getPageSeo("products", "/").title,
-    "Buy Cloud Products & Compare Plans | BuyAWSAccountsAI",
+    "Buy AWS Accounts & Cloud Credits | BuyAWSAccountsAI",
   );
   assert.equal(getPageSeo("products", "/").keywords, undefined);
 });
