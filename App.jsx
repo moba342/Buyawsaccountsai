@@ -693,6 +693,11 @@ export default function App({ initialRoute, initialPathname } = {}) {
         </div>
       </footer>
       {!order && !guide && !["cart", "checkout"].includes(page) && (
+        <nav className="floating-contact-actions" aria-label="Quick contact options">
+          <a className="telegram-floating" href={SITE.whatsapp.url} target="_blank" rel="noopener noreferrer" aria-label={`Contact us on WhatsApp at ${SITE.whatsapp.display}`}>
+            <span className="telegram-floating-icon"><WhatsAppIcon size={20}/></span>
+            <span>WhatsApp</span>
+          </a>
         <a
           className="telegram-floating"
           href="https://t.me/dexterw4tts"
@@ -713,6 +718,7 @@ export default function App({ initialRoute, initialPathname } = {}) {
           </span>
           <span>Contact us</span>
         </a>
+        </nav>
       )}
       {(order || guide) && (
         <Modal

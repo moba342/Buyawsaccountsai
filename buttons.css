@@ -74,3 +74,8 @@
 
 /* Keep the expanded desktop navigation clear of the logo and contact action. */
 @media(min-width:1024px){#root header nav,#root header nav.open{gap:2px;flex-wrap:wrap}#root header nav a{padding-inline:9px;font-size:14px}}
+
+/* Shared floating contact stack keeps each contact target separate. */
+#root .floating-contact-actions{position:fixed;z-index:40;right:max(24px,env(safe-area-inset-right));bottom:max(24px,env(safe-area-inset-bottom));display:flex;flex-direction:column;align-items:stretch;gap:10px;max-width:calc(100vw - 48px)}
+#root .floating-contact-actions .telegram-floating{position:static;width:100%;margin:0;box-sizing:border-box}
+@media(max-width:767px){#root .floating-contact-actions{right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));max-width:calc(100vw - 32px)}}
