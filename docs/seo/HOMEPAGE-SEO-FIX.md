@@ -36,3 +36,9 @@ Evidence: `evidence/home-title/local/homepage.json`, `evidence/home-title/urls/v
 Existing products, eligibility, checkout, wallets, contact links, design and optimized URL paths are preserved. Cart/checkout remain noindex; API paths remain disallowed in robots.txt. Removed policy routes remain removed.
 
 Google Search Console: **PENDING - MANUAL SETUP BY WEBSITE OWNER**. No access, token or analytics credentials requested. Google controls search-result titles, crawling timing, rankings and indexing; site validation does not establish that Google has updated its results. No SEO score or indexing outcome is claimed.
+
+## Production results
+
+Source commit `242b537` was deployed and promoted to the apex production domain through the existing GitHub/Vercel workflow (`dpl_4NVtMfE9UkZtuL4nZ9jrxA5sBwdA`, READY). The live homepage browser test passed with JavaScript disabled and enabled, matching title/description/social tags, a working SPA round trip, five responsive widths, zero page errors and zero automated accessibility violations.
+
+The live site-wide URL audit passed: 96 pages checked, 94 indexable HTTP 200 pages, all 535 direct redirects with preserved query strings, 96 internal-link/schema checks, matching sitemap and valid robots.txt. Actual evidence: `evidence/home-title/live/homepage.json` and `evidence/home-title/live-urls/validation.json`.
