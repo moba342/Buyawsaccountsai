@@ -2,8 +2,9 @@ import { productPath } from "./catalogPaths";
 import React, { useRef } from "react";
 import { Cpu, Layers, ArrowUpRight } from "lucide-react";
 import ProviderLogo from "./ProviderLogo";
-import { products } from "./catalog";
-import { productRoute } from "./catalogPaths";
+import { products, formatPrice } from "./catalog";
+import { productPurchaseState } from "./purchase-state";
+import "./reviews.css";
 import useViewportMotion from "./useViewportMotion";
 const scenarios = [
   {
@@ -76,6 +77,7 @@ export default function ReviewCarousel() {
             >
               {scenarios.map((s) => {
                 const account = products.find((p) => p.provider === s.provider);
+                const purchase = productPurchaseState(account);
                 return (
                   <article className="review-card" key={s.provider}>
                     <div className="review-card-top">
@@ -97,18 +99,18 @@ export default function ReviewCarousel() {
                     </div>
                     <div className="review-account">
                       <div>
-                        <small>Catalog reference</small>
+                        <small>Product details</small>
                         <strong>
                           {account.provider} · {account.name}
                         </strong>
-                        <span>Publication review pending</span>
+                        <span>{purchase.statusText} · {formatPrice(purchase.price)} / account</span>
                       </div>
                       <a
                         className="review-buy"
                         tabIndex={copy === 1 ? -1 : 0}
                         href={productPath(account)}
                       >
-                        View reference{" "}
+                        View product{" "}
                         <ArrowUpRight size={14} aria-hidden="true" />
                       </a>
                     </div>
